@@ -1,6 +1,6 @@
 <style>
 #indexlistutpost { border:solid 5px rgba(<?= $soulR ?>, <?= $soulG ?>, <?= $soulB ?>, 1); }
-#indexlistdrpost { border:solid 16px transparent; border-image: url("http://learnwhentoquit/ast/tile_drbox.gif") 16 round; }
+#indexlistdrpost { border:solid 16px transparent; border-image: url("ast/tile_drbox.gif") 16 round; }
 </style>
 
 <h3 style="font-weight:normal;color: rgba(<?= $soulR ?>, <?= $soulG ?>, <?= $soulB ?>, 1);">Index</h3>

@@ -1,5 +1,5 @@
 <div class="<?= $postype ?>" id="index">
-<img src="http://learnwhentoquit/ast/000_mtitle.png">
+<img src="ast/000_mtitle.png">
 <boxgame style="font-size:17px;">
     <ul class="dlgmdt">
         <li>I thought I had warned you about that guy.<br>"<yga>Don't let him find out ANYTHING about you</yga>", sounds familiar?</li>
@@ -8,4 +8,4 @@
         <li><rga>The Game is a Lie.</rga></li>
     </ul>
 </boxgame>
-<img src="http://learnwhentoquit/ast/<?= $chnum ?>_banner.png"></div>
+<img src="<?= $chnum ?>_banner.png"></div>

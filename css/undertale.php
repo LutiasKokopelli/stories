@@ -1,9 +1,9 @@
-<hmtl><head><title>Learn When to Quit</title><link rel="stylesheet"type="text/css"href="http://learnwhentoquit/css/index.css"media="screen"></head>
-<body><link rel="shortcut icon"href="http://learnwhentoquit/emj/echo.gif">
+<hmtl><head><title>Learn When to Quit</title><link rel="stylesheet"type="text/css"href="https://lutiaskokopelli.github.io/lwtq/css/index.css"media="screen"></head>
+<body><link rel="shortcut icon"href="https://lutiaskokopelli.github.io/lwtq/emj/echo.gif">
 <?php
 $battle_screen = "boxboss"; // "boxnorm" or "boxboss"
-$enemy_image = "http://learnwhentoquit/emj/papyrus_hmm.gif"; $chapter_bookmark = [["show",""],["hide",""]]; // List of all the links in the dialogue box...?
-$button1 = "http://learnwhentoquit/index.php"; $button2 = "http://learnwhentoquit/001.php"; $button3 = "http://learnwhentoquit/000.php"; $button4 = "http://learnwhentoquit/000.php";
+$enemy_image = "https://lutiaskokopelli.github.io/lwtq/emj/papyrus_hmm.gif"; $chapter_bookmark = [["show",""],["hide",""]]; // List of all the links in the dialogue box...?
+$button1 = "https://lutiaskokopelli.github.io/lwtq/index.php"; $button2 = "https://lutiaskokopelli.github.io/lwtq/001.php"; $button3 = "https://lutiaskokopelli.github.io/lwtq/000.php"; $button4 = "https://lutiaskokopelli.github.io/lwtq/000.php";
 $bm_max  = 1; $bmpart1 = "Part 1"; $bmpart2 = "Part 2"; $bmpart3 = "Part 3"; $bmpart4 = "Part 4";   $bmpart5 = "Part 5";   $bmpart6 = "Part 6";
               $bmpart7 = "Part 7"; $bmpart8 = "Part 8"; $bmpart9 = "Part 9"; $bmpart10 = "Part 10"; $bmpart11 = "Part 11"; $bmpart12 = "Part 12";
 $soulR = 246; $soulG = 130; $soulB = 40;
@@ -15,15 +15,15 @@ $chaptercheck = ''
 <!-- UNDERTALE DIALOGUE BOXES -->
 <div class="dispost" id="dialoguetests">
     <div class="game-box"><table class="contentchr">
-        <tr><th><img src="http://learnwhentoquit/emj/papyrus_cool.png"></th><td><ul class="dlgpaps"><li>SANS NEVER SOLVES<br>IT EITHER.</li></ul></td></tr>
+        <tr><th><img src="https://lutiaskokopelli.github.io/lwtq/emj/papyrus_cool.png"></th><td><ul class="dlgpaps"><li>SANS NEVER SOLVES<br>IT EITHER.</li></ul></td></tr>
     </table></div>
     <div class="game-box"><table class="contentnar"><tr><td><ul class="dlgsdt"><li>GRILLBY - ATK 28 DEF 17</li><li>Clearly needs a <br>reality check.</li></ul></td></tr></table></div>
     <div class="game-box"><table class="contentnar"><tr><td><ul class="dlgsdt"><li>GRILLBY - ATK 28 DEF 17</li><li>Clearly needs help.</li></ul></td></tr></table></div>
     <div class="game-box"><table class="contentchr">
-        <tr><th><img src="http://learnwhentoquit/emj/sans_wink.png"></th><td><ul class="dlgsans"><li>sorry, thirty is<br>the limit on<br>head-dogs.</li></ul></td></tr>
+        <tr><th><img src="https://lutiaskokopelli.github.io/lwtq/emj/sans_wink.png"></th><td><ul class="dlgsans"><li>sorry, thirty is<br>the limit on<br>head-dogs.</li></ul></td></tr>
     </table></div>
     <div class="game-box"><table class="contentchr">
-        <tr><th><img src="http://learnwhentoquit/emj/alphys_ooo.png"></th><td><ul class="dlgmdt"><li>Line 1<br>Line 2</li><li>Line 3</li></ul></td></tr>
+        <tr><th><img src="https://lutiaskokopelli.github.io/lwtq/emj/alphys_ooo.png"></th><td><ul class="dlgmdt"><li>Line 1<br>Line 2</li><li>Line 3</li></ul></td></tr>
     </table></div>
 </div>
 
@@ -118,8 +118,8 @@ FULL STATS MENU (Undertale)
 .full-screen { box-sizing: border-box!important; position: relative; width: 320px; height:240px; margin: 7px auto; }
 .boxnorm, .boxboss { box-sizing: border-box!important; position: relative; width: 320px; height:118px!important; display:table; margin:auto; margin-bottom:5px;
                       background-size: auto 100%!important; background-repeat: no-repeat!important; background-position: center!important;}
-.boxnorm{background:url(http://learnwhentoquit/ast/bg_battle_normal.png)} .boxboss{background:url(http://learnwhentoquit/ast/bg_battle_boss.png)}
-div#screenbg { box-sizing: border-box!important; width: 320px; height:240px; background:url("http://learnwhentoquit/ast/starpattern.gif"); opacity:0.02; box-shadow: 0 0 3px 3px #000 inset; }
+.boxnorm{background:url(https://lutiaskokopelli.github.io/lwtq/ast/bg_battle_normal.png)} .boxboss{background:url(https://lutiaskokopelli.github.io/lwtq/ast/bg_battle_boss.png)}
+div#screenbg { box-sizing: border-box!important; width: 320px; height:240px; background:url("https://lutiaskokopelli.github.io/lwtq/ast/starpattern.gif"); opacity:0.02; box-shadow: 0 0 3px 3px #000 inset; }
 div#screenct { box-sizing: border-box!important; width: 320px; height:240px; position:absolute; top: 0; left:0;}
 </style>
 
