@@ -1,0 +1,24 @@
+/*
+ *    ███    ███  █████  ██ ███    ██      ██████  █████  ████████ ███████  ██████   ██████  ██████  ██ ███████ ███████
+ *    ████  ████ ██   ██ ██ ████   ██     ██      ██   ██    ██    ██      ██       ██    ██ ██   ██ ██ ██      ██
+ *    ██ ████ ██ ███████ ██ ██ ██  ██     ██      ███████    ██    █████   ██   ███ ██    ██ ██████  ██ █████   ███████
+ *    ██  ██  ██ ██   ██ ██ ██  ██ ██     ██      ██   ██    ██    ██      ██    ██ ██    ██ ██   ██ ██ ██           ██
+ *    ██      ██ ██   ██ ██ ██   ████      ██████ ██   ██    ██    ███████  ██████   ██████  ██   ██ ██ ███████ ███████
+ */
+#post_container  { box-sizing:border-box!important; width:80%; max-width:640px!important; position:absolute; margin-left: 10%; margin-right:10%; margin-top:17px; }
+#indexlistutpost { display:none; }
+#indexlistdrpost { display:none; }
+#gcont           { display:none; }
+/*
+ *    ██████  ███████  ██████  ██    ██ ██       █████  ██████      ██████   ██████  ███████ ████████
+ *    ██   ██ ██      ██       ██    ██ ██      ██   ██ ██   ██     ██   ██ ██    ██ ██         ██
+ *    ██████  █████   ██   ███ ██    ██ ██      ███████ ██████      ██████  ██    ██ ███████    ██
+ *    ██   ██ ██      ██    ██ ██    ██ ██      ██   ██ ██   ██     ██      ██    ██      ██    ██
+ *    ██   ██ ███████  ██████   ██████  ███████ ██   ██ ██   ██     ██       ██████  ███████    ██
+ */
+.utpost { box-sizing: border-box!important; clear:both; background-color:#000; border: solid 3px #fff; color:#fff; width:100%; height:100%; margin-top:10px; padding:17px;
+        font-family:'Calibri'; margin:auto; margin-bottom:17px; }
+.drpost { box-sizing: border-box!important; clear:both; background-color:#000; color:#fff; width:100%; height:100%; margin-top:10px; padding:17px;
+        font-family:'Calibri'; margin:auto; margin-bottom:17px; border:16px solid transparent; border-image: url("http://learnwhentoquit/ast/tile_drbox.gif") 16 round;  }
+.dispost {box-sizing: border-box!important; clear: both; color: #fff; width: 100%; height: 100%; margin-bottom:17px; padding: 10px;margin:auto; }
+img.upload  { display:inline; max-height:640px; max-width:80%; border-radius: 15px; }
