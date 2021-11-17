@@ -1,9 +1,27 @@
-<hmtl><?php $icon = "http://learnwhentoquit/emj/echo.gif"; $postype = "utpost";
-$battle_screen = "boxboss"; $enemy_image = "000-papyrus_hmm.gif"; $soulR = 246; $soulG = 130; $soulB = 40; // $soulR = 192; $soulG = 130; $soulB = 38; // $soulR = 255; $soulG = 255; $soulB = 255;
-$button1 = "index.php"; $button2 = "001.php"; $button3 = "000.php"; $button4 = "000.php";
-$chaptercheck = '<ul class="dlgpaps"><li>Now, which chapter should I read next...?</li></ul>';
-$chnum = "000"; $title = "Masterlist"; ?>
-<head><title>LWtQ - <?= $title ?></title><link rel="shortcut icon"href="<?= $icon ?>"><?php include('css/screensize.php'); ?></head><body>
+<hmtl><head><title>LWtQ - Masterlist</title><link rel="shortcut icon"href="emj/echo.gif">
+<link rel="stylesheet"type="text/css"href="css/css/CSS-main.css"media="screen">
+<link rel='stylesheet' media='screen and (max-width:  640px)' href='css/css/CSS-phone.css' />
+<link rel='stylesheet' media='screen and (min-width:  641px) and (max-width: 1200px)' href='css/css/CSS-medium-small.css' />
+<link rel='stylesheet' media='screen and (min-width: 1201px) and (max-width: 1650px)' href='css/css/CSS-medium.css' />
+<link rel='stylesheet' media='screen and (min-width: 1651px)' href='css/css/CSS-intended.css' />
+<script type="text/javascript">
+function SwapDivsWithClick(div1,div2)
+{
+   d1 = document.getElementById(div1);
+   d2 = document.getElementById(div2);
+   if( d2.style.display == "none" )
+   {
+      d1.style.display = "none";
+      d2.style.display = "block";
+   }
+   else
+   {
+      d1.style.display = "block";
+      d2.style.display = "none";
+   }
+}
+</script>
+</head><body>
 <!--
      ██████ ██   ██  █████  ██████  ████████ ███████ ██████
     ██      ██   ██ ██   ██ ██   ██    ██    ██      ██   ██
@@ -12,45 +30,45 @@ $chnum = "000"; $title = "Masterlist"; ?>
      ██████ ██   ██ ██   ██ ██         ██    ███████ ██   ██
 -->
 <div id="post_container">
-<div class="<?= $postype ?>"><h3><a style="font-family:mfriend;color:#800000;font-size:42px;">stOry Masterlist</a></h3></div>
-<div class="<?= $postype ?>" id="lwtq">
+<div class="utpost"><h3><a style="font-family:mfriend;color:#800000;font-size:42px;">stOry Masterlist</a></h3></div>
+<div class="utpost" id="lwtq">
     <boxedyellowstar><h1 style="font-family:mfriend;color:#f4d400;font-size:32px;">LeArn When to Quit</h1></boxedyellowstar>
     <boxedbluestar><h3 style="font-family:mfriend;"><cso>Act I: Don't Let Him Find Out</cso></h3></boxedbluestar>
     <table style="font-family: Mars Needs Cunnilingus; text-align:center;"><tr>
-        <td>[<a href="001.php">ACT1#1.0</a>]</td>
-        <td>[<a href="002.php">ACT1#2.0</a>]</td>
-        <td>[<a href="003.php">ACT1#3.1</a>]</td>
-        <td>[<a href="004.php">ACT1#3.2</a>]</td>
-        <td>[<a href="005.php">ACT1#3.3</a>]</td>
+        <td>[<a href="001.html">ACT1#1.0</a>]</td>
+        <td>[<a href="002.html">ACT1#2.0</a>]</td>
+        <td>[<a href="003.html">ACT1#3.1</a>]</td>
+        <td>[<a href="004.html">ACT1#3.2</a>]</td>
+        <td>[<a href="005.html">ACT1#3.3</a>]</td>
     </tr><tr><td colspan="2"><hr></td>
-        <td>[<a href="006.php">ACT1#PE1</a>]</td>
+        <td>[<a href="006.html">ACT1#PE1</a>]</td>
         <td colspan="2"><hr></td></tr><tr>
-        <td>[<a href="007.php">ACT1#4.1</a>]</td>
-        <td>[<a href="008.php">ACT1#4.2</a>]</td>
-        <td>[<a href="009.php">ACT1#5.1</a>]</td>
-        <td>[<a href="010.php">ACT1#5.2</a>]</td>
-        <td>[<a href="011.php">ACT1#5.3</a>]</td>
+        <td>[<a href="007.html">ACT1#4.1</a>]</td>
+        <td>[<a href="008.html">ACT1#4.2</a>]</td>
+        <td>[<a href="009.html">ACT1#5.1</a>]</td>
+        <td>[<a href="010.html">ACT1#5.2</a>]</td>
+        <td>[<a href="011.html">ACT1#5.3</a>]</td>
     </tr><tr><td colspan="2"><hr></td>
-        <td>[<a href="012.php">ACT1#PE2</a>]</td>
+        <td>[<a href="012.html">ACT1#PE2</a>]</td>
         <td colspan="2"><hr></td></tr>
     </table><void></void>
     <boxedbluestar><h3 style="font-family:mfriend;"><cso>Act II: That's Your Fault</cso></h3></boxedbluestar>
     <table style="font-family: Mars Needs Cunnilingus; text-align:center;"><tr>
-        <td>[<a href="013.php">ACT2#1.1</a>]</td>
-        <td>[<a href="014.php">ACT2#1.2</a>]</td>
-        <td>[<a href="015.php">ACT2#2.1</a>]</td>
-        <td>[<a href="016.php">ACT2#2.2</a>]</td>
+        <td>[<a href="013.html">ACT2#1.1</a>]</td>
+        <td>[<a href="014.html">ACT2#1.2</a>]</td>
+        <td>[<a href="015.html">ACT2#2.1</a>]</td>
+        <td>[<a href="016.html">ACT2#2.2</a>]</td>
         <td>[<strike>ACT2#0.0</strike>]</td>
     </tr><tr><td colspan="2"><hr></td>
-        <td>[<a href="017.php">ACT2#PE3</a>]</td>
+        <td>[<a href="017.html">ACT2#PE3</a>]</td>
         <td colspan="2"><hr></td></tr><tr>
-        <td>[<a href="018.php">ACT2#3.1</a>]</td>
-        <td>[<a href="019.php">ACT2#3.2</a>]</td>
-        <td>[<a href="020.php">ACT2#4.0</a>]</td>
-        <td>[<a href="021.php">ACT2#5.1</a>]</td>
-        <td>[<a href="022.php">ACT2#5.2</a>]</td>
+        <td>[<a href="018.html">ACT2#3.1</a>]</td>
+        <td>[<a href="019.html">ACT2#3.2</a>]</td>
+        <td>[<a href="020.html">ACT2#4.0</a>]</td>
+        <td>[<a href="021.html">ACT2#5.1</a>]</td>
+        <td>[<a href="022.html">ACT2#5.2</a>]</td>
     </tr><tr><td colspan="2"><hr></td>
-        <td>[<a href="023.php">ACT2#PE4</a>]</td>
+        <td>[<a href="023.html">ACT2#PE4</a>]</td>
         <td colspan="2"><hr></td></tr>
     </table><void></void>
     <boxedbluestar><h3 style="font-family:mfriend;"><cso>Act III: We'll Be Together Forever</cso></h3></boxedbluestar>
@@ -90,7 +108,7 @@ $chnum = "000"; $title = "Masterlist"; ?>
         <td>[ACT3#5.2]</td>
         <td>[ACT3#5.3]</td>
         <td>[ACT3#5.4]</td>
-        <td>[<a href="051.php">ACT3#5.5</a>]</td>
+        <td>[<a href="051.html">ACT3#5.5</a>]</td>
     </tr></table><void></void>
     <boxedbluestar><h3 style="font-family:mfriend;"><cso>Act III<sup>2</sup>: The Show Must Go On</cso></h3></boxedbluestar>
     <table style="font-family: Mars Needs Cunnilingus; text-align:center;"><tr>
@@ -133,7 +151,7 @@ $chnum = "000"; $title = "Masterlist"; ?>
         <td><strike>[ACT7#0.0]</strike></td>
     </tr></table>
 </div>
-<div class="<?= $postype ?>" id="lwtqwbcbnwrt">
+<div class="utpost" id="lwtqwbcbnwrt">
     <boxedyellowstar><h2><yga>
         <span style="font-family:mfriend;">Learn When to Quit</span><void></void>
         <span style="font-family:mgame;font-size:24px;">Writing Bonus Chapters Because<br>Nobody Will Read Them</span>
@@ -147,15 +165,15 @@ $chnum = "000"; $title = "Masterlist"; ?>
     <p>Finally, if you see the tag <tag>[NOT CANON]</tag>, you know what to expect. These chapters should exclusively be random funny comics that I would&rsquo;ve drawn just for the sake of telling a joke or drawing the characters in silly situations.</p>
     <p>It is also possible that, if multiple updates are related to a single theme or storyline/overarching &ldquo;plot&rdquo; (besides the obvious LWtQ plot itself), one last tag will be present. This last tag will probably be in the form of a single emoji that all chapters related to that theme/story arc will possess. Since it is possible that some story arcs will contain major spoilers, their significance will only be revealed inside the description of the chapters themselves.</p>
 </div>
-<div class="<?= $postype ?>" id="lwtqwbcbnwrt">
+<div class="utpost" id="lwtqwbcbnwrt">
     <boxedyellowstar><h1 id="mainindex" style="font-family:mfriend;"><oga>MAIN INDEX</oga></h1></boxedyellowstar>
     <h3 id="inthepast"><boxedbluestar style="font-family:mfriend;"><yga>In the past:</yga></boxedbluestar></h3>
     <h3><bga>Very, very long ago:</bga></h3>
     <boxgame><table class="ltable">
-        <tr><td>[000] [UT] [FIC]</td><td align="center"> </td><td><a href="FIC_Ammott_Dinsprie_Memoire.php">Ammott Dinsprie&rsquo;s Memoire</a></td></tr>
+        <tr><td>[000] [UT] [FIC]</td><td align="center"> </td><td><a href="FIC_Ammott_Dinsprie_Memoire.html">Ammott Dinsprie&rsquo;s Memoire</a></td></tr>
     </table></boxgame>
     <boxgame><table class="ltable">
-        <tr><td colspan="3"><a href="FIC_dawnbackstory.php"><p style="font-family:mgame;text-align:center;font-size:20px;margin-top:0;">🧸 Lys and Dawn's Childhood Misadventures</p></a><hr></td></tr>
+        <tr><td colspan="3"><a href="FIC_dawnbackstory.html"><p style="font-family:mgame;text-align:center;font-size:20px;margin-top:0;">🧸 Lys and Dawn's Childhood Misadventures</p></a><hr></td></tr>
         <tr><td>[000] [DU] [ART]</td><td align="center">🧸</td><td><a>not 4 kids u dummy</a></td></tr>
         <tr><td>[000] [DU] [ART]</td><td align="center">🧸</td><td><a>spooky scary</a></td></tr>
     </table></boxgame>
@@ -208,7 +226,70 @@ $chnum = "000"; $title = "Masterlist"; ?>
 <!--
     INDEX
 -->
-<?php include('css/sidebar.php'); ?><div id="indexlist<?= $postype ?>"><?php include('css/indtro.php'); ?><?php include('css/UTbattlescreen.php'); ?><ul class="save-point">
+<div id="indexlist">
+    <style>
+    #indexlistutpost { border:solid 5px rgba(246, 130, 40, 1); }
+    #indexlistdrpost { border:solid 16px transparent; border-image: url("ast/tile_drbox.gif") 16 round; }
+    </style>
+    <h3 style="font-weight:normal;color: rgba(246, 130, 40, 1);">Index</h3>
+    <hr style="background: linear-gradient(to right, rgba(246, 130, 40, 0), rgba(246, 130, 40, 0.75), rgba(246, 130, 40, 0))">
+
+    <style>
+    #sginfo { box-sizing: border-box!important; position:relative; width:100%; font-family: "MNC"; padding-left:12px; font-size:10px; height:10px; line-height:10px; vertical-align: middle!important;}
+    .full-screen { box-sizing: border-box!important; position: relative; width: 320px; height:240px; margin: 7px auto; background-color: #000;}
+    .boxnorm, .boxboss { box-sizing: border-box!important; position: relative; width: 320px; height:118px!important; display:table; margin:auto; margin-bottom:5px;
+                          background-size: auto 100%!important; background-repeat: no-repeat!important; background-position: center!important; text-align: center; }
+    .boxnorm{background:url(".htmlast/bg_battle_normal.png")} .boxboss{background:url(".htmlast/bg_battle_boss.png")}
+    div#screenbg { box-sizing: border-box!important; width: 320px; height:240px; background:url(".htmlast/starpattern.gif"); opacity:0.01; box-shadow: 0 0 3px 3px #000 inset; }
+    div#screenct { box-sizing: border-box!important; width: 320px; height:240px; position:absolute; top: 0; left:0;}
+    .sogabtn, .swgabtn { box-sizing:border-box!important; border-radius:2%; background-color:#000!important; margin:auto; font-family:"Mercy";
+                         background-position: 6% 50%!important; background-repeat:no-repeat!important; background-size: auto 50%!important; text-align:right; width:75%; padding:2; }
+    .sogabtn           { border:1px solid #f68228; color:#f68228; background: url(".htmlast/saveo.png");}
+    .sogabtn:hover     { border:1px solid #ffff40; color:#ffff40; background: url(".htmlemj/soul.png"); }
+    .swgabtn           { border:1px solid #c3c3c3; color:#c3c3c3; background: url(".htmlast/savew.png"); }
+    .swgabtn:hover     { border:1px solid #ffffff; color:#ffffff; background: url(".htmlemj/soul.png"); }
+    .prevnext a        { color:#848484; } .prevnext a:hover { color:#f4d400; }
+    </style>
+
+    <.html
+    $bm_max  = 1; $chapter_bookmark = [["show",""],["hide",""]]; // List of all the links in the dialogue box...?
+    $bmpart1 = "Part 1"; $bmpart2 = "Part 2"; $bmpart3 = "Part 3"; $bmpart4 = "Part 4";   $bmpart5 = "Part 5";   $bmpart6 = "Part 6";
+    $bmpart7 = "Part 7"; $bmpart8 = "Part 8"; $bmpart9 = "Part 9"; $bmpart10 = "Part 10"; $bmpart11 = "Part 11"; $bmpart12 = "Part 12";
+     ?>
+
+    <div class="full-screen"><div id="screenbg"></div><div id="screenct">
+
+        <div class="boxboss" style="display:table-cell;vertical-align:middle;"><img src=".htmlbattlepfp/000-papyrus_hmm.gif" style="max-height:100px; display:inline-block;"></div>
+
+        <div class="game-box" id="dogcheck" style="display:block;margin:0 auto;"><table class="contentnar"><tr><td>
+            <ul class="dlgpaps"><li>Now, which chapter should I read next...?</li></ul>
+        </td></tr></table></div>
+
+        <table id="sginfo"><tr>
+            <td width="46px;" style="vertical-align: middle!important;">player</td>
+            <td width="32px;" style="vertical-align: middle!important;">LV ??</td>
+            <td width="36px;" style="vertical-align: middle!important;text-align:right;">hp</td>
+            <td width="12px;"><div style="display:inline-block;background:#ffff00;width:12px; height:10px;"></div></td>
+            <td style="vertical-align: middle!important;">no / hp</td>
+        </tr></table>
+
+        <table class="game-btn" style="font-size:10px; margin:0!important; padding:0!important;"><tr>
+            <td width="25%;" style="margin:0!important; padding:0!important;"><a href=".htmlindex.html"><div class="sogabtn">
+                <div style="-webkit-transform:scale(1.6,1.4);-moz-transform:scale(1.6,1.4);-o-transform:scale(1.6,1.4);transform:scale(1.6,1.4);padding-right:9px!important;">index</div>
+            </div></a></td>
+            <td width="25%;" style="margin:0!important; padding:0!important;"><a href=".html001.html"><div class="swgabtn">
+                <div style="-webkit-transform:scale(1.6,1.4);-moz-transform:scale(1.6,1.4);-o-transform:scale(1.6,1.4);transform:scale(1.6,1.4);padding-right:9px;">reset</div>
+            </div></a></td>
+            <td width="25%;" style="margin:0!important; padding:0!important;"><a href=".html001.html"><div class="sogabtn">
+                <div style="-webkit-transform:scale(1.4,1.4);-moz-transform:scale(1.4,1.4);-o-transform:scale(1.4,1.4);transform:scale(1.4,1.4);padding-right:6px;">reload</div>
+            </div></a></td>
+            <td width="25%;" style="margin:0!important; padding:0!important;"><a href=".html001.html"><div class="sogabtn">
+                <div style="-webkit-transform:scale(1.0,1.4);-moz-transform:scale(1.0,1.4);-o-transform:scale(1.0,1.4);transform:scale(1.0,1.4);padding-left: 6px!important;">continue</div>
+            </div></a></td>
+        </tr></table>
+    </div></div>
+
+    <ul class="save-point">
     <a href="#lwtq"><li>Learn When to Quit</li></a>
     <a href="#lwtqwbcbnwrt"><li>Learn When to Quit Writing Bonus Chapters Because Nobody Will Read Them</li></a>
     <a href="#mainindex"><li>Bonus Chapters Index</li></a>
