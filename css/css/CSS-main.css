@@ -25,7 +25,7 @@ html, body { margin: auto; list-style: none; color: #fff; background-attachment:
 h1, h2, h3, h4, h5, h6 { text-align: center; margin: 0 auto; font-family:"Mercy"; }
 p          { padding-left:10px; padding-right:10px; margin-bottom:5px; margin-top:5px; }
 a          { text-decoration:none; -webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out; }
-hr         { border: 0; height: 1px; background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
+hr         { border: 0; height: 1px; background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));}
 hr.dishr   { width: 100%; color: #424549; background: #424549; border: none; height: 1px; }
 img        { max-width:100%; display:block; margin: auto; }
 /*
@@ -50,18 +50,17 @@ img        { max-width:100%; display:block; margin: auto; }
  *     ██████     ██        ██████  ██ ██   ██ ███████  ██████   ██████   ██████  ███████     ██████   ██████  ██   ██
  */
 .game-box                             { box-sizing: border-box!important; width: 288px; height: 76px; border:3px solid #fff; background:#000; margin: 7px auto; }
-.game-box a                           { color:#fff; }                         /*.game-box a:hover        { color:#ffff40; list-style-image: url("https://lutiaskokopelli.github.io/lwtq/ast/li-soul.png"); }*/
+.game-box a                           { color:#fff; }
 .game-box .contentchr                 { padding:5px; width:100%;height:100%!important; }
 .game-box .contentchr th:nth-child(1) { width: 56px; vertical-align:middle; } .game-box .contentchr td { vertical-align:text-top; }
 .game-box .contentnar                 { padding:5px; width:100%;height:100%;} .game-box .contentnar td { vertical-align:text-top; }
 
 .dr-box                               { box-sizing: border-box!important; width: 297px; height: 84px; border:16px solid transparent;
                                         border-image: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_drbox.gif") 16 round; background:#000; margin: 7px auto; }
-.dr-box a                             { color:#fff; }                         /*.dr-box a:hover        { color:#ffff40; list-style-image: url("https://lutiaskokopelli.github.io/lwtq/ast/li-soul.png"); }*/
+.dr-box a                             { color:#fff; }
 .dr-box .contentchr                   { padding:5px; width:100%;height:100%!important; }
 .dr-box .contentchr th:nth-child(1)   { width: 56px; vertical-align:middle; } .dr-box .contentchr td { vertical-align:text-top; }
 .dr-box .contentnar                   { width:100%;height:100%;} .dr-box .contentnar td { vertical-align:text-top; padding:0px; }
-
 /*
  *     ██████  ██████  ██       ██████  ██████      ██ ███████  ██████  ███    ██ ████████     ████████  █████   ██████  ███████
  *    ██      ██    ██ ██      ██    ██ ██   ██    ██  ██      ██    ██ ████   ██    ██           ██    ██   ██ ██       ██
@@ -73,26 +72,20 @@ bso {color: #003cff;} cso {color: #42fcff;} gso {color: #00c000;} oso {color: #f
 bda {color: #001d7f;} cda {color: #00a6c5;} gda {color: #008000;} oda {color: #ec6f00;} pda {color: #8f1c93;} rda {color: #800000;} yda {color: #f4d400;}
 yga {color: #edd91a;} oga {color: #f68228;} rga {color: #e91d20;} gdi {color: #808080;} bga {color: #0077a2;} whi {color: #fff;}
 inv {color:transparent;} inv::selection{color:#f00;background:#ff0;}
-/* goh{background:linear-gradient(to left,#ec008c,#8601af,#0247fe,#00ffff,#16ff00,#ffd700,#ff6600,#ff0000,#ec008c,#8601af,#0247fe,#00ffff);
-    -webkit-background-clip:text;-webkit-text-fill-color:transparent;} */
-
 goh{ text-shadow:None; background: repeating-linear-gradient(45deg, rgb(240,96,196),rgb(240,79,97),rgb(241,133,76),rgb(242,184,104),
     rgb(240,220,128),rgb(182,237,113),rgb(151,231,115),rgb(144,219,160),rgb(136,206,203),rgb(240,96,196));
     -webkit-background-clip:text; background-clip: text; color:transparent;
     animation: rainbow_animation 3s ease-in-out infinite; background-size: 400% 100%; }
-
 .wavy span {
 position: relative;
 display: inline-block;
 animation: waver 1.5s ease-in-out infinite;
 animation-delay: calc(0.1s * var(--i));
 }
-
 @keyframes waver {
 0%,100% {transform: translateY(2.5px)}
 50% {transform: translateY(-2.5px)}
 }
-
 sans {font-family: "sans";} paps {font-family: "papyrus"; font-variant: small-caps;} sgame {font-family: "sgame";} mgame {font-family: "mgame";}
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 nar  {margin-left:10px;margin-right:10px;display:block;text-align:justify;}
