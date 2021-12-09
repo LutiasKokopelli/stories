@@ -108,11 +108,11 @@ tag { font-family: "MNC"; color: #edd91a; } tag a { color:#fff; } tag a:hover { 
 .shaktxt { animation: shake 0.1s infinite ; } .bshaktxt { animation: shakebig 0.1s infinite ; } .ocshaktxt { animation: occasionalshake 10s infinite ; }
 @keyframes rainbow_animation { 0%,100% { background-position: 0 0; } 50% { background-position: 100% 0; } }
 @keyframes peblink {
-        0% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png"); opacity:100%; }
-        25% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png"); opacity:100%; }
-        50% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png"); opacity:0%; }
-        75% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png"); opacity:100%; }
-        100% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png"); opacity:100%; }
+        0% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
+        25% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
+        50% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:0%; }
+        75% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
+        100% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
       }
 /*
  *    ██      ██ ███████ ████████ ███████
@@ -255,14 +255,14 @@ wip             { box-sizing: border-box!important; display:block; padding:17px;
                   2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
                   -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 pebox   { box-sizing: border-box!important; display:block; padding:42px; margin:auto; width:100%; height:200px; margin-top:17px; margin-bottom:17px;
-        background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png"); font-family:"mgame"; font-size:30px;
+        background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); font-family:"mgame"; font-size:30px;
         text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
         2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
         -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 peboxblink {color:transparent;box-sizing:border-box!important;display:block;padding:42px;margin:auto;width:100%;height:200px;margin-top:17px;margin-bottom:17px;animation:peblink 7s infinite;
         text-align:center; vertical-align:middle; font-family:"mgame"; font-size:30px;
         -webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out; transition-duration: 0.4s;}
-peboxblink:hover { color: #fff;animation:none; background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner_stolenfromDAmakeURownASAP.png");
+peboxblink:hover { color: #fff;animation:none; background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png");
         text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
         2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
         -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
