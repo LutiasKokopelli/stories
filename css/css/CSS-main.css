@@ -110,7 +110,7 @@ tag { font-family: "MNC"; color: #edd91a; } tag a { color:#fff; } tag a:hover { 
 @keyframes peblink {
         0% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
         25% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
-        50% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:0%; }
+        50% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:20%; }
         75% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
         100% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png"); opacity:100%; }
       }
