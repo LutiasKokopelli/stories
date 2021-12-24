@@ -191,8 +191,8 @@ ul.dlgpaps a:hover           { color:#edd91a; }
  *    ██   ██ ██      ██ ██      ██    ██ ██   ██ ██   ██
  *    ██████  ██ ███████  ██████  ██████  ██   ██ ██████
  */
-/*.utpost table { width: 99%; }*/ .utpost a { color: #f68228; } .utpost a:hover { color: #ffff40; }
-/*.drpost table { width: 99%; }*/ .drpost a { color: #f68228; } .drpost a:hover { color: #ffff40; }
+.utpost a { color: #f68228; } .utpost a:hover { color: #ffff40; }
+.drpost a { color: #f68228; } .drpost a:hover { color: #ffff40; }
 .diarypost{ box-sizing: border-box!important; box-shadow: 0 0 3px 3px #000 inset; border-radius:3px; color:#000; width:100%; margin: auto; margin-bottom:17px; font-family:"Lucida";
     padding:10px; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_paper.png"); } .diarypost h1 { font-family:"Lucida"; }
 .dispost a {color:#00aff4;} .dispost a:hover { font-style:underline; }
@@ -216,8 +216,7 @@ ul.dlgpaps a:hover           { color:#edd91a; }
     -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 .disdm pfp    { font-family: "Calibri"; font-size: 28px; font-weight: bold; }
 
-.utpost  pfp  { font-family:   "mgame"; font-size: 24px; font-weight:normal; }
-.drpost  pfp  { font-family:   "mgame"; font-size: 24px; font-weight:normal; }
+.utpost  pfp, .drpost  pfp  { font-family:   "mgame"; font-size: 24px; font-weight:normal; }
 
 .disut li.sts { font-family:  "mgame";   font-weight:normal; font-size:0.80em; line-height: 20px;     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
     2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
