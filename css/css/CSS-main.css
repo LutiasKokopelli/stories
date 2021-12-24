@@ -86,7 +86,7 @@ animation-delay: calc(0.1s * var(--i));
 0%,100% {transform: translateY(2.5px)}
 50% {transform: translateY(-2.5px)}
 }
-sans {font-family: "sans";} paps {font-family: "papyrus"; font-variant: small-caps;} sgame {font-family: "sgame";} mgame {font-family: "mgame";}
+sans {font-family: "sans";} paps {font-family: "paps"; font-variant: small-caps;} sgame {font-family: "sgame";} mgame {font-family: "mgame";}
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 nar  {margin-left:10px;margin-right:10px;display:block;text-align:justify;}
 dad  {margin-left:30px;margin-right:30px;display:block;text-align:justify;}
