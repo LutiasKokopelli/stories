@@ -5,16 +5,16 @@
  *    ██      ██    ██ ██  ██ ██    ██         ██
  *    ██       ██████  ██   ████    ██    ███████
  */
-@font-face { font-family: "DotumChe" src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleDotumche.ttf")            format("truetype"); }
-@font-face { font-family: "MNC";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/Mars_Needs_Cunnilingus.ttf")       format("truetype"); }
-@font-face { font-family: "Mercy";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MERCY.ttf")                        format("truetype"); }
-@font-face { font-family: "mgame";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/determinationmonoweb-webfont.ttf") format("truetype"); }
-@font-face { font-family: "sgame";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/determinationsansweb-webfont.ttf") format("truetype"); }
-@font-face { font-family: "sans";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleSans.ttf")                format("truetype"); }
-@font-face { font-family: "paps";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertalePapyrus.ttf")             format("truetype"); }
-@font-face { font-family: "mfriend"; src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MonsterFriendFore.otf")            format("opentype"); }
-@font-face { font-family: "Lucida";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/LCALLIG.TTF")                      format("truetype"); }
-@font-face { font-family: "Arial";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/arial.ttf")                        format("truetype"); }
+@font-face { font-family: "DotumChe"; src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleDotumche.ttf")            format("truetype"); }
+@font-face { font-family: "MNC";      src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/Mars_Needs_Cunnilingus.ttf")       format("truetype"); }
+@font-face { font-family: "Mercy";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MERCY.ttf")                        format("truetype"); }
+@font-face { font-family: "mgame";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/determinationmonoweb-webfont.ttf") format("truetype"); }
+@font-face { font-family: "sgame";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/determinationsansweb-webfont.ttf") format("truetype"); }
+@font-face { font-family: "sans";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleSans.ttf")                format("truetype"); }
+@font-face { font-family: "paps";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertalePapyrus.ttf")             format("truetype"); }
+@font-face { font-family: "mfriend";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MonsterFriendFore.otf")            format("opentype"); }
+@font-face { font-family: "Lucida";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/LCALLIG.TTF")                      format("truetype"); }
+@font-face { font-family: "Arial";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/arial.ttf")                        format("truetype"); }
 /*
  *    ██   ██ ████████ ███    ███ ██          ██████   █████  ███████ ██  ██████ ███████
  *    ██   ██    ██    ████  ████ ██          ██   ██ ██   ██ ██      ██ ██      ██
