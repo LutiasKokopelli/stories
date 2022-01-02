@@ -281,4 +281,5 @@ div#screenct { box-sizing: border-box!important; width: 320px; height:240px; pos
 .sogabtn:hover     { border:1px solid #ffff40; color:#ffff40; background: url("https://lutiaskokopelli.github.io/lwtq/emj/soul.png"); }
 .swgabtn           { border:1px solid #c3c3c3; color:#c3c3c3; background: url("https://lutiaskokopelli.github.io/lwtq/ast/savew.png"); }
 .swgabtn:hover     { border:1px solid #ffffff; color:#ffffff; background: url("https://lutiaskokopelli.github.io/lwtq/emj/soul.png"); }
+.prevnext          { font-family:"mfriend";font-size:24px; text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 .prevnext a        { color:#848484; } .prevnext a:hover { color:#f4d400; }
