@@ -122,7 +122,7 @@ tag { font-family: "MNC"; color: #edd91a; } tag a { color:#fff; } tag a:hover { 
  *    ██      ██      ██    ██         ██
  *    ███████ ██ ███████    ██    ███████
  */
-ul                           { margin:0px; margin-left: 12px; list-style: "*"; }
+ul                           { margin:0px; margin-left: 12px; } ul li { list-style: "*"; }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ul.save-point                { list-style-image:url("https://lutiaskokopelli.github.io/lwtq/ast/saveUT.gif"); }
 ul.save-point a              { color: #c3c3c3; }
