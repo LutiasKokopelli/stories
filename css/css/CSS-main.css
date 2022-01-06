@@ -13,7 +13,7 @@
 @font-face { font-family: "sans";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleSans.ttf")                format("truetype"); }
 @font-face { font-family: "paps";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertalePapyrus.ttf")             format("truetype"); }
 @font-face { font-family: "mfriend";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MonsterFriendFore.otf")            format("opentype"); }
-@font-face { font-family: "Lucida";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/LCALLIG.TTF")                      format("truetype"); }
+@font-face { font-family: "LucidaC";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/LCALLIG.TTF")                      format("truetype"); }
 /*
  *    ██   ██ ████████ ███    ███ ██          ██████   █████  ███████ ██  ██████ ███████
  *    ██   ██    ██    ████  ████ ██          ██   ██ ██   ██ ██      ██ ██      ██
@@ -195,8 +195,8 @@ ul.dlgpaps a:hover           { color:#edd91a; }
  */
 .utpost a { color: #f68228; } .utpost a:hover { color: #ffff40; }
 .drpost a { color: #f68228; } .drpost a:hover { color: #ffff40; }
-.diarypost{ box-sizing: border-box!important; box-shadow: 0 0 3px 3px #000 inset; border-radius:3px; color:#000; width:100%; margin: auto; margin-bottom:17px; font-family:"Lucida";
-    padding:10px; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_paper.png"); } .diarypost h1 { font-family:"Lucida"; }
+.diarypost{ box-sizing: border-box!important; box-shadow: 0 0 3px 3px #000 inset; border-radius:3px; color:#000; width:100%; margin: auto; margin-bottom:17px; font-family:"LucidaC";
+    padding:10px; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_paper.png"); } .diarypost h1 { font-family:"LucidaC"; }
 .dispost a {color:#00aff4;} .dispost a:hover { font-style:underline; }
 .dispost .link-thumbnail { background-color:#2F3136; border-radius: 5px; padding: 20px; width:80%;}
 
