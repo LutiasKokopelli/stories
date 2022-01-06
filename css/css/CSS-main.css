@@ -14,7 +14,6 @@
 @font-face { font-family: "paps";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertalePapyrus.ttf")             format("truetype"); }
 @font-face { font-family: "mfriend";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MonsterFriendFore.otf")            format("opentype"); }
 @font-face { font-family: "Lucida";   src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/LCALLIG.TTF")                      format("truetype"); }
-@font-face { font-family: "Arial";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/arial.ttf")                        format("truetype"); }
 /*
  *    ██   ██ ████████ ███    ███ ██          ██████   █████  ███████ ██  ██████ ███████
  *    ██   ██    ██    ████  ████ ██          ██   ██ ██   ██ ██      ██ ██      ██
@@ -123,7 +122,8 @@ tag { font-family: "MNC"; color: #edd91a; } tag a { color:#fff; } tag a:hover { 
  *    ██      ██      ██    ██         ██
  *    ███████ ██ ███████    ██    ███████
  */
-ul                           { margin:0px; margin-left: 12px; }
+ul                           { margin:0px; margin-left: 12px; list-style: "*"; }
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ul.save-point                { list-style-image:url("https://lutiaskokopelli.github.io/lwtq/ast/saveUT.gif"); }
 ul.save-point a              { color: #c3c3c3; }
 ul.save-point a:hover        { list-style-image:url("https://lutiaskokopelli.github.io/lwtq/ast/saveDR.gif"); color: #edd91a; }
