@@ -235,6 +235,8 @@ img.icon    { display:       block; width: 64px; height: 64px; margin: auto; bor
 img.emoji   { display:inline; max-height:32px!important; }
 img.bigemoji{ display:inline; max-width:100px!important;max-height:100px!important; }
 img.upload  { display:inline; max-height:640px; max-width:420px; border-radius: 15px; }
+
+.smol {width:70%;font-size:0.9em;} .smol td:nth-child(1) {width:70px;} .smol td:nth-child(1) img {width:45px;height:45px;} .smol td:nth-child(2) {line-height:24px;}
 /*
  *     ██████ ██    ██ ███████ ████████  ██████  ███    ███     ██████   ██████  ██   ██ ███████ ███████
  *    ██      ██    ██ ██         ██    ██    ██ ████  ████     ██   ██ ██    ██  ██ ██  ██      ██
