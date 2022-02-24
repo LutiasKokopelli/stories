@@ -5,6 +5,7 @@
  *    ██  ██  ██ ██   ██ ██ ██  ██ ██     ██      ██   ██    ██    ██      ██    ██ ██    ██ ██   ██ ██ ██           ██
  *    ██      ██ ██   ██ ██ ██   ████      ██████ ██   ██    ██    ███████  ██████   ██████  ██   ██ ██ ███████ ███████
  */
+body {-webkit-text-size-adjust:120%!important;}
 #post_container  { box-sizing:border-box!important; width:94%; position:absolute; margin-left: 3%; margin-right:3%; margin-top:17px; }
 #indexlistutpost { display:none; }
 #indexlistdrpost { display:none; }
