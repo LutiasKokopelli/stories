@@ -21,6 +21,7 @@
  *    ██   ██    ██    ██  ██  ██ ██          ██   ██ ██   ██      ██ ██ ██           ██
  *    ██   ██    ██    ██      ██ ███████     ██████  ██   ██ ███████ ██  ██████ ███████
  */
+* {scrollbar-color:rgb(255,255,255) rgb(0,0,0);scrollbar-width:thin}
 html, body { margin: auto; list-style: none; color: #fff; background-attachment:fixed!important; overflow: auto; background:url("https://lutiaskokopelli.github.io/lwtq/ast/tile_ystar.png"); font-size:20px; }
 h1, h2, h3, h4, h5, h6 { text-align: center; margin: 0 auto; font-family:"Mercy"; }
 p          { padding-left:10px; padding-right:10px; margin-bottom:5px; margin-top:5px; }
