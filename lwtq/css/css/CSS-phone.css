@@ -20,6 +20,6 @@ body {-webkit-text-size-adjust:120%!important;}
 .utpost { box-sizing: border-box!important; clear:both; background-color:#000; border: solid 3px #fff; color:#fff; width:100%; height:100%; margin-top:10px; padding:17px;
         font-family:'Calibri'; margin:auto; margin-bottom:17px; }
 .drpost { box-sizing: border-box!important; clear:both; background-color:#000; color:#fff; width:100%; height:100%; margin-top:10px; padding:17px;
-        font-family:'Calibri'; margin:auto; margin-bottom:17px; border:16px solid transparent; border-image: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_drbox.gif") 16 round;  }
+        font-family:'Calibri'; margin:auto; margin-bottom:17px; border:16px solid transparent; border-image: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_drbox.gif") 16 round;  }
 .dispost {box-sizing: border-box!important; clear: both; color: #fff; width: 100%; height: 100%; margin-bottom:17px; padding: 10px;margin:auto; }
 img.upload  { display:inline; max-height:640px; max-width:80%; border-radius: 15px; }

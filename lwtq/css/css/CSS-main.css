@@ -5,15 +5,15 @@
  *    ██      ██    ██ ██  ██ ██    ██         ██
  *    ██       ██████  ██   ████    ██    ███████
  */
-@font-face { font-family: "DotumChe"; src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleDotumche.ttf")            format("truetype"); }
-@font-face { font-family: "MNC";      src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/Mars_Needs_Cunnilingus.ttf")       format("truetype"); }
-@font-face { font-family: "Mercy";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MERCY.ttf")                        format("truetype"); }
-@font-face { font-family: "mgame";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/determinationmonoweb-webfont.ttf") format("truetype"); }
-@font-face { font-family: "sgame";    src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/determinationsansweb-webfont.ttf") format("truetype"); }
-@font-face { font-family: "sans";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertaleSans.ttf")                format("truetype"); }
-@font-face { font-family: "paps";     src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/UndertalePapyrus.ttf")             format("truetype"); }
-@font-face { font-family: "mfriend";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/MonsterFriendFore.otf")            format("opentype"); }
-@font-face { font-family: "LucidaC";  src: url("https://lutiaskokopelli.github.io/lwtq/css/fonts/LCALLIG.ttf")                      format("truetype"); }
+@font-face {font-family: "DotumChe"; src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/UndertaleDotumche.ttf")            format("truetype"); }
+@font-face {font-family: "MNC";      src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/Mars_Needs_Cunnilingus.ttf")       format("truetype"); }
+@font-face {font-family: "Mercy";    src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/MERCY.ttf")                        format("truetype"); }
+@font-face {font-family: "mgame";    src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/determinationmonoweb-webfont.ttf") format("truetype"); }
+@font-face {font-family: "sgame";    src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/determinationsansweb-webfont.ttf") format("truetype"); }
+@font-face {font-family: "sans";     src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/UndertaleSans.ttf")                format("truetype"); }
+@font-face {font-family: "paps";     src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/UndertalePapyrus.ttf")             format("truetype"); }
+@font-face {font-family: "mfriend";  src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/MonsterFriendFore.otf")            format("opentype"); }
+@font-face {font-family: "LucidaC";  src: url("https://lutiaskokopelli.github.io/stories/lwtq/css/fonts/LCALLIG.ttf")                      format("truetype"); }
 /*
  *    ██   ██ ████████ ███    ███ ██          ██████   █████  ███████ ██  ██████ ███████
  *    ██   ██    ██    ████  ████ ██          ██   ██ ██   ██ ██      ██ ██      ██
@@ -22,7 +22,7 @@
  *    ██   ██    ██    ██      ██ ███████     ██████  ██   ██ ███████ ██  ██████ ███████
  */
 * {scrollbar-color:rgb(255,255,255) rgb(0,0,0);scrollbar-width:thin}
-html, body { margin: auto; list-style: none; color: #fff; background-attachment:fixed!important; overflow: auto; background:url("https://lutiaskokopelli.github.io/lwtq/ast/tile_ystar.png"); font-size:20px; }
+html, body { margin: auto; list-style: none; color: #fff; background-attachment:fixed!important; overflow: auto; background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_ystar.png"); font-size:20px; }
 h1, h2, h3, h4, h5, h6 { text-align: center; margin: 0 auto; font-family:"Mercy"; }
 p          { padding-left:10px; padding-right:10px; margin-bottom:5px; margin-top:5px; }
 a          { text-decoration:none; -webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out; }
@@ -39,10 +39,10 @@ img        { max-width:100%; display:block; margin: auto; }
 .game-btn         { box-sizing:border-box!important; width: 100%; }
 .ogabtn, .wgabtn  { box-sizing:border-box!important; width:90%; height:30%; border-radius:2%; background-color:#000!important; margin:auto; padding:4px; font-family:"Mercy";
                     background-position: 6% 50%!important; background-repeat:no-repeat!important; background-size: auto 50%!important; text-align:right; }
-.ogabtn           { border:2px solid#f68228;color:#f68228; background: url("https://lutiaskokopelli.github.io/lwtq/ast/saveo.png");}
-.ogabtn:hover     { border:2px solid #ffff40; color:#ffff40; background: url("https://lutiaskokopelli.github.io/lwtq/emj/soul.png"); }
-.wgabtn           { border:2px solid#c3c3c3;color:#c3c3c3; background: url("https://lutiaskokopelli.github.io/lwtq/ast/savew.png"); }
-.wgabtn:hover     { border:2px solid #ffffff; color:#ffffff; background: url("https://lutiaskokopelli.github.io/lwtq/emj/soul.png"); }
+.ogabtn           { border:2px solid#f68228;color:#f68228; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/saveo.png");}
+.ogabtn:hover     { border:2px solid #ffff40; color:#ffff40; background: url("https://lutiaskokopelli.github.io/stories/lwtq/emj/soul.png"); }
+.wgabtn           { border:2px solid#c3c3c3;color:#c3c3c3; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/savew.png"); }
+.wgabtn:hover     { border:2px solid #ffffff; color:#ffffff; background: url("https://lutiaskokopelli.github.io/stories/lwtq/emj/soul.png"); }
 /*
  *    ██    ██ ████████     ██████  ██  █████  ██       ██████   ██████  ██    ██ ███████     ██████   ██████  ██   ██
  *    ██    ██    ██        ██   ██ ██ ██   ██ ██      ██    ██ ██       ██    ██ ██          ██   ██ ██    ██  ██ ██
@@ -57,7 +57,7 @@ img        { max-width:100%; display:block; margin: auto; }
 .game-box .contentnar                 { padding:5px; width:100%;height:100%;} .game-box .contentnar td { vertical-align:text-top; }
 
 .dr-box                               { box-sizing: border-box!important; width: 297px; height: 84px; border:16px solid transparent;
-                                        border-image: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_drbox.gif") 16 round; background:#000; margin: 7px auto; }
+                                        border-image: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_drbox.gif") 16 round; background:#000; margin: 7px auto; }
 .dr-box a                             { color:#fff; }
 .dr-box .contentchr                   { padding:5px; width:100%;height:100%!important; }
 .dr-box .contentchr th:nth-child(1)   { width: 56px; vertical-align:middle; } .dr-box .contentchr td { vertical-align:text-top; }
@@ -110,11 +110,11 @@ tag { font-family: "MNC"; color: #edd91a; } tag a { color:#fff; } tag a:hover { 
 .shaktxt { animation: shake 0.1s infinite ; } .bshaktxt { animation: shakebig 0.1s infinite ; } .ocshaktxt { animation: occasionalshake 10s infinite ; }
 @keyframes rainbow_animation { 0%,100% { background-position: 0 0; } 50% { background-position: 100% 0; } }
 @keyframes peblink {
-        0% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
-        25% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
-        50% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:20%; }
-        75% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
-        100% { background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
+        0% { background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
+        25% { background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
+        50% { background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:20%; }
+        75% { background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
+        100% { background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; opacity:100%; }
       }
 /*
  *    ██      ██ ███████ ████████ ███████
@@ -125,27 +125,27 @@ tag { font-family: "MNC"; color: #edd91a; } tag a { color:#fff; } tag a:hover { 
  */
 ul                           { margin:0px; margin-left: 12px; }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-ul.save-point                { list-style-image:url("https://lutiaskokopelli.github.io/lwtq/ast/saveUT.gif"); }
+ul.save-point                { list-style-image:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/saveUT.gif"); }
 ul.save-point a              { color: #c3c3c3; }
-ul.save-point a:hover        { list-style-image:url("https://lutiaskokopelli.github.io/lwtq/ast/saveDR.gif"); color: #edd91a; }
+ul.save-point a:hover        { list-style-image:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/saveDR.gif"); color: #edd91a; }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ul.dlgmdt                    { list-style: "*"; font-family:"mgame"; padding: 0px 0px; letter-spacing:1px; }
 ul.dlgmdt li                 { padding-left: 12px; }
 ul.dlgmdt a:hover            { color:#edd91a; }
 ul.dlgmdt a li:hover         { list-style:none; padding-left:0px; margin-left:-9px;  }
-ul.dlgmdt a li:hover:before  { content:''; padding: 0 0 0 21;background:url("https://lutiaskokopelli.github.io/lwtq/ast/li-soul.png") no-repeat 0 50%; }
+ul.dlgmdt a li:hover:before  { content:''; padding: 0 0 0 21;background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/li-soul.png") no-repeat 0 50%; }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ul.dlgsdt                    { list-style: "*"; font-family:"mgame"; padding: 0px 0px; letter-spacing:1px; }
 ul.dlgsdt li                 { padding-left: 12px; }
 ul.dlgsdt a:hover            { color:#edd91a; }
 ul.dlgsdt a li:hover         { list-style:none; padding-left:0px; margin-left:-9px;  }
-ul.dlgsdt a li:hover:before  { content:''; padding: 0 0 0 21;background:url("https://lutiaskokopelli.github.io/lwtq/ast/li-soul.png") no-repeat 0 50%; }
+ul.dlgsdt a li:hover:before  { content:''; padding: 0 0 0 21;background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/li-soul.png") no-repeat 0 50%; }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ul.dlgsans                   { list-style: "*"; font-family:"sans" ; padding: 0px 0px; letter-spacing:1px; }
 ul.dlgsans li                { padding-left:12px; }
 ul.dlgsans a:hover           { color:#edd91a; }
 ul.dlgsans a li:hover        { list-style:none; padding-left:0px; margin-left:-9px; }
-ul.dlgsans a li:hover:before { content:''; padding: 0 0 0 21;background:url("https://lutiaskokopelli.github.io/lwtq/ast/li-soul.png") no-repeat 0 50%; }
+ul.dlgsans a li:hover:before { content:''; padding: 0 0 0 21;background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/li-soul.png") no-repeat 0 50%; }
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 ul.dlgpaps                   { list-style:none; font-family:"paps"; font-variant:small-caps; padding: 0px 0px; letter-spacing:0px; margin-left: 5px; }
 ul.dlgpaps li                { padding-left:  0px; }
@@ -180,7 +180,7 @@ ul.dlgpaps a:hover           { color:#edd91a; }
     text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
     2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
     -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000;}
-.prompt:hover { list-style-image: url("https://lutiaskokopelli.github.io/lwtq/ast/li-soul.png"); font-family:"Calibri";font-style:italic;font-weight:bold;font-size:16px;}
+.prompt:hover { list-style-image: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/li-soul.png"); font-family:"Calibri";font-style:italic;font-weight:bold;font-size:16px;}
 .prompt a {color:#808080;} .prompt a:hover {color:#fff;}
 
 .spoiler {overflow:hidden;transition: margin 0.2s ease;}
@@ -197,7 +197,7 @@ ul.dlgpaps a:hover           { color:#edd91a; }
 .utpost a { color: #f68228; } .utpost a:hover { color: #ffff40; }
 .drpost a { color: #f68228; } .drpost a:hover { color: #ffff40; }
 .diarypost{ box-sizing: border-box!important; box-shadow: 0 0 3px 3px #000 inset; border-radius:3px; color:#000; width:100%; margin: auto; margin-bottom:17px; font-family:"LucidaC";
-    padding:10px; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_paper.png"); } .diarypost h1 { font-family:"LucidaC"; }
+    padding:10px; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_paper.png"); } .diarypost h1 { font-family:"LucidaC"; }
 .dispost a {color:#00aff4;} .dispost a:hover { font-style:underline; }
 .dispost .link-thumbnail { background-color:#2F3136; border-radius: 5px; padding: 20px; width:80%;}
 
@@ -250,24 +250,24 @@ boxedbluestar, boxedyellowstar, boxedorangetile {
                   text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
                   2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
                   -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
-boxedbluestar   { border:3px solid #0077a2; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_bstar.png"); }
-boxedyellowstar { border:3px solid #ffff00; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_ystar.png"); }
-boxedorangetile { border:3px solid #f68228; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_corridor.png"); }
+boxedbluestar   { border:3px solid #0077a2; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_bstar.png"); }
+boxedyellowstar { border:3px solid #ffff00; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_ystar.png"); }
+boxedorangetile { border:3px solid #f68228; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_corridor.png"); }
 boxgame         { box-sizing: border-box!important; display:block; padding:17px; margin:17px auto; width:80%; background-color: 000; border: 3px solid #fff; font-family: "mgame"; }
-wip             { box-sizing: border-box!important; display:block; padding:17px; margin:20px; color: #aaa; background: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_glowstar.gif");
-                  border:16px solid transparent; border-image: url("https://lutiaskokopelli.github.io/lwtq/ast/tile_drbox.gif") 16 round; /*font-style: italic; */
+wip             { box-sizing: border-box!important; display:block; padding:17px; margin:20px; color: #aaa; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_glowstar.gif");
+                  border:16px solid transparent; border-image: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_drbox.gif") 16 round; /*font-style: italic; */
                   text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
                   2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
                   -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 pebox   { box-sizing: border-box!important; display:block; padding:42px; margin:auto; width:100%; height:200px; margin-top:17px; margin-bottom:17px;
-        background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; font-family:"mgame"; font-size:30px;
+        background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover; font-family:"mgame"; font-size:30px;
         text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
         2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
         -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 peboxblink {color:transparent;box-sizing:border-box!important;display:block;padding:42px;margin:auto;width:100%;height:200px;margin-top:17px;margin-bottom:17px;animation:peblink 7s infinite;
         text-align:center; vertical-align:middle; font-family:"mgame"; font-size:30px;
         -webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out; transition-duration: 0.4s;}
-peboxblink:hover { color: #fff;animation:none; background: url("https://lutiaskokopelli.github.io/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover;
+peboxblink:hover { color: #fff;animation:none; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/echo_flower_banner.png") no-repeat; background-size:cover;
         text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000,
         2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000,
         -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
@@ -276,14 +276,14 @@ peboxblink:hover { color: #fff;animation:none; background: url("https://lutiasko
 .full-screen { box-sizing: border-box!important; position: relative; width: 320px; height:240px; margin: 7px auto; background-color: #000;}
 .boxnorm, .boxboss { box-sizing: border-box!important; position: relative; width: 320px; height:118px!important; display:table; margin:auto; margin-bottom:5px;
                       background-size: auto 100%!important; background-repeat: no-repeat!important; background-position: center!important; text-align: center; }
-.boxnorm{background:url("https://lutiaskokopelli.github.io/lwtq/ast/bg_battle_normal.png")} .boxboss{background:url("https://lutiaskokopelli.github.io/lwtq/ast/bg_battle_boss.png")}
-div#screenbg { box-sizing: border-box!important; width: 320px; height:240px; background:url("https://lutiaskokopelli.github.io/lwtq/ast/starpattern.gif"); opacity:0.01; box-shadow: 0 0 3px 3px #000 inset; }
+.boxnorm{background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/bg_battle_normal.png")} .boxboss{background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/bg_battle_boss.png")}
+div#screenbg { box-sizing: border-box!important; width: 320px; height:240px; background:url("https://lutiaskokopelli.github.io/stories/lwtq/ast/starpattern.gif"); opacity:0.01; box-shadow: 0 0 3px 3px #000 inset; }
 div#screenct { box-sizing: border-box!important; width: 320px; height:240px; position:absolute; top: 0; left:0;}
 .sogabtn, .swgabtn { box-sizing:border-box!important; border-radius:2%; background-color:#000!important; margin:auto; font-family:"Mercy";
                      background-position: 6% 50%!important; background-repeat:no-repeat!important; background-size: auto 50%!important; text-align:right; width:75%; padding:2; }
-.sogabtn           { border:1px solid #f68228; color:#f68228; background: url("https://lutiaskokopelli.github.io/lwtq/ast/saveo.png");}
-.sogabtn:hover     { border:1px solid #ffff40; color:#ffff40; background: url("https://lutiaskokopelli.github.io/lwtq/emj/soul.png"); }
-.swgabtn           { border:1px solid #c3c3c3; color:#c3c3c3; background: url("https://lutiaskokopelli.github.io/lwtq/ast/savew.png"); }
-.swgabtn:hover     { border:1px solid #ffffff; color:#ffffff; background: url("https://lutiaskokopelli.github.io/lwtq/emj/soul.png"); }
+.sogabtn           { border:1px solid #f68228; color:#f68228; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/saveo.png");}
+.sogabtn:hover     { border:1px solid #ffff40; color:#ffff40; background: url("https://lutiaskokopelli.github.io/stories/lwtq/emj/soul.png"); }
+.swgabtn           { border:1px solid #c3c3c3; color:#c3c3c3; background: url("https://lutiaskokopelli.github.io/stories/lwtq/ast/savew.png"); }
+.swgabtn:hover     { border:1px solid #ffffff; color:#ffffff; background: url("https://lutiaskokopelli.github.io/stories/lwtq/emj/soul.png"); }
 .prevnext          { font-family:"mfriend";font-size:24px; text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000, -1px 0px 0 #000, 1px 0px 0 #000, 2px 2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000, 0px 2px 0 #000, 0px -2px 0 #000, -2px 0px 0 #000, 2px 0px 0 #000, 1px 2px 0 #000, -1px 2px 0 #000, 1px -2px 0 #000, -1px -2px 0 #000, 2px 1px 0 #000, -2px 1px 0 #000, 2px -1px 0 #000, -2px -1px 0 #000; }
 .prevnext a        { color:#848484; } .prevnext a:hover { color:#f4d400; }
