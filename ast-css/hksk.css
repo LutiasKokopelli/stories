@@ -1,0 +1,8 @@
+*:target{scroll-margin-top:80px}
+body{background:url('https://static.wikia.nocookie.net/hollowknight/images/e/ec/Menu_Theme_Hidden_Dreams.png/revision/latest?cb=20190520041351')}
+/* <editor-fold>  FONTS                              */
+@font-face{font-family:"notos";src:url("../ast-fnt/utdr/notosrif.otf")format("opentype")}
+@font-face{font-family:"perpe";src:url("../ast-fnt/utdr/perpetua.ttf")format("truetype")}
+@font-face{font-family:"trajb";src:url("../ast-fnt/utdr/trajan-b.otf")format("opentype")}
+@font-face{font-family:"trajr";src:url("../ast-fnt/utdr/trajan-r.otf")format("opentype")}
+/* </editor-fold> */
