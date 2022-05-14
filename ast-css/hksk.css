@@ -2,9 +2,9 @@
     --whi1:255,255,255;--whi2:119,119,119;
     --falseblack:19,22,26;
     --falsewhite:209,209,209;
-    --bgtile:url('https://lutiaskokopelli.github.io/stories/hktfs/bg-tile.png');
-    --fcybox:url('https://lutiaskokopelli.github.io/stories/hktfs/tile-profile.png');
-    --squbox:url('https://lutiaskokopelli.github.io/stories/hktfs/tile-manual.png');
+    --bgtile:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-tile.png');
+    --fcybox:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/tile-profile.png');
+    --squbox:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/tile-manual.png');
     --hrimg:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/hr.png');
     box-sizing:border-box;
 }*:target{scroll-margin-top:80px}
