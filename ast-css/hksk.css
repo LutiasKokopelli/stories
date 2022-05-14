@@ -1,8 +1,45 @@
-*:target{scroll-margin-top:80px}
-body{background:url('https://static.wikia.nocookie.net/hollowknight/images/e/ec/Menu_Theme_Hidden_Dreams.png/revision/latest?cb=20190520041351')}
+*{
+    --whi1:255,255,255;--whi2:119,119,119;
+    --falseblack:19,22,26;
+    --falsewhite:209,209,209;
+    --bgtile:url('../hktfs/ast/bg-tile.png');
+    --fcybox:url('../hktfs/ast/tile-profile.png');
+    --squbox:url('../hktfs/ast/tile-manual.png');
+    --hrimg:url('../hktfs/ast/hr.png');
+    box-sizing:border-box;
+}*:target{scroll-margin-top:80px}
 /* <editor-fold>  FONTS                              */
-@font-face{font-family:"notos";src:url("../ast-fnt/utdr/notosrif.otf")format("opentype")}
-@font-face{font-family:"perpe";src:url("../ast-fnt/utdr/perpetua.ttf")format("truetype")}
-@font-face{font-family:"trajb";src:url("../ast-fnt/utdr/trajan-b.otf")format("opentype")}
-@font-face{font-family:"trajr";src:url("../ast-fnt/utdr/trajan-r.otf")format("opentype")}
+@font-face{font-family:"notose";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/notosrif.otf")format("opentype")}
+@font-face{font-family:"perpet";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/perpetua.ttf")format("truetype")}
+@font-face{font-family:"trajan";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/trajan-b.otf")format("opentype");font-weight:600;font-style:bold}
+@font-face{font-family:"trajan";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/trajan-r.otf")format("opentype");font-weight:400;font-style:normal}
 /* </editor-fold> */
+body{color:rgb(var(--falsewhite));font-family:notose;font-size:17px;
+    background:var(--bgtile)
+    /* background:#000 */
+}
+a{color:rgb(var(--whi1));text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--whi2))}
+img{max-width:100%;height:auto}
+
+#prev{position:fixed;top:50%;left:15%}#next{position:fixed;top:50%;right:15%}
+#cont{position:absolute;margin-top:17px;left:20%;width:60%}
+.page{margin-top:10px;padding:17px;border-radius:3px;
+    /* background:rgba(var(--falseblack),0.64); */
+    background:#000;border:solid 100px transparent;border-image:var(--squbox)270 round;
+}
+#toold,#tonew{right:2%;top:10%;position:fixed;width:16%;padding:12px;text-align:center
+    /* background:rgba(var(--falseblack),0.64);border:solid 42px transparent;border-image:var(--fcybox)460 round; */
+}
+/* Where you can switch between old/new version. */
+
+
+
+/* h1{background:url('../hktfs/ast/bg-dreamnail.png')} */
+
+
+
+
+
+/* Inspiration for more CSS stuff: */
+/* https://the-hollow-knight.tumblr.com/ */
+/* https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/ */
