@@ -2,10 +2,10 @@
     --whi1:255,255,255;--whi2:119,119,119;
     --falseblack:19,22,26;
     --falsewhite:209,209,209;
-    --bgtile:url('../hktfs/ast/bg-tile.png');
-    --fcybox:url('../hktfs/ast/tile-profile.png');
-    --squbox:url('../hktfs/ast/tile-manual.png');
-    --hrimg:url('../hktfs/ast/hr.png');
+    --bgtile:url('https://lutiaskokopelli.github.io/stories/hktfs/bg-tile.png');
+    --fcybox:url('https://lutiaskokopelli.github.io/stories/hktfs/tile-profile.png');
+    --squbox:url('https://lutiaskokopelli.github.io/stories/hktfs/tile-manual.png');
+    --hrimg:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/hr.png');
     box-sizing:border-box;
 }*:target{scroll-margin-top:80px}
 /* <editor-fold>  FONTS                              */
@@ -20,6 +20,7 @@ body{color:rgb(var(--falsewhite));font-family:notose;font-size:17px;
 }
 a{color:rgb(var(--whi1));text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--whi2))}
 img{max-width:100%;height:auto}
+h1{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-dreamnail.png')}
 
 #prev{position:fixed;top:50%;left:15%}#next{position:fixed;top:50%;right:15%}
 #cont{position:absolute;margin-top:17px;left:20%;width:60%}
@@ -30,15 +31,6 @@ img{max-width:100%;height:auto}
 #toold,#tonew{right:2%;top:10%;position:fixed;width:16%;padding:12px;text-align:center
     /* background:rgba(var(--falseblack),0.64);border:solid 42px transparent;border-image:var(--fcybox)460 round; */
 }
-/* Where you can switch between old/new version. */
-
-
-
-/* h1{background:url('../hktfs/ast/bg-dreamnail.png')} */
-
-
-
-
 
 /* Inspiration for more CSS stuff: */
 /* https://the-hollow-knight.tumblr.com/ */
