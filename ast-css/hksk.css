@@ -13,7 +13,13 @@ font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}
 body{color:rgb(var(--falsewhite));font-family:notose;font-size:17px;background:var(--bgtile)}
 a{color:#fff;text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--grey))}img{max-width:100%;height:auto}
 h1{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-dreamnail.png')center no-repeat;background-size:100%}
-#prev{position:fixed;top:50%;left:15%}#next{position:fixed;top:50%;right:15%}#side{right:2%;top:10%;position:fixed;width:16%;padding:12px;text-align:center}
+#prev{position:fixed;top:50%;left:15%}#next{position:fixed;top:50%;right:15%}
+
+#toold{right:2%;top:10%;position:fixed;width:16%;background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/lever-old.png')no-repeat;background-size:100%;height:500px}
+#tonew{right:2%;top:10%;position:fixed;width:16%;background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/lever-new.png')no-repeat;background-size:100%;height:500px}
+
+#side{right:2%;top:10%;position:fixed;width:16%;padding:12px;text-align:center}
+
 #cont{position:absolute;margin-top:17px;left:20%;width:60%}
 .page{margin-top:10px;padding:17px;border-radius:3px;background:#000;border:solid 100px transparent;border-image:var(--squbox)270 round}
 

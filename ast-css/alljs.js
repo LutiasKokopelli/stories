@@ -9,11 +9,17 @@ function SwapDivsWithClick(div1,div2){
         d2.style.display="none"
     }
 }
-function VersionSwap(b2past,b2futu,divpas,divfut){
+function ToOld(b2past,b2futu,divpas,divfut){
     bp=document.getElementById(b2past);
     bf=document.getElementById(b2futu);
     dp=document.getElementById(divpas);
     df=document.getElementById(divfut);
-    if(dp.style.display=="none"){df.style.display="none";dp.style.display="block";bf.style.display="none";bp.style.display="block"}
-    else{df.style.display="block";dp.style.display="none";bf.style.display="block";bp.style.display="none"}
+    df.style.display="none";dp.style.display="block";bf.style.display="none";bp.style.display="block"
+}
+function ToNew(b2past,b2futu,divpas,divfut){
+    bp=document.getElementById(b2past);
+    bf=document.getElementById(b2futu);
+    dp=document.getElementById(divpas);
+    df=document.getElementById(divfut);
+    dp.style.display="none";df.style.display="block";bp.style.display="none";bf.style.display="block"
 }
