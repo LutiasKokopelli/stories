@@ -3,7 +3,7 @@
 --fcybox:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/tile-profile.png');
 --squbox:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/tile-manual.png');
 --hrimg:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/hr.png');
-box-sizing:border-box}*:target{scroll-margin-top:80px}
+font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}
 /* <editor-fold>  FONTS                              */
 @font-face{font-family:"notose";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/notosrif.otf")format("opentype")}
 @font-face{font-family:"perpet";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/perpetua.ttf")format("truetype")}
