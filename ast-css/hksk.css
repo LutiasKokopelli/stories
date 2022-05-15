@@ -20,8 +20,8 @@ body{color:rgb(var(--falsewhite));font-family:notose;font-size:17px;
 }
 a{color:rgb(var(--whi1));text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--whi2))}
 img{max-width:100%;height:auto}
-h1{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-dreamnail.png')center no-repeat
-/* ;background-size:cover;background-repeat:no-repeat;background-position:center center */
+h1{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-dreamnail.png')center no-repeat;background-size:cover
+/* background-repeat:no-repeat;background-position:center center */
 }
 
 #prev{position:fixed;top:50%;left:15%}#next{position:fixed;top:50%;right:15%}
