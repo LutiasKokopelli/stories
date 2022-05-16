@@ -1,5 +1,4 @@
 *{scrollbar-color:rgb(#fff)rgb(#000);scrollbar-width:auto}*:target{scroll-margin-top:80px}
 body{background:url('https://img.itch.zone/aW1nLzU2ODAxNTMucG5n/original/BMA3Vt.png')}
-table{width:1200px;margin:120px auto}
-td{padding-left:5%;padding-right:5%}
-img{max-width:100%}
+div,table{width:100%;margin:120px auto;text-align:center}td{padding-left:5%;padding-right:5%}img{max-width:100%}
+.link{display:inline-block;border:3px solid #fff;border-radius:7px;font-family:Cambria;padding:7px;background:rgba(255,255,255,0.9);color:#000;margin:7px;text-decoration:none;font-weight:800;font-variant:small-caps}
