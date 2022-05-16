@@ -4,22 +4,17 @@
 --squbox:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/tile-manual.png');
 --hrimg:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/hr.png');
 font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}
-/* <editor-fold>  FONTS                              */
 @font-face{font-family:"notose";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/notosrif.otf")format("opentype")}
 @font-face{font-family:"perpet";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/perpetua.ttf")format("truetype")}
 @font-face{font-family:"trajan";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/trajan-b.otf")format("opentype");font-weight:600;font-style:bold}
 @font-face{font-family:"trajan";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/trajan-r.otf")format("opentype");font-weight:400;font-style:normal}
-/* </editor-fold> */
-body{color:rgb(var(--falsewhite));font-family:notose;font-size:17px;background:var(--bgtile)}
+body{color:rgb(var(--falsewhite));font-family:perpet;font-size:17px;background:var(--bgtile)}
 a{color:#fff;text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--grey))}img{max-width:100%;height:auto}
 h1{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-dreamnail.png')center no-repeat;background-size:100%}
+.olne{right:2%;top:10%;position:fixed;width:16vw;height:17vw}
+#toold{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/lever-old.png')no-repeat;background-size:100%}
+#tonew{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/lever-new.png')no-repeat;background-size:100%}
 #prev{position:fixed;top:50%;left:15%}#next{position:fixed;top:50%;right:15%}
-
-#toold{right:2%;top:10%;position:fixed;width:16%;background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/lever-old.png')no-repeat;background-size:100%;height:500px}
-#tonew{right:2%;top:10%;position:fixed;width:16%;background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/lever-new.png')no-repeat;background-size:100%;height:500px}
-
-#side{right:2%;top:10%;position:fixed;width:16%;padding:12px;text-align:center}
-
 #cont{position:absolute;margin-top:17px;left:20%;width:60%}
 .page{margin-top:10px;padding:17px;border-radius:3px;background:#000;border:solid 100px transparent;border-image:var(--squbox)270 round}
 
