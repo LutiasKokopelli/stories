@@ -1,8 +1,5 @@
 *{scrollbar-color:rgb(#fff)rgb(#000);scrollbar-width:auto}*:target{scroll-margin-top:80px}
-@media only screen and (max-width:991px){
-  *{--widthref:100px}
-}
-@media only screen and (min-width:991px){
-  *{--widthref:250px}
-}
 body{background:url('https://img.itch.zone/aW1nLzU2ODAxNTMucG5n/original/BMA3Vt.png')}
+table{width:1200px;margin:120px auto}
+td{padding-left:5%;padding-right:5%}
+img{max-width:100%}
