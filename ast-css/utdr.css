@@ -28,7 +28,7 @@ scrollbar-color:#fff#000;scrollbar-width:auto}*:target{scroll-margin-top:80px}
 /* </editor-fold> */
 /* <editor-fold>  SCREEN SIZE DIFFERENCES            */
 @media only screen and (max-width:640px){body{-webkit-text-size-adjust:120%!important}#post_container{width:94%;margin-left:3%;margin-right:3%}}
-@media only screen and (min-width:641px) and (max-width:1200px){#post_container{max-width:640px;margin:auto}}
+@media only screen and (min-width:641px) and (max-width:1200px){#post_container{width:640px;margin:auto}}
 @media only screen and (max-width:1200px){#indexlistutpost,#indexlistdrpost{display:none}img.upload{max-width:80%}.utpost,.drpost,.dispost{width:100%}}
 @media only screen and (min-width:1201px) and (max-width:1650px){#post_container{left:450px}#indexlistdrpost,#indexlistutpost{left:20px}}
 @media only screen and (min-width:1201px){#phonindex1,#phonindex2{display:none}img.upload{max-width:420px}#post_container,.utpost,.drpost,.dispost{width:640px}
