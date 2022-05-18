@@ -9,7 +9,7 @@ font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}v{displ
 @font-face{font-family:"perpet";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/perpetua.ttf")format("truetype")}
 @font-face{font-family:"trajan";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/trajan-b.otf")format("opentype");font-weight:600;font-style:bold}
 @font-face{font-family:"trajan";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/hksk/trajan-r.otf")format("opentype");font-weight:400;font-style:normal}
-body{color:rgb(var(--falsewhite));font-family:perpet;font-size:17px;background:var(--bgtile)}
+body{color:rgb(var(--falsewhite));font-family:perpet;font-size:17px;background:var(--bgtile);background-attachment:fixed}
 a{color:#fff;text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--grey))}img{max-width:100%;height:auto}
 h1{background:url('https://lutiaskokopelli.github.io/stories/hktfs/ast/bg-dreamnail.png')center no-repeat;background-size:100%}
 .olne{right:2%;top:10%;position:fixed;width:16vw;height:17vw}
