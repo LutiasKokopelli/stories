@@ -1,4 +1,4 @@
-function SwapDivsWithClick(div1,div2){
+function SwapDiv(div1,div2){
     d1=document.getElementById(div1);
     d2=document.getElementById(div2);
     if(d2.style.display=="none"){
