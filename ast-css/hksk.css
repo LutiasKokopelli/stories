@@ -1,15 +1,14 @@
 *{--grey:119,119,119;--falseblack:19,22,26;--falsewhite:209,209,209;
---bgtile:url('../hktfs/ast/bg-tile.png');
---squbox:url('../hktfs/ast/tile-manual.png');--hrimg:url('../hktfs/ast/hr.png');--pnimg:url('../hktfs/ast/rt_lt_arrow.png');
+--bgtile:url('../hktfs/ast/bg-tile.png');--squbox:url('../hktfs/ast/tile-manual.png');--hrimg:url('../hktfs/ast/hr.png');--pnimg:url('../hktfs/ast/rt_lt_arrow.png');
 --tunof:url('../hktfs/ast/tuner-off.png');--tunon:url('../hktfs/ast/tuner-on.png');
 text-shadow:1px 1px 0#000,-1px 1px 0#000,1px -1px 0#000,-1px -1px 0#000,0px 1px 0#000,0px -1px 0#000,-1px 0px 0#000,
 1px 0px 0#000,2px 2px 0#000,-2px 2px 0#000,2px -2px 0#000,-2px -2px 0#000,0px 2px 0#000,0px -2px 0#000,-2px 0px 0#000,2px 0px 0#000,
 1px 2px 0#000,-1px 2px 0#000,1px -2px 0#000,-1px -2px 0#000,2px 1px 0#000,-2px 1px 0#000,2px -1px 0#000,-2px -1px 0#000;
 font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}v{display:block;height:100px}
-@font-face{font-family:'notose';src:url("../ast-fnt/hksk/notosrif.otf")format('opentype')}
-@font-face{font-family:'perpet';src:url("../ast-fnt/hksk/perpetua.ttf")format('truetype')}
-@font-face{font-family:'trajan';src:url("../ast-fnt/hksk/trajan-b.otf")format('opentype');font-weight:600;font-style:bold}
-@font-face{font-family:'trajan';src:url("../ast-fnt/hksk/trajan-r.otf")format('opentype');font-weight:400;font-style:normal}
+@font-face{font-family:'notose';src:url('../ast-fnt/hksk/notosrif.otf')format('opentype')}
+@font-face{font-family:'perpet';src:url('../ast-fnt/hksk/perpetua.ttf')format('truetype')}
+@font-face{font-family:'trajan';src:url('../ast-fnt/hksk/trajan-b.otf')format('opentype');font-weight:600;font-style:bold}
+@font-face{font-family:'trajan';src:url('../ast-fnt/hksk/trajan-r.otf')format('opentype');font-weight:400;font-style:normal}
 body{color:rgb(var(--falsewhite));margin:0;font-family:perpet;font-size:17px}
 a{color:#fff;text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--grey))}img{max-width:100%;height:auto;max-height:100%}table{width:100%}
 h1{background:url('../hktfs/ast/bg-dreamnail.png')center no-repeat;padding:50px;text-align:center;font-family:trajan;margin:0 auto}
