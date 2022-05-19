@@ -4,8 +4,7 @@ IMPORTANT NOTE:Once you are done,go experiment with everything that you commente
 /* <editor-fold>  VARIABLES                          */
 *{
 /* COLOR VARIABLES */
---dishr:66,69,73;
---oga:246,130,40;--yga:237,217,26;
+--dishr:66,69,73;--oga:246,130,40;--yga:237,217,26;
 /* LINK VARIABLES */
 --ystar:url('https://lutiaskokopelli.github.io/stories/lwtq/ast/tile_ystar.png');
 --saveo:url('https://lutiaskokopelli.github.io/stories/lwtq/ast/saveo.png');
@@ -26,22 +25,22 @@ scrollbar-color:#fff#000;scrollbar-width:auto}*:target{scroll-margin-top:80px}
 @font-face{font-family:"utp";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/utdr/utp.ttf")format("truetype")}
 @font-face{font-family:"uts";src:url("https://lutiaskokopelli.github.io/stories/ast-fnt/utdr/uts.ttf")format("truetype")}
 /* </editor-fold> */
+#post_container,.utpost,.drpost,.dispost,.game-btn,.ogabtn,.wgabtn,.game-box,.dr-box,.diarypost,.distitle,.distitlend,.disheader,.disut,.disdm,#sginfo,.full-screen,.boxnorm,.boxboss,div#screenbg,div#screenct,.sogabtn,.swgabtn,boxedbluestar,boxedyellowstar,boxedorangetile,boxgame,wip,pebox,peboxblink{box-sizing:border-box!important}
+img,nar,dad,dlg,void,.drpdwn a,.drpdwn:hover .drpdwn-ctt,boxedbluestar,boxedyellowstar,boxedorangetile,boxgame,wip,pebox,peboxblink{display:block}
+.drpdwn a,.disut pfp,.disut li.sts,boxedbluestar,boxedyellowstar,boxedorangetile,wip,pebox,peboxblink:hover,.prevnext{
+    text-shadow:1px 1px 0#000,-1px 1px 0#000,1px -1px 0#000,-1px -1px 0#000,0px 1px 0#000,0px -1px 0#000,-1px 0px 0#000,
+    1px 0px 0#000,2px 2px 0#000,-2px 2px 0#000,2px -2px 0#000,-2px -2px 0#000,0px 2px 0#000,0px -2px 0#000,-2px 0px 0#000,2px 0px 0#000,
+    1px 2px 0#000,-1px 2px 0#000,1px -2px 0#000,-1px -2px 0#000,2px 1px 0#000,-2px 1px 0#000,2px -1px 0#000,-2px -1px 0#000
+}
 /* <editor-fold>  SCREEN SIZE DIFFERENCES            */
 @media only screen and (max-width:640px){body{-webkit-text-size-adjust:120%!important}#post_container{width:94%;margin-left:3%;margin-right:3%}}
-@media only screen and (min-width:641px) and (max-width:1200px){#post_container{width:640px;margin:auto}}
+@media only screen and (min-width:641px) and (max-width:1200px){#post_container{width:80%;margin-left:10%;margin-right:10%;max-width:640px!important}}
 @media only screen and (max-width:1200px){#indexlistutpost,#indexlistdrpost{display:none}img.upload{max-width:80%}.utpost,.drpost,.dispost{width:100%}}
 @media only screen and (min-width:1201px) and (max-width:1650px){#post_container{left:450px}#indexlistdrpost,#indexlistutpost{left:20px}}
 @media only screen and (min-width:1201px){#phonindex1,#phonindex2{display:none}img.upload{max-width:420px}#post_container,.utpost,.drpost,.dispost{width:640px}
 #indexlistutpost,#indexlistdrpost{box-sizing:border-box!important;position:fixed;width:400px;top:15%;background:#000;padding:12px}}
 @media only screen and (min-width:1651px){#post_container{left:500px}#indexlistutpost,#indexlistdrpost{left:50px}}
 /* </editor-fold> */
-#post_container,.utpost,.drpost,.dispost,.game-btn,.ogabtn,.wgabtn,.game-box,.dr-box,.diarypost,.distitle,.distitlend,.disheader,.disut,.disdm,#sginfo,.full-screen,.boxnorm,.boxboss,div#screenbg,div#screenct,.sogabtn,.swgabtn,boxedbluestar,boxedyellowstar,boxedorangetile,boxgame,wip,pebox,peboxblink{box-sizing:border-box!important}
-img,nar,dad,dlg,void,.drpdwn a,.drpdwn:hover .drpdwn-ctt,boxedbluestar,boxedyellowstar,boxedorangetile,boxgame,wip,pebox,peboxblink{display:block}
-.drpdwn a,.disut pfp,.disut li.sts,boxedbluestar,boxedyellowstar,boxedorangetile,wip,pebox,peboxblink:hover,.prevnext{
-text-shadow:1px 1px 0#000,-1px 1px 0#000,1px -1px 0#000,-1px -1px 0#000,0px 1px 0#000,0px -1px 0#000,-1px 0px 0#000,
-1px 0px 0#000,2px 2px 0#000,-2px 2px 0#000,2px -2px 0#000,-2px -2px 0#000,0px 2px 0#000,0px -2px 0#000,-2px 0px 0#000,2px 0px 0#000,
-1px 2px 0#000,-1px 2px 0#000,1px -2px 0#000,-1px -2px 0#000,2px 1px 0#000,-2px 1px 0#000,2px -1px 0#000,-2px -1px 0#000
-}
 
 mgame,#indexlistutpost,#indexlistdrpost,.dlgmdt,.drpdwn-ctt,.disut pfp,.disut li.sts,.utpost pfp,.drpost pfp,boxgame,pebox,peboxblink{font-family:dtm}
 tag,.ttable,.ltable td:nth-child(1),.disut dtime,#sginfo{font-family:mnc}
