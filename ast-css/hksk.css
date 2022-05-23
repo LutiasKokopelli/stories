@@ -27,8 +27,23 @@ table.invt td{height:64px}table.invt img{display:block;margin:auto;height:100%}t
 .tool:hover{background:url('../hktfs/ast/tuner-on.png') no-repeat center center;transform:rotate(-90deg);background-size:100%}
 .tone:hover{background:url('../hktfs/ast/tuner-on.png') no-repeat center center;transform:rotate(90deg);background-size:100%}
 
-@media only screen and (max-width:1600px){body{background:#000}#wrap{width:100%}#prev,#next,#toold,#tonew{display:none}}
-@media only screen and (min-width:1601px){body{background:var(--bgtile);background-attachment:fixed}#wrap{width:1080px;left:50%;margin-left:-540px}.page{border:solid 100px transparent;border-image:var(--squbox)270 round}.invi{display:none}}
+@media only screen and (max-width:1200px){
+  body{background:#000}
+  #wrap{width:100%}
+  #prev,#next,#toold,#tonew{display:none}
+}
+@media only screen and (min-width:1201px) and (max-width:1700px){
+  body{background:var(--bgtile);background-attachment:fixed}
+  #wrap{width:80%;left:50%;margin-left:-40%}
+  .page{border:solid 100px transparent;border-image:var(--squbox)270 round}
+  #prev,#next,#toold,#tonew{display:none}
+}
+@media only screen and (min-width:1701px){
+  body{background:var(--bgtile);background-attachment:fixed}
+  #wrap{width:1080px;left:50%;margin-left:-540px}
+  .page{border:solid 100px transparent;border-image:var(--squbox)270 round}
+  .invi{display:none}
+}
 
 /* Inspiration for more CSS stuff: */
 /* https://the-hollow-knight.tumblr.com/ */
