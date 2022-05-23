@@ -12,12 +12,9 @@ font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}v{displ
 body{color:rgb(var(--falsewhite));margin:0;font-family:perpet;font-size:17px}
 a{color:#fff;text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--grey))}img{max-width:100%;height:auto;max-height:100%}table{width:100%}
 h1{background:url('../hktfs/ast/bg-dreamnail.png')center no-repeat;padding:50px;text-align:center;font-family:trajan;margin:0 auto}
-.olne{right:2%;top:10%;position:fixed;width:16vw;height:17vw}
-#toold{background:url('../hktfs/ast/lever-old.png')no-repeat;background-size:100%}
-#tonew{background:url('../hktfs/ast/lever-new.png')no-repeat;background-size:100%}
-#prev{position:fixed;top:50%;width:50px;height:150px;background:var(--pnimg)no-repeat center center;left:15%;transform:rotate(180deg)}
-#next{position:fixed;top:50%;width:50px;height:150px;background:var(--pnimg)no-repeat center center;right:15%}
-#wrap{position:absolute;margin-top:17px}
+#wrap{position:absolute;margin-top:17px}.olne{right:2%;top:10%;position:fixed;width:16vw;height:17vw}
+#toold,#tonew{background-size:100%}#toold{background:url('../hktfs/ast/lever-old.png')no-repeat}#tonew{background:url('../hktfs/ast/lever-new.png')no-repeat}
+#prev,#next{position:fixed;top:50%;width:50px;height:150px;background:var(--pnimg)no-repeat center center}#prev{left:15%;transform:rotate(180deg)}#next{right:15%}
 .page{background:#000;width:100%}.plist img{max-width:19%;display:inline-block}
 div.invi{position:fixed;bottom:0;width:100%;height:100px;background:rgba(var(--falseblack),0.8);border:solid 5px rgba(var(--falseblack),.2)}
 
@@ -27,9 +24,9 @@ table.invt td{height:64px}table.invt img{display:block;margin:auto;height:100%}t
 .tool:hover{background:url('../hktfs/ast/tuner-on.png') no-repeat center center;transform:rotate(-90deg);background-size:100%}
 .tone:hover{background:url('../hktfs/ast/tuner-on.png') no-repeat center center;transform:rotate(90deg);background-size:100%}
 
-@media only screen and (max-width:1200px){body{background:#000}#wrap{width:100%}}
+@media only screen and (max-width:1080px){body{background:#000}#wrap{width:100%}}
 @media only screen and (max-width:1700px){#prev,#next,#toold,#tonew{display:none}}
-@media only screen and (min-width:1201px){body{background:var(--bgtile);background-attachment:fixed}#wrap{width:80%;max-width:1080px;left:50%;margin-left:-40%}.page{border:solid 100px transparent;border-image:var(--squbox)270 round}}
+@media only screen and (min-width:1081px){body{background:var(--bgtile);background-attachment:fixed}#wrap{width:min(80%,1080px);left:50%;margin-left:max(-40%,-540px)}.page{border:solid 100px transparent;border-image:var(--squbox)270 round}}
 @media only screen and (min-width:1701px){.invi{display:none}}
 
 /* Inspiration for more CSS stuff: */
