@@ -26,7 +26,7 @@ table.invt td{height:64px}table.invt img{display:block;margin:auto;height:100%}t
 
 @media only screen and (max-width:1080px){body{background:#000}#wrap{width:100%}}
 @media only screen and (max-width:1700px){#prev,#next,#toold,#tonew,.olne{display:none}}
-@media only screen and (min-width:1081px){body{background:var(--bgtile);background-attachment:fixed}#wrap{width:min(80%,1080px);left:50%;margin-left:max(-40%,-540px)}.page{border:solid 100px transparent;border-image:var(--squbox)270 round}}
+@media only screen and (min-width:1081px){body{background:var(--bgtile);background-attachment:fixed}#wrap{width:1080px;left:50%;margin-left:max(-40%,-540px)}.page{border:solid 100px transparent;border-image:var(--squbox)270 round}}
 @media only screen and (min-width:1701px){.invi{display:none}}
 
 /* Inspiration for more CSS stuff: */
