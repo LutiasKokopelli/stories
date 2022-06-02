@@ -1,34 +1,31 @@
 *{--grey:119,119,119;--falseblack:19,22,26;--falsewhite:209,209,209;
---bgtile:url('../hktfs/ast/bg-tile.png');--squbox:url('../hktfs/ast/tile-manual.png');--hrimg:url('../hktfs/ast/hr.png');--pnimg:url('../hktfs/ast/rt_lt_arrow.png');
---tunof:url('../hktfs/ast/tuner-off.png');--tunon:url('../hktfs/ast/tuner-on.png');
+--bgtile:url(../hktfs/ast/bg-tile.png);--squbox:url(../hktfs/ast/tile-manual.png);--hrimg:url(../hktfs/ast/hr.png);--pnimg:url(../hktfs/ast/rt_lt_arrow.png);
+--tunof:url(../hktfs/ast/tuner-off.png);--tunon:url(../hktfs/ast/tuner-on.png);
 text-shadow:1px 1px 0#000,-1px 1px 0#000,1px -1px 0#000,-1px -1px 0#000,0px 1px 0#000,0px -1px 0#000,-1px 0px 0#000,
 1px 0px 0#000,2px 2px 0#000,-2px 2px 0#000,2px -2px 0#000,-2px -2px 0#000,0px 2px 0#000,0px -2px 0#000,-2px 0px 0#000,2px 0px 0#000,
 1px 2px 0#000,-1px 2px 0#000,1px -2px 0#000,-1px -2px 0#000,2px 1px 0#000,-2px 1px 0#000,2px -1px 0#000,-2px -1px 0#000;
 font-weight:normal;box-sizing:border-box}*:target{scroll-margin-top:80px}v{display:block;height:100px}
-@font-face{font-family:'notose';src:url('../ast-fnt/hksk/notosrif.otf')format('opentype')}
-@font-face{font-family:'perpet';src:url('../ast-fnt/hksk/perpetua.ttf')format('truetype')}
-@font-face{font-family:'trajan';src:url('../ast-fnt/hksk/trajan-b.otf')format('opentype');font-weight:600;font-style:bold}
-@font-face{font-family:'trajan';src:url('../ast-fnt/hksk/trajan-r.otf')format('opentype');font-weight:400;font-style:normal}
+@font-face{font-family:notose;src:url(../ast-fnt/hksk/notosrif.otf)format('opentype')}
+@font-face{font-family:perpet;src:url(../ast-fnt/hksk/perpetua.ttf)format('truetype')}
+@font-face{font-family:trajan;src:url(../ast-fnt/hksk/trajan-b.otf)format('opentype');font-weight:600;font-style:bold}
+@font-face{font-family:trajan;src:url(../ast-fnt/hksk/trajan-r.otf)format('opentype');font-weight:400;font-style:normal}
 body{color:rgb(var(--falsewhite));margin:0;font-family:perpet;font-size:17px}
 a{color:#fff;text-decoration:none;transition:0.2s}a:hover{color:rgb(var(--grey))}img{max-width:100%;height:auto;max-height:100%}table{width:100%}
-h1{background:url('../hktfs/ast/bg-dreamnail.png')center no-repeat;padding:50px;text-align:center;font-family:trajan;margin:0 auto}
+h1{background:url(../hktfs/ast/bg-dreamnail.png)center no-repeat;padding:50px;text-align:center;font-family:trajan;margin:0 auto}
 #wrap{position:absolute;margin-top:17px}.olne{right:2%;top:10%;position:fixed;width:16vw;height:17vw}
-#toold{background:url('../hktfs/ast/lever-old.png')no-repeat}#tonew{background:url('../hktfs/ast/lever-new.png')no-repeat}#toold,#tonew{background-size:100%}
+#toold{background:url(../hktfs/ast/lever-old.png)no-repeat}#tonew{background:url(../hktfs/ast/lever-new.png)no-repeat}#toold,#tonew{background-size:100%}
 #prev,#next{position:fixed;top:50%;width:50px;height:150px;background:var(--pnimg)no-repeat center center}#prev{left:15%;transform:rotate(180deg)}#next{right:15%}
 .page{background:#000;width:100%}.plist img{max-width:19%;display:inline-block}
 div.invi{position:fixed;bottom:0;width:100%;height:100px;background:rgba(var(--falseblack),0.8);border:solid 5px rgba(var(--falseblack),.2)}
-
 table.invt td{height:64px}table.invt img{display:block;margin:auto;height:100%}table.invt a{display:block}a.tool,a.tone{width:52px;height:100%;margin:auto}
-.tool{background:url('../hktfs/ast/tuner-off.png') no-repeat center center;transform:rotate(-90deg);background-size:100%}
-.tone{background:url('../hktfs/ast/tuner-off.png') no-repeat center center;transform:rotate(90deg);background-size:100%}
-.tool:hover{background:url('../hktfs/ast/tuner-on.png') no-repeat center center;transform:rotate(-90deg);background-size:100%}
-.tone:hover{background:url('../hktfs/ast/tuner-on.png') no-repeat center center;transform:rotate(90deg);background-size:100%}
-
+.tool{background:url(../hktfs/ast/tuner-off.png) no-repeat center center;transform:rotate(-90deg);background-size:100%}
+.tone{background:url(../hktfs/ast/tuner-off.png) no-repeat center center;transform:rotate(90deg);background-size:100%}
+.tool:hover{background:url(../hktfs/ast/tuner-on.png) no-repeat center center;transform:rotate(-90deg);background-size:100%}
+.tone:hover{background:url(../hktfs/ast/tuner-on.png) no-repeat center center;transform:rotate(90deg);background-size:100%}
 @media only screen and (max-width:1080px){body{background:#000}#wrap{width:100%}}
 @media only screen and (max-width:1700px){#prev,#next,#toold,#tonew,.olne{display:none}}
 @media only screen and (min-width:1081px){body{background:var(--bgtile);background-attachment:fixed}#wrap{width:1080px;left:50%;margin-left:max(-40%,-540px)}.page{border:solid 100px transparent;border-image:var(--squbox)270 round}}
 @media only screen and (min-width:1701px){.invi{display:none}}
-
 /* Inspiration for more CSS stuff: */
 /* https://the-hollow-knight.tumblr.com/ */
 /* https://www.geeksforgeeks.org/how-to-make-horizontal-line-with-words-in-the-middle-using-css/ */
