@@ -21,13 +21,14 @@ body{background:var(--ystar);background-attachment:fixed;color:#fff;font-size:20
 h1,h2,h3,h4,h5,h6{text-align:center;margin:0 auto;font-family:utd}
 a{text-decoration:none;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out}
 hr{border:0;height:1px;background:linear-gradient(to right,rgba(var(--chco),0),rgba(var(--chco),0.75),rgba(var(--chco),0))}
-#wrap{position:absolute;margin-top:17px;left:50%}
+#wrap{position:absolute;left:50%}
 
-@media (orientation:portrait){body{font-size:3.0625vw}
-#wrap{width:98vw;margin-left:-49vw}
+@media(orientation:portrait){body{font-size:3.0625vw}
+#wrap{width:98vw;margin-left:-49vw;margin-top:98vw}
+#indx{position:fixed;top:0;left:50%}
 }
-@media (orientation:landscape){body{font-size:20px}
-#wrap{width:640px;margin-left:-320px}
+@media(orientation:landscape){body{font-size:20px}
+#wrap{width:640px;margin-left:-320px;margin-top:17px}
 }
 
 .utp,.drp,.dcp{width:100%}.utp,.drp{margin-top:10px;padding:17px;background:#000}
@@ -35,10 +36,10 @@ hr{border:0;height:1px;background:linear-gradient(to right,rgba(var(--chco),0),r
 
 a{}
 
-html,body{color:#fff;background:var(--ystar);background-attachment:fixed!important;
-    overflow:auto;
-    margin:auto;
-    list-style:none;
+html,body{color:#fff;background:var(--ystar);background-attachment:fixed;
+    /* overflow:auto; */
+    /* margin:auto; */
+    /* list-style:none; */
 }
 
 
