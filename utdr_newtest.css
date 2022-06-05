@@ -13,7 +13,7 @@ scrollbar-color:rgb(var(--chco))#000;scrollbar-width:auto;box-sizing:border-box;
 @font-face{font-family:mnc;src:url(ast-fnt/utdr/mnc.ttf)format('truetype')}@font-face{font-family:utd;src:url(ast-fnt/utdr/utd.ttf)format('truetype')}
 @font-face{font-family:utp;src:url(ast-fnt/utdr/utp.ttf)format('truetype')}@font-face{font-family:uts;src:url(ast-fnt/utdr/uts.ttf)format('truetype')}
 @media(orientation:portrait){
-    *{--u:0.2vw}
+    *{--u:0.14vw}
     /* *{--u:0.125vw} */
 #wrap{margin-top:48vw}#indxut,#indxdr{position:absolute;margin-top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}}
 @media(orientation:landscape){*{--u:1px}#wrap{margin-top:17px}#indxut,#indxdr{position:fixed;top:17%;left:2vw;width:400px;padding:12px}}
