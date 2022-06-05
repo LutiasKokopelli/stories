@@ -5,19 +5,20 @@ scrollbar-color:rgb(var(--chco))#000;scrollbar-width:auto;box-sizing:border-box;
 text-shadow:1px 1px 0#000,-1px 1px 0#000,1px -1px 0#000,-1px -1px 0#000,0px 1px 0#000,0px -1px 0#000,-1px 0px 0#000,
 1px 0px 0#000,2px 2px 0#000,-2px 2px 0#000,2px -2px 0#000,-2px -2px 0#000,0px 2px 0#000,0px -2px 0#000,-2px 0px 0#000,2px 0px 0#000,
 1px 2px 0#000,-1px 2px 0#000,1px -2px 0#000,-1px -2px 0#000,2px 1px 0#000,-2px 1px 0#000,2px -1px 0#000,-2px -1px 0#000}
-v{display:block}@font-face{font-family:dtm;src:url(ast-fnt/utdr/dtm.ttf)format('truetype')}
+v{display:block;height:calc(12*var(--u))}@font-face{font-family:dtm;src:url(ast-fnt/utdr/dtm.ttf)format('truetype')}
 @font-face{font-family:dts;src:url(ast-fnt/utdr/dts.ttf)format('truetype')}@font-face{font-family:luc;src:url(ast-fnt/utdr/luc.ttf)format('truetype')}
 @font-face{font-family:mcy;src:url(ast-fnt/utdr/mcy.ttf)format('truetype')}@font-face{font-family:mfr;src:url(ast-fnt/utdr/mfr.otf)format('opentype')}
 @font-face{font-family:mnc;src:url(ast-fnt/utdr/mnc.ttf)format('truetype')}@font-face{font-family:utd;src:url(ast-fnt/utdr/utd.ttf)format('truetype')}
 @font-face{font-family:utp;src:url(ast-fnt/utdr/utp.ttf)format('truetype')}@font-face{font-family:uts;src:url(ast-fnt/utdr/uts.ttf)format('truetype')}
-body{background:var(--ystar);background-attachment:fixed;color:#fff;margin:auto;font-family:Calibri}
+body{background:var(--ystar);background-attachment:fixed;color:#fff;margin:auto;font-family:Calibri;font-size:calc(20*var(--u))}
 ul{margin:0}
 h1,h2,h3,h4,h5,h6{text-align:center;margin:0 auto;font-weight:normal}img{max-width:100%;margin:auto}
 a{text-decoration:none;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out}
-hr{border:0;background:linear-gradient(to right,rgba(var(--chco),0),rgba(var(--chco),0.75),rgba(var(--chco),0))}
-#wrap{position:absolute;left:50%;width:calc(640*var(--u));margin-left:calc(-320*var(--u));margin-top:calc(17*var(--u));background:#000}
-#indxut,#indxdr{position:fixed;background:#000;font-family:mcy}
-#btlescr{position:relative;background:#000}#boxboss{display:table-cell;vertical-align:middle;background:url(lwtq/ast/bg_battle_boss.png);position:relative;background-size:auto 100%;background-repeat:no-repeat;background-position:center;text-align:center}#boxboss img{display:inline-block}
+hr{border:0;background:linear-gradient(to right,rgba(var(--chco),0),rgba(var(--chco),0.75),rgba(var(--chco),0));height:var(--u)}
+#wrap{position:absolute;left:50%;width:calc(640*var(--u));margin-left:calc(-320*var(--u))/*;background:#000*/}
+#indxut,#indxdr{background:#000;font-family:mcy}
+#btlescr{position:relative;background:#000;width:calc(320*var(--u));height:calc(240*var(--u));margin:calc(7*var(--u)) auto}
+#boxboss{display:table-cell;vertical-align:middle;background:url(lwtq/ast/bg_battle_boss.png);position:relative;background-size:auto 100%;background-repeat:no-repeat;background-position:center;text-align:center;width:calc(320*var(--u));height:calc(118*var(--u))}#boxboss img{display:inline-block;max-height:calc(100*var(--u))}
 
 
 
@@ -31,12 +32,11 @@ ul.dlgpaps{list-style:none;font-family:utp;font-variant:small-caps;padding:0;let
 
 
 *:target{scroll-margin-top:calc(80*var(--u))}
-body{font-size:calc(20*var(--u))}v{height:calc(12*var(--u))}hr{height:var(--u)}
+
 
 
 
 p{padding:0 calc(10*var(--u));margin:calc(5*var(--u))0}
-#btlescr{width:calc(320*var(--u));height:calc(240*var(--u));margin:calc(7*var(--u)) auto}#boxboss{width:calc(320*var(--u));height:calc(118*var(--u))}#boxboss img{max-height:calc(100*var(--u))}
 .game-box{height:calc(76*var(--u));width:calc(288*var(--u));border:calc(3*var(--u)) solid #fff;
     /* margin:calc(7*var(--u)) auto */
 }
@@ -46,11 +46,13 @@ p{padding:0 calc(10*var(--u));margin:calc(5*var(--u))0}
 
 @media(orientation:portrait){
     *{--u:0.125vw}
-    #indxut,#indxdr{top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}
+    #indxut,#indxdr{position:absolute;margin-top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}
+    #wrap{margin-top:36vw}
 }
 @media(orientation:landscape){
     *{--u:1px}
-    #indxut,#indxdr{top:17%;left:2vw;width:400px;padding:12px}
+    #indxut,#indxdr{position:fixed;top:17%;left:2vw;width:400px;padding:12px}
+    #wrap{margin-top:17px}
 }
 
 
