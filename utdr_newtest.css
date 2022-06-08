@@ -15,14 +15,14 @@ scrollbar-color:rgb(var(--chco))#000;scrollbar-width:auto;box-sizing:border-box;
 @media(orientation:portrait){
     *{--u:0.145vw}
     /* *{--u:0.125vw} */
-#wrap{margin-top:48vw}#indxut,#indxdr{position:absolute;margin-top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}}
+#wrap{margin-top:calc(360*var(--u))}#indxut,#indxdr{position:absolute;margin-top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}}
 @media(orientation:landscape){*{--u:1px}#wrap{margin-top:17px}#indxut,#indxdr{position:fixed;top:17%;left:2vw;width:400px;padding:12px}}
 body{background:var(--ystar);background-attachment:fixed;color:#fff;margin:auto;font-family:Calibri;font-size:calc(20*var(--u))}ul{margin:0}
 h1,h2,h3,h4,h5,h6{text-align:center;margin:0 auto;font-weight:normal}img{max-width:100%;margin:auto;display:block}
 a{text-decoration:none;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out}
 hr{border:0;background:linear-gradient(to right,rgba(var(--chco),0),rgba(var(--chco),0.75),rgba(var(--chco),0));height:var(--u)}
 p{padding:0 calc(10*var(--u));margin:calc(5*var(--u))0}
-#wrap{position:absolute;left:50%;width:calc(640*var(--u));margin-left:calc(-320*var(--u))}#indxut,#indxdr{background:#000;font-family:mcy}
+#wrap{position:absolute;left:50%;width:calc(640*var(--u));margin-left:calc(-320*var(--u));padding-bottom:calc(100*var(--u))}#indxut,#indxdr{background:#000;font-family:mcy}
 #btlescr{position:relative;background:#000;width:calc(320*var(--u));height:calc(240*var(--u));margin:calc(7*var(--u))auto}
 #boxboss{display:table-cell;vertical-align:middle;background:url(lwtq/ast/bg_battle_boss.png);position:relative;background-size:auto 100%;background-repeat:no-repeat;background-position:center;text-align:center;width:calc(320*var(--u));height:calc(118*var(--u))}#boxboss img{display:inline-block;max-height:calc(100*var(--u))}
 #stat{position:relative;width:100%;padding-left:calc(12*var(--u));font-size:calc(10*var(--u));height:calc(10*var(--u));line-height:calc(10*var(--u));font-family:mnc}
