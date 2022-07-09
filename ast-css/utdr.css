@@ -63,7 +63,7 @@ p{padding:0 calc(10*var(--u));margin:calc(5*var(--u))0}
 .utpo a,.drpo a{color:rgb(var(--oga))}.utpo a:hover,.drpo a:hover,a:hover .utgb{color:rgb(var(--yso))}.utpo pfp,.drpo pfp,.disut pfp{font-size:calc(24*var(--u));font-family:dtm;text-shadow:var(--txtshw)}
 .disdm pfp{font-size:calc(24*var(--u));font-weight:bold;color:#fff}
 .utpo,.drpo{padding:calc(17*var(--u));background:#000}.dcpo{padding:calc(10*var(--u))}
-.utpo,#indxut,#indxri{border:solid calc(3*var(--u))rgb(var(--chco))}.drpo,#indxdr,wip{border:solid calc(16*var(--u))transparent;border-image:var(--drbox)16 round}
+.utpo,#indxut,#indxri{border:solid calc(3*var(--u))rgb(var(--chco))}.drpo,#indxdr,wip{background-clip:padding-box;border:solid calc(16*var(--u))transparent;border-image:var(--drbox)16 round}
 .game-box{display:block;background:#000;padding:calc(5*var(--u));height:calc(76*var(--u));width:calc(288*var(--u));border:calc(3*var(--u))solid#fff;margin:calc(3*var(--u))auto}
 .game-box td{vertical-align:text-top}
 .sogabtn{border:var(--u)solid rgb(var(--oga));color:rgb(var(--oga));background:url(../lwtq/ast/saveo.png)}
@@ -105,7 +105,8 @@ inv{color:transparent}inv::selection{color:rgb(var(--chco));background:invert(rg
 dtm{font-family:dtm}dts{font-family:dts}luc{font-family:luc}mcy{font-family:mcy}mfr{font-family:mfr;font-size:0.9em}mnc{font-family:mnc}utd{font-family:utd;font-size:0.7em}utp{font-family:utp;font-variant:small-caps;font-size:0.9em}uts{font-family:uts;font-size:0.9em}
 goh{text-shadow:none;display:inline-block;color:transparent;
 background:linear-gradient(45deg,rgb(240,96,196),rgb(240,79,97),rgb(241,133,76),rgb(242,184,104),rgb(240,220,128),rgb(182,237,113),rgb(151,231,115),rgb(144,219,160),rgb(136,206,203),rgb(240,96,196));
--webkit-background-clip:text;background-clip:text;
+-webkit-background-clip:text;
+background-clip:text;
 animation:rainbow_animation 3s ease-in-out infinite;background-size:400% 100%}
 
 .prnx{font-family:mfr;font-size:calc(24*var(--u));color:#848484;display:block;margin:auto;text-shadow:var(--txtshw)}.prnx:hover{color:#f4d400}
