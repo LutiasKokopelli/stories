@@ -7,7 +7,10 @@ table{width:100%}td{padding-left:5%;padding-right:5%}img{max-width:100%}a{text-d
 table.main{width:90%;margin:120px auto;text-align:center}
 .link{display:inline-block;border:3px solid rgba(197,42,142,0.9);border-radius:7px;font-family:Cambria;padding:7px;background:rgba(197,42,142,0.9);color:rgba(255,255,255,0.64);margin:7px;text-decoration:none;font-weight:800;font-variant:small-caps}
 
-#wrap{margin-top:17px;position:absolute;left:50%;width:800px;margin-left:-400px;padding-bottom:142px}
+@media(orientation:portrait),(max-width:1440px){#wrap{width:100%}}
+@media(orientation:landscape)and (min-width:1440px){#wrap{left:50%;width:800px;margin-left:-400px}}
+
+#wrap{margin-top:17px;position:absolute;padding-bottom:142px}
 wip{margin:20px;padding:17px;color:var(--fore);background:var(--midd);display:block;border-radius:17px}
 
 .chcol{box-shadow:0 0 17px var(--back);background:var(--back);border-radius:42px;padding-top:5px;padding-bottom:5px}
