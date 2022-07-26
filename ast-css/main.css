@@ -1,7 +1,7 @@
 *{--back:#fee0a3;--grey:#DBB891;--fore:#3f7963;--midd:#b3b04f;--emph:#E85359;--emp2:#8B6615;
 position:relative;border:0 none;margin:0;padding:0;-webkit-transition:all 0.3s ease-in-out;-moz-transition:all 0.3s ease-in-out;-o-transition:all 0.3s ease-in-out;scrollbar-width:auto;scrollbar-color:var(--fore)var(--back)}*,*:after,*:before{box-sizing:border-box;-moz-box-sizing:border-box}
 *:target{scroll-margin-top:80px}h1,h2,h3,h4,h5,h6{text-align:center;margin:0 auto}
-body{margin:auto;font-family:Candara;font-size:1.25rem;margin-top:17px;padding-bottom:100px;background:var(--bgimg)center center fixed;background-size:100%}
+body{margin:auto;font-family:Candara;margin-top:17px;padding-bottom:100px;background:var(--bgimg)center center fixed;background-size:100%}
 
 table{width:100%}td{padding-left:5%;padding-right:5%}img{max-width:100%}a{text-decoration:none;color:var(--midd)}a:hover{color:var(--emph)}
 table.main{width:90%;margin:120px auto;text-align:center}
@@ -11,8 +11,8 @@ table.main{width:90%;margin:120px auto;text-align:center}
 /* @media(orientation:portrait),(max-width:1440px){*{--u:0.145vw}#wrap{margin-top:calc(360*var(--u))}#indxut,#indxdr{position:absolute;margin-top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}#indxri{display:none}}
 @media(orientation:landscape)and (min-width:1440px){*{--u:1px}#wrap{margin-top:calc(17*var(--u))}#indxut,#indxdr,#indxri{position:fixed;width:400px;padding:12px}#indxut,#indxdr{top:17%;left:2vw}#indxri{top:37.5vh;margin-top:-25vh;right:2vw}} */
 
-@media(orientation:portrait),(max-width:1440px){#wrap{width:100%}.chctn{width:100%;padding:16px}}
-@media(orientation:landscape)and (min-width:1440px){#wrap{left:50%;width:800px;margin-left:-400px}
+@media(orientation:portrait),(max-width:1440px){#wrap{width:100%}.chctn{width:100%;padding:16px}body{font-size:2rem}h1{font-size:5rem}}h2{font-size:2.5rem}
+@media(orientation:landscape)and (min-width:1440px){#wrap{left:50%;width:800px;margin-left:-400px}body{font-size:1.25rem}h1{font-size:3rem}h2{font-size:1.5rem}
 .chcol{box-shadow:0 0 17px var(--back);border-radius:42px}
 .chctn{margin:1rem auto;border:4px solid;width:calc(100% - 36px);max-width:800px;padding:16px}
 .ch{border:4px solid;border-radius:5px;padding-bottom:42px}
@@ -30,12 +30,12 @@ wip{margin:20px;padding:17px;color:var(--fore);background:var(--midd);display:bl
 
 .writing{text-align:center;font-weight:800;font-family:Bradley Hand ITC}u{text-decoration:none}u svg.u{position:absolute;left:5%;width:90%;fill:none;stroke:var(--fore);stroke-width:1px;top:50%}svg.u path{d:path('m1.986 8.91c55.429 4.081 111.5811 5.822 167.1178 2.867 22.7091-1.208 45.3983-.601 68.126-.778 28.3817-.223 56.7608-1.024 85.1372-1.33 24.1738-.261 48.4273.571 72.5811.571')}
 
-h1{font-size:3rem;color:var(--emph);padding-top:1rem;margin-bottom:42px;line-height:200%}
+h1{color:var(--emph);padding-top:1rem;margin-bottom:42px;line-height:200%}
 h1:before,h1:after,h1 hr:before,h1 hr:after{content:'';background:var(--back);width:22px;height:22px;border:3px solid var(--midd);position:absolute;bottom:0;
 transform:rotate(45deg)translatey(calc(50% + 3px));left:calc(5% + 11px);z-index:2}
 h1:after{left:auto;right:calc(5% - 21px)}h1 hr:before{left:0}h1 hr:after{left:auto;right:-11px}h1 span{color:var(--midd)}
 h1 hr{width:90%;position:absolute;left:5%;bottom:0;background:var(--midd);height:3px}
-h2{font-weight:200;font-size:1.5rem;text-align:center;color:var(--fore);padding:2rem 0 0}
+h2{font-weight:200;text-align:center;color:var(--fore);padding:2rem 0 0}
 
 article{padding:0 10% 1rem;text-align:justify}article .em{padding-left:2.5rem;color:var(--emp2);margin-bottom:2rem}
 p+p,p+d,d+p,d+d{margin-top:2rem}d{display:block;margin-left:50px;margin-right:50px}
