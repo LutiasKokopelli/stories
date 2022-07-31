@@ -33,7 +33,7 @@ h1:after{left:auto;right:calc(5% - 21px)}h1 hr:before{left:0}h1 hr:after{left:au
 h1 hr{width:90%;position:absolute;left:5%;bottom:0;background:var(--midd);height:3px}
 h2{font-weight:200;text-align:center;color:var(--fore);padding:2rem 0 0}
 
-article{padding:0 10% 1rem;text-align:justify}article .em{padding-left:2.5rem;color:var(--emp2);margin-bottom:2rem}
+article{padding:0 10% 1rem;text-align:justify}article .em{padding-left:2.5rem;color:var(--emp2)}
 p+p,p+d,d+p,d+d{margin-top:2rem}d{display:block;margin-left:50px;margin-right:50px}
 
 .clock:before{content:'🕰';color:var(--midd);font-size:4rem;position:absolute;top:-8.2rem;left:45%}
