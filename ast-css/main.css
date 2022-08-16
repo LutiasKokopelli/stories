@@ -11,7 +11,7 @@ table.main{width:90%;margin:120px auto;text-align:center}
 @media(orientation:landscape)and (min-width:1440px){#wrap{left:50%;width:800px;margin-left:-400px}body{font-size:1.25rem}h1{font-size:3rem}h2{font-size:1.5rem}
 .chcol{box-shadow:0 0 17px var(--back);border-radius:42px}
 .chctn{margin:1rem auto;border:4px solid;width:calc(100% - 36px);max-width:800px;padding:16px}
-.ch{border:4px solid;border-radius:5px;padding-bottom:42px}
+.ch{border:4px solid;border-radius:5px}
 .chctn:before,.chctn:after,.ch:before,.ch:after{content:'';position:absolute;width:42px;height:42px;border:4px solid;z-index:2}
 .chctn:before{top:-4px;left:-4px;border-radius:0 0 5px 0;border-color:var(--back)var(--fore)var(--fore)var(--back)}
 .chctn:after{top:-4px;right:-4px;border-radius:0 0 0 5px;border-color:var(--back)var(--back)var(--fore)var(--fore)}
@@ -29,12 +29,13 @@ wip{margin:20px;padding:17px;color:var(--fore);background:var(--midd);display:bl
 h1{color:var(--emph);padding-top:1rem;margin-bottom:42px;line-height:200%}
 h1:before,h1:after,h1 hr:before,h1 hr:after{content:'';background:var(--back);width:22px;height:22px;border:3px solid var(--midd);position:absolute;bottom:0;
 transform:rotate(45deg)translatey(calc(50% + 3px));left:calc(5% + 11px);z-index:2}
-h1:after{left:auto;right:calc(5% - 21px)}h1 hr:before{left:0}h1 hr:after{left:auto;right:-11px}h1 span{color:var(--midd)}
+h1:after{left:auto;right:calc(5% - 21px)}h1 hr:before{left:0}h1 hr:after{left:auto;right:-11px}h1 span{color:var(--midd);line-height:100%;font-size:0.7em}
 h1 hr{width:90%;position:absolute;left:5%;bottom:0;background:var(--midd);height:3px}
+h1 .st{}
 h2{font-weight:200;text-align:center;color:var(--fore);padding:2rem 0 0}
 
-article{padding:0 10% 1rem;text-align:justify}article .em{padding-left:2.5rem;color:var(--emp2)}
-p+p,p+d,d+p,d+d{margin-top:2rem}d{display:block;margin-left:50px;margin-right:50px}
+article{padding:1rem 10% 0;text-align:justify}article .em{padding-left:2.5rem;color:var(--emp2)}
+p{text-indent:2.5em}d{display:block;margin-left:2.5em;margin-right:2.5em}v{display:block;height:2rem}
 
 .clock:before{content:'🕰';color:var(--midd);font-size:4rem;position:absolute;top:-8.2rem;left:45%}
 .bar{display:block;line-height:2px;height:2px;margin:4rem 0;background:var(--midd);text-align:center}
@@ -45,6 +46,13 @@ p+p,p+d,d+p,d+d{margin-top:2rem}d{display:block;margin-left:50px;margin-right:50
 content:'➽';
 /* ☙☦☤✥⇭⇴⇯⟿⤘⤠➳➸➺ ➾   */
 /* content:'✥'; */
+/*
+🙐🙑🙒🙓🙔🙕🙖🙗
+🙘🙙🙚🙛
+🙜🙝🙞🙟
+🙠🙡🙢🙣
+🙤🙥🙦🙧
+*/
 font-size:2rem;color:var(--midd);position:absolute}
 .bar:before{transform:rotate(180deg)}
 .bar:before{left:-10px}.bar:after{right:-10px}
