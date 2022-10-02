@@ -30,11 +30,11 @@ wip{margin:20px;padding:42px;color:var(--plblack);background:var(--midd);display
 .writing{text-align:center;font-weight:800;font-family:Bradley Hand ITC}u{text-decoration:none}u svg.u{position:absolute;left:5%;width:90%;fill:none;stroke:var(--fore);stroke-width:1px;top:50%}svg.u path{d:path('m1.986 8.91c55.429 4.081 111.5811 5.822 167.1178 2.867 22.7091-1.208 45.3983-.601 68.126-.778 28.3817-.223 56.7608-1.024 85.1372-1.33 24.1738-.261 48.4273.571 72.5811.571')}
 
 h1{color:var(--emph);padding-top:1rem;margin-bottom:42px;line-height:200%}
-h1:before,h1:after,h1 hr:before,h1 hr:after{content:'';background:var(--back);width:22px;height:22px;border:3px solid var(--midd);position:absolute;bottom:0;
+h1:before,h1:after,h1 .hr:before,h1 .hr:after{display:block;content:'';background:var(--back);width:22px;height:22px;border:3px solid var(--midd);position:absolute;bottom:0;
 transform:rotate(45deg)translatey(calc(50% + 3px));left:calc(5% + 11px);z-index:2}
-h1:after{left:auto;right:calc(5% - 21px)}h1 hr:before{left:0}h1 hr:after{left:auto;right:-11px}h1 span{color:var(--midd);line-height:100%;font-size:0.7em}
-h1 hr{width:90%;position:absolute;left:5%;bottom:0;background:var(--midd);height:3px}
-h1 .st{}
+h1:after{left:auto;right:calc(5% - 21px)}h1 .hr:before{left:0}h1 .hr:after{left:auto;right:-11px}h1 span{color:var(--midd);line-height:100%;font-size:0.7em}
+h1 .hr{width:90%;position:absolute;left:5%;bottom:0;background:var(--midd);height:3px}
+h1 .st{text-align:center;color:var(--fore);padding:2rem 0 0}
 h2{font-weight:200;text-align:center;color:var(--fore);padding:2rem 0 0}
 
 article{padding:1rem 10% 0;text-align:justify}article .em{padding-left:2.5rem;color:var(--emp2)}

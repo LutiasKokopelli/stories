@@ -13,3 +13,11 @@ document.getElementById('lnkold').style.backgroundImage="url(../hktfs/ast/tuner-
 document.getElementById('lnknew').style.backgroundImage="url(../hktfs/ast/tuner-on.png)";
 document.getElementById('old').style.display='none';document.getElementById('new').style.display='block'}
 }
+function ShoHid(id,cls){
+d=document.getElementById(id);b=document.getElementById(id+'_b')
+var d_ele=document.getElementsByClassName(cls);
+var b_ele=document.getElementsByClassName(cls+'_b');
+for (var i=0;i<d_ele.length;++i){d_ele[i].style.display='none'}
+for (var i=0;i<b_ele.length;++i){b_ele[i].style.background='var(--fore)'}
+d.style.display='';b.style.background='var(--midd)'
+}
