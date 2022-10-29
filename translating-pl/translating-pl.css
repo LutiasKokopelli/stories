@@ -1,0 +1,28 @@
+*{--bgl:#f7d6aa;--bgd:#f2c58b}
+#wrap{width:80%;margin-left:-40%}
+p{text-indent:0}
+img:not(.logo){image-rendering:pixelated;margin:auto}
+table{background:var(--grey)}
+table,td,th{text-align:center;border:2px solid var(--fore);border-radius:5px;padding:5px}
+table table,table table td{padding:0;border:none;background:none!important;text-align:left!important}
+table table td:nth-child(1){width:24px}
+tr td.e{border:none;background:none!important}
+tr td.i{width:50px;border:none;padding:0;background:none!important;text-align:right}
+tr:nth-child(even) td{background:var(--bgl)}
+tr:nth-child(odd) td{background:var(--bgd)}
+th{background:var(--midd)}
+ul.idx{column-count:5}
+cr{color:rgb(152,48,0)}
+cs{color:rgb(48,120,128)}
+bt{display:none;background:var(--midd);padding:3px;margin:3px;border:2px solid var(--fore);border-radius:3px;font-size:0.7em;font-family:Consolas}
+button{color:var(--plblack);background:var(--fore);padding:10px 20px 10px 20px;cursor:pointer;border-radius:5px 5px 0 0}
+a:active button{background:var(--midd)}
+#container{padding:42px;height:80vh;border-radius:0 17px 17px 17px;overflow-y:auto;background:var(--back);border:5px solid var(--midd)}
+.rmk{width:512px;border:3px solid #cd7a1e;background:#f7e792!important;margin:5px;padding:5px}
+hr{height:2px;background:var(--fore);margin-top:5px;margin-bottom:5px;width:100%}
+
+/*
+
+<tr><td>when</td><td>where</td><td class=i><img src=img/xxx.png></td><td>japname<br>charname</td><td><table><tr><td>🇯🇵</td><td>jpmessage</td></tr><tr><td></td><td><code>japromaji</code></td></tr><tr><td>🌏</td><td><i>googletrad</i></td></tr><!-- <tr><td>🇺🇸</td><td>usversion</td></tr> --><!-- <tr><td>🇬🇧</td><td>gbversion</td></tr> --><!-- <tr><td>🇫🇷</td><td>frversion</td></tr> --></table></td></tr>
+
+*/
