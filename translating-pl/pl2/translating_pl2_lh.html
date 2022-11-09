@@ -1,7 +1,7 @@
 <head><title>Translating PL2: London Holiday</title><link rel='shortcut icon'href=img/char_narration.png><link rel=stylesheet type=text/css href=../../ast-css/main.css media=screen><link rel=stylesheet type=text/css href=../translating-pl.css media=screen><script src=../../ast-css/alljs.js></script></head><div id=wrap><div class=chcol><article style=padding:42px>
-<div style=text-align:center><img src=img/title_top.png></div>
+<div style=text-align:center><img class=logo src=img/title_top.png width=24%></div>
 <h1>Professor Layton: London Holiday<div class=hr></div></h1>
-<div style=text-align:center><img src=img/title_bottom.png></div><v></v>
+<div style=text-align:center><img class=logo src=img/title_bottom.png width=24%></div><v></v>
 <!-- <editor-fold>  LONDON HOLIDAY: INDEX -->
 <a href="javascript:ShoHid('intr','pl2lh')"><button id=intr_b class=pl2lh_b style=background:var(--midd)>Introduction</button></a>
 <a href="javascript:ShoHid('misc','pl2lh')"><button id=misc_b class=pl2lh_b>Miscellaneous</button></a>
@@ -23,13 +23,17 @@
 <div id=container>
 <div id=intr class=pl2lh>
 <table id=pl2_lh00><tr><th>Screen</th><th>Who</th><th>What</th></tr>
-<!-- Warning screenshot: ご注意ーーー
-ゲーム内でセーブをした場合、進行中のデータは上書きされます。ご注意ください。 -->
+
+<!-- In つかの間の[休日/すのだ]を過ごすのだった, replace '[' with '<ruby>', '/' with '<rt>', and ']' with '</rt></ruby>' -->
+
 <!-- root/data_lt1/etext/e1_t0.txt -->
-<tr><td class=e rowspan=2 width=256px><img src=img/pl2_lh_bg_001.png></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>うーん、いい天気だなぁ。<br>せっかくの日曜日だし、<br>先生のところに遊びに行こうかな。<bt>@p@c</bt></td></tr><tr><td>🌏</td><td><i>Hmm, nice weather. Since it's a special Sunday, I think I'll go visit the professor.</i></td></tr></table></td></tr>
-<tr><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td>確か、この道を進めば<br>先生の大学があるんだったっけ⋯。</td></tr><tr><td>🌏</td><td><i>If I'm not mistaken, if I go down this path, I'll find my university&hellip;</i></td></tr></table></td></tr>
+<tr><td class=e rowspan=2 width=256px><img src=img/pl2_lh_bg_001.png></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>うーん、いい<ruby>天気<rt>てんき</rt></ruby>だなぁ。<br>せっかくの<ruby>日曜日<rt>にちようび</rt></ruby>だし、<br><ruby>先生<rt>せんせい</rt></ruby>のところに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>行<rt>い</rt></ruby>こうかな。<bt>@p@c</bt></td></tr><tr><td>🌏</td><td><i>Hmm, nice weather. Since it's a special Sunday, I think I'll go visit the professor.</i></td></tr></table></td></tr>
+<tr><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><ruby>確<rt>たし</rt></ruby>か、この<ruby>道<rt>みち</rt></ruby>を<ruby>進<rt>すす</rt></ruby>めば<br><ruby>先生<rt>せんせい</rt></ruby>の<ruby>大学<rt>だいがく</rt></ruby>があるんだったっけ⋯。</td></tr><tr><td>🌏</td><td><i>If I'm not mistaken, if I go down this path, I'll find my university&hellip;</i></td></tr></table></td></tr>
+
+<!-- C:\Users\Marie\Desktop\refgames\professor_layton\mobile_JP_pl2_HD\split_InstallAssets\assets\data_lt1\etext	:	Finished with e1_t0.txt -->
+
 <!-- root/data_lt1/etext/e1_t1.txt -->
-<tr><td class=e><img src=img/pl2_lh_bg_002.png></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>ここが先生の研究室かな？<br>なんだか、ドキドキするなぁ。</td></tr><tr><td>🌏</td><td><i>Is this the professor's office? I'm kind of nervous.</i></td></tr></table></td></tr>
+<tr><td class=e><img src=img/pl2_lh_bg_002.png></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>ここが<ruby>先生<rt>せんせい</rt></ruby>の研究室かな？<br>なんだか、ドキドキするなぁ。</td></tr><tr><td>🌏</td><td><i>Is this the professor's office? I'm kind of nervous.</i></td></tr></table></td></tr>
 <!--  -->
 <tr><td class=e><img src=img/pl2_lh_bg_003.png></td><td class=i></td><td><table><tr><td>🇯🇵</td><td>エルシャール・レイトン教授は<br>ナゾをによなく愛する考古学者。<v style=height:12px></v>不思議な町で起きた事件から数日、<br>研究室で、お気に入りの紅茶片手に<br>つかの間の休日を過ごすのだった⋯。</td></tr><tr><td>🌏</td><td><i>Professor Hershel Layton is an archaeologist who loves mysteries.<br>A few days after the Curious Village case, he spends a brief holiday in his office with his favorite tea in hand&hellip;</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t0.txt -->
@@ -37,7 +41,7 @@
 <!-- root/data_lt1/etext/e2_t1.txt -->
 <tr><td class=i><img src=img/char_layton.png></td><td><table><tr><td>🇯🇵</td><td>やはり休日の午後は紅茶に限るな。</td></tr><tr><td>🌏</td><td><i>After all, holiday afternoons are not limited to tea.</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t2.txt -->
-<tr><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>先生！</td></tr><tr><td>🌏</td><td><i>Professor!</i></td></tr></table></td></tr>
+<tr><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>！</td></tr><tr><td>🌏</td><td><i>Professor!</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t3.txt -->
 <tr><td class=e></td><td class=i><img src=img/char_layton.png></td><td><table><tr><td>🇯🇵</td><td>おや、ルーク。<br>どうしたんだい？</td></tr><tr><td>🌏</td><td><i>Good morning Luke. What's up?</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t4.txt -->
@@ -45,10 +49,10 @@
 <!-- root/data_lt1/etext/e2_t5.txt -->
 <tr><td class=e></td><td class=i><img src=img/char_layton.png></td><td><table><tr><td>🇯🇵</td><td>よく来たね、ルーク。<br>ゆっくりしていきたまえ。</td></tr><tr><td>🌏</td><td><i>It's nice to see you, Luke. Take it easy.</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t6.txt -->
-<tr><td class=e></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>ここが先生の新しい研究室ですね。</td></tr><tr><td>🌏</td><td><i>This is your new office.</i></td></tr></table></td></tr>
+<tr><td class=e></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>ここが<ruby>先生<rt>せんせい</rt></ruby>の新しい研究室ですね。</td></tr><tr><td>🌏</td><td><i>This is your new office.</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t7.txt -->
 <tr><td class=e></td><td class=i><img src=img/char_layton.png></td><td><table><tr><td>🇯🇵</td><td>ああ、私の恩師であるシュレーダー<br>博士から譲り受けた研究室だよ。<bt>@p@c</bt></td></tr><tr><td>🌏</td><td><i>Yes, it's an office that I inherited from my former teacher, Doctor Shrader.</i></td></tr></table></td></tr>
-<tr><td class=e></td><td class=i><img src=img/char_layton.png></td><td><table><tr><td>🇯🇵</td><td>先生は活動的な人だから、こんな<br>せまい研究室では物足りなかった<br>んだろうね。</td></tr><tr><td>🌏</td><td><i>My mentor is an active person, so he must have felt unsatisfied with such a small room.</i></td></tr></table></td></tr>
+<tr><td class=e></td><td class=i><img src=img/char_layton.png></td><td><table><tr><td>🇯🇵</td><td><ruby>先生<rt>せんせい</rt></ruby>は活動的な人だから、こんな<br>せまい研究室では物足りなかった<br>んだろうね。</td></tr><tr><td>🌏</td><td><i>My mentor is an active person, so he must have felt unsatisfied with such a small room.</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t8.txt -->
 <tr><td class=e></td><td class=i><img src=img/char_luke.png></td><td><table><tr><td>🇯🇵</td><td><bt>@3</bt>それにしても、<br>色んなものがありますね。</td></tr><tr><td>🌏</td><td><i>Even so, there are many things.</i></td></tr></table></td></tr>
 <!-- root/data_lt1/etext/e2_t9.txt -->
