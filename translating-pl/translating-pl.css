@@ -1,23 +1,22 @@
-*{--bgl:#f7d6aa;--bgd:#f2c58b}
-#wrap{width:80%;margin-left:-40%}
-p{text-indent:0}
-img:not(.logo){image-rendering:pixelated;margin:auto}
-table{background:var(--grey)}
-table,td,th{text-align:center;border:2px solid var(--fore);border-radius:5px;padding:5px}
-table table,table table td{padding:0;border:none;background:none!important;text-align:left!important}
-table table td:nth-child(1){width:24px}
-tr td.e{border:none;background:none!important}
-tr td.i{width:50px;border:none;padding:0;background:none!important;text-align:right}
-tr:nth-child(even) td{background:var(--bgl)}
-tr:nth-child(odd) td{background:var(--bgd)}
-th{background:var(--midd)}
-ul.idx{column-count:5}
+*{--bgl:#f7d6aa;--bgd:#f2c58b;--bgdlg:url('pl2/img/bg_dlg.png')}
+:root{--hintcolor:var(--bgl)}
+#wrap{width:80%;margin-left:-40%}p{text-indent:0}
+
+img{text-align:center;margin:auto}v{height:5px}
+.px{image-rendering:pixelated}
+.bg img{border:2px solid var(--plblack)}.bg{width:256px}
+.dlg{background:var(--bgdlg)center no-repeat;padding:12px 34px 12px 34px;width:256px;height:128px;background-size:100%128px}
+.memo{background:url('pl2/img/bg_memo.png')center no-repeat;width:256px;height:512px;background-size:100%512px;font-size:1.2rem;padding-left:10%;padding-right:10%}
+.memo hr{width:42%;margin:7px auto;background:var(--plblack)}
+td.i{width:80px;text-align:center;padding:5px}
+td{min-height:128px}
+
 cr{color:rgb(152,48,0)}
 cs{color:rgb(48,120,128)}
 bt{display:none;background:var(--midd);padding:3px;margin:3px;border:2px solid var(--fore);border-radius:3px;font-size:0.7em;font-family:Consolas}
 button{color:var(--plblack);background:var(--fore);padding:10px 20px 10px 20px;cursor:pointer;border-radius:5px 5px 0 0}
 a:active button{background:var(--midd)}
-#container{padding:42px;height:80vh;border-radius:0 17px 17px 17px;overflow-y:auto;background:var(--back);border:5px solid var(--midd)}
+#container{padding:42px;height:80vh;border-radius:0 17px 17px 17px;overflow-y:auto;background:var(--bgd);border:5px solid var(--midd)}
 .rmk{width:512px;border:3px solid #cd7a1e;background:#f7e792!important;margin:5px;padding:5px}
 hr{height:2px;background:var(--fore);margin-top:5px;margin-bottom:5px;width:100%}
 
@@ -26,3 +25,5 @@ hr{height:2px;background:var(--fore);margin-top:5px;margin-bottom:5px;width:100%
 <tr><td>when</td><td>where</td><td class=i><img src=img/xxx.png></td><td>japname<br>charname</td><td><table><tr><td>🇯🇵</td><td>jpmessage</td></tr><tr><td></td><td><code>japromaji</code></td></tr><tr><td>🌏</td><td><i>googletrad</i></td></tr><!-- <tr><td>🇺🇸</td><td>usversion</td></tr> --><!-- <tr><td>🇬🇧</td><td>gbversion</td></tr> --><!-- <tr><td>🇫🇷</td><td>frversion</td></tr> --></table></td></tr>
 
 */
+
+.puzzle{font-size:24px;font-weight:800}
