@@ -4,7 +4,7 @@
 -2px -2px 0 var(--plblack),0 2px 0 var(--plblack),0 -2px 0 var(--plblack),-2px 0 0 var(--plblack),2px 0 0 var(--plblack),1px 2px 0 var(--plblack),
 -1px 2px 0 var(--plblack),1px -2px 0 var(--plblack),-1px -2px 0 var(--plblack),2px 1px 0 var(--plblack),-2px 1px 0 var(--plblack),
 2px -1px 0 var(--plblack),-2px -1px 0 var(--plblack);
-}
+}body{color:var(--plblack)}
 :root{--hintcolor:var(--bgl)}
 #wrap{width:80%;margin-left:-40%}p{text-indent:0}
 
