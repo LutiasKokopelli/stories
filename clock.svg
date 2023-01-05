@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="800" height="800" viewBox="0.00 0.00 100.00 100.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g stroke-linecap="round" id="clock">
+<path d="M95 88 95 100 5 100 5 88Q29 88 29 70A1 1 0 0171 70Q71 88 95 88M67 70A1 1 0 0033 70 1 1 0 0067 70M48 70A1 1 0 0052 70 1 1 0 0048 70M48 69Q45 68 43 63 48 65 49 68M51 68Q52 62 59 59 57 66 52 69M49 54 50 59 51 54M51 86 50 81 49 86M66 71 61 70 66 69M34 69 39 70 34 71" fill="auto" stroke="auto" stroke-width="0" stroke-opacity="1" stroke-linejoin="miter"/>
+</g>
+</svg>
