@@ -1,0 +1,1883 @@
+<head><title>Translating Professor Layton and the London Holiday</title>
+<link rel='shortcut icon'href=../ast/logo/lh.png>
+<link rel=stylesheet type=text/css href=../../ast/css.css media=screen>
+<link rel=stylesheet type=text/css href=../layton.css media=screen>
+<script src=../../ast/js.js></script><style>
+    *{
+    --grey:219,184,145;--back:254,224,163;--emph:232,83,89;--midd:179,176,79;--bgd:242,197,139;--bgl:247,214,170;--fore:63,121,99;
+    --hint1:232,232,184;--hint2:200,232,192;--hint3:192,232,216;
+    }
+    .memo{background:url('../ast/lh/bg_memo.png')center no-repeat;background-size:100%512px}
+    .dlg{background:url('../ast/dlg/lh.png')center no-repeat;padding:12px 34px 12px 34px;background-size:100%100%;height:128px;width:420px;display:flex;align-items:center}
+    .layton{background:url('../ast/chn/layton-lh.png')center bottom no-repeat;background-size:100%auto}.layton:before{content:url('../ast/chr/layton-lh.png')}
+    .luke{background:url('../ast/chn/luke-lh.png')center bottom no-repeat;background-size:100%auto}.luke:before{content:url('../ast/chr/luke-lh.png')}
+
+    .puzzle tr:nth-child(1) th:nth-child(1){background:url('../ast/lh/nazo_bg_01_title.png')bottom}
+    .puzzle tr:nth-child(1) th:nth-child(2){background:url('../ast/lh/nazo_bg_01_picarat.png')center}
+    .puzzle tr:nth-child(2) td:nth-child(1){background:url('../ast/lh/q_bg.png')bottom}
+</style></head><div class=wrap><div class=chcol><article>
+<div style=text-align:center><img src=../ast/logo/lh.png></div>
+
+<h1 style=margin-top:42px><span>Professor Layton and the</span><br>London Holiday<div class=hr></div></h1>
+<div style=text-align:center;margin-bottom:42px><img src=../ast/lh/title_bottom.png style='border:4px solid rgb(var(--plblack));width:32%'></div>
+
+<h2 style='margin:0 auto;padding:12px;border-bottom:3px solid rgb(var(--fore));width:420px'>Toggle languages:</h2>
+<div style=text-align:center;font-size:42px;margin-bottom:42px>
+<a class=infoa href="javascript:ToggleDiv('🇯🇵')">🇯🇵<div class=infob><b>Original Japanese Version</b><hr></div></a>
+<a class=infoa href="javascript:ToggleDiv('🗺️')">🗺️<div class=infob><b>Literal Translation</b><hr>This English fan-made translation will stay as close to the original Japanese version as possible, but the characters may sound differently than what you are used to.</div></a><!-- 🌐🗺️🌏 -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇺🇸')">🇺🇸<div class=infob><b>Fan-Made English (US) Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇬🇧')">🇬🇧<div class=infob><b>Fan-Made English (UK) Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇩🇪')">🇩🇪<div class=infob><b>Fan-Made German Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇫🇷')">🇫🇷<div class=infob><b>Fan-Made French Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇪🇸')">🇪🇸<div class=infob><b>Fan-Made Spanish Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇮🇹')">🇮🇹<div class=infob><b>Fan-Made Italian Translation</b><hr></div></a> -->
+</div>
+<!-- <editor-fold>  LONDON HOLIDAY: INDEX -->
+<a href="javascript:ShoHiC('intro','lh')"><button id=intro_b   class=lh_b style=background:rgb(var(--midd))>Introduction</button></a>
+<a href="javascript:ShoHiC('misc','lh')"><button id=misc_b     class=lh_b>Miscellaneous</button></a>
+<a href="javascript:ShoHiC('nazo01','lh')"><button id=nazo01_b class=lh_b>Puzzle<br>&num;01</button></a>
+<a href="javascript:ShoHiC('nazo02','lh')"><button id=nazo02_b class=lh_b>Puzzle<br>&num;02</button></a>
+<a href="javascript:ShoHiC('nazo03','lh')"><button id=nazo03_b class=lh_b>Puzzle<br>&num;03</button></a>
+<a href="javascript:ShoHiC('nazo04','lh')"><button id=nazo04_b class=lh_b>Puzzle<br>&num;04</button></a>
+<a href="javascript:ShoHiC('nazo05','lh')"><button id=nazo05_b class=lh_b>Puzzle<br>&num;05</button></a>
+<a href="javascript:ShoHiC('nazo06','lh')"><button id=nazo06_b class=lh_b>Puzzle<br>&num;06</button></a>
+<a href="javascript:ShoHiC('nazo07','lh')"><button id=nazo07_b class=lh_b>Puzzle<br>&num;07</button></a>
+<a href="javascript:ShoHiC('nazo08','lh')"><button id=nazo08_b class=lh_b>Puzzle<br>&num;08</button></a>
+<a href="javascript:ShoHiC('nazo09','lh')"><button id=nazo09_b class=lh_b>Puzzle<br>&num;09</button></a>
+<a href="javascript:ShoHiC('nazo10','lh')"><button id=nazo10_b class=lh_b>Puzzle<br>&num;10</button></a>
+<a href="javascript:ShoHiC('nazo11','lh')"><button id=nazo11_b class=lh_b>Puzzle<br>&num;11</button></a>
+<a href="javascript:ShoHiC('nazo12','lh')"><button id=nazo12_b class=lh_b>Puzzle<br>&num;12</button></a>
+<a href="javascript:ShoHiC('memo','lh')"><button id=memo_b     class=lh_b>Schrader’s<br>Notes</button></a>
+<a href="javascript:ShoHiC('outro','lh')"><button id=outro_b   class=lh_b>Conclusion</button></a>
+<!-- </editor-fold> -->
+<div class=container id=main>
+<div id=intro class=lh><h1>London Holiday: Introduction<p class=hr></p></h1><table class=translaytion>
+
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_001.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e1_t0.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>うーん、いい<ruby>天気<rt>てんき</rt></ruby>だなぁ。<br>せっかくの<ruby>日曜日<rt>にちようび</rt></ruby>だし、<br><ruby>先生<rt>せんせい</rt></ruby>のところに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>行<rt>い</rt></ruby>こうかな。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Hmm, nice weather.<br>Since it’s a special Sunday,<br>I think I’ll go visit the professor.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><ruby>確<rt>たし</rt></ruby>か、この<ruby>道<rt>みち</rt></ruby>を<ruby>進<rt>すす</rt></ruby>めば<br><ruby>先生<rt>せんせい</rt></ruby>の<ruby>大学<rt>だいがく</rt></ruby>があるんだったっけ⋯。</p></div>
+    <div class='dlg 🗺️'><p>If I’m not mistaken, if I go down this path,<br>I’ll find the professor’s university&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_002.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e1_t1.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>ここが<ruby>先生<rt>せんせい</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>かな？<br>なんだか、ドキドキするなぁ。</p></div>
+    <div class='dlg 🗺️'><p>Is this the professor’s office?<br>I’m kind of nervous.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td class=bg><img src=../ast/lh/bg_003.png></td><td></td><td class=row>
+    <!-- -->
+    <div class='fancydlg 🇯🇵'><p>エルシャール・レイトン<ruby>教授<rt>きょうじゅ</rt></ruby>は<br>ナゾをによなく<ruby>愛<rt>あい</rt></ruby>する<ruby>考古学者<rt>こうこがくしゃ</rt></ruby>。<br><br><ruby>不思議<rt>ふしぎ</rt></ruby>な<ruby>町<rt>まち</rt></ruby>で<ruby>起<rt>お</rt></ruby>きた<ruby>事件<rt>じけん</rt></ruby>から<ruby>数日<rt>すうじつ</rt></ruby>、<br><ruby>研究室<rt>けんきゅうしつ</rt></ruby>で、お<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りの<ruby>紅茶<rt>こうちゃ</rt></ruby><ruby>片手<rt>かたて</rt></ruby>に<br>つかの<ruby>間<rt>ま</rt></ruby>の<ruby>休日<rt>きゅうじつ</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごすのだった⋯。</p></div>
+    <div class='fancydlg 🗺️'><p>Professor Hershel Layton is<br>a puzzle-loving archaeologist.<br><br>A few days after the Curious Village case,<br>in his office with his favorite tea in hand,<br>he spends a brief day off&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e2_t0.txt -->
+    <div class='dlg 🇯🇵'><p>ふぅ⋯。</p></div>
+    <div class='dlg 🗺️'><p>Phew&hellip;</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e2_t1.txt -->
+    <div class='dlg 🇯🇵'><p>やはり<ruby>休日<rt>きゅうじつ</rt></ruby>の<ruby>午後<rt>ごご</rt></ruby>は<ruby>紅茶<rt>こうちゃ</rt></ruby>に<ruby>限<rt>かぎ</rt></ruby>るな。</p></div>
+    <div class='dlg 🗺️'><p>After all, holiday afternoons are not limited to tea.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td></td><td class=row>
+    <!-- data_lt1/etext/e2_t2.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>！</p></div>
+    <div class='dlg 🗺️'><p>Professor!</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e2_t3.txt -->
+    <div class='dlg 🇯🇵'><p>おや、ルーク。<br>どうしたんだい？</p></div>
+    <div class='dlg 🗺️'><p>Good morning Luke.<br>What’s up?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e2_t4.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>せっかくの<ruby>休日<rt>きゅうじつ</rt></ruby>なので、<br><ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>き</rt></ruby>ちゃいました。</p></div>
+    <div class='dlg 🗺️'><p>It’s a long-awaited day off,<br>so I came to visit.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e2_t5.txt -->
+    <div class='dlg 🇯🇵'><p>よく<ruby>来<rt>き</rt></ruby>たね、ルーク。<br>ゆっくりしていきたまえ。</p></div>
+    <div class='dlg 🗺️'><p>It’s nice to see you, Luke.<br>Take it easy.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e2_t6.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>ここが<ruby>先生<rt>せんせい</rt></ruby>の<ruby>新<rt>あたら</rt></ruby>しい<ruby>研究室<rt>けんきゅうしつ</rt></ruby>ですね。</p></div>
+    <div class='dlg 🗺️'><p>So this is your new office?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e2_t7.txt -->
+    <div class='dlg 🇯🇵'><p>ああ、<ruby>私<rt>わたし</rt></ruby>の<ruby>恩師<rt>おんし</rt></ruby>であるシュレーダー<br><ruby>博士<rt>はかせ</rt></ruby>から<ruby>譲<rt>ゆず</rt></ruby>り<ruby>受<rt>う</rt></ruby>けた<ruby>研究室<rt>けんきゅうしつ</rt></ruby>だよ。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Yes, it’s an office that I inherited<br>from my former teacher, Doctor Shrader.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><ruby>先生<rt>せんせい</rt></ruby>は<ruby>活動<rt>かつどう</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>人<rt>ひと</rt></ruby>だから、こんな<br>せまい<ruby>研究室<rt>けんきゅうしつ</rt></ruby>では<ruby>物<rt>もの</rt></ruby><ruby>足<rt>た</rt></ruby>りなかった<br>んだろうね。</p></div>
+    <div class='dlg 🗺️'><p>My mentor is an active person.<br>He must have felt unsatisfied with such a small room,<br>I suppose.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e2_t8.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>それにしても、<br><ruby>色<rt>いろ</rt></ruby>んなものがありますね。</p></div>
+    <div class='dlg 🗺️'><p>Even so,<br>there are many things.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e2_t9.txt -->
+    <div class='dlg 🇯🇵'><p><ruby>気<rt>き</rt></ruby>になるのなら、<br><ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を<ruby>見<rt>み</rt></ruby>ても<ruby>構<rt>かま</rt></ruby>わないよ。</p></div>
+    <div class='dlg 🗺️'><p>If you’re curious,<br>I won’t mind if you look inside the room.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e2_t10.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt><ruby>本当<rt>ほんとう</rt></ruby>ですか？<br>じゃあ、えんりょなく⋯。</p></div>
+    <div class='dlg 🗺️'><p>Really?<br>Well, then I won’t hesitate&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td></td><td class=row>
+    <!-- data_lt1/etext/e2_t11.txt -->
+    <div class='dlg 🇯🇵'><p><ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>をタッチすると、<br><ruby>隠<rt>かく</rt></ruby>されたナゾが<ruby>出題<rt>しゅつだい</rt></ruby>されます。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>When you touch the inside of the room,<br>a hidden puzzle will appear.</p></div>
+</td></tr>
+<tr><td></td><td class=row>
+    <div class='dlg 🇯🇵'><p><ruby>持<rt>も</rt></ruby>っている<b>ひらめきコイン</b><sup style=font-size:0.7rem>⚠️</sup>を<ruby>使用<rt>しよう</rt></ruby>すれば<br>ナゾのヒントを<ruby>見<rt>み</rt></ruby>る<ruby>事<rt>こと</rt></ruby>ができます。<bt>@p@c</bt><br><span style=font-size:0.8rem>⚠️The original DS version refers to hint coins as ヒントメダル (&ldquo;Hint Medal&rdquo;) instead of ひらめきコイン (&ldquo;Inspiration Coin&rdquo;).</span></p></div>
+    <div class='dlg 🗺️'><p>If you use the hint coins you have,<br>you can see puzzle hints.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td></td><td class=row>
+    <div class='dlg 🇯🇵'><p>ただし、<ruby>持<rt>も</rt></ruby>っている<b>ひらめきコイン</b><sup style=font-size:0.7rem>⚠️</sup><!-- ヒントメダル -->を<br><ruby>使<rt>つか</rt></ruby>い<ruby>切<rt>き</rt></ruby>ってしまうと、それ<ruby>以降<rt>いこう</rt></ruby>の<br>ヒントを<ruby>見<rt>み</rt></ruby>る<ruby>事<rt>こと</rt></ruby>ができなくなります。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>However, if you run out of hint coins,<br>you will not be able to see any more hints.</p></div>
+</td></tr>
+<tr><td></td><td class=row>
+    <div class='dlg 🇯🇵'><p>レイトン<ruby>教授<rt>きょうじゅ</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>では<br><b>ひらめきコイン</b><sup style=font-size:0.7rem>⚠️</sup><!-- ヒントメダル -->が<ruby>入手<rt>にゅうしゅ</rt></ruby>できませんので、<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Hint coins cannot be obtained<br>in Professor Layton’s office,</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td></td><td class=row>
+    <div class='dlg 🇯🇵'><p><ruby>計画<rt>けいかく</rt></ruby><ruby>的<rt>てき</rt></ruby>に<b>ひらめきコイン</b><sup style=font-size:0.7rem>⚠️</sup><!-- ヒントメダル -->を<ruby>使用<rt>しよう</rt></ruby>して、<br><ruby>部屋<rt>へや</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>されたナゾを<ruby>解<rt>と</rt></ruby>きましょう。</p></div>
+    <div class='dlg 🗺️'><p>so use them methodically to<br>solve the puzzles hidden in the room.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+
+</table></div>
+
+<div id=misc class=lh>
+
+<h1>Location: Professor Layton’s Office<p class=hr></p></h1>
+<table style=text-align:center class=translaytion>
+    <tr>
+        <th><h2>レイトン教授の研究室</h2></th>
+        <th><h2><i>Professor Layton’s Office</i></h2></th>
+    </tr>
+    <tr>
+        <td style=width:50% class=bg><img class=logo src=../ast/lh/bg_005_map.png width=80%></td>
+        <td style=width:50% class=bg><img class=logo src=../ast/lh/bg_004.png width=80%></td>
+    </tr>
+</table>
+<table style='background:rgb(var(--bgl));text-align:center;border:4px solid rgb(var(--fore));border-radius:5px;margin-bottom:80px'>
+    <tr><th colspan=2 style='border:2px solid rgb(var(--fore));border-radius:5px;background:rgb(var(--midd))'><h2 style=margin-bottom:0>Objectives</h2></th></tr>
+    <!-- data_lt1/storytext/mt_1.txt & data_lt1/storytext/mt_2.txt -->
+    <tr>
+        <th style=padding:12px>隠された１２のナゾを探せ！</th>
+        <th style=padding:12px><i>Find 12 hidden puzzles!</i></th>
+    </tr>
+    <tr><th colspan=2><hr></th></tr>
+    <!-- data_lt1/storytext/mt_3.txt -->
+    <tr>
+        <th style=padding:12px>手紙を調べてみよう！</th>
+        <th style=padding:12px><i>Check out the letter!</i></th>
+    </tr>
+</table>
+
+<h1>Dialogue if you inspect the trophy<p class=hr></p></h1><table class=translaytion>
+
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004-01.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e15_t0.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、このトロフィーは？</p></div>
+    <div class='dlg 🗺️'><p>Professor, what is this trophy?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e15_t1.txt -->
+    <div class='dlg 🇯🇵'><p><ruby>学生時代<rt>がくせいじだい</rt></ruby>、フェンシングの<ruby>大会<rt>たいかい</rt></ruby>で<br><ruby>優勝<rt>ゆうしょう</rt></ruby>した<ruby>時<rt>とき</rt></ruby>にもらったものだよ。</p></div>
+    <div class='dlg 🗺️'><p>I got it when I won a fencing competition<br>during my school days.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e15_t2.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>ええっ！？<br><ruby>先生<rt>せんせい</rt></ruby>、そんなに<ruby>強<rt>つよ</rt></ruby>かったんですか？</p></div>
+    <div class='dlg 🗺️'><p>Huh!?<br>Professor, were you that strong?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e15_t3.txt -->
+    <div class='dlg 🇯🇵'><p><ruby>体<rt>からだ</rt></ruby>を<ruby>動<rt>うご</rt></ruby>かすのが<ruby>好<rt>す</rt></ruby>きで、<br><ruby>毎日<rt>まいにち</rt></ruby>のように<ruby>練習<rt>れんしゅう</rt></ruby>したからね。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>I like to exercise,<br>so I practiced every day.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p>もちろん、フェンシング<ruby>以外<rt>いがい</rt></ruby>の<br>スポーツも<ruby>大好<rt>だいす</rt></ruby>きだよ。</p></div>
+    <div class='dlg 🗺️'><p>Of course, I also love sports<br>other than fencing.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e15_t4.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>やっぱり、<ruby>先生<rt>せんせい</rt></ruby>はすごいですね。</p></div>
+    <div class='dlg 🗺️'><p>After all, you are amazing.</p></div>
+</td></tr>
+</table>
+
+<h1>Finding the first Schrader Note<p class=hr></p></h1><h2>This dialogue occurs after solving your first puzzle.</h2><table class=translaytion>
+
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e18_t0.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、メモが<ruby>落<rt>お</rt></ruby>ちてますよ。<br><ruby>大事<rt>だいじ</rt></ruby>なものじゃないんですか？</p></div>
+    <div class='dlg 🗺️'><p>Professor, your notes are falling.<br>Isn’t that important?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e18_t1.txt -->
+    <div class='dlg 🇯🇵'><p>おや？<br>それは<ruby>私<rt>わたし</rt></ruby>のメモではないようだね。</p></div>
+    <div class='dlg 🗺️'><p>Hm?<br>I don’t think this is mine.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e18_t2.txt -->
+    <div class='dlg 🇯🇵'><p>この<ruby>字<rt>じ</rt></ruby>はシュレーダー<ruby>博士<rt>はかせ</rt></ruby>のものだ。<br>きっと、<ruby>先生<rt>せんせい</rt></ruby>がここを<ruby>出<rt>で</rt></ruby>て<ruby>行<rt>い</rt></ruby>く<ruby>時<rt>とき</rt></ruby>に<br><ruby>落<rt>お</rt></ruby>として<ruby>行<rt>い</rt></ruby>ったのではないかな。</p></div>
+    <div class='dlg 🗺️'><p>This note belongs to Dr. Schrader.<br>He must have dropped it when he left.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e18_t3.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>じゃあ、これは<ruby>取<rt>と</rt></ruby>っておいた<ruby>方<rt>ほう</rt></ruby>が<br>よさそうですね。</p></div>
+    <div class='dlg 🗺️'><p>Well, then we should keep it safe.</p></div>
+</td></tr>
+</table><h2>シュレーダーメモが追加された！<br>A new Schrader Note has been added!</h2>
+
+<h1>Dialogue after solving six puzzles<p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e16_t0.txt -->
+    <div class='dlg 🇯🇵'><p>ルーク、そろそろ<br>ティータイムにしようか。</p></div>
+    <div class='dlg 🗺️'><p>Luke, let’s have a tea break.</p></div>
+</td></tr>
+<tr><td colspan=2><p align=center>The screen fades to black for an instant, then resumes.</p></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e16_t1.txt -->
+    <div class='dlg 🇯🇵'><p>それにしても、<br><ruby>今回<rt>こんかい</rt></ruby>はさすがに<ruby>疲<rt>つか</rt></ruby>れたね。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Anyway,<br>I’m really tired this time.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><ruby>休暇<rt>きゅうか</rt></ruby>でも<ruby>取<rt>と</rt></ruby>って、<br>のんびり<ruby>旅行<rt>りょこう</rt></ruby>でもしたいものだ。</p></div>
+    <div class='dlg 🗺️'><p>I would like to take a vacation and take a leisurely trip.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e16_t2.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>たまには<ruby>列車<rt>れっしゃ</rt></ruby>なんかで<br>どこかへ<ruby>行<rt>い</rt></ruby>ってみたいですね。</p></div>
+    <div class='dlg 🗺️'><p>Sometime, I would like to go somewhere by train.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e16_t3.txt -->
+    <div class='dlg 🇯🇵'><p><ruby>列車<rt>れっしゃ</rt></ruby>か。<br>それも<ruby>悪<rt>わる</rt></ruby>くはないね。</p></div>
+    <div class='dlg 🗺️'><p>By train.<br>That’s not bad either.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e16_t4.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>いつも<ruby>先生<rt>せんせい</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>ばかりじゃ、<br>あきちゃいますからね。</p></div>
+    <div class='dlg 🗺️'><p>It’s boring if it’s just the Laytonmobile all the time.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e16_t5.txt -->⋯ルーク、<br><ruby>私<rt>わたし</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>じゃ<ruby>不満<rt>ふまん</rt></ruby>なのかい？</div>
+    <div class='dlg 🗺️'><p>&hellip;Luke,<br>are you unsatisfied with my car?</p></div>
+    </td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <!-- data_lt1/etext/e16_t6.txt -->
+    <div class='dlg 🇯🇵'><p><bt>@3</bt>えっ、いやだなぁ。<br>そんなことないですよ。</p></div>
+    <div class='dlg 🗺️'><p>Eh, I don’t like it.<br>That’s not true.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <!-- data_lt1/etext/e16_t7.txt -->
+    <div class='dlg 🇯🇵'><p>⋯⋯。</p></div>
+    <div class='dlg 🗺️'><p>&hellip;</p></div>
+</td></tr>
+</table>
+
+<!-- Tutorial screenshots: -->
+<!-- メモを見るには、。。。。。。。 -->
+</div>
+
+<div id=nazo01 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;01<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t0.txt --><bt>@3</bt><ruby>変<rt>か</rt></ruby>わった<ruby>本<rt>ほん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いですね。<br>これって<ruby>何冊<rt>なんさつ</rt></ruby>くらいあるんですか？</p></div>
+    <div class='dlg 🗺️'><p>There are many strange books.<br>How many do you have?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t1.txt -->さあ、どれくらいかな？</p></div>
+    <div class='dlg 🗺️'><p>Well, how many?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t2.txt --><bt>@3</bt>じゃあ、ボクが<ruby>数<rt>かぞ</rt></ruby>えてみます。<br>ええと、１、２、３⋯。</p></div>
+    <div class='dlg 🗺️'><p>Alright then, I will count.<br>Um, 1, 2, 3…</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t3.txt -->そうだ、<ruby>数<rt>かぞ</rt></ruby>えると<ruby>言<rt>い</rt></ruby>えば、<br>こんなナゾがあったよ。<br>ルーク、<ruby>解<rt>と</rt></ruby>いてみるかい？</p></div>
+    <div class='dlg 🗺️'><p>Oh right, speaking of counting,<br>this reminds me of a puzzle.<br>Luke, do you want to solve it?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t4.txt --><bt>@3</bt>もちろんです！</p></div>
+    <div class='dlg 🗺️'><p>Of course!</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００１</p><p><!-- data_lt1/qtext/t_1.txt -->９はいくつある？</p><p>How many 9&rsquo;s are there?</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>30</cr>&nbsp; &nbsp;30&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>0</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><!-- data_lt1/qtext/q_1.txt --><div>
+    <p class=🇯🇵>１から１００までの<ruby>整数<rt>せいすう</rt></ruby>に、<br>「９」という<ruby>数字<rt>すうじ</rt></ruby>はいくつ<ruby>出<rt>で</rt></ruby>てくる？</p>
+    <p class=🗺️>When counting from 1 to 100,<br>how many times does the number &ldquo;9&rdquo; appear?</p>
+</div></td><td style=background:url(../ast/lh/nazo_01.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
+    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p01h1 class=p01><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_1_1.txt -->ひっかけではないから、<ruby>数<rt>かぞ</rt></ruby>えれば<br>いいだけ。</p></div>
+            <div class=🗺️><p>It&rsquo;s not a trick, just count.</p></div>
+        </div></div>
+        <div id=p01h2 class=p01><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_1_2.txt -->「９」は、９、１９、２９と、１０<br><ruby>数<rt>かぞ</rt></ruby>えるごとに１<ruby>回<rt>かい</rt></ruby><ruby>出<rt>で</rt></ruby>てくる。<br>でも、１０<ruby>個<rt>こ</rt></ruby>じゃないよ。</p></div>
+            <div class=🗺️><p>&ldquo;9&rdquo; appears once every 10,<br>such as 9, 19, 29.<br>But not ten.</p></div>
+        </div></div>
+        <div id=p01h3 class=p01><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_1_3.txt -->９０<ruby>台<rt>だい</rt></ruby>にはみんな「９」がふくまれ<br>ているよね。<br><br>さあ、<ruby>数<rt>かぞ</rt></ruby>えてみよう。</p></div>
+            <div class=🗺️><p>All 90&rsquo;s contain a &ldquo;9&rdquo;,<br>don&rsquo;t they?<br><br>Let&rsquo;s count.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_1.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br><ruby>見<rt>み</rt></ruby><ruby>落<rt>お</rt></ruby>としはないかな？</p>
+    <p class=🗺️>Incorrect.<br><br>Is there anything you overlooked?</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_1.txt -->２０<ruby>個<rt>こ</rt></ruby>。<br><br>９が９０<ruby>台<rt>だい</rt></ruby>にたくさんあることには<ruby>気<rt>き</rt></ruby><br>がついても、<ruby>数<rt>かぞ</rt></ruby>えていくうちに<ruby>間違<rt>まちが</rt></ruby>え<br>てしまう、イジワルなパズル。</p>
+    <p class=🗺️>20 times.<br><br>Even if you realize that there are many 9s in the 90&rsquo;s, you may end up making a mistake while counting.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t11.txt --><bt>@3</bt>ああ、また<ruby>最初<rt>さいしょ</rt></ruby>から<ruby>数<rt>かぞ</rt></ruby>えなおしだ⋯。</p></div>
+    <div class='dlg 🗺️'><p>Oh, I&rsquo;m counting again from the beginning&hellip;</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t12.txt | Fun fact: it’s also the content of file data_lt1/etext/e6_t11.txt (from Puzzle Puzzle &num;04). Both puzzles are about counting papers, so the devs must have prepared this line for Puzzle 04 and then changed their mind! -->そう<ruby>悩<rt>なや</rt></ruby>むナゾでもないはずだよ。<br>もう<ruby>一度<rt>いちど</rt></ruby>、<ruby>考<rt>かんが</rt></ruby>えてごらん。</p></div>
+    <div class='dlg 🗺️'><p>It shouldn&rsquo;t be a puzzle to worry about.<br>Think again.</p></div>
+</td></tr></table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t5.txt --><bt>@3</bt>ええと、どこまで<ruby>数<rt>かぞ</rt></ruby>えたっけ？</p></div>
+    <div class='dlg 🗺️'><p>Hmm, how many did I count?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t9.txt --><bt>@3</bt>やりました、<ruby>先生<rt>せんせい</rt></ruby>！<bt>@p</bt><br><bt>&SetAni 1 talk&</bt>あれ？<br>でも、<ruby>何冊<rt>なんさつ</rt></ruby><ruby>目<rt>め</rt></ruby>まで<ruby>数<rt>かぞ</rt></ruby>えたっけ⋯？</p></div>
+    <div class='dlg 🗺️'><p>I did it, Professor!<br>&hellip;Huh?<br>But how many books did you count&hellip;?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t10.txt | Fun fact: it’s also the content of file data_lt1/etext/e6_t9.txt (from Puzzle Puzzle &num;04). Both puzzles are about counting papers, so the devs must have prepared this line for Puzzle 04 and then changed their mind! -->はは、ぜんぶ<ruby>数<rt>かぞ</rt></ruby>えていたら、<br><ruby>夜<rt>よる</rt></ruby>になってしまうよ。</p></div>
+    <div class='dlg 🗺️'><p>Haha, if we tried to count them all,<br>we would reach nighttime.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the books again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t6.txt --><bt>@3</bt>それにしても、<br>むずかしそうな<ruby>本<rt>ほん</rt></ruby>ばかりですね。<bt>@p</bt>ボクにも<ruby>読<rt>よ</rt></ruby>めるかなぁ？</p></div>
+    <div class='dlg 🗺️'><p>Even so, It’s just a boring book.<br>I wonder if I can read it too?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t7.txt -->ルークには<ruby>少<rt>すこ</rt></ruby>し<ruby>早<rt>はや</rt></ruby>いかもしれないね。<bt>@p</bt><br><bt>&SetAni 0 smile&</bt>でも、そのうち<ruby>読<rt>よ</rt></ruby>めるようになるよ。</p></div>
+    <div class='dlg 🗺️'><p>It might be a little early for you.<br>But you will be able to read it soon.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t8.txt --><bt>@3</bt>うーん、そうだといいんですけど。</p></div>
+    <div class='dlg 🗺️'><p>Well, I hope so.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div id=nazo02 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;02<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-02.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t0.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>はいつもここに<br><ruby>泊<rt>と</rt></ruby>まっているんですよね？</p></div>
+    <div class='dlg 🗺️'><p>Professor, you always stay here, don’t you?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t1.txt --><ruby>泊<rt>と</rt></ruby>まるつもりはなくても、<br><ruby>考<rt>かんが</rt></ruby>え<ruby>事<rt>ごと</rt></ruby>をしているうちに、<br><ruby>朝<rt>あさ</rt></ruby>になっていることが<ruby>多<rt>おお</rt></ruby>いんだよ。</p></div>
+    <div class='dlg 🗺️'><p>Even if I don’t plan on staying the night,<br>it often ends up being morning while I’m thinking.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t2.txt --><ruby>昨日<rt>きのう</rt></ruby>もこんなナゾを<ruby>考<rt>かんが</rt></ruby>えていてね⋯</p></div>
+    <div class='dlg 🗺️'><p>I was thinking about this puzzle yesterday&hellip;</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００２</p><p><!-- data_lt1/qtext/t_2.txt -->サイコロの<ruby>目<rt>め</rt></ruby></p><p>Dice Roll</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>50</cr>&nbsp; &nbsp;50&nbsp;</i><i>Picarats</i></h2><table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>30</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><!-- data_lt1/qtext/q_2.txt --><div>
+    <p class=🇯🇵><ruby>少年<rt>しょうねん</rt></ruby>がサイコロを<ruby>投<rt>な</rt></ruby>げて、<br><ruby>目<rt>め</rt></ruby>が<ruby>出<rt>で</rt></ruby>るたびに<ruby>数<rt>かず</rt></ruby>をつぶやいている。<br><br>１が<ruby>出<rt>で</rt></ruby>ると１５、６が<ruby>出<rt>で</rt></ruby>ると２０<br>と<ruby>言<rt>い</rt></ruby>う。<br><br>さて、<ruby>今回<rt>こんかい</rt></ruby>は３が<ruby>出<rt>で</rt></ruby>た。<br><ruby>少年<rt>しょうねん</rt></ruby>は<ruby>何<rt>なん</rt></ruby>と<ruby>言<rt>い</rt></ruby>うだろう？</p>
+    <p class=🗺️>A boy throws a dice and mutters a number each time it rolls up.<br>When a 1 is rolled, it is called 15, and when a 6 is rolled,<br>it is called a 20.<br>This time, he got a 3. What will the boy say?</p>
+</div></td><td style=background:url(../ast/lh/nazo_02.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p02h0','p02')"><button id=p02h0_b class=p02_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p02h1','p02')"><button id=p02h1_b class=p02_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p02h2','p02')"><button id=p02h2_b class=p02_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p02h3','p02')"><button id=p02h3_b class=p02_b>Hint 3</button></a>
+    <div id=p02_c class=hint><div id=p02h0 class=p02><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p02h1 class=p02><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_2_1.txt -->キーワードは「<ruby>合計<rt>ごうけい</rt></ruby>」。</p></div>
+            <div class=🗺️><p>The keyword is &ldquo;total.&rdquo;</p></div>
+        </div></div>
+        <div id=p02h2 class=p02><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_2_2.txt -->サイコロの<ruby>目<rt>め</rt></ruby>は１から６まで。<br><ruby>合計<rt>ごうけい</rt></ruby>するといくつになるかな？</p></div>
+            <div class=🗺️><p>The roll of the dice is from 1 to 6.<br>How many will it be in total?</p></div>
+        </div></div>
+        <div id=p02h3 class=p02><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_2_3.txt -->サイコロで<ruby>正反対<rt>せいはんたい</rt></ruby>にある<ruby>面<rt>めん</rt></ruby>の<ruby>目<rt>め</rt></ruby>を<br><ruby>合計<rt>ごうけい</rt></ruby>すると、いつも７になるのは<br><ruby>知<rt>し</rt></ruby>っているよね？</p></div>
+            <div class=🗺️><p>You know that the sum of the numbers on the opposite sides of a die always equals 7, right?</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_2.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br><ruby>規則<rt>きそく</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Find the rule.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_2.txt -->１７。<br><br><ruby>少年<rt>しょうねん</rt></ruby>は<ruby>見<rt>み</rt></ruby>えている<ruby>目<rt>め</rt></ruby><ruby>全部<rt>ぜんぶ</rt></ruby>の<ruby>数<rt>かず</rt></ruby>を<ruby>合計<rt>ごうけい</rt></ruby>し<br>た<ruby>数<rt>かず</rt></ruby>を<ruby>言<rt>い</rt></ruby>っていたのだ。<ruby>出<rt>で</rt></ruby>た<ruby>目<rt>め</rt></ruby>の<ruby>反対<rt>はんたい</rt></ruby><br><ruby>側<rt>がわ</rt></ruby>だけは<ruby>下<rt>した</rt></ruby>を<ruby>向<rt>む</rt></ruby>いていて<ruby>見<rt>み</rt></ruby>えない。<br>サイコロは<ruby>反対<rt>はんたい</rt></ruby>の<ruby>目<rt>め</rt></ruby>の<ruby>合計<rt>ごうけい</rt></ruby>が７だか<br>ら、<ruby>計算<rt>けいさん</rt></ruby>できる。</p>
+    <p class=🗺️>17.<br><br>The boy was saying the sum of all visible eyes. Only the other side of his eye is looking down and I can’t see it. Since the sum of the dice is 7 on the opposite side, it can be calculated.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t8.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、わかりません。</p></div>
+    <div class='dlg 🗺️'><p>Professor, I don’t understand.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t9.txt --><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて<ruby>考<rt>かんが</rt></ruby>えなおしてごらん。<br>そうむずかしいナゾでもないはずだ。</p></div>
+    <div class='dlg 🗺️'><p>Calm down and think again.<br>It shouldn’t be such a difficult puzzle.</p></div>
+</td></tr></table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-02.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t3.txt --><bt>@3</bt>よし、<ruby>今度<rt>こんど</rt></ruby>こそ！</p></div>
+    <div class='dlg 🗺️'><p>Alright, this time!</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t6.txt --><ruby>正解<rt>せいかい</rt></ruby>だよ、ルーク。</p></div>
+    <div class='dlg 🗺️'><p>You’re right, Luke.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t7.txt --><bt>@3</bt><ruby>朝<rt>あさ</rt></ruby>までナゾを<ruby>考<rt>かんが</rt></ruby>えているなんて、<br><ruby>先生<rt>せんせい</rt></ruby>らしいですね。</p></div>
+    <div class='dlg 🗺️'><p>It seems like you to be thinking about a puzzle until morning.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the sofa again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-02.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t4.txt --><bt>@3</bt>このソファ、ふかふかしてますね。</p></div>
+    <div class='dlg 🗺️'><p>This sofa is so fluffy.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t5.txt --><ruby>私<rt>わたし</rt></ruby>のお<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りだよ。<bt>@p</bt><br>ここに<ruby>泊<rt>と</rt></ruby>まる<ruby>時<rt>とき</rt></ruby>は、いつも<br>このソファで<ruby>眠<rt>ねむ</rt></ruby>っているんだ。</p></div>
+    <div class='dlg 🗺️'><p>It’s my favourite.<br>Whenever I stay here for the night,<br>I always sleep on this sofa.</p></div>
+</td></tr>
+</table>
+</div>
+
+<div id=nazo03 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;03<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-03.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t0.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、このリンゴ、<br><ruby>虫<rt>むし</rt></ruby>がついてますよ！</p></div>
+    <div class='dlg 🗺️'><p>Professor, this apple,<br>it has a bug on it!</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t1.txt -->ええ、<ruby>本当<rt>ほんとう</rt></ruby>かい、ルーク？</p></div>
+    <div class='dlg 🗺️'><p>Oh, are you sure, Luke?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t2.txt --><bt>@3</bt><ruby>本当<rt>ほんとう</rt></ruby>ですよ、<br>ほら、ここです、ここ！</p></div>
+    <div class='dlg 🗺️'><p>It’s true,<br>it’s here, it’s here!</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t3.txt -->うん？どこだい？</p></div>
+    <div class='dlg 🗺️'><p>Hm? Where is it?</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００３</p><p><!-- data_lt1/qtext/t_3.txt -->リンゴの<ruby>虫<rt>むし</rt></ruby></p><p>Apple Worm</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>60</cr>&nbsp; &nbsp;60&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>80</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div><!-- data_lt1/qtext/q_3.txt -->
+    <p class=🇯🇵>リンゴを<ruby>完成<rt>かんせい</rt></ruby>させよう。<br><ruby>真<rt>ま</rt></ruby>ん<ruby>中<rt>なか</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>が<ruby>見<rt>み</rt></ruby>えるようにね。<br><br>たった８<ruby>個<rt>こ</rt></ruby>のパーツだけど、<br>ちょっとむずかしいよ。</p>
+    <p class=🗺️>Let’s finish the apple.<br>Make sure you can see the bug in the middle.<br><br>It’s only 8 parts, but it’s a bit difficult.</p>
+</div></td><td style=background:url(../ast/lh/nazo_03.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p03h0','p03')"><button id=p03h0_b class=p03_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p03h1','p03')"><button id=p03h1_b class=p03_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p03h2','p03')"><button id=p03h2_b class=p03_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p03h3','p03')"><button id=p03h3_b class=p03_b>Hint 3</button></a>
+    <div id=p03_c class=hint><div id=p03h0 class=p03><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p03h1 class=p03><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_3_1.txt -->たった８<ruby>個<rt>こ</rt></ruby>のパーツ。<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて<br>やってみよう。<br><ruby>同<rt>おな</rt></ruby>じことを<ruby>繰<rt>く</rt></ruby>り<ruby>返<rt>かえ</rt></ruby>していないかな。</p></div>
+            <div class=🗺️><p>Only 8 parts. Calm down and do it.<br>Am I repeating the same thing?</p></div>
+        </div></div>
+        <div id=p03h2 class=p03><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_3_2.txt --><ruby>同<rt>おな</rt></ruby>じように<ruby>見<rt>み</rt></ruby>えるパーツがある<br>はずだ。それが、<ruby>鍵<rt>かぎ</rt></ruby>。</p></div>
+            <div class=🗺️><p>There should be parts that look the same. That’s the key.</p></div>
+        </div></div>
+        <div id=p03h3 class=p03><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_3_3.txt --><ruby>最初<rt>さいしょ</rt></ruby>に<ruby>左上<rt>ひだりうえ</rt></ruby>にあるパーツ。これを<br>そのままにしては<ruby>解<rt>と</rt></ruby>けない。<br><ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>か</rt></ruby>えよう。</p></div>
+            <div class=🗺️><p>First part on the upper left.<br>It cannot be solved by leaving it as it is.<br>Replace it.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_3.txt --><ruby>残念<rt>ざんねん</rt></ruby></p>
+    <p class=🗺️>Incorrect</p>
+    <p>⚠️<i>As this is a sliding puzzle, this line exists but will never be seen in-game.</i></p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_3.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>簡単<rt>かんたん</rt></ruby>そうに<ruby>見<rt>み</rt></ruby>えてむずかしい。<br><ruby>同<rt>おな</rt></ruby>じ<ruby>形<rt>かたち</rt></ruby>のパーツが<ruby>入<rt>い</rt></ruby>れ<ruby>替<rt>か</rt></ruby>えてあったの<br>に<ruby>気<rt>き</rt></ruby>がついたかな？</p>
+    <p class=🗺️>Correct!<br><br>It looks easy but it’s hard.<br>Did you notice that the parts of the same shape were replaced?</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t8.txt --><bt>@3</bt><ruby>今<rt>いま</rt></ruby>、<ruby>絶対<rt>ぜったい</rt></ruby>にいたんですよ！</p></div>
+    <div class='dlg 🗺️'><p>Now, it’s definitely there!</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-03.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t4.txt --><bt>@3</bt><ruby>本当<rt>ほんとう</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>がいたんですってば！</p></div>
+    <div class='dlg 🗺️'><p>There really was a bug!</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t6.txt -->うーん、<ruby>部屋<rt>へや</rt></ruby>に<ruby>放<rt>ほう</rt></ruby>っておいたのが<br>まずかったのかな。</p></div>
+    <div class='dlg 🗺️'><p>Hmm, maybe I should have just left it in its room.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t7.txt --><bt>@3</bt>これじゃあ、<ruby>食<rt>た</rt></ruby>べられませんね。<br>もったいないなあ。</p></div>
+    <div class='dlg 🗺️'><p>I can’t eat this.<br>It’s such a waste.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the apple again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-03.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t5.txt --><bt>@3</bt><ruby>部屋<rt>へや</rt></ruby>に<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>放<rt>ほう</rt></ruby>っておくなんて、<br><ruby>英国紳士<rt>えいこくしんし</rt></ruby><ruby>失格<rt>しっかく</rt></ruby>ですよ、<ruby>先生<rt>せんせい</rt></ruby>！</p></div>
+    <div class='dlg 🗺️'><p>Leaving food in the room is unworthy of a gentleman, Professor!</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div id=nazo04 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;04<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-04.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t0.txt --><bt>@3</bt>すごい<ruby>量<rt>りょう</rt></ruby>の<ruby>書類<rt>しょるい</rt></ruby>ですね。<bt>@p</bt><br>どこに<ruby>何<rt>なに</rt></ruby>があるのか、わからなく<br>なったりしないんですか？</p></div>
+    <div class='dlg 🗺️'><p>That’s a huge amount of documents.<br>Don’t you lose track of what’s in it?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t1.txt -->それくらい<ruby>把握<rt>はあく</rt></ruby>しているよ。<br><ruby>自分<rt>じぶん</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>だからね。</p></div>
+    <div class='dlg 🗺️'><p>I understand that much.<br>It’s my office.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t2.txt --><bt>@3</bt>さすが<ruby>先生<rt>せんせい</rt></ruby>ですね。<bt>@p</bt><br><bt>&SetAni 1 talk&</bt>でもこれって、<br><ruby>全部<rt>ぜんぶ</rt></ruby>で<ruby>何枚<rt>なんまい</rt></ruby>くらいあるんですかね。</p></div>
+    <div class='dlg 🗺️'><p>As expected of the professor.<br>But how many of these are there in total?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t3.txt --><ruby>気<rt>き</rt></ruby>になるのなら、<ruby>数<rt>かぞ</rt></ruby>えてみるかい？</p></div>
+    <div class='dlg 🗺️'><p>If you’re curious, would you like to count?</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００４</p><p><!-- data_lt1/qtext/t_4.txt --><ruby>紙<rt>かみ</rt></ruby>の<ruby>重<rt>かさ</rt></ruby>なり</p><p>Stack of paper</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>140</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div><!-- data_lt1/qtext/q_4.txt -->
+    <p class=🇯🇵><ruby>長方形<rt>ちょうほうけい</rt></ruby>の<ruby>紙<rt>かみ</rt></ruby>が、<ruby>図<rt>ず</rt></ruby>のように<ruby>重<rt>かさ</rt></ruby>なって<br>いる。<br><br>わかりやすいように、<ruby>見<rt>み</rt></ruby>えない<ruby>線<rt>せん</rt></ruby>も<br><ruby>描<rt>か</rt></ruby>いてある。<br><br>さて、<ruby>一番<rt>いちばん</rt></ruby><ruby>重<rt>かさ</rt></ruby>なるところで、<ruby>何枚<rt>なんまい</rt></ruby><br><ruby>重<rt>かさ</rt></ruby>なっているかな？</p>
+    <p class=🗺️>Rectangular pieces of paper are stacked as shown.<br>Invisible lines are also drawn for clarity.<br>By the way, how many sheets overlap at the place where they overlap the most?</p>
+</div></td><td style=background:url(../ast/lh/nazo_04.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p04h0','p04')"><button id=p04h0_b class=p04_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p04h1','p04')"><button id=p04h1_b class=p04_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p04h2','p04')"><button id=p04h2_b class=p04_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p04h3','p04')"><button id=p04h3_b class=p04_b>Hint 3</button></a>
+    <div id=p04_c class=hint><div id=p04h0 class=p04><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p04h1 class=p04><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_4_1.txt --><ruby>特別<rt>とくべつ</rt></ruby>な<ruby>解<rt>と</rt></ruby>きかたは<ruby>無<rt>な</rt></ruby>い。<br><ruby>地道<rt>じみち</rt></ruby>に<ruby>数<rt>かぞ</rt></ruby>えてみよう。</p></div>
+            <div class=🗺️><p>There is no special solution.<br>Do a steady count.</p></div>
+        </div></div>
+        <div id=p04h2 class=p04><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_4_2.txt -->いきなり<ruby>一番<rt>いちばん</rt></ruby><ruby>重<rt>かさ</rt></ruby>なるところを<ruby>見<rt>み</rt></ruby>つ<br>けるのは<ruby>無理<rt>むり</rt></ruby>。<br><ruby>重<rt>かさ</rt></ruby>なりの<ruby>少<rt>すく</rt></ruby>ない<ruby>領域<rt>りょういき</rt></ruby>から<ruby>印<rt>しるし</rt></ruby>をつけ<br>てみよう。</p></div>
+            <div class=🗺️><p>It is impossible to find the most overlap all at once.<br>Start by marking the areas with the least overlap.</p></div>
+        </div></div>
+        <div id=p04h3 class=p04><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_4_3.txt -->３<ruby>枚<rt>まい</rt></ruby><ruby>以上<rt>いじょう</rt></ruby>は<ruby>間違<rt>まちが</rt></ruby>いなし。</p></div>
+            <div class=🗺️><p>Definitely more than 3.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_4.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br><ruby>一番<rt>いちばん</rt></ruby><ruby>重<rt>かさ</rt></ruby>なる<ruby>場所<rt>ばしょ</rt></ruby>は<ruby>一箇所<rt>いっかしょ</rt></ruby>だ。</p>
+    <p class=🗺️>Incorrect.<br><br>There is only one place that overlaps the most.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_4.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>簡単<rt>かんたん</rt></ruby>そうに<ruby>思<rt>おも</rt></ruby>えて、<ruby>意外<rt>いがい</rt></ruby>とむずかしい。</p>
+    <p class=🗺️>Correct!<br><br>It sounds easy, but it’s surprisingly difficult.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t10.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、やっぱりちょっと<ruby>整理<rt>せいり</rt></ruby>した<ruby>方<rt>ほう</rt></ruby>が<br>いいんじゃないですか？</p></div>
+    <div class='dlg 🗺️'><p>Professor, shouldn’t you be a little more organised?</p></div>
+</td></tr><tr><td>&nbsp;</td></tr>
+<tr><td align=center><i>This text is unused, likely because it is identical to another line used for Puzzle Puzzle &num;01.</i></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t11.txt -->そう<ruby>悩<rt>なや</rt></ruby>むナゾでもないはずだよ。<br>もう<ruby>一度<rt>いちど</rt></ruby>、<ruby>考<rt>かんが</rt></ruby>えてごらん。</p></div>
+    <div class='dlg 🗺️'><p>It shouldn’t be a puzzle to worry about.<br>Think again.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-04.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t4.txt --><bt>@3</bt>こんなバラバラに<ruby>置<rt>お</rt></ruby>いておくより、<br>きちんと<ruby>重<rt>かさ</rt></ruby>ねた<ruby>方<rt>ほう</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>うん<br>ですけど⋯。</p></div>
+    <div class='dlg 🗺️'><p>I think it’s better to stack them properly instead of leaving them scattered like this&hellip;</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+<h2><i>Once this puzzle is solved, the stack of papers disappears from the background.</i></h2>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t8.txt --><bt>@3</bt>わかりました！<br>でも、そろえていた<ruby>方<rt>ほう</rt></ruby>が<br><ruby>数<rt>かぞ</rt></ruby>えやすかったんじゃ⋯。</p></div>
+    <div class='dlg 🗺️'><p>I got it!<br>But it would have been easier to count them if they were all together&hellip;</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td align=center><i>This text is unused, likely because it is identical to another line used for Puzzle Puzzle &num;01.</i></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t9.txt -->はは、ぜんぶ<ruby>数<rt>かぞ</rt></ruby>えていたら、<br><ruby>夜<rt>よる</rt></ruby>になってしまうよ。</p></div>
+    <div class='dlg 🗺️'><p>Haha, if we tried to count them all,<br>we would reach nighttime.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect again the spot<br>where the stack of papers used to be<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t5.txt --><bt>@3</bt>それにしても、こんなに<ruby>書類<rt>しょるい</rt></ruby>がある<br>なんて、<ruby>教授<rt>きょうじゅ</rt></ruby>って<ruby>大変<rt>たいへん</rt></ruby>なんですね。</p></div>
+    <div class='dlg 🗺️'><p>Even so, it must be difficult for a professor to have so many documents.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t6.txt -->そうでもないよ。<br><ruby>自分<rt>じぶん</rt></ruby>の<ruby>理論<rt>りろん</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て、それを<ruby>形<rt>かたち</rt></ruby>に<br>することは、<ruby>楽<rt>たの</rt></ruby>しいものなんだ。</p></div>
+    <div class='dlg 🗺️'><p>Not really.<br>It’s fun to come up with your own theories and bring them to life.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t7.txt --><bt>@3</bt><ruby>張<rt>は</rt></ruby>り<ruby>切<rt>き</rt></ruby>った<ruby>結果<rt>けっか</rt></ruby>が<br>この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>山<rt>やま</rt></ruby>ってわけですね。</p></div>
+    <div class='dlg 🗺️'><p>The result of your hard work is this mountain of documents.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div id=nazo05 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;05<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-05.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t0.txt --><bt>@3</bt>これは<ruby>古<rt>ふる</rt></ruby><ruby>新聞<rt>しんぶん</rt></ruby>ですね。<bt>@p</bt><br>ずいぶん<ruby>古<rt>ふる</rt></ruby>いものですけど、<br>もう<ruby>捨<rt>す</rt></ruby>てちゃっていいんですか？</p></div>
+    <div class='dlg 🗺️'><p>These are old newspapers.<br>They’re quite old,<br>can I throw them away now?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t1.txt --><ruby>興味深<rt>きょうみぶか</rt></ruby>い<ruby>論文<rt>ろんぶん</rt></ruby>が<ruby>載<rt>の</rt></ruby>っていて<br><ruby>取<rt>と</rt></ruby>っておいたんだが⋯<br>すごい<ruby>量<rt>りょう</rt></ruby>になってしまったね。</p></div>
+    <div class='dlg 🗺️'><p>There were some interesting papers and I saved them,<br>but it turned out to be a lot.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t2.txt --><bt>@3</bt>じゃあ、ちゃんと<br>まとめておかないと。<br><ruby>何<rt>なに</rt></ruby>かしばるものはありますか？</p></div>
+    <div class='dlg 🗺️'><p>Well then, I have to put it together properly.<br>Do you have something to hold them together?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t3.txt -->ロープがあったはずだが⋯<bt>@p</bt><br>ああ、<ruby>絡<rt>から</rt></ruby>まってしまっているね。</p></div>
+    <div class='dlg 🗺️'><p>There should have been a rope&hellip;<br>ah, it’s tangled.</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００５</p><p><!-- data_lt1/qtext/t_5.txt --><ruby>結<rt>むす</rt></ruby>び<ruby>目<rt>め</rt></ruby>ができる？</p><p>Can you tie a knot?</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>180</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><!-- data_lt1/qtext/q_5.txt --><div>
+    <p class=🇯🇵>ロープが４つ<ruby>置<rt>お</rt></ruby>かれている。<br>それぞれの<ruby>両端<rt>りょうたん</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>っ<ruby>張<rt>ぱ</rt></ruby>って、<br><ruby>結<rt>むす</rt></ruby>び<ruby>目<rt>め</rt></ruby>ができるものに、<br><ruby>印<rt>しるし</rt></ruby>をつけてほしい。</p>
+    <p class=🗺️>There are 4 ropes.<br>Pull on each end and mark where the knot will be.</p>
+</div></td><td style=background:url(../ast/lh/nazo_05.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p05h0','p05')"><button id=p05h0_b class=p05_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p05h1','p05')"><button id=p05h1_b class=p05_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p05h2','p05')"><button id=p05h2_b class=p05_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p05h3','p05')"><button id=p05h3_b class=p05_b>Hint 3</button></a>
+    <div id=p05_c class=hint><div id=p05h0 class=p05><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p05h1 class=p05><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_5_1.txt -->まずは、<ruby>一番<rt>いちばん</rt></ruby><ruby>単純<rt>たんじゅん</rt></ruby>な<ruby>結<rt>むす</rt></ruby>び<ruby>目<rt>め</rt></ruby>ができる<br><ruby>形<rt>かたち</rt></ruby>を、<ruby>頭<rt>あたま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>考<rt>かんが</rt></ruby>えてみよう。</p></div>
+            <div class=🗺️><p>First, think in your head of the shape in which the simplest knot can be made.</p></div>
+        </div></div>
+        <div id=p05h2 class=p05><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_5_2.txt -->Ｂは、<ruby>結<rt>むす</rt></ruby>べないようだ。<br>わからなければ、<ruby>実際<rt>じっさい</rt></ruby>にヒモを<br><ruby>用意<rt>ようい</rt></ruby>してやってみるのも<ruby>手<rt>て</rt></ruby>だ。</p></div>
+            <div class=🗺️><p>B doesn&rsquo;t seem to be able to connect.<br>If you don&rsquo;t know, you can actually prepare a string and try it.</p></div>
+        </div></div>
+        <div id=p05h3 class=p05><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_5_3.txt -->いかにも、ややこしい<ruby>感<rt>かん</rt></ruby>じのＡも<br><ruby>結<rt>むす</rt></ruby>べずにほどけてしまう。<br><ruby>試<rt>ため</rt></ruby>してみよう。</p></div>
+            <div class=🗺️><p>Indeed, even A, which seems to be complicated, is untied without being able to be tied. Try it.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_5.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br>よく<ruby>見<rt>み</rt></ruby>てみよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Take a closer look.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_5.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>結<rt>むす</rt></ruby>び<ruby>目<rt>め</rt></ruby>ができるのはＣだけ。<br>よく<ruby>見<rt>み</rt></ruby>ればわかる。でも、<ruby>混乱<rt>こんらん</rt></ruby>してし<br>まうパズルだ。</p>
+    <p class=🗺️>Correct!<br><br>Only C can be knotted.<br>You can see it if you look closely. But it’s a confusing puzzle.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t14.txt --><bt>@3</bt>こんなに<ruby>散<rt>ち</rt></ruby>らかってると<br><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かないですよ。</p></div>
+    <div class='dlg 🗺️'><p>I feel restless with all this mess.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-05.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t4.txt --><bt>@3</bt>ロープがないと<br>この<ruby>新聞<rt>しんぶん</rt></ruby>をまとめられないや。</p></div>
+    <div class='dlg 🗺️'><p>I can’t put these newspapers together without a rope.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t9.txt --><bt>@3</bt>じゃあ、このロープで<br>まとめてしまいますね。</p></div>
+    <div class='dlg 🗺️'><p>Well then, let’s wrap it up with this rope.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t10.txt -->！<bt>@p@c</bt><br>ルーク、<ruby>待<rt>ま</rt></ruby>ってくれ。</p></div>
+    <div class='dlg 🗺️'><p>!<br>Luke, wait.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t11.txt --><bt>@3</bt>えっ？</p></div>
+    <div class='dlg 🗺️'><p>Hm?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t12.txt -->この<ruby>記事<rt>きじ</rt></ruby>、<ruby>見逃<rt>みのが</rt></ruby>していたのかな。<br>ふむ、なるほど。ああ、こっちの<br><ruby>論文<rt>ろんぶん</rt></ruby>もなかなか⋯。</p></div>
+    <div class='dlg 🗺️'><p>This article, I wonder if I missed it.<br>Hmm, I see. Ah, this paper is also quite&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t13.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、そんなことをしてるから<br><ruby>片付<rt>かたづ</rt></ruby>かないんじゃないですか？</p></div>
+    <div class='dlg 🗺️'><p>Professor, isn’t it because of this behaviour that you can’t clean up?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the newspapers again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t5.txt --><bt>@3</bt><ruby>新聞<rt>しんぶん</rt></ruby>みたいにかさばるものは、<br>まとめた<ruby>方<rt>ほう</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>うんですけど。</p></div>
+    <div class='dlg 🗺️'><p>I think it’s better to pack up bulky items like newspapers.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t6.txt -->まとめる<ruby>努力<rt>どりょく</rt></ruby>はしているんだが、<br><ruby>興味深<rt>きょうみぶか</rt></ruby>い<ruby>記事<rt>きじ</rt></ruby>があると、つい<br><ruby>読<rt>よ</rt></ruby>みふけってしまうんだよ。</p></div>
+    <div class='dlg 🗺️'><p>I try to keep things organized,<br>but when I find an interesting article,<br>I tend to read it.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t7.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、もしかして<br><ruby>片付<rt>かたづ</rt></ruby>けは<ruby>苦手<rt>にがて</rt></ruby>なんですか⋯？</p></div>
+    <div class='dlg 🗺️'><p>Professor, maybe you’re not good at tidying up&hellip;?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t8.txt -->⋯⋯。</p></div>
+    <div class='dlg 🗺️'><p>&hellip;</p></div>
+</td></tr>
+</table>
+</div>
+
+<div id=nazo06 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;06<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-06.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t0.txt --><bt>@3</bt>この<ruby>棚<rt>たな</rt></ruby>、<ruby>色<rt>いろ</rt></ruby>んなものが<br><ruby>置<rt>お</rt></ruby>いてありますね。<br>このタイルみたいなのは<ruby>何<rt>なん</rt></ruby>ですか？</p></div>
+    <div class='dlg 🗺️'><p>There are many things on this shelf.<br>What are these tiles like?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t1.txt -->うん？どれのことかな？</p></div>
+    <div class='dlg 🗺️'><p>Hm? Which one are you talking about?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t2.txt --><bt>@3</bt>この、<ruby>緑色<rt>みどりいろ</rt></ruby>の⋯。</p></div>
+    <div class='dlg 🗺️'><p>This green one&hellip;</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t3.txt -->ああ、これのことか。<br>これはね、こういうナゾなんだよ。</p></div>
+    <div class='dlg 🗺️'><p>Oh, you mean this?<br>This is a puzzle.</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００６</p><p><!-- data_lt1/qtext/t_6.txt --><ruby>何<rt>なん</rt></ruby>の<ruby>数字<rt>すうじ</rt></ruby>？</p><p>Which number?</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>50</cr>&nbsp; &nbsp;50&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>220</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><!-- data_lt1/qtext/q_6.txt --><div>
+    <p class=🇯🇵><ruby>図<rt>ず</rt></ruby>のＡ＝２、Ｂ＝３、Ｃ＝３、Ｄ＝４<br>だという。<br>だとすると、Ｅはなんだろう？</p>
+    <p class=🗺️>It is said that A = 2, B = 3, C = 3, and D = 4 in the figure.<br>Given this, what is E?</p>
+</div></td><td style=background:url(../ast/lh/nazo_06.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p06h0','p06')"><button id=p06h0_b class=p06_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p06h1','p06')"><button id=p06h1_b class=p06_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p06h2','p06')"><button id=p06h2_b class=p06_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p06h3','p06')"><button id=p06h3_b class=p06_b>Hint 3</button></a>
+    <div id=p06_c class=hint><div id=p06h0 class=p06><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p06h1 class=p06><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_6_1.txt --><ruby>数<rt>かず</rt></ruby>が<ruby>示<rt>しめ</rt></ruby>されているＡ、Ｂ、Ｃ、Ｄを<br><ruby>領域<rt>りょういき</rt></ruby>と<ruby>考<rt>かんが</rt></ruby>えてみよう。<br>それぞれの<ruby>領域<rt>りょういき</rt></ruby>に<ruby>関係<rt>かんけい</rt></ruby>する<ruby>数<rt>かず</rt></ruby>を<br><ruby>考<rt>かんが</rt></ruby>えるのだ。</p></div>
+            <div class=🗺️><p>Consider the areas A, B, C, and D, which are numbered.<br>Think of the numbers associated with each area.</p></div>
+        </div></div>
+        <div id=p06h2 class=p06><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_6_2.txt --><ruby>単色<rt>たんしょく</rt></ruby>だから<ruby>領域<rt>りょういき</rt></ruby>の<ruby>色<rt>いろ</rt></ruby>ではない。<br><ruby>位置<rt>いち</rt></ruby>と<ruby>形<rt>かたち</rt></ruby>⋯。それは、<ruby>少<rt>すこ</rt></ruby>し<ruby>関係<rt>かんけい</rt></ruby>が<br>あるかもしれない。</p></div>
+            <div class=🗺️><p>Since it is monochromatic, it is not the color of the region.<br>Position and shape… It may have something to do with it.</p></div>
+        </div></div>
+        <div id=p06h3 class=p06><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_6_3.txt -->まわりを<ruby>見<rt>み</rt></ruby>てごらん。</p></div>
+            <div class=🗺️><p>Look around you.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_6.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br><ruby>規則<rt>きそく</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Find the rule.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_6.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br>その<ruby>領域<rt>りょういき</rt></ruby>が、<ruby>辺<rt>へん</rt></ruby>で<ruby>他<rt>ほか</rt></ruby>の<ruby>領域<rt>りょういき</rt></ruby>と<ruby>接<rt>せっ</rt></ruby>してい<br>る<ruby>数<rt>かず</rt></ruby>だったのだ。</p>
+    <p class=🗺️>Correct!<br><br>It was the number of areas in contact with other areas on the sides.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t9.txt -->あまりむずかしく<ruby>考<rt>かんが</rt></ruby>えずに<br><ruby>直感<rt>ちょっかん</rt></ruby>で<ruby>答<rt>こた</rt></ruby>えてごらん。</p></div>
+    <div class='dlg 🗺️'><p>Don’t think too hard and answer intuitively.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-06.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t4.txt --><bt>@3</bt>よし、<ruby>今度<rt>こんど</rt></ruby>こそ！</p></div>
+    <div class='dlg 🗺️'><p>Alright, this time!</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t7.txt --><bt>@3</bt>そういうことなんだ！<bt>@p</bt><br><ruby>先生<rt>せんせい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>は、ナゾだらけですね。</p></div>
+    <div class='dlg 🗺️'><p>That’s what it is!<br>Your room is full of puzzles.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t8.txt -->でも、これだけじゃ<ruby>物<rt>もの</rt></ruby><ruby>足<rt>た</rt></ruby>りないから<br><ruby>新<rt>あたら</rt></ruby>しいナゾを<ruby>探<rt>さが</rt></ruby>しに<ruby>行<rt>い</rt></ruby>くんだよ。</p></div>
+    <div class='dlg 🗺️'><p>But this alone isn’t enough,<br>so I’m going to look for a new puzzle.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the shelf again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-06.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t5.txt --><bt>@3</bt>ボクもナゾは<ruby>好<rt>す</rt></ruby>きですけど、<br>こんなに<ruby>囲<rt>かこ</rt></ruby>まれていたら<br><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かないんじゃないですか？</p></div>
+    <div class='dlg 🗺️'><p>I like puzzles too, but<br>wouldn’t it be unsettling to be<br>surrounded by so many of them?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t6.txt -->ナゾに<ruby>囲<rt>かこ</rt></ruby>まれた<ruby>生活<rt>せいかつ</rt></ruby>というのも、<br>なかなか<ruby>優雅<rt>ゆうが</rt></ruby>なものだよ。</p></div>
+    <div class='dlg 🗺️'><p>A life surrounded by puzzles is quite elegant.</p></div>
+</td></tr>
+</table>
+</div>
+
+<div id=nazo07 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;07<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-07.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t0.txt --><bt>@3</bt>あれっ？<br>この<ruby>帽子<rt>ぼうし</rt></ruby>、どうして<br>もうひとつあるんですか？</p></div>
+    <div class='dlg 🗺️'><p>Huh?<br>Why do you have another one of these hats?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t1.txt -->この<ruby>帽子<rt>ぼうし</rt></ruby>が<ruby>汚<rt>よご</rt></ruby>れてしまった<ruby>時<rt>とき</rt></ruby>に<br><ruby>替<rt>か</rt></ruby>えがないと<ruby>困<rt>こま</rt></ruby>るだろう？<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>If my hat gets dirty, I would be in trouble if I didn’t have a replacement, wouldn’t I?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><bt>&SetAni 0 smile&</bt>いつ<ruby>何<rt>なに</rt></ruby>が<ruby>起<rt>お</rt></ruby>きても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>なように、<br><ruby>部屋<rt>へや</rt></ruby>にもスペアを<ruby>置<rt>お</rt></ruby>いているのさ。<bt>&SetAni 1 smile&</bt></p></div>
+    <div class='dlg 🗺️'><p>I keep spares in my room so that I can be prepared for whatever happens.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t2.txt --><bt>@3</bt>いつでも<ruby>身<rt>み</rt></ruby>だしなみに<br><ruby>気<rt>き</rt></ruby>をつかっているんですね。</p></div>
+    <div class='dlg 🗺️'><p>You always take care of your appearance.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p class=🇯🇵><ruby>当然<rt>とうぜん</rt></ruby>さ、<ruby>英国紳士<rt>えいこくしんし</rt></ruby>としてはね。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Of course, as an English gentleman should.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p>ところでルーク。<ruby>帽子<rt>ぼうし</rt></ruby>と<ruby>言<rt>い</rt></ruby>えば、<br>こんなナゾはどうかな？</p></div>
+    <div class='dlg 🗺️'><p>By the way, Luke. Speaking of hats,<br>how about this puzzle?</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００７</p><p><!-- data_lt1/qtext/t_7.txt --><ruby>教授<rt>きょうじゅ</rt></ruby>の<ruby>帽子箱<rt>ぼうしばこ</rt></ruby></p><p>Professor hat box</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>270</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><!-- data_lt1/qtext/q_7.txt --><div>
+    <p class=🇯🇵><ruby>箱<rt>はこ</rt></ruby>の<ruby>展開<rt>てんかい</rt></ruby><ruby>図<rt>ず</rt></ruby>が４つある。<br><ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てたときに、ひとつだけ<br>デザインが<ruby>違<rt>ちが</rt></ruby>うものがあるのだが、<br>それはどれか。</p>
+    <p class=🗺️>There are four exploded views of the box.<br>When assembled, there is only one net with a different design, which one is it?</p>
+</div></td><td style=background:url(../ast/lh/nazo_07.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p07h0','p07')"><button id=p07h0_b class=p07_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p07h1','p07')"><button id=p07h1_b class=p07_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p07h2','p07')"><button id=p07h2_b class=p07_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p07h3','p07')"><button id=p07h3_b class=p07_b>Hint 3</button></a>
+    <div id=p07_c class=hint><div id=p07h0 class=p07><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p07h1 class=p07><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_7_1.txt --><ruby>頭<rt>あたま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てることができれ<br>ばわかる。<br><ruby>帽子<rt>ぼうし</rt></ruby>の<ruby>模様<rt>もよう</rt></ruby>が、どう<ruby>並<rt>なら</rt></ruby>ぶかを<ruby>考<rt>かんが</rt></ruby>え<br>よう。</p></div>
+            <div class=🗺️><p>If you can put it together in your head, you know.<br>Think about how the pattern on the hat will line up.</p></div>
+        </div></div>
+        <div id=p07h2 class=p07><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_7_2.txt --><ruby>箱<rt>はこ</rt></ruby>の６<ruby>面<rt>めん</rt></ruby>のうち、４<ruby>面<rt>めん</rt></ruby>に<ruby>帽子<rt>ぼうし</rt></ruby>の<ruby>模様<rt>もよう</rt></ruby><br>がある。<ruby>絵<rt>え</rt></ruby>のない２<ruby>面<rt>めん</rt></ruby>の<ruby>位置<rt>いち</rt></ruby>から<ruby>考<rt>かんが</rt></ruby><br>えると<ruby>見<rt>み</rt></ruby>つけやすい。</p></div>
+            <div class=🗺️><p>Four of the six sides of the box have a hat pattern.<br>It is easy to find if you think from the position of the two sides without pictures.</p></div>
+        </div></div>
+        <div id=p07h3 class=p07><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_7_3.txt --><ruby>絵<rt>え</rt></ruby>のない２<ruby>面<rt>めん</rt></ruby>が<ruby>隣<rt>とな</rt></ruby>り<ruby>合<rt>あ</rt></ruby>っているもの<br>が、ひとつだけあるよ。</p></div>
+            <div class=🗺️><p>There is only one that has two sides without pictures next to each other.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_7.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br><ruby>頭<rt>あたま</rt></ruby>の<ruby>中<rt>なか</rt></ruby>で<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>ててみよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Assemble it in your head.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_7.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>意外<rt>いがい</rt></ruby>とむずかしい？</p>
+    <p class=🗺️>Correct!<br><br>Surprisingly difficult?</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t7.txt --><bt>@3</bt>うーん、どれも<ruby>同<rt>おな</rt></ruby>じに<ruby>見<rt>み</rt></ruby>えますね。</p></div>
+    <div class='dlg 🗺️'><p>Hmm, they all look the same.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t8.txt -->よく<ruby>観察<rt>かんさつ</rt></ruby>してみれば、<br><ruby>違<rt>ちが</rt></ruby>いがわかるはずだよ。</p></div>
+    <div class='dlg 🗺️'><p>Look closely,<br>you should be able to tell the difference.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion><tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-07.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t4.txt --><ruby>違<rt>ちが</rt></ruby>いはわかったかな、ルーク。</p></div>
+    <div class='dlg 🗺️'><p>Can you tell the difference, Luke?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr></table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion><tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t6.txt --><bt>@3</bt><ruby>本当<rt>ほんとう</rt></ruby>だ、<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てると、<br>これだけ<ruby>違<rt>ちが</rt></ruby>いますね。</p></div>
+    <div class='dlg 🗺️'><p>It’s true, when you assemble it,<br>this is the only difference.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr></table>
+
+<h1>Dialogue if you inspect the hat again<p class=hr></p></h1>
+
+<table class=translaytion><tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-07.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t5.txt --><bt>@3</bt><ruby>帽子<rt>ぼうし</rt></ruby>へのこだわりなら、<br>ボクだって<ruby>負<rt>ま</rt></ruby>けてませんよ。</p></div>
+    <div class='dlg 🗺️'><p>If you are particular about hats,<br>I am second to none.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr></table>
+</div>
+
+<div id=nazo08 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;08<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-08.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t0.txt --><bt>@3</bt>このあたりには<ruby>何<rt>なに</rt></ruby>があるんですか？</p></div>
+    <div class='dlg 🗺️'><p>What’s around here?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p class=🇯🇵><ruby>講義<rt>こうぎ</rt></ruby>で<ruby>使<rt>つか</rt></ruby>ったものなんかを<br>しまっておいたはずだが⋯。</p></div>
+    <div class='dlg 🗺️'><p>I should have put away the things I used in the lecture&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t2.txt --><bt>@3</bt>⋯⋯。<bt>@p@c</bt><br><bt>&SetAni 1 smile&</bt>ヒヨコのおもちゃが<ruby>出<rt>で</rt></ruby>てきました。</p></div>
+    <div class='dlg 🗺️'><p>&hellip;A toy chick came out.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t3.txt -->ああ、そのおもちゃなら、<ruby>確<rt>たし</rt></ruby>か、<br>このナゾに<ruby>使<rt>つか</rt></ruby>ったものではないかな。</p></div>
+    <div class='dlg 🗺️'><p>Ah, if it’s that toy, I’m sure it’s the one used for this puzzle.</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００８</p><p><!-- data_lt1/qtext/t_8.txt -->ニワトリとヒヨコ</p><p>Chicken and chick</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>310</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div><!-- data_lt1/qtext/q_8.txt -->
+    <p class=🇯🇵><ruby>杭<rt>くい</rt></ruby>と<ruby>杭<rt>くい</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に３<ruby>本<rt>ぼん</rt></ruby>の<ruby>直線<rt>ちょくせん</rt></ruby>を<ruby>引<rt>ひ</rt></ruby>いて、<br>ニワトリを１<ruby>羽<rt>わ</rt></ruby>、ヒヨコを２<ruby>羽<rt>わ</rt></ruby>ずつの<br>グループに<ruby>分<rt>わ</rt></ruby>けてみよう。</p>
+    <p class=🗺️>Draw three straight lines between the stakes and divide them into groups of one chicken and two chicks.</p>
+</div></td><td style=background:url(../ast/lh/nazo_08.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p08h0','p08')"><button id=p08h0_b class=p08_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p08h1','p08')"><button id=p08h1_b class=p08_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p08h2','p08')"><button id=p08h2_b class=p08_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p08h3','p08')"><button id=p08h3_b class=p08_b>Hint 3</button></a>
+    <div id=p08_c class=hint><div id=p08h0 class=p08><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p08h1 class=p08><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_8_1.txt --><ruby>左端<rt>ひだりはし</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>から、<br>ヒヨコ、ニワトリ、ヒヨコ、<br>はグループだよ。</p></div>
+            <div class=🗺️><p>Chicks, chickens, chicks are groups from the top left.</p></div>
+        </div></div>
+        <div id=p08h2 class=p08><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_8_2.txt --><ruby>右下<rt>みぎした</rt></ruby>のニワトリはその<ruby>右<rt>みぎ</rt></ruby><ruby>上<rt>うえ</rt></ruby>、<ruby>右下<rt>みぎした</rt></ruby>の<br>ヒヨコと<ruby>一緒<rt>いっしょ</rt></ruby>。</p></div>
+            <div class=🗺️><p>The chicken in the lower right is with the chicks in the upper right and lower right.</p></div>
+        </div></div>
+        <div id=p08h3 class=p08><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_8_3.txt --><ruby>左下<rt>ひだりした</rt></ruby>のニワトリは、その<ruby>右<rt>みぎ</rt></ruby><ruby>上<rt>うえ</rt></ruby>、<br>そして<ruby>左側<rt>ひだりがわ</rt></ruby>のヒヨコと<ruby>一緒<rt>いっしょ</rt></ruby>。</p></div>
+            <div class=🗺️><p>The lower left chicken is with its upper right and left chicks.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_8.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br>あきらめずにやってみよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Don’t give up.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_8.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>仲良<rt>なかよ</rt></ruby>しの<ruby>親<rt>おや</rt></ruby><ruby>子<rt>こ</rt></ruby>だね。</p>
+    <p class=🗺️>Correct!<br><br>They are good friends.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t8.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>考<rt>かんが</rt></ruby>えさせてください。</p></div>
+    <div class='dlg 🗺️'><p>Professor, let me think a little more.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-08.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t4.txt --><ruby>答<rt>こた</rt></ruby>えはわかったかい？</p></div>
+    <div class='dlg 🗺️'><p>Do you know the answer?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t6.txt --><bt>@3</bt>でも<ruby>先生<rt>せんせい</rt></ruby>、このヒヨコ、<br><ruby>一個<rt>いっこ</rt></ruby>しか<ruby>見当<rt>みあ</rt></ruby>たりませんよ。</p></div>
+    <div class='dlg 🗺️'><p>But Professor, I can only see one chick here.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t7.txt --><ruby>本当<rt>ほんとう</rt></ruby>かい？<br>どこへ<ruby>行<rt>い</rt></ruby>ってしまったのかな。</p></div>
+    <div class='dlg 🗺️'><p>Really?<br>I wonder where the others have gone.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the box again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-08.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t5.txt --><bt>@3</bt>それにしても、この<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>、<br><ruby>色<rt>いろ</rt></ruby>んなものが<ruby>入<rt>はい</rt></ruby>ってますね。</p></div>
+    <div class='dlg 🗺️'><p>However, there are many things in this box.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div id=nazo09 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;09<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-09.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t0.txt --><bt>@3</bt>わあ、きれいな<ruby>写真<rt>しゃしん</rt></ruby>ですね。</p></div>
+    <div class='dlg 🗺️'><p>Wow, that’s a beautiful photo.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t1.txt --><ruby>遠<rt>とお</rt></ruby>い<ruby>南<rt>みなみ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>の<ruby>写真<rt>しゃしん</rt></ruby>さ。<br>いつか<ruby>行<rt>い</rt></ruby>ってみたいと<ruby>思<rt>おも</rt></ruby>ってね。</p></div>
+    <div class='dlg 🗺️'><p>This is a picture of an island in the far south.<br>I would love to go there someday.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t2.txt --><bt>@3</bt><ruby>南<rt>みなみ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>でバカンスですか。<br>あこがれますね。</p></div>
+    <div class='dlg 🗺️'><p>Vacations in the South Island.<br>I admire you.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t3.txt -->ああ、たまにはそんな<ruby>場所<rt>ばしょ</rt></ruby>で<br><ruby>心<rt>こころ</rt></ruby>を<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>けることも<ruby>必要<rt>ひつよう</rt></ruby>だね。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Ah, sometimes it’s necessary to calm down in a place like that.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><bt>&SetAni 0 talk&</bt>ところでルーク、<ruby>気付<rt>きづ</rt></ruby>いたかい？<br>この<ruby>写真<rt>しゃしん</rt></ruby>にもナゾが<br><ruby>隠<rt>かく</rt></ruby>されているんだ。</p></div>
+    <div class='dlg 🗺️'><p>By the way Luke, did you notice?<br>There is a puzzle hidden in this photo as well.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t4.txt --><bt>@3</bt>えっ、こんなところにもですか！？</p></div>
+    <div class='dlg 🗺️'><p>Huh? In a place like this!?</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ００９</p><p><!-- data_lt1/qtext/t_9.txt --><ruby>島<rt>しま</rt></ruby><ruby>巡<rt>めぐ</rt></ruby>り</p><p>Island hopping</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>30</cr>&nbsp; &nbsp;30&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>350</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div><!-- data_lt1/qtext/q_9.txt -->
+    <p class=🇯🇵>たくさんの<ruby>島<rt>しま</rt></ruby>が<ruby>並<rt>なら</rt></ruby>んでいる。<br>スタートからゴールまですべての<ruby>島<rt>しま</rt></ruby>を<br><ruby>一度<rt>いちど</rt></ruby>だけ<ruby>通<rt>とお</rt></ruby>るためには、<ruby>島<rt>しま</rt></ruby>と<ruby>島<rt>しま</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>に、<br>１<ruby>本<rt>ぽん</rt></ruby>だけ<ruby>橋<rt>はし</rt></ruby>をかければよいという。<br>それはどこか。<br><br>ただし、かける<ruby>橋<rt>はし</rt></ruby>は、<ruby>他<rt>ほか</rt></ruby>の<ruby>橋<rt>はし</rt></ruby>と<ruby>交差<rt>こうさ</rt></ruby><br>してはいけない。</p>
+    <p class=🗺️>There are many islands in a row.<br>It is said that only one bridge needs to be built between the islands in order to pass through all the islands once from the start to the goal.<br>It’s somewhere.<br><br>However, the crossing bridge must not cross other bridges.</p>
+</div></td><td style=background:url(../ast/lh/nazo_09.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p09h0','p09')"><button id=p09h0_b class=p09_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p09h1','p09')"><button id=p09h1_b class=p09_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p09h2','p09')"><button id=p09h2_b class=p09_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p09h3','p09')"><button id=p09h3_b class=p09_b>Hint 3</button></a>
+    <div id=p09_c class=hint><div id=p09h0 class=p09><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p09h1 class=p09><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_9_1.txt -->すべての<ruby>島<rt>しま</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby>だけ<ruby>行<rt>い</rt></ruby>けばよい。<br>すべての<ruby>橋<rt>はし</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>る<ruby>必要<rt>ひつよう</rt></ruby>はないことに<br><ruby>注意<rt>ちゅうい</rt></ruby>。</p></div>
+            <div class=🗺️><p>You only have to visit every island once.<br>Note that you don’t have to cross all bridges.</p></div>
+        </div></div>
+        <div id=p09h2 class=p09><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_9_2.txt -->スタートから<ruby>進<rt>すす</rt></ruby>んでみて、どうして<br>も<ruby>行<rt>い</rt></ruby>けない<ruby>島<rt>しま</rt></ruby>が<ruby>見<rt>み</rt></ruby>つかったら、<br>その<ruby>周辺<rt>しゅうへん</rt></ruby>が<ruby>怪<rt>あや</rt></ruby>しい。</p></div>
+            <div class=🗺️><p>After proceeding from the start, if you find an island that you can’t go to, the surrounding area is suspicious.</p></div>
+        </div></div>
+        <div id=p09h3 class=p09><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_9_3.txt --><ruby>地図<rt>ちず</rt></ruby>の<ruby>真<rt>ま</rt></ruby>ん<ruby>中<rt>なか</rt></ruby>あたりが、<ruby>怪<rt>あや</rt></ruby>しい。</p></div>
+            <div class=🗺️><p>The middle part of the map is suspicious.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_9.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br>もう<ruby>一度<rt>いちど</rt></ruby><ruby>考<rt>かんが</rt></ruby>えてみよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Think again.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_9.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br>さあ、<ruby>島<rt>しま</rt></ruby><ruby>巡<rt>めぐ</rt></ruby>りに<ruby>出<rt>で</rt></ruby>かけよう。</p>
+    <p class=🗺️>Correct!<br><br>Let’s go island hopping.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t13.txt --><bt>@3</bt>うーん、むずかしいですね。</p></div>
+    <div class='dlg 🗺️'><p>Hmm, it’s difficult.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-09.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t5.txt -->あせらずじっくり<ruby>考<rt>かんが</rt></ruby>えてごらん。</p></div>
+    <div class='dlg 🗺️'><p>Don’t be hasty and think about it carefully.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t8.txt --><bt>@3</bt><ruby>南<rt>みなみ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>を<ruby>自分<rt>じぶん</rt></ruby>の<ruby>足<rt>あし</rt></ruby>で<ruby>渡<rt>わた</rt></ruby>り<ruby>歩<rt>ある</rt></ruby>くなんて、<br><ruby>大変<rt>たいへん</rt></ruby>そうだけど<ruby>楽<rt>たの</rt></ruby>しそうですね。</p></div>
+    <div class='dlg 🗺️'><p>Walking across the islands in the south on your own might seem difficult, but it sounds fun.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t9.txt -->これだけきれいな<ruby>海<rt>うみ</rt></ruby>なら、<br><ruby>泳<rt>およ</rt></ruby>ぐのも<ruby>気持<rt>きも</rt></ruby>ちがいいだろうね。</p></div>
+    <div class='dlg 🗺️'><p>It would be nice to swim in such a clean sea.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t10.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、<ruby>泳<rt>およ</rt></ruby>ぐ<ruby>時<rt>とき</rt></ruby>はその<ruby>帽子<rt>ぼうし</rt></ruby>は⋯</p></div>
+    <div class='dlg 🗺️'><p>Professor, when you swim, your hat&hellip;</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t11.txt -->ん？もちろん、<ruby>取<rt>と</rt></ruby>るに<br><ruby>決<rt>き</rt></ruby>まってるじゃないか。</p></div>
+    <div class='dlg 🗺️'><p>Hm? Of course I keep it.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t12.txt --><bt>@3</bt>⋯なんだか、<ruby>想像<rt>そうぞう</rt></ruby>できません。</p></div>
+    <div class='dlg 🗺️'><p>…I can’t imagine it.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the photo again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-09.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t6.txt --><bt>@3</bt><ruby>南<rt>みなみ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>もいいけど、<br>ボクは<ruby>動物<rt>どうぶつ</rt></ruby>がたくさんいる<ruby>場所<rt>ばしょ</rt></ruby>へ<br><ruby>行<rt>い</rt></ruby>ってみたいですね。</p></div>
+    <div class='dlg 🗺️'><p>A southern island would be nice,<br>but I’d like to go to a place with lots of animals.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t7.txt -->ルークは<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きだね。</p></div>
+    <div class='dlg 🗺️'><p>You really like animals.</p></div>
+</td></tr>
+</table>
+</div>
+
+<div id=nazo10 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;10<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-10.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t0.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>には、<ruby>変<rt>か</rt></ruby>わったものばかり<br><ruby>置<rt>お</rt></ruby>いてあるんですね。</p></div>
+    <div class='dlg 🗺️'><p>There are only strange things in your room.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t1.txt --><ruby>変<rt>か</rt></ruby>わったものとは<ruby>心外<rt>しんがい</rt></ruby>だね。<br>この<ruby>部屋<rt>へや</rt></ruby>に<ruby>飾<rt>かざ</rt></ruby>られているのは、<br><ruby>歴史的<rt>れきしてき</rt></ruby><ruby>価値<rt>かち</rt></ruby>のあるものばかりなんだ。</p></div>
+    <div class='dlg 🗺️'><p>It’s crazy how weird it is.<br>The items displayed in this room are of historical value.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t2.txt -->たとえばこれは、<ruby>古代<rt>こだい</rt></ruby>エジプト<ruby>時代<rt>じだい</rt></ruby>に<br><ruby>造<rt>つく</rt></ruby>られたオベリスクのひとつで、<br>とても<ruby>貴重<rt>きちょう</rt></ruby>なものなんだよ。</p></div>
+    <div class='dlg 🗺️'><p>For example, this obelisk was made in ancient Egypt, and it is very valuable.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t3.txt --><bt>@3</bt>ボクには、ただの<ruby>変<rt>へん</rt></ruby>な<ruby>形<rt>かたち</rt></ruby>の<ruby>石<rt>いし</rt></ruby>にしか<br><ruby>見<rt>み</rt></ruby>えないですけど。</p></div>
+    <div class='dlg 🗺️'><p>To me, it just looks like a strange-shaped stone.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t4.txt -->ルークには<ruby>少<rt>すこ</rt></ruby>し<ruby>早<rt>はや</rt></ruby>かったかな？</p></div>
+    <div class='dlg 🗺️'><p>Is it a little early for you?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t5.txt --><ruby>歴史<rt>れきし</rt></ruby>があると<ruby>言<rt>い</rt></ruby>えば、<br>こんなナゾがあるよ。<br><ruby>解<rt>と</rt></ruby>いてごらん、ルーク。</p></div>
+    <div class='dlg 🗺️'><p>Speaking of History,<br>there is such a puzzle.<br>Solve it, Luke.</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ０１０</p><p><!-- data_lt1/qtext/t_10.txt --><ruby>迷路<rt>めいろ</rt></ruby>の<ruby>扉<rt>とびら</rt></ruby></p><p>Maze Door</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>30</cr>&nbsp; &nbsp;30&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>380</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div><!-- data_lt1/qtext/q_10.txt -->
+    <p class=🇯🇵><ruby>君<rt>きみ</rt></ruby>は<ruby>暗<rt>くら</rt></ruby>い<ruby>迷宮<rt>めいきゅう</rt></ruby>を<ruby>進<rt>すす</rt></ruby>む<ruby>騎士<rt>きし</rt></ruby>だ。<br>スタートからゴールまで、なるべく<br><ruby>少<rt>すく</rt></ruby>ない<ruby>数<rt>かず</rt></ruby>の<ruby>扉<rt>とびら</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>き、<ruby>脱出<rt>だっしゅつ</rt></ruby>してほしい。<br><br><ruby>扉<rt>とびら</rt></ruby>はタッチで<ruby>開閉<rt>かいへい</rt></ruby>する。</p>
+    <p class=🗺️>You are a knight in a dark labyrinth.<br>From the start to the goal, you must open as few doors as possible and escape.<br><br>The doors open and close with a touch.</p>
+</div></td><td style=background:url(../ast/lh/nazo_10.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p10h0','p10')"><button id=p10h0_b class=p10_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p10h1','p10')"><button id=p10h1_b class=p10_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p10h2','p10')"><button id=p10h2_b class=p10_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p10h3','p10')"><button id=p10h3_b class=p10_b>Hint 3</button></a>
+    <div id=p10_c class=hint><div id=p10h0 class=p10><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p10h1 class=p10><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_10_1.txt --><ruby>出口<rt>でぐち</rt></ruby>からも<ruby>考<rt>かんが</rt></ruby>えてみよう。</p></div>
+            <div class=🗺️><p>Think about the exit.</p></div>
+        </div></div>
+        <div id=p10h2 class=p10><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_10_2.txt --><ruby>開<rt>あ</rt></ruby>ける<ruby>扉<rt>とびら</rt></ruby>は３つ。</p></div>
+            <div class=🗺️><p>There are 3 doors to open.</p></div>
+        </div></div>
+        <div id=p10h3 class=p10><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_10_3.txt -->ゴールに<ruby>一番<rt>いちばん</rt></ruby><ruby>近<rt>ちか</rt></ruby>い<ruby>扉<rt>とびら</rt></ruby>を<ruby>開<rt>ひら</rt></ruby>く。<br>そこから<ruby>探<rt>さが</rt></ruby>してみよう。</p></div>
+            <div class=🗺️><p>Open the door closest to the goal.<br>Search from there.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_10.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br>いろいろな<ruby>経路<rt>けいろ</rt></ruby>を<ruby>探<rt>さが</rt></ruby>してみよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Try different routes.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_10.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br>これで<ruby>脱出<rt>だっしゅつ</rt></ruby><ruby>成功<rt>せいこう</rt></ruby>だ！</p>
+    <p class=🗺️>Correct!<br><br>Your escape was successful!</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t15.txt --><bt>@3</bt>なんだか、<br>わからなくなってきました。</p></div>
+    <div class='dlg 🗺️'><p>Somehow,<br>I don’t understand.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-10.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t6.txt -->もう<ruby>一度<rt>いちど</rt></ruby><ruby>挑戦<rt>ちょうせん</rt></ruby>してごらん。</p></div>
+    <div class='dlg 🗺️'><p>Try again.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t10.txt --><bt>@3</bt><ruby>解<rt>と</rt></ruby>けました、<ruby>先生<rt>せんせい</rt></ruby>！</p></div>
+    <div class='dlg 🗺️'><p>I’ve got it, Professor!</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t11.txt --><bt>@3</bt>でも、このナゾと<ruby>歴史<rt>れきし</rt></ruby>に、<br>どんな<ruby>関係<rt>かんけい</rt></ruby>があるんですか？</p></div>
+    <div class='dlg 🗺️'><p>But what did this puzzle have to do with History?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t12.txt --><ruby>今<rt>いま</rt></ruby>のナゾは、<br><ruby>中世<rt>ちゅうせい</rt></ruby>に<ruby>考<rt>かんが</rt></ruby>えられたものなんだ。<br>ナゾにも<ruby>歴史<rt>れきし</rt></ruby>があるということさ。</p></div>
+    <div class='dlg 🗺️'><p>This puzzle was conceived in the Middle Ages.<br>Puzzles also have a history.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t13.txt --><bt>@3</bt>じゃあ、きっとその<ruby>時代<rt>じだい</rt></ruby>にも<br><ruby>先生<rt>せんせい</rt></ruby>のようなナゾ<ruby>好<rt>ず</rt></ruby>きが<br>いたんでしょうね。</p></div>
+    <div class='dlg 🗺️'><p>Then, I’m sure there must have been a puzzle lover like you at that time.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t14.txt -->そうかもしれないね。</p></div>
+    <div class='dlg 🗺️'><p>Maybe so.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the obelisk again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-10.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t7.txt --><bt>@3</bt>この<ruby>変<rt>へん</rt></ruby>な<ruby>形<rt>かたち</rt></ruby>の<ruby>石<rt>いし</rt></ruby>は、<br><ruby>先生<rt>せんせい</rt></ruby>が<ruby>見<rt>み</rt></ruby>つけて<ruby>来<rt>き</rt></ruby>たんですか？</p></div>
+    <div class='dlg 🗺️'><p>Did you find this odd-shaped stone?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t8.txt -->これは、<ruby>私<rt>わたし</rt></ruby>が<ruby>考古学者<rt>こうこがくしゃ</rt></ruby>になったばかり<br>の<ruby>頃<rt>ころ</rt></ruby>、シュレーダー<ruby>博士<rt>はかせ</rt></ruby>に<ruby>譲<rt>ゆず</rt></ruby>り<ruby>受<rt>う</rt></ruby>けた<br>ものなんだよ。</p></div>
+    <div class='dlg 🗺️'><p>It was given to me by Dr. Schrader when I was an early archaeologist.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t9.txt --><bt>@3</bt>じゃあ、これは<ruby>先生<rt>せんせい</rt></ruby>の<ruby>宝物<rt>たからもの</rt></ruby>って<br>わけですね。</p></div>
+    <div class='dlg 🗺️'><p>So this is your treasure.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div id=nazo11 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;11<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-11.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t0.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、このスタンド、もう<br><ruby>壊<rt>こわ</rt></ruby>れちゃってるみたいですよ？</p></div>
+    <div class='dlg 🗺️'><p>Professor, this stand looks like it’s already broken.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t1.txt -->いいや、それを<ruby>点<rt>つ</rt></ruby>けるには、<br>ちょっとしたコツがいるんだよ。</p></div>
+    <div class='dlg 🗺️'><p>No, there’s a little trick to turning it on.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t2.txt --><bt>@3</bt>えっ、どういうことですか？</p></div>
+    <div class='dlg 🗺️'><p>What do you mean?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t3.txt -->このスタンドの<ruby>電球<rt>でんきゅう</rt></ruby>はね⋯</p></div>
+    <div class='dlg 🗺️'><p>The light bulb on this stand&hellip;</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ０１１</p><p><!-- data_lt1/qtext/t_11.txt --><ruby>電線<rt>でんせん</rt></ruby>パズル</p><p>Electric wire puzzle</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>50</cr>&nbsp; &nbsp;50&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>410</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div><!-- data_lt1/qtext/q_11.txt -->
+    <p class=🇯🇵><ruby>電球<rt>でんきゅう</rt></ruby>と<ruby>電池<rt>でんち</rt></ruby>の<ruby>間<rt>あいだ</rt></ruby>の<ruby>線<rt>せん</rt></ruby>を<ruby>切<rt>き</rt></ruby>れ<ruby>目<rt>め</rt></ruby>なく<br>つないで<ruby>点灯<rt>てんとう</rt></ruby>してほしい。<br><br><ruby>途中<rt>とちゅう</rt></ruby>で<ruby>切<rt>き</rt></ruby>れる<ruby>線<rt>せん</rt></ruby>が<ruby>無<rt>な</rt></ruby>くなるように、<br><ruby>電線<rt>でんせん</rt></ruby>の<ruby>通<rt>とお</rt></ruby>ったパネルを<ruby>並<rt>なら</rt></ruby>べてみよう。<br><br>もちろんパネルは<ruby>全<rt>すべ</rt></ruby>て<ruby>使<rt>つか</rt></ruby>うこと。</p>
+    <p class=🗺️>The wire between the light bulb and the battery must be connected without a break so that it lights up.<br><br>Line up the panels with electric wires so that there are no wires to cut in the middle.<br><br>All panels must be used.</p>
+</div></td><td style=background:url(../ast/lh/nazo_11.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p11h0','p11')"><button id=p11h0_b class=p11_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p11h1','p11')"><button id=p11h1_b class=p11_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p11h2','p11')"><button id=p11h2_b class=p11_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p11h3','p11')"><button id=p11h3_b class=p11_b>Hint 3</button></a>
+    <div id=p11_c class=hint><div id=p11h0 class=p11><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p11h1 class=p11><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_11_1.txt --><ruby>切<rt>き</rt></ruby>れてしまう<ruby>線<rt>せん</rt></ruby>は<ruby>無<rt>な</rt></ruby>い。<br>ただし、<ruby>関係<rt>かんけい</rt></ruby>のない<ruby>線<rt>せん</rt></ruby>もあるから<br><ruby>気<rt>き</rt></ruby>をつけて。</p></div>
+            <div class=🗺️><p>There are no lines to cut.<br>However, there are lines that are not related, so be careful.</p></div>
+        </div></div>
+        <div id=p11h2 class=p11><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_11_2.txt --><ruby>電球<rt>でんきゅう</rt></ruby>と<ruby>電池<rt>でんち</rt></ruby>につながる４<ruby>本<rt>ほん</rt></ruby><ruby>以外<rt>いがい</rt></ruby>には<br><ruby>外<rt>そと</rt></ruby><ruby>側<rt>がわ</rt></ruby>に<ruby>出<rt>で</rt></ruby>ていく<ruby>線<rt>せん</rt></ruby>はないことに<ruby>気<rt>き</rt></ruby>を<br>つけよう。<br>これで、かなり<ruby>簡単<rt>かんたん</rt></ruby>になるはず。</p></div>
+            <div class=🗺️><p>Notice that there are no wires going out except for the four wires that go to the bulb and the battery.<br>This should make things pretty easy.</p></div>
+        </div></div>
+        <div id=p11h3 class=p11><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_11_3.txt -->ヒント２から、４つの<ruby>角<rt>すみ</rt></ruby>にくる<br>パネルはすぐわかるはず。<br>あとは<ruby>根気<rt>こんき</rt></ruby>。</p></div>
+            <div class=🗺️><p>From Hint 2, you should be able to easily identify the panels that come to the four corners.<br>The rest is perseverance.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_11.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br><ruby>本当<rt>ほんとう</rt></ruby>に、つながっているかい？</p>
+    <p class=🗺️>Incorrect.<br><br>Are they really connected?</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_11.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br>これで<ruby>明<rt>あか</rt></ruby>るくなるね！</p>
+    <p class=🗺️>Correct!<br><br>It will brighten up!</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t9.txt --><bt>@3</bt><ruby>電球<rt>でんきゅう</rt></ruby>の<ruby>寿命<rt>じゅみょう</rt></ruby>⋯<br>ではないんですよね、<ruby>先生<rt>せんせい</rt></ruby>？</p></div>
+    <div class='dlg 🗺️'><p>It’s not the lifespan of the light bulb, is it Professor?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-11.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t4.txt --><bt>@3</bt><ruby>本当<rt>ほんとう</rt></ruby>に<ruby>点<rt>つ</rt></ruby>くのかなあ⋯？</p></div>
+    <div class='dlg 🗺️'><p>Will it really turn on&hellip;?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t8.txt --><bt>@3</bt><ruby>生活<rt>せいかつ</rt></ruby>にもナゾを<br><ruby>取<rt>と</rt></ruby>り<ruby>入<rt>い</rt></ruby>れているなんて、<br>さすが<ruby>先生<rt>せんせい</rt></ruby>ですね。</p></div>
+    <div class='dlg 🗺️'><p>It really is like you to incorporate puzzles into your life.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the lamp again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-11.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t5.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、<ruby>新<rt>あたら</rt></ruby>しいスタンドを<br><ruby>買<rt>か</rt></ruby>った<ruby>方<rt>ほう</rt></ruby>がいいんじゃないですか？</p></div>
+    <div class='dlg 🗺️'><p>Professor, shouldn’t you buy a new stand?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t6.txt -->ルーク、<ruby>物<rt>もの</rt></ruby>は<ruby>大切<rt>たいせつ</rt></ruby>にするものだよ。<br><ruby>英国紳士<rt>えいこくしんし</rt></ruby>としてはね。</p></div>
+    <div class='dlg 🗺️'><p>Luke, things are important.<br>As an English gentleman.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t7.txt --><bt>@3</bt>はぁ、そういうものなんですか⋯。</p></div>
+    <div class='dlg 🗺️'><p>Ha, is that what it is&hellip;?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+</div>
+
+<div id=nazo12 class=lh>
+<h1>London Holiday: Puzzle Puzzle &num;12<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-12.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t0.txt --><bt>@3</bt>これは<ruby>水晶玉<rt>すいしょうだま</rt></ruby>ですね。<br><ruby>占<rt>うらな</rt></ruby>いでも<ruby>始<rt>はじ</rt></ruby>めたんですか？</p></div>
+    <div class='dlg 🗺️'><p>This is a crystal ball.<br>Did you start fortune-telling?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t1.txt -->いや、それはオーパーツと<ruby>言<rt>い</rt></ruby>ってね⋯</p></div>
+    <div class='dlg 🗺️'><p>No, this is called an <a href=https://en.wikipedia.org/wiki/Out-of-place_artifact>OOPArt</a>&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t2.txt --><bt>@3</bt>そうだ！<ruby>占<rt>うらな</rt></ruby>いと<ruby>言<rt>い</rt></ruby>えば、<br>ボクもこんなのを<ruby>知<rt>し</rt></ruby>っています。<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>That’s it! Speaking of fortune-telling,<br>I also know of this trick.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p>こうやって、トランプを<ruby>並<rt>なら</rt></ruby>べて⋯<br>この<ruby>中<rt>なか</rt></ruby>から<ruby>選<rt>えら</rt></ruby>ぶんです、こんな<ruby>風<rt>ふう</rt></ruby>に！</p></div>
+    <div class='dlg 🗺️'><p>This is how you line up your deck of cards&hellip;<br>Then you choose one from among them, like this!</p></div>
+</td></tr>
+</table>
+
+<p class=bar></p>
+
+<table class=puzzle>
+<tr><th><h2><p>ナゾ０１２</p><p><!-- data_lt1/qtext/t_12.txt --><ruby>仲間<rt>なかま</rt></ruby>はずれ</p><p>Ostracized</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>460</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/q_12.txt -->４つの<ruby>図<rt>ず</rt></ruby>のうち、３つまでは<ruby>同<rt>おな</rt></ruby>じ<ruby>図<rt>ず</rt></ruby>を<br><ruby>回転<rt>かいてん</rt></ruby>させたものである。<br>ひとつだけ、<ruby>他<rt>ほか</rt></ruby>と<ruby>違<rt>ちが</rt></ruby>う<ruby>図<rt>ず</rt></ruby>があるのだが、<br>それを<ruby>選<rt>えら</rt></ruby>んでほしい。</p>
+    <p class=🗺️>Up to three of the four figures are the same figure rotated.<br>There is only one picture that is different from the others, but I want you to choose it.</p>
+</div></td><td style=background:url(../ast/lh/nazo_12.png)center></td></tr>
+<tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p12h0','p12')"><button id=p12h0_b class=p12_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p12h1','p12')"><button id=p12h1_b class=p12_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p12h2','p12')"><button id=p12h2_b class=p12_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p12h3','p12')"><button id=p12h3_b class=p12_b>Hint 3</button></a>
+    <div id=p12_c class=hint><div id=p12h0 class=p12><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p12h1 class=p12><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_12_1.txt -->どこに<ruby>目<rt>め</rt></ruby>をつけるのかが<ruby>鍵<rt>かぎ</rt></ruby>だ。<br>カードの<ruby>何<rt>なに</rt></ruby>か。<br><ruby>枚数<rt>まいすう</rt></ruby>は<ruby>全部<rt>ぜんぶ</rt></ruby>５<ruby>枚<rt>まい</rt></ruby>だが⋯。</p></div>
+            <div class=🗺️><p>The key is where to look.<br>Something on the card.<br>The total number of sheets is 5, but&hellip;</p></div>
+        </div></div>
+        <div id=p12h2 class=p12><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_12_2.txt -->カードには４つのマークが<ruby>描<rt>か</rt></ruby>かれ<br>ている。<br><ruby>回転<rt>かいてん</rt></ruby>しているから<ruby>解<rt>わか</rt></ruby>りにくいが、<br><ruby>相対<rt>そうたい</rt></ruby><ruby>的<rt>てき</rt></ruby>な<ruby>位置<rt>いち</rt></ruby><ruby>関係<rt>かんけい</rt></ruby>をよく<ruby>見<rt>み</rt></ruby>てみよう。</p></div>
+            <div class=🗺️><p>Four marks are drawn on the card.<br>It’s hard to understand because it’s rotating, but take a closer look at the relative positional relationship.</p></div>
+        </div></div>
+        <div id=p12h3 class=p12><div class=row>
+            <div class=🇯🇵><p><!-- data_lt1/qtext/h_12_3.txt -->⋯わからないって？<br><ruby>重<rt>かさ</rt></ruby>なりかただ。<br><ruby>上下<rt>じょうげ</rt></ruby><ruby>関係<rt>かんけい</rt></ruby>に<ruby>注目<rt>ちゅうもく</rt></ruby>してごらん。</p></div>
+            <div class=🗺️><p>…You don’t know?<br>Just how it overlaps.<br>Pay attention to the vertical relationship.</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr>
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<!-- data_lt1/qtext/h_12_4.txt = "入力待ち / Waiting for Input" --- This unused file no longer exists in the mobile version. -->
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/f_12.txt --><ruby>残念<rt>ざんねん</rt></ruby><br><br>よく<ruby>見<rt>み</rt></ruby>てみよう。</p>
+    <p class=🗺️>Incorrect.<br><br>Take a closer look.</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵><!-- data_lt1/qtext/c_12.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>簡単<rt>かんたん</rt></ruby>そうなのに、<ruby>気<rt>き</rt></ruby>がつくのに<ruby>時間<rt>じかん</rt></ruby>が<br>かかることもあるパズルだ。</p>
+    <p class=🗺️>Correct!<br><br>It’s a puzzle that looks easy, but it can take some time to figure out.</p>
+</div></td></tr>
+</table>
+
+<h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t12.txt --><bt>@3</bt>えっ、やめちゃうんですか？</p></div>
+    <div class='dlg 🗺️'><p>Eh, are you going to stop?</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue when you come back<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-12.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t3.txt --><bt>@3</bt>この<ruby>並<rt>なら</rt></ruby>んだトランプから、<br><ruby>気<rt>き</rt></ruby>になるものを<ruby>選<rt>えら</rt></ruby>ぶんですよ。</p></div>
+    <div class='dlg 🗺️'><p>From this row of playing cards,<br>choose the one that interests you.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t8.txt -->それで、<ruby>何<rt>なに</rt></ruby>がわかるのかな？</p></div>
+    <div class='dlg 🗺️'><p>So, what do you know?</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t9.txt --><bt>@3</bt>ええと、これは⋯<br>「<ruby>強力<rt>きょうりょく</rt></ruby>なライバル<ruby>出現<rt>しゅつげん</rt></ruby>」ですね。</p></div>
+    <div class='dlg 🗺️'><p>Let’s see, this one means…<br>&ldquo;A powerful rival will appear.&rdquo;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t10.txt -->ただカードを<ruby>選<rt>えら</rt></ruby>んだだけで<br>そんなことがわかるのかい？</p></div>
+    <div class='dlg 🗺️'><p>Can you tell just by picking a card?</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t11.txt --><bt>@3</bt><ruby>当然<rt>とうぜん</rt></ruby>ですよ！<br>ボクだって<ruby>先生<rt>せんせい</rt></ruby>の<ruby>弟子<rt>でし</rt></ruby>ですからね。</p></div>
+    <div class='dlg 🗺️'><p>Of course!<br>I’m your apprentice, after all.</p></div>
+</td></tr>
+</table>
+
+<h1>Dialogue if you inspect the OOPArt again<p class=hr></p></h1>
+
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-12.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t4.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>はいつから<br><ruby>占<rt>うらな</rt></ruby>いを<ruby>始<rt>はじ</rt></ruby>めたんですか？</p></div>
+    <div class='dlg 🗺️'><p>Professor, when did you<br>start fortune-telling?</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t5.txt -->いや、あれはオーパーツと<ruby>言<rt>い</rt></ruby>って⋯</p></div>
+    <div class='dlg 🗺️'><p>No, this is called an OOPArt&hellip;</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t6.txt --><bt>@3</bt><ruby>今度<rt>こんど</rt></ruby>、ボクも<ruby>占<rt>うらな</rt></ruby>ってくださいね。</p></div>
+    <div class='dlg 🗺️'><p>Next time, please tell my fortune too.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t7.txt -->⋯⋯。</p></div>
+    <div class='dlg 🗺️'><p>&hellip;</p></div>
+</td></tr>
+</table>
+<h2>NB: All twelve puzzles are solved by Luke, this one included.<br>I find it a bit funny that Luke would be the one solving a puzzle<br>that he seems to have instigated himself.</h2>
+</div>
+
+<div id=memo class=lh><h1>Schrader’s Notes<p class=hr></p></h1>
+<img src=../ast/lh/schrader_memo.png style=display:block;margin:auto><h2>One new note is unlocked after every puzzle solved.</h2><table class=translaytion>
+
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_1.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１</p><hr><p><!-- data_lt1/storytext/id_1.txt --><ruby>長年<rt>ながねん</rt></ruby><ruby>愛用<rt>あいよう</rt></ruby>し<ruby>続<rt>つづ</rt></ruby>けているせいか、<br>この<ruby>手帳<rt>てちょう</rt></ruby>もボロボロになってきた。<br><ruby>破<rt>やぶ</rt></ruby>れかけたページを<ruby>留<rt>と</rt></ruby>めて<ruby>使<rt>つか</rt></ruby>っては<br>いるが、いつバラバラになるか<br><ruby>知<rt>し</rt></ruby>れたものではない。<br>そろそろ<ruby>新<rt>あたら</rt></ruby>しい<ruby>手帳<rt>てちょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>うべきかも<br>しれんな。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 1</p><hr><p>Perhaps because I’ve been using it for many years, this notebook has become tattered.<br>I’m still using the torn pages, but I don’t know when they’ll come apart.<br>Maybe I should buy a new notebook soon.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_2.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ２</p><hr><p><!-- data_lt1/storytext/id_2.txt -->ぽつぽつと<ruby>手紙<rt>てがみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>きはするが、<br>レイトン<ruby>君<rt>くん</rt></ruby>はあいかわらず、あちら<br>こちらを<ruby>飛<rt>と</rt></ruby>び<ruby>回<rt>まわ</rt></ruby>っているようだ。<br><ruby>私<rt>わたし</rt></ruby>が<ruby>言<rt>い</rt></ruby>うのもなんだが、いいかげん<br><ruby>身<rt>み</rt></ruby>を<ruby>固<rt>かた</rt></ruby>めて、<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>くべきではない<br>だろうか。<br><br>やれやれ、<ruby>年<rt>とし</rt></ruby>を<ruby>取<rt>と</rt></ruby>るとおせっかいに<br>なってしまうものだな。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 2</p><hr><p>Although the letters have arrived one by one, Layton seems to be flying around here and there as usual.<br>I don’t know what to say, but I wonder if he should put himself together and settle down.<br><br>Good grief, you get meddlesome when you get old.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_3.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ３</p><hr><p><!-- data_lt1/storytext/id_3.txt --><ruby>近<rt>ちか</rt></ruby>ごろは<ruby>目<rt>め</rt></ruby>ぼしいニュースもない。<br><ruby>大学<rt>だいがく</rt></ruby>も<ruby>休<rt>やす</rt></ruby>みに<ruby>入<rt>はい</rt></ruby>り、<ruby>研究<rt>けんきゅう</rt></ruby>もひと<ruby>段落<rt>だんらく</rt></ruby><br>ついたばかりだ。<br>こんな<ruby>時<rt>とき</rt></ruby>は<ruby>近代<rt>きんだい</rt></ruby>の<ruby>芸術品<rt>げいじゅつひん</rt></ruby>を<ruby>見<rt>み</rt></ruby>て<ruby>気分<rt>きぶん</rt></ruby>を<br><ruby>変<rt>か</rt></ruby>えるのも<ruby>悪<rt>わる</rt></ruby>くはないだろう。<br><ruby>幸<rt>さいわ</rt></ruby>い、<ruby>明日<rt>あした</rt></ruby>は<ruby>月<rt>つき</rt></ruby>に<ruby>一度<rt>いちど</rt></ruby>の<ruby>骨董市<rt>こっとういち</rt></ruby>だ。<br>どんな<ruby>掘<rt>ほ</rt></ruby>り<ruby>出<rt>だ</rt></ruby>し<ruby>物<rt>もの</rt></ruby>が<ruby>見<rt>み</rt></ruby>つかるだろう。<br><ruby>今<rt>いま</rt></ruby>から<ruby>楽<rt>たの</rt></ruby>しみでならない。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 3</p><hr><p>No good news these days.<br>The university is on vacation, and research has just come to an end.<br>At times like this, it wouldn’t be bad to change your mood by looking at modern art.<br>Luckily, tomorrow is the monthly antique market.<br>What kind of bargains will I find?<br>I’m not looking forward to it now.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_4.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ４</p><hr><p><!-- data_lt1/storytext/id_4.txt --><ruby>骨董市<rt>こっとういち</rt></ruby>で<ruby>気<rt>き</rt></ruby>になる<ruby>物<rt>もの</rt></ruby>を<ruby>見<rt>み</rt></ruby>つけた。<br><ruby>細<rt>こま</rt></ruby>やかな<ruby>装飾<rt>そうしょく</rt></ruby>の<ruby>入<rt>はい</rt></ruby>った<ruby>宝石箱<rt>ほうせきばこ</rt></ruby>だ。<br>あいにくと<ruby>持<rt>も</rt></ruby>ち<ruby>合<rt>あ</rt></ruby>わせが<ruby>少<rt>すく</rt></ruby>なく<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby><br>れる<ruby>事<rt>こと</rt></ruby>ができなかったが、<ruby>私<rt>わたし</rt></ruby>の<ruby>見<rt>み</rt></ruby>たと<br>ころ、あれは<ruby>結構<rt>けっこう</rt></ruby>な<ruby>値打<rt>ねう</rt></ruby>ちのあるもの<br>のようだった。<br>いわくのある<ruby>代物<rt>しろもの</rt></ruby>と<ruby>言<rt>い</rt></ruby>ってはいたが、<br>あれを<ruby>手放<rt>てばな</rt></ruby>してしまうのはもったい<br>ない<ruby>話<rt>はなし</rt></ruby>だ。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 4</p><hr><p>I found something interesting at the antique market.<br>It’s a jewelry box with delicate decorations.<br>Unfortunately, I didn’t have enough on hand to get it, but from what I could see, it looked like a good deal.<br>He said it was something with a story, but it would be a waste to let it go.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_5.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ５</p><hr><p><!-- data_lt1/storytext/id_5.txt -->あの<ruby>箱<rt>はこ</rt></ruby>の<ruby>事<rt>こと</rt></ruby>が<ruby>気<rt>き</rt></ruby>になって<ruby>仕方<rt>しかた</rt></ruby>がない。<br><ruby>確<rt>たし</rt></ruby>かに<ruby>値打<rt>ねう</rt></ruby>ちのありそうな<ruby>箱<rt>はこ</rt></ruby>だったが<br>それ<ruby>以上<rt>いじょう</rt></ruby>に<ruby>何<rt>なに</rt></ruby>かが<ruby>引<rt>ひ</rt></ruby>っかかるのだ。<br>あれからまめに<ruby>骨董市<rt>こっとういち</rt></ruby>をのぞいては<br>いるが、<ruby>見<rt>み</rt></ruby>つける<ruby>事<rt>こと</rt></ruby>はできなかった。<br><ruby>私<rt>わたし</rt></ruby>はなぜあの<ruby>時<rt>とき</rt></ruby>、<ruby>無理<rt>むり</rt></ruby>にでもあの<ruby>箱<rt>はこ</rt></ruby>を<br><ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れなかったのだろう。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 5</p><hr><p>I can’t help but worry about that box.<br>It was certainly a box that seemed worth it, but something more is going on.<br>Since then, I’ve been looking into the antique market frequently, but I haven’t been able to find it.<br>Why didn’t I force myself to get that box at that time?</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_6.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ６</p><hr><p><!-- data_lt1/storytext/id_6.txt -->たったひと<ruby>目<rt>め</rt></ruby><ruby>見<rt>み</rt></ruby>ただけで、<ruby>私<rt>わたし</rt></ruby>は<br>あの<ruby>箱<rt>はこ</rt></ruby>に<ruby>魅入<rt>みい</rt></ruby>られてしまったようだ。<br>こうなれば、あの<ruby>箱<rt>はこ</rt></ruby>をどうしても<ruby>手<rt>て</rt></ruby>に<br><ruby>入<rt>い</rt></ruby>れない<ruby>事<rt>こと</rt></ruby>には<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かない。<br>あの<ruby>装飾<rt>そうしょく</rt></ruby>、どこかで<ruby>見<rt>み</rt></ruby>たような<ruby>覚<rt>おぼ</rt></ruby>えが<br>ある<ruby>気<rt>き</rt></ruby>がしたが、いったいどこで<ruby>見<rt>み</rt></ruby>た<br>ものだったのだろうか⋯。<br>それが<ruby>分<rt>わ</rt></ruby>かれば<ruby>手<rt>て</rt></ruby>がかりになると<br><ruby>思<rt>おも</rt></ruby>うのだが。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 6</p><hr><p>With just one glance, I was fascinated by that box.<br>If this happens, I can’t settle for not getting that box no matter what.<br>I feel like I’ve seen that decoration somewhere, but where exactly did I see it&hellip;?<br>I think it will help me if I can figure it out.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_7.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ７</p><hr><p><!-- data_lt1/storytext/id_7.txt --><ruby>今日<rt>きょう</rt></ruby>の<ruby>新聞<rt>しんぶん</rt></ruby>の<ruby>一面<rt>いちめん</rt></ruby>にもレイトン<ruby>君<rt>くん</rt></ruby>の<br><ruby>活躍<rt>かつやく</rt></ruby>が<ruby>記<rt>しる</rt></ruby>されていた。<br>まるで<ruby>自分<rt>じぶん</rt></ruby>の<ruby>事<rt>こと</rt></ruby>のように<ruby>鼻<rt>はな</rt></ruby>が<ruby>高<rt>たか</rt></ruby>い。<br><br>しかし、それよりも<ruby>気<rt>き</rt></ruby>になったのは<br>『<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>』に<ruby>関<rt>かん</rt></ruby>する<ruby>記事<rt>きじ</rt></ruby>⋯。<br><bt>&num;r</bt><ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>が<ruby>死<rt>し</rt></ruby>にいたる<bt>&num;x</bt>とは<ruby>大<rt>おお</rt></ruby>げさだが<br><ruby>実際<rt>じっさい</rt></ruby>に<ruby>数人<rt>すうにん</rt></ruby>の<ruby>死者<rt>ししゃ</rt></ruby>が<ruby>出<rt>で</rt></ruby>ているようだ。<br>もしかしたら、あの<ruby>箱<rt>はこ</rt></ruby>が⋯。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 7</p><hr><p>Layton’s activity was also written on the front page of today’s newspaper.<br>He has a high nose as if it were his own.<br><br>However, what really bothered me was the article about &ldquo;Devil’s Box&rdquo;&hellip;<br>It’s an exaggeration to say that anyone who opens it dies, but it seems that there have actually been several deaths.<br>Maybe that box&hellip;</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_8.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ８</p><hr><p><!-- data_lt1/storytext/id_8.txt --><ruby>私<rt>わたし</rt></ruby>の<ruby>探<rt>さが</rt></ruby>しているあの<ruby>箱<rt>はこ</rt></ruby>こそ、<bt>&num;r</bt><ruby>世間<rt>せけん</rt></ruby>を<br><ruby>騒<rt>さわ</rt></ruby>がせている『<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>』だろう。<bt>&num;x</bt><br>そうと<ruby>知<rt>し</rt></ruby>ればますます<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れない<br>わけにはいかない。<br><ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>に<ruby>災<rt>わざわ</rt></ruby>いが<ruby>降<rt>ふ</rt></ruby>りかかると<b>い</b><sup style=font-size:0.7rem>⚠️</sup>うが<br>それは<ruby>価値<rt>かち</rt></ruby>のあるものにつきものの、<br><ruby>単<rt>たん</rt></ruby>なるうわさに<ruby>違<rt>ちが</rt></ruby>いない。<br><ruby>世間<rt>せけん</rt></ruby>にくさらせておくくらいなら、<br><ruby>厳重<rt>げんじゅう</rt></ruby>に<ruby>保管<rt>ほかん</rt></ruby>しておきたいものだ。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 8</p><hr><p>That box I’m looking for is probably the ’Devil’s Box’ that’s causing a stir in the world.<br>If you know that, you can’t help but get it.<br>It is said that misfortune will befall those who open it, but that must be just a rumor that goes along with anything of value.<br>I’d rather keep it safe than let it be exposed to the world.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_9.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ９</p><hr><p><!-- data_lt1/storytext/id_9.txt --><ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>はうわさに<ruby>聞<rt>き</rt></ruby>くあの<ruby>町<rt>まち</rt></ruby>に<br><ruby>何<rt>なに</rt></ruby>か<ruby>関係<rt>かんけい</rt></ruby>があるようだ。<br>おそらく、<bt>&num;r</bt><ruby>箱<rt>はこ</rt></ruby>のフタについていた<ruby>紋章<rt>もんしょう</rt></ruby><br>が<ruby>手<rt>て</rt></ruby>がかり<bt>&num;x</bt>になっていたに<ruby>違<rt>ちが</rt></ruby>いない。<br><ruby>誰<rt>だれ</rt></ruby>が<ruby>何<rt>なん</rt></ruby>のために<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>を<ruby>作<rt>つく</rt></ruby>ったの<br>だろう？<br>なぜ、あの<ruby>箱<rt>はこ</rt></ruby>は<ruby>呪<rt>のろ</rt></ruby>われた<ruby>箱<rt>はこ</rt></ruby>だと<ruby>呼<rt>よ</rt></ruby>ばれ<br>ているのだろう？</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 9</p><hr><p>The Devil’s Box seems to have something to do with the rumored town.<br>Perhaps the crest on the lid of the box must have been a clue.<br>Who made the Devil’s Box and why?<br>Why is that box called the Cursed Box?</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_10.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１０</p><hr><p><!-- data_lt1/storytext/id_10.txt --><ruby>新聞<rt>しんぶん</rt></ruby>に<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>の<ruby>記事<rt>きじ</rt></ruby>が<ruby>載<rt>の</rt></ruby>っていた。<br><ruby>骨董市<rt>こっとういち</rt></ruby>であれを<ruby>売<rt>う</rt></ruby>っていた<ruby>人物<rt>じんぶつ</rt></ruby>が、<br><ruby>好奇心<rt>こうきしん</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けて<ruby>箱<rt>はこ</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてしまった<br>ようだ。<br>やはり、<bt>&num;r</bt><ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>を<ruby>死<rt>し</rt></ruby>にいたらせると<br><b>い</b><sup style=font-size:0.7rem>⚠️</sup>うのは<ruby>本当<rt>ほんとう</rt></ruby>なのかもしれない。<bt>&num;x</bt><br>だがそれでも、あれを<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れようと<br>いう<ruby>私<rt>わたし</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちに<ruby>変<rt>か</rt></ruby>わりはない。<br><ruby>何<rt>なん</rt></ruby>としても<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてみせよう。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 10</p><hr><p>There was an article about the Devil’s Box in the newspaper.<br>It seems that the person who sold it at the antique market got overwhelmed by curiosity and opened the box.<br>After all, it may be true to say that those who open it will die.<br>But that doesn’t change my desire to get it.<br>I must get it no matter what.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_11.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１１</p><hr><p><!-- data_lt1/storytext/id_11.txt --><ruby>今<rt>いま</rt></ruby>よりももっと<ruby>自由<rt>じゆう</rt></ruby>な<ruby>時間<rt>じかん</rt></ruby>を<ruby>作<rt>つく</rt></ruby>るため<br><ruby>大学<rt>だいがく</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>を<ruby>出<rt>で</rt></ruby>る<ruby>事<rt>こと</rt></ruby>にした。<br>これからは、あの<ruby>箱<rt>はこ</rt></ruby>についてもっと<br><ruby>詳<rt>くわ</rt></ruby>しく<ruby>調<rt>しら</rt></ruby>べる<ruby>事<rt>こと</rt></ruby>ができるようになる。<br>この<ruby>愛着<rt>あいちゃく</rt></ruby>のある<ruby>研究室<rt>けんきゅうしつ</rt></ruby>を<ruby>譲<rt>ゆず</rt></ruby>れるのは<br>レイトン<ruby>君<rt>くん</rt></ruby>しかいないだろう。<br><ruby>彼<rt>かれ</rt></ruby>ならきっとこの<ruby>研究室<rt>けんきゅうしつ</rt></ruby>を<ruby>大事<rt>だいじ</rt></ruby>に<br><ruby>使<rt>つか</rt></ruby>ってくれるに<ruby>違<rt>ちが</rt></ruby>いない。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 11</p><hr><p>In order to have more free time than now, I decided to leave the office.<br>From now on, you will be able to examine the box in more detail.<br>Layton is probably the only one who can hand over this beloved office.<br>I’m sure he will make good use of it.</p></div></div>
+</td></tr>
+<tr><td class=row>
+    <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_12.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１２</p><hr><p><!-- data_lt1/storytext/id_12.txt --><ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>いの<ruby>骨董<rt>こっとう</rt></ruby><ruby>屋<rt>や</rt></ruby>が、<ruby>珍<rt>めずら</rt></ruby>しい<ruby>宝石箱<rt>ほうせきばこ</rt></ruby>を<br><ruby>入荷<rt>にゅうか</rt></ruby>したと<ruby>教<rt>おし</rt></ruby>えてくれた。<br><ruby>手元<rt>てもと</rt></ruby>に<ruby>届<rt>とど</rt></ruby>いた<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>したが、<br><ruby>間違<rt>まちが</rt></ruby>いなく<ruby>私<rt>わたし</rt></ruby>が<ruby>見<rt>み</rt></ruby>かけたあの<ruby>箱<rt>はこ</rt></ruby>だ。<br><ruby>私<rt>わたし</rt></ruby>が<ruby>探<rt>さが</rt></ruby>していたのを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>し、<ruby>知<rt>し</rt></ruby>らせ<br>てくれたのだろう。ありがたい<ruby>事<rt>こと</rt></ruby>だ。<br>ようやく、あの<ruby>箱<rt>はこ</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れられる。<br>もうすぐ<ruby>私<rt>わたし</rt></ruby>の<ruby>元<rt>もと</rt></ruby>にあの<ruby>箱<rt>はこ</rt></ruby>が⋯。</p></div></div>
+    <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 12</p><hr><p>An acquaintance of an antique shop told me that he had received a rare jewelry box.<br>I checked the photo I received and it was definitely the box I saw.<br>He must have remembered what I was looking for and let me know. Thank you.<br>Finally got that box.<br>I’ll have that box soon&hellip;</p></div></div>
+</td></tr>
+</table><p class=🇯🇵>⚠️The DS version originally wrote 言 instead of い. 言 would still be pronounced い in this context.</p></div>
+
+<div id=outro class=lh>
+
+<h1>After solving the last puzzle<p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t0.txt --><bt>@3</bt>それにしても、<ruby>先生<rt>せんせい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>には<br>ナゾがいっぱいですね。</p></div>
+    <div class='dlg 🗺️'><p>Even so, your room is full of puzzles.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t1.txt -->こうやってナゾに<ruby>囲<rt>かこ</rt></ruby>まれていると、<br><ruby>研究<rt>けんきゅう</rt></ruby>もはかどるんだよ。</p></div>
+    <div class='dlg 🗺️'><p>Being surrounded by puzzles like this<br>makes my research progress.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t2.txt --><bt>@3</bt>でも、やっぱり<ruby>少<rt>すこ</rt></ruby>しくらいは<br><ruby>片付<rt>かたづ</rt></ruby>けた<ruby>方<rt>ほう</rt></ruby>が⋯</p></div>
+    <div class='dlg 🗺️'><p>But it’s better to clean up a little&hellip;</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t3.txt -->それにしても、よくこれだけの<br>ナゾを<ruby>見<rt>み</rt></ruby>つけたね。<br><ruby>上出来<rt>じょうでき</rt></ruby>だよ、ルーク。</p></div>
+    <div class='dlg 🗺️'><p>Even so, you found a lot of puzzles.<br>Well done, Luke.</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t4.txt --><bt>@3</bt>ボクだって<ruby>先生<rt>せんせい</rt></ruby>の<ruby>弟子<rt>でし</rt></ruby>ですからね。</p></div>
+    <div class='dlg 🗺️'><p>Well, I’m your apprentice.</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t5.txt -->せっかくだから、<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>記録<rt>きろく</rt></ruby>を<br>つけておくといいんじゃないかな。</p></div>
+    <div class='dlg 🗺️'><p>Since it’s a big deal, wouldn’t it be a good idea<br>to keep a record of the investigation?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t6.txt --><bt>@3</bt>そうですね。</p></div>
+    <div class='dlg 🗺️'><p>I agree.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td class=bg><img src=../ast/lh/bg_006.png></td><td colspan=2 align=center><p>This screen appears very briefly without dialogue, then switches back.</p></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t7.txt --><bt>@3</bt>あれ？<br><ruby>先生<rt>せんせい</rt></ruby>、<ruby>今<rt>いま</rt></ruby>、<ruby>外<rt>そと</rt></ruby>の<ruby>方<rt>ほう</rt></ruby>で<ruby>何<rt>なに</rt></ruby>か<ruby>音<rt>おと</rt></ruby>が⋯。</p></div>
+    <div class='dlg 🗺️'><p>Huh?<br>Professor, I heard something outside just now&hellip;</p></div>
+</td></tr>
+<tr><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t8.txt --><ruby>郵便物<rt>ゆうびんぶつ</rt></ruby>かな？</p></div>
+    <div class='dlg 🗺️'><p>Is it mail?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=3><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t9.txt --><bt>@3</bt>ボクが<ruby>見<rt>み</rt></ruby>て<ruby>来<rt>き</rt></ruby>ます。</p></div>
+    <div class='dlg 🗺️'><p>I will go check.</p></div>
+</td></tr>
+<tr><td colspan=2 align=center><p>Luke disappears for an instant, then comes back.</p></td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t10.txt --><bt>@3</bt><ruby>先生<rt>せんせい</rt></ruby>、<ruby>手紙<rt>てがみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いてました。<br><ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いておきますね。</p></div>
+    <div class='dlg 🗺️'><p>Professor, I have the letter.<br>I’ll leave it on the table.</p></div>
+</td></tr>
+</table>
+
+<h1>Checking the letter<p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e19_t0.txt --><ruby>手紙<rt>てがみ</rt></ruby>なんてめずらしいな。</p></div>
+    <div class='dlg 🗺️'><p>Letters are rare.</p></div>
+</td></tr>
+<tr><td class='i luke'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e19_t1.txt --><bt>@3</bt><ruby>誰<rt>だれ</rt></ruby>からですか？</p></div>
+    <div class='dlg 🗺️'><p>Who is it from?</p></div>
+</td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e19_t2.txt --><ruby>差出人<rt>さしだしにん</rt></ruby>の<ruby>名前<rt>なまえ</rt></ruby>は<br><ruby>書<rt>か</rt></ruby>かれていないようだ。<br><ruby>読<rt>よ</rt></ruby>んでみよう。</p></div>
+    <div class='dlg 🗺️'><p>The sender’s name doesn’t appear to be written.<br>Let’s read.</p></div>
+</td></tr>
+<tr><td>&nbsp;</td></tr>
+<tr><td class=bg><img src=../ast/lh/bg_007.png></td><td></td><td class=row>
+    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e19_t3.txt -->これは⋯！</p></div>
+    <div class='dlg 🗺️'><p>This is&hellip;!</p></div>
+</td></tr>
+<!-- -->
+<tr><td class=bg><img src=../ast/lh/bg_008.png></td><td></td><td class=row>
+    <div class='fancydlg 🇯🇵'><p>レイトンの<ruby>元<rt>もと</rt></ruby>に<ruby>届<rt>とど</rt></ruby>いた<ruby>一通<rt>いっつう</rt></ruby>の<ruby>手紙<rt>てがみ</rt></ruby>⋯。<br>それは<ruby>新<rt>あら</rt></ruby>たなる<ruby>事件<rt>じけん</rt></ruby>の<ruby>幕開<rt>まくあ</rt></ruby>けだった。</p></div>
+    <div class='fancydlg 🗺️'><p>A letter arrived to Layton&hellip;<br>It was the beginning of a new case.</p></div>
+</td></tr>
+<!-- data_lt1/etext/e19_t4.txt -->
+<tr><td colspan=2 align=center><p><i><b>This text is unused.</b></i></p></td><td class=row>
+    <div class='dlg 🇯🇵'><p>「レイトン<ruby>教授<rt>きょうじゅ</rt></ruby>とロンドンの<ruby>休日<rt>きゅうじつ</rt></ruby>」の<br><ruby>物語<rt>ものがたり</rt></ruby>はいかがでしたか？<bt>@p@c</bt></p></div>
+    <div class='dlg 🗺️'><p>Did you enjoy the story of<br>&ldquo;Professor Layton and the London Holiday&rdquo;?</p></div>
+</td></tr>
+<tr><td colspan=2 align=center><p><i><b>This text is unused.</b></i></p></td><td class=row>
+    <div class='dlg 🇯🇵'><p>タイトルに<ruby>戻<rt>もど</rt></ruby>るを<ruby>選択<rt>せんたく</rt></ruby>すると、<br><ruby>始<rt>はじ</rt></ruby>めからやり<ruby>直<rt>なお</rt></ruby>す<ruby>事<rt>こと</rt></ruby>ができます。</p></div>
+    <div class='dlg 🗺️'><p>If you go back to the title screen,<br>you can start over from the beginning.</p></div>
+</td></tr>
+</table>
+<h2>The game then proceeds to go back to the main London Holiday menu.<br>Choosing the &ldquo;Continue&rdquo; option will send you back to the moment when you saved last.</h2>
+</div>
+
+</div>
+</article></div></div>
+<!-- <tr><th colspan=2 style=font-variant:small-caps><h3>puzzle!<br>ナゾ０００：TITLEHERE</h3><i>TRANSLATION</i></th></tr> -->
+<!-- <tr><th width=50%>このナゾの<cr>ひらめき指数</cr>は<cr>３０</cr>/３０ピカラット<br>This puzzle is <cr>worth 30</cr>/30 Picarats</th><th>ひらめき指数のトータル<cr>０</cr>ピカラット<br>Total Score: <cr>0</cr> Picarats</th></tr> -->
+
+<!--
+
+Are these images useful?
+    judge_r14_bg
+    pl2_lh_nazo_XXa
+The latter ones don't have the same image size as the former, which means that it won't be that easy to replace the first one with the others...
+
+-->

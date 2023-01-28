@@ -1,0 +1,77 @@
+body{color:rgb(var(--plblack))}p{text-indent:0!important}
+.wrap{width:80%;margin-left:-40%}
+.🇯🇵{font-size:1rem}.🗺️{font-style:italic}
+.px{image-rendering:pixelated}
+.bg img{border:2px solid rgb(var(--plblack))}.bg{width:320px}
+.memo{width:628px;height:512px;font-size:1.2rem;margin-right:5px;display:table}
+.memo p{padding:0 150px;text-align:left}
+.memo p:nth-child(1){padding:0 100px;text-align:center}
+.memo.🇯🇵 p:nth-child(3){padding:0 0 0 150px}
+.memo hr{width:42%;margin:7px auto;background:rgb(var(--plblack))}.memo div{display:table-cell;vertical-align:middle}.memo.🇯🇵{font-size:1.1rem}
+.i{width:80px;text-align:center;image-rendering:pixelated;height:128px}
+.dlg{padding:12px 34px 12px 34px;width:256px;height:128px;margin-right:5px;text-align:left}
+td{min-height:128px}
+.translaytion{table-layout:fixed;overflow:hidden;border-spacing:10px 0;font-size:1rem;margin-bottom:80px}
+.row{display:flex;flex-direction:row;width:100000px}
+.hint{padding:42px;overflow-x:hidden;height:256px;margin:auto;width:100%;background:rgb(var(--bgl));border-radius:0 17px 17px 17px}
+.hint .row div{padding:0 70px;border-right:2px solid rgb(var(--fore));width:512px}.hint > div:nth-child(n+2){display:none}.hint h2{margin:0 auto}.hint h2 span{font-size:42px}
+.translaytion .fancydlg{display:flex;align-items:center;justify-content:center;width:420px;text-align:center;font-size:1.2rem;background:rgb(var(--back));border-radius:42px;transform:scale(95%);padding:17px}
+.puzzle p.🇯🇵,.puzzle p.🗺️{padding:70px 0;border-bottom:2px solid rgb(var(--fore))}
+
+s{aspect-ratio:1/1;display:inline-block;height:0.8rem}
+svg{width:100%;height:100%}
+svg.hat path{stroke-opacity:1;stroke-linejoin:miter;stroke-linecap:round;stroke-width:7}
+svg.hat path{d:path('M0 90 0 100 100 100 100 90ZM75 75 75 0 20 0 20 75ZM20 75 20 90M75 75 75 90')}
+svg.canon path{stroke:rgb(var(--fore));fill:rgb(var(--fore))}
+svg.yroff path{stroke:rgb(var(--midd));fill:rgb(var(--midd))}
+svg.guess path{stroke:rgb(var(--emph));fill:rgb(var(--emph))}
+
+cr{color:rgb(152,48,0)}
+cs{color:rgb(48,120,128)}
+bt{display:none;background:rgb(var(--midd));padding:3px;margin:3px;border:2px solid rgb(var(--fore));border-radius:3px;font-size:0.7em;font-family:Consolas}
+button{border:0 none;color:rgb(var(--plwhite));text-shadow:var(--txtshw);font-weight:800;background:rgb(var(--fore));padding:10px 12px 10px 12px;letter-spacing:1px;cursor:pointer;border-radius:5px 5px 0 0}
+a:active button{background:rgb(var(--midd))}
+.container{padding:42px;height:80vh;border-radius:0 17px 17px 17px;background:rgb(var(--bgd));border:5px solid rgb(var(--midd));overflow-x:hidden}
+.rmk{width:512px;border:3px solid rgb(205,122,30);background:rgb(247,231,146)!important;margin:5px;padding:5px}
+hr{height:2px;background:rgb(var(--fore));margin-top:5px;margin-bottom:5px;width:100%}
+
+.puzzle{font-size:24px;font-weight:800;table-layout:fixed;margin-bottom:80px}
+.puzzle p{margin:0}
+
+.puzzle tr:nth-child(1) th{width:50%;border:2px solid rgb(var(--plblack));height:626px}
+.puzzle tr:nth-child(2) td{border:2px solid rgb(var(--plblack));height:568px}
+.puzzle tr:nth-child(1) th:nth-child(1){padding-top:80px}
+.puzzle tr:nth-child(1) th:nth-child(2){vertical-align:top}
+.puzzle tr:nth-child(1) h2{color:rgb(var(--plblack));margin:0;padding:0}
+.puzzle tr:nth-child(1) th:nth-child(1) p:nth-child(1){font-size:5rem}
+.puzzle tr:nth-child(1) th:nth-child(1) p:nth-child(2){margin-top:12px}
+.puzzle tr:nth-child(1) th:nth-child(1) p:nth-child(3){margin-top:5px}
+.puzzle tr:nth-child(1) th:nth-child(2) > h2 i{display:block}
+.puzzle tr:nth-child(1) th:nth-child(2) > h2 i:nth-child(1){margin-top:155px}
+.puzzle tr:nth-child(1) th:nth-child(2) > h2 i:nth-child(2){font-size:7rem;margin-top:35px}
+.puzzle tr:nth-child(1) th:nth-child(2) > h2 i:nth-child(3){margin-top:100px}
+.puzzle tr:nth-child(1) th:nth-child(2) table{margin-top:50px}
+.puzzle tr:nth-child(1) th:nth-child(2) table h2{color:rgb(var(--plblack));padding:0}
+.puzzle tr:nth-child(1) th:nth-child(2) table td:nth-child(2){text-align:right}
+
+.puzzle tr:nth-child(2) td:nth-child(1),.puzzle tr:nth-child(4) td{border:2px solid rgb(var(--plblack));vertical-align:top;padding:50px;height:568px}
+/* .puzzle tr:nth-child(2) td:nth-child(1) hr{margin:70px 0}
+.puzzle tr:nth-child(5) hr{margin:70px 0} */
+
+.puzzle tr:nth-child(3) td{text-align:left}
+.puzzle tr:nth-child(3) td .bar{margin:42px auto}
+.puzzle tr:nth-child(3) td > div a:nth-child(1) button{background:rgb(var(--bgd))}
+.puzzle tr:nth-child(3) td > div a:nth-child(2) button{background:rgb(var(--hint1))}
+.puzzle tr:nth-child(3) td > div a:nth-child(3) button{background:rgb(var(--hint2))}
+.puzzle tr:nth-child(3) td > div a:nth-child(4) button{background:rgb(var(--hint3))}
+.puzzle tr:nth-child(3) td > div .container > div:nth-child(n+2){display:none}
+
+.puzzle tr:nth-child(5) td{border:2px solid rgb(var(--plblack));vertical-align:top;padding:50px;font-size:24px;font-weight:800;height:626px}
+.puzzle div{overflow:hidden;max-height:100%}
+.puzzle div:hover{overflow-y:auto;scrollbar-color:rgba(150,150,150,1)rgba(250,250,250,0.2)}
+
+/*
+
+ULULIM FOR "Back off!" WOULD BE * Tyle dx *
+
+ */
