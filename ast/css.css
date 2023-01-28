@@ -4,7 +4,7 @@
 *,*:after,*:before{-moz-box-sizing:border-box}*:target{scroll-margin-top:80px}
 body{margin:auto;font-family:Candara;background:rgb(var(--grey))}body,table{text-align:justify;font-size:1.25rem}
 rt{pointer-events:none;user-select:none;color:rgb(var(--emph));font-weight:800;ruby-align:center;font-size:0.5rem}
-img{max-width:100%}table{width:100%}a{text-decoration:none;color:rgb(var(--fore))}a:hover{color:rgb(var(--emph))}
+img{max-width:100%}table{width:100%}a{text-decoration:none;color:rgb(var(--fore))}a:hover{color:rgb(var(--emph))}p{margin:0}
 
 .wrap{margin-top:42px;position:absolute;left:50%;width:1000px;margin-left:-500px}
 article{padding:42px;text-align:justify}
@@ -22,7 +22,7 @@ article{padding:42px;text-align:justify}
 
 .infoa:hover .infob,.infob:hover{visibility:visible}.infoa{cursor:help}
 .infob{visibility:hidden;z-index:99;background:rgba(254,224,163,0.9);border:2px solid rgb(var(--midd));padding:7px;text-align:left;font-size:17px;color:rgb(var(--plblack));min-width:256px;overflow-y:auto;overflow-x:hidden;max-height:500px;position:absolute;top:2.3rem;left:-2rem}
-.infob h2{padding:0;text-align:left}
+.infob h2{padding:0;margin:0;line-height:120%;text-align:left;font-size:20px}.infob p{margin:0;padding-top:12px}
 
 .credit1{position:absolute;top:0;left:0}.credit2{z-index:1;margin:17px;background:rgba(255,255,255,0.5);padding:7px;border-radius:5px;font-size:14px}
 .tophat{height:20px;margin-bottom:-5px;border:none!important}
