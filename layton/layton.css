@@ -36,7 +36,6 @@ a:active button{background:rgb(var(--midd))}
 hr{height:2px;background:rgb(var(--fore));margin-top:5px;margin-bottom:5px;width:100%}
 
 .puzzle{font-size:24px;font-weight:800;table-layout:fixed;margin-bottom:80px}
-.puzzle p{margin:0}
 
 .puzzle tr:nth-child(1) th{width:50%;border:2px solid rgb(var(--plblack));height:626px}
 .puzzle tr:nth-child(2) td{border:2px solid rgb(var(--plblack));height:568px}
@@ -67,3 +66,14 @@ hr{height:2px;background:rgb(var(--fore));margin-top:5px;margin-bottom:5px;width
 .puzzle tr:nth-child(5) td{border:2px solid rgb(var(--plblack));vertical-align:top;padding:50px;font-size:24px;font-weight:800;height:626px}
 .puzzle div{overflow:hidden;max-height:100%}
 .puzzle div:hover{overflow-y:auto;scrollbar-color:rgba(150,150,150,1)rgba(250,250,250,0.2)}
+
+
+.timeline{text-align:justify;border-spacing:0 3px}
+.timeline td,.timeline th{padding:17px;border:solid 2px rgb(var(--midd));border-style:solid solid solid none}
+.timeline tr td:first-child{border-style:solid}
+.timeline tr td:first-child,.timeline tr th:first-child{border-top-left-radius:10px;border-bottom-left-radius:10px;text-align:center;font-weight:800}
+.timeline tr td:last-child,.timeline tr th:last-child{border-top-right-radius:10px;border-bottom-right-radius:10px}
+.timeline tr:nth-child(even) td{background:rgb(var(--bgl))}.timeline tr:nth-child(odd) td{background:rgb(var(--bgd))}.timeline tr:hover td{background:rgba(var(--midd),0.42)}
+.timeline th{background:rgb(var(--midd));text-align:center}
+@keyframes tmpblink{50%{background:rgba(var(--emph),0.42);box-shadow:0 0 17px rgba(var(--emph),0.42)}}
+.timeline tr:target td,wip:target{animation:tmpblink 0.5s 3}
