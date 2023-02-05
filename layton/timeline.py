@@ -2,7 +2,6 @@
 dbdate=1963.61365   # August 12, 1963
 charlist=['Layton','Luke','Emmy']
 
-
 ufdate=1963.999
 cvdate=dbdate-6/365
 lsdate=cvdate-3-.46
@@ -10,7 +9,6 @@ htdate=ufdate-10-.342
 e16dte=lsdate-6-.461
 aledte=cvdate-.465
 alsdte=aledte-.42
-
 
 # ufdate=(1963.833+1964.162)/2
 # cvdate=((dbdate-14/365)+(dbdate-7/365))/2
@@ -25,16 +23,16 @@ reqlist={
     'Req':['<ufdate','<dbdate']
 },
 "DB":{'Event':'Professor Layton and the Diabolical Box'      ,'Date':dbdate,'Layton':None,'Luke':None,'Emmy':None,
-    'Req':[]
+    'Req':['<ufdate','>cvdate']
 },
 "UF":{'Event':'Professor Layton and the Unwound Future'      ,'Date':ufdate,'Layton':None,'Luke':13  ,'Emmy':None,
     'Req':[]
 },
 "Ht":{'Event':'Layton gets his hat'                          ,'Date':htdate,'Layton':27  ,'Luke':None,'Emmy':None,
-    'Req':['<ufdate-10.','>ufdate-11.','<reqlist["E16"]["Date"]']
+    'Req':['<ufdate-10.','>ufdate-11.','<e16dte']
 },
 "E16":{'Event':'Emmy meets Layton and Grosky'                ,'Date':e16dte,'Layton':None,'Luke':None,'Emmy':16  ,
-    'Req':['<lsdate-6.','>lsdate-7.','>reqlist["Ht"]["Date"]']
+    'Req':['<lsdate-6.','>lsdate-7.','>htdate']
 },
 "LS":{'Event':'Professor Layton and the Last Specter'        ,'Date':lsdate,'Layton':34  ,'Luke':10  ,'Emmy':None,
     'Req':['<cvdate-3.','>cvdate-4.']
@@ -53,6 +51,7 @@ reqlist={
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+allcheck=True
 evlist=[k for k in reqlist.keys()]
 import pandas as pd;pd.options.mode.chained_assignment=None
 pd.options.display.float_format='{:.0f}'.format
@@ -106,10 +105,9 @@ for k in reqlist.keys():
     check[k]=[]
     for statement in reqlist[k]['Req']:
         if not eval(str(reqlist[k]['Date'])+statement):
-            check[k].append('of date '+str(reqlist[k]['Date'])+" IS NOT "+statement)
-    if check[k]!=[]:
-        for st in check[k]:
-            print('\033[31m',reqlist[k]['Event'],st,'\033[0m')
+            check[k].append('of date '+str(reqlist[k]['Date'])+" IS NOT "+statement);allcheck=False
+    for st in check[k]:
+        print('\033[31m',reqlist[k]['Event'],st,'\033[0m')
 
 def add_rows(event,dic=reqlist,chars=charlist,yrmin=1952,yrmax=1965):
     for y in range(-10,10):
@@ -132,13 +130,7 @@ def color_extracolumns(d):
 d=d.sort_values('Date');d=d.fillna('');d.index=[' ']*len(d)
 d['S']=d.apply(color_extracolumns,axis=1)
 d=d[['S','Event','Percentage of Year','Month','Year']+charlist+['E']]
-print('\n\n');print(d,'\n\n')
-
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# print('\n\n');print(d,'\n\n')
 
 eventlist=d['Event'].values.tolist()
 chagelist={c:d[c].values.tolist()for c in charlist}
@@ -147,34 +139,11 @@ for c in charlist:
     for i in range(1,len(chagelist[c])):
         if not isinstance(chagelist[c][i-1],str)and not isinstance(chagelist[c][i],str):
             if chagelist[c][i-1]>chagelist[c][i]:
-                agecheck.append(c+"'"+'s age is inconsistent between "'+eventlist[i].replace('According to ','')+'" and "'+eventlist[i-1].replace('According to ','')+'"!')
+                agecheck.append(c+"'"+'s age is inconsistent between "'+eventlist[i].replace('According to ','')+'" and "'+eventlist[i-1].replace('According to ','')+'"!');allcheck=False
 for i in list(set(agecheck)):print(i)
-if agecheck==[]:
+if allcheck:
     print('\n\n');print(d.loc[~d['Event'].str.contains("According to ")][['Event','Month','Year']+charlist],'\n\n')
     print("\033[92m   It's hard to believe, but somehow you actually pulled it off! Everything checks out!\033[0m")
 print('\n\n')
 
-
-
 # d.to_csv('timeline_output.csv',index=False)
-
-
-
-# Pour toutes les dates possibles de CV :
-#     Pour toutes les dates possibles d'AL fin :
-#         Si Emmy==26 ET Luke==12 {
-#             Pour toutes les dates possibles d'AL début :
-#                 Si Emmy==26 ET Luke==12 {
-#                     Pour toutes les dates possibles de LS :
-#                         Si Luke==10 ET Layton==34 {
-#                             Pour Flashback = LS- 6 ans :
-#                                 Si Emmy==16 {
-#                                     Pour toutes les dates possibles d'UF :
-#                                         Si UF-10<Flashback ET Layton==26:
-#                                             VICTOIRE
-
-
-
-
-
-# SORT EVENTS -----------------------------------------------
