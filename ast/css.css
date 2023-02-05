@@ -4,7 +4,7 @@
 *,*:after,*:before{-moz-box-sizing:border-box}*:target{scroll-margin-top:80px}
 body{margin:auto;font-family:Candara;background:rgb(var(--grey))}body,table{text-align:justify;font-size:1.25rem}
 rt{pointer-events:none;user-select:none;color:rgb(var(--emph));font-weight:800;ruby-align:center;font-size:0.5rem}
-img{max-width:100%}table{width:100%}td{height:100%}a{font-weight:800;text-decoration:none;color:rgb(var(--fore))}a:hover{color:rgb(var(--emph))}p,ul{margin:0}ul{list-style:disclosure-closed}
+img{max-width:100%}table{width:100%}td{height:100%}a{font-weight:800;text-decoration:none;color:rgb(var(--fore))}a:hover{color:rgb(var(--emph))}p{margin:0}ul{margin:17px 0}ul{list-style:disclosure-closed}li{margin:17px 0}
 blockquote{border-left:2px solid rgb(var(--midd));padding:0 0 0 7px;margin:17px 0 17px 7px}
 
 .wrap{margin-top:42px;position:absolute;left:50%;width:1000px;margin-left:-500px}
