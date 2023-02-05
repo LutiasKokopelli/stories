@@ -4,7 +4,8 @@
 *,*:after,*:before{-moz-box-sizing:border-box}*:target{scroll-margin-top:80px}
 body{margin:auto;font-family:Candara;background:rgb(var(--grey))}body,table{text-align:justify;font-size:1.25rem}
 rt{pointer-events:none;user-select:none;color:rgb(var(--emph));font-weight:800;ruby-align:center;font-size:0.5rem}
-img{max-width:100%}table{width:100%}a{text-decoration:none;color:rgb(var(--fore))}a:hover{color:rgb(var(--emph))}p{margin:0}
+img{max-width:100%}table{width:100%}td{height:100%}a{font-weight:800;text-decoration:none;color:rgb(var(--fore))}a:hover{color:rgb(var(--emph))}p,ul{margin:0}ul{list-style:disclosure-closed}
+blockquote{border-left:2px solid rgb(var(--midd));padding:0 0 0 7px;margin:17px 0 17px 7px}
 
 .wrap{margin-top:42px;position:absolute;left:50%;width:1000px;margin-left:-500px}
 article{padding:42px;text-align:justify}
@@ -21,10 +22,11 @@ article{padding:42px;text-align:justify}
 .vb{margin:0 0 2em 0}.vs{margin:0 0 0.5em 0}.chap .vb,.vs{text-indent:2.5em}
 
 .infoa:hover .infob,.infob:hover{visibility:visible}.infoa{cursor:help}
-.infob{visibility:hidden;z-index:99;background:rgba(254,224,163,0.9);border:2px solid rgb(var(--midd));padding:7px;text-align:left;font-size:17px;color:rgb(var(--plblack));min-width:256px;overflow-y:auto;overflow-x:hidden;max-height:500px;position:absolute;top:2.3rem;left:-2rem}
-.infob h2{padding:0;margin:0;line-height:120%;text-align:left;font-size:20px}.infob p{margin:0;padding-top:12px}
+.infob{visibility:hidden;z-index:99;background:rgba(var(--back),0.95);border:2px solid rgb(var(--midd));padding:7px;text-align:left;font-size:17px;color:rgb(var(--plblack));min-width:256px;overflow-y:auto;overflow-x:hidden;max-height:500px;position:absolute;top:2.3rem;left:-1rem}
+.infob h2{padding:0 0 3px 0;margin:0 0 17px 0;line-height:120%;text-align:left;font-size:20px;border-bottom:2px solid rgb(var(--midd))}
+.infob h2:not(h2:first-child){margin-top:17px}
 
-.credit1{position:absolute;top:0;left:0}.credit2{z-index:1;margin:17px;background:rgba(255,255,255,0.5);padding:7px;border-radius:5px;font-size:14px}
+.credit1{position:absolute;top:0;left:0}.credit2{z-index:1;margin:17px;background:rgba(var(--plwhite),0.5);padding:7px;border-radius:5px;font-size:14px}
 .tophat{height:20px;margin-bottom:-5px;border:none!important}
 
 .medialist{display:flex;align-items:center;justify-content:center;flex-wrap:wrap}.medialist .infoa{margin:3px;text-align:center}
@@ -35,9 +37,10 @@ article{padding:42px;text-align:justify}
 wip{margin:20px;padding:42px;color:rgb(var(--plblack));background:rgb(var(--midd));display:block;border-radius:17px;box-shadow:0 0 17px rgb(var(--midd))}
 wip a{color:rgb(var(--emph))}wip a:hover{color:rgb(var(--emp2))}
 
-h1,h2{line-height:200%;text-align:center;margin:0 auto 1.7em auto}
+h1,h2,h3{line-height:200%;text-align:center;margin:0 auto 1.7em auto}
 h1{font-size:3rem;color:rgb(var(--emph))}
 h2{font-size:2rem;font-weight:800;color:rgb(var(--fore))}
+h3{color:rgb(var(--emph));line-height:150%}
 h1 span{color:rgb(var(--midd));line-height:100%;font-size:0.7em}
 h1 .hr,h2 .hr{width:90%;background:rgb(var(--midd));height:3px;margin:1em auto;margin-bottom:1.665em;top:2px}
 h1 .hr:before,h1 .hr:after,h2 .hr:before,h2 .hr:after{content:'➽';color:rgb(var(--midd));position:absolute}
