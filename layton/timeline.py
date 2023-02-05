@@ -156,7 +156,7 @@ print('\n\n')
 
 
 
-d.to_csv('timeline_output.csv',index=False)
+# d.to_csv('timeline_output.csv',index=False)
 
 
 
@@ -178,27 +178,3 @@ d.to_csv('timeline_output.csv',index=False)
 
 
 # SORT EVENTS -----------------------------------------------
-
-# Inspector Chelmey is promoted to Assistant to Inspector Gilbert.
-# Inspector Gilbert is shot and dies.
-# FACT CHECK:                  Chief Inspector Dellmont is hired in Gilbert's old post.
-# Emmy Altava meets Professor Layton and Inspector Grosky.
-# The Misthallery car factory closes.
-# Crow begins the Black Raven auctions.
-# Levin Jakes becomes Misthallery's chief constable.
-# Bill Hawks marries Caroline.
-# Footballer Pierre Starbuck sustains a serious injury.
-# Oswald Whistler ends his career as a composer.
-# Constance Dove dies.
-# 6 months after LS: Golden Garden is revealed
-# Melina dies (1 year before ED).
-# Evan Barde auctions the Flute.
-# Evan Barde dies, Clark becomes mayor.
-# The Tritons move back to London.
-# Amelia Ruth's grandfather dies.
-# Phantom Deity, Illusory Forest, Wandering Castle
-# Sophia (DB) dies.
-# Augustus Reinhold's death is announced.
-# Grosky is promoted (end of AL).
-# Emmy becomes a journalist.
-# The Tritons leave the UK.
