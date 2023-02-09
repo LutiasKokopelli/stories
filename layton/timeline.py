@@ -6,7 +6,7 @@ charlist=['Layton','Luke','Emmy']
 lhdate=dbdate-3/365.25         # MIN:    dbdate-3/365.25     MAX:    dbdate-5/365.25
 cvdate=lhdate-5/365.25         # MIN:    lhdate-3/365.25     MAX:    lhdate-5/365.25
 lsdate=cvdate-3-162/365.25
-htdate=ufdate-10-127/365.25
+htdate=ufdate-10-131/365.25
 e16dte=lsdate-6-167/365.25
 aledte=cvdate-.465
 alsdte=aledte-.42
@@ -125,7 +125,7 @@ for e in evlist:add_rows(e)
 d=pd.DataFrame.from_dict(reqlist,orient='index');d=d.drop('Req',axis=1)
 d['Year']=d['Date'].astype(int)
 d['Month']=d.apply(date_to_month,axis=1)
-d['Day']=d.apply(date_to_day,axis=1)
+# d['Day']=d.apply(date_to_day,axis=1)
 d['Percentage of Year']=(d['Date']-d['Date'].astype(int).astype(float))*100
 d['S']='\033[0m ';d['E']='\033[0m '
 
@@ -135,7 +135,8 @@ def color_extracolumns(d):
 
 d=d.sort_values('Date');d=d.fillna('');d.index=[' ']*len(d)
 d['S']=d.apply(color_extracolumns,axis=1)
-d=d[['S','Event','Percentage of Year','Day','Month','Year']+charlist+['E']]
+# d=d[['S','Event','Percentage of Year','Day','Month','Year']+charlist+['E']]
+d=d[['S','Event','Percentage of Year','Month','Year']+charlist+['E']]
 # print('\n\n');print(d,'\n\n')
 
 eventlist=d['Event'].values.tolist()
@@ -148,7 +149,8 @@ for c in charlist:
                 agecheck.append(c+"'"+'s age is inconsistent between "'+eventlist[i].replace('According to ','')+'" and "'+eventlist[i-1].replace('According to ','')+'"!');allcheck=False
 for i in list(set(agecheck)):print(i)
 if allcheck:
-    print('\n\n');print(d.loc[~d['Event'].str.contains("According to ")][['Event','Day','Month','Year']+charlist],'\n\n')
+    print('\n\n');print(d.loc[~d['Event'].str.contains("According to ")][['Event','Month','Year']+charlist],'\n\n')
+    # print('\n\n');print(d.loc[~d['Event'].str.contains("According to ")][['Event','Day','Month','Year']+charlist],'\n\n')
     print("\033[92m   It's hard to believe, but somehow you actually pulled it off! Everything checks out!\033[0m")
 print('\n\n')
 
