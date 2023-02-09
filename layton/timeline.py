@@ -1,12 +1,13 @@
 # coding: utf-8
-dbdate=1963.61365   # August 12, 1963
+ufdate=1963.999
+dbdate=1963.613   # August 12, 1963
 charlist=['Layton','Luke','Emmy']
 
-ufdate=1963.999
-cvdate=dbdate-6/365
-lsdate=cvdate-3-.46
-htdate=ufdate-10-.342
-e16dte=lsdate-6-.461
+lhdate=dbdate-3/365.25         # MIN:    dbdate-3/365.25     MAX:    dbdate-5/365.25
+cvdate=lhdate-5/365.25         # MIN:    lhdate-3/365.25     MAX:    lhdate-5/365.25
+lsdate=cvdate-3-162/365.25
+htdate=ufdate-10-127/365.25
+e16dte=lsdate-6-167/365.25
 aledte=cvdate-.465
 alsdte=aledte-.42
 
@@ -19,13 +20,7 @@ alsdte=aledte-.42
 # alsdte=((aledte-.25)+(aledte-.75))/2
 
 reqlist={
-"CV":{'Event':'Professor Layton and the Curious Village'     ,'Date':cvdate,'Layton':None,'Luke':None,'Emmy':None,
-    'Req':['<ufdate','<dbdate']
-},
-"DB":{'Event':'Professor Layton and the Diabolical Box'      ,'Date':dbdate,'Layton':None,'Luke':None,'Emmy':None,
-    'Req':['<ufdate','>cvdate']
-},
-"UF":{'Event':'Professor Layton and the Unwound Future'      ,'Date':ufdate,'Layton':None,'Luke':13  ,'Emmy':None,
+"Dropstone":{'Event':'Dropstone was founded','Date':dbdate-50,'Layton':None,'Luke':None,'Emmy':None,
     'Req':[]
 },
 "Ht":{'Event':'Layton gets his hat'                          ,'Date':htdate,'Layton':27  ,'Luke':None,'Emmy':None,
@@ -43,6 +38,17 @@ reqlist={
 "ALe":{'Event':'Professor Layton and the Azran Legacy ends'  ,'Date':aledte,'Layton':None,'Luke':12  ,'Emmy':26  ,
     'Req':[]
 },
+"CV":{'Event':'End of Professor Layton and the Curious Village','Date':cvdate,'Layton':None,'Luke':None,'Emmy':None,
+    'Req':['>lhdate-6/365.25','<lhdate-2/365.25']
+},
+"LH":{'Event':'Professor Layton and the London Holiday'      ,'Date':lhdate,'Layton':None,'Luke':None,'Emmy':None,   #'Day':'Sunday',
+    'Req':['<dbdate-2/365.25','>dbdate-6/365.25']},
+"DB":{'Event':'Professor Layton and the Diabolical Box'      ,'Date':dbdate,'Layton':None,'Luke':None,'Emmy':None,
+    'Req':['<ufdate','>lhdate+2/365.25']
+},
+"UF":{'Event':'Professor Layton and the Unwound Future'      ,'Date':ufdate,'Layton':None,'Luke':13  ,'Emmy':None,
+    'Req':['>dbdate']
+},
 }
 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -57,24 +63,23 @@ import pandas as pd;pd.options.mode.chained_assignment=None
 pd.options.display.float_format='{:.0f}'.format
 pd.set_option('display.max_rows',None)
 
-# def date_to_month(d):
-#     m=(d['Date']-float(int(d['Date'])))*365 # ONE DAY = 1/365 = 0.27%
-#     if m<32:return("January")               # January:    0.0% -  8.5%
-#     elif m<60:return("February")            # February:   8.5% - 16.2%
-#     elif m<91:return("March")               # March:     16.2% - 24.7%
-#     elif m<121:return("April")              # April:     24.7% - 32.9%
-#     elif m<152:return("May")                # May:       32.9% - 41.4%
-#     elif m<182:return("June")               # June:      41.4% - 49.6%
-#     elif m<213:return("July")               # July:      49.6% - 58.1%
-#     elif m<244:return("August")             # August:    58.1% - 66.6%
-#     elif m<274:return("September")          # September: 66.6% - 74.8%
-#     elif m<305:return("October")            # October:   74.8% - 83.3%
-#     elif m<335:return("November")           # November:  83.3% - 91.5%
-#     else:return("December")                 # December:  91.5% - 00.0%
+def date_to_day(d):
+    refm=(lhdate-float(int(lhdate)))*365.25+1
+    m=(d['Date']-float(int(d['Date'])))*365.25+1
+    nbyears=abs(int(d['Date'])-1963)*365.25
+    diffday=(m-refm+nbyears)%7
+    if diffday>0.5 and diffday<=1.5:return('Monday')
+    if diffday>1.5 and diffday<=2.5:return('Tuesday')
+    if diffday>2.5 and diffday<=3.5:return('Wednesday')
+    if diffday>3.5 and diffday<=4.5:return('Thursday')
+    if diffday>4.5 and diffday<=5.5:return('Friday')
+    if diffday>5.5 and diffday<=6.5:return('Saturday')
+    if diffday>6.5 or  diffday<=0.5:return('Sunday')
+    else:return(diffday)
 
-def date_to_month(d):# ONE DAY = 1/365 = 0.27%
-    m=(d['Date']-float(int(d['Date'])))*365+1
-    delimiters=[31,31+28,31+28+31,31+28+31+30,31+28+31+30+31,31+28+31+30+31+30,31+28+31+30+31+30+31,31+28+31+30+31+30+31+31,31+28+31+30+31+30+31+31+30,31+28+31+30+31+30+31+31+30+31,31+28+31+30+31+30+31+31+30+31+30]
+def date_to_month(d):
+    m=(d['Date']-float(int(d['Date'])))*365.25+1
+    delimiters=[31,59,90,120,151,181,212,243,273,304,334]
     if m<=delimiters[0]:
         return("January "+str(m))                # January:    0.0% -  8.5%
     elif m<=delimiters[1]:
@@ -120,6 +125,7 @@ for e in evlist:add_rows(e)
 d=pd.DataFrame.from_dict(reqlist,orient='index');d=d.drop('Req',axis=1)
 d['Year']=d['Date'].astype(int)
 d['Month']=d.apply(date_to_month,axis=1)
+d['Day']=d.apply(date_to_day,axis=1)
 d['Percentage of Year']=(d['Date']-d['Date'].astype(int).astype(float))*100
 d['S']='\033[0m ';d['E']='\033[0m '
 
@@ -129,7 +135,7 @@ def color_extracolumns(d):
 
 d=d.sort_values('Date');d=d.fillna('');d.index=[' ']*len(d)
 d['S']=d.apply(color_extracolumns,axis=1)
-d=d[['S','Event','Percentage of Year','Month','Year']+charlist+['E']]
+d=d[['S','Event','Percentage of Year','Day','Month','Year']+charlist+['E']]
 # print('\n\n');print(d,'\n\n')
 
 eventlist=d['Event'].values.tolist()
@@ -142,7 +148,7 @@ for c in charlist:
                 agecheck.append(c+"'"+'s age is inconsistent between "'+eventlist[i].replace('According to ','')+'" and "'+eventlist[i-1].replace('According to ','')+'"!');allcheck=False
 for i in list(set(agecheck)):print(i)
 if allcheck:
-    print('\n\n');print(d.loc[~d['Event'].str.contains("According to ")][['Event','Month','Year']+charlist],'\n\n')
+    print('\n\n');print(d.loc[~d['Event'].str.contains("According to ")][['Event','Day','Month','Year']+charlist],'\n\n')
     print("\033[92m   It's hard to believe, but somehow you actually pulled it off! Everything checks out!\033[0m")
 print('\n\n')
 
