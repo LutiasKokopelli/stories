@@ -11,7 +11,7 @@ body{color:rgb(var(--plblack))}p{text-indent:0!important}
 .i{width:80px;text-align:center;image-rendering:pixelated;height:128px}
 .dlg{padding:12px 34px 12px 34px;width:256px;height:128px;margin-right:5px;text-align:left}
 td{min-height:128px}
-.container>div{overflow-x:scroll}
+.container>div{overflow-x:auto}
 .translaytion{table-layout:fixed;border-spacing:10px 0;font-size:1rem;margin-bottom:80px}
 .row{display:flex;flex-direction:row;width:100000px}
 .hint{padding:42px;overflow-x:hidden;height:256px;margin:auto;width:100%;background:rgb(var(--bgl));border-radius:0 17px 17px 17px}
