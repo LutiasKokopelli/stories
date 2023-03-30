@@ -11,6 +11,17 @@ e16dte=lsdate-6-167/365.25
 aledte=cvdate-.465
 alsdte=aledte-.42
 
+# The weekday can be calculated using this website:
+# https://www.timeanddate.com/date/weekday.html
+# However, depending on the date of London Holiday, the week day might not be aligned!
+# If LH is on August 9, for example, then if the website says Tuesday, it is in fact Thursday in the timeline.
+
+# Optimize so that the script will find the solution by itself?
+# https://www.educative.io/answers/what-is-optimizelinprog-in-scipy
+
+# Have it so that you don't have to give 'None' keys?
+# https://stackoverflow.com/questions/9285086/access-dict-key-and-return-none-if-doesnt-exist
+
 # ufdate=(1963.833+1964.162)/2
 # cvdate=((dbdate-14/365)+(dbdate-7/365))/2
 # lsdate=((cvdate-3-182/365)+(cvdate-3))/2
