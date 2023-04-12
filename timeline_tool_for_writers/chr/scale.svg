@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<svg viewBox='0 0 2400 50' width='1440px' height='50px' xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
+<path d='M3 20 3 50M0 48 2400 48M100 20 100 50M200 20 200 50M300 20 300 50M400 20 400 50M500 20 500 50M600 20 600 50M700 20 700 50M800 20 800 50M900 20 900 50M1000 20 1000 50M1100 20 1100 50M1200 20 1200 50M1300 20 1300 50M1400 20 1400 50M1500 20 1500 50M1600 20 1600 50M1700 20 1700 50M1800 20 1800 50M1900 20 1900 50M2000 20 2000 50M2100 20 2100 50M2200 20 2200 50M2300 20 2300 50M2397 20 2397 50' stroke='rgb(48,32,32)' stroke-width='5' />
+<path d='M50 30 50 50M150 30 150 50M250 30 250 50M350 30 350 50M450 30 450 50M550 30 550 50M650 30 650 50M750 30 750 50M850 30 850 50M950 30 950 50M1050 30 1050 50M1150 30 1150 50M1250 30 1250 50M1350 30 1350 50M1450 30 1450 50M1550 30 1550 50M1650 30 1650 50M1750 30 1750 50M1850 30 1850 50M1950 30 1950 50M2050 30 2050 50M2150 30 2150 50M2250 30 2250 50M2350 30 2350 50M25 35 25 50M75 35 75 50M125 35 125 50M175 35 175 50M225 35 225 50M275 35 275 50M325 35 325 50M375 35 375 50M425 35 425 50M475 35 475 50M525 35 525 50M575 35 575 50M625 35 625 50M675 35 675 50M725 35 725 50M775 35 775 50M825 35 825 50M875 35 875 50M925 35 925 50M975 35 975 50M1025 35 1025 50M1075 35 1075 50M1125 35 1125 50M1175 35 1175 50M1225 35 1225 50M1275 35 1275 50M1325 35 1325 50M1375 35 1375 50M1425 35 1425 50M1475 35 1475 50M1525 35 1525 50M1575 35 1575 50M1625 35 1625 50M1675 35 1675 50M1725 35 1725 50M1775 35 1775 50M1825 35 1825 50M1875 35 1875 50M1925 35 1925 50M1975 35 1975 50M2025 35 2025 50M2075 35 2075 50M2125 35 2125 50M2175 35 2175 50M2225 35 2225 50M2275 35 2275 50M2325 35 2325 50M2375 35 2375 50' stroke='rgb(48,32,32)' stroke-width='3' />
+<text x='0'            y='15' font-family="Candara" font-size="20px">00:00</text>
+<text x='100'  dx='-5' y='15' font-family="Candara" font-size="20px">01:00</text>
+<text x='200'  dx='-5' y='15' font-family="Candara" font-size="20px">02:00</text>
+<text x='300'  dx='-5' y='15' font-family="Candara" font-size="20px">03:00</text>
+<text x='400'  dx='-5' y='15' font-family="Candara" font-size="20px">04:00</text>
+<text x='500'  dx='-5' y='15' font-family="Candara" font-size="20px">05:00</text>
+<text x='600'  dx='-5' y='15' font-family="Candara" font-size="20px">06:00</text>
+<text x='700'  dx='-5' y='15' font-family="Candara" font-size="20px">07:00</text>
+<text x='800'  dx='-5' y='15' font-family="Candara" font-size="20px">08:00</text>
+<text x='900'  dx='-5' y='15' font-family="Candara" font-size="20px">09:00</text>
+<text x='1000' dx='-5' y='15' font-family="Candara" font-size="20px">10:00</text>
+<text x='1100' dx='-5' y='15' font-family="Candara" font-size="20px">11:00</text>
+<text x='1200' dx='-5' y='15' font-family="Candara" font-size="20px">12:00</text>
+<text x='1300' dx='-5' y='15' font-family="Candara" font-size="20px">13:00</text>
+<text x='1400' dx='-5' y='15' font-family="Candara" font-size="20px">14:00</text>
+<text x='1500' dx='-5' y='15' font-family="Candara" font-size="20px">15:00</text>
+<text x='1600' dx='-5' y='15' font-family="Candara" font-size="20px">16:00</text>
+<text x='1700' dx='-5' y='15' font-family="Candara" font-size="20px">17:00</text>
+<text x='1800' dx='-5' y='15' font-family="Candara" font-size="20px">18:00</text>
+<text x='1900' dx='-5' y='15' font-family="Candara" font-size="20px">19:00</text>
+<text x='2000' dx='-5' y='15' font-family="Candara" font-size="20px">20:00</text>
+<text x='2100' dx='-5' y='15' font-family="Candara" font-size="20px">21:00</text>
+<text x='2200' dx='-5' y='15' font-family="Candara" font-size="20px">22:00</text>
+<text x='2300' dx='-5' y='15' font-family="Candara" font-size="20px">23:00</text>
+</svg>
