@@ -1,6 +1,6 @@
 <!-- ↓↓↓ This is the name of the tab on your browser. Change the text inside <title></title> at will! -->
     <title>Timeline (with a twist?)</title>
-    <link rel='shortcut icon'href="chr/layton.png">
+    <link rel="shortcut icon"href="chr/layton.png">
 <!--
   ↑ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ ↑
     │                 ↑↑↑ This is the little icon that will show up at the left of your tab name. ↑↑↑                 │
@@ -25,7 +25,7 @@
              ██████  ██████  ██████  ██ ██   ████  ██████      ███████    ██     ██████  ██      ██
 
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-    │     This should be the part of the code that you REALLY don’t want to change, and shouldn’t NEED to change.     │
+    │     This is the part of the code that you REALLY don’t want to change, and shouldn’t NEED to change.            │
     │     If you want to alter the CSS, then go change things in the file “chr/css.css” instead.                      │
     │                      ↓↓↓ Don’t touch this part here unless you know what you’re doing! ↓↓↓                      │
   ↓ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ ↓
@@ -43,6 +43,7 @@
     ║                                                                                                                 ║
     ║    If you find that dragging it around is too bothersome, you can also leave it in the middle of                ║
     ║    the screen and instead scroll horizontally in order to align the timeline itself to the guide.               ║
+    ║    If you use your laptop’s touchpad or a touch screen, scrolling horizontally is pretty smooth and precise!    ║
     ║                                                                                                                 ║
     ║    And if this red line annoys you, you can make it disappear by removing the arrow-like symbol below.          ║
     ║    (Just the arrow, not the entire line — who knows whether you might change your mind in the future            ║
@@ -63,20 +64,34 @@
     │  Right below this paragraph is the “body” of the web page, the HTML block which contains all of your work!      │
     │  Write “<body class=horz>” if you want the horizontal mode to be the default when you open or reload the page,  │
     │  and write “<body class=vert>” if you want to set the default mode as the vertical version instead.             │
+    │  Please don’t change the “<div class=cont>” part though, or you will mess things up.                            │
   ↓ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ ↓
 -->
-    <body class=horz>
+    <body class=horz><div class=cont>
 <!--
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-    │                      ↓↓↓ Don’t touch this part here unless you know what you’re doing. ↓↓↓                      │
-    │                      ↓↓↓     It’s just some UI stuff that you’d rather not mess up.    ↓↓↓                      │
+    │ ↓↓↓ This part here contains the main buttons for 1) switching between Horizontal and Vertical modes, or     ↓↓↓ │
+    │ ↓↓↓ 2) Resetting the page. You can change this if you want, e.g. by removing the “Switch Modes” button if   ↓↓↓ │
+    │ ↓↓↓ you know you won’t be using one of the two modes, ever, and want the useless button out of your sight.  ↓↓↓ │
   ↓ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ ↓
 -->
-<div class=cont><button onclick=HorzVert() style=position:fixed;left:20px;top:20px;z-index:100;border-radius:20px>Switch Modes<br>(Vertical/Horizontal)</button><a href=timeline_bonus.html><button style=position:fixed;right:20px;top:20px;z-index:100;border-radius:20px>Reset Page</button></a><button style=position:fixed;left:210px;top:20px;z-index:100;border-radius:20px;background:rgb(var(--plred))><a href=https://drive.google.com/file/d/1g3Fc-jhEHMqajqJQUp5P9zW1_caWs3CS/view>Download your own<br>.zip version here!</a></button>
+<!-- Right below this line is the “Switch between modes” button. -->
+<button onclick=HorzVert() style=position:fixed;left:20px;top:20px;z-index:100;border-radius:20px>Switch Modes<br>(Vertical/Horizontal)</button>
+
+<!-- Right below this line is the “Reset page” button. Notice how it starts with “<a href="timeline_bonus.html">”,
+     where “timeline_bonus.html” is the name of the file. If you rename this HTML file (which you are allowed to do),
+     make sure to replace “timeline_bonus.html” with the name of your new file, all the while keeping the “.html”
+     part at the end. If you don’t change this link, the button will no longer work and instead send you to an error page!
+-->
+<a href="timeline_bonus.html"><button style=position:fixed;right:20px;top:20px;z-index:100;border-radius:20px>Reset Page</button></a>
+
+<!-- Feel free to remove this button right below, it’s just the big red “Download my zip file!!!!!1!” advertisement
+     and you probably don’t want it on your own personal timeline page lol. Unless you want to keep the link around
+     just in case you need to download the template again for a different timeline project? It’s up to you!
+-->
+<button style=position:fixed;left:210px;top:20px;z-index:100;border-radius:20px;background:rgb(var(--plred))><a href=https://drive.google.com/file/d/1g3Fc-jhEHMqajqJQUp5P9zW1_caWs3CS/view>Download your own<br>.zip version here!</a></button>
+
 <!--
-  ↑ ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐ ↑
-    │                               ↑↑↑ The mini-danger zone ends here, no worries. ↑↑↑                               │
-    └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
          ██████ ██   ██  █████  ██████   █████   ██████ ████████ ███████ ██████      ██      ██ ███████ ████████
         ██      ██   ██ ██   ██ ██   ██ ██   ██ ██         ██    ██      ██   ██     ██      ██ ██         ██
@@ -125,7 +140,7 @@
     ║      1)  Copy/paste one of the pre-existing lines inside the “<style></style>” block (or this example here):    ║
     ║                                                                                                                 ║
     ║      .@@@@@ div{background:rgb(RRR,GGG,BBB);border-color:rgb(RRR,GGG,BBB)}                                      ║
-    ║      .@@@@@:before{position:absolute;bottom:0;left:-25px;content:url('chr/@@@@@.png')}                          ║
+    ║      .@@@@@:before{position:absolute;bottom:0;left:-25px;content:url("chr/@@@@@.png")}                          ║
     ║                                                     ↑↑                                                          ║
     ║                                               This is the “left:-25px” you must change if needed.               ║
     ║                                                                                                                 ║
@@ -142,9 +157,9 @@
 -->
 <style>
 
-    .layton div{background:rgb(198,115, 41);border-color:rgb(148, 82, 24)}.layton:before{position:absolute;bottom:0;left:-25px;content:url('chr/layton.png')}
-    .luke10 div{background:rgb( 90,132,140);border-color:rgb( 66, 90,107)}.luke10:before{position:absolute;bottom:0;left:-25px;content:url('chr/luke10.png')}
-    .emmy   div{background:rgb(206,189, 57);border-color:rgb(132,107, 57)}.emmy:before  {position:absolute;bottom:0;left:-25px;content:url('chr/emmy.png')  }
+    .layton div{background:rgb(198,115, 41);border-color:rgb(148, 82, 24)}.layton:before{position:absolute;bottom:0;left:-25px;content:url("chr/layton.png")}
+    .luke10 div{background:rgb( 90,132,140);border-color:rgb( 66, 90,107)}.luke10:before{position:absolute;bottom:0;left:-25px;content:url("chr/luke10.png")}
+    .emmy   div{background:rgb(206,189, 57);border-color:rgb(132,107, 57)}.emmy:before  {position:absolute;bottom:0;left:-25px;content:url("chr/emmy.png")  }
 
 </style><div id=fixheader><input id=collapsible class=toggle type=checkbox><label for=collapsible class=lbl-toggle>Toggle Characters</label><div class=collapsible-content><div class=content-inner>
 <!--
@@ -181,18 +196,28 @@
     │                          ↓↓↓ Add your own character or group on/off switches here! ↓↓↓                          │
   ↓ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ ↓
 -->
-    <a id=GROUP1 href="javascript:Toggle('GROUP1')"style=opacity:1 class="btn">    <b>Characters of Group 1</b>   </a>
-    <a id=GROUP2 href="javascript:Toggle('GROUP2')"style=opacity:1 class="btn">    <b>Characters of Group 2</b>   </a>
+    <a id=TL_1   href="javascript:Toggle('TL_1')"   style=opacity:1 class="btn">       Toggle Timeline 1           </a>
+    <a id=TL_2   href="javascript:Toggle('TL_2')"   style=opacity:1 class="btn">       Toggle Timeline 2           </a>
+    <a id=TL_3   href="javascript:Toggle('TL_3')"   style=opacity:1 class="btn">       Toggle Timeline 3           </a>
 
 <br><!-- “<br>” means “jump to a new line.” -->
 
-    <a id=layton href="javascript:Toggle('layton')"style=opacity:1 class="GROUP1">    <img src=chr/layton.png>    </a>
-    <a id=luke10 href="javascript:Toggle('luke10')"style=opacity:1 class="GROUP1">    <img src=chr/luke10.png>    </a>
-    <a id=emmy   href="javascript:Toggle('emmy')"  style=opacity:1 class="GROUP2">    <img src=chr/emmy.png  >    </a>
+    <a id=GROUP1 href="javascript:Toggle('GROUP1')" style=opacity:1 class="btn">       Characters of Group 1       </a>
+    <a id=GROUP2 href="javascript:Toggle('GROUP2')" style=opacity:1 class="btn">       Characters of Group 2       </a>
+
+<br>
+
+    <a id=layton href="javascript:Toggle('layton')" style=opacity:1 class="GROUP1">    <img src="chr/layton.png">  </a>
+    <a id=luke10 href="javascript:Toggle('luke10')" style=opacity:1 class="GROUP1">    <img src="chr/luke10.png">  </a>
+    <a id=emmy   href="javascript:Toggle('emmy')"   style=opacity:1 class="GROUP2">    <img src="chr/emmy.png"  >  </a>
 <!--
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-    │            ↓↓↓ You can set up shortcuts that will let you jump to specific parts of your timeline ↓↓↓           │
-    │            ↓↓↓        if there are some specific days you want to be able to access easily.       ↓↓↓           │
+    │       ↓↓↓     You can set up shortcuts that will let you jump to specific parts of your timeline      ↓↓↓       │
+    │       ↓↓↓     if there are some specific days you want to be able to access easily.                   ↓↓↓       │
+    │       ↓↓↓     To make such a link, copy/paste this:                                                   ↓↓↓       │
+    │       ↓↓↓                    <a href=#@@@@@@ class=btn>  NAME_OF_THE_BUTTON  </a>                     ↓↓↓       │
+    │       ↓↓↓     And then replace “@@@@@@” with the ID of the part you want to jump to.                  ↓↓↓       │
+    │       ↓↓↓     The ID is something you will define when you create the part you want to jump to.       ↓↓↓       │
   ↓ └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘ ↓
 -->
 <hr></div></div><b>Jump to Date:</b>
@@ -221,8 +246,8 @@
                 ███████    ██    ██   ██ ██   ██    ██    ███████     ██   ██ ███████ ██   ██ ███████
 
     ╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
-    ║   This timeline (or these timelines if you want to use more than just one) rely on a system of nested blocks.   ║
-    ║   To be honest, this is pretty much how HTML in general works! In our case, the blocks work like this:          ║
+    ║   This timeline (or THESE timelineS if you want to use more than just one) rely on a system of nested blocks.   ║
+    ║   In fact, this is pretty much how HTML in general works! In our case, the blocks work like this:               ║
     ╟─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢
     ║                                                                                                                 ║
     ║   < This is a timeline. >                                                                                       ║
@@ -252,16 +277,17 @@
     ║   Timeline, then day (=24h), then character, then this character’s actions.                                     ║
     ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │ Adding a TIMELINE:                                                                                              │
+    ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╡
     │ This is how you define a timeline block:                                                                        │
     │                                                                                                                 │
-    │                                     <div id=TL_@@@ class=tl>         </div>                                     │
+    │                                     <div class="tl TL_@@@">         </div>                                      │
     │                                                                                                                 │
-    │ Not much to say, to be honest. It’s very basic compared to the others.                                          │
-    │ If you need a reminder, “id=X” is a way to give a UNIQUE name to the block the id is given to.                  │
-    │ This is optional, but quite useful to keep around if you ever want to access it quickly — this is a name that   │
-    │ you will create a link to in the shortcut section right above.                                                  │
+    │ There is not much to say, to be honest. It’s very basic compared to the others. The “TL_@@@” part is optional.  │
     └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │ Adding a DAY (aka a new 24h scale):                                                                             │
+    ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╡
     │ This is how you define a day (24h) block:                                                                       │
     │                                                                                                                 │
     │           <div class=day>                                                                                       │
@@ -271,18 +297,25 @@
     │ The <h1></h1> block’s id is optional, but useful if you want to jump to this specific day easily.               │
     │ An example of what this tag could be like is either “day1,” “day2” etc, or a code name that is either           │
     │ more specific (“this_big_thing_happens_today”) or more… absolute? Like its full date.                           │
+    │ If your date is April 12, 2023 for example, then you can give that day the id “2023-04-12”!                     │
+    │                                                                                                                 │
+    │ If you need a reminder, “id=X” is a way to give a UNIQUE name to the block the id is given to.                  │
+    │ It’s completely optional, but quite useful to keep around if you ever want to access it quickly                 │
+    │ — it’s the name that you will create a link to in the shortcut section right above.                             │
     │                                                                                                                 │
     │ If you define a day with the tag “id=day1” and want to be able to jump to this part of the page easily,         │
-    │ then you should go back up (right above “YOUR TIMELINE STARTS HERE”) and add below the “<b>Jump to Date:</b>”   │
-    │ line a block starting with “<a href=#day1” — Once this button is added to the list and you reload the page,     │
+    │ then you should go back up (right above “YOUR TIMELINE STARTS HERE”) and add below the “Jump to Date:” line     │
+    │ a block starting with “<a href=#day1” — Once this button is added to the list and you reload the page,          │
     │ clicking on it will redirect you to that day’s location on the web page.                                        │
     └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │ Adding a CHARACTER:                                                                                             │
+    ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╡
     │ This is how you define a character block:                                                                       │
     │                                                                                                                 │
     │                 <div class="c tag_name_of_your_character GROUP1 GROUP2 GROUP3">          </div>                 │
     │                                                                                                                 │
-    │ “tag_name_of_your_character” should be identical to the one you defined in the section above.                   │
+    │ “tag_name_of_your_character” must be identical to the character’s name as you defined it in the section above.  │
     │ “GROUP1,” “GROUP2” etc are optional, and there can be as many of them as you want.                              │
     │ The important thing to note is that, for one character, ALL of their character tags must have the same tags.    │
     │ You don’t want to have issues where you’re trying to toggle characters belonging to a certain group, but some   │
@@ -292,28 +325,31 @@
     │ Use Find & Replace! It’s “Ctrl+H” on Window’s most basic Notepad and will work perfectly.                       │
     │                                                                                                                 │
     │ For example, let’s say that Luke belongs to the group named “GROUP1.”                                           │
-    │ His character block must therefore look like this:                         <div class='c GROUP1 luke10'>        │
+    │ His character block must therefore look like this:                    <div class="c luke10 GROUP1"> </div>      │
     │                                                                                                                 │
     │ If you want to remove him from the group “GROUP1” and put him in the group “GROUP2” instead, then open the      │
-    │ Find & Replace window, search for “<div class='c GROUP1 luke10'>” and replace all instances of it with          │
-    │ “<div class='c GROUP2 luke10'>” — and that’s it!                                                                │
+    │ Find & Replace window, search for “<div class="c luke10 GROUP1">” and replace all instances of it with          │
+    │ “<div class="c GROUP2 luke10">” for example. And that’s it!                                                     │
     │                                                                                                                 │
     │ Similarly, if you want him to belong to both “GROUP1” and “GROUP2” at the same time,                            │
-    │ then replace with “<div class='c GROUP1 GROUP2 luke10'>” instead.                                               │
+    │ then replace with “<div class="c GROUP1 GROUP2 luke10">” instead.                                               │
     │                                                                                                                 │
     │ Hmm? I put the group tags before the character’s tag?                                                           │
     │ Oh, right, I almost forgot to tell you: the order of the tags doesn’t matter.                                   │
-    │ You can put “GROUP2” before “GROUP1” and it will work just the same.                                            │
+    │ You can put “GROUP2” before “GROUP1” and it will work just the same! So don’t worry about messing up here.      │
     └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │ Adding an EVENT:                                                                                                │
+    ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╡
     │ Now, for the big part! An event is here to tell what this character is doing during the day.                    │
-    │ You need to know for how long this event lasts in order to add it in.                                           │
-    │ This is how you define an event block:                                                                          │
+    │ For a REGULAR event, you need to know for how long this event lasts in order to add it in.                      │
+    │ (see a little below for how you can make short events, or “non-events” — holes in your character’s timeline.)   │
+    │ This is how you define a basic event block:                                                                     │
     │                                                                                                                 │
     │        <div style="width:calc(HH*60px + MMpx)">                                                                 │
-    │                  Quick description here…                                                                        │
+    │                  Quick description/title here. You’d rather keep it short for better readability.               │
     │                  <more>                                                                                         │
-    │                            Add more information here.                                                           │
+    │                            Add more information here. There is no limit to how long this part can get.          │
     │                  </more>                                                                                        │
     │        </div>                                                                                                   │
     │                                                                                                                 │
@@ -321,10 +357,13 @@
     │ and minutes that the event takes. It isn’t the time at which the event starts, but rather for long it lasts.    │
     │ So, for an event lasting four hours and twenty minutes, write “4*60px + 20px.”                                  │
     │                                                                                                                 │
-    │ The “Quick description” must be short and telling — at least, for better readability.                           │
-    │ Consider it as a quick memo or title, but it does not contain all the details of what this event entails.       │
-    │                                                                                                                 │
-    │ Lastly, a neat trick: Does it happen that your character is, I don’t know… sleeping? Therefore, doing nothing?  │
+    │ The “Quick description” is optional, but it must be short and telling, as you don’t have a lot of space.        │
+    │ Consider it as a quick memo or title, but it can’t contain a full description of what this event entails.       │
+    │ The shorter the duration of your event, the less space you have for its title!                                  │
+    ├─┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+    │ │   Non-events:                                                                                                 │
+    │ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+    │ Does it happen that your character is, I don’t know… sleeping? Therefore, doing nothing?                        │
     │ Well, in this case, all you have to do is create an event exactly like above, which says for how long they’re   │
     │ “doing nothing.” There is only one difference: add “class=void” either before or after the “style” part, and    │
     │ you will see that this non-event is now colorless. Not invisible — you can still add some text inside it if     │
@@ -333,12 +372,30 @@
     │ You can use these blocks in order to adjust the time at which an event you’re really interested in starts.      │
     │ Such a “non-event” will thus look like this:                                                                    │
     │                                                                                                                 │
-    │                            <div class=void style='width:calc(HH*60px + MMpx)'></div>                            │
+    │                            <div style="width:calc(HH*60px + MMpx)" class=void></div>                            │
+    │                                                                                                                 │
+    │ All in all, you can play with events and “non-events” at will — just make sure that the total length will       │
+    │ not exceed 1440px in total. After all, there are only twenty-four hours in a day — aka, 1440 minutes!           │
+    ├─┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+    │ │   Short events:                                                                                               │
+    │ └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+    │ Now, short events — events that are not meant to have a duration, as they happen at a very specific time.       │
+    │ These events work just a bit differently than the others. Instead of defining how long your event takes,        │
+    │ you now get to actually say at which time exactly it takes place! Phew, no math needed.                         │
+    │ You define a short event like this:                                                                             │
+    │                                                                                                                 │
+    │                         <div style="left: calc( 4*60px + 30px - 5px)" class=evt></div>                          │
+    │                                                                                                                 │
+    │ The calc() part works exactly the same way as above. If your short event takes place at 4:13pm exactly,         │
+    │ then just write “16*60px + 13px” — the only issue here is if you’re not a big fan of the 24h format.            │
+    │ WARNING: The “ - 5px” at the end is required. If you don’t put it, your event will appear to be 5min late!      │
     └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
     ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+    │ Adding your NOTES:                                                                                              │
+    ╞═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╡
     │ And… You may be able to define something else after that! Yes, I’m talking about the <more></more> block.       │
-    │ This is what the <more></more> block will contain, and this one is pretty much “put whatever you want in it.”   │
-    │ Look at this Lorem Ipsum example for details — you can fit an entire novel inside if you want!                  │
+    │ The neat thing with the <more></more> block is that this one… is pretty much “put whatever you want in it.”     │
+    │ Look at the Lorem Ipsum example for details — you can fit an entire novel inside of these blocks if you want!   │
     │                                                                                                                 │
     │ The “<more></more>” block’s contents will not be visible when you load the page, but if you hover over the event│
     │ which you added some <more></more> text to, then a block will magically appear and show the text it contains!   │
@@ -350,14 +407,14 @@
     ╔═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
     ║   Once you are done and confident, you can rearrange your blocks in order to have it all on a single line,      ║
     ║   so that you can have less scrolling to do. It’s up to your preference!                                        ║
-    ║   Indentation (when you jump to a new line and add a certain number of whitespace charactersbefore a line) is   ║
-    ║   completely optional in HTML coding, and its only purpose is to make your code easier to read.                 ║
+    ║   Indentation (when you jump to a new line and add a certain number of whitespace characters before a line)     ║
+    ║   is completely optional in HTML coding, and its only purpose is to make your code easier to read.              ║
     ║                                                                                                                 ║
     ║   So if you know that you will not be changing a certain part of the code ever again, then removing the         ║
     ║   indentation is one way to free up some space and clarify which parts of your document are done and over with, ║
     ║   and which ones are those you are still working on.                                                            ║
     ╟─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢
-    ║   Oh, and one last thing: whenever you make a change in any file, well…                                         ║
+    ║   Oh, and one last thing: whenever you make a change in any file, don’t forget to save and reload!              ║
     ║   The changes won’t apply until you save your file here, and reload the page on your browser (usually Ctrl+R).  ║
     ╟─────────────────────────────────────────────────────────────────────────────────────────────────────────────────╢
     ║                                  All this being said, the tutorial is now done!                                 ║
@@ -365,57 +422,89 @@
     ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 -->
 
-<div id=TL_1 class=tl><!-- This is the beginning of your first timeline! -->
+<div class="tl TL_1"><!-- This is the beginning of your first timeline! -->
 
 <div class=day><h1 id=tl1_day1>Timeline 1: Day 1</h1>
-    <div class='c GROUP1 luke10'>
-        <div class=void style='width:calc(7*60px + 30px)'>Luke sleeps at night. As you should.</div>
-        <div style='width:calc(4*60px + 20px)'>For this time, Luke is… (hover me!)<more>…doing something it seems.</more></div>
-        <div style='width:calc(10*60px + 40px)'>You can control the width (aka duration) of these blocks through a neat trick!<more>
-            <h2>Also, this is a title.</h2><p>You can add as many details as you would like here. Just watch how chatty <i>Lorem Ipsum</i> can get!</p><hr><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Gravida dictum fusce ut placerat orci nulla pellentesque. Velit dignissim sodales ut eu. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Commodo nulla facilisi nullam vehicula ipsum. Nisl vel pretium lectus quam id leo in vitae. Nec dui nunc mattis enim. Sodales ut eu sem integer vitae justo eget. Donec ultrices tincidunt arcu non sodales neque. Nisi porta lorem mollis aliquam ut porttitor. Urna nunc id cursus metus aliquam eleifend. Nullam vehicula ipsum a arcu cursus vitae. Sem viverra aliquet eget sit.</p><p>Varius vel pharetra vel turpis nunc eget lorem. Dapibus ultrices in iaculis nunc sed augue. Egestas fringilla phasellus faucibus scelerisque eleifend. Aliquam id diam maecenas ultricies mi eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Arcu ac tortor dignissim convallis. Dignissim convallis aenean et tortor at risus viverra. Tristique sollicitudin nibh sit amet commodo. Congue eu consequat ac felis donec. Massa placerat duis ultricies lacus sed turpis tincidunt. Platea dictumst vestibulum rhoncus est pellentesque. Erat velit scelerisque in dictum non. Adipiscing commodo elit at imperdiet dui. Ipsum faucibus vitae aliquet nec ullamcorper sit. Nisl tincidunt eget nullam non nisi est sit.</p></blockquote><p>Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Ullamcorper sit amet risus nullam. Nulla at volutpat diam ut venenatis tellus in. Nisl purus in mollis nunc sed id semper risus in. Suscipit adipiscing bibendum est ultricies integer quis. Suspendisse ultrices gravida dictum fusce. Sit amet massa vitae tortor condimentum lacinia quis vel. Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nascetur ridiculus mus mauris vitae ultricies. Tellus id interdum velit laoreet id donec. Duis tristique sollicitudin nibh sit amet commodo. Pulvinar pellentesque habitant morbi tristique. Diam maecenas sed enim ut sem viverra. Auctor elit sed vulputate mi sit amet mauris commodo.</p><p>Purus gravida quis blandit turpis cursus in. Facilisis volutpat est velit egestas dui. Nullam eget felis eget nunc lobortis. Nisl vel pretium lectus quam id leo in vitae. Sed risus ultricies tristique nulla aliquet. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Mauris in aliquam sem fringilla ut. Tempor id eu nisl nunc. Placerat duis ultricies lacus sed. Viverra accumsan in nisl nisi scelerisque eu ultrices. Lectus urna duis convallis convallis tellus id interdum. Tempor orci eu lobortis elementum nibh tellus molestie. Viverra mauris in aliquam sem. Erat velit scelerisque in dictum non. Ipsum dolor sit amet consectetur.</p>
-        </more></div>
+    <div class="c GROUP1 luke10">
+        <div style="width:calc( 7*60px + 30px)" class=void>
+            <p>Luke sleeps at night. As you should.</p>
+        </div>
+        <div style="width:calc( 4*60px + 20px)">
+            <p>For 4h and 20min, Luke is… (hover me!)</p>
+            <more><p>…doing something it seems.</p></more>
+        </div>
+        <div style="width:calc(10*60px + 40px)">
+            <p>You can control the width (aka duration) of these blocks through a neat trick!</p>
+            <more>
+                <h2>Also, this is a title.</h2>
+                <p>You can add as many details as you would like here. Just watch how chatty <i>Lorem Ipsum</i> can get!</p>
+                <hr><!-- This will draw a horizontal line between multiple paragraphs. -->
+                <blockquote><!-- All paragraphs inside this block will have an indentation and a light green border to the left. -->
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Gravida dictum fusce ut placerat orci nulla pellentesque. Velit dignissim sodales ut eu. Parturient montes nascetur ridiculus mus mauris vitae ultricies leo integer. Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Commodo nulla facilisi nullam vehicula ipsum. Nisl vel pretium lectus quam id leo in vitae. Nec dui nunc mattis enim. Sodales ut eu sem integer vitae justo eget. Donec ultrices tincidunt arcu non sodales neque. Nisi porta lorem mollis aliquam ut porttitor. Urna nunc id cursus metus aliquam eleifend. Nullam vehicula ipsum a arcu cursus vitae. Sem viverra aliquet eget sit.</p>
+                    <p>Varius vel pharetra vel turpis nunc eget lorem. Dapibus ultrices in iaculis nunc sed augue. Egestas fringilla phasellus faucibus scelerisque eleifend. Aliquam id diam maecenas ultricies mi eget. Dui faucibus in ornare quam viverra orci sagittis eu volutpat. Arcu ac tortor dignissim convallis. Dignissim convallis aenean et tortor at risus viverra. Tristique sollicitudin nibh sit amet commodo. Congue eu consequat ac felis donec. Massa placerat duis ultricies lacus sed turpis tincidunt. Platea dictumst vestibulum rhoncus est pellentesque. Erat velit scelerisque in dictum non. Adipiscing commodo elit at imperdiet dui. Ipsum faucibus vitae aliquet nec ullamcorper sit. Nisl tincidunt eget nullam non nisi est sit.</p>
+                </blockquote>
+                <p>Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Ullamcorper sit amet risus nullam. Nulla at volutpat diam ut venenatis tellus in. Nisl purus in mollis nunc sed id semper risus in. Suscipit adipiscing bibendum est ultricies integer quis. Suspendisse ultrices gravida dictum fusce. Sit amet massa vitae tortor condimentum lacinia quis vel. Nulla aliquet porttitor lacus luctus accumsan tortor posuere. Nascetur ridiculus mus mauris vitae ultricies. Tellus id interdum velit laoreet id donec. Duis tristique sollicitudin nibh sit amet commodo. Pulvinar pellentesque habitant morbi tristique. Diam maecenas sed enim ut sem viverra. Auctor elit sed vulputate mi sit amet mauris commodo.</p>
+                <p>Purus gravida quis blandit turpis cursus in. Facilisis volutpat est velit egestas dui. Nullam eget felis eget nunc lobortis. Nisl vel pretium lectus quam id leo in vitae. Sed risus ultricies tristique nulla aliquet. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Mauris in aliquam sem fringilla ut. Tempor id eu nisl nunc. Placerat duis ultricies lacus sed. Viverra accumsan in nisl nisi scelerisque eu ultrices. Lectus urna duis convallis convallis tellus id interdum. Tempor orci eu lobortis elementum nibh tellus molestie. Viverra mauris in aliquam sem. Erat velit scelerisque in dictum non. Ipsum dolor sit amet consectetur.</p>
+            </more>
+        </div>
     </div>
-    <div class='c GROUP1 layton'>
-        <div class=void style='width:calc(6*60px + 45px)'>Layton also sleeps. He needs it.</div>
-        <div style='width:calc(14*60px + 45px)'>All you need to do is set <code>“width:calc(HH*60px + MMpx)”</code> where HH is the number of hours and MM the number of minutes that the activity takes.</div>
+    <div class="c GROUP1 layton">
+        <div style="width:calc( 7*60px + 10px)" class=void>
+            <p>Layton also sleeps. He needs it.</p>
+        </div>
+        <div style="width:calc(14*60px + 45px)">
+            <p>All you need to do is set <code>“width:calc(HH*60px + MMpx)”</code> where HH is the number of hours and MM the number of minutes that the activity takes.</p>
+        </div>
     </div>
-    <div class='c GROUP2 emmy'>
-        <div class=void style='width:calc(2*60px + 30px)'>Emmy’s a madlad.<more>SLEEP IS FOR THE WEAK</more></div>
-        <div style='width:calc(1*60px + 0px)'></div>
-        <div class=void style='width:calc(1*60px + 30px)'></div>
-        <div style='width:calc(10*60px + 15px)'>With this scale, one minute has the length of exactly one pixel (in HTML coding, not always on your screen).</div>
+    <div class="c GROUP2 emmy">
+        <div style="width:calc( 2*60px + 30px)" class=void>
+            <p>Emmy’s a madlad.</p>
+            <more>
+                <p><b>SLEEP IS FOR THE WEAK</b></p>
+            </more>
+        </div>
+        <div style="width:calc( 3*60px +  0px)">
+            <p>Activity 1</p>
+        </div>
+        <div style="width:calc( 2*60px + 10px)">
+            <p>Activity 2</p>
+        </div>
+        <div style="width:calc(10*60px + 15px)">
+            <p>With this scale, one minute has the length of exactly one pixel (in HTML coding, not always on your screen).</p>
+        </div>
     </div>
 </div>
 <div class=day><h1 id=tl1_day2>Timeline 1: Day 2</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl1_day3>Timeline 1: Day 3</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl1_day4>Timeline 1: Day 4</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl1_day5>Timeline 1: Day 5</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 
@@ -430,74 +519,113 @@
     ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
  -->
 
-<div id=TL2 class=tl style="left:calc(1*1440px + 15*60px + 0px)"><!-- This timeline will start 1 day, 15h and 0min after the first one. -->
+<div class="tl TL_2" style="left:calc(0*1440px +  2*60px +  0px)"><!-- This timeline will start 0 days, 2h and 0min after the first one. -->
 
 <div class=day><h1 id=tl2_day1>Timeline 2: Day 1</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
+        <div style="width:calc( 3*60px + 30px)" class=void></div>
+        <div style="width:calc( 1*60px + 15px)"></div>
+        <div style="width:calc( 0*60px + 50px)" class=void></div>
+        <div style="width:calc(10*60px + 15px)"></div>
+        <div style="width:calc( 1*60px + 30px)" class=void></div>
+        <div style="width:calc( 2*60px + 15px)"></div>
+        <div style="left: calc( 4*60px + 30px - 5px)" class=evt>
+            <more>
+                <p>Something very special happens exactly now!</p>
+            </more>
+        </div>
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
+        <div style="width:calc( 2*60px + 30px)" class=void></div>
+        <div style="width:calc( 1*60px +  0px)"></div>
+        <div style="width:calc( 1*60px + 30px)" class=void></div>
+        <div style="width:calc(10*60px + 15px)"></div>
+        <div style="width:calc( 1*60px + 30px)" class=void></div>
+        <div style="width:calc( 2*60px + 15px)"></div>
+        <div style="left: calc(18*60px + 30px - 5px)" class=evt>
+            <more>
+                <h2>Short events:</h2>
+                <p>Hey! I’m a very short, very specific event taking place at <b><i>exactly 6:30pm</i></b>. You can check with the ruler, the center of this circle and the left border of this dialogue box both align with 6:30pm exactly!</p><p>And you want to know the best part? You can superimpose a short event <i>and</i> a long event at the same location without messing up anything!</p><p>Just make sure to define short events <i>after</i> you defined longer events. Otherwise, the longer events will show up on top of your short events and hide them from view!</p>
+            </more>
+        </div>
     </div>
 </div>
 <div class=day><h1 id=tl2_day2>Timeline 2: Day 2</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl2_day3>Timeline 2: Day 3</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
+    </div>
+</div>
+<div class=day><h1 id=tl2_day4>Timeline 2: Day 4</h1>
+    <div class="c GROUP1 luke10">
+    </div>
+    <div class="c GROUP1 layton">
+    </div>
+    <div class="c GROUP2 emmy">
+    </div>
+</div>
+<div class=day><h1 id=tl2_day5>Timeline 2: Day 5</h1>
+    <div class="c GROUP1 luke10">
+    </div>
+    <div class="c GROUP1 layton">
+    </div>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 </div><!-- This is the end of the second timeline. -->
 
-<div id=TL3 class=tl style='left:calc(0*1440px + 7*60px + 17px)'><!-- This timeline will start 0 days, 7h and 17min after the first one. -->
+<div class="tl TL_3" style="left:calc(1*1440px +  2*60px + 17px)"><!-- This timeline will start 1 day, 2h and 17min after the first one. -->
 
 <div class=day><h1 id=tl3_day1>Timeline 3: Day 1</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl3_day2>Timeline 3: Day 2</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl3_day3>Timeline 3: Day 3</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl3_day4>Timeline 3: Day 4</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 <div class=day><h1 id=tl3_day5>Timeline 3: Day 5</h1>
-    <div class='c GROUP1 luke10'>
+    <div class="c GROUP1 luke10">
     </div>
-    <div class='c GROUP1 layton'>
+    <div class="c GROUP1 layton">
     </div>
-    <div class='c GROUP2 emmy'>
+    <div class="c GROUP2 emmy">
     </div>
 </div>
 </div>

@@ -7,14 +7,14 @@
                                      Always leave the second value at 0 or the scale for time will be messed up. */
     width: 1440px;                /* Please don’t change this. If you do, the scale for time will be messed up. */
 }
-.c div {                          /* This defines what each event block will look like. */
+.c > div {                        /* This defines what each event block will look like. */
     font-size: 12px;              /* Size of the text inside each event. */
     font-weight: 800;             /* Boldness of the text. Accepted values are any number between 100 and 800, among others. */
     color: rgb(var(--plwhite));   /* Color of the text. */
     text-shadow: var(--txtshw), var(--txtshw), var(--txtshw); /* Shadow effect behind the text. */
     /* -------------------------------------------------------------------------------------------------------- */
     height: 20px;                 /* If you are using bigger icons, I suggest changing the value to that of your icons’ height. */
-    padding: 1px 5px;             /* Position of the text inside the event block. “1px 5px” is calibrated for a block height of 20px & font size of 12px. */
+    padding: 1px 0px;             /* Position of the text inside the event block. “1px 5px” is calibrated for a block height of 20px & font size of 12px. */
     white-space: nowrap;          /* If your blocks have a bigger height than just 20px, you may consider changing “nowrap” to “normal.” */
     border-radius: 30px;          /* Roundness of the corners. */
     border: 2px solid red;        /* “red” is given by default but will always be overridden, so it’s useless to change it. */
@@ -22,6 +22,17 @@
     float: left;
     clear: none;
     margin: 0;
+}
+.c .evt{                          /* This is for the short events that show up as small red circles instead of bars. */
+    background:rgb(var(--plred));
+    border:2px solid rgb(var(--plwhite));
+    box-shadow: 0 0 2px rgb(var(--plblack)),0 0 2px rgb(var(--plblack)),0 0 2px rgb(var(--plblack)),0 0 2px rgb(var(--plblack)),0 0 2px rgb(var(--plblack));
+    width:10px;
+    height:10px;
+    top:5px;
+    display:block;
+    border-radius:50%;
+    position:absolute;
 }
 * { /* This is where variables are defined. The first ones are meant to define colors. */
     --plblack: 48, 32, 32;
@@ -160,6 +171,7 @@ more {
     z-index: 99;
     background: rgba(var(--back), 0.95);
     border: 2px solid rgb(var(--midd));
+    border-top:12px solid rgb(var(--midd));
     padding: 7px;
     text-align: left;
     font-size: 17px;
@@ -168,14 +180,27 @@ more {
     overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
-    top: 2.3rem;
-    left: -1rem;
     text-shadow:none;
     font-weight: normal;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 10px;
     white-space: normal;
     max-height: 250px;
     max-width: 350px;
+    left: 6px;
+    top: 18px;
+}
+div.evt more{
+    left:2px!important;
+    top:2px!important;
+}
+more p {
+    margin:7px 0;
+}
+more p:first-child {
+    margin-top:0;
+}
+more p:last-child {
+    margin-bottom:0;
 }
 more h2 {
     padding: 0 0 3px 0;
@@ -226,6 +251,7 @@ a.btn {
     display: inline-block;
     margin: 5px;
     color: rgb(var(--plwhite));
+    font-weight:800;
 }
 blockquote {
     border-left: 2px solid rgb(var(--midd));
@@ -341,4 +367,7 @@ h2 .hr {
     width: 2px;
     display: block;
     height: 100%;
+}
+.c > div > p {
+    margin: 0 0 0 5px;
 }
