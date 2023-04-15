@@ -21,7 +21,7 @@ article{padding:42px;text-align:justify}
 
 .vb{margin:0 0 2em 0}.vs{margin:0 0 0.5em 0}.chap .vb,.vs{text-indent:2.5em}
 
-.infoa:hover .infob,.infob:hover{visibility:visible}.infoa{cursor:help}
+.infoa:hover .infob,.infob:hover{visibility:visible}.infoa{cursor:help;position:relative}
 .infob{visibility:hidden;z-index:99;background:rgba(var(--back),0.95);border:2px solid rgb(var(--midd));padding:7px;text-align:left;font-size:17px;color:rgb(var(--plblack));min-width:256px;overflow-y:auto;overflow-x:hidden;max-height:500px;position:absolute;top:2.3rem;left:-1rem}
 .infob h2{padding:0 0 3px 0;margin:0 0 17px 0;line-height:120%;text-align:left;font-size:20px;border-bottom:2px solid rgb(var(--midd))}
 .infob h2:not(h2:first-child){margin-top:17px}
