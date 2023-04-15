@@ -17,7 +17,6 @@ td{min-height:128px;position:relative}
 .hint .row div{padding:0 70px;border-right:2px solid rgb(var(--fore));width:512px}.hint > div:nth-child(n+2){display:none}.hint h2{margin:0 auto}.hint h2 span{font-size:42px}
 .translaytion .fancydlg{display:flex;align-items:center;justify-content:center;width:420px;text-align:center;font-size:1.2rem;background:rgb(var(--back));border-radius:42px;transform:scale(95%);padding:17px}
 .puzzle p.🇯🇵,.puzzle p.🗺️{padding:70px 0;border-bottom:2px solid rgb(var(--fore))}
-.puzzle p{margin:0}
 
 .canonicity{font-size:1.2rem;font-weight:800;border-radius:17px;background:rgb(var(--bgd));padding:7px 7px 7px 17px;margin:0 0 17px 0}
 s{aspect-ratio:1/1;display:inline-block;height:0.8rem}
