@@ -1,7 +1,7 @@
 body{color:rgb(var(--plblack))}p{text-indent:0!important}
 .🇯🇵{font-size:1rem}.🗺️{font-style:italic}
 .px{image-rendering:pixelated}
-.bg img{border:2px solid rgb(var(--plblack))}.bg{width:320px}
+.bg img{border:2px solid rgb(var(--plblack))}.bg{width:320px;position:relative}
 .memo{width:628px;height:512px;font-size:1.2rem;margin-right:5px;display:table}
 .memo p{padding:0 150px;text-align:left}
 .memo p:nth-child(1){padding:0 100px;text-align:center}
@@ -9,7 +9,7 @@ body{color:rgb(var(--plblack))}p{text-indent:0!important}
 .memo hr{width:42%;margin:7px auto;background:rgb(var(--plblack))}.memo div{display:table-cell;vertical-align:middle}.memo.🇯🇵{font-size:1.1rem}
 .i{width:80px;text-align:center;image-rendering:pixelated;height:128px}
 .dlg{padding:12px 34px 12px 34px;width:256px;height:128px;margin-right:5px;text-align:left}
-td{min-height:128px}
+td{min-height:128px;position:relative}
 .container>div{overflow-x:auto}
 .translaytion{table-layout:fixed;border-spacing:10px 0;font-size:1rem;margin-bottom:80px}
 .row{display:flex;flex-direction:row;width:100000px}
