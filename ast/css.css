@@ -53,7 +53,7 @@ h2 .hr{top:-3em}
 .bar span{background:rgb(var(--back));padding:17px;font-weight:800;font-size:27px;color:rgb(var(--midd))}
 .bar:before,.bar:after{content:'➽';font-size:2em;color:rgb(var(--midd));position:absolute}
 .bar:before{transform:rotate(180deg);left:-10px}.bar:after{right:-10px}
-.bar,.hr{margin:4em auto}
+.bar,.hr{margin:4em auto}.bar:last-child,.hr:last-child{margin-bottom:17px}
 .bar,.hr,.hourglass{text-align:center!important;text-indent:0!important;position:relative}
 .hr,.hourglass{color:transparent}
 .hourglass{height:0}.hourglass::before{content:'⊰ ⧗ ⊱';position:absolute;top:-2.125em;left:0;width:100%;text-align:center;color:rgb(var(--midd));font-size:2.8em}
