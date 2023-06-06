@@ -27,7 +27,7 @@ article{padding:42px;text-align:justify}
 }
 @media only screen and (orientation:portrait){
     .chcol{width:100%}
-    .chctn{margin:1rem auto;width:100%;padding:16px}
+    .chctn{margin:0;width:100%;padding:16px}
 }
 
 .vb{margin:0 0 2em 0}.vs{margin:0 0 0.5em 0}.chap .vb,.vs{text-indent:2.5em}
