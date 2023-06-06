@@ -14,7 +14,7 @@ article{padding:42px;text-align:justify}
 .chcol{background:rgb(var(--back))}
 .ch{background:rgb(var(--back));width:100%}.chcol + .chcol{margin-top:80px}.chctn{color:rgb(var(--fore))}
 
-@media only screen and (min-width:1081px){
+@media only screen and (min-width:1201px) and (orientation:landscape){
 .chcol{width:80%;min-width:1000px;margin:50px auto;box-shadow:0 0 17px rgb(var(--back));border-radius:42px;padding-top:5px;padding-bottom:5px}
 .chctn{margin:1rem auto;border:4px solid;width:calc(100% - 36px);padding:16px}
 .chctn,.ch{position:relative}
@@ -25,7 +25,7 @@ article{padding:42px;text-align:justify}
 .ch:before{bottom:-24px;left:-24px;border-radius:0 5px 0 0;border-color:rgb(var(--fore))rgb(var(--fore))rgb(var(--back))rgb(var(--back))}
 .ch:after{bottom:-24px;right:-24px;border-radius:5px 0 0 0;border-color:rgb(var(--fore))rgb(var(--back))rgb(var(--back))rgb(var(--fore))}
 }
-@media only screen and (max-width:1080px){
+@media only screen and (orientation:portrait){
     .chcol{width:100%}
     .chctn{margin:1rem auto;width:100%;padding:16px}
 }
