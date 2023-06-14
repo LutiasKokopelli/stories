@@ -41,9 +41,11 @@ function SpoilDiv(id){
 }
 function openNav(){
   document.getElementById("sidenav").style.left = "0";
+  document.getElementById("closbtn").style.left = "0";
   document.getElementById("openbtn").style.left = "-200px";
 }
 function closeNav(){
   document.getElementById("sidenav").style.left = "-300px";
+  document.getElementById("closbtn").style.left = "-300px";
   document.getElementById("openbtn").style.left = "5px";
 }
