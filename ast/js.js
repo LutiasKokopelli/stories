@@ -49,3 +49,10 @@ function closeNav(){
   document.getElementById("closbtn").style.left = "-300px";
   document.getElementById("openbtn").style.left = "5px";
 }
+function ScrollToPage() {
+  var input, p;
+  input = document.getElementById('selpage');
+  if (event.key === "Enter") {
+    document.getElementById('page' + input.value).scrollIntoView();
+  }
+}
