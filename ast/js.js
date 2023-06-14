@@ -39,3 +39,11 @@ function SpoilDiv(id){
     dc=document.getElementById(id)
     if(dc.style.display=="none"){dc.style.display=''}else{dc.style.display="none"}
 }
+function openNav(){
+  document.getElementById("sidenav").style.left = "0";
+  document.getElementById("openbtn").style.left = "-200px";
+}
+function closeNav(){
+  document.getElementById("sidenav").style.left = "-300px";
+  document.getElementById("openbtn").style.left = "5px";
+}
