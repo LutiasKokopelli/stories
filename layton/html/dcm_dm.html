@@ -1,0 +1,727 @@
+<!-- @ custom-fold HEADER -->
+<head><title>Translating Deathly Mirror</title>
+<link rel='shortcut icon'href=../ast/logo/lt1-5_lh.svg>
+<link rel=stylesheet type=text/css href=../../ast/layton/ltmain.css media=screen>
+<link rel=stylesheet type=text/css href=../../ast/layton/ltpuzzles.css media=screen>
+<link rel=stylesheet type=text/css href=../../ast/layton/sidenav.css media=screen>
+<link rel=stylesheet type=text/css href=../../ast/layton/ltcondensed.css media=screen>
+<script src=../../ast/js.js></script><style>
+*{--grey:174,145,219;
+    --back:211,163,254;
+    /*--back:254,224,163;*/
+    --emph:83,108,232;--midd:162,79,179;--bgd:183,139,242;--bgl:XXX,XXX,XXX;--fore:114,36,128;--plred:192,72,0}
+.dlg{background:url('../ast/dlg/lh.png')center no-repeat;padding:12px 34px 12px 34px;background-size:100%100%;height:128px;width:420px;display:flex;align-items:center}
+
+    .chcol{border-image:url(../../layton/ast/logo/fleur_dm.svg);border-image-slice:34% 34%}
+
+    .layton{background:url('../ast/chn/layton-lh.png')center bottom no-repeat;background-size:100%auto}.layton:before{content:url('../ast/chr/layton-lh.png')}
+    .luke{background:url('../ast/chn/luke-lh.png')center bottom no-repeat;background-size:100%auto}.luke:before{content:url('../ast/chr/luke-lh.png')}
+    .chelmey{background:url('../ast/chn/chelmey-lh.png')center bottom no-repeat;background-size:100%auto}.chelmey:before{content:url('../ast/chr/chelmey.png')}
+    .barton{background:url('../ast/chn/barton-lh.png')center bottom no-repeat;background-size:100%auto}.barton:before{content:url('../ast/chr/barton.png')}
+    .randy{background:url('../ast/chn/randy.png')center bottom no-repeat;background-size:100%auto}.randy:before{content:url('../ast/chr/randy.png')}
+    .rigel{background:url('../ast/chn/rigel.png')center bottom no-repeat;background-size:100%auto}.rigel:before{content:url('../ast/chr/rigel.png')}
+    .kate{background:url('../ast/chn/kate.png')center bottom no-repeat;background-size:100%auto}.kate:before{content:url('../ast/chr/kate.png')}
+    .donovan{background:url('../ast/chn/donovan.png')center bottom no-repeat;background-size:100%auto}.donovan:before{content:url('../ast/chr/donovan.png')}
+
+    .puzzle tr:nth-child(1) th:nth-child(1){background:url('../ast/lh/nazo_bg_01_title.png')bottom}
+    .puzzle tr:nth-child(1) th:nth-child(2){background:url('../ast/lh/nazo_bg_01_picarat.png')center}
+    .puzzle tr:nth-child(2) td:nth-child(1){background:url('../ast/lh/q_bg.png')bottom}
+
+.map{border:4px solid rgb(var(--plblack));position:relative;text-align:center;margin:auto;margin-bottom:42px;width:42%}
+.map td{position:relative;display:inline-block}.map svg{font-size:17px;position:absolute;top:0;left:0;filter:drop-shadow(3px 3px 3px rgb(var(--plblack)));font-family:KFhimaji}
+.map circle{fill:rgb(var(--plred));stroke:rgb(var(--plwhite));fill-opacity:.8;stroke-width:5}.map text{fill:rgb(var(--plwhite));text-anchor:middle;font-size:20px}
+.map polygon{fill:rgba(var(--plred),0.34);stroke:rgba(var(--plwhite),0.34);stroke-width:3px}
+.translaytion .map{border:none;width:50px}.map{cursor:default}
+</style>
+</head><div id=wrap><div class=chcol><article><table><tr><td style=width:50%><img src=../ast/logo/dm.png></td><td style=position:relative><img class=credit1 src=../ast/dm/PLaDMGlow_made_by_MetricMachine_from_TTH.png style=margin-top:2em><p class='credit1 credit2'style=margin-left:64px><img src=../ast/logo/tophat.png class=tophat> English Logo made by MetricMachine (Team Top Hat)</p></td></tr></table>
+
+<h1 style=margin-top:42px><span>Professor Layton and the</span><br>Mansion of the Deathly Mirror<p class=hr></p></h1>
+<div style=text-align:center;margin-bottom:42px><img src=../ast/dm/title_bottom.png style='border:4px solid rgb(var(--plblack));width:50%'></div>
+
+<h2 style='margin:0 auto;padding:12px;border-bottom:3px solid rgb(var(--fore));width:420px'>Toggle languages:</h2>
+<div style=text-align:center;font-size:42px;margin-bottom:42px>
+<a class=infoa href="javascript:ToggleDiv('🇯🇵')">🇯🇵<div class=infob><b>Original Japanese Version</b><hr>Transcription by brynn&num;5999</div></a>
+<a class=infoa href="javascript:ToggleDiv('🗺️')">🗺️<div class=infob><b>Literal Translation</b><hr>This English fan-made translation will stay as close to the original Japanese version as possible, but the characters may sound differently than what you are used to.</div></a><!-- 🌐🗺️🌏 -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇺🇸')">🇺🇸<div class=infob><b>Fan-Made English (US) Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇬🇧')">🇬🇧<div class=infob><b>Fan-Made English (UK) Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇩🇪')">🇩🇪<div class=infob><b>Fan-Made German Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇫🇷')">🇫🇷<div class=infob><b>Fan-Made French Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇪🇸')">🇪🇸<div class=infob><b>Fan-Made Spanish Translation</b><hr></div></a> -->
+<!-- <a class=infoa href="javascript:ToggleDiv('🇮🇹')">🇮🇹<div class=infob><b>Fan-Made Italian Translation</b><hr></div></a> -->
+</div>
+<!-- <a href="javascript:ShoHiC('第一章','dm')"><button id=第一章_b class=dm_b style=background:rgb(var(--midd))>Chapter 1</button></a>
+<a href="javascript:ShoHiC('第二章','dm')"><button id=第二章_b class=dm_b>Chapter 2</button></a>
+<a href="javascript:ShoHiC('第三章','dm')"><button id=第三章_b class=dm_b>Chapter 3</button></a>
+<a href="javascript:ShoHiC('第四章','dm')"><button id=第四章_b class=dm_b>Chapter 4</button></a>
+<a href="javascript:ShoHiC('第五章','dm')"><button id=第五章_b class=dm_b>Chapter 5</button></a>
+<a href="javascript:ShoHiC('第六章','dm')"><button id=第六章_b class=dm_b>Chapter 6</button></a>
+<a href="javascript:ShoHiC('credits','dm')"><button id=credits_b class=dm_b>Credits</button></a> -->
+<!-- <div class=container id=main> -->
+</article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold 第一章 -->
+<div id=第一章 class=chcol><article><h1>Mansion of the Deathly Mirror: Chapter 1<p class=hr></p></h1>
+    <!-- @ custom-fold 　　　 Introduction -->
+<table class=translaytion>
+<tr><td class=bg rowspan=2><div class='credit1 credit2'><img src=../ast/logo/tophat.png class=tophat> Rainy Meadows (Team Top Hat)</div><img class=credit1 src='../ast/dm/ebg_01_Rainy Meadows-TTH.png'></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>親愛なるきみへ</div>
+    <div class='dlg 🗺️'>To my dear friend,</div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>小説家ドレビン・マードックさんが<br>主催する、異人館と呼ばれる館での<br>パーティーに招待されたボクたち。</div>
+    <div class='dlg 🗺️'><p>The novelist Drevin Murdoch hosted a party and invited us to his <ruby>old <!-- XIXth century -->mansion<rt>異人館</rt></ruby>.</p></div>
+    <!-- Western style residences built mostly for early foreign settlers during the end of the Shogunate and the Meiji era​ -->
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src='../ast/dm/ebg_01_Rainy Meadows-TTH.png'></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>ボクたちはそこで<br>死者を映し出すという<br>不思議な鏡を見たんだ。</div>
+    <div class='dlg 🗺️'>There we saw something very strange:<br>a mysterious mirror that reflected the dead.</div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>でも、その鏡をめぐって<br>まさかあんな恐ろしい<br>事件がおきるなんて、</div>
+    <div class='dlg 🗺️'>However, I could not believe that such a terrible incident would happen after that.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src='../ast/dm/ebg_01_Rainy Meadows-TTH.png'></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>その時のボクたちは、<br>思ってもいなかったんだ⋯。</div>
+    <div class='dlg 🗺️'>At the time, we had no idea what we were getting into…</div>
+</div></td></tr>
+<tr><td style=height:128px></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_02.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>先生、急いでください、<br>パーティーに遅れちゃいますよ。</div>
+    <div class='dlg 🗺️'>Professor, please hurry up.<br>We’ll be late for the party.</div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>なかなか険しい山道だからね、<br>これ以上スピードを出すと<br>危険だよ。ルーク。</div>
+    <div class='dlg 🗺️'>This is a very treacherous mountain road.<br>It would be dangerous to go any faster than this, Luke.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_02.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>だって先生！<br>もうパーティーが始まる時間ですよ。</div>
+    <div class='dlg 🗺️'>But Professor!<br>It’s already time for the party to start.</div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>わかったよ、ルーク。<br>少しスピードを上げるよ。<br>しっかりつかまっていなさい。</div>
+    <div class='dlg 🗺️'>All right, Luke.<br>I’m going to speed things up a little.<br>Hold on tight.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_02.png></td><td></td><td><div class=row onscroll="ScrollAll(this)">
+    <p class=fancydlg><i>The screen shakes briefly.</i></p>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>わ、わ、先生！<br>ちょっと、は、早すぎないですか？</div>
+    <div class='dlg 🗺️'>Whoa, whoa, Professor!<br>We aren’t that late, are we?</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_02.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>ふふふ、大丈夫だよルーク。<br>安全運転を心がけているよ。<br>英国紳士としてはね。</div>
+    <div class='dlg 🗺️'>Ha ha ha, it’s alright, Luke.<br>I will try to drive safely.<br>I am an English gentleman, after all.</div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>わ、わ、わ。<br>あ、み、見えてきましたよ。</div>
+    <div class='dlg 🗺️'>Wah, wow, wow.<br>Oh, I– I can see it now.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><div class='credit1 credit2'><img src=../ast/logo/tophat.png class=tophat> Persephone (Team Top Hat)</div><img class=credit1 src=../ast/dm/ebg_03_Persephone-TTH.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>なんだか不気味な感じですね。</div>
+    <div class='dlg 🗺️'>It’s kind of creepy.</div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>そうだね。<br>マードックさんの推理小説、<br>そのままの雰囲気だ。</div>
+    <div class='dlg 🗺️'>I agree.<br>The atmosphere is similar to<br>that of Murdoch’s mystery novels.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_03_Persephone-TTH.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>とにかく急ぎましょう、先生。</div>
+    <div class='dlg 🗺️'>Anyway, let’s hurry up, Professor.</div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>待ちたまえルーク。<br>人に話しかけるときはどうするか<br>覚えているかい？</div>
+    <div class='dlg 🗺️'>Hold on, Luke.<br>Do you remember what to do when you want to talk to someone?</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_03_Persephone-TTH.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>もちろんです、先生。</div>
+    <div class='dlg 🗺️'>Of course, Professor.</div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>「ちょうさ」を選んで、気になる<br>部分にカーソルを合わせて<br>決定キーを押すんですね。</div>
+    <div class='dlg 🗺️'>You select the magnifying glass, move the cursor to the area of interest, and press the enter key.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/ebg_03_Persephone-TTH.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>正解だ、ルーク。<br>よし、行ってみようか。</div>
+    <div class='dlg 🗺️'>That is correct, Luke.<br>All right, let’s go.</div>
+</div></td></tr>
+<tr><td style=height:128px></td></tr>
+</table>
+    <!-- @ ending-fold -->
+    <!-- @ custom-fold 　　　 Investigating main hall -->
+<h1>Interacting with the environment:<p class=hr></p></h1><div class=map>
+<img src=../ast/dm/main1_Fishi_Feshi-TTH.jpg><svg viewBox='0 0 768 620'>
+    <circle cx=66% cy=51% r=20 /><text x=66% y=51% dy=.40em>1</text>
+    <circle cx=75% cy=66% r=20 /><text x=75% y=66% dy=.40em>2</text>
+    <circle cx=90% cy=60% r=20 /><text x=90% y=60% dy=.40em>3</text>
+    <circle cx=50% cy=55% r=20 /><text x=50% y=55% dy=.40em>4</text>
+    <circle cx=32.5% cy=68% r=20 /><text x=32.5% y=68% dy=.40em>5</text>
+    <circle cx=51% cy=5% r=20 /><text x=51% y=5% dy=.40em>6</text>
+    <circle cx=25% cy=53% r=20 style=fill:rgb(var(--emph)) /><text x=25% y=53% dy=.40em>T</text>
+</svg><div class='credit1 credit2'><img src=../ast/logo/tophat.png class=tophat> Fishi_Feshi (Team Top Hat)</div></div>
+<table class=translaytion>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>1</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>中世の騎士のヨロイだ。<br>とても価値が<br>あるものだ。</p></div>
+    <div class='dlg 🗺️'><p>It’s a medieval knight’s <ruby>armor<rt>ヨロイ</rt></ruby>.<br>It’s very valuable.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>2</text></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>高そうな壺ですね。</p></div>
+    <div class='dlg 🗺️'><p>That looks like an expensive jar.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>3</text></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>２階もあるんですね。<br>確かボクたちの部屋は<br>１階ですよね。</p></div>
+    <div class='dlg 🗺️'><p>There is also a second floor, isn’t there?<br>I think our room is on the first floor.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>4</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>奥の扉から優雅な楽曲が<br>聞こえてくるね。</p></div>
+    <div class='dlg 🗺️'><p>I can hear elegant music coming from the back door.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>5</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>これは珍しい。<br>東洋のスクリーンだね。</p></div>
+    <div class='dlg 🗺️'><p>This is unusual. It’s an oriental screen.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>6</text></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>年代もののシャンデリアですね。</p></div>
+    <div class='dlg 🗺️'><p>It’s a dated chandelier.</p></div>
+</div></td></tr>
+<tr><td colspan=3><p class='bar hr'style='margin:64px auto'></p></td></tr>
+<tr><td class=map rowspan=9><svg><circle cx=50% cy=64px r=20 style=fill:rgb(var(--emph)) /><text x=50% y=64px dy=.40em>T</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>これはトーテムポールだね。<br>かなり貴重なものだよ。</p></div>
+    <div class='dlg 🗺️'><p>This is a totem pole.<br>It’s quite valuable.</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>トーテムポールってなんですか？</p></div>
+    <div class='dlg 🗺️'><p>What is a totem pole?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>北アメリカの先住民が作ったとされる<br>木の彫刻さ。実に芸術的だね。</p></div>
+    <div class='dlg 🗺️'><p>It is a wooden sculpture said to have<br>been made by the indigenous people<br>of North America. It is very artistic.</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>変な顔みたいなのがついてますね。<br>これには何の意味があるんですか？</p></div>
+    <div class='dlg 🗺️'><p>It’s like a weird face.<br>What does it mean?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>それを解明するのが、<br>考古学者の務めだよ、ルーク。</p></div>
+    <div class='dlg 🗺️'><p>It’s the duty of archaeologists to figure it out, Luke.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>トーテムポールには何種類かあるが<br>これは死者をとむらうための<br>ものだね。</p></div>
+    <div class='dlg 🗺️'><p>There are several types of totem poles,<br>but this one is for commemorating the dead.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>おや？これは？</p></div>
+    <div class='dlg 🗺️'><p>Oh? What’s this?</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>どうしたんですか？先生。</p></div>
+    <div class='dlg 🗺️'><p>What’s wrong, Professor?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>いや、何でもない。<br>この館の置物は実に興味深い。<br>調査しがいがあるようだ。</p></div>
+    <div class='dlg 🗺️'><p>No, it’s nothing.<br>The ornaments in this pavilion are truly interesting.<br>They are worth investigating.</p></div>
+</td></tr><tr><td colspan=3><p class='bar hr'style='margin:64px auto'></p></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=64px r=20 style=fill:rgb(var(--emph)) /><text x=50% y=64px dy=.40em>T</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>この館の置物は実に興味深い。<br>調査しがいがあるようだ。</p></div>
+    <div class='dlg 🗺️'><p>The ornaments in this pavilion are truly interesting.<br>They are worth investigating.</p></div>
+</div></td></tr>
+</table>
+    <!-- @ ending-fold -->
+    <!-- @ custom-fold 　　　 Talking to Randy -->
+<h1>Talking to Randy:<p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main1_Fishi_Feshi-TTH.jpg></td><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>ようこそいらっしゃいました。<br>レイトン様。長旅、お疲れ様です。</div>
+    <div class='dlg 🗺️'>Welcome to the site. Mr. Layton.<br>Thank you for your long journey.</div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>あなたは？</div>
+    <div class='dlg 🗺️'>And you are?</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main1_Fishi_Feshi-TTH.jpg></td><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>失礼いたしました。<br>わたくしこの館の執事の<br>ランディ・オルタナと申します。</div>
+    <div class='dlg 🗺️'>I beg your pardon.<br>My name is Randy Alterna,<br>the butler of this mansion.</div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>なるほど、そうでしたか。<br>お出迎えありがとうございます。<br>私はエルシャール・レイトンです。</div>
+    <div class='dlg 🗺️'>I see, that’s how it is.<br>Thank you for welcoming us.<br>I am Hershel Layton.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main1_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>ボクはその助手のルークです！</div>
+    <div class='dlg 🗺️'>I am his assistant, Luke!</div>
+</div></td></tr>
+<tr><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>ルーク様でございますね。<br>ようこそお越しいただきました。</div>
+    <div class='dlg 🗺️'>You must be Mr. Luke.<br>Welcome to our home.</div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main1_Fishi_Feshi-TTH.jpg></td><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'>旦那様がお待ちです。<br>ではその前に、この異人館での<br>歩き方をご説明させていただきます。</div>
+    <div class='dlg 🗺️'><p>The master is waiting.<br>Before I go, please allow me to explain how to walk in this <ruby>residence<rt>異人館</rt></ruby>.</p></div>
+</div></td></tr>
+<tr><td class='i '></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>画面下の「くつ」アイコンを選んで、<br>決定キーを押してください。</p></div>
+    <div class='dlg 🗺️'><p>Select the “Shoes” icon at the bottom of the screen,<br>then press the Enter key.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main1_Fishi_Feshi-TTH.jpg></td><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>画面に矢印が表示されますので、<br>奥の矢印にカーソルを合わせて<br>決定キーを押してください。</p></div>
+    <div class='dlg 🗺️'><p>An arrow will appear on the screen.<br>Move the cursor to the arrow at the back<br>and press the Enter key.</p></div>
+</div></td></tr>
+<tr><td style=height:128px></td></tr>
+</table>
+<h1>Reading the <ruby style=color:rgb(var(--midd))>Deduction Message<rt style=font-size:1.5rem;color:rgb(var(--fore))>すいりメッセージ</rt></ruby> in the Main Menu:<p class=hr></p></h1>
+<table style=width:80%;margin:auto;margin-bottom:80px class=translaytion>
+<tr><th width=50%><h2 style=margin:auto>すいりメッセージ</h2></th><th><h2 style=margin:auto>Deduction Message</h2></th></tr>
+<tr><td style=background:rgb(var(--back));padding:50px;border-radius:50px>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>今日は、イギリスの著名人が集まる<br>出版記念パーティーに招待された。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>華やかなパーティーは、「異人館」<br>と呼ばれる奇妙な館で行われている。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>パーティーの招待客は、老若男女が<br>いりまじり、共通点はないようだが⋯。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>この館にしても、パーティーにしても<br>ずいぶんお金がかかってるみたいだ。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>パーティーでは、何か大掛かりな<br>イベントが用意されているそうだ。</p>
+</td><td style=background:rgb(var(--back));padding:50px;border-radius:50px;text-align:left>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>Today, I was invited to a book launch party in which prominent figures from the United Kingdom are gathered.</p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>The glamorous party is held in a <ruby>strange<rt>奇妙な</rt></ruby> mansion <ruby>referred to as<rt>と呼ばれる</rt></ruby> <ruby>“XIXth century style.”<rt>「異人館」</rt></ruby></p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>The guests invited to the party are a mixture of men and women, young and old, and seem to have nothing in common…</p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>Even for a party held in this mansion, it seems that a lot of money was spent.</p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>I heard that they have prepared some big event for the party.</p>
+</td></tr>
+</table>
+    <!-- @ ending-fold -->
+    <!-- @ custom-fold 　　　 Moving to the party room -->
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>さすがレイトン様。<br>完璧でございます。</p></div>
+    <div class='dlg 🗺️'><p>As expected of Mr. Layton.<br>This is perfect.</p></div>
+</div></td></tr>
+<tr><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>次に移動する時も同じように<br>「くつ」アイコンを選んでください。</p></div>
+    <div class='dlg 🗺️'><p>The next time you move,<br>select the “shoes” icon in the same way.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i randy'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>では、メインイベントが始まるまで、<br>食事や他のお客様とのご歓談を<br>お楽しみください。</p></div>
+    <div class='dlg 🗺️'><p>Now, enjoy your meal and chat with<br>other guests until the main event begins.</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>先生、「かばん」はどうしましょう？</p></div>
+    <div class='dlg 🗺️'><p>Professor, what should we do about the “bag”?</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>そうだね。<br>記録を取っておきたいから<br>ルークが持っていてくれるかい。</p></div>
+    <div class='dlg 🗺️'><p>Sure.<br>I’d like to keep a record of it,<br>so can you hold it for me?</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>わかりました。</p></div>
+    <div class='dlg 🗺️'><p>Understood.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>記録の取り方は覚えているかい？</p></div>
+    <div class='dlg 🗺️'><p>Do you remember how to keep records?</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ばっちりです！</p></div>
+    <div class='dlg 🗺️'><p>I’ve got it!</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>「かばん」の中の「セーブ」アイコン<br>を選んで決定キーを押すんですよね。</p></div>
+    <div class='dlg 🗺️'><p>You select the “save” icon in the “bag” and press the Enter key.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>そうだね。<br>それで、記録を取ることができる。</p></div>
+    <div class='dlg 🗺️'><p>That’s right.<br>So, we can take records.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>他にも「かばん」の中には<br>色々な情報が詰まっている。<br>一度確認しておくといいよ。</p></div>
+    <div class='dlg 🗺️'><p>The “bag” is packed with all kinds of information.<br>You should check it out once.</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>はい、先生。</p></div>
+    <div class='dlg 🗺️'><p>Yes, Professor.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2 style=background:black></td><td class=i></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>異人館に到着したレイトン教授たちは、<br>パーティーの招待客に、<br>話しかけてみることにした。</p></div>
+    <div class='dlg 🗺️'><p>Upon arriving at the <ruby>mansion<rt>異人館</rt></ruby>,<br>Professor Layton and company decided to<br>talk to the guests invited to the party.</p></div>
+</div></td></tr>
+</table>
+    <!-- @ ending-fold -->
+    <!-- @ custom-fold 　　　 Investigating party room -->
+<h1>Interacting with the environment:<p class=hr></p></h1><div class=map>
+<img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg><svg viewBox='0 0 768 620'>
+    <circle cx=3% cy=31% r=20 /><text x=3% y=31% dy=.40em>1</text>
+    <circle cx=30% cy=24% r=20 /><text x=30% y=24% dy=.40em>2</text>
+    <circle cx=47% cy=40% r=20 /><text x=47% y=40% dy=.40em>3</text>
+    <circle cx=91% cy=11% r=20 /><text x=91% y=11% dy=.40em>4</text>
+    <circle cx=80% cy=60% r=20 style=fill:rgb(var(--emph)) /><text x=80% y=60% dy=.40em>F</text>
+</svg><div class='credit1 credit2'><img src=../ast/logo/tophat.png class=tophat> Fishi_Feshi (Team Top Hat)</div></div>
+<table class=translaytion>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>1</text></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>うわー、<br>これもカッコいい<br>ヨロイですね。</p></div>
+    <div class='dlg 🗺️'><p>Wow,<br>this is another<br>cool armor.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>2</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>これは<br>タペストリーだね。</p></div>
+    <div class='dlg 🗺️'><p>This is a tapestry.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>3</text></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>大きなカメの<br>はくせいだなあ。</p></div>
+    <div class='dlg 🗺️'><p>That’s a stuffed giant turtle.</p></div>
+</div></td></tr>
+<tr><td class=map><svg><circle cx=50% cy=50% r=20 /><text x=50% y=50% dy=.40em>4</text></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>シカのはくせいか。<br>この館はまるで博物館の<br>ようだ。</p></div>
+    <div class='dlg 🗺️'><p>A stuffed deer.<br>This mansion looks like a museum.</p></div>
+</div></td></tr>
+<tr><td colspan=3><p class='bar hr'style='margin:64px auto'></p></td></tr>
+<tr><td class=map rowspan=4><svg><circle cx=50% cy=64px r=20 style=fill:rgb(var(--emph)) /><text x=50% y=64px dy=.40em>F</text></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>おいしそうな料理が並んでいますね。<br>さすがイギリス中の<br>著名人が集まるパーティーですね。</p></div>
+    <div class='dlg 🗺️'><p>The food looks delicious.<br>It is indeed a party where celebrities from all over the UK gather.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>どんどん料理が運ばれてくるようだ。<br>ルークもいただいたらどうだい？</p></div>
+    <div class='dlg 🗺️'><p>It seems that more and more food<br>is being brought to the table.<br>Why don’t you have some too, Luke?</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>そうですね、いただきます！<br>うわあ、どれから食べようか<br>迷っちゃうなあ。</p></div>
+    <div class='dlg 🗺️'><p>Yes, I’ll have some!<br>Wow, I can’t decide which one to eat first.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ふふふ、料理は逃げないから<br>落ち着いて食べなさい。</p></div>
+    <div class='dlg 🗺️'><p>Fufufu, the food won’t run away from you,<br>so calm down and eat.</p></div>
+</div></td></tr>
+</table>
+    <!-- @ ending-fold -->
+    <!-- @ custom-fold 　　　 Talking to attendees (Rigel, Kate & Donovan)                 /!\ WIP HERE! CONTINUE HERE! /!\ -->
+<h1>Talking to Rigel:<p class=hr></p></h1>
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>はじめまして、<br>エルシャール・レイトンです。</p></div>
+    <div class='dlg 🗺️'><p>Nice to meet you,<br>I am Hershel Layton.</p></div>
+</div></td></tr>
+<tr><td class='i rigel'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>リゲル・アストラードだ。</p></div>
+    <div class='dlg 🗺️'><p>I am Rigel Astrado.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i rigel'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>たかが新作発表でパーティーとはね。<br>どうせ君たちもマードック氏の<br>熱烈なファンか何かなんだろう？</p></div>
+    <div class='dlg 🗺️'><p>What a party for the mere announcement of a new product.<br>I assume you two are also Mr. Murdoch’s ardent fans or something, right?</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>あなたはファンじゃないんですか？</p></div>
+    <div class='dlg 🗺️'><p>Are you not a fan?</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i rigel'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>彼に招かれたから来たまでだ。<br>こんな小説家の娯楽なんて、実業家と<br>しては時間の無駄なんだがね。</p></div>
+    <div class='dlg 🗺️'><p>I only came because he invited me.<br>As a businessman, this novelist’s entertainment<br>is a waste of my time.</p></div>
+</div></td></tr>
+<tr><td class='i rigel'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>では失礼。</p></div>
+    <div class='dlg 🗺️'><p>Now, if you’ll excuse me.</p></div>
+</div></td></tr>
+<tr><td></td><td></td><td class=fancydlg><p><i>Rigel leaves.</i></p></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>パーティーが嫌いなら<br>なんで来たんでしょうね？</p></div>
+    <div class='dlg 🗺️'><p>If he doesn’t like parties, why did he come?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>リゲルさんはこのパーティーが<br>気に入らないようだね。</p></div>
+    <div class='dlg 🗺️'><p>I suppose Mr. Rigel does not enjoy this party.</p></div>
+</div></td></tr>
+</table>
+<h1>Talking to Kate and Donovan:<p class=hr></p></h1>
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i donovan'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>マードックさん、あたしたち全員を呼びつけるなんて、いったい何を考えてるのかしらね。</p></div>
+    <div class='dlg 🗺️'><p>Mr. Murdoch, what in the world do you think you are doing, calling all of us here?</p></div>
+</div></td></tr>
+<tr><td class='i donovan'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>それともまだ、あのことを？</p></div>
+    <div class='dlg 🗺️'><p>Or are you still doing that?</p></div>
+</div></td></tr>
+<!-- https://docs.google.com/document/d/1A8jRy2ZgPSIzSwoV2eHtVVc3XIqTiiCRJh4qRcxrJlQ/edit -->
+</table>
+    <!-- @ ending-fold -->
+    <!-- @ custom-fold 　　　 Puzzle #001 (Talking to Chelmey) -->
+<h1>Talking to Chelmey:<p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>なんだ、レイトン君じゃないか<br>君もパーティーに<br>招待されていたのか？</p></div>
+    <div class='dlg 🗺️'><p>Oh, Layton, you were invited to this party too?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>お久しぶりです。チェルミー警部。</p></div>
+    <div class='dlg 🗺️'><p>It’s been a while. Inspector Chelmey.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>お久しぶりなのであります。</p></div>
+    <div class='dlg 🗺️'><p>It has been a long time.</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>先生、このパーティーは<br>イギリスの著名人しか<br>呼ばれてないはずでしたよね？</p></div>
+    <div class='dlg 🗺️'><p>Professor, wasn’t this party<br>supposed to be only for<br>British celebrities?</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>スコットランドヤードで、数々の難事件を見事に解決してきたこの私だ。</p></div>
+    <div class='dlg 🗺️'><p>It is I who successfully solved numerous difficult cases in Scotland Yard.</p></div>
+</div></td></tr>
+<tr><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>イギリスを代表する刑事と言っても<br>過言ではあるまい。</p></div>
+    <div class='dlg 🗺️'><p>It is no exaggerationg to say that I am<br>one of the detectives most representative<br>of the United Kingdom.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>イギリスでチェルミー警部の名を知らないものはいないのであります！</p></div>
+    <div class='dlg 🗺️'><p>There is not one person in the United Kingdom who does not know the name of Inspector Chelmey!</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>えー！</p></div>
+    <div class='dlg 🗺️'><p>Eh—!</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ルーク、警部に失礼なことを<br>言ってはいけないよ。</p></div>
+    <div class='dlg 🗺️'><p>Luke, don’t be rude to the inspector.</p></div>
+</div></td></tr>
+<tr><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>一般人の君たちが<br>このパーティーに招待されたことの<br>方が不思議じゃないか？</p></div>
+    <div class='dlg 🗺️'><p>Isn’t it more curious that you, the general public, were invited to this party?</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>先生は、マードックさんから<br>是非にって招待されたんですよ。</p></div>
+    <div class='dlg 🗺️'><p>The professor was invited by Mr. Murdoch, who said that he absolutely wanted for him to be present.</p></div>
+</div></td></tr>
+<tr><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ふん、どうかな。</p></div>
+    <div class='dlg 🗺️'><p>Fuh, I don’t know about that.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ところでレイトン君、久しぶりに<br>私の新しいナゾを解いてみないかね？</p></div>
+    <div class='dlg 🗺️'><p>By the way Layton, it’s been a while since you last solved one of my puzzles, hasn’t it?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>かまいませんよ、チェルミー警部。</p></div>
+    <div class='dlg 🗺️'><p>There’s no problem, Inspector.</p></div>
+</div></td></tr>
+</table>
+<p class=bar></p><table class=puzzle>
+<tr><th><h2><p>ナゾ００１</p><p>ナゾ００１　決定的な証拠</p><p>Conclusive Evidence</p></h2></th><th>
+    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
+    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>0</cr> Picarats</i></h2></td></tr></table>
+</th></tr>
+<tr><td><div>
+    <p class=🇯🇵>世間を騒がすマフィアを検挙した！<br>検挙の決め手は「ある物」を所持して<br>いたことだが、それは作った本人や<br>正体を知っている人は受け取ることも<br>使うことも普通は無いが、<br>知らない人は受け取ったり使ったり<br>してしまうものだという。<br>証拠として押収された「ある物」とは<br>次の中のどれだろうか？</p>
+    <p class=🗺️>A mafia member who caused a stir in the world was arrested! The decisive factor in the arrest was the possession of a "certain object," which the person who made it or knew its identity would not normally receive or use, but an unknown person would receive or use. Which of the following is the "certain object" seized as evidence?</p>
+</div></td><td style='background:url(../ast/dm/nazo_1_01.png)center no-repeat;background-size:100%auto'></td></tr>
+<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
+    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
+    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
+    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
+    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
+    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
+        <div id=p01h1 class=p01><div class=row>
+            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
+            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
+        </div></div>
+        <div id=p01h2 class=p01><div class=row>
+            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
+            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
+        </div></div>
+        <div id=p01h3 class=p01><div class=row>
+            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
+            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
+        </div></div>
+    </div>
+</div><p class=bar></p></td></tr> -->
+<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
+<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+    <p class=🇯🇵>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p>
+    <p class=🗺️>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p>
+</div></td>
+<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+    <p class=🇯🇵>正解！<br><br>このマフィアはニセモノのお金を<br>所持していたのである！<br>ニセモノのお金を作った本人は、<br>それを他人に言うことはないし、<br>正体を知っている人は受け取る<br>はずもない。<br>犯人はさっそく逮捕されたのであった。<br><br>ナゾ製作協力：平川　陽一</p>
+    <p class=🗺️>Correct!<br><br>The mafioso was in possession of counterfeit money! The person who made the phony money would not tell others about it, and no one who knew of its true identity would accept it. The culprit was arrested immediately.<br><br>Puzzle production cooperation: Yoichi Hirakawa</p>
+</div></td></tr>
+</table>
+<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../@@@></td><td class='i '></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
+    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
+    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
+</td></tr></table> -->
+<!-- <h1>Dialogue when you come back<p class=hr></p></h1>
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/@@@></td><td class='i '></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
+    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
+</div></td></tr>
+<tr><td style=height:128px>&nbsp;</td></tr>
+</table> -->
+<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+<table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ぐぬぬ。さすがだな<br>レイトン君。</p></div>
+    <div class='dlg 🗺️'><p>Drats. As expected of you, Layton.</p></div>
+</div></td></tr>
+<tr><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>さすがなのであります。</p></div>
+    <div class='dlg 🗺️'><p>It is as one would expect.</p></div>
+</div></td></tr>
+<tr><td></td><td></td><td><div class=row onscroll="ScrollAll(this)"><div class='fancydlg 🇯🇵'><p>すいりメッセージが<br>更新されました！</p></div><div class='fancydlg 🗺️'><p>The <ruby>deduction message<rt>すいりメッセージ</rt></ruby> has been updated!</p></div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>先生、何か落ちてますよ。</p></div>
+    <div class='dlg 🗺️'><p>Professor, something fell down.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>これは、何かに使えるかも<br>知れないね、とっておこうか。</p></div>
+    <div class='dlg 🗺️'><p>This might be useful for something, let’s keep it.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>はい、先生。</p></div>
+    <div class='dlg 🗺️'><p>Yes, Professor.</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>後で、「かばん」の中を見てみよう。<br>何か変わったことがあるかも<br>しれないよ？</p></div>
+    <div class='dlg 🗺️'><p>Let’s take a look in the “bag” later.<br>Maybe you’ll find something unusual?</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/dm/main2_Fishi_Feshi-TTH.jpg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>変わったこと、ですか？<br>何があるんですか？</p></div>
+    <div class='dlg 🗺️'><p>What changed, Professor?<br>What is it?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+    <div class='dlg 🇯🇵'><p>ふふふ。見てのお楽しみさ。</p></div>
+    <div class='dlg 🗺️'><p>Fufufu. You’ll just have to wait and see.</p></div>
+</div></td></tr>
+<tr><td></td><td></td><td><div class=row onscroll="ScrollAll(this)"><div class='fancydlg 🇯🇵'><p>ハンマーを手に入れました。</p></div><div class='fancydlg 🗺️'><p>You got the hammer.</p></div></td></tr>
+</table>
+<h1>Reading the <ruby style=color:rgb(var(--midd))>Deduction Message<rt style=font-size:1.5rem;color:rgb(var(--fore))>すいりメッセージ</rt></ruby> in the Main Menu:<p class=hr></p></h1>
+<table style=width:80%;margin:auto;margin-bottom:80px class=translaytion>
+<tr><th width=50%><h2 style=margin:auto>すいりメッセージ</h2></th><th><h2 style=margin:auto>Deduction Message</h2></th></tr>
+<tr><td style=background:rgb(var(--back));padding:50px;border-radius:50px>
+    <p style='border-bottom:2px solid rgb(var(--midd));color:rgb(var(--plred))'>私やチェルミー警部が<br>招待された本当の理由があるのでは？</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>華やかなパーティーは、「異人館」<br>と呼ばれる奇妙な館で行われている。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>パーティーの招待客は、老若男女が<br>いりまじり、共通点はないようだが⋯。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>この館にしても、パーティーにしても<br>ずいぶんお金がかかってるみたいだ。</p>
+    <p style='border-bottom:2px solid rgb(var(--midd))'>パーティーでは、何か大掛かりな<br>イベントが用意されているそうだ。</p>
+</td><td style=background:rgb(var(--back));padding:50px;border-radius:50px;text-align:left>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px;color:rgb(var(--plred))'>Is there a different reason why<br>Inspector Chelmey and I were invited?</p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>The glamorous party is held in a <ruby>strange<rt>奇妙な</rt></ruby> mansion <ruby>referred to as<rt>と呼ばれる</rt></ruby> <ruby>“XIXth century style.”<rt>「異人館」</rt></ruby></p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>The guests invited to the party are a mixture of men and women, young and old, and seem to have nothing in common…</p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>Even for a party held in this mansion, it seems that a lot of money was spent.</p>
+    <p style='border-bottom:2px solid rgb(var(--midd));padding-bottom:7px'>I heard that they have prepared some big event for the party.</p>
+</td></tr>
+</table>
+<!--
+かばん→ものおきべや
+    Bag → Storage Shed
+
+あそびかた
+    How to Play
+
+手に入れたパーツを使って、物置部屋を明るくしましょう！「鏡のかけら」を使って、光を反射させ、壊れた電灯にあててみよう。
+Use the parts you get to brighten up the storage room! Use the "mirror piece" to reflect the light and shine it on the broken light.
+
+「ハンマー」を使えば選んだ壁を壊せます。「床板」で穴を埋めれば、そこに鏡を置けるようになります。
+Use the "hammer" to break the wall of your choice. If you fill in the hole with a floorboard, you can place a mirror there.
+
+パーツは画面下の「パーツ選択」から選ぶ事ができます。選んだパーツを持っている時にもどるボタンを押すと、パーツをもどす事ができます。
+Parts can be selected from "Select Parts" at the bottom of the screen. When you are holding a selected part, you can return it by pressing the "Back" button.
+
+鏡のかけら以外のパーツは使いなおす事ができません。間違って使ってしまった場合は「リセット」を押しましょう。ものおきべやを最初と同じ状態にもどす事ができます。
+Parts other than mirror pieces cannot be reused. If you have used them by mistake, click "Reset". You can reset the Storage Shed to the same state as before.
+-->
+</article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold 第二章 -->
+<div id=第二章 class=chcol><article><h1>Mansion of the Deathly Mirror: Chapter 2<p class=hr></p></h1><table>
+
+</table></article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold 第三章 -->
+<div id=第三章 class=chcol><article><h1>Mansion of the Deathly Mirror: Chapter 3<p class=hr></p></h1><table>
+
+</table></article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold 第四章 -->
+<div id=第四章 class=chcol><article><h1>Mansion of the Deathly Mirror: Chapter 4<p class=hr></p></h1><table>
+
+</table></article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold 第五章 -->
+<div id=第五章 class=chcol><article><h1>Mansion of the Deathly Mirror: Chapter 5<p class=hr></p></h1><table>
+
+</table></article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold 第六章 -->
+<div id=第六章 class=chcol><article><h1>Mansion of the Deathly Mirror: Chapter 6<p class=hr></p></h1><table>
+
+</table></article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold Credits -->
+<div id=credits class=chcol><article><h1>Credits<p class=hr></p></h1>
+<h2>Many people are to thank for the reconstitution of the game’s assets,<br>many of whom are part of Team Top Hat.</h2>
+
+<p>In time, everyone who participated and wants to be credited can be added here! Just let me know, give me links to your socials (if you want to share your Instagram, Tumblr, Twitter, etc) so I can put them here, and/or a small blurb if you want me to add something special. A small description of what your contribution in this project was will be added.</p>
+<!--
+<table>
+<tr><td width=50%><img src=ast/dm/ebg_03_Persephone-TTH.png style='border:2px solid var(--plblack)'></td><td><h2>Persephone (Team Top Hat)</h2></td></tr>
+<tr><td><h2>Fishi_Feshi (Team Top Hat)</h2></td><td><img src=ast/dm/main1_Fishi_Feshi-TTH.jpg style='border:2px solid var(--plblack)'></td></tr>
+<tr><td><h2>Fishi_Feshi (Team Top Hat)</h2></td><td><img src=ast/dm/main2_Fishi_Feshi-TTH.jpg style='border:2px solid var(--plblack)'></td></tr>
+
+</table>
+-->
+<!-- @ ending-fold -->
+<!-- @ custom-fold END -->
+<!-- </div><h2 style=margin-top:42px;margin-bottom:0><a href=../index.html>» Back to the Main Index «</a></h2> -->
+</article></div>
+<!-- </div> -->
+<!--
+1	https://twitcasting.tv/cmn11028f/movie/135204798
+2	https://twitcasting.tv/cmn11028f/movie/135245913
+3	https://twitcasting.tv/cmn11028f/movie/135512469
+4	https://twitcasting.tv/cmn11028f/movie/135776182
+5	https://twitcasting.tv/cmn11028f/movie/136958257
+6	https://twitcasting.tv/cmn11028f/movie/137602453
+6-2	https://twitcasting.tv/cmn11028f/movie/137605070
+7	https://twitcasting.tv/cmn11028f/movie/140075200
+8	https://twitcasting.tv/cmn11028f/movie/140419373
+9	https://twitcasting.tv/cmn11028f/movie/143492703
+10	https://twitcasting.tv/cmn11028f/movie/699168802
+
+https://docs.google.com/document/d/1hoA2ZuEma9CtQG38S-_I7pSRhyk8RvC4bHuecxoLv5o/edit
+-->
+<!-- @ ending-fold -->
+
+<div class=bar style=margin-bottom:180px;--midd:var(--fore)><span style=font-size:50px;background:rgb(var(--grey));--midd:var(--fore)><a href=#>Back to Top</a> ・ <a href=../index.html>Main Index</a></span></div>
+<div id=sidenav><a href=javascript:void(0) onclick=closeNav() id=closbtn><h1>Navigation &nbsp; &nbsp;</h1><span>&times;</span></a>
+<a href=#><img src=../ast/logo/dm.png></a><h2 style='margin:0 auto;padding:12px;border-bottom:3px solid rgb(var(--fore));width:100%'>Toggle Languages:</h2>
+<div style=text-align:center;font-size:42px;margin-bottom:42px>
+<a href="javascript:ToggleDiv('🇯🇵')">🇯🇵</a>
+<a href="javascript:ToggleDiv('🗺️')">🗺️</a>
+</div>
+<a href=#第一章><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Chapter 1</span></h3></a>
+<a href=#第二章><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Chapter 2</span></h3></a>
+<a href=#第三章><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Chapter 3</span></h3></a>
+<a href=#第四章><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Chapter 4</span></h3></a>
+<a href=#第五章><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Chapter 5</span></h3></a>
+<a href=#第六章><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Chapter 6</span></h3></a>
+<a href=#credits><h3><svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><path/></svg><span>Credits</span></h3></a>
+<!-- <a href=#intro><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Introduction</span></h3></a> -->
+<!-- <a href=#location><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Check the Map</span></h3></a> -->
+<!-- <div class=sbar><input id=lblnazo class=toggle type=checkbox checked=true><label for=lblnazo class=lbl-toggle>Puzzles:</label><div class='barss chprt'>
+    <a href=#nazo01><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">1</text></svg></a>
+    <a href=#nazo02><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">2</text></svg></a>
+    <a href=#nazo03><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">3</text></svg></a>
+    <a href=#nazo04><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">4</text></svg></a>
+    <a href=#nazo05><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">5</text></svg></a>
+    <a href=#nazo06><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">6</text></svg></a>
+    <a href=#nazo07><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">7</text></svg></a>
+    <a href=#nazo08><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">8</text></svg></a>
+    <a href=#nazo09><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">9</text></svg></a>
+    <a href=#nazo10><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">10</text></svg></a>
+    <a href=#nazo11><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">11</text></svg></a>
+    <a href=#nazo12><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">12</text></svg></a>
+</div></div> -->
+<!-- <div class=sbar><input id=lblsolved class=toggle type=checkbox checked=true><label for=lblsolved class=lbl-toggle>Story:</label><div class=barss><ul>
+    <li><a href=#trophy>Inspect the Trophy</a></li>
+    <li><a href=#solved1>Solved the first Puzzle</a></li>
+    <li><a href=#solved6>Solved 6 Puzzles</a></li>
+    <li><a href=#outro>Solved all Puzzles</a></li>
+    <li><a href=#checkletter>Inspect the Letter</a></li>
+<ul></div></div> -->
+<!-- <a href=#memo><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Schrader’s Notes</span></h3></a> -->
+</div><button id=openbtn onclick=openNav()>&#9776; Index</button></div>
