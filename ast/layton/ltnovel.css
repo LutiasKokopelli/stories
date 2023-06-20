@@ -1,0 +1,59 @@
+*:lang(ja){font-family:"Noto Serif JP";ruby-align:space-between}
+*:lang(ja) rt{padding-top:3px;padding-bottom:3px}
+
+.nov{border-collapse:collapse}
+.nov > tbody > tr:not(:first-child) > th{padding-top:42px}
+.nov > tbody > tr > td{padding:42px}
+.nov > tbody > tr > td:first-child{border-right:7px double rgb(var(--midd));padding-left:16px}
+.nov > tbody > tr > td:last-child{padding-right:16px}
+.page{width:50%;position:relative;height:calc(80vw/1.45)}
+.v{max-height:10000px}
+.nov > tbody > tr:first-child > td{padding-top:0;padding-bottom:0}
+.nov > tbody > tr:last-child > td{border-bottom:none}
+.nov > tbody > tr > td{padding-top:50px;padding-bottom:50px;border-bottom:7px double rgb(var(--midd))}
+.v d{writing-mode:vertical-rl;margin:0 auto}
+.v d span{text-combine-upright:all}
+.v d span.emph{text-combine-upright:unset;color:rgb(var(--fore));font-family:'游ゴシック';font-weight:800}
+.v d,.v .h{display:block;height:910px;top:80px;right:50px;position:absolute}
+.v d h2{font-family:'游ゴシック';font-weight:600}
+d + span{position:absolute;bottom:42px;left:17px;font-size:.7em}
+.nov > tbody > tr:last-child d + span{bottom:0}
+.v p{margin:0 12px}
+.h p{margin:17px 80px}
+.h p{text-indent:2em!important}
+.h blockquote{position:relative;border:7px double rgb(var(--midd));border-radius:50px;padding:50px;font-style:italic}
+.h blockquote p{margin:17px 0!important}
+.h blockquote:before{content:'“';font-size:100px;color:rgb(var(--fore));paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;fill:rgb(var(--plwhite));position:absolute;top:-15px;left:20px}
+.h blockquote:after {content:'”';font-size:100px;color:rgb(var(--fore));paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;fill:rgb(var(--plwhite));position:absolute;bottom:-50px;right:15px}
+.unex{color:rgb(var(--plred))!important}
+
+rt,.h ruby:hover{color:rgb(var(--fore))}
+rt{font-weight:normal!important}
+.h ruby{position:relative}
+.h ruby rt{display:none;min-width:100%;text-align:center;position:absolute;right:0;text-indent:0!important;top:-2.2em;background:rgba(var(--back),.9);padding:7px;border:2px solid rgb(var(--plred));border-radius:5px;color:rgb(var(--plred));font-size:.9em}.h ruby:hover rt{display:block}
+
+.charpres{border:3px solid rgb(var(--fore));padding:17px;width:90%;height:180px;margin:25px auto;border-radius:25px 25px 25px 0;flex-direction:column;align-items:center;display:flex;background:rgba(var(--midd),.42);position:relative}
+.charpres p{margin:0;width:100%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+<!-- @ custom-fold @          【第四章　⁑　からくりの城】➊ -->
+novpage
+<svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><text x=50% y=50% dx=".09em"dy=".25em">1</text></svg>
+<svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><text x=50% y=50% dx=".09em"dy=".25em">1</text></svg>
+<!-- @ ending-fold -->
+
+*/

@@ -1,4 +1,3 @@
-// IF YOU WANT TO HAVE PRINTS FOR DEBUGGING: USE THE FUNCTION alert()
 function SwapDiv(div1,div2){
     d1=document.getElementById(div1);d2=document.getElementById(div2)
     if(d2.style.display=="none"){d1.style.display="none";d2.style.display=""}
@@ -42,12 +41,16 @@ function SpoilDiv(id){
 function openNav(){
   document.getElementById("sidenav").style.left = "0";
   document.getElementById("closbtn").style.left = "0";
-  document.getElementById("openbtn").style.left = "-200px";
+  document.getElementById("openbtn").style.left = "-20%";
+  document.getElementById("wrap").style.left = "16%";
+  document.getElementById("wrap").style.width = "84%";
 }
 function closeNav(){
-  document.getElementById("sidenav").style.left = "-300px";
-  document.getElementById("closbtn").style.left = "-300px";
+  document.getElementById("sidenav").style.left = "-20%";
+  document.getElementById("closbtn").style.left = "-20%";
   document.getElementById("openbtn").style.left = "5px";
+  document.getElementById("wrap").style.left = "0";
+  document.getElementById("wrap").style.width = "100%";
 }
 function ScrollToPage() {
   var input, p;
@@ -55,4 +58,63 @@ function ScrollToPage() {
   if (event.key === "Enter") {
     document.getElementById('page' + input.value).scrollIntoView();
   }
+}
+function Toggle(cl){
+  var button=document.getElementById(cl);
+  var els=document.getElementsByClassName(cl);
+  if(button.style.opacity=='1'){
+    button.style.opacity='.17';
+    for(var i=0;i<els.length;i++){
+      var s=els[i].style;
+      s.opacity='.17'
+    }
+  }else{
+    button.style.opacity='1';
+    for(var i=0;i<els.length;i++){
+      var s=els[i].style;
+      s.opacity='1'
+    }
+  }
+}
+function FilterItems() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('filterinput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("filterlist");
+  li = ul.getElementsByTagName('a');
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("div")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+function ToggleCode(){
+    var els=document.getElementsByTagName('code');
+    for(var i=0;i<els.length;i++){
+        var s=els[i].style;s.display=s.display==='unset'?'none':'unset'
+    }
+}
+var rowDivs = document.getElementsByClassName('row');
+function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+function ScrollAll(referenceRow) {
+    var scrollLeft = referenceRow.scrollLeft;
+    for (var i = 0; i < globalThis.rowDivs.length; i++) {
+        if (isInViewport(globalThis.rowDivs[i])) {
+            globalThis.rowDivs[i-1].scrollLeft = scrollLeft;
+            globalThis.rowDivs[i].scrollLeft = scrollLeft;
+            globalThis.rowDivs[i+1].scrollLeft = scrollLeft;
+        }
+    }
 }
