@@ -1,10 +1,26 @@
-#wrap{
-    left:16%;
-    width:84%;
-}
-
 a:hover h3 span{color:rgb(var(--plred))}
 
+@media only screen and (orientation: landscape) {
+    #wrap{
+        left:16%;
+        width:84%;
+    }
+    #openbtn{
+        left: -100%;
+    }
+    #closbtn,#sidenav,#midxbtn{
+        left:0;
+        width: 16%;
+    }
+}
+@media only screen and (orientation: portrait) {
+    #closbtn,#sidenav,#midxbtn{left:-100%;width:50%}
+    #openbtn{left:5px}
+}
+
+#closbtn,#sidenav,#midxbtn{
+    min-width:320px;
+}
 #openbtn {
     position: fixed;
     top: 5px;
@@ -15,23 +31,18 @@ a:hover h3 span{color:rgb(var(--plred))}
     padding: 10px 15px;
     border: none;
     border-radius: 7px;
-    /* left: 5px; */
-    left: -20%;
 }
 #openbtn:hover {
     background: rgb(var(--plred));
 }
 #closbtn {
     position: fixed;
-    width: 16%;
     top: 0;
-    /* left: -20%; */
-    left:0;
     background: rgb(var(--fore));
     transition: 0.5s;
     z-index:1000;
 }
-#closbtn h1 {
+#closbtn h1{
     font-size: 36px;
     margin: 12px auto;
     color: rgb(var(--plwhite));
@@ -45,31 +56,33 @@ a:hover h3 span{color:rgb(var(--plred))}
     right: 25px;
     margin-left: 50px;
 }
-#sidenav h1 + span:hover {
+#closbtn:hover,#midxbtn h1:hover{
+    filter: saturate(200%);
+}
+#closbtn:hover h1 + span {
     color: rgb(var(--plred));
 }
 #sidenav {
+    top: 0;
     height: 100%;
     position: fixed;
     z-index: 99;
-    top: 0;
     transition: 0.5s;
-    width: 16%;
     background: rgb(var(--back));
-    /* background: rgba(var(--back), 0.9); */
     border-right: 3px solid rgb(var(--fore));
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 100px 12px 80px 12px;
+    padding: 360px 12px 20px 12px;
     text-align: left;
-    /* left: -20%; */
-    left:0;
 }
-
-#sidenav #selpage{height:17px;font-size:12px;padding-left:20px}
+#sidenav #selpage{
+    height:17px;
+    font-size:12px;
+    padding-left:20px
+}
 #sidenav ul{
-    margin:0;
-    font-size:1rem;
+    margin:7px;
+    font-size:1.2rem;
 }
 #sidenav ul hr{
     margin:12px -12px 12px -7px
@@ -86,3 +99,24 @@ a:hover h3 span{color:rgb(var(--plred))}
 .chprt{display:flex;flex-wrap:wrap;justify-content:center}.chprt a{width:60px}
 
 h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-right:12px}
+
+#midxbtn{
+    background:rgb(var(--back));
+    border-right: 3px solid rgb(var(--fore));
+    border-bottom:3px solid rgb(var(--fore));
+    position: fixed;
+    top:68px;
+    transition: 0.5s;
+    z-index:999;
+}
+#midxbtn h1 {
+    background:rgb(var(--midd));
+    padding:17px;
+    font-size: 24px;
+    margin: 0 auto;
+    color: rgb(var(--back));
+}
+
+#sidenav .infob{
+    position:fixed;top:350px;width:300px;left:5px
+}

@@ -18,135 +18,9 @@ u {
 .medialist .infoa > img {
     image-rendering: pixelated;
 }
-/* .bar {
-    margin-top: 0;
-    margin-bottom: 42px;
-} */
-/* .translaytion {
-    margin-bottom: 0;
-} */
-/* p {
-    margin: 5px 0;
-    text-align: left !important;
-} */
 c {
     opacity: 17%;
 }
-/* .bar2 {
-    position: relative;
-    display: block;
-    line-height: 3px;
-    height: 3px;
-    background: rgb(var(--midd));
-    font-weight: 800;
-    width: 94%;
-    margin: 42px auto;
-    text-align: center !important;
-    text-indent: 0 !important;
-}
-.bar2 span {
-    background: rgb(var(--back));
-    padding: 17px;
-    font-weight: 800;
-    font-size: 27px;
-    color: rgb(var(--midd));
-}
-.bar2:before,
-.bar2:after {
-    content: "➽";
-    font-size: 2em;
-    color: rgb(var(--midd));
-    position: absolute;
-}
-.bar2:before {
-    transform: rotate(180deg);
-    left: -10px;
-}
-.bar2:after {
-    right: -10px;
-} */
-/* .sidenav {
-    background: rgb(var(--back));
-    opacity: 80%;
-    width: 320px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: 0 !important;
-    padding: 17px;
-    padding-right: 12px;
-    overflow: auto;
-}
-wip {
-    background: rgb(var(--fore));
-    text-align: left !important;
-}
-.sidenav ul {
-    margin: 0;
-    padding: 12px 0 0 12px;
-}
-.sidenav li {
-    margin: 0;
-    padding: 3px;
-}
-.sidenav h3 {
-    border-bottom: 2px solid rgb(var(--midd));
-    margin-bottom: 0;
-} */
-/* .translaytion th:nth-child(1) {
-    width: 100px !important;
-} */
-/* @font-face {
-    font-family: "KFhimaji";
-    src: url("loc/KFHIMAJI.OTF") format("opentype");
-}
-.timeline td:nth-child(2),
-.timeline td:nth-child(3) {
-    font-weight: 100;
-    font-family: KFhimaji;
-}
-.timeline td:nth-child(2),
-.timeline td:nth-child(3),
-.timeline th:nth-child(2),
-.timeline th:nth-child(3) {
-    font-weight: 100;
-    font-family: UD Digi Kyokasho N-B;
-}
-li.skip,
-li.unu {
-    opacity: 0.7;
-}
-li.unu,
-li.unu a,
-p.unu {
-    color: rgb(192, 72, 0);
-}
-.skip,
-.skip * {
-    --midd: 179, 176, 79;
-    --fore: 63, 121, 99;
-}
-.unu,
-.unu * {
-    --midd: 192, 72, 0;
-    --fore: 232, 83, 89;
-}
-.chlogo {
-    height: 620px;
-    width: 768px;
-    margin: 50px auto 20px auto;
-    box-shadow: inset -20px -20px 20px 40px rgb(var(--grey));
-}
-li.tab {
-    margin-left: 19px;
-}
-svg image.hc {
-    width: 34px;
-    height: 34px;
-    opacity: 0.9;
-} */
 .map td {
     position: relative;
     display: inline-block;
@@ -213,15 +87,12 @@ code {
     border: 2px solid rgb(var(--plblack));
 }
 .bg {
-    /* width: 320px; */
     width:var(--bgwidth);
     position: relative;
 }
 .memo {
     width: 628px;
     height: 512px;
-    /* width:50%;
-    height:; */
     font-size: 1.2rem;
     margin-right: 5px;
     display: table;
@@ -252,7 +123,6 @@ code {
 .i {
     width: 80px;
     text-align: center;
-    image-rendering: pixelated;
     height: var(--dlgheight);
 }
 .dlg {
@@ -271,10 +141,12 @@ code {
     position: relative;
     width:calc(var(--bgwidth) - 80px);
     overflow-x:hidden;
-    /* white-space: nowrap; */
+    /* overflow-y:visible; */
 }
+.row,tr,table,.dlg,td {overflow-y:visible!important}
 .translaytion td .row{
-    overflow-x:auto;position:relative;
+    overflow-x:auto;
+    /* position:relative; */
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;

@@ -39,18 +39,28 @@ function SpoilDiv(id){
     if(dc.style.display=="none"){dc.style.display=''}else{dc.style.display="none"}
 }
 function openNav(){
-  document.getElementById("sidenav").style.left = "0";
-  document.getElementById("closbtn").style.left = "0";
-  document.getElementById("openbtn").style.left = "-20%";
-  document.getElementById("wrap").style.left = "16%";
-  document.getElementById("wrap").style.width = "84%";
+    document.getElementById("sidenav").style.left = "0";
+    document.getElementById("closbtn").style.left = "0";
+    document.getElementById("midxbtn").style.left = "0";
+    document.getElementById("openbtn").style.left = "-100%";
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        document.getElementById("wrap").style.left = "16%";
+        document.getElementById("wrap").style.width = "84%";
+    }
 }
 function closeNav(){
-  document.getElementById("sidenav").style.left = "-20%";
-  document.getElementById("closbtn").style.left = "-20%";
-  document.getElementById("openbtn").style.left = "5px";
-  document.getElementById("wrap").style.left = "0";
-  document.getElementById("wrap").style.width = "100%";
+    document.getElementById("sidenav").style.left = "-100%";
+    document.getElementById("closbtn").style.left = "-100%";
+    document.getElementById("midxbtn").style.left = "-100%";
+    document.getElementById("openbtn").style.left = "5px";
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        document.getElementById("wrap").style.left = "0";
+        document.getElementById("wrap").style.width = "100%";
+    }
+    else {
+        document.getElementById("sidenav").style.width = "50%";
+        document.getElementById("closbtn").style.width = "50%";
+    }
 }
 function ScrollToPage() {
   var input, p;
@@ -110,10 +120,12 @@ function isInViewport(el) {
 }
 function ScrollAll(referenceRow) {
     var scrollLeft = referenceRow.scrollLeft;
-    for (var i = 0; i < globalThis.rowDivs.length; i++) {
+    for (var i = 1; i < globalThis.rowDivs.length -1; i++) {
         if (isInViewport(globalThis.rowDivs[i])) {
             globalThis.rowDivs[i-1].scrollLeft = scrollLeft;
-            globalThis.rowDivs[i].scrollLeft = scrollLeft;
+            if (globalThis.rowDivs[i] != referenceRow) {
+                globalThis.rowDivs[i].scrollLeft = scrollLeft;
+            }
             globalThis.rowDivs[i+1].scrollLeft = scrollLeft;
         }
     }
