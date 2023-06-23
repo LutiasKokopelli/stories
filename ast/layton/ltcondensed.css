@@ -3,15 +3,9 @@
 }
 *{
     --dlgheight:128px;
-    /* --dlgratio:3.98734; */
     --dlgratio:3.28125;
     --bgwidth:25%;
 }
-
-
-
-
-
 u {
     border-bottom: 2px dashed rgb(var(--emph));
 }
@@ -100,6 +94,9 @@ code {font-style:normal;display:none}
 }
 .🗺️ {
     font-style: italic;
+}
+.🗺️ .infob{
+    min-width:fit-content;white-space:nowrap
 }
 .px {
     image-rendering: pixelated;
