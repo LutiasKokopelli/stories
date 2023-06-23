@@ -1,49 +1,41 @@
-<!-- @ custom-fold @    HEADER -->
-<head><title>Translating Professor Layton and the London Holiday</title>
-<link rel='shortcut icon'href=../ast/logo/lt1-5_lh.svg>
+<!-- @ custom-fold @〚ＤＯＮＥ〛HEADER    -->
+<head><title>Professor Layton and the London Holiday</title>
+<link rel="icon"href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='50%' cy='50%' r='50%' fill='rgb(119,68,17)'/%3E%3Cpath d='m3.872 5.096q0 0 0 0-.072 0 0 0 .576 0 1.44-.072 5.328-.072 8.928 0c1.008 0 .864 1.008.864 1.728q0 0 0 0c.36-.576 1.008-.792 1.656-.792q.072 0 .072 0c-2.88-4.68-9.36-5.184-12.888-.936q0 0-.072.072m-.648.936c-1.728 2.88-1.224 6.624.936 9.144a.072.072 90 00.072 0c.072 0 .144-.072.288-.072q1.224-.072 2.592-.144a.288.288 90 00.216-.072c.072-.072-.072-.216-.144-.216-.36-.216-.792-.432-1.152-.72q-1.728-1.296-2.232-3.456c-.36-1.44-.432-2.952-.504-4.392q0-.144-.072-.072m12.528 1.368c-.36.936.288 1.728 1.224 1.584q.216 0 .288-.144c.504-.432.36-1.008.144-1.584-.288-.576-1.368-.432-1.656.144m.36 2.304q-.936-.288-1.224-1.296 0-.072 0 0l-.432 2.16q0 .072 0 .072.864-.432 1.656-.936.072 0 0 0m1.8-.072q-1.152.936-2.448 1.584c-.144.144-.36.216-.504.36a.072.072 90 000 .144q.288.36.648.576c.792.576-.72 1.512-1.368.648q-.216-.216-.36-.504 0 0-.072 0c-.288.864-.792 1.44-1.584 2.016-.072.072-.216.144-.36.216q-.072.072 0 .072c1.08.288 2.232.216 3.312.288.216 0 .432.072.648.216a.072.072 90 00.072-.072q2.088-2.376 2.016-5.544 0 0 0 0m-12.888 6.408c2.952 2.304 6.912 2.376 9.864.072q.144-.072 0-.072-4.896.36-9.792-.072-.144 0-.072.072' fill='rgb(248,196,162)'/%3E%3Cpath d='m7.5 13q.3-.4.6-.8c.6-.7.5-2 .3-2.9-.2-.7-.3-1.3-.3-2.1a.1.1 90 01.1-.1c.5-.4 1-.7 1.6-.4q.1.1.1.3a.1.1 90 00.1.1c.2-.1.3-.2.2-.5-.3-.7-1.3-.7-1.9-.3-.3.3-.5.5-1 .6-.4.1 0 .4.1.5.2.2.2.6.2.9q.1 1.9 0 2.9c0 .7-.1 1.3-.6 1.7-.4.3-.1.6.2.7a.1.1 90 00.1 0q.7-.4 1.1-.5c1-.1 1.7.6 2.6.4.6-.1 1.3-.6 1.4-1.2.6-2.3-3.2-2.7-2.9-.9.2.9 1.3.6 1.2.1a.1.1 90 00-.1 0q-.4.1-.5-.3a.1.1-43.8 010-.1c.4-.5 1.2-.3 1.5.1q.2.2.3.6c.3 1.2-1 1.6-1.8 1.2-.3-.2-.6-.4-1-.5-.7-.1-1.2.1-1.8.5q-.1 0 0 0' fill='rgb(248,196,162)'/%3E%3C/svg%3E"sizes="any"type="image/svg+xml">
 <link rel=stylesheet type=text/css href=../../ast/layton/ltmain.css media=screen>
 <link rel=stylesheet type=text/css href=../../ast/layton/ltpuzzles.css media=screen>
 <link rel=stylesheet type=text/css href=../../ast/layton/sidenav.css media=screen>
 <link rel=stylesheet type=text/css href=../../ast/layton/ltcondensed.css media=screen>
 <script src=../../ast/js.js></script><style>
-    *{
-    --grey:219,184,145;--back:254,224,163;
-    --emph:var(--plred);
-    /*--emph:232,83,89;*/
-    --fore:119,68,17;
-    /*--fore:63,121,99;*/
-    --midd:188,123,70;
-    /*--midd:179,176,79;*/
-    --bgd:242,197,139;--bgl:247,214,170;
-    --hint1:232,232,184;--hint2:200,232,192;--hint3:192,232,216;
-    }
-    .memo{background:url('../ast/lh/bg_memo.png')center no-repeat;background-size:100%512px}
-    .dlg{background:url('../ast/dlg/lh.png')center no-repeat;background-size:100%100%}
-    .layton{background:url('../ast/chn/layton-lh.png')50%90%no-repeat;background-size:100%auto}.layton:before{content:url('../ast/chr/layton-lh.png')}
-    .luke{background:url('../ast/chn/luke-lh.png')50%90%no-repeat;background-size:100%auto}.luke:before{content:url('../ast/chr/luke-lh.png')}
-    .puzzle tr:nth-child(1) th:nth-child(1){background:url('../ast/lh/nazo_bg_01_title.png')bottom}
-    .puzzle tr:nth-child(1) th:nth-child(2){background:url('../ast/lh/nazo_bg_01_picarat.png')center}
-    .puzzle tr:nth-child(2) td:nth-child(1){background:url('../ast/lh/q_bg.png')bottom}
-
-    svg.lh path:first-of-type{
-        fill:rgb(var(--back));
-        d: path("m3.872 5.096q0 0 0 0-.072 0 0 0 .576 0 1.44-.072 5.328-.072 8.928 0c1.008 0 .864 1.008.864 1.728q0 0 0 0c.36-.576 1.008-.792 1.656-.792q.072 0 .072 0c-2.88-4.68-9.36-5.184-12.888-.936q0 0-.072.072m-.648.936c-1.728 2.88-1.224 6.624.936 9.144a.072.072 90 00.072 0c.072 0 .144-.072.288-.072q1.224-.072 2.592-.144a.288.288 90 00.216-.072c.072-.072-.072-.216-.144-.216-.36-.216-.792-.432-1.152-.72q-1.728-1.296-2.232-3.456c-.36-1.44-.432-2.952-.504-4.392q0-.144-.072-.072m12.528 1.368c-.36.936.288 1.728 1.224 1.584q.216 0 .288-.144c.504-.432.36-1.008.144-1.584-.288-.576-1.368-.432-1.656.144m.36 2.304q-.936-.288-1.224-1.296 0-.072 0 0l-.432 2.16q0 .072 0 .072.864-.432 1.656-.936.072 0 0 0m1.8-.072q-1.152.936-2.448 1.584c-.144.144-.36.216-.504.36a.072.072 90 000 .144q.288.36.648.576c.792.576-.72 1.512-1.368.648q-.216-.216-.36-.504 0 0-.072 0c-.288.864-.792 1.44-1.584 2.016-.072.072-.216.144-.36.216q-.072.072 0 .072c1.08.288 2.232.216 3.312.288.216 0 .432.072.648.216a.072.072 90 00.072-.072q2.088-2.376 2.016-5.544 0 0 0 0m-12.888 6.408c2.952 2.304 6.912 2.376 9.864.072q.144-.072 0-.072-4.896.36-9.792-.072-.144 0-.072.072")
-    }
-    svg.lh path:nth-child(3){
-        fill:rgb(var(--back));
-        d: path("m7.5 13q.3-.4.6-.8c.6-.7.5-2 .3-2.9-.2-.7-.3-1.3-.3-2.1a.1.1 90 01.1-.1c.5-.4 1-.7 1.6-.4q.1.1.1.3a.1.1 90 00.1.1c.2-.1.3-.2.2-.5-.3-.7-1.3-.7-1.9-.3-.3.3-.5.5-1 .6-.4.1 0 .4.1.5.2.2.2.6.2.9q.1 1.9 0 2.9c0 .7-.1 1.3-.6 1.7-.4.3-.1.6.2.7a.1.1 90 00.1 0q.7-.4 1.1-.5c1-.1 1.7.6 2.6.4.6-.1 1.3-.6 1.4-1.2.6-2.3-3.2-2.7-2.9-.9.2.9 1.3.6 1.2.1a.1.1 90 00-.1 0q-.4.1-.5-.3a.1.1-43.8 010-.1c.4-.5 1.2-.3 1.5.1q.2.2.3.6c.3 1.2-1 1.6-1.8 1.2-.3-.2-.6-.4-1-.5-.7-.1-1.2.1-1.8.5q-.1 0 0 0")
-    }svg.lh text{font-size:8px;font-weight:normal;fill:rgb(var(--back));text-anchor:middle;font-family:"Noto Serif JP"}
-    a:hover svg.lh circle{fill:rgb(var(--plred))}
-</style>
-</head><div id=wrap><div class=chcol><article><img src=../ast/logo/lt1-5_lh.svg style=width:50%;display:block;margin:auto><h1 style=margin-top:42px><table><tr><td><h1><span>レイトン教授と</span><br>ロンドンの休日</h1></td><td><h1><span>Professor Layton and the</span><br>London Holiday</h1></td></tr></table><div class=hr></div></h1><div style=text-align:center;margin-bottom:42px><img src=../ast/lh/title_bottom.png style='border:4px solid rgb(var(--plblack));width:32%'></div>
+*{
+--grey:219,184,145;--back:254,224,163;
+--bgd:242,197,139;--bgl:247,214,170;
+--fore:119,68,17;--midd:188,123,70;--emph:var(--plred);
+--hint1:232,232,184;--hint2:200,232,192;--hint3:192,232,216;
+}
+svg.lh path:first-of-type{
+    fill:rgb(var(--back));
+    d: path("m3.872 5.096q0 0 0 0-.072 0 0 0 .576 0 1.44-.072 5.328-.072 8.928 0c1.008 0 .864 1.008.864 1.728q0 0 0 0c.36-.576 1.008-.792 1.656-.792q.072 0 .072 0c-2.88-4.68-9.36-5.184-12.888-.936q0 0-.072.072m-.648.936c-1.728 2.88-1.224 6.624.936 9.144a.072.072 90 00.072 0c.072 0 .144-.072.288-.072q1.224-.072 2.592-.144a.288.288 90 00.216-.072c.072-.072-.072-.216-.144-.216-.36-.216-.792-.432-1.152-.72q-1.728-1.296-2.232-3.456c-.36-1.44-.432-2.952-.504-4.392q0-.144-.072-.072m12.528 1.368c-.36.936.288 1.728 1.224 1.584q.216 0 .288-.144c.504-.432.36-1.008.144-1.584-.288-.576-1.368-.432-1.656.144m.36 2.304q-.936-.288-1.224-1.296 0-.072 0 0l-.432 2.16q0 .072 0 .072.864-.432 1.656-.936.072 0 0 0m1.8-.072q-1.152.936-2.448 1.584c-.144.144-.36.216-.504.36a.072.072 90 000 .144q.288.36.648.576c.792.576-.72 1.512-1.368.648q-.216-.216-.36-.504 0 0-.072 0c-.288.864-.792 1.44-1.584 2.016-.072.072-.216.144-.36.216q-.072.072 0 .072c1.08.288 2.232.216 3.312.288.216 0 .432.072.648.216a.072.072 90 00.072-.072q2.088-2.376 2.016-5.544 0 0 0 0m-12.888 6.408c2.952 2.304 6.912 2.376 9.864.072q.144-.072 0-.072-4.896.36-9.792-.072-.144 0-.072.072")
+}
+svg.lh path:nth-child(3){
+    fill:rgb(var(--back));
+    d: path("m7.5 13q.3-.4.6-.8c.6-.7.5-2 .3-2.9-.2-.7-.3-1.3-.3-2.1a.1.1 90 01.1-.1c.5-.4 1-.7 1.6-.4q.1.1.1.3a.1.1 90 00.1.1c.2-.1.3-.2.2-.5-.3-.7-1.3-.7-1.9-.3-.3.3-.5.5-1 .6-.4.1 0 .4.1.5.2.2.2.6.2.9q.1 1.9 0 2.9c0 .7-.1 1.3-.6 1.7-.4.3-.1.6.2.7a.1.1 90 00.1 0q.7-.4 1.1-.5c1-.1 1.7.6 2.6.4.6-.1 1.3-.6 1.4-1.2.6-2.3-3.2-2.7-2.9-.9.2.9 1.3.6 1.2.1a.1.1 90 00-.1 0q-.4.1-.5-.3a.1.1-43.8 010-.1c.4-.5 1.2-.3 1.5.1q.2.2.3.6c.3 1.2-1 1.6-1.8 1.2-.3-.2-.6-.4-1-.5-.7-.1-1.2.1-1.8.5q-.1 0 0 0")
+}svg.lh text{font-size:8px;font-weight:normal;fill:rgb(var(--back));text-anchor:middle;font-family:"Noto Serif JP"}
+a:hover svg.lh circle{fill:rgb(var(--plred))}
+.memo{background:url('../ast/lh/bg_memo.png')center no-repeat;background-size:100%512px}
+.dlg{background:url('../ast/dlg/lh.png')center no-repeat;background-size:100%100%}
+.layton{background:url('../ast/chn/layton-lh.png')50%90%no-repeat;background-size:100%auto}.layton:before{content:url('../ast/chr/layton-lh.png')}
+.luke{background:url('../ast/chn/luke-lh.png')50%90%no-repeat;background-size:100%auto}.luke:before{content:url('../ast/chr/luke-lh.png')}
+.puzzle tr:nth-child(1) th:nth-child(1){background:url('../ast/lh/nazo_bg_01_title.png')bottom}
+.puzzle tr:nth-child(1) th:nth-child(2){background:url('../ast/lh/nazo_bg_01_picarat.png')center}
+.puzzle tr:nth-child(2) td:nth-child(1){background:url('../ast/lh/q_bg.png')bottom}
+</style></head><div id=wrap><div class=chcol><article><img src=../ast/logo/lt1-5_lh.svg style=width:50%;display:block;margin:auto><h1 style=margin-top:42px><table><tr><td><h1><span>レイトン教授と</span><br>ロンドンの休日</h1></td><td><h1><span>Professor Layton and the</span><br>London Holiday</h1></td></tr></table><div class=hr></div></h1><div style=text-align:center><img src=../ast/lh/title_bottom.png style='border:4px solid rgb(var(--plblack));width:32%'></div></article></div>
 <!-- はじめから　　　つづきから　　　本編にもどる -->
-</article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    INTRO -->
+<!-- @ custom-fold @〚ＤＯＮＥ〛INTRO     -->
 <div id=intro class=chcol><article><h1>Introduction<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_001.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e1_t0.txt -->
     <div class='dlg 🇯🇵'><p>うーん、いい<ruby>天気<rt>てんき</rt></ruby>だなぁ。<br>せっかくの<ruby>日曜日<rt>にちようび</rt></ruby>だし、<br><ruby>先生<rt>せんせい</rt></ruby>のところに<ruby>遊<rt>あそ</rt></ruby>びに<ruby>行<rt>い</rt></ruby>こうかな。</p></div>
-    <div class='dlg 🗺️'><p><ruby>Hmm<rt>うーん</rt>, what a<rt>だなぁ</rt> fine<rt>いい</rt> weather<rt>天気</rt>.</ruby> <ruby>It’s<rt>だし</rt> a long-awaited<rt>せっかく</rt> Sunday<rt>日曜日</rt>, so I think<rt>かな</rt></ruby> <ruby>I’ll go<rt>行こう</rt> <span class='hasmore infoa'>spend time<a href=https://jisho.org/word/遊び><span class=infob style=top:-42px>遊び　＝　play, pass time</span></a></span><rt></rt> at<rt>に</rt> the professor<rt>先生</rt>’s<rt>の</rt> place<rt>ところ</rt>.</ruby></p></div>
+    <div class='dlg 🗺️'><p><ruby>Hmm<rt>うーん</rt>, what a<rt>だなぁ</rt> fine<rt>いい</rt> weather<rt>天気</rt>.</ruby> <ruby>It’s<rt>だし</rt> a long-awaited<rt>せっかく</rt> Sunday<rt>日曜日</rt>, so I think<rt>かな</rt></ruby> <ruby>I’ll go<rt>行こう</rt> <span class='hasmore infoa'>spend time<a href=https://jisho.org/word/遊び><span class=infob style=top:-42px>遊び ＝ play, pass time</span></a></span><rt></rt> at<rt>に</rt> the professor<rt>先生</rt>’s<rt>の</rt> place<rt>ところ</rt>.</ruby></p></div>
     <div class='dlg 🇬🇧'><p>Hmm, what a nice day. It’s Sunday, so we can finally take a break. I should go see the professor.</p></div>
 </div></td></tr>
 <tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -53,10 +45,9 @@
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_002.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e1_t1.txt -->
     <div class='dlg 🇯🇵'><p>ここが<ruby>先生<rt>せんせい</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>かな？<br>なんだか、ドキドキするなぁ。</p></div>
-    <div class='dlg 🗺️'><p><ruby>Is<rt>かな</rt> this<rt>ここ</rt> the<rt></rt> professor<rt>先生</rt>’s<rt>の</rt> office?<rt>研究室</rt></ruby> <ruby>Ooh<rt>なぁ</rt>, I’m<rt></rt> kind of<rt>なんだか</rt> <span class='hasmore infoa'>excited<span class=infob style=top:-60px><b>Literally:</b> <cs>ドキドキ</cs><cr>する</cr><br>“[heart] <cr>doing</cr> <cs>boom-boom</cs>”</span></span>.</ruby></p></div>
+    <div class='dlg 🗺️'><p><ruby>Is<rt>かな</rt> this<rt>ここ</rt> the<rt></rt> professor<rt>先生</rt>’s<rt>の</rt> office?<rt>研究室</rt></ruby> <ruby>Ooh<rt>なぁ</rt>, I’m<rt></rt> kind of<rt>なんだか</rt> <span class='hasmore infoa'>excited<a href=https://jisho.org/search/ドキドキする><span class=infob style=top:-60px><b>Literally:</b> <cs>ドキドキ</cs><cr>する</cr><br>“[heart] <cr>doing</cr> <cs>boom-boom</cs>”</span></a></span>.</ruby></p></div>
     <div class='dlg 🇬🇧'><p>Is that his new office? This is exciting!</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr>
 <tr><td class=bg><img src=../ast/lh/bg_003.png></td><td></td><td><div class=row onscroll="ScrollAll(this)"><!-- ???.png -->
     <div class='fancydlg 🇯🇵'><p>エルシャール・レイトン<ruby>教授<rt>きょうじゅ</rt></ruby>は<br>ナゾをによなく<ruby>愛<rt>あい</rt></ruby>する<ruby>考古学者<rt>こうこがくしゃ</rt></ruby>。<br><br><ruby>不思議<rt>ふしぎ</rt></ruby>な<ruby>町<rt>まち</rt></ruby>で<ruby>起<rt>お</rt></ruby>きた<ruby>事件<rt>じけん</rt></ruby>から<ruby>数日<rt>すうじつ</rt></ruby>、<br><ruby>研究室<rt>けんきゅうしつ</rt></ruby>で、お<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りの<ruby>紅茶<rt>こうちゃ</rt>片手<rt>かたて</rt></ruby>に<br>つかの<ruby>間<rt>ま</rt></ruby>の<ruby>休日<rt>きゅうじつ</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごすのだった⋯。</p></div>
     <div class='fancydlg 🗺️'><p><ruby>Professor<rt>教授</rt> Hershel<rt>エルシャール</rt> Layton<rt>レイトン</rt> is an archaeologist<rt>考古学者</rt></ruby> <ruby>who<rt></rt> loves <rt>愛する</rt>puzzles<rt>ナゾ</rt> beyond all else<rt>によなく</rt>.</ruby><br><br><ruby>A few days<rt>数日</rt> after<rt>から</rt> the<rt></rt> incident<rt>事件</rt> that</ruby> <ruby>occurred<rt>起きた</rt> in<rt>で</rt> the<rt></rt> curious<rt>不思議な</rt> village<rt>町</rt>,</ruby> <ruby>he was<rt>だった</rt> spending<rt>過ごす</rt> a fleeting<rt>つかの間の</rt> day off<rt>休日</rt> in<rt>で</rt> his<rt></rt> office<rt>研究室</rt>,</ruby> <ruby>his<rt></rt> favourite<rt>お気に入り</rt> black tea<rt>紅茶</rt> in<rt>に</rt> one hand<rt>片手</rt>…</ruby></p></div>
@@ -84,7 +75,7 @@
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e2_t4.txt -->
     <div class='dlg 🇯🇵'><p>せっかくの<ruby>休日<rt>きゅうじつ</rt></ruby>なので、<br><ruby>遊<rt>あそ</rt></ruby>びに<ruby>来<rt>き</rt></ruby>ちゃいました。</p></div>
-    <div class='dlg 🗺️'><p><ruby>Since<rt>なので</rt> it’s a<rt></rt> long-awaited<rt>せっかく</rt> holiday<rt>休日</rt>,</ruby><br><ruby>I’ve <span class=infoa>come to visit<span class=infob style=top:-50px;width:360px>遊びに　来ちゃ　いました<br>遊びに来る　＝　Come and stay; Drop in; Visit<br>いました　＝　Polite past form​</span></span>.</ruby></p></div>
+    <div class='dlg 🗺️'><p><ruby>Since<rt>なので</rt> it’s a<rt></rt> long-awaited<rt>せっかく</rt> holiday<rt>休日</rt>,</ruby><br><ruby>I’ve <span class='hasmore infoa'>come to visit<span class=infob style=top:-50px;left:12px><a href=https://jisho.org/search/遊びに来ちゃいました>遊び　に　来ちゃ　いました</a><br><a href=https://jisho.org/search/遊びに来る>遊びに来る</a> ＝ Come and stay; Drop in; Visit<br>いました ＝ Polite past form​</span></span>.</ruby></p></div>
     <div class='dlg 🇬🇧'><p>We can finally take a break, so I thought I would drop by to see you.</p></div>
 </div></td></tr>
 <tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e2_t5.txt -->
@@ -99,7 +90,7 @@
 </div></td></tr>
 <tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e2_t7.txt -->
     <div class='dlg 🇯🇵'><p>ああ、<ruby>私<rt>わたし</rt></ruby>の<ruby>恩師<rt>おんし</rt></ruby>であるシュレーダー<br><ruby>博士<rt>はかせ</rt></ruby>から<ruby>譲<rt>ゆず</rt></ruby>り<ruby>受<rt>う</rt></ruby>けた<ruby>研究室<rt>けんきゅうしつ</rt></ruby>だよ。</p></div>
-    <div class='dlg 🗺️'><p><ruby>Yes,<rt>ああ、</rt> I inherited<rt>譲り受けた</rt> <span class='hasmore infoa'>it<span class=infob>研究室　＝　Professor’s office</span></span><rt></rt> from<rt>から</rt> my<rt>私の</rt></ruby><br><ruby><span class='hasmore infoa'>former mentor<span class=infob style=top:-70px>恩師　＝　mentor<br>である　＝　was</span></span>,<rt></rt> Dr.<rt>博士</rt> Schrader<rt>シュレーダー</rt>.</ruby></p></div>
+    <div class='dlg 🗺️'><p><ruby>Yes,<rt>ああ、</rt> I inherited<rt>譲り受けた</rt> <span class='hasmore infoa'>it<span class=infob>研究室 ＝ Professor’s office</span></span><rt></rt> from<rt>から</rt> my<rt>私の</rt></ruby><br><ruby><span class='hasmore infoa'>former mentor<span class=infob style=top:-70px>恩師 ＝ mentor<br>である ＝ was</span></span>,<rt></rt> Dr.<rt>博士</rt> Schrader<rt>シュレーダー</rt>.</ruby></p></div>
     <div class='dlg 🇬🇧'><p>Indeed. It used to belong to my former mentor, Dr. Schrader, before I was transferred here.</p></div>
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -114,7 +105,7 @@
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e2_t9.txt -->
     <div class='dlg 🇯🇵'><p><ruby>気<rt>き</rt></ruby>になるのなら、<br><ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>を<ruby>見<rt>み</rt></ruby>ても<ruby>構<rt>かま</rt></ruby>わないよ。</p></div>
-    <div class='dlg 🗺️'><p><ruby>If<rt>なら</rt> you<span class='hasmore infoa'> feel like it<span class=infob style=top:-36px;width:300px;left:4px><b>Other likely meanings of 気になる:</b><br>…are interested / curious / wondering,</span></span>,</ruby><br><ruby>I don’t mind<rt>構わない</rt> you <rt></rt>taking a look<rt>見ても</rt></ruby><br><ruby>inside<rt>中</rt> the room<rt>部屋</rt>.</ruby></p></div>
+    <div class='dlg 🗺️'><p><ruby>If<rt>なら</rt> you<span class='hasmore infoa'> feel like it<span class=infob style=top:-35px;left:4px><b>Other likely meanings of 気になる:</b><br>…are interested / curious / wondering,</span></span>,</ruby><br><ruby>I don’t mind<rt>構わない</rt> you <rt></rt>taking a look<rt>見ても</rt></ruby><br><ruby>inside<rt>中</rt> the room<rt>部屋</rt>.</ruby></p></div>
     <div class='dlg 🇬🇧'><p>If you are curious, feel free to take a look around.</p></div>
 </div></td></tr>
 <tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e2_t10.txt -->
@@ -124,7 +115,7 @@
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e2_t11.txt -->
     <div class='dlg 🇯🇵'><p><ruby>部屋<rt>へや</rt></ruby>の<ruby>中<rt>なか</rt></ruby>をタッチすると、<br><ruby>隠<rt>かく</rt></ruby>されたナゾが<ruby>出題<rt>しゅつだい</rt></ruby>されます。</p></div>
-    <div class='dlg 🗺️'><p><ruby>Upon<rt>すると</rt> touching<rt>タッチ</rt> inside<rt>中</rt> the<rt></rt> room<rt>部屋</rt>,</ruby> <ruby>hidden<rt>隠された</rt> puzzles<rt>ナゾ</rt> will <rt></rt><a href=https://jisho.org/search/出題されます>question you</a><rt>出題されます</rt></ruby>.</p></div>
+    <div class='dlg 🗺️'><p><ruby>Upon<rt>すると</rt> touching<rt>タッチ</rt> inside<rt>中</rt> the<rt></rt> room<rt>部屋</rt>,</ruby> <ruby>hidden<rt>隠された</rt> puzzles<rt>ナゾ</rt> will <rt></rt><span class='hasmore infoa'>question you<span class=infob style=top:-40px;left:-80px><a href=https://jisho.org/search/出題されます>出題されます</a> = Set up a quiz, an exam</span></span></ruby>.</p></div>
     <div class='dlg 🇬🇧'><p>Upon inspecting the professor’s office, hidden puzzles will appear.</p></div>
 </div></td></tr>
 <tr><td></td><td><div class=row onscroll="ScrollAll(this)">
@@ -142,45 +133,60 @@
     <div class='dlg 🗺️'><p><ruby>Because<rt>ので</rt> inspiration<rt>ひらめき</rt> coins<rt>コイン</rt> cannot be<rt>できません</rt></ruby> <ruby>obtained<rt>入手</rt> inside<rt>の中で</rt> Professor<rt>教授</rt> Layton<rt>レイトン</rt>’s<rt>の</rt> office<rt>研究室</rt>,</ruby></p></div>
     <div class='dlg 🇬🇧'><p>Hint coins cannot be found inside Professor Layton’s office,</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><ruby>計画<rt>けいかく</rt>的<rt>てき</rt></ruby>に<b>ひらめきコイン</b><sup style=font-size:0.7rem>⚠️</sup>を<ruby>使用<rt>しよう</rt></ruby>して、<br><ruby>部屋<rt>へや</rt></ruby>に<ruby>隠<rt>かく</rt></ruby>されたナゾを<ruby>解<rt>と</rt></ruby>きましょう。</p></div>
     <div class='dlg 🗺️'><p><ruby>so<rt>して</rt> use <rt>使用</rt>them<rt>ひらめきコイン</rt> methodically<rt>計画的に</rt>, solve<rt>解きましょう</rt></ruby> <ruby>the <rt></rt>hidden<rt>隠された</rt> puzzles<rt>ナゾ</rt> inside<rt>に</rt> the room<rt>部屋</rt>.</ruby></p></div>
     <div class='dlg 🇬🇧'><p>so use them sparingly in order to solve the puzzles hidden in this room.</p></div>
-</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table></article></div>
+</div></td></tr></table></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    LOCATION                ###        ADD SVG INTERACTION WITH LINKS ON THE MAP         ### -->
-<div id=location class=chcol><article>
-<h1>Location: Professor Layton’s Office<p class=hr></p></h1>
-<table style=text-align:center;margin-bottom:42px>
-<tr>
-    <th style=width:50%><h2>レイトン教授の研究室</h2></th>
-    <th><h2><i>Professor Layton’s Office</i></h2></th>
-</tr>
-<tr>
-    <td style=width:50% class=bg><img src=../ast/lh/bg_005_map.png width=80%></td>
-    <td style=width:50% class=bg><img src=../ast/lh/bg_004.png width=80%></td>
-</tr>
-</table>
-<table style='background:rgb(var(--bgl));text-align:center;border:4px solid rgb(var(--fore));border-radius:5px'>
-<tr><th colspan=2 style='border:2px solid rgb(var(--fore));border-radius:5px;background:rgb(var(--midd))'><h2 style=margin-bottom:0>Objectives</h2></th></tr>
-<!-- data_lt1/storytext/mt_1.txt & data_lt1/storytext/mt_2.txt -->
-<tr>
+<!-- @ custom-fold @〚ＤＯＮＥ〛LOCATION  -->
+<div id=location class=chcol><article><h1>Interactive Map<p class=hr></p></h1>
+<table style=text-align:center;margin-bottom:42px><tr><th style=width:50%><h2>レイトン教授の研究室</h2></th><th><h2><i><ruby>Professor<rt>教授</rt> Layton<rt>レイトン</rt>’s<rt>の</rt> Office<rt>研究室</rt></ruby></i></h2></th></tr><tr><td class=bg><img src=../ast/lh/bg_005_map.png width=80%></td><td style=width:50% class='bg map interact'><img src=../ast/lh/bg_004.png width=80%><svg viewBox='0 0 768 620'style=width:80%;margin-left:10%>
+    <a href=#nazo01><rect x=71.5% y=21% width=95 height=50 /><circle cx=77.5% cy=25.5% r=20 /><text x=77.5% y=25.5% dy=.40em>1</text></a>
+    <a href=#nazo02><polygon points='550,540 505,375 590,360 630,400 650,450 625,535' /><circle cx=74% cy=70% r=20 /><text x=74% y=70% dy=.40em>2</text></a>
+    <a href=#nazo03><circle cx=59% cy=65.5% r=20 /><text x=59% y=65.5% dy=.40em>3</text></a>
+    <a href=#nazo05><rect x=26% y=70% width=95 height=90 style=transform:rotate(30deg) /><circle cx=32% cy=78% r=20 /><text x=32% y=78% dy=.40em>5</text></a>
+    <a href=#nazo06><rect x=27% y=35% width=95 height=90 style=transform:rotate(-5deg) /><circle cx=33% cy=42% r=20 /><text x=33% y=42% dy=.40em>6</text></a>
+    <a href=#nazo07><rect x=33% y=53% width=55 height=70 /><circle cx=36.5% cy=58% r=20 /><text x=36.5% y=58% dy=.40em>7</text></a>
+    <a href=#nazo08><rect x=71.5% y=42.5% width=95 height=40 /><circle cx=77.5% cy=46% r=20 /><text x=77.5% y=46% dy=.40em>8</text></a>
+    <a href=#nazo09><circle cx=68.5% cy=18.5% r=20 /><text x=68.5% y=18.5% dy=.40em>9</text></a>
+    <a href=#nazo10><rect x=17% y=25% width=45 height=180 /><circle cx=20% cy=40% r=20 /><text x=20% y=40% dy=.40em>10</text></a>
+    <a href=#nazo12><rect x=26% y=17% width=75 height=45 style=transform:rotate(10deg) /><circle cx=32% cy=21% r=20 /><text x=32% y=21% dy=.40em>12</text></a>
+    <a href=#nazo04><circle cx=61% cy=42.5% r=20 /><text x=61% y=42.5% dy=.40em>4</text><g><text>
+        <tspan x=61% y=41.5% dy=10% dx=-2%>The stack of paper</tspan>
+        <tspan x=61% y=41.5% dy=13.5% dx=-2%>disappears after</tspan>
+        <tspan x=61% y=41.5% dy=17% dx=-2%>the puzzle is solved.</tspan>
+    </text></g></a>
+    <a href=#nazo11><circle cx=58.5% cy=37% r=20 /><text x=58.5% y=37% dy=.40em>11</text><g><text>
+        <tspan x=58.5% y=37% dy=10% dx=-2%>Hard to access</tspan>
+        <tspan x=58.5% y=37% dy=13.5% dx=-2%>if Puzzle #04 was</tspan>
+        <tspan x=58.5% y=37% dy=17% dx=-2%>not solved first.</tspan>
+    </text></g></a>
+    <a href=#trophy><rect x=12% y=59% width=50 height=115 /><circle cx=15.5% cy=64% r=20 style=fill:rgb(var(--plcyan)) /><text x=15.5% y=64% dy=.40em>T</text><g><text>
+        <tspan x=15.5% y=64% dy=9% dx=-2% style=font-size:24px>Trophy</tspan>
+        <tspan x=15.5% y=64% dy=13.5% dx=-2%>Available from</tspan>
+        <tspan x=15.5% y=64% dy=17% dx=-2%>the start.</tspan>
+    </text></g></a>
+    <a href=#checkletter><rect x=47% y=65% width=75 height=60 /><rect x=53% y=69% width=75 height=45 /><circle cx=55% cy=70% r=20 style=fill:rgb(var(--plcyan)) /><text x=55% y=70% dy=.40em>L</text><g><text>
+        <tspan x=55% y=70% dy=9% dx=-2% style=font-size:24px>Letter</tspan>
+        <tspan x=55% y=70% dy=13.5% dx=-2%>Only appears after</tspan>
+        <tspan x=55% y=70% dy=17% dx=-2%>all puzzles are solved.</tspan>
+    </text></g></a>
+</svg></td></tr></table><h2 style=width:50%;margin-left:50%;margin-top:-2%>Click on the map to look for hidden puzzles!</h2><table style='background:rgb(var(--bgl));border:4px solid rgb(var(--fore));border-radius:5px'><tr><th colspan=2 style='border:2px solid rgb(var(--fore));border-radius:5px;background:rgb(var(--midd))'><h2 style=margin:12px>Objectives</h2></th></tr>
+<tr><!-- data_lt1/storytext/mt_1.txt & data_lt1/storytext/mt_2.txt -->
     <th style=padding:12px>隠された１２のナゾを探せ！</th>
-    <th style=padding:12px><i>Search for 12 hidden puzzles!</i></th>
-</tr>
-<tr><th colspan=2><hr></th></tr><!-- data_lt1/storytext/mt_3.txt -->
-<tr>
+    <th style=padding:12px><i><ruby>Search for<rt>探せ</rt> 12 <rt></rt>hidden<rt>隠された</rt> puzzles<rt>ナゾ</rt>!</ruby></i></th>
+</tr><tr><th colspan=2><hr></th></tr><tr><!-- data_lt1/storytext/mt_3.txt -->
     <th style=padding:12px>手紙を調べてみよう！</th>
-    <th style=padding:12px><i>Examine the letter!</i></th>
-</tr>
-</table>
-</article></div>
+    <th style=padding:12px><i><ruby>Examine<rt> 調べてみよ </rt> the<rt></rt> letter<rt>手紙</rt>!</ruby></i></th>
+</tr></table></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    TROPHY -->
-<div id=trophy class=chcol><article><h1>Dialogue if you inspect the trophy<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e15_t0.txt -->
+<!-- Tutorial screenshots: メモを見るには、。。。。。。。 -->
+<!-- @ custom-fold @           TROPHY    -->
+<div id=trophy class=chcol><article><h1>Inspecting the Trophy<p class=hr></p></h1><table class=translaytion>
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=15.5% cy=64% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e15_t0.txt -->
     <div class='dlg 🇯🇵'><p><ruby>先生<rt>せんせい</rt></ruby>、このトロフィーは？</p></div>
-    <div class='dlg 🗺️'><p>Professor, what is this trophy?</p></div>
+    <div class='dlg 🗺️'><p><ruby>Professor<rt>先生</rt>, <c>[</c>what is<c>]</c> <rt>は</rt>this<rt>この</rt> trophy<rt>トロフィー</rt>?</ruby></p></div>
 </div></td></tr>
 <tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e15_t1.txt -->
     <div class='dlg 🇯🇵'><p><ruby>学生時代<rt>がくせいじだい</rt></ruby>、フェンシングの<ruby>大会<rt>たいかい</rt></ruby>で<br><ruby>優勝<rt>ゆうしょう</rt></ruby>した<ruby>時<rt>とき</rt></ruby>にもらったものだよ。</p></div>
@@ -202,35 +208,11 @@
     <div class='dlg 🇯🇵'><p>やっぱり、<ruby>先生<rt>せんせい</rt></ruby>はすごいですね。</p></div>
     <div class='dlg 🗺️'><p>After all, you’re amazing.</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    FIRST SCHRADER NOTE -->
-<div id=solved1 class=chcol><article><h1>Finding the first Schrader Note<p class=hr></p></h1><h2>This dialogue occurs after solving your first puzzle.</h2><table class=translaytion style=margin-bottom:80px>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t0.txt -->
-    <div class='dlg 🇯🇵'><p><ruby>先生<rt>せんせい</rt></ruby>、メモが<ruby>落<rt>お</rt></ruby>ちてますよ。<br><ruby>大事<rt>だいじ</rt></ruby>なものじゃないんですか？</p></div>
-    <div class='dlg 🗺️'><p>Professor, your notes are falling.<br>Isn’t that important?</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t1.txt -->
-    <div class='dlg 🇯🇵'><p>おや？<br>それは<ruby>私<rt>わたし</rt></ruby>のメモではないようだね。</p></div>
-    <div class='dlg 🗺️'><p>Hm?<br>I don’t think this is mine.</p></div>
-</div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t2.txt -->
-    <div class='dlg 🇯🇵'><p>この<ruby>字<rt>じ</rt></ruby>はシュレーダー<ruby>博士<rt>はかせ</rt></ruby>のものだ。<br>きっと、<ruby>先生<rt>せんせい</rt></ruby>がここを<ruby>出<rt>で</rt></ruby>て<ruby>行<rt>い</rt></ruby>く<ruby>時<rt>とき</rt></ruby>に<br><ruby>落<rt>お</rt></ruby>として<ruby>行<rt>い</rt></ruby>ったのではないかな。</p></div>
-    <div class='dlg 🗺️'><p>This note belongs to Dr. Schrader.<br>He must have dropped it when he left.</p></div>
-</div></td></tr>
-<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t3.txt -->
-    <div class='dlg 🇯🇵'><p>じゃあ、これは<ruby>取<rt>と</rt></ruby>っておいた<ruby>方<rt>ほう</rt></ruby>が<br>よさそうですね。</p></div>
-    <div class='dlg 🗺️'><p>Well, then we should keep it safe.</p></div>
-</div></td></tr>
-</table><h2>シュレーダーメモが追加された！<br>A new Schrader Note has been added!</h2><p style=text-align:center>Every puzzle solved unlocks a new note, but there is no additional dialogue for finding more.</p></article></div>
-<!-- @ ending-fold -->
-<!-- Tutorial screenshots: -->
-<!-- メモを見るには、。。。。。。。 -->
-<!-- </article></div> -->
-<!-- @ custom-fold @    PUZZLE 01 -->
-<div id=nazo01 class=chcol><article><h1 class=infoa>Puzzle #01: How many 9’s are there?<span class=infob><p>This puzzle originally appeared in Curious Village: it is the 3rd weekly puzzle (November 21, 2008).</p></span><p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 01 -->
+<div id=nazo01 class=chcol><article><h1 class=infoa>Puzzle #01: How many 9’s are there?<span class=infob style=left:36%;top:60px;font-size:1.2rem>This puzzle originally appeared in Curious Village.<br>This is the 3rd weekly puzzle (November 21, 2008).</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=77.5% cy=25.5% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t0.txt --><ruby>変<rt>か</rt></ruby>わった<ruby>本<rt>ほん</rt></ruby>が<ruby>多<rt>おお</rt></ruby>いですね。<br>これって<ruby>何冊<rt>なんさつ</rt></ruby>くらいあるんですか？</p></div>
     <div class='dlg 🗺️'><p>There are many strange books.<br>How many are there?</p></div>
 </div></td></tr>
@@ -302,13 +284,11 @@
 </td></tr></table>
 
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=77.5% cy=25.5% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t5.txt -->ええと、どこまで<ruby>数<rt>かぞ</rt></ruby>えたっけ？</p></div>
     <div class='dlg 🗺️'><p>Hmm, how many did I count?</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t9.txt -->やりました、<ruby>先生<rt>せんせい</rt></ruby>！<br>あれ？<br>でも、<ruby>何冊<rt>なんさつ</rt>目<rt>め</rt></ruby>まで<ruby>数<rt>かぞ</rt></ruby>えたっけ⋯？</p></div>
@@ -319,7 +299,6 @@
     <div class='dlg 🗺️'><p>Haha, if we tried to count them all,<br>we would reach nighttime.</p></div>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you inspect the books again<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t6.txt -->それにしても、<br>むずかしそうな<ruby>本<rt>ほん</rt></ruby>ばかりですね。ボクにも<ruby>読<rt>よ</rt></ruby>めるかなぁ？</p></div>
@@ -329,18 +308,38 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t7.txt -->ルークには<ruby>少<rt>すこ</rt></ruby>し<ruby>早<rt>はや</rt></ruby>いかもしれないね。<br>でも、そのうち<ruby>読<rt>よ</rt></ruby>めるようになるよ。</p></div>
     <div class='dlg 🗺️'><p>It might be a little early for you.<br>But you will be able to read it soon.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=77.5% cy=25.5% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e3_t8.txt -->うーん、そうだといいんですけど。</p></div>
     <div class='dlg 🗺️'><p>Well, I hope so.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-</article></div>
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr>
+</table><a href=#solved1><div class=goto style=margin-top:0><p>» First Puzzle Solved: What’s This…?</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 02 -->
-<div id=nazo02 class=chcol><article><h1 class=infoa>Puzzle #02: Dice Roll<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #125.</p></span><p class=hr></p></h1>
+<!-- @ custom-fold @           FIND NOTE -->
+<div id=solved1 class=chcol><article><h1>Finding the first Schrader Note<p class=hr></p></h1><h2>This dialogue occurs after solving your first puzzle.</h2><table class=translaytion style=margin-bottom:80px>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t0.txt -->
+    <div class='dlg 🇯🇵'><p><ruby>先生<rt>せんせい</rt></ruby>、メモが<ruby>落<rt>お</rt></ruby>ちてますよ。<br><ruby>大事<rt>だいじ</rt></ruby>なものじゃないんですか？</p></div>
+    <div class='dlg 🗺️'><p>Professor, your notes are falling.<br>Isn’t that important?</p></div>
+</div></td></tr>
+<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t1.txt -->
+    <div class='dlg 🇯🇵'><p>おや？<br>それは<ruby>私<rt>わたし</rt></ruby>のメモではないようだね。</p></div>
+    <div class='dlg 🗺️'><p>Hm?<br>I don’t think this is mine.</p></div>
+</div></td></tr>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t2.txt -->
+    <div class='dlg 🇯🇵'><p>この<ruby>字<rt>じ</rt></ruby>はシュレーダー<ruby>博士<rt>はかせ</rt></ruby>のものだ。<br>きっと、<ruby>先生<rt>せんせい</rt></ruby>がここを<ruby>出<rt>で</rt></ruby>て<ruby>行<rt>い</rt></ruby>く<ruby>時<rt>とき</rt></ruby>に<br><ruby>落<rt>お</rt></ruby>として<ruby>行<rt>い</rt></ruby>ったのではないかな。</p></div>
+    <div class='dlg 🗺️'><p>This note belongs to Dr. Schrader.<br>He must have dropped it when he left.</p></div>
+</div></td></tr>
+<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e18_t3.txt -->
+    <div class='dlg 🇯🇵'><p>じゃあ、これは<ruby>取<rt>と</rt></ruby>っておいた<ruby>方<rt>ほう</rt></ruby>が<br>よさそうですね。</p></div>
+    <div class='dlg 🗺️'><p>Well, then we should keep it safe.</p></div>
+</div></td></tr>
+</table><h2>シュレーダーメモが追加された！<br>A new Schrader Note has been added!</h2><p style=text-align:center>Every puzzle solved unlocks a new note, but there is no additional dialogue for finding more.</p>
+<a href=#memo><div class=goto><p>» Read Dr. Schrader’s Notes</p></div></a>
+<a href=#location><div class=goto style=margin-top:42px><p>» Back to the Map</p></div></a></article></div>
+<!-- @ ending-fold -->
+<!-- @ custom-fold @           PUZZLE 02 -->
+<div id=nazo02 class=chcol><article><h1 class=infoa>Puzzle #02: Dice Roll<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #125 of Curious Village.</span><p class=hr></p></h1>
 <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-02.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t0.txt --><ruby>先生<rt>せんせい</rt></ruby>はいつもここに<br><ruby>泊<rt>と</rt></ruby>まっているんですよね？</p></div>
     <div class='dlg 🗺️'><p>Professor, you always stay here, don’t you?</p></div>
 </div></td></tr>
@@ -348,7 +347,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t1.txt --><ruby>泊<rt>と</rt></ruby>まるつもりはなくても、<br><ruby>考<rt>かんが</rt></ruby>え<ruby>事<rt>ごと</rt></ruby>をしているうちに、<br><ruby>朝<rt>あさ</rt></ruby>になっていることが<ruby>多<rt>おお</rt></ruby>いんだよ。</p></div>
     <div class='dlg 🗺️'><p>Even if I don’t plan on staying the night,<br>it often ends up being morning while I’m thinking.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=74% cy=70% r=80 style=fill:none /></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t2.txt --><ruby>昨日<rt>きのう</rt></ruby>もこんなナゾを<ruby>考<rt>かんが</rt></ruby>えていてね⋯</p></div>
     <div class='dlg 🗺️'><p>I was thinking about this puzzle yesterday…</p></div>
 </div></td></tr>
@@ -391,7 +390,6 @@
     <p class=🗺️>17.<br><br>The boy was saying the sum of all visible eyes. Only the other side of his eye is looking down and I can’t see it. Since the sum of the dice is 7 on the opposite side, it can be calculated.</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t8.txt --><ruby>先生<rt>せんせい</rt></ruby>、わかりません。</p></div>
@@ -401,15 +399,13 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t9.txt --><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いて<ruby>考<rt>かんが</rt></ruby>えなおしてごらん。<br>そうむずかしいナゾでもないはずだ。</p></div>
     <div class='dlg 🗺️'><p>Calm down and think again.<br>It shouldn’t be such a difficult puzzle.</p></div>
 </td></tr></table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-02.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=74% cy=70% r=80 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t3.txt -->よし、<ruby>今度<rt>こんど</rt></ruby>こそ！</p></div>
     <div class='dlg 🗺️'><p>Alright, this time!</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t6.txt --><ruby>正解<rt>せいかい</rt></ruby>だよ、ルーク。</p></div>
@@ -420,9 +416,8 @@
     <div class='dlg 🗺️'><p>It seems like you to be thinking about a puzzle until morning.</p></div>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you inspect the sofa again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-02.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=74% cy=70% r=80 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t4.txt -->このソファ、ふかふかしてますね。</p></div>
     <div class='dlg 🗺️'><p>This sofa is so fluffy.</p></div>
 </div></td></tr>
@@ -430,11 +425,11 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e4_t5.txt --><ruby>私<rt>わたし</rt></ruby>のお<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りだよ。<br>ここに<ruby>泊<rt>と</rt></ruby>まる<ruby>時<rt>とき</rt></ruby>は、いつも<br>このソファで<ruby>眠<rt>ねむ</rt></ruby>っているんだ。</p></div>
     <div class='dlg 🗺️'><p>It’s my favourite.<br>Whenever I stay here for the night,<br>I always sleep on this sofa.</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 03 -->
-<div id=nazo03 class=chcol><article><h1 class=infoa>Puzzle #03: Apple Worm<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #107.</p></span><p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-03.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 03 -->
+<div id=nazo03 class=chcol><article><h1 class=infoa>Puzzle #03: Apple Worm<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #107 of Curious Village.</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t0.txt --><ruby>先生<rt>せんせい</rt></ruby>、このリンゴ、<br><ruby>虫<rt>むし</rt></ruby>がついてますよ！</p></div>
     <div class='dlg 🗺️'><p>Professor, this apple,<br>it has a bug on it!</p></div>
 </div></td></tr>
@@ -442,7 +437,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t1.txt -->ええ、<ruby>本当<rt>ほんとう</rt></ruby>かい、ルーク？</p></div>
     <div class='dlg 🗺️'><p>Oh, are you sure, Luke?</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=59% cy=66% r=30 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t2.txt --><ruby>本当<rt>ほんとう</rt></ruby>ですよ、<br>ほら、ここです、ここ！</p></div>
     <div class='dlg 🗺️'><p>It’s true,<br>it’s here, it’s here!</p></div>
 </div></td></tr>
@@ -490,7 +485,6 @@
     <p class=🗺️>Correct!<br><br>It looks easy but it’s hard.<br>Did you notice that the parts of the same shape were replaced?</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t8.txt --><ruby>今<rt>いま</rt></ruby>、<ruby>絶対<rt>ぜったい</rt></ruby>にいたんですよ！</p></div>
@@ -498,15 +492,13 @@
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-03.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=59% cy=66% r=30 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t4.txt --><ruby>本当<rt>ほんとう</rt></ruby>に<ruby>虫<rt>むし</rt></ruby>がいたんですってば！</p></div>
     <div class='dlg 🗺️'><p>There really was a bug!</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t6.txt -->うーん、<ruby>部屋<rt>へや</rt></ruby>に<ruby>放<rt>ほう</rt></ruby>っておいたのが<br>まずかったのかな。</p></div>
@@ -517,20 +509,18 @@
     <div class='dlg 🗺️'><p>I can’t eat this.<br>It’s such a waste.</p></div>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you inspect the apple again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-03.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=59% cy=66% r=30 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e5_t5.txt --><ruby>部屋<rt>へや</rt></ruby>に<ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>を<ruby>放<rt>ほう</rt></ruby>っておくなんて、<br><ruby>英国紳士<rt>えいこくしんし</rt>失格<rt>しっかく</rt></ruby>ですよ、<ruby>先生<rt>せんせい</rt></ruby>！</p></div>
     <div class='dlg 🗺️'><p>Leaving food in the room is unworthy of a gentleman, Professor!</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-</article></div>
+</table><a href=#location><div class=goto style=margin-top:0><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 04 -->
-<div id=nazo04 class=chcol><article><h1 class=infoa>Puzzle #04: Stack of Paper<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #034.</p></span><p class=hr></p></h1>
+<!-- @ custom-fold @           PUZZLE 04 -->
+<div id=nazo04 class=chcol><article><h1 class=infoa>Puzzle #04: Stack of Paper<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #034 of Curious Village.</span><p class=hr></p></h1>
 <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-04.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t0.txt -->すごい<ruby>量<rt>りょう</rt></ruby>の<ruby>書類<rt>しょるい</rt></ruby>ですね。<br>どこに<ruby>何<rt>なに</rt></ruby>があるのか、わからなく<br>なったりしないんですか？</p></div>
     <div class='dlg 🗺️'><p>That’s a huge amount of documents.<br>Don’t you lose track of what’s in it?</p></div>
 </div></td></tr>
@@ -538,7 +528,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t1.txt -->それくらい<ruby>把握<rt>はあく</rt></ruby>しているよ。<br><ruby>自分<rt>じぶん</rt></ruby>の<ruby>研究室<rt>けんきゅうしつ</rt></ruby>だからね。</p></div>
     <div class='dlg 🗺️'><p>I understand that much.<br>It’s my office.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=61% cy=42.5% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t2.txt -->さすが<ruby>先生<rt>せんせい</rt></ruby>ですね。<br>でもこれって、<br><ruby>全部<rt>ぜんぶ</rt></ruby>で<ruby>何枚<rt>なんまい</rt></ruby>くらいあるんですかね。</p></div>
     <div class='dlg 🗺️'><p>As expected of the professor.<br>But how many of these are there in total?</p></div>
 </div></td></tr>
@@ -585,7 +575,6 @@
     <p class=🗺️>Correct!<br><br>It sounds easy, but it’s surprisingly difficult.</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t10.txt --><ruby>先生<rt>せんせい</rt></ruby>、やっぱりちょっと<ruby>整理<rt>せいり</rt></ruby>した<ruby>方<rt>ほう</rt></ruby>が<br>いいんじゃないですか？</p></div>
@@ -596,19 +585,15 @@
     <div class='dlg 🗺️'><p>It shouldn’t be a puzzle to worry about.<br>Think again.</p></div>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-04.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_004.png><svg viewBox='0 0 768 620'><circle cx=61% cy=42.5% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t4.txt -->こんなバラバラに<ruby>置<rt>お</rt></ruby>いておくより、<br>きちんと<ruby>重<rt>かさ</rt></ruby>ねた<ruby>方<rt>ほう</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>うん<br>ですけど⋯。</p></div>
     <div class='dlg 🗺️'><p>I think it’s better to stack them properly instead of leaving them scattered like this…</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1>
-<h2><i>Once this puzzle is solved, the stack of papers disappears from the background.</i></h2>
-
-<table class=translaytion>
+<h2><i>Once this puzzle is solved, the stack of papers disappears from the background.</i></h2><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t8.txt -->わかりました！<br>でも、そろえていた<ruby>方<rt>ほう</rt></ruby>が<br><ruby>数<rt>かぞ</rt></ruby>えやすかったんじゃ⋯。</p></div>
     <div class='dlg 🗺️'><p>I got it!<br>But it would have been easier to count them if they were all together…</p></div>
@@ -619,9 +604,7 @@
     <div class='dlg 🗺️'><p>Haha, if we tried to count them all,<br>we would reach nighttime.</p></div>
 </div></td></tr>
 </table>
-
-<h1 style=margin-top:80px>Dialogue if you inspect again the spot<br>where the stack of papers used to be<p class=hr></p></h1>
-<table class=translaytion>
+<h1 style=margin-top:80px>Dialogue if you inspect again the spot<br>where the stack of papers used to be<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t5.txt -->それにしても、こんなに<ruby>書類<rt>しょるい</rt></ruby>がある<br>なんて、<ruby>教授<rt>きょうじゅ</rt></ruby>って<ruby>大変<rt>たいへん</rt></ruby>なんですね。</p></div>
     <div class='dlg 🗺️'><p>Even so, it must be difficult for a professor to have so many documents.</p></div>
@@ -630,18 +613,17 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t6.txt -->そうでもないよ。<br><ruby>自分<rt>じぶん</rt></ruby>の<ruby>理論<rt>りろん</rt></ruby>を<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>て、それを<ruby>形<rt>かたち</rt></ruby>に<br>することは、<ruby>楽<rt>たの</rt></ruby>しいものなんだ。</p></div>
     <div class='dlg 🗺️'><p>Not really.<br>It’s fun to come up with your own theories and bring them to life.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=61% cy=42.5% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e6_t7.txt --><ruby>張<rt>は</rt></ruby>り<ruby>切<rt>き</rt></ruby>った<ruby>結果<rt>けっか</rt></ruby>が<br>この<ruby>書類<rt>しょるい</rt></ruby>の<ruby>山<rt>やま</rt></ruby>ってわけですね。</p></div>
     <div class='dlg 🗺️'><p>The result of your hard work is this mountain of documents.</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-</article></div>
+</table><a href=#location><div class=goto style=margin-top:0><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 05 -->
-<div id=nazo05 class=chcol><article><h1 class=infoa>Puzzle #05: Can you tie a knot?<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #108.</p></span><p class=hr></p></h1>
+<!-- @ custom-fold @           PUZZLE 05 -->
+<div id=nazo05 class=chcol><article><h1 class=infoa>Puzzle #05: Can you tie a knot?<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #108 of Curious Village.</span><p class=hr></p></h1>
 <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-05.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t0.txt -->これは<ruby>古<rt>ふる</rt>新聞<rt>しんぶん</rt></ruby>ですね。<br>ずいぶん<ruby>古<rt>ふる</rt></ruby>いものですけど、<br>もう<ruby>捨<rt>す</rt></ruby>てちゃっていいんですか？</p></div>
     <div class='dlg 🗺️'><p>These are old newspapers.<br>They’re quite old,<br>can I throw them away now?</p></div>
 </div></td></tr>
@@ -649,7 +631,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t1.txt --><ruby>興味深<rt>きょうみぶか</rt></ruby>い<ruby>論文<rt>ろんぶん</rt></ruby>が<ruby>載<rt>の</rt></ruby>っていて<br><ruby>取<rt>と</rt></ruby>っておいたんだが⋯<br>すごい<ruby>量<rt>りょう</rt></ruby>になってしまったね。</p></div>
     <div class='dlg 🗺️'><p>There were some interesting papers and I saved them,<br>but it turned out to be a lot.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=32% cy=78% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t2.txt -->じゃあ、ちゃんと<br>まとめておかないと。<br><ruby>何<rt>なに</rt></ruby>かしばるものはありますか？</p></div>
     <div class='dlg 🗺️'><p>Well then, I have to put it together properly.<br>Do you have something to hold them together?</p></div>
 </div></td></tr>
@@ -696,7 +678,6 @@
     <p class=🗺️>Correct!<br><br>Only C can be knotted.<br>You can see it if you look closely. But it’s a confusing puzzle.</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t14.txt -->こんなに<ruby>散<rt>ち</rt></ruby>らかってると<br><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かないですよ。</p></div>
@@ -704,15 +685,13 @@
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-05.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=32% cy=78% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t4.txt -->ロープがないと<br>この<ruby>新聞<rt>しんぶん</rt></ruby>をまとめられないや。</p></div>
     <div class='dlg 🗺️'><p>I can’t put these newspapers together without a rope.</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t9.txt -->じゃあ、このロープで<br>まとめてしまいますね。</p></div>
@@ -730,13 +709,10 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t12.txt -->この<ruby>記事<rt>きじ</rt></ruby>、<ruby>見逃<rt>みのが</rt></ruby>していたのかな。<br>ふむ、なるほど。ああ、こっちの<br><ruby>論文<rt>ろんぶん</rt></ruby>もなかなか⋯。</p></div>
     <div class='dlg 🗺️'><p>This article, I wonder if I missed it.<br>Hmm, I see. Ah, this paper is also quite…</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t13.txt --><ruby>先生<rt>せんせい</rt></ruby>、そんなことをしてるから<br><ruby>片付<rt>かたづ</rt></ruby>かないんじゃないですか？</p></div>
     <div class='dlg 🗺️'><p>Professor, isn’t it because of this behaviour that you can’t clean up?</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the newspapers again<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t5.txt --><ruby>新聞<rt>しんぶん</rt></ruby>みたいにかさばるものは、<br>まとめた<ruby>方<rt>ほう</rt></ruby>がいいと<ruby>思<rt>おも</rt></ruby>うんですけど。</p></div>
@@ -746,7 +722,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t6.txt -->まとめる<ruby>努力<rt>どりょく</rt></ruby>はしているんだが、<br><ruby>興味深<rt>きょうみぶか</rt></ruby>い<ruby>記事<rt>きじ</rt></ruby>があると、つい<br><ruby>読<rt>よ</rt></ruby>みふけってしまうんだよ。</p></div>
     <div class='dlg 🗺️'><p>I try to keep things organized,<br>but when I find an interesting article,<br>I tend to read it.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=32% cy=78% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t7.txt --><ruby>先生<rt>せんせい</rt></ruby>、もしかして<br><ruby>片付<rt>かたづ</rt></ruby>けは<ruby>苦手<rt>にがて</rt></ruby>なんですか⋯？</p></div>
     <div class='dlg 🗺️'><p>Professor, maybe you’re not good at tidying up…?</p></div>
 </div></td></tr>
@@ -754,11 +730,11 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e7_t8.txt -->⋯⋯。</p></div>
     <div class='dlg 🗺️'><p>…</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 06 -->
-<div id=nazo06 class=chcol><article><h1 class=infoa>Puzzle #06: Which number?<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #065.</p></span><p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-06.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 06 -->
+<div id=nazo06 class=chcol><article><h1 class=infoa>Puzzle #06: Which number?<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #065 of Curious Village.</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t0.txt -->この<ruby>棚<rt>たな</rt></ruby>、<ruby>色<rt>いろ</rt></ruby>んなものが<br><ruby>置<rt>お</rt></ruby>いてありますね。<br>このタイルみたいなのは<ruby>何<rt>なん</rt></ruby>ですか？</p></div>
     <div class='dlg 🗺️'><p>There are many things on this shelf.<br>What are these tiles like?</p></div>
 </div></td></tr>
@@ -766,7 +742,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t1.txt -->うん？どれのことかな？</p></div>
     <div class='dlg 🗺️'><p>Hm? Which one are you talking about?</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=33% cy=42% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t2.txt -->この、<ruby>緑色<rt>みどりいろ</rt></ruby>の⋯。</p></div>
     <div class='dlg 🗺️'><p>This green one…</p></div>
 </div></td></tr>
@@ -813,7 +789,6 @@
     <p class=🗺️>Correct!<br><br>It was the number of areas in contact with other areas on the sides.</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t9.txt -->あまりむずかしく<ruby>考<rt>かんが</rt></ruby>えずに<br><ruby>直感<rt>ちょっかん</rt></ruby>で<ruby>答<rt>こた</rt></ruby>えてごらん。</p></div>
@@ -821,15 +796,13 @@
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-06.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=33% cy=42% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t4.txt -->よし、<ruby>今度<rt>こんど</rt></ruby>こそ！</p></div>
     <div class='dlg 🗺️'><p>Alright, this time!</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t7.txt -->そういうことなんだ！<br><ruby>先生<rt>せんせい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>は、ナゾだらけですね。</p></div>
@@ -840,9 +813,8 @@
     <div class='dlg 🗺️'><p>But this alone isn’t enough,<br>so I’m going to look for a new puzzle.</p></div>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you inspect the shelf again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-06.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=33% cy=42% r=60 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t5.txt -->ボクもナゾは<ruby>好<rt>す</rt></ruby>きですけど、<br>こんなに<ruby>囲<rt>かこ</rt></ruby>まれていたら<br><ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>かないんじゃないですか？</p></div>
     <div class='dlg 🗺️'><p>I like puzzles too, but<br>wouldn’t it be unsettling to be<br>surrounded by so many of them?</p></div>
 </div></td></tr>
@@ -850,9 +822,9 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e8_t6.txt -->ナゾに<ruby>囲<rt>かこ</rt></ruby>まれた<ruby>生活<rt>せいかつ</rt></ruby>というのも、<br>なかなか<ruby>優雅<rt>ゆうが</rt></ruby>なものだよ。</p></div>
     <div class='dlg 🗺️'><p>A life surrounded by puzzles is quite elegant.</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#solved6><div class=goto><p>» 6th Puzzle Solved: Time for a Tea Break!</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    TEA BREAK -->
+<!-- @ custom-fold @           TEA BREAK -->
 <div id=solved6 class=chcol><article><h1>Tea Break<p class=hr></p></h1><h2>This dialogue occurs after solving six puzzles.</h2><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e16_t0.txt -->
     <div class='dlg 🇯🇵'><p>ルーク、そろそろ<br>ティータイムにしようか。</p></div>
@@ -882,7 +854,7 @@
 <tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">    <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e16_t5.txt -->⋯ルーク、<br><ruby>私<rt>わたし</rt></ruby>の<ruby>車<rt>くるま</rt></ruby>じゃ<ruby>不満<rt>ふまん</rt></ruby>なのかい？</div>
     <div class='dlg 🗺️'><p>…Luke,<br>are you unsatisfied with my car?</p></div>
     </td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e16_t6.txt -->
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e16_t6.txt -->
     <div class='dlg 🇯🇵'><p>えっ、いやだなぁ。<br>そんなことないですよ。</p></div>
     <div class='dlg 🗺️'><p>Eh, I don’t like it.<br>That’s not true.</p></div>
 </div></td></tr>
@@ -890,11 +862,11 @@
     <div class='dlg 🇯🇵'><p>⋯⋯。</p></div>
     <div class='dlg 🗺️'><p>…</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 07 -->
-<div id=nazo07 class=chcol><article><h1 class=infoa>Puzzle #07: The Professor’s Hat Box<span class=infob><p>This puzzle originally appeared in Curious Village: it is the 10th weekly puzzle (January 9, 2009).</p></span><p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-07.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 07 -->
+<div id=nazo07 class=chcol><article><h1 class=infoa>Puzzle #07: The Professor’s Hat Box<span class=infob style=left:36%;top:60px;font-size:1.2rem>This puzzle originally appeared in Curious Village.<br>This is the 10th weekly puzzle (January 9, 2009).</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t0.txt -->あれっ？<br>この<ruby>帽子<rt>ぼうし</rt></ruby>、どうして<br>もうひとつあるんですか？</p></div>
     <div class='dlg 🗺️'><p>Huh?<br>Why do you have another one of these hats?</p></div>
 </div></td></tr>
@@ -902,7 +874,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t1.txt -->この<ruby>帽子<rt>ぼうし</rt></ruby>が<ruby>汚<rt>よご</rt></ruby>れてしまった<ruby>時<rt>とき</rt></ruby>に<br><ruby>替<rt>か</rt></ruby>えがないと<ruby>困<rt>こま</rt></ruby>るだろう？</p></div>
     <div class='dlg 🗺️'><p>If my hat gets dirty, I would be in trouble if I didn’t have a replacement, wouldn’t I?</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=36.5% cy=59% r=50 style=fill:none /></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>いつ<ruby>何<rt>なに</rt></ruby>が<ruby>起<rt>お</rt></ruby>きても<ruby>大丈夫<rt>だいじょうぶ</rt></ruby>なように、<br><ruby>部屋<rt>へや</rt></ruby>にもスペアを<ruby>置<rt>お</rt></ruby>いているのさ。</p></div>
     <div class='dlg 🗺️'><p>I keep spares in my room so that I can be prepared for whatever happens.</p></div>
 </div></td></tr>
@@ -910,7 +882,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t2.txt -->いつでも<ruby>身<rt>み</rt></ruby>だしなみに<br><ruby>気<rt>き</rt></ruby>をつかっているんですね。</p></div>
     <div class='dlg 🗺️'><p>You always take care of your appearance.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p class=🇯🇵><ruby>当然<rt>とうぜん</rt></ruby>さ、<ruby>英国紳士<rt>えいこくしんし</rt></ruby>としてはね。</p></div>
     <div class='dlg 🗺️'><p>Of course, as an English gentleman should.</p></div>
 </div></td></tr>
@@ -957,7 +929,6 @@
     <p class=🗺️>Correct!<br><br>Surprisingly difficult?</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t7.txt -->うーん、どれも<ruby>同<rt>おな</rt></ruby>じに<ruby>見<rt>み</rt></ruby>えますね。</p></div>
@@ -968,31 +939,26 @@
     <div class='dlg 🗺️'><p>Look closely,<br>you should be able to tell the difference.</p></div>
 </div></td></tr>
 </table>
-
-<h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion><tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-07.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion><tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=36.5% cy=59% r=50 style=fill:none /></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t4.txt --><ruby>違<rt>ちが</rt></ruby>いはわかったかな、ルーク。</p></div>
     <div class='dlg 🗺️'><p>Can you tell the difference, Luke?</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr></table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
     <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t6.txt --><ruby>本当<rt>ほんとう</rt></ruby>だ、<ruby>組<rt>く</rt></ruby>み<ruby>立<rt>た</rt></ruby>てると、<br>これだけ<ruby>違<rt>ちが</rt></ruby>いますね。</p></div>
     <div class='dlg 🗺️'><p>It’s true, when you assemble it,<br>this is the only difference.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr></table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the hat again<p class=hr></p></h1><table class=translaytion>
-    <tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-07.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+    <tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=36.5% cy=59% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e9_t5.txt --><ruby>帽子<rt>ぼうし</rt></ruby>へのこだわりなら、<br>ボクだって<ruby>負<rt>ま</rt></ruby>けてませんよ。</p></div>
     <div class='dlg 🗺️'><p>If you are particular about hats,<br>I am second to none.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr></table></article></div>
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 08 -->
-<div id=nazo08 class=chcol><article><h1 class=infoa>Puzzle #08: Chicken and Chick<span class=infob><p>This puzzle originally appeared in Curious Village: it is the 18th weekly puzzle (March 6, 2009).</p></span><p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-08.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 08 -->
+<div id=nazo08 class=chcol><article><h1 class=infoa>Puzzle #08: Chicken and Chick<span class=infob style=left:36%;top:60px;font-size:1.2rem>This puzzle originally appeared in Curious Village.<br>This is the 18th weekly puzzle (March 6, 2009).</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t0.txt -->このあたりには<ruby>何<rt>なに</rt></ruby>があるんですか？</p></div>
     <div class='dlg 🗺️'><p>What’s around here?</p></div>
 </div></td></tr>
@@ -1000,7 +966,7 @@
     <div class='dlg 🇯🇵'><p class=🇯🇵><ruby>講義<rt>こうぎ</rt></ruby>で<ruby>使<rt>つか</rt></ruby>ったものなんかを<br>しまっておいたはずだが⋯。</p></div>
     <div class='dlg 🗺️'><p>I should have put away the things I used in the lecture…</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=77.5% cy=46% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t2.txt -->⋯⋯。<br>ヒヨコのおもちゃが<ruby>出<rt>で</rt></ruby>てきました。</p></div>
     <div class='dlg 🗺️'><p>…A toy chick came out.</p></div>
 </div></td></tr>
@@ -1047,23 +1013,16 @@
     <p class=🗺️>Correct!<br><br>They are good friends.</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t8.txt --><ruby>先生<rt>せんせい</rt></ruby>、もう<ruby>少<rt>すこ</rt></ruby>し<ruby>考<rt>かんが</rt></ruby>えさせてください。</p></div>
     <div class='dlg 🗺️'><p>Professor, let me think a little more.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-08.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=77.5% cy=46% r=50 style=fill:none /></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t4.txt --><ruby>答<rt>こた</rt></ruby>えはわかったかい？</p></div>
     <div class='dlg 🗺️'><p>Do you know the answer?</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t6.txt -->でも<ruby>先生<rt>せんせい</rt></ruby>、このヒヨコ、<br><ruby>一個<rt>いっこ</rt></ruby>しか<ruby>見当<rt>みあ</rt></ruby>たりませんよ。</p></div>
@@ -1072,21 +1031,17 @@
 <tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t7.txt --><ruby>本当<rt>ほんとう</rt></ruby>かい？<br>どこへ<ruby>行<rt>い</rt></ruby>ってしまったのかな。</p></div>
     <div class='dlg 🗺️'><p>Really?<br>I wonder where the others have gone.</p></div>
-</div></td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the box again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-08.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=77.5% cy=46% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e10_t5.txt -->それにしても、この<ruby>箱<rt>はこ</rt></ruby>の<ruby>中<rt>なか</rt></ruby>、<br><ruby>色<rt>いろ</rt></ruby>んなものが<ruby>入<rt>はい</rt></ruby>ってますね。</p></div>
     <div class='dlg 🗺️'><p>However, there are many things in this box.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table></article></div>
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 09 -->
-<div id=nazo09 class=chcol><article><h1 class=infoa>Puzzle #09: Island Hopping<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #038.</p></span><p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-09.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 09 -->
+<div id=nazo09 class=chcol><article><h1 class=infoa>Puzzle #09: Island Hopping<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #038 of Curious Village.</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=68.2% cy=19% r=32 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t0.txt -->わあ、きれいな<ruby>写真<rt>しゃしん</rt></ruby>ですね。</p></div>
     <div class='dlg 🗺️'><p>Wow, that’s a beautiful photo.</p></div>
 </div></td></tr>
@@ -1149,7 +1104,6 @@
     <p class=🗺️>Correct!<br><br>Let’s go island hopping.</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t13.txt -->うーん、むずかしいですね。</p></div>
@@ -1157,15 +1111,13 @@
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-09.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=68.2% cy=19% r=32 style=fill:none /></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t5.txt -->あせらずじっくり<ruby>考<rt>かんが</rt></ruby>えてごらん。</p></div>
     <div class='dlg 🗺️'><p>Don’t be hasty and think about it carefully.</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t8.txt --><ruby>南<rt>みなみ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>を<ruby>自分<rt>じぶん</rt></ruby>の<ruby>足<rt>あし</rt></ruby>で<ruby>渡<rt>わた</rt></ruby>り<ruby>歩<rt>ある</rt></ruby>くなんて、<br><ruby>大変<rt>たいへん</rt></ruby>そうだけど<ruby>楽<rt>たの</rt></ruby>しそうですね。</p></div>
@@ -1183,15 +1135,12 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t11.txt -->ん？もちろん、<ruby>取<rt>と</rt></ruby>るに<br><ruby>決<rt>き</rt></ruby>まってるじゃないか。</p></div>
     <div class='dlg 🗺️'><p>Hm? Of course I keep it.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t12.txt -->⋯なんだか、<ruby>想像<rt>そうぞう</rt></ruby>できません。</p></div>
     <div class='dlg 🗺️'><p>…I can’t imagine it.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the photo again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-09.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=68.2% cy=19% r=32 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t6.txt --><ruby>南<rt>みなみ</rt></ruby>の<ruby>島<rt>しま</rt></ruby>もいいけど、<br>ボクは<ruby>動物<rt>どうぶつ</rt></ruby>がたくさんいる<ruby>場所<rt>ばしょ</rt></ruby>へ<br><ruby>行<rt>い</rt></ruby>ってみたいですね。</p></div>
     <div class='dlg 🗺️'><p>A southern island would be nice,<br>but I’d like to go to a place with lots of animals.</p></div>
 </div></td></tr>
@@ -1199,11 +1148,11 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e11_t7.txt -->ルークは<ruby>本当<rt>ほんとう</rt></ruby>に<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きだね。</p></div>
     <div class='dlg 🗺️'><p>You really like animals.</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 10 -->
-<div id=nazo10 class=chcol><article><h1 class=infoa>Puzzle #10: Maze Door<span class=infob><p>This puzzle originally appeared in Curious Village: it is the 21st weekly puzzle (March 27, 2009).</p></span><p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-10.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 10 -->
+<div id=nazo10 class=chcol><article><h1 class=infoa>Puzzle #10: Maze Door<span class=infob style=left:36%;top:60px;font-size:1.2rem>This puzzle originally appeared in Curious Village.<br>This is the 21st weekly puzzle (March 27, 2009).</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><ellipse cx=20% cy=40% rx=50 ry=100 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t0.txt --><ruby>先生<rt>せんせい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>には、<ruby>変<rt>か</rt></ruby>わったものばかり<br><ruby>置<rt>お</rt></ruby>いてあるんですね。</p></div>
     <div class='dlg 🗺️'><p>There are only strange things in your room.</p></div>
 </div></td></tr>
@@ -1266,7 +1215,6 @@
     <p class=🗺️>Correct!<br><br>Your escape was successful!</p>
 </div></td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t15.txt -->なんだか、<br>わからなくなってきました。</p></div>
@@ -1274,15 +1222,13 @@
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-10.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><ellipse cx=20% cy=40% rx=50 ry=100 style=fill:none /></svg></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t6.txt -->もう<ruby>一度<rt>いちど</rt>挑戦<rt>ちょうせん</rt></ruby>してごらん。</p></div>
     <div class='dlg 🗺️'><p>Try again.</p></div>
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
-
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t10.txt --><ruby>解<rt>と</rt></ruby>けました、<ruby>先生<rt>せんせい</rt></ruby>！</p></div>
@@ -1300,15 +1246,12 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t13.txt -->じゃあ、きっとその<ruby>時代<rt>じだい</rt></ruby>にも<br><ruby>先生<rt>せんせい</rt></ruby>のようなナゾ<ruby>好<rt>ず</rt></ruby>きが<br>いたんでしょうね。</p></div>
     <div class='dlg 🗺️'><p>Then, I’m sure there must have been a puzzle lover like you at that time.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t14.txt -->そうかもしれないね。</p></div>
     <div class='dlg 🗺️'><p>Maybe so.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the obelisk again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-10.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><ellipse cx=20% cy=40% rx=50 ry=100 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t7.txt -->この<ruby>変<rt>へん</rt></ruby>な<ruby>形<rt>かたち</rt></ruby>の<ruby>石<rt>いし</rt></ruby>は、<br><ruby>先生<rt>せんせい</rt></ruby>が<ruby>見<rt>み</rt></ruby>つけて<ruby>来<rt>き</rt></ruby>たんですか？</p></div>
     <div class='dlg 🗺️'><p>Did you find this odd-shaped stone?</p></div>
 </div></td></tr>
@@ -1316,16 +1259,15 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t8.txt -->これは、<ruby>私<rt>わたし</rt></ruby>が<ruby>考古学者<rt>こうこがくしゃ</rt></ruby>になったばかり<br>の<ruby>頃<rt>ころ</rt></ruby>、シュレーダー<ruby>博士<rt>はかせ</rt></ruby>に<ruby>譲<rt>ゆず</rt></ruby>り<ruby>受<rt>う</rt></ruby>けた<br>ものなんだよ。</p></div>
     <div class='dlg 🗺️'><p>It was given to me by Dr. Schrader when I was an early archaeologist.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e12_t9.txt -->じゃあ、これは<ruby>先生<rt>せんせい</rt></ruby>の<ruby>宝物<rt>たからもの</rt></ruby>って<br>わけですね。</p></div>
     <div class='dlg 🗺️'><p>So this is your treasure.</p></div>
 </div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 11 -->
-<div id=nazo11 class=chcol><article><h1 class=infoa>Puzzle #11: Electric Wire Puzzle<span class=infob><p>This puzzle originally appeared in Curious Village: it is the 27st weekly puzzle (May 8, 2009).</p></span><p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-11.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 11 -->
+<div id=nazo11 class=chcol><article><h1 class=infoa>Puzzle #11: Electric Wire Puzzle<span class=infob style=left:36%;top:60px;font-size:1.2rem>This puzzle originally appeared in Curious Village.<br>This is the 27st weekly puzzle (May 8, 2009).</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t0.txt --><ruby>先生<rt>せんせい</rt></ruby>、このスタンド、もう<br><ruby>壊<rt>こわ</rt></ruby>れちゃってるみたいですよ？</p></div>
     <div class='dlg 🗺️'><p>Professor, this stand looks like it’s already broken.</p></div>
 </div></td></tr>
@@ -1333,7 +1275,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t1.txt -->いいや、それを<ruby>点<rt>つ</rt></ruby>けるには、<br>ちょっとしたコツがいるんだよ。</p></div>
     <div class='dlg 🗺️'><p>No, there’s a little trick to turning it on.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=58.2% cy=39% r=38 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t2.txt -->えっ、どういうことですか？</p></div>
     <div class='dlg 🗺️'><p>What do you mean?</p></div>
 </div></td></tr>
@@ -1378,35 +1320,24 @@
 <td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
     <p class=🇯🇵><!-- data_lt1/qtext/c_11.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br>これで<ruby>明<rt>あか</rt></ruby>るくなるね！</p>
     <p class=🗺️>Correct!<br><br>It will brighten up!</p>
-</div></td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t9.txt --><ruby>電球<rt>でんきゅう</rt></ruby>の<ruby>寿命<rt>じゅみょう</rt></ruby>⋯<br>ではないんですよね、<ruby>先生<rt>せんせい</rt></ruby>？</p></div>
     <div class='dlg 🗺️'><p>It’s not the lifespan of the light bulb, is it Professor?</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-11.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=58.2% cy=39% r=38 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t4.txt --><ruby>本当<rt>ほんとう</rt></ruby>に<ruby>点<rt>つ</rt></ruby>くのかなあ⋯？</p></div>
     <div class='dlg 🗺️'><p>Will it really turn on…?</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t8.txt --><ruby>生活<rt>せいかつ</rt></ruby>にもナゾを<br><ruby>取<rt>と</rt></ruby>り<ruby>入<rt>い</rt></ruby>れているなんて、<br>さすが<ruby>先生<rt>せんせい</rt></ruby>ですね。</p></div>
     <div class='dlg 🗺️'><p>It really is like you to incorporate puzzles into your life.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the lamp again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-11.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=58.2% cy=39% r=38 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t5.txt --><ruby>先生<rt>せんせい</rt></ruby>、<ruby>新<rt>あたら</rt></ruby>しいスタンドを<br><ruby>買<rt>か</rt></ruby>った<ruby>方<rt>ほう</rt></ruby>がいいんじゃないですか？</p></div>
     <div class='dlg 🗺️'><p>Professor, shouldn’t you buy a new stand?</p></div>
 </div></td></tr>
@@ -1414,16 +1345,15 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t6.txt -->ルーク、<ruby>物<rt>もの</rt></ruby>は<ruby>大切<rt>たいせつ</rt></ruby>にするものだよ。<br><ruby>英国紳士<rt>えいこくしんし</rt></ruby>としてはね。</p></div>
     <div class='dlg 🗺️'><p>Luke, things are important.<br>As an English gentleman.</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e13_t7.txt -->はぁ、そういうものなんですか⋯。</p></div>
     <div class='dlg 🗺️'><p>Ha, is that what it is…?</p></div>
 </div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    PUZZLE 12 -->
-<div id=nazo12 class=chcol><article><h1 class=infoa>Puzzle #12: Ostracized<span class=infob><p>This puzzle originally appeared in Curious Village: it is puzzle #017.</p></span><p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-12.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<!-- @ custom-fold @           PUZZLE 12 -->
+<div id=nazo12 class=chcol><article><h1 class=infoa>Puzzle #12: Ostracized<span class=infob style=left:36%;top:60px;font-size:1.2rem>This is also puzzle #017 of Curious Village.</span><p class=hr></p></h1><table class=translaytion>
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t0.txt -->これは<ruby>水晶玉<rt>すいしょうだま</rt></ruby>ですね。<br><ruby>占<rt>うらな</rt></ruby>いでも<ruby>始<rt>はじ</rt></ruby>めたんですか？</p></div>
     <div class='dlg 🗺️'><p>This is a crystal ball.<br>Did you start fortune-telling?</p></div>
 </div></td></tr>
@@ -1431,7 +1361,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t1.txt -->いや、それはオーパーツと<ruby>言<rt>い</rt></ruby>ってね⋯</p></div>
     <div class='dlg 🗺️'><p>No, this is called an <a href=https://en.wikipedia.org/wiki/Out-of-place_artifact>OOPArt</a>…</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=32% cy=21% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t2.txt -->そうだ！<ruby>占<rt>うらな</rt></ruby>いと<ruby>言<rt>い</rt></ruby>えば、<br>ボクもこんなのを<ruby>知<rt>し</rt></ruby>っています。</p></div>
     <div class='dlg 🗺️'><p>That’s it! Speaking of fortune-telling,<br>I also know of this trick.</p></div>
 </div></td></tr>
@@ -1477,25 +1407,17 @@
 <td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
     <p class=🇯🇵><!-- data_lt1/qtext/c_12.txt --><ruby>正解<rt>せいかい</rt></ruby>！<br><br><ruby>簡単<rt>かんたん</rt></ruby>そうなのに、<ruby>気<rt>き</rt></ruby>がつくのに<ruby>時間<rt>じかん</rt></ruby>が<br>かかることもあるパズルだ。</p>
     <p class=🗺️>Correct!<br><br>It’s a puzzle that looks easy, but it can take some time to figure out.</p>
-</div></td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t12.txt -->えっ、やめちゃうんですか？</p></div>
     <div class='dlg 🗺️'><p>Eh, are you going to stop?</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue when you come back<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-12.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=32% cy=21% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t3.txt -->この<ruby>並<rt>なら</rt></ruby>んだトランプから、<br><ruby>気<rt>き</rt></ruby>になるものを<ruby>選<rt>えら</rt></ruby>ぶんですよ。</p></div>
     <div class='dlg 🗺️'><p>From this row of playing cards,<br>choose the one that interests you.</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table>
-
+</div></td></tr><tr><td style=height:128px>&nbsp;</td></tr></table>
 <h1 style=margin-top:80px>Dialogue after solving the puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t8.txt -->それで、<ruby>何<rt>なに</rt></ruby>がわかるのかな？</p></div>
@@ -1512,11 +1434,9 @@
 <tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t11.txt --><ruby>当然<rt>とうぜん</rt></ruby>ですよ！<br>ボクだって<ruby>先生<rt>せんせい</rt></ruby>の<ruby>弟子<rt>でし</rt></ruby>ですからね。</p></div>
     <div class='dlg 🗺️'><p>Of course!<br>I’m your apprentice, after all.</p></div>
-</div></td></tr>
-</table>
-
+</div></td></tr></table>
 <h1 style=margin-top:80px>Dialogue if you inspect the OOPArt again<p class=hr></p></h1><table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-12.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t4.txt --><ruby>先生<rt>せんせい</rt></ruby>はいつから<br><ruby>占<rt>うらな</rt></ruby>いを<ruby>始<rt>はじ</rt></ruby>めたんですか？</p></div>
     <div class='dlg 🗺️'><p>Professor, when did you<br>start fortune-telling?</p></div>
 </div></td></tr>
@@ -1524,7 +1444,7 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t5.txt -->いや、あれはオーパーツと<ruby>言<rt>い</rt></ruby>って⋯</p></div>
     <div class='dlg 🗺️'><p>No, this is called an OOPArt…</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class='bg map'rowspan=2><img src=../ast/lh/bg_005.png><svg viewBox='0 0 768 620'><circle cx=32% cy=21% r=50 style=fill:none /></svg></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t6.txt --><ruby>今度<rt>こんど</rt></ruby>、ボクも<ruby>占<rt>うらな</rt></ruby>ってくださいね。</p></div>
     <div class='dlg 🗺️'><p>Next time, please tell my fortune too.</p></div>
 </div></td></tr>
@@ -1532,13 +1452,13 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e14_t7.txt -->⋯⋯。</p></div>
     <div class='dlg 🗺️'><p>…</p></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#memo><div class=goto><p>» Read Dr. Schrader’s Notes</p></div></a>
+<a href=#outro><div class=goto style=margin-top:42px><p>» Conclude the Story</p></div></a></article></div>
 <!-- <h2>All twelve puzzles were solved by Luke, this one included.<br>I find it a bit funny that Luke would be the one solving a puzzle<br>that he seems to have instigated himself.</h2> -->
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    SCHRADER’S NOTES -->
+<!-- @ custom-fold @           READ MEMO -->
 <div id=memo class=chcol><article><h1>Schrader’s Notes<p class=hr></p></h1>
 <img src=../ast/lh/schrader_memo.png style=display:block;margin:auto><h2>One new note is unlocked after every puzzle solved.</h2><table class=translaytion>
-
 <tr><td><div class=row onscroll="ScrollAll(this)">
     <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_1.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１</p><hr><p><!-- data_lt1/storytext/id_1.txt --><ruby>長年<rt>ながねん</rt>愛用<rt>あいよう</rt></ruby>し<ruby>続<rt>つづ</rt></ruby>けているせいか、<br>この<ruby>手帳<rt>てちょう</rt></ruby>もボロボロになってきた。<br><ruby>破<rt>やぶ</rt></ruby>れかけたページを<ruby>留<rt>と</rt></ruby>めて<ruby>使<rt>つか</rt></ruby>っては<br>いるが、いつバラバラになるか<br><ruby>知<rt>し</rt></ruby>れたものではない。<br>そろそろ<ruby>新<rt>あたら</rt></ruby>しい<ruby>手帳<rt>てちょう</rt></ruby>を<ruby>買<rt>か</rt></ruby>うべきかも<br>しれんな。</p></div></div>
     <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 1</p><hr><p>Perhaps because I’ve been using it for many years, this notebook has become tattered.<br>I’m still using the torn pages, but I don’t know when they’ll come apart.<br>Maybe I should buy a new notebook soon.</p></div></div>
@@ -1568,7 +1488,7 @@
     <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 7</p><hr><p>Layton’s activity was also written on the front page of today’s newspaper.<br>He has a high nose as if it were his own.<br><br>However, what really bothered me was the article about “Devil’s Box”…<br>It’s an exaggeration to say that anyone who opens it dies, but it seems that there have actually been several deaths.<br>Maybe that box…</p></div></div>
 </div></td></tr>
 <tr><td><div class=row onscroll="ScrollAll(this)">
-    <div class='memo 🇯🇵'><div class=infoa><span class=infob><p class=🇯🇵>⚠️The DS version originally wrote 言 instead of い. 言 would still be pronounced い in this context.</p></span><p><!-- data_lt1/storytext/it_8.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ８</p><hr><p><!-- data_lt1/storytext/id_8.txt --><ruby>私<rt>わたし</rt></ruby>の<ruby>探<rt>さが</rt></ruby>しているあの<ruby>箱<rt>はこ</rt></ruby>こそ、<ruby>世間<rt>せけん</rt></ruby>を<br><ruby>騒<rt>さわ</rt></ruby>がせている『<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>』だろう。<br>そうと<ruby>知<rt>し</rt></ruby>ればますます<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れない<br>わけにはいかない。<br><ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>に<ruby>災<rt>わざわ</rt></ruby>いが<ruby>降<rt>ふ</rt></ruby>りかかると<b>い</b><sup style=font-size:0.7rem>⚠️</sup>うが<br>それは<ruby>価値<rt>かち</rt></ruby>のあるものにつきものの、<br><ruby>単<rt>たん</rt></ruby>なるうわさに<ruby>違<rt>ちが</rt></ruby>いない。<br><ruby>世間<rt>せけん</rt></ruby>にくさらせておくくらいなら、<br><ruby>厳重<rt>げんじゅう</rt></ruby>に<ruby>保管<rt>ほかん</rt></ruby>しておきたいものだ。</p></div></div>
+    <div class='memo 🇯🇵'><div class=infoa><span class=infob style=left:59%;right:1%;top:58%>⚠️The DS version originally wrote 言 instead of い. 言 would still be pronounced い in this context.</span><p style=text-align:center><!-- data_lt1/storytext/it_8.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ８</p><hr><p><!-- data_lt1/storytext/id_8.txt --><ruby>私<rt>わたし</rt></ruby>の<ruby>探<rt>さが</rt></ruby>しているあの<ruby>箱<rt>はこ</rt></ruby>こそ、<ruby>世間<rt>せけん</rt></ruby>を<br><ruby>騒<rt>さわ</rt></ruby>がせている『<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>』だろう。<br>そうと<ruby>知<rt>し</rt></ruby>ればますます<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れない<br>わけにはいかない。<br><ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>に<ruby>災<rt>わざわ</rt></ruby>いが<ruby>降<rt>ふ</rt></ruby>りかかると<b>い</b><sup style=font-size:0.7rem>⚠️</sup>うが<br>それは<ruby>価値<rt>かち</rt></ruby>のあるものにつきものの、<br><ruby>単<rt>たん</rt></ruby>なるうわさに<ruby>違<rt>ちが</rt></ruby>いない。<br><ruby>世間<rt>せけん</rt></ruby>にくさらせておくくらいなら、<br><ruby>厳重<rt>げんじゅう</rt></ruby>に<ruby>保管<rt>ほかん</rt></ruby>しておきたいものだ。</p></div></div>
     <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 8</p><hr><p>That box I’m looking for is probably the ’Devil’s Box’ that’s causing a stir in the world.<br>If you know that, you can’t help but get it.<br>It is said that misfortune will befall those who open it, but that must be just a rumor that goes along with anything of value.<br>I’d rather keep it safe than let it be exposed to the world.</p></div></div>
 </div></td></tr>
 <tr><td><div class=row onscroll="ScrollAll(this)">
@@ -1576,7 +1496,7 @@
     <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 9</p><hr><p>The Devil’s Box seems to have something to do with the rumored town.<br>Perhaps the crest on the lid of the box must have been a clue.<br>Who made the Devil’s Box and why?<br>Why is that box called the Cursed Box?</p></div></div>
 </div></td></tr>
 <tr><td><div class=row onscroll="ScrollAll(this)">
-    <div class='memo 🇯🇵'><div class=infoa><span class=infob><p class=🇯🇵>⚠️The DS version originally wrote 言 instead of い. 言 would still be pronounced い in this context.</p></span><p><!-- data_lt1/storytext/it_10.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１０</p><hr><p><!-- data_lt1/storytext/id_10.txt --><ruby>新聞<rt>しんぶん</rt></ruby>に<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>の<ruby>記事<rt>きじ</rt></ruby>が<ruby>載<rt>の</rt></ruby>っていた。<br><ruby>骨董市<rt>こっとういち</rt></ruby>であれを<ruby>売<rt>う</rt></ruby>っていた<ruby>人物<rt>じんぶつ</rt></ruby>が、<br><ruby>好奇心<rt>こうきしん</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けて<ruby>箱<rt>はこ</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてしまった<br>ようだ。<br>やはり、<ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>を<ruby>死<rt>し</rt></ruby>にいたらせると<br><b>い</b><sup style=font-size:0.7rem>⚠️</sup>うのは<ruby>本当<rt>ほんとう</rt></ruby>なのかもしれない。<br>だがそれでも、あれを<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れようと<br>いう<ruby>私<rt>わたし</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちに<ruby>変<rt>か</rt></ruby>わりはない。<br><ruby>何<rt>なん</rt></ruby>としても<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてみせよう。</p></div></div>
+    <div class='memo 🇯🇵'><div class=infoa><span class=infob style=left:20%;right:40%;top:65%>⚠️The DS version originally wrote 言 instead of い. 言 would still be pronounced い in this context.</span><p style=text-align:center><!-- data_lt1/storytext/it_10.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１０</p><hr><p><!-- data_lt1/storytext/id_10.txt --><ruby>新聞<rt>しんぶん</rt></ruby>に<ruby>悪魔<rt>あくま</rt></ruby>の<ruby>箱<rt>はこ</rt></ruby>の<ruby>記事<rt>きじ</rt></ruby>が<ruby>載<rt>の</rt></ruby>っていた。<br><ruby>骨董市<rt>こっとういち</rt></ruby>であれを<ruby>売<rt>う</rt></ruby>っていた<ruby>人物<rt>じんぶつ</rt></ruby>が、<br><ruby>好奇心<rt>こうきしん</rt></ruby>に<ruby>負<rt>ま</rt></ruby>けて<ruby>箱<rt>はこ</rt></ruby>を<ruby>開<rt>あ</rt></ruby>けてしまった<br>ようだ。<br>やはり、<ruby>開<rt>あ</rt></ruby>けた<ruby>者<rt>もの</rt></ruby>を<ruby>死<rt>し</rt></ruby>にいたらせると<br><b>い</b><sup style=font-size:0.7rem>⚠️</sup>うのは<ruby>本当<rt>ほんとう</rt></ruby>なのかもしれない。<br>だがそれでも、あれを<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れようと<br>いう<ruby>私<rt>わたし</rt></ruby>の<ruby>気持<rt>きも</rt></ruby>ちに<ruby>変<rt>か</rt></ruby>わりはない。<br><ruby>何<rt>なん</rt></ruby>としても<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れてみせよう。</p></div></div>
     <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 10</p><hr><p>There was an article about the Devil’s Box in the newspaper.<br>It seems that the person who sold it at the antique market got overwhelmed by curiosity and opened the box.<br>After all, it may be true to say that those who open it will die.<br>But that doesn’t change my desire to get it.<br>I must get it no matter what.</p></div></div>
 </div></td></tr>
 <tr><td><div class=row onscroll="ScrollAll(this)">
@@ -1587,9 +1507,10 @@
     <div class='memo 🇯🇵'><div><p><!-- data_lt1/storytext/it_12.txt -->シュレーダー<ruby>博士<rt>はかせ</rt></ruby>のメモ１２</p><hr><p><!-- data_lt1/storytext/id_12.txt --><ruby>知<rt>し</rt></ruby>り<ruby>合<rt>あ</rt></ruby>いの<ruby>骨董<rt>こっとう</rt>屋<rt>や</rt></ruby>が、<ruby>珍<rt>めずら</rt></ruby>しい<ruby>宝石箱<rt>ほうせきばこ</rt></ruby>を<br><ruby>入荷<rt>にゅうか</rt></ruby>したと<ruby>教<rt>おし</rt></ruby>えてくれた。<br><ruby>手元<rt>てもと</rt></ruby>に<ruby>届<rt>とど</rt></ruby>いた<ruby>写真<rt>しゃしん</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>したが、<br><ruby>間違<rt>まちが</rt></ruby>いなく<ruby>私<rt>わたし</rt></ruby>が<ruby>見<rt>み</rt></ruby>かけたあの<ruby>箱<rt>はこ</rt></ruby>だ。<br><ruby>私<rt>わたし</rt></ruby>が<ruby>探<rt>さが</rt></ruby>していたのを<ruby>思<rt>おも</rt></ruby>い<ruby>出<rt>だ</rt></ruby>し、<ruby>知<rt>し</rt></ruby>らせ<br>てくれたのだろう。ありがたい<ruby>事<rt>こと</rt></ruby>だ。<br>ようやく、あの<ruby>箱<rt>はこ</rt></ruby>を<ruby>手<rt>て</rt></ruby>に<ruby>入<rt>い</rt></ruby>れられる。<br>もうすぐ<ruby>私<rt>わたし</rt></ruby>の<ruby>元<rt>もと</rt></ruby>にあの<ruby>箱<rt>はこ</rt></ruby>が⋯。</p></div></div>
     <div class='memo 🗺️'><div><p>Dr. Schrader’s Note 12</p><hr><p>An acquaintance of an antique shop told me that he had received a rare jewelry box.<br>I checked the photo I received and it was definitely the box I saw.<br>He must have remembered what I was looking for and let me know. Thank you.<br>Finally got that box.<br>I’ll have that box soon…</p></div></div>
 </div></td></tr>
-</table></article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a>
+<a href=#outro><div class=goto style=margin-top:42px><p>» Conclude the Story</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    OUTRO -->
+<!-- @ custom-fold @           SOLVED 12 -->
 <div id=outro class=chcol><article><h1>After solving the last puzzle<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t0.txt -->それにしても、<ruby>先生<rt>せんせい</rt></ruby>の<ruby>部屋<rt>へや</rt></ruby>には<br>ナゾがいっぱいですね。</p></div>
@@ -1613,7 +1534,7 @@
 </div></td></tr>
 <tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t5.txt -->せっかくだから、<ruby>調査<rt>ちょうさ</rt></ruby>の<ruby>記録<rt>きろく</rt></ruby>を<br>つけておくといいんじゃないかな。</p></div>
-    <div class='dlg 🗺️'><p>Since it’s a big deal, wouldn’t it be a good idea<br>to keep a record of the investigation?</p></div>
+    <div class='dlg 🗺️'><p>Since it’s a big deal, wouldn’t it be a good idea to keep a record of the investigation?</p></div>
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t6.txt -->そうですね。</p></div>
@@ -1629,19 +1550,19 @@
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t8.txt --><ruby>郵便物<rt>ゆうびんぶつ</rt></ruby>かな？</p></div>
     <div class='dlg 🗺️'><p>Is it mail?</p></div>
 </div></td></tr>
-<tr><td class=bg rowspan=3><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td class=bg rowspan=2><img src=../ast/lh/bg_005.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t9.txt -->ボクが<ruby>見<rt>み</rt></ruby>て<ruby>来<rt>き</rt></ruby>ます。</p></div>
     <div class='dlg 🗺️'><p>I will go check.</p></div>
 </div></td></tr>
-<tr><td></td><td><p class=fancydlg>Luke disappears for an instant, then comes back.</p></td></tr>
-<tr><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
+<tr><td></td><td><p class=fancydlg>Luke disappears for an instant,<br>then comes back.</p></td></tr>
+<tr><td></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><!-- data_lt1/etext/e17_t10.txt --><ruby>先生<rt>せんせい</rt></ruby>、<ruby>手紙<rt>てがみ</rt></ruby>が<ruby>届<rt>とど</rt></ruby>いてました。<br><ruby>机<rt>つくえ</rt></ruby>の<ruby>上<rt>うえ</rt></ruby>に<ruby>置<rt>お</rt></ruby>いておきますね。</p></div>
     <div class='dlg 🗺️'><p>Professor, I have the letter.<br>I’ll leave it on the table.</p></div>
 </div></td></tr>
-</table>
-</article></div>
+</table><a href=#location><div class=goto><p>» Back to the Map</p></div></a>
+<a href=#location><div class=goto style=margin-top:42px><p>» Check the Letter</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    CHECKING THE LETTER -->
+<!-- @ custom-fold @           LETTER    -->
 <div id=checkletter class=chcol><article><h1>Checking the letter<p class=hr></p></h1><table class=translaytion style=margin-bottom:80px>
 <tr><td class=bg rowspan=2><img src=../ast/lh/bg_004_top.png></td><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)"><!-- data_lt1/etext/e19_t0.txt -->
     <div class='dlg 🇯🇵'><p><ruby>手紙<rt>てがみ</rt></ruby>なんてめずらしいな。</p></div>
@@ -1673,24 +1594,24 @@
     <div class='dlg 🗺️'><p>If you go back to the title screen,<br>you can start over from the beginning.</p></div>
 </div></td></tr>
 </table>
-<h2>The game then proceeds to go back to the main London Holiday menu. Choosing the “Continue” option will send you back to the moment when you saved last.</h2>
-</article></div>
+<h2 style=width:70%;min-width:50vh;margin:auto>The game then proceeds to go back to the main London Holiday menu. Choosing the “Continue” option will send you back to the moment when you saved last.</h2>
+<a href=#location><div class=goto><p>» Back to the Map</p></div></a></article></div>
 <!-- @ ending-fold -->
-<!-- @ custom-fold @    FOOTER -->
+<!-- @ custom-fold @           FOOTER    -->
 <div class=bar style=margin-bottom:180px;--midd:var(--fore)><span style=font-size:50px;background:rgb(var(--grey));--midd:var(--fore)><a href=#>Back to Top</a> ・ <a href=../index.html>Main Index</a></span></div>
-<div id=sidenav><a href=javascript:void(0) onclick=closeNav() id=closbtn><h1>Navigation</h1><span>&times;</span></a>
-<div id=midxbtn>
+<div id=sidenav><a href=javascript:void(0) onclick=closeNav() id=closbtn><h1>Navigation</h1><span>&times;</span></a><div id=midxbtn>
     <a href=../index.html><h1>» Main Index «</h1></a>
     <a href=#><img src=../ast/logo/lt1-5_lh.svg></a>
     <h2 style='margin:0 auto;padding-bottom:12px;border-bottom:3px solid rgb(var(--fore))'>Toggle Languages:</h2>
     <div style=text-align:center;font-size:42px;margin-bottom:5px>
-    <a class=infoa href="javascript:ToggleDiv('🇯🇵')">🇯🇵<div class=infob><b>Original Japanese Version</b><hr>This text is retranscribed exactly as it was found in the original Japanese content, down to the line breaks. All versions (DS, Friendly-Ban, HD Mobile) have been taken into account, and subtle differences are documented.</div></a>
-    <a class=infoa href="javascript:ToggleDiv('🗺️')">🗺️<div class=infob><b>Literal Translation</b><hr>This English translation was made using DeepL and Jisho.org, a Japanese dictionary. Its purpose is to remain as close to the original text as possible, even though it may result in awkward phrasing.<br>Hovering over the text will show a word-for-word comparison with the original Japanese text, and additional information may be present upon hovering certain words when the subtlety of the original text cannot be translated in a straightforward way.</div></a>
-    <a class=infoa href="javascript:ToggleDiv('🇬🇧')">🇬🇧<div class=infob><b>Fan-Made English Translation</b><hr>This second English translation sacrifices accuracy in favour of a reading experience closer to the original feel from the games.</div></a>
+        <a class=infoa href="javascript:ToggleDiv('🇯🇵')">🇯🇵<div class=infob><b>Original Japanese Version</b><hr>This text is retranscribed exactly as it was found in the original Japanese content, down to the line breaks. All versions (DS, Friendly-Ban, HD Mobile) have been taken into account, and subtle differences are documented.</div></a>
+        <a class=infoa href="javascript:ToggleDiv('🗺️')">🗺️<div class=infob><b>Literal Translation</b><hr>This English translation was made using DeepL and Jisho.org, a Japanese dictionary. Its purpose is to remain as close to the original text as possible, even though it may result in awkward phrasing.<br>Hovering over the text will show a word-for-word comparison with the original Japanese text, and additional information may be present upon hovering certain words when the subtlety of the original text cannot be translated in a straightforward way.</div></a>
+        <a class=infoa href="javascript:ToggleDiv('🇬🇧')">🇬🇧<div class=infob><b>Fan-Made English Translation</b><hr>This second English translation sacrifices accuracy in favour of a reading experience closer to the original feel from the games.</div></a>
     </div>
 </div>
 <a href=#intro><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Introduction</span></h3></a>
 <a href=#location><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Check the Map</span></h3></a>
+<a href=#memo><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Schrader’s Notes</span></h3></a>
 <div class=sbar><input id=lblnazo class=toggle type=checkbox checked=true><label for=lblnazo class=lbl-toggle>Puzzles:</label><div class='barss chprt'>
     <a href=#nazo01><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">1</text></svg></a>
     <a href=#nazo02><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><text x=50% y=50% dx="-.1em"dy=".32em">2</text></svg></a>
@@ -1712,14 +1633,5 @@
     <li><a href=#outro>Solved all Puzzles</a></li>
     <li><a href=#checkletter>Inspect the Letter</a></li>
 <ul></div></div>
-<a href=#memo><h3><svg viewBox='0 0 20 20'class=lh><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><path/><path/></svg><span>Schrader’s Notes</span></h3></a>
 </div><button id=openbtn onclick=openNav()>&#9776; Index</button></div>
-<!-- <tr><th colspan=2 style=font-variant:small-caps><h3>puzzle!<br>ナゾ０００：TITLEHERE</h3><i>TRANSLATION</i></th></tr> -->
-<!-- <tr><th width=50%>このナゾの<cr>ひらめき指数</cr>は<cr>３０</cr>/３０ピカラット<br>This puzzle is <cr>worth 30</cr>/30 Picarats</th><th>ひらめき指数のトータル<cr>０</cr>ピカラット<br>Total Score: <cr>0</cr> Picarats</th></tr> -->
-<!--
-Are these images useful?
-    judge_r14_bg
-    pl2_lh_nazo_XXa
-The latter ones don’t have the same image size as the former, which means that it won’t be that easy to replace the first one with the others…
--->
 <!-- @ ending-fold -->
