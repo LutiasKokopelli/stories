@@ -3,8 +3,9 @@
 }
 *{
     --dlgheight:128px;
-    --dlgratio:3.28125;
+    --dlgratio:3.28;
     --bgwidth:25%;
+    --screenratio:1.23;
 }
 u {
     border-bottom: 2px dashed rgb(var(--emph));
@@ -109,11 +110,11 @@ code {font-style:normal;display:none}
     position: relative;
 }
 .memo {
-    width: 628px;
-    height: 512px;
+    height:calc(626px / var(--screenratio));
+    width:50%;
     font-size: 1.2rem;
-    margin-right: 5px;
-    display: table;
+    display:table;
+    margin:0;
 }
 .memo p {
     padding: 0 150px;
