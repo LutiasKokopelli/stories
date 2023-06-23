@@ -4,11 +4,11 @@
     scrollbar-color: rgb(var(--midd)) rgb(var(--back));
     overflow-anchor: none;
     --txtshw: 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack));
-    --plblack: 48, 32, 32;
-    --plwhite: 252, 252, 244;
-    --plred: 192, 72, 0;
-    --plre2: 152, 48, 0;
-    --plcyan: 48, 120, 128;
+    --plblack:48,32,32;
+    --plwhite:252,252,244;
+    --plred:192,72,0;
+    --plre2:152,48,0;
+    --plcyan:48,120,128;
 }
 *,
 *:after,

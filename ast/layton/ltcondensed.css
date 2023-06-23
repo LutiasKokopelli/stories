@@ -36,7 +36,7 @@ c {
 .map circle {
     fill: rgb(var(--plred));
     stroke: rgb(var(--plwhite));
-    fill-opacity: 0.8;
+    fill-opacity: .8;
     stroke-width: 5;
 }
 .map text {
@@ -44,35 +44,56 @@ c {
     text-anchor: middle;
 }
 .map polygon {
-    fill: rgba(var(--plred), 0.34);
-    stroke: rgba(var(--plwhite), 0.34);
+    fill: rgba(var(--plred),.34);
+    stroke: rgba(var(--plwhite),.34);
     stroke-width: 3px;
 }
-code {
-    font-style: normal; display:none;
+.map circle,.map text,.map polygon{
+    filter:drop-shadow(var(--borderlen)var(--borderlen)var(--borderlen)rgb(var(--plblack)))
 }
+.map g text{fill:rgb(var(--plwhite));display:none;font-size:20px;paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;text-anchor:start}
+.map a:hover text{display:unset}
+code {font-style:normal;display:none}
+.map.interact svg a{opacity:0}
+.map.interact svg a:hover{opacity:1}
+.map.interact polygon,rect{opacity:0;transform-origin:center;transform-box:fill-box}
+
+.map.interact rect{fill:rgba(var(--plcyan),.5)}
+
 .goto {
+    box-sizing:content-box;
     position: relative;
-    display: block;
-    margin: 100px auto;
-    text-align: center;
-    border: 5px solid rgb(var(--plred));
-    background: rgb(var(--emph));
-    width: 500px;
-    color: rgb(var(--plwhite));
-    padding: 17px;
-    padding-left: 70px;
-    border-radius: 42px;
+    width:fit-content;
+    background: rgb(var(--plred));
+    height:fit-content;
+    border:5px solid;
+    border-top-color:rgb(var(--plred));border-left-color:rgb(var(--plred));
+    border-bottom-color:rgb(var(--plre2));border-right-color:rgb(var(--plre2));
+    line-height:48px;
+    padding: 6px 24px 6px 72px;
+    border-radius: 48px;
     font-size: 24px;
-}
-.goto:before {
-    content: url("../ast/chr/hintcoin1.png");
-    position: absolute;
-    left: 24px;
-    top: 25%;
+    outline:5px solid rgb(var(--plwhite));
+    margin:80px auto 0 auto;
+    color: rgb(var(--plwhite));
 }
 .goto:hover {
-    color: rgb(var(--back));
+    color:rgba(var(--back),.7);
+    background:rgb(var(--plre2));
+    border-top-color:rgb(var(--plre2));border-left-color:rgb(var(--plre2));
+    border-bottom-color:rgb(var(--plred));border-right-color:rgb(var(--plred));
+}
+.goto:hover:before {
+    opacity:.8
+}
+.goto + * {
+    margin: 100px auto;
+}
+.goto:before {
+    content: url("../../layton/ast/chr/hintcoin1.png");
+    position: absolute;
+    left: 12px;
+    top: calc(50% - 24px);
 }
 .🇯🇵 {
     font-size: 1rem;

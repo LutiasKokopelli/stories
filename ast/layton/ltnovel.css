@@ -4,7 +4,10 @@
 .nov{border-collapse:collapse}
 .nov > tbody > tr:not(:first-child) > th{padding-top:42px}
 .nov > tbody > tr > td{padding:42px}
-.nov > tbody > tr > td:first-child{border-right:7px double rgb(var(--midd));padding-left:16px}
+.nov > tbody > tr > td:first-child{
+    padding-left:16px;
+    border-right:7px double rgb(var(--midd));
+}
 .nov > tbody > tr > td:last-child{padding-right:16px}
 .page{width:50%;position:relative;height:calc(80vw/1.45)}
 .v{max-height:10000px}
