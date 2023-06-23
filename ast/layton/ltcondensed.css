@@ -27,7 +27,7 @@ c {
     filter: drop-shadow(3px 3px 3px rgb(var(--plblack)));
     font-family: KFhimaji;
 }
-.map circle {
+.map circle,.map ellipse {
     fill: rgb(var(--plred));
     stroke: rgb(var(--plwhite));
     fill-opacity: .8;
@@ -42,7 +42,7 @@ c {
     stroke: rgba(var(--plwhite),.34);
     stroke-width: 3px;
 }
-.map circle,.map text,.map polygon{
+.map circle,.map text,.map polygon,.map ellipse{
     filter:drop-shadow(var(--borderlen)var(--borderlen)var(--borderlen)rgb(var(--plblack)))
 }
 .map g text{fill:rgb(var(--plwhite));display:none;font-size:20px;paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;text-anchor:start}
