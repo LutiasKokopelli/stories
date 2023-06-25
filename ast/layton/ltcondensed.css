@@ -55,11 +55,13 @@ c {
     stroke-width:1.5%;
     text-anchor:start
 }
+.mainmap{border:3px solid rgb(var(--plblack));position:relative;text-align:center;margin:auto;margin-bottom:42px;width:42%}
 .map a:hover text{display:unset}
 code {font-style:normal;display:none}
 .map.interact svg a{opacity:0}
 .map.interact svg a:hover{opacity:1}
 .map.interact polygon,rect{opacity:0;transform-origin:center;transform-box:fill-box}
+.translaytion .map{border:none;width:50px}
 
 .goto {
     box-sizing:content-box;
