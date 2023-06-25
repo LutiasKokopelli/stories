@@ -39,9 +39,9 @@ function SpoilDiv(id){
     if(dc.style.display=="none"){dc.style.display=''}else{dc.style.display="none"}
 }
 function openNav(){
+    // document.getElementById("closbtn").style.left = "0";
+    // document.getElementById("midxbtn").style.left = "0";
     document.getElementById("sidenav").style.left = "0";
-    document.getElementById("closbtn").style.left = "0";
-    document.getElementById("midxbtn").style.left = "0";
     document.getElementById("openbtn").style.left = "-100%";
     if (window.matchMedia("(orientation: landscape)").matches) {
         document.getElementById("wrap").style.left = "16%";
@@ -49,9 +49,9 @@ function openNav(){
     }
 }
 function closeNav(){
+    // document.getElementById("closbtn").style.left = "-100%";
+    // document.getElementById("midxbtn").style.left = "-100%";
     document.getElementById("sidenav").style.left = "-100%";
-    document.getElementById("closbtn").style.left = "-100%";
-    document.getElementById("midxbtn").style.left = "-100%";
     document.getElementById("openbtn").style.left = "5px";
     if (window.matchMedia("(orientation: landscape)").matches) {
         document.getElementById("wrap").style.left = "0";
@@ -59,7 +59,7 @@ function closeNav(){
     }
     else {
         document.getElementById("sidenav").style.width = "50%";
-        document.getElementById("closbtn").style.width = "50%";
+        // document.getElementById("closbtn").style.width = "50%";
     }
 }
 function ScrollToPage() {
