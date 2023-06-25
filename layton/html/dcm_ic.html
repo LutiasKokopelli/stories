@@ -26,9 +26,6 @@ svg.ic path{
 .agnes{background:url('../ast/chn/agnes.png')50%87%no-repeat;background-size:100%auto}.agnes:before{content:url('../ast/chr/agnes.png')}
 .crumm{background:url('../ast/chn/crumm.png')50%87%no-repeat;background-size:100%auto}.crumm:before{content:url('../ast/chr/crumm.png')}
 .prosciutto{background:url('../ast/chn/prosciutto.png')50%87%no-repeat;background-size:100%auto}.prosciutto:before{content:url('../ast/chr/prosciutto.png')}
-.puzzle tr:nth-child(1) th:nth-child(1){background:url('../ast/lh/nazo_bg_01_title.png')bottom}
-.puzzle tr:nth-child(1) th:nth-child(2){background:url('../ast/lh/nazo_bg_01_picarat.png')center}
-.puzzle tr:nth-child(2) td:nth-child(1){background:url('../ast/lh/q_bg.png')bottom}
 </style></head><div id=wrap><div class=chcol><article><img src=../ast/logo/dcm_ic.svg style=width:50%;display:block;margin:auto><h1 style=margin-top:42px><table><tr><td><h1><span>チェルミー警部の事件簿</span><br>〜秘密のレシピ〜</h1></td><td><h1><span>Inspector Chelmey’s Casebook</span><br>~ Special Recipe ~</h1></td></tr></table><div class=hr></div></h1>
 <div style=text-align:center><img src=../ast/ic/bg_001.png style='border:4px solid rgb(var(--plblack));width:32%'></div></article></div>
 <!-- @ ending-fold -->
@@ -210,6 +207,8 @@ svg.ic path{
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
 </table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Barton:<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -218,6 +217,8 @@ svg.ic path{
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
 </table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Crouton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ところでキミは本当にこの記事を<br>知らんのか？</p></div>
@@ -230,11 +231,10 @@ svg.ic path{
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>⋯さあ。<br>うちはただの食堂ですから⋯。</p></div>
     <div class='dlg 🗺️'><p>…Come now.<br>This is just a small diner.</p></div>
-</div></td></tr>
-<tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Flick:<p class=hr></p></h1>
-<table class=translaytion>
+</div></td></tr><tr><td style=height:128px></td></tr></table>
+</article></div>
+<div id=nazo11 class=chcol><article>
+<h1>Talking to Flick:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i flick'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>やあ、警部さん。<br>ヒマならボクの<br>ナゾに答えてみないかい？</p></div>
     <div class='dlg 🗺️'><p>Hi, Inspector.<br>If you have some free time, why don’t you try to solve my puzzle?</p></div>
@@ -256,74 +256,43 @@ svg.ic path{
     <div class='dlg 🗺️'><p>If you’re going this far, I’ll be your opponent!</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００１</p><p>ナゾ００１　シリング硬貨</p><p>Shilling Coin</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2><!-- このナゾのひらめき指数は 40 / 40 ピカラット -->
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>0</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００１</text>
+        <text x=50% y=64%>ナゾ００１　シリング硬貨</text>
+        <text x=50% y=71%>Shilling Coin</text>
+    </svg></th><!-- このナゾのひらめき指数は 40 / 40 ピカラット -->
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>0</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>イギリスで使われていた<br>２シリング硬貨がある。<br>この硬貨の中に年号が２つあるという。<br>１つは「１９６１」だ。<br><br>では、もう１つ書かれている年号は<br>いくつだろうか？</p>
     <p class=🗺️>Pictured below is a 2 shilling coin used in England.<br>It is said that two years are depicted on this coin.<br>One of them is “1961.”<br><br>What is the other date?</p>
-</div></td><td style='background:url(../ast/ic/nazo_01.png)center no-repeat'></td></tr>
+</div></td><td><img src=../ast/ic/nazo_01.png style=height:100%></td></tr>
 <!--
-シリング硬貨の表面:
-BANK + WONDER + TOWN +
-シリング硬貨の裏面:
-PHL・TWO・SHILLINGS・1961・PHL・
-ナゾ解明！
-正解
+    シリング硬貨の表面:
+    BANK + WONDER + TOWN +
+    シリング硬貨の裏面:
+    PHL・TWO・SHILLINGS・1961・PHL・
+    ナゾ解明！
+    正解
 -->
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+<!-- MISSING OPTIONS: Hints, Quitting the puzzle & coming back -->
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>残念！<br><br>普通に見ただけでは、<br>隠された年号は発見できない。</p>
     <p class=🗺️>Incorrect.<br><br>You can’t discover the hidden era just by looking at it normally.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>「ＳＨＩＬＬＩＮＧ」という単語を<br>逆さから見てみると<br>１７７１が隠れている。<br><br><br><i>ナゾ製作協力：芦ヶ原　伸之</i></p>
     <p class=🗺️>Correct!<br><br>If you look at the word “SHILLING” upside down, 1771 is hidden.<br><br><br>Puzzle Production Cooperation: Nobuyuki Ashigahara</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i flick'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>さすがにスコットランドヤード<br>だけあるな。<br>まいつたよ。</p></div>
@@ -364,8 +333,9 @@ PHL・TWO・SHILLINGS・1961・PHL・
 <tr><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>⋯アメリー。</p></div>
     <div class='dlg 🗺️'><p>…Amelie.</p></div>
-</div></td></tr>
-</table>
+</div></td></tr></table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Barton<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ここは机が多くて、邪魔だな。</p></div>
@@ -407,6 +377,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Alright, let’s start investigating.</p></div>
 </div></td></tr>
 </table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Crouton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>警部、<br>これからどうするのでありますか？</p></div>
@@ -427,68 +399,35 @@ PHL・TWO・SHILLINGS・1961・PHL・
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>それより、仕込みが忙しいんですよ。<br>ちょっと困ってるナゾもありましてね。<br>手伝ってくれませんか？</p></div>
     <div class='dlg 🗺️'><p>Before that, I'm busy preparing.<br>There is also a puzzle that I am a little confused about.<br>Will you help me?</p></div>
-</div></td></tr>
-<tr><td style=height:128px></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００２</p><p>ナゾ００２　変な形の６角形</p><p>Odd-shaped Hexagon</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>40</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</div></td></tr><tr><td style=height:128px></td></tr></table>
+<p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００２</text>
+        <text x=50% y=64%>ナゾ００２　変な形の６角形</text>
+        <text x=50% y=71%>Odd-shaped Hexagon</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>40</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>クルトンのお店に五枚の板が<br>組み合わさった、変な形の六角形の<br>テーブルがある。<br>このままでは使いづらいので<br>この板をならべかえて一枚の大きな<br>長方形のテーブルにしたいのだが、<br>最低、何枚板を移動させなければ<br>ならないだろうか？</p>
     <p class=🗺️>There is a strange hexagonal table made by combining five boards in Crouton's restaurant.<br>Since it is difficult to use as it is, I would like to rearrange these boards to make one large rectangular table, but how many boards do I have to move at least?</p>
-</div></td><td style='background:url(../ast/ic/nazo_02.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_02.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>図のとおり、一枚でいい。<br>使いやすくなったテーブルを見て<br>クルトンも満足そうだ。<br><br><br>ナゾ製作協力：芦ヶ原　伸之</p>
     <p class=🗺️>As shown in the figure, one sheet is enough.<br>Crouton seems satisfied with the table that has become easier to use.<br><br><br>Puzzle Production Cooperation: Nobuyuki Ashigahara</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>なるほど！<br>そうすればよかったんだ。<br>ありがとう。これで準備ができるよ。</p></div>
@@ -520,6 +459,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
 </div></td></tr>
 <tr><td style=height:128px>&nbsp;</td></tr>
 </table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Crouton<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -547,6 +488,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Every few years, there is a stranger who wanders in by car.</p></div>
 </div></td></tr>
 </table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Barton<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -592,69 +535,36 @@ PHL・TWO・SHILLINGS・1961・PHL・
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>罰として、私の出すナゾも解け！</p></div>
     <div class='dlg 🗺️'><p>As a punishment, solve the puzzle I put out!</p></div>
-</div></td></tr>
-<tr><td style=height:128px></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００３</p><p>ナゾ００３　５人の証言</p><p>Five Testimonies</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>50</cr>&nbsp; &nbsp;50&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>80</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</div></td></tr><tr><td style=height:128px></td></tr></table>
+<p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００３</text>
+        <text x=50% y=64%>ナゾ００３　５人の証言</text>
+        <text x=50% y=71%>Five Testimonies</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>50</text><text x=66% y=52.5%>50</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=84.5%>80</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>板の向こうに５人の男の子がいる。<br>この５人は、お互いの身長について<br>話しているのだが、以下の証言から<br>それぞれの証言が、本当かウソか<br>見抜いてほしい。<br>Ａ「少なくとも２人がウソつきだ」<br>Ｂ「ボクが一番背が高いんだ」<br>Ｃ「少なくとも２人は正直者さ」<br>Ｄ「Ｅはウソをついているよ」<br>Ｅ「少なくとも３人は正直者です」</p>
     <p class=🗺️>There are five boys on the other side of the board.<br>These five people are talking about each other's height, but I would like you to find out whether each testimony is true or false from the following testimony.<br>A: "At least two people are liars."<br>B: “I am the tallest.”<br>C: "At least two of them are honest people."<br>D: "E is lying."<br>E: At least three people are honest.</p>
-</div></td><td style='background:url(../ast/ic/nazo_03.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_03.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
-    <p class=🗺️>Incorrect.</p>
+    <p class=🗺️><ruby>Incorrect.</ruby></p>
 </div></td>
-<!-- 本当　ウソ　本当　ウソ　本当 -->
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
+    <!-- 本当　ウソ　本当　ウソ　本当 -->
     <p class=🇯🇵>正解！<br><br>Ａ　本当<br>Ｂ　ウソ<br>Ｃ　本当<br>Ｄ　ウソ<br>Ｅ　本当<br><br>５人の証言に矛盾がなくなるのは、<br>この組み合わせの場合のみだ。</p>
     <p class=🗺️>Correct!<br><br>A True<br>B False<br>C True<br>D False<br>E True<br><br>This is the only combination that makes the five testimonies consistent.</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ふん。次は気を付けるんだぞ。</p></div>
@@ -673,6 +583,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='fancydlg 🗺️'><p>Puzzle #003 “Five Testimonies”<br>has been added to the Puzzle List!</p></div>
 </div></td></tr>
 </table>
+</article></div>
+<div class=chcol><article>
 <h1>Talking to Ingrid:<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i ingrid'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -717,67 +629,35 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Huh, me? <br>I'm nervous, but<br>I'll try my best.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００４</p><p>ナゾ００４　どっちが大きい</p><p>Which one is bigger?</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>30</cr>&nbsp; &nbsp;30&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>130</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００４</text>
+        <text x=50% y=64%>ナゾ００４　どっちが大きい</text>
+        <text x=50% y=71%>Which one is bigger?</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>30</text><text x=66% y=52.5%>30</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>130</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>２人の兄弟を子供に持つ母親が<br>兄弟ケンカしないよう正三角形の形を<br>したパイを図の様に切り分けた。<br><br>食いしん坊の弟はどちらのパイを<br>選んだか。</p>
     <p class=🗺️>A pie in the shape of an equilateral triangle was cut as shown in the figure so that a mother with two brothers would not fight with each other.<br><br>Which pie did the gluttonous brother choose?</p>
-</div></td><td style='background:url(../ast/ic/nazo_04.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_04.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>残念！<br><br>２択なので勘でも回答できるが<br>よく考えてみよう。<br><br>弟は食いしん坊なので、なるべく<br>大きいパイが食べたいと思っている。</p>
     <p class=🗺️>Incorrect.<br><br>Since there are only two choices, you can answer with intuition, but let's think carefully.<br><br>My younger brother is a big eater, so he wants to eat as big a pie as possible.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <!-- 正三角形１個分だけＡより多い -- More than A by one equilateral triangle. -->
     <p class=🇯🇵>正解！<br><br>Ｂのパイの方が、正三角形１個分だけ<br>大きかったので、こちらを選んだのだ。<br><br>ところで、なぜ母親は正三角形のパイを<br>縦に分けなかったのだろうか。</p>
     <p class=🗺️>Correct!<br><br>B's pie was larger by one equilateral triangle, so he chose this one.<br><br>By the way, why didn't the mother split the equilateral pie vertically?</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i ingrid'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>バーティさん、正解よ！</p></div>
@@ -886,9 +766,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>No, it's me.<br>Hohoho.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Giuseppe:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Giuseppe:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ゼペロさんを連れてきたであります。</p></div>
     <div class='dlg 🗺️'><p>I brought Mr. Giuseppe with me.</p></div>
@@ -937,14 +816,20 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>この町の住人は、どうしてこんなに<br>ナゾトキが好きなんだ？<br>いいだろう、受けて立ってやる！</p></div>
     <div class='dlg 🗺️'><p>Why do the residents of this town love puzzle solving so much? All right, I'll take it and stand up!</p></div>
 </div></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００５</p><p>ナゾ００５　食べすぎ注意</p><p>Beware of eating too much</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>160</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００５</text>
+        <text x=50% y=64%>ナゾ００５　食べすぎ注意</text>
+        <text x=50% y=71%>Beware of eating too much</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>160</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>甘いものが大好きな男の子に、<br>ある日、母親が一枚のメモを渡した。<br><br>これ以上甘いものばかり食べている<br>と、とまる場所に連れて行くという<br>意味らしいのだが、はたして、<br>それは一体どこだろうか？</p>
     <p class=🗺️>One day, a boy who loves sweets receives a note from his mother.<br><br>It seems that if you eat more sweets than this, it will take you to a place to stop, but where exactly is it?</p>
 <!--
@@ -954,56 +839,18 @@ PHL・TWO・SHILLINGS・1961・PHL・
 ビスケット
 アイスシャ
 -->
-</div></td><td style='background:url(../ast/ic/nazo_05.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_05.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>甘いものばかりをとっていると、<br>最後には「歯医者」に行かなくては<br>ならないよという意味だったのだ。<br><br>虫歯が出来そうだったら、<br>早めに歯医者さんに見てもらおう。</p>
     <p class=🗺️>Correct!<br><br>It meant that if you only ate sweets, you would eventually have to go to the dentist.<br><br>If you think you might have cavities, see your dentist as soon as possible.</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i giuseppe'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ガッハッハ！　やるのう。<br>こりゃ、まいったまいった。</p></div>
@@ -1077,9 +924,7 @@ PHL・TWO・SHILLINGS・1961・PHL・
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>うるさい！<br>捜査の秘密に口だしするな！</p></div>
     <div class='dlg 🗺️'><p>Oi, you! Don't meddle in the secrets of the investigation!</p></div>
-</div></td></tr>
-<tr><td style=height:128px></td></tr>
-</table>
+</div></td></tr><tr><td style=height:128px></td></tr></table>
 <!-- てちょう→ふるいきじ
 この小さな町で食べた＿＿＿＿＿＿＿＿
 ＿＿＿＿＿＿＿＿＿＿は、ロンドンで、
@@ -1092,8 +937,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
 ＿＿＿＿さん。
 ぜひこの町を訪れてみてください。
 幸せな時間をお約束します。
--->
-<h1>Talking to Barton:<p class=hr></p></h1>
+--></article></div>
+<div class=chcol><article><h1>Talking to Barton:<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>バートン、市場へ聞き込みに<br>行ってみるぞ！</p></div>
@@ -1143,6 +988,7 @@ PHL・TWO・SHILLINGS・1961・PHL・
 </table>
 </article></div>
 <!-- @ ending-fold -->
+<div class='bar hr'style='--midd:var(--fore);margin:80px auto;width:80%'></div>
 <!-- @ custom-fold @           PART 2 -->
 <div id=part2 class=chcol><article><h1><table><tr><td><h1>〜秘密のレシピ後編〜</h1></td><td><h1>~ Special Recipe: Second Part ~</h1></td></tr></table><div class=hr></div></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/ic/bg_001.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -1192,9 +1038,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>We don't know this for sure.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Interacting with the environment:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Interacting with the environment:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/ic/zzz_investigated_004.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>食材がいっぱい<br>なのであります。</p></div>
     <div class='dlg 🗺️'><p>It's because it's full of ingredients.</p></div>
@@ -1207,9 +1052,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>この奥は事件には<br>関係なさそうだな。</p></div>
     <div class='dlg 🗺️'><p>I don't think this part of the village has anything to do with the incident.</p></div>
 </div></td></tr><tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Claudia:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Claudia:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/ic/bg_007.png></td><td class='i claudia'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ウニャーォ。</p></div>
     <div class='dlg 🗺️'><p>Meow.</p></div>
@@ -1221,7 +1065,7 @@ PHL・TWO・SHILLINGS・1961・PHL・
 </div></td></tr>
 <tr><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p><cr>食堂クルトンのオススメ！<br>自慢の＊＊＊＊</cr></p></div>
-    <div class='dlg 🗺️'><p><cr>Crouton's restaurant recommended! Boast of ****</cr></p></div>
+    <div class='dlg 🗺️'><p><cr>Crouton’s restaurant recommended! Boast of ****</cr></p></div>
 </div></td></tr>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>オススメって何でありますかね？<br>あとでクルトンさんに<br>聞いてみるのであります。</p></div>
@@ -1273,66 +1117,34 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Yes...<br>I'm sorry...</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００１</p><p>ナゾ００１　容疑者は誰だ？</p><p>Who are the suspects?</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>0</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００１</text>
+        <text x=50% y=64%>ナゾ００１　容疑者は誰だ？</text>
+        <text x=50% y=71%>Who are the suspects?</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>0</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>刑事と詐欺師と泥棒の３人が<br>顔に大ケガをして、<br>誰が誰だかわからなくなった。<br><br>捜査メモを見たところ、刑事は常に<br>真実を語り、詐欺師は真実かウソを<br>言い、泥棒は必ずウソをつくそうだ。<br>３人の供述から、<br>それぞれが誰なのかを答えてほしい。<br><br><br>容疑者Ａ:私は詐欺師ではない<br>容疑者Ｂ:私は刑事ではない<br>容疑者Ｃ:私は泥棒ではない</p>
     <p class=🗺️>Three people, a detective, a scammer, and a thief, suffered serious injuries to their faces, and no longer know who they were.<br><br>According to investigative memos, detectives always tell the truth, scammers can either tell the truth or lie, and thieves always lie. I want you to answer who each of them is from the statements of these three people.<br><br><br>Suspect A: I'm not a scammer.<br>Suspect B: I'm not a detective.<br>Suspect C: I'm not a thief.</p>
-</div></td><td style='background:url(../ast/ic/nazo_01-2.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_01-2.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>手がかりがないように見えるが<br>３人の証言を１つずつ整理すると<br>左から順に、<br>「刑事」、「詐欺師」、「泥棒」<br>ということになる。<br>この３人、ケガが治るまでの間ずっと<br>一緒の病室で過ごしたのだという。<br>ナゾ製作協力：平川　陽一</p>
     <p class=🗺️>Correct!<br><br>It seems that there is no clue, but if you organize the three testimonies one by one, from left to right, they are "Detective", "Scammer", and "Thief". It is said that these three people spent the whole time in the same hospital room until their injuries healed.<br>Puzzle Production Cooperation: Yoichi Hirakawa</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ふむ。もういい。許してやろう。</p></div>
@@ -1342,7 +1154,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='fancydlg 🇯🇵'><p>ナゾ００１<br>「容疑者は誰だ？」<br>がナゾメモに追加された！</p></div>
     <div class='fancydlg 🗺️'><p>Puzzle #001 “Who are the suspects?”<br>has been added to the Puzzle List!</p></div>
 </div></td></tr>
-</table>
+</table></article></div>
+<div class=chcol><article>
 <h1>Talking to Agnes:<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -1385,66 +1198,34 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>やるのであります！</p></div>
     <div class='dlg 🗺️'><p>I'll do it!</p></div>
 </div></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００２</p><p>ナゾ００２　占い師のナゾ</p><p>The Fortune Teller's Puzzle</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>30</cr>&nbsp; &nbsp;30&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>40</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００２</text>
+        <text x=50% y=64%>ナゾ００２　占い師のナゾ</text>
+        <text x=50% y=71%>The Fortune Teller’s Puzzle</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>30</text><text x=66% y=52.5%>30</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>40</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>ある占い師は「２問１０ドル」で<br>どんなことでも占ってくれるという。<br>この女性が占ってほしい内容は３問<br>だが、サイフに１０ドルしかなく、<br>まずは占いの前に次の質問をした。<br>「どんな短い質問でも１問ですか？」<br>「どんな長い質問でも１問ですか？」<br>占い師はどちらの質問も「もちろん」<br>と答えた。女性は色々悩んだすえに、<br>占いをお願いした。さて、この後に<br>占ってもらえたのは何問だろうか？<br><br><br>女性:「どんな長い質問でも１問ですか？どんな短い質問でも１問ですか？」<br>占い師:「もちろん」</p>
     <p class=🗺️>A fortune teller says he can read anything at the price of $10 for two questions. This woman wanted her to read 3 questions, but she only had $10 in her wallet; so she asked the following questions before starting the reading.<br>"Any short question counts as one question?"<br>"Any long question counts as one question?"<br>After asking these two questions, she asked for a fortune-telling. How many questions did she ask?<br><br><br>Woman: "One long question? Any short question is one question?"<br>Fortune Teller: "Of course."</p>
-</div></td><td style='background:url(../ast/ic/nazo_02-2.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_02-2.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>占ってもらう前に、すでに<br>「どんな短い質問でも１問ですか？」<br>「どんな長い質問でも１問ですか？」<br>と２問の質問をしてしまったため<br>女性は、本来占って欲しかった<br>質問を１問もできなかったのである。<br><br>ナゾ製作協力：平川　陽一</p>
     <p class=🗺️>Correct!<br><br>Before the fortune-telling, she had already asked 2 questions such as "Any short question is one question?" and "Any long question is one question?" She couldn't ask anything.<br><br>Puzzle Production Cooperation: Yoichi Hirakawa</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i agnes'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>見かけによらず、やるじゃないか！<br>たいしたもんだよ。</p></div>
@@ -1483,25 +1264,22 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Y-yes!</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Agnes:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Agnes:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i agnes'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>食堂には行ってみたかい？</p></div>
     <div class='dlg 🗺️'><p>Have you tried going to the dining room?</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Claudia:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Claudia:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>捜査現場に動物がいるのは嫌いだ。</p></div>
     <div class='dlg 🗺️'><p>I don't like having animals on the scene.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Moving to the restaurant:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Moving to the restaurant:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_18_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>事件は解決に近付いてきたぞ。</p></div>
     <div class='dlg 🗺️'><p>The case is nearing its resolution.</p></div>
@@ -1536,9 +1314,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>We are Scotland Yard.<br>Keep your dignity!</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Crouton:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Crouton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>警部さん、弟のガントです。<br>バーのマスターをやってるんですよ。</p></div>
     <div class='dlg 🗺️'><p>Inspector, this is my brother Crumm. He is a bar master.</p></div>
@@ -1568,66 +1345,34 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>いいだろう。のぞむところだ。</p></div>
     <div class='dlg 🗺️'><p>All right. I hope.</p></div>
 </div></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００３</p><p>ナゾ００３　オーダー間違い</p><p>Wrong Order</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>70</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００３</text>
+        <text x=50% y=64%>ナゾ００３　オーダー間違い</text>
+        <text x=50% y=71%>Wrong Order</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>70</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>あるレストランで働く従業員は<br>いつもお客から注文をとった<br>オーダー票にまちがいを書いてしまう。<br><br>「なんだって、いつも<br>こんな事を書くんだ」<br><br>と店長は困りながらつぶやいた。<br>いったい、従業員が書いたものとは<br>なんだろうか？<br>ひらがな４文字で答えてほしい。</p>
     <p class=🗺️>An employee who works at a restaurant always makes mistakes in the order slips that take orders from customers.<br><br>"Why do you always write things like this?"<br><br>muttered the store manager in trouble. So what exactly did the employee write? Please answer in four hiragana characters.</p>
-</div></td><td style='background:url(../ast/ic/nazo_03-2.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_03-2.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>従業員はいつも「まちがい」<br>という言葉を書いていたのだ。<br><br>さすがの店長もこれには<br>困りはてているようだ。<br><br><br>ナゾ製作協力：芦ヶ原　伸之</p>
     <p class=🗺️>Correct!<br><br>The employee was always writing the word "mistake".<br><br>It seems that even the store manager is troubled by this.<br><br><br>Puzzle Production Cooperation: Nobuyuki Ashigahara</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table> -->
-<!-- <h1>Dialogue when you come back<p class=hr></p></h1> -->
-<!-- <table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crumm'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>おう、よくやったな。<br>しかしナゾの数をこなさないと<br>この町では信用されないぜ。</p></div>
@@ -1637,15 +1382,15 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='fancydlg 🇯🇵'><p>ナゾ００３<br>「オーダー間違い」<br>がナゾメモに追加された！</p></div>
     <div class='fancydlg 🗺️'><p>Puzzle #003 “Wrong Order”<br>has been added to the Puzzle List!</p></div>
 </div></td></tr>
-</table>
+</table></article></div>
+<div class=chcol><article>
 <h1>Talking to Crouton:<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>弟のガントは用心深いんだ。<br>もう一度ナゾを解いて見せれば<br>信用してくれるかもしれないよ。</p></div>
     <div class='dlg 🗺️'><p>My brother is cautious. If you solve the puzzle again and show it to him, he might trust you.</p></div>
-</div></td></tr>
-<tr><td style=height:128px></td></tr>
-</table>
+</div></td></tr><tr><td style=height:128px></td></tr></table></article></div>
+<div class=chcol><article>
 <h1>Talking to Crumm:<p class=hr></p></h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crumm'></td><td><div class=row onscroll="ScrollAll(this)">
@@ -1656,66 +1401,34 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>次のナゾも解いてみな。</p></div>
     <div class='dlg 🗺️'><p>Solve the next one.</p></div>
 </div></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００４</p><p>ナゾ００４　はかりのナゾ</p><p>Scale Puzzle</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>50</cr>&nbsp; &nbsp;50&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>110</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００４</text>
+        <text x=50% y=64%>ナゾ００４　はかりのナゾ</text>
+        <text x=50% y=71%>Scale Puzzle</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>50</text><text x=66% y=52.5%>50</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>110</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>重さの異なるチーズが４つある。<br>お客には軽いものから順に出そうと<br>思っているが、お店のはかりが壊れて<br>いるため、正確な重さが量れない。<br>代わりに天秤を使って比べたところ、<br>図のような４つの結果がでた。<br>これを元に、チーズを<br>重い順番に並べてほしい。<br><br><br>ＡとＢのチーズを乗せるとＢが下がる<br>ＡとＣのチーズを乗せるとＣが下がる<br>ＡとＤのチーズを乗せるとＤが上がる<br>ＢとＣのチーズを乗せるとＣが下がる</p>
     <p class=🗺️>There are four cheeses of different weights. I'm thinking of giving customers the lightest items first, but the store's scales are broken, so I can't measure the weight accurately. When I used a balance instead, I got the four results shown in the figure. Based on this, I want you to arrange the cheeses in order of weight.<br><br><br>If you put A and B cheese on it, B will go down.<br>If you put A and C cheese on it, C will go down.<br>If you put cheese of A and D on top, D will rise.<br>If you put B and C cheese on it, C will go down.</p>
-</div></td><td style='background:url(../ast/ic/nazo_04-2.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_04-2.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>図に描いて比べるとわかりやすいが<br>重い順番にＣ、Ｂ、Ａ、Ｄとなる。<br>さあ、さっそくＤのチーズから<br>お客さんに出そう。<br><br><br>ナゾ製作協力：平川　陽一</p>
     <p class=🗺️>Correct!<br><br>It is easy to understand if you draw a diagram and compare, but the order of weight is C, B, A, and D. Now, let's serve the customer from D cheese.<br><br><br>Puzzle Production Cooperation: Yoichi Hirakawa</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table>
-<h1>Dialogue when you come back<p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crumm'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>なかなかやるな。<br>信用してやってもいいか。<br>なんでも答えてやるぜ。</p></div>
@@ -1794,9 +1507,8 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>…</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Prosciutto:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Prosciutto:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>彼がプッカさんです。<br>ここに来るまで、<br>ずーっと食べ続けであります。</p></div>
     <div class='dlg 🗺️'><p>Here is Mr. Prosciutto. He kept eating all the way here.</p></div>
@@ -1836,66 +1548,34 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Hmm, I guess you know the relationship between Crumm and this article. Give me your puzzle.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００５</p><p>ナゾ００５　ワインのナゾ</p><p>Wine Puzzle</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>160</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００５</text>
+        <text x=50% y=64%>ナゾ００５　ワインのナゾ</text>
+        <text x=50% y=71%>Wine Puzzle</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>160</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>海で遭難した男は、水も食料もなく<br>救命ボートの上で途方に暮れていた。<br>すると波間に漂うワインを見つけた！<br>さっそく飲もうとしたが、<br>コルクの栓を引き抜くことができず、<br>再び困ってしまった。<br>ところが、あるものを触っていたら<br>ビンを割らずに、ワインを飲むことが<br>できたという。それはどれだろうか？<br><br>⊛　むしめがね<br>⊛　ハンマー<br>⊛　きのいた<br>⊛　ロープ</p>
     <p class=🗺️>A man lost at sea was at a loss on a lifeboat without water or food. Then he found wine floating in the waves! He tried to drink at once, but was unable to pull the cork out and was again at a loss. However, if he touched something, he could drink the wine without breaking the bottle. which one would that be?<br><br>⊛ Magnifying glass<br>⊛ Hammer<br>⊛ Wooden board<br>⊛ Rope</p>
-</div></td><td style='background:url(../ast/ic/nazo_05-2.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_05-2.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect</p>
     <p class=🗺️>Incorrect</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>コルクをビンの中に押し込んで<br>しまえば、ビンを割ることなく、<br>中身を飲むことができる！<br><br>この数日後、<br>男は無事に救助されたのであった。<br><br>ナゾ製作協力：平川　陽一</p>
     <p class=🗺️>Correct!<br><br>If you push the cork into the bottle, you can drink the contents without breaking the bottle!<br><br>A few days later, the man was safely rescued.<br><br>Puzzle Production Cooperation: Yoichi Hirakawa</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table>
-<h1>Dialogue when you come back<p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
+</table><p class=bar></p>
+<h1>Dialogue after solving the puzzle</h1>
 <table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i prosciutto'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>やるね。チェルミー警部。<br>こうなったら仕方ないな。</p></div>
@@ -1970,24 +1650,21 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>Anyway! I'm going home!</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Examining the full article:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Examining the full article:<p class=hr></p></h1><table class=translaytion>
 <tr><td><div class=row onscroll="ScrollAll(this)">
-    <div class='fancydlg 🇯🇵'style=text-align:left><p>この小さな町で食べた<br><cr>ジンジャープディング</cr>は、ロンドンで、<br>いいえイギリスで一番です。<br><cr>おばあちゃん</cr>が作ってくれた味そのまま。<br>ひとさじ口にすると、<cr>子ども時代</cr>の懐か<br>しい思い出が目の前によみがえります。<br>残念なのは、<cr>スコーン</cr>の味だけ。<br>この素晴らしいコックの名は<br><cr>クルトン</cr>さん。<br>ぜひこの町を訪れてみてください。<br>幸せな時間をお約束します。</p></div>
-    <div class='fancydlg 🗺️'style=text-align:left><p>The <cr>ginger pudding</cr> I've had in this little town is better than any I ever had in London, no, even in the whole of England. It is just like how <cr>my grandmother</cr> used to make it. One bite brings back fond memories of <cr>childhood</cr>. The only disappointment is the taste of the <cr>scones</cr>. The name of this wonderful cook is <cr>Mr. Crouton</cr>. Please visit this town. I promise you a happy time.</p></div>
+    <div class='fancydlg 🇯🇵'style=text-align:left;min-width:50vh><p>この小さな町で食べた<br><cr>ジンジャープディング</cr>は、ロンドンで、<br>いいえイギリスで一番です。<br><cr>おばあちゃん</cr>が作ってくれた味そのまま。<br>ひとさじ口にすると、<cr>子ども時代</cr>の懐か<br>しい思い出が目の前によみがえります。<br>残念なのは、<cr>スコーン</cr>の味だけ。<br>この素晴らしいコックの名は<br><cr>クルトン</cr>さん。<br>ぜひこの町を訪れてみてください。<br>幸せな時間をお約束します。</p></div>
+    <div class='fancydlg 🗺️'style=text-align:left;min-width:50vh><p>The <cr>ginger pudding</cr> I've had in this little town is better than any I ever had in London, no, even in the whole of England. It is just like how <cr>my grandmother</cr> used to make it. One bite brings back fond memories of <cr>childhood</cr>. The only disappointment is the taste of the <cr>scones</cr>. The name of this wonderful cook is <cr>Mr. Crouton</cr>. Please visit this town. I promise you a happy time.</p></div>
 </div></td></tr>
-</table>
-<h1>Talking to Barton:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Barton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>クルトンさんにレシピの秘密を<br>聞いてみるであります。</p></div>
     <div class='dlg 🗺️'><p>I will ask Crouton about the secret of the recipe.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Crouton:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Crouton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i chelmey'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>キミだったのか。<br>私が探していた人物は！</p></div>
     <div class='dlg 🗺️'><p>Was it you? The person I was looking for!</p></div>
@@ -2028,67 +1705,33 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>いいだろう。</p></div>
     <div class='dlg 🗺️'><p>All right.</p></div>
 </div></td></tr>
-</table>
-<p class=bar></p>
-<table class=puzzle>
-<tr><th><h2><p>ナゾ００６</p><p>ナゾ００６　ナゾのイニシャル</p><p>Puzzling Initials</p></h2></th><th>
-    <h2><i>This puzzle is <cr>worth</cr></i><i>&nbsp; &nbsp; <cr>40</cr>&nbsp; &nbsp;40&nbsp;</i><i>Picarats</i></h2>
-    <table><tr><td><h2><i>Total Score:</i></h2></td><td><h2><i><cr>200</cr> Picarats</i></h2></td></tr></table>
-</th></tr>
-<tr><td><div>
+</table><p class=bar></p><table class=puzzle><tr>
+    <th class=map><img src=../ast/lh/nazo_bg_01_title.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=53%>ナゾ００６</text>
+        <text x=50% y=64%>ナゾ００６　ナゾのイニシャル</text>
+        <text x=50% y=71%>Puzzling Initials</text>
+    </svg></th>
+    <th class=map><img src=../ast/lh/nazo_bg_01_picarat.png><svg viewBox='0 0 768 626'>
+        <text x=50% y=32%><tspan>This puzzle’s </tspan><tspan>inspiration value</tspan><tspan> is</tspan></text>
+        <text x=42% y=52.5%>40</text><text x=66% y=52.5%>40</text>
+        <text x=50% y=73.5%>Picarats</text>
+        <text x=73% y=83.5%>200</text>
+        <text y=93%><tspan x=10%>Total Inspiration Value</tspan><tspan x=75%>Picarats</tspan></text>
+    </svg></th>
+</tr><tr><td class=pzlq><img src=../ast/lh/q_bg.png><div>
     <p class=🇯🇵>ある女性が次のようなオーダーをした。<br>「うちの娘はイチゴが大好きなの。<br>誕生ケーキには、娘のイニシャルを<br>イチゴで表現してくれるかしら？」<br><br>すると、完成したケーキにはＨの形<br>にイチゴが配置されていた。<br>「違う」と女性が文句を言うと、<br>ケーキ職人は娘のイニシャルを<br>一筆書きで飾りつけたと言う。<br>この娘のイニシャルは何だろうか？<br><br><br>お客さんの娘のイニシャルを<br>アルファベット１文字て答えよう</p>
     <p class=🗺️>A woman made the following order. "My daughter loves strawberries. Could you make it so that her birthday cake will have her initials in strawberries?"<br><br>Then, strawberries were arranged in the shape of a H on the finished cake. "No," she complained, "you must decorate it with my daughter's initials in a single stroke," she said. What are this girl's initials?<br><br><br>Give the customer's daughter's initials with one letter of the alphabet.</p>
-</div></td><td style='background:url(../ast/ic/nazo_06.png)center no-repeat'></td></tr>
-<tr></tr><!-- <tr><td colspan=2><p class=bar></p><div>
-    <a href="javascript:ShoHid('p01h0','p01')"><button id=p01h0_b class=p01_b>&nbsp;</button></a>
-    <a href="javascript:ShoHid('p01h1','p01')"><button id=p01h1_b class=p01_b>Hint 1</button></a>
-    <a href="javascript:ShoHid('p01h2','p01')"><button id=p01h2_b class=p01_b>Hint 2</button></a>
-    <a href="javascript:ShoHid('p01h3','p01')"><button id=p01h3_b class=p01_b>Hint 3</button></a>
-    <div id=p01_c class=hint><div id=p01h0 class=p01><h2><span>Choose a tab to view hints!</span><br>(no hint coins we die like dataminers)</h2></div>
-        <div id=p01h1 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h2 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-        <div id=p01h3 class=p01><div class=row>
-            <div class=🇯🇵><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-            <div class=🗺️><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-        </div></div>
-    </div>
-</div><p class=bar></p></td></tr> -->
-<tr><td style=background:url(../ast/lh/nazo_bg_incorrect.png)center></td><td style=background:url(../ast/lh/nazo_bg_correct.png)center></td></tr>
-<tr><td style='background:url(../ast/lh/qend_awrong.png)center'><div>
+</div></td><td><img src=../ast/ic/nazo_06.png style=height:100%></td></tr>
+<tr><td><img src=../ast/lh/nazo_bg_incorrect.png></td><td><img src=../ast/lh/nazo_bg_correct.png></td></tr>
+<tr><td class=pzlq><img src=../ast/lh/qend_awrong.png><div>
     <p class=🇯🇵>Incorrect.</p>
     <p class=🗺️>Incorrect.</p>
 </div></td>
-<td style='background:url(../ast/lh/qend_acorrect.png)center'><div>
+<td class=pzlq><img src=../ast/lh/qend_acorrect.png><div>
     <p class=🇯🇵>正解！<br><br>一筆書きで、イチゴをたどると<br>アルファベットの「Ｍ」となる。<br><br>ケーキ職人が娘のために用意した<br>ちょっとしたナゾだったのである。<br><br>ナゾ製作協力：平川　陽一</p>
     <p class=🗺️>If you trace the strawberry with a single stroke, it becomes the letter "M".<br><br>This was a little puzzle prepared by a cake maker for his daughter.<br><br>Puzzle Production Cooperation: Yoichi Hirakawa</p>
 </div></td></tr>
-</table>
-<!-- <h1>Dialogue if you leave the puzzle unsolved<p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_004.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td class='i layton'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</td></tr></table>
-<h1>Dialogue when you come back<p class=hr></p></h1>
-<table class=translaytion>
-<tr><td class=bg rowspan=2><img src=../ast/lh/bg_nazo-01.png></td><td class='i luke'></td><td><div class=row onscroll="ScrollAll(this)">
-    <div class='dlg 🇯🇵'><p>𝐉𝐀𝐏𝐀𝐍𝐄𝐒𝐄</p></div>
-    <div class='dlg 🗺️'><p>𝐋𝐈𝐓𝐄𝐑𝐀𝐋</p></div>
-</div></td></tr>
-<tr><td style=height:128px>&nbsp;</td></tr>
-</table> -->
-<h1>Dialogue after solving the puzzle<p class=hr></p></h1>
-<table class=translaytion>
+</table><p class=bar></p><h1>Dialogue after solving the puzzle</h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>ナゾを解きましたね。<br>しかたがない。真実を話しましょう。</p></div>
     <div class='dlg 🗺️'><p>You have solved it. Oh well. Let's speak the truth.</p></div>
@@ -2291,17 +1934,13 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🗺️'><p>And my wife's sweet potatoes are the best. You will love them too.</p></div>
 </div></td></tr>
 <tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Crouton:<p class=hr></p></h1>
-<table class=translaytion>
+</table></article></div>
+<div class=chcol><article><h1>Talking to Crouton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i crouton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>三人で来てくださるのを、<br>私はいつまでもいつまでもこの町の、<br>この食堂でずっと待っていますよ。</p></div>
     <div class='dlg 🗺️'><p>I'll be waiting forever and ever in this town, in this dining room, for the three of you to come.</p></div>
-</div></td></tr>
-<tr><td style=height:128px></td></tr>
-</table>
-<h1>Talking to Barton:<p class=hr></p></h1>
-<table class=translaytion>
+</div></td></tr><tr><td style=height:128px></td></tr></table></article></div>
+<div class=chcol><article><h1>Talking to Barton:<p class=hr></p></h1><table class=translaytion>
 <tr><td class=bg rowspan=2><img src=../ast/cv/room_9_bg.png></td><td class='i barton'></td><td><div class=row onscroll="ScrollAll(this)">
     <div class='dlg 🇯🇵'><p>しかしこのプディングおいしかったの<br>であります。</p></div>
     <div class='dlg 🗺️'><p>This pudding was delicious.</p></div>
@@ -2351,22 +1990,24 @@ PHL・TWO・SHILLINGS・1961・PHL・
     <div class='dlg 🇯🇵'><p>おしまい。</p></div>
     <div class='dlg 🗺️'><p>It's over.</p></div>
 </div></td></tr>
-</table>
-</article></div>
+</table></article></div>
 <!-- @ ending-fold -->
 <!-- @ custom-fold @           FOOTER -->
-<div class=bar style=margin-bottom:180px;--midd:var(--fore)><span style=font-size:50px;background:rgb(var(--grey));--midd:var(--fore)><a href=#>Back to Top</a> ・ <a href=../index.html>Main Index</a></span></div>
-<div id=sidenav style=padding-top:440px><a href=javascript:void(0) onclick=closeNav() id=closbtn><h1>Navigation</h1><span>&times;</span></a><div id=midxbtn>
+<div class=bar style=margin-bottom:180px;--midd:var(--fore)><span style=font-size:50px;background:rgb(var(--grey));--midd:var(--fore)><a href=#>Back to Top</a> ・ <a href=../index.html>Main Index</a></span></div><div id=sidenav>
+<div id=midxbtn>
+    <a href=javascript:void(0) onclick=closeNav() id=closbtn><h1>Navigation<span>&times;</span></h1></a>
     <a href=../index.html><h1>» Main Index «</h1></a>
     <a href=#><img src=../ast/logo/dcm_ic.svg></a>
-    <h2 style='margin:0 auto;padding-bottom:12px;border-bottom:3px solid rgb(var(--fore))'>Toggle Languages:</h2>
-    <div style=text-align:center;font-size:42px;margin-bottom:5px>
+    <h2>Toggle Languages:</h2>
+    <div id=langidx>
         <a class=infoa href="javascript:ToggleDiv('🇯🇵')">🇯🇵<div class=infob><b>Original Japanese Version</b><hr>Transcription by brynn#5999</div></a>
         <a class=infoa href="javascript:ToggleDiv('🗺️')">🗺️<div class=infob><b>Literal Translation</b><hr>This English translation was made using DeepL and Jisho.org, a Japanese dictionary. Its purpose is to remain as close to the original text as possible, even though it may result in awkward phrasing.<br>Hovering over the text will show a word-for-word comparison with the original Japanese text, and additional information may be present upon hovering certain words when the subtlety of the original text cannot be translated in a straightforward way.<br>Huge thanks to brynn&num;5999 for making it as accurate as possible!</div></a>
         <a class=infoa href="javascript:ToggleDiv('🇬🇧')">🇬🇧<div class=infob><b>Fan-Made English Translation</b><hr>This second English translation sacrifices accuracy in favour of a reading experience closer to the original feel from the games.</div></a>
     </div>
-</div>
-<a href=#part1><h3><svg viewBox='0 0 20 20'class=ic><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><circle cx=50% cy=50% r=40% fill=rgb(var(--back)) /><path/><path/></svg><span>First Part</span></h3></a>
-<a href=#part2><h3><svg viewBox='0 0 20 20'class=ic><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><circle cx=50% cy=50% r=40% fill=rgb(var(--back)) /><path/><path/></svg><span>Second Part</span></h3></a>
-</div><button id=openbtn onclick=openNav()>&#9776; Index</button></div>
+</div><div id=navctn>
+
+    <a href=#part1><h3><svg viewBox='0 0 20 20'class=ic><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><circle cx=50% cy=50% r=40% fill=rgb(var(--back)) /><path/><path/></svg><span>First Part</span></h3></a>
+    <a href=#part2><h3><svg viewBox='0 0 20 20'class=ic><circle cx=50% cy=50% r=45% fill=rgb(var(--fore)) /><circle cx=50% cy=50% r=40% fill=rgb(var(--back)) /><path/><path/></svg><span>Second Part</span></h3></a>
+
+</div></div><button id=openbtn onclick=openNav()>&#9776; Index</button></div>
 <!-- @ ending-fold -->
