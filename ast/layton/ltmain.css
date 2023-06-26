@@ -66,24 +66,6 @@ article {
         border-image-slice:34% 34%;
         color: rgb(var(--fore));
     }
-    /* .chcol{filter:hue-rotate(90deg);} */
-    .chctn {
-    }
-    /* .chcol {
-        width: 80%;
-        min-width: 1500px;
-        margin: 80px auto;
-        border-radius: 42px;
-        padding: 17px 0;
-    }
-    .chctn {
-        margin: auto;
-        width: calc(100% - 36px);
-        border:120px solid;
-        border-image:url(https://lutiaskokopelli.github.io/stories/layton/ast/logo/fleur.svg);
-        border-image-slice:34% 34%;
-        color: rgb(var(--fore));
-    } */
     .emphprg {
         margin: auto;
         width: 70%;
@@ -155,7 +137,6 @@ rt {
     user-select: none;
     ruby-align: center;
     font-style: normal;
-    /* color: rgb(var(--emph)); font-weight:800; */ /* font-size:0.5rem; */
     color:rgb(var(--midd));
     text-transform:full-size-kana;
 }
@@ -230,7 +211,6 @@ h3 {
     margin-bottom:12px;
     color:rgb(var(--fore));
     font-size:1.2rem;
-    /* color: rgb(var(--midd)); */
 }
 h1 span {
     color: rgb(var(--midd));
@@ -318,7 +298,6 @@ h1 + .hourglass::before {
 .bar {
     text-align: center;
     display: block;
-    /* line-height: 4px; */
     height: 4px;
     background: rgb(var(--midd));
     width: 94%;
@@ -382,12 +361,8 @@ h1 + .hourglass::before {
 table{
     overflow-y:visible!important
 }
-ruby:hover .hasmore{color:rgb(var(--plred));font-weight:800}
 .infoa:hover .infob,
-.infob:hover {
-    /* visibility: visible; */
-    display:revert;
-}
+.infob:hover {display:revert}
 .medialist .infoa {
     margin: 3px;
     text-align: center;
@@ -395,7 +370,6 @@ ruby:hover .hasmore{color:rgb(var(--plred));font-weight:800}
 .infob {
     font-weight: initial;
     font-style: initial;
-    /* visibility: hidden; */
     display:none;
     z-index: 99;
     background: rgba(var(--back), 0.95);
@@ -405,8 +379,6 @@ ruby:hover .hasmore{color:rgb(var(--plred));font-weight:800}
     font-size: 17px;
     color: rgb(var(--plblack));
     min-width: 256px;
-    /* overflow-y: auto;
-    overflow-x: hidden; */
     max-height: 500px;
     position: absolute;
     top: 2.3rem;
@@ -512,10 +484,6 @@ a:active button {
     margin-bottom: -5px;
     border: none !important;
 }
-/* #main.container > div:nth-child(n + 2) {
-    display: none;
-} */
-
 #selpage::placeholder,#selpage:focus-within{opacity:1;color:rgb(var(--plwhite));font-weight:600;font-family:Roboto,Arial;text-shadow:var(--txtshw)}
 #selpage:focus-visible{border:3px solid rgb(var(--plwhite));outline:5px solid rgb(var(--plblack));caret-shape:block;caret-color:rgb(var(--plwhite))}
 #selpage:focus-visible::placeholder{opacity:.5}
@@ -523,4 +491,10 @@ a:active button {
 #selpage{width:100%;font-size:16px;margin:17px auto;border-radius:100px;padding:17px 42px;border:3px solid rgb(var(--plwhite));background:linear-gradient(30deg,rgb(var(--plred)),rgb(var(--back)));outline:2px solid rgb(var(--plblack))}
 
 input[type=checkbox]{display:none}
-.🗺️ rt{display:none;text-transform:none}.🗺️ ruby:hover rt{display:revert}
+.🗺️ rt{
+    display:none;
+    text-transform:none;
+    margin-bottom:-5px
+}.🗺️:hover rt{display:revert}
+.🗺️:hover .hasmore{color:rgb(var(--plred));font-weight:800}
+ruby{ruby-align:space-between}
