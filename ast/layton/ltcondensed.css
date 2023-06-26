@@ -44,6 +44,12 @@ c {
     stroke: rgba(var(--plwhite),.34);
     stroke-width: 3px;
 }
+.map .mv{
+    fill:rgb(240,224,0);stroke:rgb(var(--plwhite));stroke-linejoin:round;opacity:.5
+}
+.map .mv:hover{
+    opacity:1
+}
 .map circle,.map text,.map polygon,.map ellipse{
     filter:drop-shadow(var(--borderlen)var(--borderlen)var(--borderlen)rgb(var(--plblack)))
 }
