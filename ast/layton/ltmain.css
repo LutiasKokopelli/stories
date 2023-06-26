@@ -497,5 +497,11 @@ rt{
     text-transform:none;
     margin-bottom:-5px;
 }
+.🗺️{position:relative}
+.🗺️ c{opacity:100%}
+.🗺️:hover c{opacity:17%}
 .🗺️:hover rt{display:revert}
-.🗺️:hover .hasmore{color:rgb(var(--plred));font-weight:800}
+.🗺️:hover .infoa{color:rgb(var(--plred));font-weight:800}
+.🗺️ .infoa{position:revert}
+.🗺️ .infob{top:7px;left:7px}
+.🗺️ .infob a{text-decoration:3px underline dotted rgb(40,202,40);text-underline-offset:3px}
