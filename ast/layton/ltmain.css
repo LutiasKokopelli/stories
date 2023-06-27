@@ -495,13 +495,20 @@ rt{
 .🗺️ rt{
     display:none;
     text-transform:none;
+    color:rgb(var(--plblack));
+    pointer-events:revert;
+    user-select:revert;
     margin-bottom:-5px;
 }
 .🗺️{position:relative}
 .🗺️ c{opacity:100%}
 .🗺️:hover c{opacity:17%}
+.🗺️:hover p{line-height:240%}
+.🗺️:hover{min-height:calc(var(--dlgheight) * 1.5)}
 .🗺️:hover rt{display:revert}
+.🗺️:hover ruby{position:relative}
+.🗺️:hover rt i{position:absolute;top:-17px;display:inline-block;width:100%;left:0;text-align:center}
 .🗺️:hover .infoa{color:rgb(var(--plred));font-weight:800}
 .🗺️ .infoa{position:revert}
-.🗺️ .infob{top:7px;left:7px}
-.🗺️ .infob a{text-decoration:3px underline dotted rgb(40,202,40);text-underline-offset:3px}
+.🗺️ .infob{top:7px;left:7px;line-height:150%}
+.🗺️ .infob a,.🗺️ rt a{text-decoration:3px underline dotted rgb(40,202,40);text-underline-offset:3px;color:unset}.🗺️ rt a{font-weight:normal}
