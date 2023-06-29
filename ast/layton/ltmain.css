@@ -483,11 +483,10 @@ a:active button {
 #selpage{width:100%;font-size:16px;margin:17px auto;border-radius:100px;padding:17px 42px;border:3px solid rgb(var(--plwhite));background:linear-gradient(30deg,rgb(var(--plred)),rgb(var(--back)));outline:2px solid rgb(var(--plblack))}
 
 input[type=checkbox]{display:none}
-ruby{ruby-align:center}
+ruby{ruby-align:center;ruby-position:inter-character}
 rt{
     pointer-events: none;
     user-select: none;
-    ruby-align: center;
     font-style: normal;
     color:rgb(var(--midd));
     text-transform:full-size-kana;

@@ -39,7 +39,7 @@ tr:last-child d + span{bottom:0}
 .h blockquote:before{content:'“';font-size:100px;color:rgb(var(--fore));paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;fill:rgb(var(--plwhite));position:absolute;top:-15px;left:20px}
 .h blockquote:after {content:'”';font-size:100px;color:rgb(var(--fore));paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;fill:rgb(var(--plwhite));position:absolute;bottom:-50px;right:15px}
 
-*:lang(ja){font-family:"Noto Serif JP";ruby-align:space-between;white-space:nowrap}
+*:lang(ja){font-family:"Noto Serif JP";white-space:nowrap}
 *:lang(ja) rt{padding-top:3px;padding-bottom:3px}
 .h rt{font-size:.7rem;margin-bottom:0}
 .h rt i{margin-top:-.5rem;text-indent:0}
@@ -52,3 +52,27 @@ tr:last-child d + span{bottom:0}
 
 .charpres p{margin:0;width:100%;text-indent:0!important}
 .charpres img{position:absolute;height:240px;bottom:0;right:17px}
+
+
+
+
+
+
+
+
+
+
+/* rt,.h ruby:hover{color:rgb(var(--fore))} */
+/* rt{font-weight:normal!important} */
+/* .h ruby{position:relative} */
+/* .h ruby rt{display:none;min-width:100%;text-align:center;position:absolute;right:0;text-indent:0!important;top:-2.2em;background:rgba(var(--back),.9);padding:7px;border:2px solid rgb(var(--plred));border-radius:5px;color:rgb(var(--plred));font-size:.9em}.h ruby:hover rt{display:block} */
+
+/*
+
+<!-- @ custom-fold @          【第四章　⁑　からくりの城】➊ -->
+novpage
+<svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><text x=50% y=50% dx=".09em"dy=".25em">1</text></svg>
+<svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><text x=50% y=50% dx=".09em"dy=".25em">1</text></svg>
+<!-- @ ending-fold -->
+
+*/
