@@ -1,8 +1,8 @@
 *{
-    -moz-transition: all 0.3s ease-in-out;
-    scrollbar-width: auto;
-    scrollbar-color: rgb(var(--midd)) rgb(var(--back));
-    overflow-anchor: none;
+    -moz-transition:all 0.3s ease-in-out;
+    scrollbar-width:auto;
+    scrollbar-color:rgb(var(--fore))transparent;
+    overflow-anchor:none;
     --txtshw: 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack)), 0 0 0.2em rgb(var(--plblack));
     --plblack:48,32,32;
     --plwhite:252,252,244;
@@ -78,7 +78,7 @@ article {
     }
 }
 @media only screen and (orientation: portrait) {
-    
+
     .chcol {
         width: 100%;
         padding: 42px 0;
