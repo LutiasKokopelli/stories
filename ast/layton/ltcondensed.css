@@ -165,7 +165,7 @@ code {font-style:normal;display:none}
 }
 .row,tr,table,.dlg,td {overflow-y:visible!important}
 .row{
-    --fore:var(--back);--midd:var(--back);
+    /* --fore:var(--back);--midd:var(--back); */
     overflow-x:auto;
     display:flex;
     flex-direction:row;

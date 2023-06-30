@@ -1,5 +1,8 @@
 *{--nblines:18;--nbrows:42}
-#wrap{overflow-x:auto;padding:50px;width:fit-content!important}
+#wrap{overflow-x:auto;padding:50px;width:fit-content!important;left:0}
+#sidenav{left:-100%}
+#openbtn{left:5px}
+
 .chcol{width:revert}
 .page{position:relative;padding:50px}
 
