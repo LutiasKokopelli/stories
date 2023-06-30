@@ -3,7 +3,7 @@
 #sidenav{left:-100%}
 #openbtn{left:5px}
 
-.chcol{width:revert}
+.chcol,article{width:fit-content}
 .page{position:relative;padding:50px}
 
 .nov{border-collapse:collapse;table-layout:fixed;width:calc(2 * 2*var(--nblines)*20px + 200px)}
@@ -72,10 +72,10 @@ tr:last-child d + span{bottom:0}
 
 /*
 
-<!-- @ custom-fold @          【第四章　⁑　からくりの城】➊ -->
+<!-- @ custom-fold @           【第七章　⁑　『古代樹』の謎】➊ -->
 novpage
-<svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><text x=50% y=50% dx=".09em"dy=".25em">1</text></svg>
-<svg viewBox='0 0 20 20'class=lgthat><path/><path/><path/><path/><text x=50% y=50% dx=".09em"dy=".25em">1</text></svg>
+<svg viewBox='-3 -3 26 26'class=lgthat><path/><path/><text x=50% y=50% dx="-2.5px"dy="-1px">1</text></svg>
+<svg viewBox='-3 -3 26 26'class=lgthat><path/><path/><text x=50% y=50% dx="-2.5px"dy="-1px">1</text></svg>
 <!-- @ ending-fold -->
 
 */
