@@ -1,5 +1,5 @@
 *{--nblines:18;--nbrows:42}
-#wrap{overflow-x:auto;padding:50px;width:fit-content!important;left:0}
+#wrap{overflow-x:auto;padding:50px;min-width:fit-content;width:100%;left:0}
 #sidenav{left:-100%}
 #openbtn{left:5px}
 
