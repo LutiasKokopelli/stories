@@ -70,14 +70,12 @@ function Toggle(cl){
   if(button.style.opacity=='1'){
     button.style.opacity='.17';
     for(var i=0;i<els.length;i++){
-      var s=els[i].style;
-      s.opacity='.17'
+      els[i].style.opacity='.17'
     }
   }else{
     button.style.opacity='1';
     for(var i=0;i<els.length;i++){
-      var s=els[i].style;
-      s.opacity='1'
+      els[i].style.opacity='1'
     }
   }
 }
