@@ -4,6 +4,7 @@
 <link rel=stylesheet type=text/css href=../ast/layton/ltmain.css media=screen>
 <link rel=stylesheet type=text/css href=../ast/layton/ltsls.css media=screen>
 <style>
+*{scrollbar-color:rgb(var(--fore))rgb(var(--back))}
 .tablectn p{text-align:left}
 .tablectn a{display:flex;margin:auto;border-bottom:3px solid rgb(var(--midd));padding:7px}
 .tablectn a:last-child{border:none}
@@ -27,7 +28,29 @@ h2 span{font-size:.7em;line-height:.9}
 .charlist p{text-align:center;background:rgba(var(--fore),.9);border-radius:10px;color:rgb(var(--plwhite));margin:auto;padding:5px 17px 5px 17px}
 .charlist img{display:block;margin:auto}
 .charlist span{display:none}
-</style><script src=../ast/js.js></script></head><body><div class=chcol><div class=chctn><div class=ch><article>
+</style><script src=../ast/js.js></script><script>
+function Toggle(cl){
+    var button=document.getElementById(cl);
+    var els=document.getElementsByClassName(cl);
+    if(button.style.opacity=='1'){
+        button.style.opacity='.17';
+        for(var i=0;i<els.length;i++){
+            els[i].childNodes[0].style.opacity='.17';
+            els[i].childNodes[1].style.opacity='.17';
+            els[i].childNodes[2].style.opacity='.17';
+            els[i].childNodes[3].style.opacity='.17';
+        }
+    }else{
+        button.style.opacity='1';
+        for(var i=0;i<els.length;i++){
+            els[i].childNodes[0].style.opacity='1';
+            els[i].childNodes[1].style.opacity='1';
+            els[i].childNodes[2].style.opacity='1';
+            els[i].childNodes[3].style.opacity='1';
+        }
+    }
+}
+</script></head><div class=chcol><article>
 <!-- @ ending-fold -->
 <!-- @ custom-fold @ INTRO -->
 <h1 style=color:rgb(var(--fore))><span style=color:rgba(var(--emph),.9)>Index</span><br>Chapter Masterlist<div class=hr></div></h1><p class=hourglass></p>
@@ -35,12 +58,14 @@ h2 span{font-size:.7em;line-height:.9}
 <p class=vs>Hello, welcome to <i>Stable Like Sand</i>! As a warning, this fanfic is going to be a <i>long</i> series with a <i>lot</i> of chapters. For example, in the span of just six hours, the beginning of this fanfic is told through a dozen of chapters and more than 60k words! Given the fact that this fanfic’s plot encourages the audience to try to piece things together and solve the mysteries ahead of time, and that a few readers like to go back to earlier chapters in order to look for hints (or just re-read them for fun), I decided to make this index page of sorts in order to make navigation much easier.</p>
 <p class=vb>If this is your first time around, please ignore this for now! …Or not I guess, I mean, you can do whatever you want. This index will be telling which characters show up in which chapter for example, so if you only want to read a few chapters in which X character shows up, this index will make it entirely possible too. But do know that spoilers are bound to be found here, even though I’m trying to keep them minimal.</p>
 <p class=bar style=margin-bottom:80px><span>Filter Characters:</span></p>
-<p class=vb>The following list shows characters who make a physical appearance in the story, in chronological order. If you want to only look for chapters in which that character appears, this section is for you. Just keep in mind that the order in which you press the buttons matters! For example, since multiple characters can appear in the same chapter:</p><ul style=margin-bottom:42px>
+<p class=vb>The following list shows characters who make a physical appearance in the story, in chronological order. If you want to only look for chapters in which that character appears, this section is for you. Just keep in mind that the order in which you press the buttons matters! For example, since multiple characters can appear in the same chapter:</p><ul style=margin:42px>
 <li>The big dark green button will turn off all chapters. If you want to select only chapters in which a certain character appears, then start with this button in order to start fresh and make chapters appear, rather than turn off all characters you don’t care about one by one!</li>
-<li>Turning on character A will show all chapters in which A appears.</li><li>However, if afterwards you turn off character B, then all chapters in which B appears will be hidden—even those in which character A also appears.</li><li>In this case, clicking twice on character A will make these chapters visible once more.</li><li>Since there is going to be a LOT of characters to sort through, I also added a search bar! If you can’t find them through scrolling, type in the characters you want to toggle on or off.<br><br>Fun fact: the search bar will register more than just the displayed name. Characters with titles (e.g. “Professor” or “Dr/Doctor”) or with more than just one name (hello and good day to the dysfunctional Bronev family) will also respond to your queries.</li></ul>
+<li>Turning on character A will show all chapters in which A appears.</li><li>However, if afterwards you turn off character B, then all chapters in which B appears will be hidden—even those in which character A also appears.</li><li>In this case, clicking twice on character A will make these chapters visible once more.</li><li>Since there is going to be a LOT of characters to sort through, I also added a search bar! If you can’t find them through scrolling, type in the characters you want to toggle on or off.</li></ul>
+<p class=vb>Fun fact: the search bar will register more than just the displayed name. Characters with titles (e.g. “Professor” or “Dr/Doctor”) or with more than just one name (hello and good day to the dysfunctional Bronev family) will also respond to your queries.</p>
 <a id=c href="javascript:Toggle('c')"style=opacity:1;width:100%;background:rgb(var(--fore));color:rgb(var(--plwhite));font-size:34px;display:block;padding:17px;text-align:center;border-radius:17px>Show/Hide all chapters</a>
 <input type=text id=filterinput onkeyup=FilterItems() placeholder=" Type a character’s name here to find them more easily!">
 <!-- @ ending-fold -->
+<!-- @ custom-fold @ CHARLIST -->
 <div class=charlist id=filterlist>
     <a href="javascript:Toggle('bill')"    ><div><img class=c style=opacity:1 id=bill src=chr/bill.png><p>Bill<br>Hawks</p></div></a>
     <a href="javascript:Toggle('claire')"  ><div><img class=c style=opacity:1 id=claire src=chr/claire.png><p>Claire<br>Foley</p></div></a>
@@ -54,10 +79,12 @@ h2 span{font-size:.7em;line-height:.9}
     <a href="javascript:Toggle('schrader')"><div><img class=c style=opacity:1 id=schrader src=chr/schrader.png><p>Andrew<br>Schrader<span>Dr Doctor</span></p></div></a>
     <!-- <a href="javascript:Toggle('@@@')"><div><img class=c style=opacity:1 id=@@@ src=chr/@@@.png><p>@@@</p></div></a> -->
 </div><p class='hr bar'>⁂</p><p class=hourglass>⁂</p>
+<!-- @ ending-fold -->
 <!-- @ custom-fold @ 1953 / 08 / 22 — A Rift in Time -->
-<div class=sbar><input id=19530822 class=toggle type=checkbox>
-               <label for=19530822 class=lbl-toggle href=#19530822><h2><span>Monday, August 22, 1953<br></span>A Rift in Time</h2></label>
-<div class=tablectn>
+<div class=sbar>
+<input  id=19530822 class=toggle type=checkbox>
+<label for=19530822 class=lbl-toggle
+     href=#19530822><h2><span>Monday, August 22, 1953<br></span>A Rift in Time</h2></label><div class=tablectn>
 
 <a href=https://archiveofourown.org/works/42147720/chapters/105817557 class='c bill'><p>
     <img src=chr/bill.png>
@@ -141,4 +168,4 @@ h2 span{font-size:.7em;line-height:.9}
                <label for=19530823 class=lbl-toggle><h2><span>Tuesday, August 23, 1953<br></span>The Sycamore Family Rescue Mission</h2></label>
 <div class=tablectn>
 </div></div> -->
-</article></div></div></div></body>
+</article></div>
