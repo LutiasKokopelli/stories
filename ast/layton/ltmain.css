@@ -356,7 +356,7 @@ h1 + .hourglass::before {
 table{
     overflow-y:visible!important
 }
-.infoa:hover .infob,
+.infoa:hover > .infob,
 .infob:hover {display:revert}
 .medialist .infoa {
     margin: 3px;
@@ -514,3 +514,5 @@ rt{
 .🗺️ .infoa{position:revert}
 .🗺️ .infob{top:7px;left:7px;line-height:150%}
 .🗺️ .infob a,.🗺️ rt a{text-decoration:3px underline dotted rgb(40,202,40);text-underline-offset:3px;color:unset}.🗺️ rt a{font-weight:normal}
+inv{display:none}
+.🗺️:hover inv{display:unset}

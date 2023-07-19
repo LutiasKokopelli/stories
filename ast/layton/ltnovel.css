@@ -56,7 +56,7 @@ tr:last-child d + span{bottom:0}
 .charpres p{margin:0;width:100%;text-indent:0!important}
 .charpres img{position:absolute;height:240px;bottom:0;right:17px}
 
-
+/* .🗺️{height:calc(var(--nbrows)*20px);max-height:calc(var(--nbrows)*20px);overflow-y:auto} */
 
 
 
