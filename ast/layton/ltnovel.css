@@ -27,15 +27,16 @@
     height:calc(var(--nbrows)*20px);
     width:calc(100% - 16px - 50px);
 }
-.v d span{text-combine-upright:all}
-.v d span.emph{text-combine-upright:unset;color:rgb(var(--fore));font-family:'游ゴシック';font-weight:800}
+.v d span.unil{text-combine-upright:all}
+.v d span.emph{text-combine-upright:unset}
+.v d span.emph,.v d span.emph *{color:rgb(var(--fore));font-family:'游ゴシック';font-weight:800}
 
 .page > span:last-child{position:absolute;bottom:50px;font-size:.7em;font-family:"Noto Serif JP"}
 .page:first-child > span:last-child{left:17px}
 .page:last-child > span:last-child{right:17px}
 tr:last-child .page > span:last-child{bottom:0}
 
-.v d h2{font-family:'游ゴシック';font-weight:600}
+.v d h2 ruby{font-family:'游ゴシック';font-weight:600}
 .v p{margin:0 12px}
 .h p{margin:17px 80px;text-indent:2em!important;text-align:justify}
 
@@ -45,7 +46,7 @@ tr:last-child .page > span:last-child{bottom:0}
 .h blockquote:after {content:'”';font-size:100px;color:rgb(var(--fore));paint-order:stroke;stroke:rgb(var(--plblack));stroke-width:1.5%;fill:rgb(var(--plwhite));position:absolute;bottom:-50px;right:15px}
 
 *:lang(ja){font-family:"Noto Serif JP";white-space:nowrap}
-*:lang(ja) rt{padding-top:3px;padding-bottom:3px;color:rgba(var(--plblack),.5)}
+*:lang(ja) rt{color:rgba(var(--plblack),.5);font-weight:600}
 .h rt{font-size:.7rem;margin-bottom:0}
 .h rt i{margin-top:-.5rem;text-indent:0}
 .h .infoa{position:relative}.h .infob{text-indent:0;top:2rem}
@@ -59,6 +60,7 @@ tr:last-child .page > span:last-child{bottom:0}
 .charpres img{position:absolute;height:240px;bottom:0;right:17px}
 
 .page svg.lgthat{margin:50px}
+.page:lang(ja) svg.lgthat{position:absolute}
 
 
 /* .🗺️{height:calc(var(--nbrows)*20px);max-height:calc(var(--nbrows)*20px);overflow-y:auto} */

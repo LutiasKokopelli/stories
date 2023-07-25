@@ -505,7 +505,7 @@ rt{
 .🗺️{position:relative}
 .🗺️ c{opacity:100%}
 .🗺️:hover c{opacity:17%}
-.🗺️:hover p{line-height:240%}
+.🗺️:hover p,p.🗺️:hover{line-height:240%}
 .🗺️:hover{min-height:calc(var(--dlgheight) * 1.5)}
 .🗺️:hover rt{display:revert}
 .🗺️:hover ruby{position:relative}
