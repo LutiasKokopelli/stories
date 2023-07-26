@@ -49,7 +49,7 @@ tr:last-child .page > span:last-child{bottom:0}
 *:lang(ja) rt{color:rgba(var(--plblack),.5);font-weight:600}
 .h rt{font-size:.7rem;margin-bottom:0}
 .h rt i{margin-top:-.5rem;text-indent:0}
-.h .infoa{position:relative}.h .infob{text-indent:0;top:2rem}
+.h .infoa{position:relative}.h .infob{text-indent:0;top:1.5rem}
 .unex{color:rgb(var(--plred))!important}
 
 .charpres{flex-direction:column;align-items:center;display:flex;background:rgba(var(--midd),.42);position:relative;border:3px solid rgb(var(--fore));padding:17px;width:80%;margin:17px 0}
