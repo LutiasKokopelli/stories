@@ -1,7 +1,7 @@
 *{--nblines:18;--nbrows:42}
 #wrap{overflow-x:auto;padding:50px;min-width:fit-content;width:100%;left:0}
 #sidenav{left:-100%}
-#openbtn{left:5px}
+#openbtn{left:1vh}
 
 .chcol,article{width:fit-content}
 .page{position:relative;padding:50px}

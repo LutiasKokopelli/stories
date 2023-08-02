@@ -13,7 +13,7 @@
 }
 @media only screen and (orientation: portrait) {
     #sidenav{left:-100%;width:50%}
-    #openbtn{left:5px}
+    #openbtn{left:1vh}
 }
 a:hover h3 span{color:rgb(var(--plred))}
 #midxbtn{
@@ -33,14 +33,14 @@ a:hover h3 span{color:rgb(var(--plred))}
 }
 #openbtn {
     position:fixed;
-    top: 5px;
-    font-size: 20px;
+    top: 1vh;
+    font-size: 2.5vh;
     cursor: pointer;
     background: rgb(var(--fore));
     color: rgb(var(--plwhite));
-    padding: 10px 15px;
+    padding: 2vh 2.5vh;
     border: none;
-    border-radius: 7px;
+    border-radius: 3vh;
 }
 #openbtn:hover {
     background: rgb(var(--plred));

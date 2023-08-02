@@ -48,7 +48,7 @@ function openNav(){
 }
 function closeNav(){
     document.getElementById("sidenav").style.left = "-100%";
-    document.getElementById("openbtn").style.left = "5px";
+    document.getElementById("openbtn").style.left = "1vh";
     if (window.matchMedia("(orientation: landscape)").matches) {
         document.getElementById("wrap").style.left = "0";
         document.getElementById("wrap").style.width = "100%";
