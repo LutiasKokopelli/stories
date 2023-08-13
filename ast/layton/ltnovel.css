@@ -6,7 +6,7 @@
 .chcol,article{width:fit-content}
 .page{position:relative;padding:50px}
 
-.nov{border-collapse:collapse;table-layout:fixed;width:calc(2 * 2*var(--nblines)*20px + 200px)}
+.nov{border-collapse:collapse;table-layout:fixed;width:calc(2 * 2*var(--nblines)*21px + 200px)}
 .nov > tbody > tr{height:0}
 .nov > tbody > tr:not(:first-child) > th{padding:50px}
 .nov > tbody > tr > td{
