@@ -11,22 +11,18 @@
     --plcyan:48,120,128;
 }
 .row{
-    scrollbar-color: transparent transparent;
+    scrollbar-color:transparent transparent;
 }
 *,
 *:after,
 *:before {
-    -moz-box-sizing: border-box;
+    -moz-box-sizing:border-box;
 }
 *:target {
-    scroll-margin-top: 80px;
+    scroll-margin-top:80px;
 }
-cr {
-    color: rgb(var(--plre2));
-}
-cs {
-    color: rgb(var(--plcyan));
-}
+cr {color:rgb(var(--plre2))}
+cs {color:rgb(var(--plcyan))}
 r {
     color: rgb(var(--plred));
     font-weight: 600;
@@ -467,17 +463,18 @@ a:active button {
     left: 0;
 }
 .credit2 {
-    z-index: 1;
-    margin: 17px;
-    background: rgba(var(--plwhite), 0.5);
-    padding: 7px;
-    border-radius: 5px;
-    font-size: 14px;
+    z-index:1;
+    margin:17px;
+    background:rgba(var(--plwhite),.3);
+    white-space:nowrap;
+    padding:7px;
+    border-radius:5px;
+    font-size:12px;
 }
 .tophat {
-    height: 20px;
-    margin-bottom: -5px;
-    border: none !important;
+    height:12px;
+    margin-bottom:-2px;
+    border:none!important;
 }
 #selpage::placeholder,#selpage:focus-within{opacity:1;color:rgb(var(--plwhite));font-weight:600;font-family:Roboto,Arial;text-shadow:var(--txtshw)}
 #selpage:focus-visible{border:3px solid rgb(var(--plwhite));outline:5px solid rgb(var(--plblack));caret-shape:block;caret-color:rgb(var(--plwhite))}

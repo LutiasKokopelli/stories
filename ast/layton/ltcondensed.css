@@ -4,7 +4,7 @@
 *{
     --dlgheight:128px;
     --dlgratio:3.28;
-    --bgwidth:25%;
+    --bgwidth:calc(var(--dlgheight)*2.7);
     --screenratio:1.23;
 }
 u {
@@ -116,12 +116,12 @@ code {font-style:normal;display:none}
 .px {
     image-rendering: pixelated;
 }
-.bg img {
+.bg img{
     border: 2px solid rgb(var(--plblack));
 }
 .bg {
-    width:var(--bgwidth)!important;
     position: relative;
+    width:var(--bgwidth)!important;
 }
 .memo .row div {
     height:calc(50vh / var(--screenratio));
@@ -160,7 +160,6 @@ code {font-style:normal;display:none}
     min-height: var(--dlgheight);
     height: var(--dlgheight);
     position: relative;
-    width:calc(var(--bgwidth) - 80px);
     overflow-x:hidden;
 }
 .row,tr,table,.dlg,td {overflow-y:visible!important}
