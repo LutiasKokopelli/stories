@@ -22,6 +22,7 @@ a:hover h3 span{color:rgb(var(--plred))}
 }
 #sidenav{
     min-width:320px;
+    font-size:3vw;
 }
 #openbtn {
     position:fixed;
