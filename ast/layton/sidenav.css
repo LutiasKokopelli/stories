@@ -20,10 +20,6 @@ a:hover h3 span{color:rgb(var(--plred))}
     margin:0 auto;
     color:rgb(var(--back));
 }
-#sidenav{
-    min-width:320px;
-    font-size:3vw;
-}
 #openbtn {
     position:fixed;
     top:1vh;
@@ -59,6 +55,8 @@ a:hover h3 span{color:rgb(var(--plred))}
     margin-left: 50px;
 }
 #sidenav {
+    min-width:320px;
+    font-size:1vw;
     top: 0;
     position: fixed;
     z-index: 99;
@@ -72,14 +70,14 @@ a:hover h3 span{color:rgb(var(--plred))}
 }
 #sidenav #selpage{
     height:17px;
-    font-size:12px;
+    /* font-size:12px; */
     padding-left:20px;
     width:94%;
     margin-left:3%;
 }
 #sidenav ul{
     margin:7px;
-    font-size:1.2rem;
+    /* font-size:1.2rem; */
 }
 #sidenav ul hr{
     margin:12px -12px 12px -7px
