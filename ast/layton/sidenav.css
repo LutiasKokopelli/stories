@@ -1,10 +1,10 @@
 @media only screen and (orientation:landscape) {
     #wrap{left:16%;width:84%}
     #openbtn{left:-100%}
-    #sidenav{left:0;width:16%}
+    #sidenav{left:0;width:16%;font-size:1vw}
 }
 @media only screen and (orientation:portrait) {
-    #sidenav{left:-100%;width:50%}
+    #sidenav{left:-100%;width:50%;font-size:3vw}
     #openbtn{left:1vh}
 }
 a:hover h3 span{color:rgb(var(--plred))}
@@ -56,7 +56,7 @@ a:hover h3 span{color:rgb(var(--plred))}
 }
 #sidenav {
     min-width:320px;
-    font-size:1vw;
+    /* font-size:1vw; */
     top: 0;
     position: fixed;
     z-index: 99;
