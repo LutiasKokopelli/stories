@@ -69,7 +69,7 @@ a:hover h3 span{color:rgb(var(--plred))}
     height: 100%;
 }
 #sidenav #selpage{
-    height:17px;
+    /* height:17px; */
     /* font-size:12px; */
     padding-left:20px;
     width:94%;
