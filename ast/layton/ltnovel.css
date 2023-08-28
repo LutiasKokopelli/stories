@@ -53,8 +53,8 @@ tr:last-child .page > span:last-child{bottom:0}
 .unex{color:rgb(var(--plred))!important}
 
 .charpres{flex-direction:column;align-items:center;display:flex;background:rgba(var(--midd),.42);position:relative;border:3px solid rgb(var(--fore));padding:17px;width:80%;margin:17px 0}
-.charpres:nth-child(odd){margin-left:calc(20% - 17px);border-radius:25px 25px 0 25px}
-.charpres:nth-child(even){margin-right:calc(20% - 17px);border-radius:25px 25px 25px 0}
+.charpres:nth-child(odd){margin-left:calc(20% - 17px);border-radius:25px 25px 0 25px;text-align:left}
+.charpres:nth-child(even){margin-right:calc(20% - 17px);border-radius:25px 25px 25px 0;text-align:right}
 
 .charpres p{margin:0;width:100%;text-indent:0!important}
 .charpres img{position:absolute;height:240px;bottom:0;right:17px}

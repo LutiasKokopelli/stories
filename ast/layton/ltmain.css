@@ -61,7 +61,7 @@ article {
         outline-offset:-1px;
         border-radius: 17px;
         padding: 17px 0;
-        border:120px solid;
+        border:120px solid rgb(var(--back));
         color: rgb(var(--fore));
     }
     .emphprg {
