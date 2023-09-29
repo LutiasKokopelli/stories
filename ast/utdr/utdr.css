@@ -51,7 +51,7 @@ scrollbar-color:rgb(var(--chco))#000;scrollbar-width:auto;box-sizing:border-box;
     /* *{--u:.2vw} */
     *{--u:.145vw}
     /* *{--u:.125vw} */
-    #wrap{padding-top:calc(360*var(--u))}
+    #wrap{top:calc(360*var(--u))}
     #indxut,#indxdr{position:absolute;margin-top:2.5vw;left:50%;width:50vw;padding:1.5vw;margin-left:-25vw}
     #indxri{display:none}
 }
