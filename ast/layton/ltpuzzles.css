@@ -53,7 +53,8 @@
     font-size:4rem;
     text-anchor:end;
 }
-.pzlq{position:relative}
+.pimg{text-align:center}
+.pzlq{position:relative;text-align:center}.pzlq *{text-align:justify}
 .pzlq div{
     position:absolute;
     top:5vw;
