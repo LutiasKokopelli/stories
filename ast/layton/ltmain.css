@@ -374,6 +374,7 @@ table{
     position: absolute;
     top: 2.3rem;
     left: -1rem;
+    overflow:auto
 }
 .infob h2 {
     padding: 0 0 3px 0;

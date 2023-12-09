@@ -1,10 +1,10 @@
 @media only screen and (orientation:landscape) {
     #wrap{left:16%;width:84%}
     #openbtn{left:-100%}
-    #sidenav{left:0;width:16%;font-size:1vw}
+    #sidenav{left:0;width:16%}
 }
 @media only screen and (orientation:portrait) {
-    #sidenav{left:-100%;width:50%;font-size:3vw}
+    #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
 }
 a:hover h3 span{color:rgb(var(--plred))}
@@ -16,7 +16,7 @@ a:hover h3 span{color:rgb(var(--plred))}
 #midxbtn h1{
     background:rgb(var(--midd));
     padding:17px;
-    font-size:24px;
+    font-size:3vh;
     margin:0 auto;
     color:rgb(var(--back));
 }
@@ -36,7 +36,7 @@ a:hover h3 span{color:rgb(var(--plred))}
 }
 #closbtn h1{
     background:rgb(var(--fore));
-    font-size:36px;
+    font-size:3.4vh;
     color:rgb(var(--plwhite));
 }
 #midxbtn h1:hover{
@@ -46,47 +46,38 @@ a:hover h3 span{color:rgb(var(--plred))}
     margin:0 auto;padding-bottom:12px;border-bottom:3px solid rgb(var(--fore))
 }
 #closbtn span {
-    display: block;
     position: absolute;
-    font-size: 42px;
+    font-size: 5vh;
     color: rgb(var(--plwhite));
-    top: 9px;
+    top:-2px;
     right: 25px;
-    margin-left: 50px;
 }
 #sidenav {
     min-width:320px;
-    /* font-size:1vw; */
-    top: 0;
-    position: fixed;
-    z-index: 99;
-    transition: 0.5s;
-    background: rgb(var(--back));
-    border-right: 3px solid rgb(var(--fore));
-    text-align: left;
+    top:0;
+    position:fixed;
+    z-index:99;
+    transition:0.5s;
+    background:rgb(var(--back));
+    border-right:3px solid rgb(var(--fore));
+    text-align:left;
     display:flex;
-    flex-flow: column;
-    height: 100%;
+    flex-flow:column;
+    height:100%;
+    font-size:2vh
 }
+#sidenav h3{font-size:3vh}
+#sidenav h3 svg{height:6vh;width:6vh;margin-bottom:.45vh}
 #sidenav #selpage{
-    /* height:17px; */
     font-size:2vh;
     padding-left:20px;
     width:94%;
     margin-left:3%;
 }
-#sidenav ul{
-    margin:7px;
-    /* font-size:1.2rem; */
-}
-#sidenav ul hr{
-    margin:12px -12px 12px -7px
-}
+#sidenav ul hr{margin:12px -12px 12px -7px}
 #sidenav a{color:rgb(var(--fore))}
 #sidenav a:hover{color:rgb(var(--plred))}
-#langidx{
-    text-align:center;font-size:42px;padding-bottom:5px;background:rgba(var(--midd),.5);position:relative
-}
+#langidx{text-align:center;font-size:42px;padding-bottom:5px;background:rgba(var(--midd),.5);position:relative}
 #langidx .infoa{position:unset}
 #langidx .infob{
     width:calc(100% - 10px);
@@ -94,20 +85,17 @@ a:hover h3 span{color:rgb(var(--plred))}
     top:61px;
     border-color:rgb(var(--fore));
     border-width:3px;
+    font-size:2vh;
 }
 
-.sbar{margin-bottom:20px;border-radius:7px;border:2px solid rgb(48,32,32);position:relative}
-.sbar > a{
-    display:block;width:58px;height:58px;position:absolute
-}
-.bartitle,.lbl-toggle{display:block;cursor:pointer;border-radius:5px;padding:17px;margin-bottom:0;background:rgb(var(--midd));color:rgb(var(--plblack))!important;font-size:20px;font-weight:800;text-align:center}
+.sbar{margin-bottom:20px;border-radius:7px;border:3px solid rgb(48,32,32);position:relative}
+.sbar > a{display:block;width:58px;height:58px;position:absolute}
+.bartitle,.lbl-toggle{display:block;cursor:pointer;border-radius:5px;padding:17px;margin-bottom:0;background:rgb(var(--midd));color:rgb(var(--plblack));font-size:1.2em;font-weight:800;text-align:center}
 .lbl-toggle::before{content:' ';display:inline-block;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:10px solid currentColor;vertical-align:middle;margin-right:.7rem;transform:translateY(-2px);transition:transform .2s ease-out}.toggle:checked+.lbl-toggle::before{transform:rotate(90deg)translateX(-3px)}
 .toggle:checked+.lbl-toggle{border-radius:5px 5px 0 0}
 .barss{max-height:0px;overflow:hidden;transition:max-height .25s ease-in-out;background:rgb(var(--back));border-radius:0 0 5px 5px}.toggle:checked+.lbl-toggle+.barss{max-height:100%;padding:5px}
+.barss ul{padding-left:34px}
 .chprt{display:flex;flex-wrap:wrap;justify-content:center}.chprt a{width:60px}
 h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-right:12px}
 
-#navctn{
-    padding:12px;
-    overflow:auto;
-}
+#navctn{padding:12px;overflow:auto}
