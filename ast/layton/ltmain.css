@@ -393,15 +393,6 @@ table{
     justify-content: center;
     flex-wrap: wrap;
 }
-.mediacard {
-    display: block;
-    border-radius: 17px;
-    width: 19%;
-    min-width: 360px;
-    padding: 17px;
-    border: 3px solid rgb(var(--plblack));
-    margin: 7px;
-}
 .logo {
     padding-bottom: 17px;
 }
