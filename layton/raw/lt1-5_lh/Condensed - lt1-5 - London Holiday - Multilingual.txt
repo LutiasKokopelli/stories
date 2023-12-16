@@ -1,0 +1,2574 @@
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ First line:  Official Japanese text (no furigana)     ┃
+┃ Second line: Literal translation of the Japanese text ┃
+┃ Third line:  Fan-made English translation*            ┃
+┃ ----------------------------------------------------- ┃
+┃ * Text for puzzles is official, except Hints 2 and 3  ┃
+┃   when the original puzzle is a CV weekly puzzle.     ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+
+
+
+     ██████   ██████                ███████ ████████  █████  ██████  ████████
+    ██  ████ ██  ████               ██         ██    ██   ██ ██   ██    ██
+    ██ ██ ██ ██ ██ ██     █████     ███████    ██    ███████ ██████     ██
+    ████  ██ ████  ██                    ██    ██    ██   ██ ██   ██    ██
+     ██████   ██████                ███████    ██    ██   ██ ██   ██    ██
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e1_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うーん、いい天気だなぁ。せっかくの日曜日だし、先生のところに遊びに行こうかな。
+Hmm, it’s such a nice weather. Because it’s a long-awaited Sunday, should I go to spend time at Sensei’s place?
+Hmm, what a nice day. It’s finally Sunday, so perhaps I can try to go see the professor.
+----------------------------------
+確か、この道を進めば先生の大学があるんだったっけ…。
+If I remember correctly, by advancing toward this road, Sensei’s university was there…
+If I remember correctly, I should find the university down this road…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e1_t1.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ここが先生の研究室かな？なんだか、ドキドキするなぁ。
+Is here Sensei’s office? Ooh, I’m a little excited.
+Is that his new office? This is exciting!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/???.png         ┃ (NARRATION)
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+エルシャール・レイトン教授はナゾをこよなく愛する考古学者。
+Professor Hershel Layton is an archaeologist who loves puzzles beyond all else.
+Professor Hershel Layton is a puzzle-loving archaeologist.
+----------------------------------
+不思議な町で起きた事件から数日、研究室で、お気に入りの紅茶片手につかの間の休日を過ごすのだった…。
+A few days after the incident which occurred in the curious town, in the office, favourite black tea in one hand, he was spending a momentary day off…
+A few days after his adventure in the Curious Village, he decided to take a short break in his new office, his favourite tea in hand…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t0.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ふぅ…。
+Phew…
+Ah…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+やはり休日の午後は紅茶に限るな。
+Oh well, as expected, the day off’s afternoon is limited to black tea.
+In the end, few things can revitalise more than having black tea in the afternoon.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t2.txt ┃ LUKE (off-screen):
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生！
+Sensei!
+Professor!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+おや、ルーク。どうしたんだい？
+Oh, Luke. What’s the matter?
+Good afternoon, Luke. What’s the matter?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+せっかくの休日なので、遊びに来ちゃいました。
+Since it’s a long-awaited holiday, I’ve come to visit.
+We can finally take a break, so I thought I would drop by to see you.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+よく来たね、ルーク。ゆっくりしていきたまえ。
+Oh, I’m glad you came, Luke. Please live without haste.
+I’m glad you came, Luke. Please, sit back and relax.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ここが先生の新しい研究室ですね。
+So here is Sensei’s new office?
+So this is your new office, then?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t7.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ああ、私の恩師であるシュレーダー博士から譲り受けた研究室だよ。
+Yes, I have inherited the office from my former mentor, Dr Schrader.
+Indeed. It used to belong to my former mentor, Dr Schrader, before I was transferred here.
+----------------------------------
+先生は活動的な人だから、こんなせまい研究室では物足りなかったんだろうね。
+Sensei is a dynamic person, therefore I suppose such a cramped office was insufficient.
+He likes to move around a lot. I suppose that in the end, this office was too small for his taste.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、色んなものがありますね。
+Even so, there are all sorts of things, don’t you think?
+Even if that’s how he felt about it, there’s still a lot of strange things in here.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t9.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+気になるのなら、部屋の中を見ても構わないよ。
+In case you feel like it, I don’t mind if you look inside the room.
+If you are curious, feel free to take a look around.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t10.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+本当ですか？じゃあ、えんりょなく…。
+Really? Then, without reservation…
+Really? You don’t mind? Well, in that case…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e2_t11.txt ┃ (NARRATION)
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+部屋の中をタッチすると、隠されたナゾが出題されます。
+Upon touching inside the room, hidden puzzles are set. (https://jisho.org/search/出題されます)
+Upon inspecting the professor’s office, hidden puzzles will appear.
+----------------------------------
+持っているひらめきコインを使用すればナゾのヒントを見る事ができます。
+If the inspiration coins you are holding are used, you are able to see the puzzle’s hints.
+If needed, using hint coins will let you access a puzzle’s hints.
+----------------------------------
+ただし、持っているひらめきコインを使い切ってしまうと、それ以降のヒントを見る事ができなくなります。
+However, when you have used up the inspiration coins you are holding, you will become incapable of seeing ensuing hints.
+However, you have a limited amount of hint coins. If you run out, you will no longer be able to unlock hints.
+----------------------------------
+レイトン教授の研究室の中ではひらめきコインが入手できませんので、
+Because inspiration coins cannot be obtained inside Professor Layton’s office,
+Hint coins cannot be found inside Professor Layton’s office,
+----------------------------------
+計画的にひらめきコインを使用して、部屋に隠されたナゾを解きましょう。
+you should solve the hidden puzzles inside the room by using inspiration coins methodically.
+so use them sparingly in order to solve the puzzles hidden in this room.
+
+
+
+    ██   ██ ██   ██               ████████ ██████   ██████  ██████  ██   ██ ██    ██
+     ██ ██   ██ ██                   ██    ██   ██ ██    ██ ██   ██ ██   ██  ██  ██
+      ███     ███       █████        ██    ██████  ██    ██ ██████  ███████   ████
+     ██ ██   ██ ██                   ██    ██   ██ ██    ██ ██      ██   ██    ██
+    ██   ██ ██   ██                  ██    ██   ██  ██████  ██      ██   ██    ██
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e15_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、このトロフィーは？
+Sensei, this trophy is…?
+Professor, what is this trophy?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e15_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+学生時代、フェンシングの大会で優勝した時にもらったものだよ。
+During my student days, in a fencing tournament, it’s the item I received when I won.
+It was given to me when I won in a fencing tournament during my student days.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e15_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ええっ！？先生、そんなに強かったんですか？
+Huh!? Sensei, were you that strong?
+Really? Professor, I didn’t realise you were that strong.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e15_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+体を動かすのが好きで、毎日のように練習したからね。
+I like to move my body, I practised almost daily.
+I like to be physically active, so I practised almost every day.
+-----------------------------------
+もちろん、フェンシング以外のスポーツも大好きだよ。
+Of course, there also are sports other than fencing that I love.
+Naturally, fencing aside, I also am fond of other sports.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e15_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+やっぱり、先生はすごいですね。
+As expected, Sensei really is amazing.
+After all, you really are amazing.
+
+
+
+     ██████   ██               ███    ██  █████  ███████  ██████
+    ██  ████ ███               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██  ██     █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██  ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████   ██               ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+変わった本が多いですね。これって何冊くらいあるんですか？
+There’s a lot of peculiar books. How many books of these are there?
+There’s a lot of strange books. I wonder how many…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+さあ、どれくらいかな？
+Well, how many?
+Well, how many do you see?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+じゃあ、ボクが数えてみます。ええと、１、２、３…。
+Alright, I will try counting. Um, 1, 2, 3…
+Alright then, let me try counting. Let’s see. One, two, three…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そうだ、数えると言えば、こんなナゾがあったよ。ルーク、解いてみるかい？
+Oh right, speaking of counting, there was such a puzzle. Luke, try solving it, yes?
+Ah, speaking of counting, this just reminded me of a puzzle. Luke, do you want to hear it?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+もちろんです！
+Of course!
+Of course I do!
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_1.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+９はいくつある？
+How many 9’s are there?
+How Many Nines?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_1.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+１から１００までの整数に、「９」という数字はいくつ出てくる？
+In all integers from 1 to 100, how many numbers “9” appear?
+How many times does the number nine appear within whole numbers between one and 100?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_1_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ひっかけではないから、数えればいいだけ。
+It’s not a trick, you just have to count.
+There’s no trick to this one. No, really! All you need to do is count them up.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_1_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+「９」は、９、１９、２９と、１０数えるごとに１回出てくる。でも、１０個じゃないよ。
+“9” appears once for every ten counts, such as 9, 19, 29. But, it is not 10.
+A nine will appear every ten counts, such as 9, 19 or 29. However, the answer is not ten.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_1_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+９０台にはみんな「９」がふくまれているよね。さあ、数えてみよう。
+All 90’s have a “9” in them, don’t they? Then, let’s count them.
+All 90’s have a “9” in them, don’t they? Then, don’t forget them.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_1.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　見落としはないかな？
+Regrettable. Is there anything you overlooked?
+Not quite. Are you sure you didn’t miss a few nines along the way?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_1.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+２０個。９が９０台にたくさんあることには気がついても、数えていくうちに間違えてしまう、イジワルなパズル。
+20 times. Even though we notice that there are a lot of 9’s in the 90’s, making mistakes in the counting process turns this into a naughty puzzle.
+That’s right! The answer is 20. Even if you try to count the many nines between one and 100, it’s easy to mess up and forget one along the way. What a tricky puzzle.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t11.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ああ、また最初から数えなおしだ…。
+Oh, I’m counting again from the beginning…
+Ah, I lost count…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t12.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そう悩むナゾでもないはずだよ。もう一度、考えてごらん。
+This shouldn’t be a puzzle that bothers you so much. Once more, please try to think.
+This puzzle shouldn’t be bothering you this much. Try giving it some more thought.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ええと、どこまで数えたっけ？
+Hmm, how far did I count?
+Let’s see, where was I?
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t9.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+やりました、先生！あれ？でも、何冊目まで数えたっけ…？
+I did it, Sensei! Huh? But, how many books were counted…?
+I did it, Professor! …Huh? Wait. This doesn’t help us count how many books this room has.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t10.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+はは、ぜんぶ数えていたら、夜になってしまうよ。
+Haha, if we had been counting all of them, it would happen to become night.
+Haha, if we were to try counting them all, we would be standing here until nightfall.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、むずかしそうな本ばかりですね。ボクにも読めるかなぁ？
+Even so, these are books which really seem difficult to read. Can I read them too?
+At any rate, these books really seem daunting. I wonder if I would be able to read them…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t7.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ルークには少し早いかもしれないね。でも、そのうち読めるようになるよ。
+For Luke it’s perhaps a little early. But, sooner or later you will reach the point when you can read them.
+It might be a little too soon for you, but I am sure that someday, you will be able to.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e3_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うーん、そうだといいんですけど。
+Yes, I hope this is the case.
+Yes, I hope so.
+
+
+
+     ██    ███████               ███████ ██ ███    ██ ██████      ███    ███ ███████ ███    ███  ██████
+    ███    ██                    ██      ██ ████   ██ ██   ██     ████  ████ ██      ████  ████ ██    ██
+     ██    ███████     █████     █████   ██ ██ ██  ██ ██   ██     ██ ████ ██ █████   ██ ████ ██ ██    ██
+     ██         ██               ██      ██ ██  ██ ██ ██   ██     ██  ██  ██ ██      ██  ██  ██ ██    ██
+     ██ ██ ███████               ██      ██ ██   ████ ██████      ██      ██ ███████ ██      ██  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e18_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、メモが落ちてますよ。大事なものじゃないんですか？
+Sensei, a memo is falling. Isn’t it an important thing?
+Professor, a note fell on the ground. Isn’t it important?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e18_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+おや？それは私のメモではないようだね。
+Oh? That doesn’t seem to be my memo.
+Hm? I don’t think this is mine.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e18_t2.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この字はシュレーダー博士のものだ。きっと、先生がここを出て行く時に落として行ったのではないかな。
+This handwriting is Dr Schrader’s property. Most likely, I wonder if Sensei didn’t drop it when he left here.
+This is Dr Schrader’s handwriting. He must have dropped it on his way out.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e18_t3.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+じゃあ、これは取っておいた方がよさそうですね。
+Well then, we had better hold on to this, isn’t that right?
+Well, then we should keep it safe.
+
+
+
+     ██████  ██████                ███    ██  █████  ███████  ██████
+    ██  ████      ██               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██  █████      █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██ ██                    ██  ██ ██ ██   ██  ███    ██    ██
+     ██████  ███████               ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生はいつもここに泊まっているんですよね？
+Sensei is staying overnight in here all the time, right?
+You’re always sleeping in your office, aren’t you?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+泊まるつもりはなくても、考え事をしているうちに、朝になっていることが多いんだよ。
+Even if I’m not planning to stay the night, while I’m deep in thought, there’s a lot of (times when it’s) become morning.
+Even when I don’t intend to, I am often thinking so deeply that the sun will start rising before I know it.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t2.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+昨日もこんなナゾを考えていてね…
+Yesterday too, I was thinking about this puzzle…
+Just yesterday, it happened in part because of this puzzle…
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_2.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+サイコロの目
+Roll of the Dice
+Rolling the Die
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_2.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+少年がサイコロを投げて、目が出るたびに数をつぶやいている。１が出ると１５、６が出ると２０と言う。さて、今回は３が出た。少年は何と言うだろう？
+A boy throws a dice and mutters a number each time it rolls up. He says 15 when a 1 is rolled, and 20 when a 6 is rolled. This time, he got a 3. What will the boy say?
+A young boy sits quietly on a stoop rolling a single die over and over. Each time the die stops rolling, he picks it up, examines it, and whispers something to himself. Each time he rolls a one, he whispers, “15.” Each time he gets a six, he whispers, “20.” The boy has just rolled a three. What number will he whisper this time?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_2_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+キーワードは「合計」。
+The keyword is “total.”
+A key phrase that you should keep in mind as you solve this puzzle is “sum total.”
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_2_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+サイコロの目は１から６まで。合計するといくつになるかな？
+The dice roll is from 1 to 6. How many would you say the total is?
+Your average die is labeled with the numbers one through six. What number would you get if you added them all up?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_2_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+サイコロで正反対にある面の目を合計すると、いつも７になるのは知っているよね？
+You know that the sum of the numbers on the opposite sides of a dice is always 7, right?
+Fun fact time! Did you know that opposing faces of dice always add up to seven?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_2.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　規則を見つけよう。
+Regrettable. Find the rule.
+Nope. There must be some reason why this boy is whispering those numbers. It’s up to you to find it.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_2.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+１７。少年は見えている目全部の数を合計した数を言っていたのだ。出た目の反対側だけは下を向いていて見えない。サイコロは反対の目の合計が７だから、計算できる。
+17. The boy was saying the total number of all the dots he could see. Only the ones on the other side of the number he rolled are invisible due to being on the side looking down. On a dice, the sum of the opposite sides is 7, so it can be calculated.
+The answer is 17. The boy is counting the number of dots currently visible on the die. The only face of the die not included in this count is the one that faces down. The top and bottom sides of a die always add up to seven, so it's easy to calcuate the total for the five faces exposed on any given roll.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、わかりません。
+Sensei, I don’t understand.
+Professor, I don’t understand.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t9.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+落ち着いて考えなおしてごらん。そうむずかしいナゾでもないはずだ。
+Please try to calm down and think again. It should not be such a difficult puzzle.
+Please try to calm down and give it more thought. This puzzle shouldn’t be so difficult.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t3.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+よし、今度こそ！
+Alright, this time for sure!
+Alright, I’ll get it right this time!
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解だよ、ルーク。
+That’s correct, Luke.
+Very good, Luke.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+朝までナゾを考えているなんて、先生らしいですね。
+Thinking about a puzzle until morning, how very Sensei-like.
+It’s just like you to pull an all-nighter because of a puzzle.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+このソファ、ふかふかしてますね。
+This sofa, so soft (and fluffy).
+Your sofa is so soft…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e4_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+私のお気に入りだよ。ここに泊まる時は、いつもこのソファで眠っているんだ。
+It’s my favourite. When I stay here for the night, I’m always sleeping on this sofa.
+It’s my favourite. Whenever I stay the night, this is always where I sleep.
+
+
+
+     ██████  ██████                ███    ██  █████  ███████  ██████
+    ██  ████      ██               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██  █████      █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██      ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████  ██████                ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、このリンゴ、虫がついてますよ！
+Sensei, this apple, a bug’s in it!
+Professor, there’s a worm in this apple!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ええ、本当かい、ルーク？
+Eeh, is it true, Luke?
+Huh, really, Luke?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+本当ですよ、ほら、ここです、ここ！
+It’s true, look, it’s here, here!
+It’s right here!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うん？どこだい？
+Hm? Where is it?
+Hm, where is it?
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_3.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+リンゴの虫
+The Apple’s Bug
+A Worm’s Dream
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_3.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+リンゴを完成させよう。真ん中に虫が見えるようにね。たった８個のパーツだけど、ちょっとむずかしいよ。
+Let’s make the apple complete. In order to see a bug in the centre. It’s only 8 parts, but it’s a bit difficult.
+This worm’s life dream is to make it to the center of the apple. Complete this slide puzzle and help him realize his dream! With only eight pieces to manage, this task might seem easy, but it’s probably harder than you suspect.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_3_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+たった８個のパーツ。落ち着いてやってみよう。同じことを繰り返していないかな。
+Only 8 parts. Let’s calm down and try it. Are you not repeating the same thing?
+This slide puzzle only has eight movable parts, so don’t be intimidated. Take your time with it. If you aren’t seeing much progress, try something new with each move. Don’t get stuck moving pieces in the same pattern again and again.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_3_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+同じように見えるパーツがあるはずだ。それが、鍵。
+There must be parts that look the same. That’s the key.
+Have you noticed that a few of the pieces look very similar to some others? Focus your attention on those.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_3_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+最初に左上にあるパーツ。これをそのままにしては解けない。入れ替えよう。
+First, there are parts on the upper left. You cannot solve it by leaving them like this. Let’s swap them.
+If you are still having trouble, start by moving the piece in the upper-left corner out of its starting location. You can’t finish the puzzle without doing so.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_3.txt ┃ INCORRECT (unused)
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念
+Regrettable.
+Incorrect.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_3.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！簡単そうに見えてむずかしい。同じ形のパーツが入れ替えてあったのに気がついたかな？
+Correct! It looks easy but it’s difficult. Did you notice that the same shaped parts were swapped?
+Good job! You’ve made a little worm very happy. For a mere slide puzzle, it was pretty difficult, wasn’t it? As you were moving tiles around, did you notice that some almost identical-looking tiles had their positions switched?
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+今、絶対にいたんですよ！
+Now, it was definitely there!
+I’m sure there was a worm in there!
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+本当に虫がいたんですってば！
+Really, there was a bug, I’m telling you!
+I’m telling you, there’s a worm in this apple!
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うーん、部屋に放っておいたのがまずかったのかな。
+Hmm, I wonder if having left it in the room was a bad idea.
+Hm, perhaps I shouldn’t have left it here.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+これじゃあ、食べられませんね。もったいないなあ。
+This then, can’t be eaten. What a waste.
+Well, we can’t eat it. What a waste.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e5_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+部屋に食べ物を放っておくなんて、英国紳士失格ですよ、先生！
+Leaving food unattended in the room, this is so unfit for a gentleman, Sensei!
+Letting food go to waste… That’s not what a gentleman does, Professor!
+
+
+
+     ██████  ██   ██               ███    ██  █████  ███████  ██████
+    ██  ████ ██   ██               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██ ███████     █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██      ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████       ██               ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+すごい量の書類ですね。どこに何があるのか、わからなくなったりしないんですか？
+That’s a dreadful amount of documents. Don’t you lose track of what is where?
+That’s an awful lot of documents. Don’t you ever lose track of where you left off?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それくらい把握しているよ。自分の研究室だからね。
+That much I have figured out. It’s my own office, so.
+I can manage this much. After all, this is my own place.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+さすが先生ですね。でもこれって、全部で何枚くらいあるんですかね。
+As expected of Sensei. But of these, how many sheets are there in total?
+As expected of professor Layton. But still, just how many sheets of paper does that make?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+気になるのなら、数えてみるかい？
+If you care about it, will you try counting?
+If it bothers you so much, why don’t you try counting?
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_4.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+紙の重なり
+Overlapping Paper
+How Many Sheets?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_4.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+長方形の紙が、図のように重なっている。わかりやすいように、見えない線も描いてある。さて、一番重なるところで、何枚重なっているかな？
+Rectangular sheets of paper overlap as shown. For clarity, invisible lines are also drawn. Now, in the place where they overlap the most, how many overlapping sheets are there?
+Several rectangular sheets of transparent film are arranged on top of each other as shown. The lines represent areas where one sheet overlaps with another. At the thickest point of this pile, how many sheets are overlapping?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_4_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+特別な解きかたは無い。地道に数えてみよう。
+There is no special solution. Count steadily.
+Three layers here, four layers there… Label each overlap you discover.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_4_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いきなり一番重なるところを見つけるのは無理。重なりの少ない領域から印をつけてみよう。
+It is impossible to find the area with the most overlap spontaneously. Mark the areas with the least overlap first.
+Only one area of the image contains the maximum number of overlaps.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_4_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+３枚以上は間違いなし。
+3 sheets or more, no doubt.
+There are a total of seven sheets of film in this picture. The solution for this problem is a number smaller than seven.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_4.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　一番重なる場所は一箇所だ。
+Regrettable. There is one place with the most overlap.
+Nope! Study where each sheet of film begins and ends.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_4.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！簡単そうに思えて、意外とむずかしい。
+Correct! It seems easy, but it is surprisingly difficult.
+That’s right. This puzzle seems straightforward, but it’s quite formidable when you get right down to it.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t10.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、やっぱりちょっと整理した方がいいんじゃないですか？
+Sensei, you still had better clean up a little, don’t you?
+I still think you should try to organise this at least a little bit better.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t11.txt ┃ LAYTON (unused):
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そう悩むナゾでもないはずだよ。もう一度、考えてごらん。
+This shouldn’t be a puzzle that bothers you so much. Once more, please try to think.
+This puzzle shouldn’t be bothering you this much.Try giving it some more thought.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+こんなバラバラに置いておくより、きちんと重ねた方がいいと思うんですけど…。
+I think you had better stack them neatly rather than leave them in such a disjointed way…
+It would be much better to stack them properly rather than to leave them in a messy pile like this…
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+わかりました！でも、そろえていた方が数えやすかったんじゃ…。
+I got it! But, it would have been easier to count them if they had been making a full set…
+I’ve got it! Though it would have been easier to count if they were stacked properly…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t9.txt ┃ LAYTON (unused):
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+はは、ぜんぶ数えていたら、夜になってしまうよ。
+Haha, if we had been counting all of them, it would happen to become night.
+Haha, if we were to try counting them all, we would be standing here until nightfall.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、こんなに書類があるなんて、教授って大変なんですね。
+Even so, you have all this paperwork, being a professor must be so much hard work.
+That’s so much paperwork… Being a professor must be pretty tough.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そうでもないよ。自分の理論を組み立て、それを形にすることは、楽しいものなんだ。
+Not really. Assembling my own theories, giving them shape, it’s a fun thing.
+Not really. I enjoy being able to assemble my own theories and give them shape.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e6_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+張り切った結果がこの書類の山ってわけですね。
+So that’s why the result of your overzealousness is this mountain of documents.
+And the result of your enthusiasm… is this mountain of documents.
+
+
+
+     ██████  ███████               ███    ██  █████  ███████  ██████
+    ██  ████ ██                    ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██ ███████     █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██      ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████  ███████               ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+これは古新聞ですね。ずいぶん古いものですけど、もう捨てちゃっていいんですか？
+These are old newspapers. They’re surprisingly old though, can I throw them away completely now?
+A pile of newspapers… They’re extremely old, shouldn’t we throw them away?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+興味深い論文が載っていて取っておいたんだが…すごい量になってしまったね。
+Academic articles of great interest have been printed on them and (I) set (them) aside but… it turned out to be a tremendous amount.
+Those are academic articles I wanted to save for later, but… There turned out to be a lot of them.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+じゃあ、ちゃんとまとめておかないと。何かしばるものはありますか？
+Well then, we need to put them all together properly. Is there anything to bind them with?
+In either case, we shouldn’t be leaving them in a messy pile like this. Do you have anything to bind them with?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ロープがあったはずだが…ああ、絡まってしまっているね。
+There should have been a rope but… ah, it’s been completely entertwined.
+There should have been a rope, but… Ah, it’s all tangled up.
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_5.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+結び目ができる？
+Can you tie a knot?
+Not Knots
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_5.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ロープが４つ置かれている。それぞれの両端を引っ張って、結び目ができるものに、印をつけてほしい。
+4 ropes are placed. I want you to pull on each end, and mark those which can turn into something knotted.
+In front of you are four tangled lengths of rope. Mark the ones you think will form a knot when you grab them by their ends and pull them taut.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_5_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+まずは、一番単純な結び目ができる形を、頭の中で考えてみよう。
+First, the simplest shape forming a knot, think about it in your head.
+It’s difficult to work out all the tangles and turns of a rope in one glance. You’ll have better luck if you keep the shape of a simple knot in mind and inspect each part of the rope individually.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_5_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+Ｂは、結べないようだ。わからなければ、実際にヒモを用意してやってみるのも手だ。
+B, seems unable to be tied. If you don’t understand, you can actually prepare a string and try it.
+Take a look at Rope B. If you start from the right end of the rope and examine the first loop you encounter, you’ll notice that the two strands of rope are just lying on top of each other. The same goes for the loop on the left side of the rope. There’s no way this rope will knot up.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_5_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いかにも、ややこしい感じのＡも結べずにほどけてしまう。試してみよう。
+Indeed, even A, which feels complicated, cannot be untied. Give it a try.
+Only one of the four ropes will actually knot up when pulled from both ends. Rope B is already out. Now, which one will you choose?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_5.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　よく見てみよう。
+Regrettable. Let’s take a closer look.
+Try again! Take a good look at each rope.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_5.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！結び目ができるのはＣだけ。よく見ればわかる。でも、混乱してしまうパズルだ。
+Correct! Only C can be knotted. Look closely and you will understand. But, it’s a confusing puzzle.
+Good job! The only thing you need to do to solve this puzzle is look at it. However, the images themselves are complicated, so it’s easy to get confused. It would be fun to test all the various configurations with actual pieces of rope.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t14.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+こんなに散らかってると落ち着かないですよ。
+I’m not calm with such a scattering around.
+It’s hard to stay calm when I have to look at this mess.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ロープがないとこの新聞をまとめられないや。
+I can’t put together newspapers which have no rope.
+I can’t put them together if I don’t have a rope to tie them with.
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t9.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+じゃあ、このロープでまとめてしまいますね。
+Well then, I put it together in this rope.
+Alright, let’s wrap them up with this rope.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t10.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+！ルーク、待ってくれ。
+! Luke, wait.
+Oh! Luke, wait.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t11.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+えっ？
+Eh?
+What is it?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t12.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この記事、見逃していたのかな。ふむ、なるほど。ああ、こっちの論文もなかなか…。
+This article, I wonder if I overlooked it. Hmm, I see. Ah, this thesis is also very…
+This article here, I seem to have forgotten about it. Hmm, I see… Oh, and this one is also quite…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t13.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、そんなことをしてるから片付かないんじゃないですか？
+Sensei, you don’t put in order because of such a thing isn’t it?
+Professor, this may be why you’re not able to keep your office in order…
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+新聞みたいにかさばるものは、まとめた方がいいと思うんですけど。
+Bulky items like newspapers, I think that we had better put them together (but this won’t happen).
+These newspapers take a lot of space… But they won’t be moved from this spot anytime soon, will they?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+まとめる努力はしているんだが、興味深い記事があると、つい読みふけってしまうんだよ。
+Efforts to organise are being made but, when there are articles of great interest, I am absorbed in reading accidentally against my better judgment.
+I try to keep my documents organised, but when an article piques my interest… I will usually drop everything to read it.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、もしかして片付けは苦手なんですか…？
+Sensei, perhaps you’re not good at tidying up…?
+Professor, perhaps tidying up just isn’t your cup of tea…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e7_t8.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+……。
+…
+…
+
+
+
+     ██████   ██████                ███    ██  █████  ███████  ██████
+    ██  ████ ██                     ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██ ███████      █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██ ██    ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████   ██████                ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この棚、色んなものが置いてありますね。このタイルみたいなのは何ですか？
+This shelf, all kinds of things are placed on it. This tile-like thing, what is it?
+There’s all kinds of things on this shelf. Hm? Professor, what is that? It looks like a tile…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うん？どれのことかな？
+Hm? Which one is it?
+Which one are you talking about?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この、緑色の…。
+This, the green one…
+The green one here…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ああ、これのことか。これはね、こういうナゾなんだよ。
+Aah, you mean this one. This, it’s this kind of puzzle.
+Oh, this one? It’s a puzzle.
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_6.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+何の数字？
+Which number?
+What’s E?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_6.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+図のＡ＝２、Ｂ＝３、Ｃ＝３、Ｄ＝４だという。だとすると、Ｅはなんだろう？
+This picture says that A = 2, B = 3, C = 3 and D = 4. If that is the case, can you guess what E is?
+According to the diagram shown here, A=2, B=3, C=3, and D=4. So what does E equal?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_6_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+数が示されているＡ、Ｂ、Ｃ、Ｄを領域と考えてみよう。それぞれの領域に関係する数を考えるのだ。
+A, B, C and D, on which numbers are shown, let’s think of them as areas. Think of the numbers associated with each area.
+What do you think the numbers assigned to A, B, C, and D represent? Take another look and see for yourself.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_6_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+単色だから領域の色ではない。位置と形…。それは、少し関係があるかもしれない。
+Since it is monochromatic, it is not the colour of the area. Position and shape… There may be a slight connection with these.
+A, B, C, D, and E refer to sections of the diagram. What separates one section from another?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_6_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+まわりを見てごらん。
+Please look at the surroundings.
+Focus on the edges between sections and the possibilities that arise from that line of thought.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_6.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　規則を見つけよう。
+Regrettable. Find the rule.
+Give it another try. Try to find a rule that governs the value of each letter.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_6.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！その領域が、辺で他の領域と接している数だったのだ。
+Correct! This area, it was the number of edges touching other areas.
+Well done! The number assigned to each letter refers to the number of sections that are touching the labeled section.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t9.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+あまりむずかしく考えずに直感で答えてごらん。
+Don’t think too seriously, please answer intuitively.
+Don’t think about it too hard, just try to use your intuition.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+よし、今度こそ！
+Alright, this time for sure!
+Alright, I’ll get it right this time!
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そういうことなんだ！先生の部屋は、ナゾだらけですね。
+It’s something like that! Sensei’s room, it’s covered in puzzles.
+So that’s what it is! Your office really has puzzles everywhere.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t8.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+でも、これだけじゃ物足りないから新しいナゾを探しに行くんだよ。
+But, because this alone is insufficient, I go searching for new puzzles.
+I believe there aren’t enough yet. I’m still searching for new ones every now and then.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ボクもナゾは好きですけど、こんなに囲まれていたら落ち着かないんじゃないですか？
+I too like puzzles but, you don’t relax if you’re being surrounded like this, do you?
+I like puzzles too, but… Isn’t it a bit unsettling to be surrounded by so many of them?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e8_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ナゾに囲まれた生活というのも、なかなか優雅なものだよ。
+Because living surrounded by puzzles, it’s very elegant.
+Life surrounded by puzzles can be quite elegant, don’t you think?
+
+
+
+     ██████     ███████               ████████ ███████  █████  ████████ ██ ███    ███ ███████
+    ██          ██                       ██    ██      ██   ██    ██    ██ ████  ████ ██
+    ███████     ███████     █████        ██    █████   ███████    ██    ██ ██ ████ ██ █████
+    ██    ██         ██                  ██    ██      ██   ██    ██    ██ ██  ██  ██ ██
+     ██████  ██ ███████                  ██    ███████ ██   ██    ██    ██ ██      ██ ███████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t0.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ルーク、そろそろティータイムにしようか。
+Luke, shall we have tea time about now?
+Luke, let’s take a break for some tea.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、今回はさすがに疲れたね。
+At any rate, this time I am worn-out indeed.
+With all being said and done, I have been feeling quite tired lately.
+-----------------------------------
+休暇でも取って、のんびり旅行でもしたいものだ。
+Something I’d like to do is take either a vacation or a leisurely trip.
+I wouldn’t mind taking a vacation or going on a peaceful trip.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+たまには列車なんかでどこかへ行ってみたいですね。
+Once in a while, I’d like to go towards somewhere by train for example.
+I’d like to go somewhere by train, someday.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+列車か。それも悪くはないね。
+Train? That isn’t bad either.
+By train? This isn’t a bad idea.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いつも先生の車ばかりじゃ、あきちゃいますからね。
+If it’s nothing but Sensei’s car all the time, I’ll completely get tired of it.
+It gets boring if we only ever ride in the Laytonmobile all the time.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+…ルーク、私の車じゃ不満なのかい？
+…Luke, is my car unsatisfying?
+Luke, are you displeased with my car?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+えっ、いやだなぁ。そんなことないですよ。
+Eh, no, well. There is no such thing.
+Uh, no. Not at all.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e16_t7.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+……。
+…
+…
+
+
+
+     ██████  ███████               ███    ██  █████  ███████  ██████
+    ██  ████      ██               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██     ██      █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██    ██                 ██  ██ ██ ██   ██  ███    ██    ██
+     ██████     ██                 ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+あれっ？この帽子、どうしてもうひとつあるんですか？
+Huh? This hat, why is there one more?
+Huh? Why do you have another of these hats?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この帽子が汚れてしまった時に替えがないと困るだろう？
+I would need to have a replacement when this hat gets dirty, wouldn’t I?
+If my hat gets dirty, I will be in need of a substitute, won’t I?
+----------------------------------
+いつ何が起きても大丈夫なように、部屋にもスペアを置いているのさ。
+So that it’s alright even if anything bad happens, I leave a spare in the flat too.
+Just in case anything happens, I have a spare in my home as well.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いつでも身だしなみに気をつかっているんですね。
+At any time you’re caring about your appearance.
+You always take so much care of your appearance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+当然さ、英国紳士としてはね。
+Of course, as an English gentleman.
+Of course. That’s what a gentleman does, after all.
+----------------------------------
+ところでルーク。帽子と言えば、こんなナゾはどうかな？
+By the way Luke. Speaking of hats, how about this puzzle?
+By the way, Luke. Speaking of hats, why don’t you try solving this puzzle?
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_7.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+教授の帽子箱
+The Professor’s Hat Box
+Layton’s Hatbox
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_7.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+箱の展開図が４つある。組み立てたときに、ひとつだけデザインが違うものがあるのだが、それはどれか。
+There are four exploded views of a box. When assembled, only one exists with a different design but, which one is it?
+Oh, no! The professor’s hatbox has gone missing! Pictured below are four hatboxes that have been broken down and flattened. When reassembled, three of boxes are identical in every way, but the fourth hatbox differs slightly in its design and belongs to the professor. Can you find it for him?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_7_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+頭の中で組み立てることができればわかる。帽子の模様が、どう並ぶかを考えよう。
+If you can assemble it in your head, you will understand. The hat pattern, think about how they line up.
+Reconstruct the flattened hatboxes in your mind and you’ll immediately see what’s different. Pay special attention to the hat patterns on each box.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_7_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+箱の６面のうち、４面に帽子の模様がある。絵のない２面の位置から考えると見つけやすい。
+Of the 6 sides of the box, on 4 sides there is a hat pattern. From the position of the 2 sides without a picture, when you think about it, it’s easy to find.
+The boxes have six sides, but only four of them have a hat pattern. Focus on the relative positions of the two blank sides.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_7_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+絵のない２面が隣り合っているものが、ひとつだけあるよ。
+2 sides with no picture next to each other, there is only one.
+Only one box has its two blank sides next to each other.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_7.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　頭の中で組み立ててみよう。
+Regrettable. Try to assemble it in your head.
+Give it another try. How would the boxes look if you put them back together?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_7.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！意外とむずかしい？
+Correct! Surprisingly difficult?
+Good job! We all know how important the professor’s top hat is to him.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うーん、どれも同じに見えますね。
+Hmm, they all look identical.
+Uh… They all look the same to me.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t8.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+よく観察してみれば、違いがわかるはずだよ。
+If you observe carefully, you’re ought to understand the difference.
+Look closely, I’m sure you can tell the difference.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t4.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+違いはわかったかな、ルーク。
+Have you understood the difference, Luke?
+Can you find the odd one out, Luke?
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+本当だ、組み立てると、これだけ違いますね。
+It’s true, when you assemble (them), this is the only difference.
+That’s right, when you assemble them, this is the only different one.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e9_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+帽子へのこだわりなら、ボクだって負けてませんよ。
+When it comes to a fixation with hats, I’m not losing either.
+I guess I too have an obsession with hats.
+
+
+
+     ██████   █████                ███    ██  █████  ███████  ██████
+    ██  ████ ██   ██               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██  █████      █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██ ██   ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████   █████                ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+このあたりには何があるんですか？
+What is around here?
+What’s in those boxes?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+講義で使ったものなんかをしまっておいたはずだが…。
+I must have put away things used in lectures, but…
+It should contain various items I’m using in my lectures, but…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+……。ヒヨコのおもちゃが出てきました。
+…A chick toy came out.
+…That’s a chick toy.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ああ、そのおもちゃなら、確か、このナゾに使ったものではないかな。
+Ah, if it’s that toy, if I remember correctly, I wonder if it’s the thing used for this puzzle.
+Oh, that toy. If I remember correctly, it’s used for this puzzle.
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_8.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ニワトリとヒヨコ
+Chicken and Chick
+Chicks and Hens
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_8.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+杭と杭の間に３本の直線を引いて、ニワトリを１羽、ヒヨコを２羽ずつのグループに分けてみよう。
+Draw three straight lines between the stakes, try to split into groups of 1 chicken, 2 chicks each.
+Draw three straight lines between the stakes to divide the chickens into groups. Each group must consist of one hen and two chicks.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_8_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+左端の上から、ヒヨコ、ニワトリ、ヒヨコ、はグループだよ。
+From the top left, chick, chicken, chick, is a group.
+Rope off the mother hen in the upper-left corner so that she stays with the two chicks directly above and below her.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_8_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+右下のニワトリはその右上、右下のヒヨコと一緒。
+The chicken of the bottom right is with the chicks in its upper right and lower right.
+The chicken in the bottom right is in the same group as the chicks to her upper right and lower right.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_8_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+左下のニワトリは、その右上、そして左側のヒヨコと一緒。
+The chicken of the bottom left is with the chicks in its upper right and left.
+The chicken in the bottom left is in the same group as the chicks to her upper right and to her left.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_8.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　あきらめずにやってみよう。
+Regrettable. Let’s try not to give up.
+Too bad. But don't give up! The chickens are counting on you!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_8.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！仲良しの親子だね。
+Correct! They make happy families.
+Nicely done! Now those are some happy chickens!
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、もう少し考えさせてください。
+Sensei, please let me think about it a bit more.
+Professor, please let me mull it over a bit more.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t4.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+答えはわかったかい？
+Do you understand the answer?
+Have you found the answer?
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+でも先生、このヒヨコ、一個しか見当たりませんよ。
+But Sensei, this chick, there is only one to be found.
+But Professor, there is only one chick here.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t7.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+本当かい？どこへ行ってしまったのかな。
+Is it true? I wonder where they’ve gone to.
+Really? I wonder what happened to the others.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e10_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、この箱の中、色んなものが入ってますね。
+Even so, inside that box (boxes?), all sorts of things are contained.
+At any rate, there really are all sorts of things in here.
+
+
+
+     ██████   █████                ███    ██  █████  ███████  ██████
+    ██  ████ ██   ██               ████   ██ ██   ██    ███  ██    ██
+    ██ ██ ██  ██████     █████     ██ ██  ██ ███████   ███   ██    ██
+    ████  ██      ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██████   █████                ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+わあ、きれいな写真ですね。
+Wow, it’s a beautiful photo.
+Wow, that’s a beautiful photo.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+遠い南の島の写真さ。いつか行ってみたいと思ってね。
+It’s a photo of an island in the far south. Someday I’d like to go there, I thought.
+It’s a photo of an island in the far south. I’d like to go there someday.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+南の島でバカンスですか。あこがれますね。
+Holidays in an island in the south? I yearn for it.
+Going on holidays in a southern island… I’d love that.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ああ、たまにはそんな場所で心を落ち着けることも必要だね。
+Yes, occasionally relaxing one’s mind in such location is a necessity.
+Yes, it is necessary to take some time to relax in such places every once in a while.
+-----------------------------------
+ところでルーク、気付いたかい？この写真にもナゾが隠されているんだ。
+By the way Luke, did you notice? In this photo too is hidden a puzzle.
+By the way, Luke, have you noticed? A puzzle is concealed in this photo.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+えっ、こんなところにもですか！？
+Eh, even in a place like this!?
+Huh? In a place like this!?
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_9.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+島巡り
+Island Tour
+Island Hopping
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_9.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+たくさんの島が並んでいる。スタートからゴールまですべての島を一度だけ通るためには、島と島の間に、１本だけ橋をかければよいという。それはどこか。ただし、かける橋は、他の橋と交差してはいけない。
+A lot of islands are lining up. To pass through all islands only once from start to finish, between two islands, they say that only 1 bridge is needed. Where is it? However, the missing bridge must not intersect with other bridges.
+Here is an overhead view of a cluster of tropical islands. As you travel from Start to Goal, your objective is to visit every island exactly one time. The island folk say this can be accomplished with the addition of a single, straight bridge. The only other rule is that your bridge can't cross over any preexisting bridge. So, where should your bridge go?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_9_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+すべての島に一度だけ行けばよい。すべての橋を渡る必要はないことに注意。
+You have to visit every island only once. Note that you don’t have to cross every bridge.
+You need to visit each island exactly one time, but that doesn’t mean that you have to cross every bridge to do so.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_9_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+スタートから進んでみて、どうしても行けない島が見つかったら、その周辺が怪しい。
+Proceed from the start, if you find an island you just can’t go to, the area around it is suspicious.
+Try setting out from the start point and just proceeding on your merry way. If you come across an island you simply can’t get to, you may have just stumbled upon your answer.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_9_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+地図の真ん中あたりが、怪しい。
+Around the middle of the map, suspicious.
+Examine the area around the middle of the island cluster closely.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_9.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　もう一度考えてみよう。
+Regrettable. Try thinking again.
+Nope! Take another look at this puzzle.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_9.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！さあ、島巡りに出かけよう。
+Correct! Come on, let’s go on an island tour.
+That’s right! Now get out there and go enjoy that island paradise!
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t13.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+うーん、むずかしいですね。
+Uhn, it’s difficult.
+Ugh… That’s a tough one.
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+あせらずじっくり考えてごらん。
+Don’t rush, please think carefully.
+Take your time to think about it.
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+南の島を自分の足で渡り歩くなんて、大変そうだけど楽しそうですね。
+Wandering through southern islands on my own two feet sounds like a lot of work, but it’s fun.
+Walking from island to island on foot sounds tedious, but it’s actually a lot of fun.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t9.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+これだけきれいな海なら、泳ぐのも気持ちがいいだろうね。
+If this sea is so clean, I guess it would feel good to swim in it.
+It must be pleasant to swim in such a beautiful sea.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t10.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、泳ぐ時はその帽子は…
+Sensei, when you swim, that hat…
+Professor, when you swim, um… You’re not swimming with your hat on, are you?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t11.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ん？もちろん、取るに決まってるじゃないか。
+Hm? Of course, shouldn’t it be a given that I take it?
+Hm? Of course I am.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t12.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+…なんだか、想像できません。
+…Somehow, I can’t imagine it.
+…No, I can’t imagine it.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+南の島もいいけど、ボクは動物がたくさんいる場所へ行ってみたいですね。
+Although a southern island is nice, I’d like to go to a location where there’s a lot of animals.
+A tropical island sounds really nice, but I’d also love to go in a place with a lot of animals.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e11_t7.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ルークは本当に動物が好きだね。
+Luke truly likes animals.
+You really are fond of animals.
+
+
+
+     ██  ██████                ███    ██  █████  ███████  ██████
+    ███ ██  ████               ████   ██ ██   ██    ███  ██    ██
+     ██ ██ ██ ██     █████     ██ ██  ██ ███████   ███   ██    ██
+     ██ ████  ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██  ██████                ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生の部屋には、変わったものばかり置いてあるんですね。
+In Sensei’s room, so many unusual things are located.
+There’s all kinds of weird things in your office.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+変わったものとは心外だね。この部屋に飾られているのは、歴史的価値のあるものばかりなんだ。
+“Unusual things” is upsetting. (What is) displayed in this room is nothing but things with historical value.
+It is regrettable that you would define them as “weird.” Everything displayed in this room has great historical value.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t2.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+たとえばこれは、古代エジプト時代に造られたオベリスクのひとつで、とても貴重なものなんだよ。
+This for example, is one of the obelisks built during the Ancient Egypt period, a very valuable thing.
+Take this, for example. This obelisk dates back to Ancient Egypt, and it’s incredibly valuable.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t3.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ボクには、ただの変な形の石にしか見えないですけど。
+To me, it just looks like an oddly-shaped stone.
+It just looks like a funny-shaped stone to me.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t4.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ルークには少し早かったかな？
+Is it a little early for Luke?
+Perhaps it is a little early for you to see it.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+歴史があると言えば、こんなナゾがあるよ。解いてごらん、ルーク。
+Speaking of History, there is such a puzzle. Try to solve it, Luke.
+Though speaking of History, that reminds me of a puzzle. You should give it a try, Luke.
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_10.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+迷路の扉
+Maze’s Door
+The Knight’s Escape
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_10.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+君は暗い迷宮を進む騎士だ。スタートからゴールまで、なるべく少ない数の扉を開き、脱出してほしい。扉はタッチで開閉する。
+You are a knight navigating a dark labyrinth. From start to finish, you must open as few doors as possible and escape. The doors open and close by touching (them).
+Behold the brave knight as he fights his way through a dark and winking maze. With his strength waning, the knight decides that he must exit the maze by opening the fewest number of doors possible. Find the path that allows the knight to escape from those dark catacombs while opening as few doors as possible.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_10_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+出口からも考えてみよう。
+Also think about it from the exit.
+You can learn a lot by working backward and making your way through the maze starting from the goal? You’ll have to open one of those in the end.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_10_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+開ける扉は３つ。
+There are 3 doors to open.
+You need to open three doors in total.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_10_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ゴールに一番近い扉を開く。そこから探してみよう。
+Open the door closest to the goal. Let’s find out from there.
+The door closest to the exit must be open.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_10.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　いろいろな経路を探してみよう。
+Regrettable. Look for different pathways.
+Give it another try. Surely there’s another path that requires fewer doors…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_10.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！これで脱出成功だ！
+Correct! This is a successful escape!
+Nicely done! The situation was dicey, but it looks like our brave knight has triumphed again.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t15.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+なんだか、わからなくなってきました。
+Somehow, I have grown to not understand.
+I think I lost track somehow…
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+もう一度挑戦してごらん。
+Once more please try to make an attempt.
+Please try again.
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t10.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+解けました、先生！
+I’ve solved it, Sensei!
+I’ve got it, Professor!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t11.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+でも、このナゾと歴史に、どんな関係があるんですか？
+But, this puzzle and History, what kind of relation is there?
+But… What does this puzzle have to do with History?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t12.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+今のナゾは、中世に考えられたものなんだ。ナゾにも歴史があるということさ。
+The current puzzle, is a thing that was thought of in the Middle Ages. Puzzles also have a history, that’s what it means.
+This puzzle just now was conceived during the Middle Ages. Puzzles have their own History as well.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t13.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+じゃあ、きっとその時代にも先生のようなナゾ好きがいたんでしょうね。
+Then, surely in that period too there was a puzzle lover like Sensei I guess.
+In that case, I guess there must have been another puzzle afficionado just like you back in those times.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t14.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そうかもしれないね。
+You could say that.
+Haha, perhaps.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この変な形の石は、先生が見つけて来たんですか？
+This oddly-shaped stone, did Sensei find it?
+Professor, were you the one who found this funny-shaped stone?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t8.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+これは、私が考古学者になったばかりの頃、シュレーダー博士に譲り受けたものなんだよ。
+This, when I had just become an archaeologist, it’s a thing that Dr Schrader handed over to me.
+No, Dr Schrader gave it to me when I became an archaeologist.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e12_t9.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+じゃあ、これは先生の宝物ってわけですね。
+Then, this is Sensei’s treasure.
+So this is the real reason why it’s so valuable to you.
+
+
+
+     ██  ██               ███    ██  █████  ███████  ██████
+    ███ ███               ████   ██ ██   ██    ███  ██    ██
+     ██  ██     █████     ██ ██  ██ ███████   ███   ██    ██
+     ██  ██               ██  ██ ██ ██   ██  ███    ██    ██
+     ██  ██               ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、このスタンド、もう壊れちゃってるみたいですよ？
+Sensei, this desk lamp, it looks like it’s already broken.
+Professor, it looks like your lamp is already broken.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いいや、それを点けるには、ちょっとしたコツがいるんだよ。
+No, to turn this on, there was a minor trick.
+No, there’s a little trick to turning it on.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+えっ、どういうことですか？
+Eh, what sort of thing is it?
+Huh? What do you mean?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+このスタンドの電球はね…
+This lamp’s light bulb…
+If you look closely at the light bulb…
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_11.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+電線パズル
+Electric Cable Puzzle
+Bright Idea
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_11.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+電球と電池の間の線を切れ目なくつないで点灯してほしい。途中で切れる線が無くなるように、電線の通ったパネルを並べてみよう。もちろんパネルは全て使うこと。
+The wire between the light bulb and the battery must be connected without interruption so that it lights up. Try to arrange the panels with wires running through them so that there are no lines that can be cut in the middle. Of course, all panels must be used.
+It’s dark in here! Turn the lightbulb on by fixing the wires that connect it to the battery. Rearrange the panels so that both wires continue unbroken from the battery to the lightbulb.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_11_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+切れてしまう線は無い。ただし、関係のない線もあるから気をつけて。
+There is no line that can be broken. However, be aware that some lines are not relevant.
+None of the wires should run off the sides of the panes, save for the areas where they connect to the light bulb and battery.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_11_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+電球と電池につながる４本以外には外側に出ていく線はないことに気をつけよう。これで、かなり簡単になるはず。
+Note that there are no lines going outwards except for the 4 leading to the bulb and the battery. This should make things a lot easier.
+Remember that no cables must go outwards except for the four ends leading to the bulb and the battery. This should make things a lot easier.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_11_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ヒント２から、４つの角にくるパネルはすぐわかるはず。あとは根気。
+From Hint 2, the panels coming to the 4 corners should be easily recognisable. The rest is perseverance.
+Considering what you learned from the previous hint, the four panels located in the corners should be easy to identify. The rest is simply a question of perseverance.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_11.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　本当に、つながっているかい？
+Regrettable. Really, are they connected?
+Incorrect. Are you sure the cables are connected properly?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_11.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！これで明るくなるね！
+Correct! That’ll brighten things up!
+Oh, good! This room could use some light!
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t9.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+電球の寿命…ではないんですよね、先生？
+The light bulb’s life span… That’s not it, is it Sensei?
+The light bulb… It’s not blown, is it Professor?
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+本当に点くのかなあ…？
+I wonder if it (will) really turn on…?
+Does it really work…?
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t8.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+生活にもナゾを取り入れているなんて、さすが先生ですね。
+It really is like Sensei to incorporate puzzles even into your life.
+It’s just like you to incorporate puzzles in your daily life.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t5.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、新しいスタンドを買った方がいいんじゃないですか？
+Sensei, wouldn’t you have better buy a new lamp?
+Professor, why don’t you just buy a new one?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t6.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ルーク、物は大切にするものだよ。英国紳士としてはね。
+Luke, you have to take good care of things. As an English gentleman.
+Luke, you have to take good care of your belongings. That’s what a gentleman does.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e13_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+はぁ、そういうものなんですか…。
+Ha, is that how it is…?
+Huh, so that’s how it is…?
+
+
+
+     ██ ██████                ███    ██  █████  ███████  ██████
+    ███      ██               ████   ██ ██   ██    ███  ██    ██
+     ██  █████      █████     ██ ██  ██ ███████   ███   ██    ██
+     ██ ██                    ██  ██ ██ ██   ██  ███    ██    ██
+     ██ ███████               ██   ████ ██   ██ ███████  ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+これは水晶玉ですね。占いでも始めたんですか？
+This is a crystal ball. Did you start fortune-telling?
+That’s a crystal ball. Did you start fortune-telling?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いや、それはオーパーツと言ってね…
+No, this is called an OOPArt…
+Not at all, this is called an out-of-place artifact, it’s…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そうだ！占いと言えば、ボクもこんなのを知っています。
+Right! Speaking of fortune-telling, I also know this kind of thing.
+Oh, that’s right! I also know a thing or two about fortune-telling.
+-----------------------------------
+こうやって、トランプを並べて…この中から選ぶんです、こんな風に！
+Like this, you put the playing cards in a row… you choose from among these, in this way!
+First, you line up the cards… then you choose one of them, like this!
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/t_12.txt ┃ TITLE
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+仲間はずれ
+Ostracised
+Five-Card Shuffle
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/q_12.txt ┃ QUESTION
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+４つの図のうち、３つまでは同じ図を回転させたものである。ひとつだけ、他と違う図があるのだが、それを選んでほしい。
+Up to three of the four figures are rotated versions of the same figure. There is only one picture that is different from the others, but I want you to choose it.
+Three of the four images shown below are exactly the same picture rotated in a variety of ways. Can you find the odd one out?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_12_1.txt ┃ HINT 1
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+どこに目をつけるのかが鍵だ。カードの何か。枚数は全部５枚だが…。
+The key is where to look. Something about the cards. The total number of cards is 5, but…
+The key to this puzzle is knowing where to look. The detail that distinguishes the one picture from the rest has something to do with the cards, that much is for sure. It’s not the number of cards, though, because each picture has five cards.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_12_2.txt ┃ HINT 2
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+カードには４つのマークが描かれている。回転しているから解りにくいが、相対的な位置関係をよく見てみよう。
+Four symbols are depicted on the cards. It is difficult to understand because of the rotation, but look closely at the relative positions.
+Each card is marked with one of four suits, and each set of cards is oriented in a different direction. Try to track the relative shift in movement for every card in the picture.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/h_12_3.txt ┃ HINT 3
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+…わからないって？重なりかただ。上下関係に注目してごらん。
+…You don’t understand? The way they overlap. Please focus on the vertical hierarchy.
+Still stuck, huh? Here’s a big hint. Look at how the cards are stacked on top of each other. Pay special attention to how each card overlaps with the middle card for your answer.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/f_12.txt ┃ INCORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+残念　よく見てみよう。
+Regrettable. Take a closer look.
+Nope! Look at the problem again.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/qtext/c_12.txt ┃ CORRECT
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+正解！簡単そうなのに、気がつくのに時間がかかることもあるパズルだ。
+Correct! It’s a puzzle that looks easy, but it can take some time to figure out.
+Good job! This puzzle is fairly straightforward, but catching the subtle difference in the picture can take a while.
+
+
+
+% If you quit the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t12.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+えっ、やめちゃうんですか？
+Eh, are you quitting?
+Oh, do you want to stop?
+
+
+
+% If you come back after quitting:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t3.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+この並んだトランプから、気になるものを選ぶんですよ。
+From this line of playing cards, choose something that interests you.
+I’ve lined up some cards. Come on, pick one!
+
+
+
+% After solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t8.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それで、何がわかるのかな？
+So, what do you know?
+So, what do you read from this?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t9.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ええと、これは…「強力なライバル出現」ですね。
+Uuh, this is… It’s “powerful rival appearance.”
+Let’s see, this one means that… “A powerful rival will appear.”
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t10.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ただカードを選んだだけでそんなことがわかるのかい？
+You know such thing just (after you) chose only a card?
+You can tell this much just by picking a card?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t11.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+当然ですよ！ボクだって先生の弟子ですからね。
+Naturally! Because I’m Sensei’s disciple, after all.
+Of course I can! I’m your apprentice, after all.
+
+
+
+% If you inspect again after solving the puzzle:
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生はいつから占いを始めたんですか？
+Sensei, from when did you start fortune-telling?
+Professor, when did you start fortune-telling?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+いや、あれはオーパーツと言って…
+No, this is called an OOPArt…
+No, I tried to tell you, this is called an OOPArt…
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+今度、ボクも占ってくださいね。
+Next time, please tell my fortune too.
+Next time, will you read my fortune too?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e14_t7.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+……。
+…
+…
+
+
+
+     ██ ██████     ███████               ██      ███████ ████████ ████████ ███████ ██████
+    ███      ██    ██                    ██      ██         ██       ██    ██      ██   ██
+     ██  █████     ███████     █████     ██      █████      ██       ██    █████   ██████
+     ██ ██              ██               ██      ██         ██       ██    ██      ██   ██
+     ██ ███████ ██ ███████               ███████ ███████    ██       ██    ███████ ██   ██
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t0.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、先生の部屋にはナゾがいっぱいですね。
+At any rate, inside Sensei’s room is filled with puzzles.
+At the end of the day, there really are a lot of puzzles in your office, Professor.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t1.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+こうやってナゾに囲まれていると、研究もはかどるんだよ。
+When being surrounded by puzzles in this way, I assure you that research also makes good progress.
+This is because being surrounded by puzzles is a good way to make research progress.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t2.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+でも、やっぱり少しくらいは片付けた方が…
+But, in any case you should clean up at least a little…
+But even if it’s true… It’s still better to clean up every once in a while.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t3.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+それにしても、よくこれだけのナゾを見つけたね。上出来だよ、ルーク。
+At any rate, how you have come to see this many puzzles. This is good work, Luke.
+In any case, I am impressed that you could find so many puzzles, Luke. Well done.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t4.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ボクだって先生の弟子ですからね。
+I’m Sensei’s apprentice too, that’s why.
+That’s because I’m your apprentice, after all!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t5.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+せっかくだから、調査の記録をつけておくといいんじゃないかな。
+You went this far at great pains, therefore I wonder if it isn’t good to preserve a record of investigation.
+While we’re here, wouldn’t it be a good idea to keep a record of your progress?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t6.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+そうですね。
+That’s right.
+You’re right.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t7.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+あれ？先生、今、外の方で何か音が…。
+Huh? Sensei, now, outside some noise…
+Hmm? Professor, I heard something outside.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t8.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+郵便物かな？
+I wonder if it is mail?
+Could it be mail?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t9.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ボクが見て来ます。
+I look and come back.
+I’ll go take a look.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e17_t10.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+先生、手紙が届いてました。机の上に置いておきますね。
+Sensei, a letter was received. I place and leave it on the top of the desk.
+Professor, there’s a letter for you. I’ll leave it on the table.
+
+
+
+    ███████ ███████               ███████ ███    ██ ██████
+       ███     ███                ██      ████   ██ ██   ██
+      ███     ███       █████     █████   ██ ██  ██ ██   ██
+     ███     ███                  ██      ██  ██ ██ ██   ██
+    ███████ ███████               ███████ ██   ████ ██████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e19_t0.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+手紙なんてめずらしいな。
+Hmm, what an unusual letter.
+What a strange letter.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e19_t1.txt ┃ LUKE:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+誰からですか？
+Who is it from?
+Who sent it?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e19_t2.txt ┃ LAYTON:
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+差出人の名前は書かれていないようだ。読んでみよう。
+The sender’s name has not been written, it appears. Let’s try reading.
+There is no return address. Let me open it.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e19_t3.txt ┃ LAYTON (off-screen):
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+これは…！
+This is…!
+It’s…!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/???.png         ┃ (NARRATION)
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+レイトンの元に届いた一通の手紙···。それは新たなる事件の幕開けだった。
+One letter which was was delivered to Layton… This was the beginning of a new case.
+Layton received a letter… And thus started a new case.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/etext/e19_t4.txt ┃ (NARRATION)
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+「レイトン教授とロンドンの休日」の物語はいかがでしたか？
+How was the story of “Professor Layton and the London’s Holiday”?
+Did you enjoy the story of “Professor Layton and the London Holiday”?
+-----------------------------------
+タイトルに戻るを選択すると、始めからやり直す事ができます。
+If you select return to title, you can start over from the beginning.
+You can start over from the beginning after returning to the title screen.
+
+
+
+    ███████  ██████ ██   ██ ██████   █████  ██████  ███████ ██████
+    ██      ██      ██   ██ ██   ██ ██   ██ ██   ██ ██      ██   ██
+    ███████ ██      ███████ ██████  ███████ ██   ██ █████   ██████
+         ██ ██      ██   ██ ██   ██ ██   ██ ██   ██ ██      ██   ██
+    ███████  ██████ ██   ██ ██   ██ ██   ██ ██████  ███████ ██   ██
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_1.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ１
+Dr Schrader’s Memo 1
+Dr Schrader’s Note 1
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_1.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+長年愛用し続けているせいか、この手帳もボロボロになってきた。
+Perhaps because of a continuously habitual use for many years, this notebook has also grown to fall to pieces.
+This notebook is getting more and more tattered by the day, likely because I have been using it constantly.
+-------------------------------------
+破れかけたページを留めて使ってはいるが、いつバラバラになるか知れたものではない。
+Although I use it to hold and maintain in place pages that began to fall off, when it will fall to pieces is not a known thing.
+I already use it for holding on to loose sheets, but there is no telling when it will fall apart completely.
+-------------------------------------
+そろそろ新しい手帳を買うべきかもしれんな。
+Perhaps I should buy a new notebook soon.
+Perhaps I should consider buying a new one, sooner rather than later.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_2.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ２
+Dr Schrader’s Memo 2
+Dr Schrader’s Note 2
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_2.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+ぽつぽつと手紙が届きはするが、レイトン君はあいかわらず、あちらこちらを飛び回っているようだ。
+Letters are delivered gradually but Layton-kun, as ever, seems to have been bustling about various places.
+Letters keep flying by one after the other, but as always, Hershel seems to have been travelling all around.
+-------------------------------------
+私が言うのもなんだが、いいかげん身を固めて、落ち着くべきではないだろうか。
+I’m not one to talk, but I wonder if he shouldn’t settle down already and calm down.
+I most likely am the last person who should say this, but I wonder whether he shouldn’t try to settle down and start a family.
+-------------------------------------
+やれやれ、年を取るとおせっかいになってしまうものだな。
+Good grief, when you grow old you tend to turn completely into a meddlesome person.
+Good grief, old age is making me meddlesome.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_3.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ３
+Dr Schrader’s Memo 3
+Dr Schrader’s Note 3
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_3.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+近ごろは目ぼしいニュースもない。大学も休みに入り、研究もひと段落ついたばかりだ。
+Lately there are no notable news. The university is beginning holiday, and research just reached a stopping point.
+Nothing of note has happened lately. The holidays have just started, and with this crucial step in our research behind us, everyone is taking a break.
+-------------------------------------
+こんな時は近代の芸術品を見て気分を変えるのも悪くはないだろう。幸い、明日は月に一度の骨董市だ。
+In times like these, I suppose it is not a bad idea to look at modern works of art and change your mood. Fortunately, tomorrow is the monthly antiques market.
+This sounds like the perfect time to get a change of air and look at some modern art. Fortunately, tomorrow is the monthly antiques market.
+-------------------------------------
+どんな掘り出し物が見つかるだろう。今から楽しみでならない。
+I wonder what kind of bargains will be discovered. From now on I am very much looking forward to it.
+I wonder what kind of oddities I will find there… I truly cannot wait.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_4.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ４
+Dr Schrader’s Memo 4
+Dr Schrader’s Note 4
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_4.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+骨董市で気になる物を見つけた。細やかな装飾の入った宝石箱だ。
+I came across an item which caught my eye at the antique market. It is a jewelry box containing meticulous decoration.
+I found something quite eye-catching at the antiques market: a finely decorated jewelry box.
+-------------------------------------
+あいにくと持ち合わせが少なく手に入れる事ができなかったが、私の見たところ、あれは結構な値打ちのあるもののようだった。
+Unfortunately I had insufficient money with me and wasn’t able to obtain it, but as I see it,​ that one was like it had a fairly good value.
+Sadly, I had not brought enough with me to afford it; but from what I could see, I do believe that this was a fair price.
+-------------------------------------
+いわくのある代物と言ってはいたが、あれを手放してしまうのはもったいない話だ。
+Since it is said that it is an article which has a history, it is a waste of its story to let go of that one completely.
+I was told that this one came with a rich, mysterious past… It would be a shame to leave things at that.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_5.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ５
+Dr Schrader’s Memo 5
+Dr Schrader’s Note 5
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_5.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+あの箱の事が気になって仕方がない。
+I can’t help but be curious about the matter of that box.
+I cannot stop thinking about that box.
+-------------------------------------
+確かに値打ちのありそうな箱だったがそれ以上に何かが引っかかるのだ。
+It was certainly a box of probable value but something greater than that is involved.
+It certainly seemed like it could be worth a fortune, but I can feel that there is something more to it than just its monetary value.
+-------------------------------------
+あれからまめに骨董市をのぞいてはいるが、見つける事はできなかった。
+Since then I frequently step in and out of the antiques market but, I wasn’t able to find it.
+I have been going back to the market more frequently since then, but I could not find it again.
+-------------------------------------
+私はなぜあの時、無理にでもあの箱を手に入れなかったのだろう。
+I wonder why at that time, I didn’t force myself to obtain that box.
+I wish I had forced myself to buy it when I had the chance.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_6.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ６
+Dr Schrader’s Memo 6
+Dr Schrader’s Note 6
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_6.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+たったひと目見ただけで、私はあの箱に魅入られてしまったようだ。
+With just one glance, I seem to have been entirely possessed by that box.
+It appears that a single glance was all this box needed to fully captivate me.
+-------------------------------------
+こうなれば、あの箱をどうしても手に入れない事には落ち着かない。
+Now that it has come to this, I cannot settle for not obtaining that box at any cost.
+Now that there is no going back, I will not find peace until I can finally get my hands on it… no matter the cost.
+-------------------------------------
+あの装飾、どこかで見たような覚えがある気がしたが、いったいどこで見たものだったのだろうか…。
+This adornment, I had a feeling there is a memory where I saw something similar somewhere but, I wonder where on Earth it was a thing I saw…?
+I feel like I have seen this ornament before, but where on Earth was it…?
+-------------------------------------
+それが分かれば手がかりになると思うのだが。
+I think that if I understand this then it will become a lead.
+If I figure this one out, it just might help me find it.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_7.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ７
+Dr Schrader’s Memo 7
+Dr Schrader’s Note 7
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_7.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+今日の新聞の一面にもレイトン君の活躍が記されていた。まるで自分の事のように鼻が高い。
+The first page of today’s newspaper mentioned Layton-kun’s great work too. I’m proud as though it were about myself.
+Hershel once again made the headlines today. As always, I am extremely proud of him.
+-------------------------------------
+しかし、それよりも気になったのは『悪魔の箱』に関する記事…。
+However, what caught my eye instead is an article in relation to “The Devil’s Box”…
+However, what truly caught my eye this time was a different article, which mentioned a “Diabolical Box”…
+-------------------------------------
+開けた者が死にいたるとは大げさだが実際に数人の死者が出ているようだ。もしかしたら、あの箱が…。
+That the people who opened it bring about death is exaggerated but indeed a few deaths have been discovered it seems. By any chance, that box…
+It is an exaggeration to say that all who open it will die; yet, it appears that a few deaths have indeed occurred. Could it be that this box…
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_8.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ８
+Dr Schrader’s Memo 8
+Dr Schrader’s Note 8
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_8.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+私の探しているあの箱こそ、世間を騒がせている『悪魔の箱』だろう。
+Assuredly that box I have been looking for, it is “The Devil’s Box” which has been troubling society I think.
+I am now certain of it, the box I am looking for and this “Diabolical Box” which has stirred anxiety around are one and the same.
+-------------------------------------
+そうと知ればますます手に入れないわけにはいかない。
+If I know that it is so then more and more I cannot afford to not obtain it.
+This is all the more reason for me to get my hands on it.
+-------------------------------------
+開けた者に災いが降りかかるというがそれは価値のあるものにつきものの、単なるうわさに違いない。
+It is said that misfortune falls onto the one who opened it but this is the usual for things which have value, for certain those are mere rumours.
+They say that calamity befalls anyone who dares open it, but this kind of rumour is the usual for things of value.
+-------------------------------------
+世間にくさらせておくくらいなら、厳重に保管しておきたいものだ。
+Rather than let it rot in the public, it is something I want to store strictly.
+I would much rather keep it safe than let it be exposed to the world.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_9.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ９
+Dr Schrader’s Memo 9
+Dr Schrader’s Note 9
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_9.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+悪魔の箱はうわさに聞くあの町に何か関係があるようだ。
+The Devil’s Box seems to have something to do with that town I hear rumours about.
+The Diabolical Box seems to have an intimate connection with this town I heard about in rumours.
+-------------------------------------
+おそらく、箱のフタについていた紋章が手がかりになっていたに違いない。
+In all likelihood, the coat of arms which had been attached on the box’s lid has turned out to be a clue without a doubt.
+Indeed, the crest on its lid turned out to be a clue.
+-------------------------------------
+誰が何のために悪魔の箱を作ったのだろう？なぜ、あの箱は呪われた箱だと呼ばれているのだろう？
+Who made the Devil’s Box and for what purpose I wonder? Why, has that box been called a cursed box I wonder?
+Who made the Diabolical Box and why? Why have they been saying that it is cursed?
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_10.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ１０
+Dr Schrader’s Memo 10
+Dr Schrader’s Note 10
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_10.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+新聞に悪魔の箱の記事が載っていた。
+In the newspaper an article about the Diabolical Box had appeared.
+Another article about the Diabolical Box appeared in the paper.
+-------------------------------------
+骨董市であれを売っていた人物が、好奇心に負けて箱を開けてしまったようだ。
+The person who was selling that at the market, succumbed to curiosity and had opened the box it seems.
+It appears that the one who was selling it at the antique market succumbed to curiosity and opened it.
+-------------------------------------
+やはり、開けた者を死にいたらせるというのは本当なのかもしれない。
+In the end, regarding that it will inflict death upon those who opened it might be true.
+After all this, perhaps the saying that it will kill any who dares open it is true.
+-------------------------------------
+だがそれでも、あれを手に入れようという私の気持ちに変わりはない。何としても手に入れてみせよう。
+But even so, there is no change to my readiness in order to obtain that. By any means necessary I must find a way to obtain it.
+Despite all this, my desire has not wavered. I must get my hands on this box, no matter what it takes.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_11.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ１１
+Dr Schrader’s Memo 11
+Dr Schrader’s Note 11
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_11.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+今よりももっと自由な時間を作るため大学の研究室を出る事にした。
+In order to make even more free time than now, I decided to leave the university’s laboratory.
+I decided to leave Gressenheller so I could have more free time.
+-------------------------------------
+これからは、あの箱についてもっと詳しく調べる事ができるようになる。
+From now on, examining more minutely about that box becomes possible.
+In the future, this should let me focus on the mystery of this box in far greater detail.
+-------------------------------------
+この愛着のある研究室を譲れるのはレイトン君しかいないだろう。彼ならきっとこの研究室を大事に使ってくれるに違いない。
+I guess Layton-kun is the only one who I can hand over this beloved laboratory. He surely will use this laboratory for me with great care, no doubt.
+Hershel must be the only person I would feel at peace giving my office to. I have no doubt that he will make good use of it.
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/it_12.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダー博士のメモ１２
+Dr Schrader’s Memo 12
+Dr Schrader’s Note 12
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/id_12.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+知り合いの骨董屋が、珍しい宝石箱を入荷したと教えてくれた。
+An acquaintance of the antique store, told me that an unusual jewelry box arrived.
+Someone I know from the antique store told me that a strange jewelry box was recently added.
+-------------------------------------
+手元に届いた写真を確認したが、間違いなく私が見かけたあの箱だ。
+I confirmed that the photograph I was delivered in hand is unmistakably that box I caught sight of.
+From the photo I received, this is unmistakably the same box I once saw.
+-------------------------------------
+私が探していたのを思い出し、知らせてくれたのだろう。ありがたい事だ。
+Remembering I had been looking for it, they made me aware of it I suppose. That’s an appreciated thing.
+They must have remembered that I was looking for it… I am very thankful that they let me know.
+-------------------------------------
+ようやく、あの箱を手に入れられる。もうすぐ私の元にあの箱が…。
+At last, I can obtain that box. Soon that box will be by my side…
+At last, this box is within my grasp. Before long, it will finally be mine…
+
+
+
+     ██████   ██████   █████  ██      ███████
+    ██       ██    ██ ██   ██ ██      ██
+    ██   ███ ██    ██ ███████ ██      ███████
+    ██    ██ ██    ██ ██   ██ ██           ██
+     ██████   ██████  ██   ██ ███████ ███████
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/mt_1.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+隠された１２のナゾを探せ！
+Search for 12 hidden puzzles!
+Find 12 hidden puzzles!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/mt_2.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+隠された１２のナゾを探せ！
+Search for 12 hidden puzzles!
+Find 12 hidden puzzles!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/mt_3.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+手紙を調べてみよう！
+Examine the letter!
+Examine the letter!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/storytext/mt_place.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+レイトン教授の研究室
+Professor Layton’s Laboratory
+Professor Layton’s Office
+
+
+
+    ███████ ██    ██ ███████ ████████ ███████ ███    ███
+    ██       ██  ██  ██         ██    ██      ████  ████
+    ███████   ████   ███████    ██    █████   ██ ████ ██
+         ██    ██         ██    ██    ██      ██  ██  ██
+    ███████    ██    ███████    ██    ███████ ██      ██
+
+
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_1.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+データみとうろく
+Unregistered data
+Unregistered data
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_2.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+セーブファイルあり
+Save file available
+Save file available
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_3.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+解いたナゾの数%s
+Number of puzzles solved: %s
+Number of puzzles solved: %s
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_4.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+シュレーダーメモが追加された！
+Schrader Memo added!
+A new page of Schrader’s memo has been found!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_5.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+部屋にある
+There is in the room
+There is in the room
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_6.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+全てのナゾが解かれた！
+All the puzzles have been solved!
+All the puzzles have been solved!
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_7.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+タイトル画面へ戻りますか？
+Go back to the title screen?
+Return to the title screen?
+----------------------------------
+記録していない進行情報は失われます。
+Progress information not recorded is lost.
+All unsaved progress will be lost.
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_8.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+中断データがあります。
+Interruption data is available.
+You have some suspended game data.
+----------------------------------
+中断データからゲームを再開しますか？
+Restart the game from the interrupted data?
+Start the game from that point?
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_9.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+セーブデータからロードしますか？
+Load from saved data?
+Load a saved game?
+----------------------------------
+※現在の中断データが、新たに作られた中断データに上書きされてしまいます。
+*The current interruption data will be overwritten by the newly created interruption data.
+(Any suspended game data that currently exists will be overwritten with newly created suspended game data.)
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ File: data_lt1/stext/sys_10.txt ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+セーブファイルに上書きしますか？
+Overwrite save file?
+Overwrite your save file?
