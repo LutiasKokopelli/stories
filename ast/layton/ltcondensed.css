@@ -53,6 +53,11 @@ c {
 .map circle,.map text,.map polygon,.map ellipse{
     filter:drop-shadow(var(--borderlen)var(--borderlen)var(--borderlen)rgb(var(--plblack)))
 }
+.map .mvt polygon{
+    fill:rgb(252,255,8);stroke:rgb(var(--plblack));stroke-linejoin:round
+}
+.map .mvt + g text tspan{text-anchor:middle}
+.map .mvt:hover{filter:drop-shadow(2px 0 0 rgb(244,153,3))drop-shadow(-2px 0 0 rgb(244,153,3))drop-shadow(0 2px 0 rgb(244,153,3))drop-shadow(0 -2px 0 rgb(244,153,3))drop-shadow(3px 0 0 rgb(244,153,3))drop-shadow(-3px 0 0 rgb(244,153,3))drop-shadow(0 -3px 0 rgb(244,153,3))drop-shadow(0 3px 0 rgb(244,153,3))}
 .map g text{
     display:none;
     font-size:20px;
@@ -84,10 +89,8 @@ code {font-style:normal;display:none}
     font-size: 24px;
     outline:5px solid rgb(var(--plwhite));
     margin:80px auto 0 auto;
-    color: rgb(var(--plwhite));
 }
 .goto:hover {
-    color:rgba(var(--back),.7);
     background:rgb(var(--plre2));
     border-top-color:rgb(var(--plre2));border-left-color:rgb(var(--plre2));
     border-bottom-color:rgb(var(--plred));border-right-color:rgb(var(--plred));
@@ -95,9 +98,10 @@ code {font-style:normal;display:none}
 .goto:hover:before {
     opacity:.8
 }
-.goto + * {
-    margin: 100px auto;
-}
+.goto a{color: rgb(var(--plwhite))}
+.goto:hover a{color:rgba(var(--back),.7)}
+.goto + * {margin:100px auto}
+.goto + .goto{margin-top:30px;margin-bottom:0}
 .goto:before {
     content: url("../../layton/ast/chr/hintcoin1.png");
     position: absolute;
