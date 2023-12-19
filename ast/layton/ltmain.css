@@ -314,6 +314,8 @@ h1 + .hourglass::before {
 .bar:after {
     right: -10px;
 }
+#findtaginput::placeholder,
+#findtaginput:focus-within,
 #filterinput::placeholder,
 #filterinput:focus-within {
     opacity: 1;
@@ -322,18 +324,22 @@ h1 + .hourglass::before {
     font-family: Roboto, Arial;
     text-shadow: var(--txtshw);
 }
+#findtaginput:focus-visible,
 #filterinput:focus-visible {
     border: 3px solid rgb(var(--plwhite));
     outline: 5px solid rgb(var(--plblack));
     caret-shape: block;
     caret-color: rgb(var(--plwhite));
 }
+#findtaginput:focus-visible::placeholder,
 #filterinput:focus-visible::placeholder {
     opacity: 0.5;
 }
+#findtaginput:focus-within,
 #filterinput:focus-within {
     padding-left: 50px;
 }
+#findtaginput,
 #filterinput {
     width: 100%;
     font-size: 16px;
