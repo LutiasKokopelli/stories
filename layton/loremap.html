@@ -1,0 +1,116 @@
+<head><title>Professor Layton Lore Map</title><link rel='shortcut icon'href=ast/logo/can.svg><link rel=stylesheet type=text/css href=../ast/layton/ltmain.css media=screen>
+<style>*{scrollbar-color:rgb(var(--fore))rgb(var(--back));--midd:179,176,79;--emph:var(--plred);--back:254,224,163;--fore:63,121,99;--grey:254,224,163}
+#findtaginput{display:block;width:80%;margin:17px auto}
+#filterlist article{display:grid;gap:12px;grid-template-columns:1fr 1fr 1fr}
+it{width:100%;height:fit-content;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.3);border-radius:17px;padding:10px;text-align:left}
+it h1{font-size:34px;margin-bottom:17px;border-bottom:3px solid rgb(var(--plred))}
+it h2{font-size:24px;background:rgba(var(--fore),.9);border-radius:10px;color:rgb(var(--plwhite));margin-bottom:17px;padding:5px 17px 5px 17px}
+it *{margin-top:0}it *+*{margin-top:17px}
+it t{font-family:Calibri;font-size:12px;border-top:3px solid rgb(var(--midd));display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 17px 17px;background:rgba(var(--midd),.5);color:rgb(var(--fore))}
+
+summary{border-bottom:3px solid rgb(var(--midd));width:calc(100% + 20px);margin:-10px 0 -20px -10px;padding:10px;border-radius:10px 10px 0 0;background:rgb(var(--fore));color:rgb(var(--plwhite))}
+details[open] summary{margin-bottom:0}
+
+input[type=button]{margin:2px;float:left;cursor:pointer;background:rgba(var(--midd),.1);border:2px solid rgba(var(--midd),.5);padding:4px 7px;border-radius:12px}
+
+#activetags p{font-family:Calibri;font-size:14px;display:inline-block;background:rgba(var(--plred),.8);padding:5px 12px;border:2px solid rgb(var(--plred));color:rgb(var(--plwhite));font-weight:800;border-radius:20px;margin:2px}
+
+#resetsearch,#startsearch{position:absolute;border:3px solid rgb(var(--fore));bottom:0;width:150px;height:100%;font-size:20px;padding:10px 17px;color:rgb(var(--plwhite));font-weight:600;top:-2px}
+#resetsearch{right:150px;background:rgb(var(--plred));border-radius:0}
+#startsearch{right:0;border-radius:0 20px 20px 0;background:rgb(var(--fore))}
+#activetags{background:rgba(var(--midd),.3);padding:20px;min-height:50px;border:3px solid rgb(var(--fore));border-radius:20px 0 0 20px;border-right:none;width:calc(100% - 300px)}
+
+.tagcategory{border:2px solid rgb(var(--fore));padding:17px;max-height:100px;overflow:auto}.tagcategory h2{font-size:24px}
+
+</style><script src=../ast/js.js></script></head><h1 style=margin-top:50px>Professor Layton Lore Map<p class=hr></p></h1><p class=hourglass></p><h2>Also known (eventually, hopefully) as the Ultimate Fanfiction Research Tool</h2><input type=text id=findtaginput onkeyup=FindTag() placeholder=" Type here to quickly find a specific tag to add. Beware of typos!"><h1 style=background:rgb(var(--fore));color:rgb(var(--plwhite));width:80%;margin:auto;padding:7px>Toggle tags:</h1>
+<div id=tagselect style="width:80%;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border:5px solid rgb(var(--fore))">
+
+    <div class=tagcategory><h2>Characters:</h2>
+        <input type=button value='#hershel layton' onclick="AddTagSelector('hershel layton')">
+        <input type=button value='#luke triton' onclick="AddTagSelector('luke triton')">
+        <input type=button value='#flora reinhold' onclick="AddTagSelector('flora reinhold')">
+        <input type=button value='#emmy altava' onclick="AddTagSelector('emmy altava')">
+        <input type=button value='#aurora' onclick="AddTagSelector('aurora')">
+        <input type=button value='#desmond sycamore' onclick="AddTagSelector('desmond sycamore')">
+        <input type=button value='#randall ascot' onclick="AddTagSelector('randall ascot')">
+        <input type=button value='#angela ledore' onclick="AddTagSelector('angela ledore')">
+        <input type=button value='#aston bloom' onclick="AddTagSelector('aston bloom')">
+        <input type=button value='#sania cornell' onclick="AddTagSelector('sania cornell')">
+        <input type=button value='#andrew schrader' onclick="AddTagSelector('andrew schrader')">
+    </div>
+    <div class=tagcategory><h2>Character Groups:</h2>
+        <input type=button value='#targent' onclick="AddTagSelector('targent')">
+        <input type=button value='#scotland yard' onclick="AddTagSelector('scotland yard')">
+        <input type=button value='#puzzle guardians' onclick="AddTagSelector('puzzle guardians')">
+        <input type=button value='#azran civilisation' onclick="AddTagSelector('azran civilisation')">
+        <input type=button value='#st mystere robots' onclick="AddTagSelector('st mystere robots')">
+        <input type=button value='#azran golems' onclick="AddTagSelector('azran golems')">
+    </div>
+    <div class=tagcategory><h2>Locations:</h2>
+        <input type=button value='#london' onclick="AddTagSelector('london')">
+        <input type=button value='#neverlace' onclick="AddTagSelector('neverlace')">
+        <input type=button value='#crown petone' onclick="AddTagSelector('crown petone')">
+        <input type=button value='#future london' onclick="AddTagSelector('future london')">
+        <input type=button value='#chinatown' onclick="AddTagSelector('chinatown')">
+        <input type=button value='#misthallery' onclick="AddTagSelector('misthallery')">
+        <input type=button value='#froenborg' onclick="AddTagSelector('froenborg')">
+        <input type=button value='#st mystere' onclick="AddTagSelector('st mystere')">
+        <input type=button value="#monte d'or" onclick="AddTagSelector('monte d\'or')">
+    </div>
+    <div class=tagcategory><h2>Objects of interest:</h2>
+        <input type=button value='#elysian box' onclick="AddTagSelector('elysian box')">
+    </div>
+    <div class=tagcategory><h2>Source Media:</h2>
+        <input type=button value="#curious village" onclick="AddTagSelector('curious village')">
+        <input type=button value="#london holiday" onclick="AddTagSelector('london holiday')">
+        <input type=button value="#diabolical box" onclick="AddTagSelector('diabolical box')">
+        <input type=button value="#chelmey's casebook special recipe" onclick="AddTagSelector('chelmey\'s casebook special recipe')">
+        <input type=button value="#wandering castle" onclick="AddTagSelector('wandering castle')">
+        <input type=button value="#mansion of the deathly mirror" onclick="AddTagSelector('mansion of the deathly mirror')">
+        <input type=button value="#unwound future" onclick="AddTagSelector('unwound future')">
+    </div>
+    <div class=tagcategory><h2>Worldbuilding</h2>
+        <input type=button value='#timeline' onclick="AddTagSelector('timeline')">
+        <input type=button value='#puzzles' onclick="AddTagSelector('puzzles')">
+        <input type=button value='#archaeology' onclick="AddTagSelector('archaeology')">
+        <input type=button value='#biology' onclick="AddTagSelector('biology')">
+        <input type=button value='#physics' onclick="AddTagSelector('physics')">
+    </div>
+    <div class=tagcategory><h2></h2>
+    </div>
+    <div class=tagcategory><h2>Other:</h2>
+        <input type=button value="#gameplay puzzle" onclick="AddTagSelector('gameplay puzzle')">
+    </div>
+
+</div><h2 style=margin-top:17px>Your search includes the following tags:</h2><div style="position:relative;width:80%;margin:17px auto"><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist style=display:none class=chcol><article>
+
+
+    <it><details><summary>Aurora was sealed in the Froenborg Sanctuary ~1.2 million years ago.</summary>
+        <h2>Azran Legacy: Chapter 1</h2>
+        <blockquote><ruby>氷<rt>こおり</rt></ruby>は<ruby>少<rt>すく</rt></ruby>なく<ruby>見<rt>み</rt></ruby><ruby>積<rt>つ</rt></ruby>もっても、<br>１２０<ruby>万年前<rt>まんねんまえ</rt></ruby>のものだ。</blockquote>
+        <p>“<ruby>The ice<rt>氷</rt></ruby> is <ruby>estimated<rt>見積もって</rt></ruby> to be <ruby>at least<rt>少なく</rt></ruby> <ruby>1.2 million years old<rt>１２０万年前のものだ</rt></ruby>.”</p>
+        <p>The Azran civilisation was nearing its end at this time, therefore its birth could be even older.</p>
+    </details><t>#aurora #azran civilisation #azran golems #froenborg</t></it>
+
+
+    <it><details><summary>Schrader sends a letter to Layton about the Elysian Box on a Friday.</summary><h2>London </h2></details><t>#andrew schrader #london holiday #diabolical box #elysian box</t></it>
+
+
+<i id=nofind style="display:none;margin-left:50px;grid-column:span 3">No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></article></div><script>
+const nofind=document.getElementById('nofind')
+const filterlist=document.getElementById("filterlist")
+const allit=filterlist.getElementsByTagName('it')
+const activetags=document.getElementById('activetags')
+const tagselect=document.querySelectorAll('div[id="tagselect"] input')
+var curtinput=[];var itags=[]
+for(i=0;i<allit.length;i++){itags.push([]);a=allit[i].getElementsByTagName("t")[0];txtValue=a.textContent||a.innerText;txtList=txtValue.toLowerCase().split("#").filter(n => n);for(w=0;w<txtList.length;w++){txtList[w]=txtList[w].trim()}itags[itags.length-1].push(txtList)}
+function addChildToParent(parent,el,msg){const node=document.createElement(el);const textnode=document.createTextNode('#'+msg);node.appendChild(textnode);parent.appendChild(node)}
+function ResetTagSelector(){curtinput=[];filterlist.style.display="none";activetags.innerHTML='';for(t=0;t<tagselect.length;t++){tagselect[t].style.backgroundColor='';tagselect[t].style.color='';tagselect[t].style.borderColor=''}}
+function AddTagSelector(tag){if(curtinput.includes(tag)){let index=curtinput.indexOf(tag);curtinput.splice(index,1);activetags.removeChild(Array.from(activetags.childNodes).find(v => v.innerHTML=='#'+tag));document.activeElement.style.backgroundColor='';document.activeElement.style.color='';document.activeElement.style.borderColor=''}else{curtinput.push(tag);addChildToParent(activetags,'p',tag);document.activeElement.style.backgroundColor="rgb(var(--fore))";document.activeElement.style.color="rgb(var(--plwhite))";document.activeElement.style.borderColor="rgb(var(--fore))"}}
+function FilterItems(){var findli=allit.length;filterlist.style.display="grid";for(i=0;i<itags.length;i++){var checks=true;for(tag=0;tag<curtinput.length;tag++){if(Object.values(itags[i])[0].indexOf(curtinput[tag])==-1){allit[i].style.display="none";checks=false}}if(checks){allit[i].style.display=""}else{findli-=1}}if(findli==0){nofind.style.display="block"}else{nofind.style.display="none"}}
+function FindTag(){var taginp=document.getElementById('findtaginput').value.toLowerCase();for(i=0;i<tagselect.length;i++){var a=tagselect[i].value;if(a.includes(taginp)){tagselect[i].style.display=""}else{if(tagselect[i].style.backgroundColor==''){tagselect[i].style.display="none"}}}}
+
+// DEV TOOL FOR DEBUGGING ONLY:
+documentedtags=[];for(i=0;i<tagselect.length;i++){documentedtags.push(tagselect[i].value.split('#')[1])};const allts=document.querySelectorAll('div[id="filterlist"] t');allusedtags=[];for(i=0;i<allts.length;i++){allusedtags+=allts[i].textContent.split('#')};uniq=[];usedtagslist=allusedtags.split(',');for(i=0;i<usedtagslist.length;i++){if(!uniq.includes(usedtagslist[i].trim())&&usedtagslist[i]!=''){uniq.push(usedtagslist[i].trim())}};var missingtags='';for(tag=0;tag<uniq.length;tag++){if(!documentedtags.includes(uniq[tag])){missingtags+='\n・'+uniq[tag]}}if(missingtags!=''){window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n"+missingtags)}
+
+</script>
