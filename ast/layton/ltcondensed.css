@@ -89,6 +89,7 @@ code {font-style:normal;display:none}
     font-size: 24px;
     outline:5px solid rgb(var(--plwhite));
     margin:80px auto 0 auto;
+    color:rgb(var(--plwhite))
 }
 .goto:hover {
     background:rgb(var(--plre2));
