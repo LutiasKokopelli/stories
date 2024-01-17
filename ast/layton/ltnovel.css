@@ -62,24 +62,4 @@ tr:last-child .page > span:last-child{bottom:0}
 .page svg.lgthat{margin:50px}
 .page:lang(ja) svg.lgthat{position:absolute}
 
-
-/* .🗺️{height:calc(var(--nbrows)*20px);max-height:calc(var(--nbrows)*20px);overflow-y:auto} */
-
-
-
-
-
-/* rt,.h ruby:hover{color:rgb(var(--fore))} */
-/* rt{font-weight:normal!important} */
-/* .h ruby{position:relative} */
-/* .h ruby rt{display:none;min-width:100%;text-align:center;position:absolute;right:0;text-indent:0!important;top:-2.2em;background:rgba(var(--back),.9);padding:7px;border:2px solid rgb(var(--plred));border-radius:5px;color:rgb(var(--plred));font-size:.9em}.h ruby:hover rt{display:block} */
-
-/*
-
-<!-- @ custom-fold @           【第七章　⁑　『古代樹』の謎】➊ -->
-novpage
-<svg viewBox='-3 -3 26 26'class=lgthat><path/><path/><text x=50% y=50% dx="-2.5px"dy="-1px">1</text></svg>
-<svg viewBox='-3 -3 26 26'class=lgthat><path/><path/><text x=50% y=50% dx="-2.5px"dy="-1px">1</text></svg>
-<!-- @ ending-fold -->
-
-*/
+.🗺️:hover ruby:before{content:'['}.🗺️:hover ruby:after{content:']'}
