@@ -1,20 +1,29 @@
-<!-- @SFOLD Header -->
+<!-- @SFOLD # Header -->
 <head><title>Professor Layton Lore Map</title><link rel='shortcut icon'href=ast/logo/can.svg><link rel=stylesheet type=text/css href=../ast/layton/ltmain.css media=screen>
-<style>*{scrollbar-color:rgb(var(--fore))rgb(var(--back));--midd:179,176,79;--emph:var(--plred);--back:254,224,163;--fore:63,121,99;--grey:254,224,163}
-#findtaginput{display:block;width:80%;margin:17px auto}
-#filterlist article{column-count:3}
-/* #filterlist article{display:grid;gap:12px;grid-template-columns:1fr 1fr 1fr} */
-it{break-inside:avoid;display:block;width:100%;height:fit-content;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.3);border-radius:17px;padding:10px;text-align:left}
-it+it{margin-top:17px}
+<style>*{scrollbar-color:rgb(var(--fore))rgb(var(--back));--midd:179,176,79;--emph:var(--plred);--back:254,224,163;--fore:63,121,99;--grey:254,224,163}img{border:2px solid rgb(var(--plblack))}
+it *{margin-top:0}it *:not(rt,table,li,img,span,p,t)+*:not(rt,table,li,img,span,p,t){margin-top:12px}
+th,td{vertical-align:middle}th{position:relative;text-align:left;background:rgb(var(--midd));padding:2px 5px;border:2px solid rgb(var(--midd))}
 it h1{font-size:34px;margin-bottom:17px;border-bottom:3px solid rgb(var(--plred))}
-it h2{font-size:24px;background:rgba(var(--fore),.9);border-radius:10px;color:rgb(var(--plwhite));margin-bottom:17px;padding:5px 17px 5px 17px}
-it *{margin-top:0}it *:not(rt,table,li)+*:not(rt,table,li){margin-top:17px}
-it t{font-family:Calibri;font-size:12px;border-top:3px solid rgb(var(--midd));display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 17px 17px;background:rgba(var(--midd),.5);color:rgb(var(--fore))}
-summary{border-bottom:3px solid rgb(var(--midd));width:calc(100% + 20px);margin:-10px 0 -20px -10px;padding:10px;border-radius:10px 10px 0 0;background:rgb(var(--fore));color:rgb(var(--plwhite));padding-left:27px;text-indent:-17px}
-details[open] summary{margin-bottom:0}details h2 span{display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
+it h2{font-size:24px;background:rgba(var(--fore),.9);border-radius:10px;color:rgb(var(--plwhite));margin:12px auto;padding:5px 17px 5px 17px}
+a:hover{border-bottom:2px dashed rgb(var(--midd))}
+a h2{color:rgb(var(--midd))}a:hover h2{color:rgb(var(--plwhite));background:rgb(var(--midd))}
+it h2 span{color:rgb(var(--plwhite))}
+details *:not(summary) span:not(.infob){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
+summary span{font-size:.7em}
+details th span:not(.infob){position:absolute;width:100%;text-align:right;top:7px;right:5px;font-weight:800}
+#findtaginput{display:block;width:90%;margin:17px auto}
+#filterlist article{column-count:3}
+it{break-inside:avoid;display:block;width:100%;height:fit-content;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.3);border-radius:17px;padding:10px;text-align:left}
+hr{margin:12px -12px!important;width:calc(100% + 24px)}
+.infob{font-size:unset;left:0;top:calc(100% + 5px)}
+it+it{margin-top:17px}
+t{font-family:Calibri;font-size:12px;border-top:3px solid rgb(var(--midd));display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 17px 17px;background:rgba(var(--midd),.5);color:rgb(var(--fore));white-space:nowrap;overflow:auto;scrollbar-width:none}
+t:after{content:'';width:7px;display:inline-block}
+summary{border-bottom:3px solid rgb(var(--midd));width:calc(100% + 20px);margin:-10px 0 -20px -10px;padding:10px;border-radius:10px 10px 0 0;background:rgb(var(--fore));color:rgb(var(--plwhite));padding-left:27px;text-indent:-17px;cursor:pointer}
+details[open] summary{margin-bottom:0}
+details[open] + t{margin-top:12px}
 details p,details td,details li{font-size:14px;line-height:1.2em;margin:5px 0}details table{border-collapse:collapse}details td{width:50%;padding:7px;border:2px solid rgb(var(--midd))}
-input[type=button]{margin:2px;float:left;cursor:pointer;background:rgba(var(--midd),.1);border:2px solid rgba(var(--midd),.5);padding:4px 7px;border-radius:12px}details h2 + table{margin:-10px 0 7px 0}
-details th{font-size:17px;text-align:left;background:rgb(var(--midd));padding:5px;border:2px solid rgb(var(--midd))}
+input[type=button]{margin:2px;float:left;cursor:pointer;background:rgba(var(--midd),.1);border:2px solid rgba(var(--midd),.5);padding:4px 7px;border-radius:12px}
 #activetags p{font-family:Calibri;font-size:14px;display:inline-block;background:rgba(var(--plred),.8);padding:5px 12px;border:2px solid rgb(var(--plred));color:rgb(var(--plwhite));font-weight:800;border-radius:20px;margin:2px}
 #resetsearch,#startsearch{position:absolute;border:3px solid rgb(var(--fore));bottom:0;width:150px;height:100%;font-size:20px;padding:10px 17px;color:rgb(var(--plwhite));font-weight:600;top:-2px}
 #resetsearch{right:150px;background:rgb(var(--plred));border-radius:0}
@@ -22,23 +31,26 @@ details th{font-size:17px;text-align:left;background:rgb(var(--midd));padding:5p
 #activetags{background:rgba(var(--midd),.3);padding:20px;min-height:50px;border:3px solid rgb(var(--fore));border-radius:20px 0 0 20px;border-right:none;width:calc(100% - 300px)}
 .tagcategory{border:2px solid rgb(var(--fore));padding:17px;max-height:200px;overflow:auto}.tagcategory h2{font-size:24px}
 .wip{filter:sepia()hue-rotate(-40deg)brightness(.7)saturate(200%)contrast(150%)}
-</style><script src=../ast/js.js></script></head><h1 style=margin-top:50px>Professor Layton Lore Map<p class=hr></p></h1><p class=hourglass></p><h2>Also known (eventually, hopefully) as the Ultimate Fanfiction Research Tool</h2><input type=text id=findtaginput onkeyup=FindTag() placeholder=" Type here to quickly find a specific tag to add. Beware of typos!"><h1 style=background:rgb(var(--fore));color:rgb(var(--plwhite));width:80%;margin:auto;padding:7px>Toggle tags:</h1>
-<div id=tagselect style="width:80%;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border:5px solid rgb(var(--fore))">
+table + p,summary + p{margin-top:12px}
+</style><script src=../ast/js.js></script></head>
+<h1 style=margin-top:50px>Professor Layton Lore Map<p class=hr></p></h1><p class=hourglass></p><h2>Also known (eventually, hopefully) as the Ultimate Fanfiction Research Tool</h2><input type=text id=findtaginput onkeyup=FindTag() placeholder=" Type here to quickly find a specific tag to add. Beware of typos!"><h1 style=background:rgb(var(--fore));color:rgb(var(--plwhite));width:90%;margin:auto;padding:7px>Toggle tags:</h1>
+<div id=tagselect style="width:90%;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border:5px solid rgb(var(--fore))">
 <!-- @EFOLD -->
-<!-- @SFOLD Select Tags -->
+<!-- @SFOLD # Select Tags -->
 <div class=tagcategory><h2>Characters:</h2>
     <input type=button value='#hershel layton' onclick="AddTagSelector('hershel layton')">
     <input type=button value='#luke triton' onclick="AddTagSelector('luke triton')">
     <input type=button value='#flora reinhold' onclick="AddTagSelector('flora reinhold')">
     <input type=button value='#emmy altava' onclick="AddTagSelector('emmy altava')">
-    <input type=button value='#aurora' onclick="AddTagSelector('aurora')">
     <input type=button value='#desmond sycamore' onclick="AddTagSelector('desmond sycamore')">
-    <input type=button value='#randall ascot' onclick="AddTagSelector('randall ascot')">
+    <input type=button value='#aurora' onclick="AddTagSelector('aurora')">
+    <input type=button value='#andrew schrader' onclick="AddTagSelector('andrew schrader')">
     <input type=button value='#angela ledore' onclick="AddTagSelector('angela ledore')">
+    <input type=button value='#jeremy campbell' onclick="AddTagSelector('jeremy campbell')">
+    <input type=button value='#randall ascot' onclick="AddTagSelector('randall ascot')">
+    <input type=button value='#collins' onclick="AddTagSelector('collins')">
     <input type=button value='#aston bloom' onclick="AddTagSelector('aston bloom')">
     <input type=button value='#sania cornell' onclick="AddTagSelector('sania cornell')">
-    <input type=button value='#andrew schrader' onclick="AddTagSelector('andrew schrader')">
-    <input type=button value='#collins' onclick="AddTagSelector('collins')">
     <input type=button value='#donald rutledge' onclick="AddTagSelector('donald rutledge')">
     <input type=button value='#doris pompitous' onclick="AddTagSelector('doris pompitous')">
 </div>
@@ -52,6 +64,7 @@ details th{font-size:17px;text-align:left;background:rgb(var(--midd));padding:5p
 </div>
 <div class=tagcategory><h2>Locations:</h2>
     <input type=button value='#london' onclick="AddTagSelector('london')">
+    <input type=button value='#gressenheller' onclick="AddTagSelector('gressenheller')">
     <input type=button value='#neverlace' onclick="AddTagSelector('neverlace')">
     <input type=button value='#crown petone' onclick="AddTagSelector('crown petone')">
     <input type=button value='#future london' onclick="AddTagSelector('future london')">
@@ -63,8 +76,9 @@ details th{font-size:17px;text-align:left;background:rgb(var(--midd));padding:5p
     <input type=button value='#pleynoth' onclick="AddTagSelector('pleynoth')">
 </div>
 <div class=tagcategory><h2>Objects of interest:</h2>
-    <input type=button value='#elysian box' onclick="AddTagSelector('elysian box')">
     <input type=button value='#ancient histories (book)' onclick="AddTagSelector('ancient histories (book)')">
+    <input type=button value='#elysian box' onclick="AddTagSelector('elysian box')">
+    <input type=button value='#molentary express' onclick="AddTagSelector('molentary express')">
 </div>
 <div class=tagcategory><h2>Source Media:</h2>
     <input type=button value="#curious village" onclick="AddTagSelector('curious village')">
@@ -74,6 +88,10 @@ details th{font-size:17px;text-align:left;background:rgb(var(--midd));padding:5p
     <input type=button value="#wandering castle" onclick="AddTagSelector('wandering castle')">
     <input type=button value="#mansion of the deathly mirror" onclick="AddTagSelector('mansion of the deathly mirror')">
     <input type=button value="#unwound future" onclick="AddTagSelector('unwound future')">
+    <input type=button value="#last specter" onclick="AddTagSelector('last specter')">
+    <input type=button value="#miracle mask" onclick="AddTagSelector('miracle mask')">
+    <input type=button value="#azran legacy" onclick="AddTagSelector('azran legacy')">
+    <input type=button value="#professor layton vs ace attorney" onclick="AddTagSelector('professor layton vs ace attorney')">
 </div>
 <div class=tagcategory><h2>Worldbuilding</h2>
     <input type=button value='#timeline' onclick="AddTagSelector('timeline')">
@@ -81,81 +99,482 @@ details th{font-size:17px;text-align:left;background:rgb(var(--midd));padding:5p
     <input type=button value='#archaeology' onclick="AddTagSelector('archaeology')">
     <input type=button value='#biology' onclick="AddTagSelector('biology')">
     <input type=button value='#physics' onclick="AddTagSelector('physics')">
+    <input type=button value='#uranium' onclick="AddTagSelector('uranium')">
 </div>
 <div class=tagcategory><h2></h2>
 </div>
 <div class=tagcategory><h2>Other:</h2>
     <input type=button value="#gameplay puzzle" onclick="AddTagSelector('gameplay puzzle')">
 </div>
-</div><h2 style=margin-top:17px>Your search includes the following tags:</h2><div style="position:relative;width:80%;margin:17px auto"><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist style=display:none class=chcol><article>
+</div><h2 style=margin-top:17px>Your search includes the following tags:</h2><div style="position:relative;width:90%;margin:17px auto"><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist style=display:none;width:90% class=chcol><article>
 <!-- @EFOLD -->
-<!-- @SFOLD Lore Cards -->
-
-
-
-<!-- @SFOLD Schrader sends a letter to Layton about the Elysian Box on a Friday. Layton receives it two days later. -->
-<it><details><summary>Schrader sends a letter to Layton about the Elysian Box on a Friday. Layton receives it two days later.</summary><p>Layton receives Schrader’s letter at the end of <i>Professor Layton and the London Holiday</i>, which takes place on a Sunday.</p><h2>Diabolical Box: Prologue<span>File: event/ev_t10/t10_030_600.txt</span></h2><table><tr><th colspan=2>Layton</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 According to the postmark, this letter was sent two days ago.</td></tr><tr><td>🇯🇵 <ruby>消印<rt>けしいん</rt>は２<rt></rt>日<rt>か</rt>前<rt>まえ</rt>になっている。</ruby></td><td><i>The postmark is from two days ago.</i></td></tr></table><h2>London Holiday: Introduction<span>File: data_lt1/etext/e1_t0.txt</span></h2><table><tr><th colspan=2>Luke</th></tr><tr><td>🇯🇵 せっかくの<ruby>日曜日<rt>にちようび</rt>だし、<rt></rt>先生<rt>せんせい</rt>のところに<rt></rt>遊<rt>あそ</rt>びに<rt></rt>行<rt>い</rt></ruby>こうかな。</td><td><i>It’s finally Sunday, so maybe I should visit the professor.</i></td></tr></table></details><t>#andrew schrader #london holiday #diabolical box #elysian box</t></it>
+<!-- @SFOLD - GAME          Curious Village -->
+<!-- OST Booklet -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          London Holiday -->
+<!-- @SFOLD London Holiday took place on a Sunday, a few days after Curious Village -->
+<it><details id=LH_Sunday><summary>London Holiday took place on a Sunday, a few days after Curious Village.</summary><h2>London Holiday: Introduction<span>File: data_lt1/etext/e1_t0.txt</span></h2><table><tr><th colspan=2>Luke</th></tr><tr><td>せっかくの<ruby>日曜日<rt>にちようび</rt>だし、<rt></rt>先生<rt>せんせい</rt>のところに<rt></rt>遊<rt>あそ</rt>びに<rt></rt>行<rt>い</rt></ruby>こうかな。</td><td><i>It’s finally Sunday, so maybe I should visit the professor.</i></td></tr></table><img src=ast/lh/bg_001.png><h2>London Holiday: Introduction<span>File: data_lt1/bg/arasuji_bg.png</span></h2><table><tr><td><ruby>不思議<rt>ふしぎ</rt></ruby>な<ruby>町<rt>まち</rt></ruby>で<ruby>起<rt>お</rt></ruby>きた<ruby>事件<rt>じけん</rt></ruby>から<ruby>数日<rt>すうじつ</rt></ruby>、<ruby>研究室<rt>けんきゅうしつ</rt></ruby>で、お<ruby>気<rt>き</rt></ruby>に<ruby>入<rt>い</rt></ruby>りの<ruby>紅茶<rt>こうちゃ</rt>片手<rt>かたて</rt></ruby>につかの<ruby>間<rt>ま</rt></ruby>の<ruby>休日<rt>きゅうじつ</rt></ruby>を<ruby>過<rt>す</rt></ruby>ごすのだった···。</td><td><i>A few days after an incident which occurred in a curious town, [Professor Layton] was spending his day off in his office, favourite black tea in hand…</i></td></tr></table></details><t>#london holiday #curious village #timeline #diabolical box</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD Layton inherited a new office from Dr Schrader around the same time as Curious Village. Luke was not able to see it until London Holiday. -->
+<it><details><summary>Layton inherited a new office from Dr Schrader around the same time as Curious Village. Luke&nbsp;was&nbsp;not able to see it until London Holiday.</summary><h2>London Holiday: Introduction</h2><img src=ast/lh/bg_002.png><table><tr><th colspan=2>Luke<span>File: data_lt1/etext/e1_t1.txt</span></th></tr><tr><td><ruby>ここが<rt></rt>先生<rt>せんせい</rt>の<rt></rt>研究室<rt>けんきゅうしつ</rt></ruby>かな？なんだか、ドキドキするなぁ。</td><td><i>Is this the professor’s office? Somehow, my heart is pounding.</i></td></tr></table><img src=ast/lh/bg_004.png><table><tr><th colspan=2>Luke<span>File: data_lt1/etext/e2_t6.txt</span></th></tr><tr><td>ここが<ruby>先生<rt>せんせい</rt></ruby>の<ruby>新<rt>あたら</rt></ruby>しい<ruby>研究室<rt>けんきゅうしつ</rt></ruby>ですね。</td><td><i>So this is your new office?</i></td></tr><th colspan=2>Layton<span>File: data_lt1/etext/e2_t7.txt</span></th></tr><tr><td>ああ、<ruby>私<rt>わたし</rt></ruby>の<ruby>恩師<rt>おんし</rt></ruby>であるシュレーダー<ruby>博士<rt>はかせ</rt></ruby>から<ruby>譲<rt>ゆず</rt></ruby>り<ruby>受<rt>う</rt></ruby>けた<ruby>研究室<rt>けんきゅうしつ</rt></ruby>だよ。</td><td><i>Yes, I have inherited it from my former mentor, Dr Schrader.</i></td></tr><tr><td><ruby>先生<rt>せんせい</rt>は<rt></rt>活動<rt>かつどう</rt>的<rt>てき</rt>な<rt></rt>人<rt>ひと</rt></ruby>だから、こんなせまい<ruby>研究室<rt>けんきゅうしつ</rt></ruby>では<ruby>物<rt>もの</rt>足<rt>た</rt></ruby>りなかったんだろうね。</td><td><i>Sensei is a dynamic person, therefore I suppose that such a cramped office was insufficient.</i></td></tr></table></details><t>#curious village #london holiday #diabolical box #hershel layton #luke triton #andrew schrader #gressenheller #timeline</t></it>
+<!-- @EFOLD -->
+<!--
+- “When you touch inside the room, hidden puzzles will [be submitted to question you](https://jisho.org/search/出題されます).” (Passive)
+- “If you use hint coins, you will be able to see the puzzle’s hints.”
+-->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          Diabolical Box -->
+<!-- @SFOLD Schrader sent the letter to Layton about the Elysian Box on a Friday. Layton receives it two days later. -->
+<it><details><summary>Schrader sent the letter to Layton about the Elysian Box on a Friday. Layton receives it two days later <span>(London Holiday)</span>.</summary><p>&#9656; <a href="javascript:getcard('LH_Sunday')">London Holiday took place on a Sunday, a few days after Curious Village.</a></p><h2 style=line-height:1.7em>London Holiday: Conclusion</h2><table><tr><td style=padding:0><img src=ast/lh/bg_006.png></td><td style=padding:0><img src=ast/lh/bg_007.png></td></tr><tr><td style=padding:0><img src=ast/lh/bg_008.png></td><td style=text-align:center><i>A letter was delivered to Layton…<br>This was the beginning of a new case.</i></td></tr></table><h2>Diabolical Box: Prologue<span>File: event/ev_t10/t10_030_600.txt</span></h2><table><tr><th colspan=2>Layton</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 According to the postmark, this letter was sent two days ago.</td></tr><tr><td><ruby>消印<rt>けしいん</rt>は２<rt></rt>日<rt>か</rt>前<rt>まえ</rt>になっている。</ruby></td><td><i>The postmark is from two days ago.</i></td></tr></table></details><t>#andrew schrader #london holiday #diabolical box #elysian box #hershel layton #timeline</t></it>
 <!-- @EFOLD -->
 
 
+<!-- OST Booklet -->
+<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————
+According to the US/UK puzzle, the original price (£105 in terms of "1963" pounds) would have been 1789.20 current pounds, paid by Layton and Luke for *a single lunch* :sob: And it’d be £1,022.40 (60£) according to the Japanese one
 
-<!-- @SFOLD Donald Rutledge discovered the stone circle of Pleynoth/Pyllnoth/Planos. -->
-<it><details><summary>Donald Rutledge discovered the stone circle of Pleynoth/Pyllnoth/Planos.</summary><p>This discovery was made long enough prior to the Miracle Mask flashbacks (18 years before the main events of Miracle Mask, ~20 years before the original trilogy) for it to appear in high school History/archaeology books.</p><h2>Miracle Mask: Chapter 2 <span>File: txt/02/02_020030</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 One of Rutledge’s most interesting discoveries was the stone circle of Pyllnoth.</td></tr><tr><td colspan=2>🇬🇧 Let’s move on to page 14. Rutledge’s most famous discovery was the ancient stone circle of Pleynoth.</td></tr><tr><td>🇯🇵 テキスト１４ページ。ドーン・ノーランは<ruby>考古学<rt>こうこがく</rt>的<rt>てき</rt>な<rt></rt>大発見<rt>だいはっけん</rt>プレーノスのストーンサークルを<rt></rt>見<rt>み</rt>つける。</ruby></td><td><i>Text page 14. Don Nolan finds an archaeological major discovery, the Stone Circle of Planos.</i></td></tr></table></details><t>#archaeology #azran civilisation #collins #donald rutledge #pleynoth</t></it>
+£10 in 1963    today: £170.40
+£10 in 1953    today: £226.29
+https://www.bankofengland.co.uk/monetary-policy/inflation/inflation-calculator
+
+https://www.bullionbypost.co.uk/index/collectible-coins/pre-decimal-currency/
+https://en.wikipedia.org/wiki/List_of_British_banknotes_and_coins
+
+メニューには「代金の他に、代金の２０％にあたる額のチップをいただきます」と書いてある。
+２人で飲み物を１品ずつ、料理を１人１品以上、ただしすべて違う物を頼んだら、支払いがちょうど６０ポンドになった。どういう組み合わせで頼んだのか、メニューにチェックしよう。
+もちろんルークはお酒を飲めないし、スープは料理である。
+
+合計で５０ポンドになる組み合わせを見つけよう。
+飲み物を１品ずつ、というところでルークはもちろん、レイトンもお酒は飲まなかったのだ。
+計算が成り立つ組み合わせはひとつしかない。
+
+まずは、チップ以外の代金がいくらかを考えてみよう。
+
+英国紳士たる者が、昼間からお酒を飲むであろうか…。
+
+代金＋（代金×０．２）＝６０
+代金に入る数字を見つけてみよう。
+
+チップ込みで、６０ポンド…。
+
+メニューの組み合わせは、５０ポンドになるものを選べばよい。
+
+The menu states that 'in addition to the price, a tip of 20% of the price will be charged'.
+If two people ordered one drink each and at least one dish each, but all different, the payment would be exactly £60. Check the menu to see what combination you ordered.
+Of course, Luke can't drink alcohol and soup is a dish.
+
+Find the combination that makes a total of £50.
+One drink for each item, where Luke, and of course Leighton, did not drink alcohol.
+There is only one combination for which the calculation is valid.
+
+First, let’s consider how much it would have cost, other than the tip.
+
+Would an English gentleman drink alcohol in the daytime…?
+
+Price + (price x 0.2) = 60
+Let’s find the number that goes into the price.
+
+Including tip, £60...
+
+You can choose any combination of menu items that will cost £50.
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+# TEA INGREDIENTS:
+JP|DEEPL|US & UK|FR
+-|-|-|-
+レモンリーフ|Lemon Leaf|Oasis Leaf|Ortimenthe|Oasenblatt|hoja de oasis|Foglia magica
+フェアリードロップ|Fairy Drop|Brisk Berry|Myreboise|Munterbeere|fruto del alba|Erba melliflua
+みかんもどき|Pseudo-mandarin (satsuma mandarin: Citrus unshiu)|Belle Tart Seed (US) Citronia Seed (UK)|Mandarange|Sauerbeersamen|semilla cítrica|Seme di limone
+ゆめみそう|Dreaming grass / Cherry blossom (yumemi gusa &rArr; "kusa" also has the reading "sou")|Dream Fluff|Elléflore|Traumflaum|flor de ensueño|Erba dei sogni
+こうふくのよつば|Four Leaves of Happiness (yotsuba = 四つ葉)|Joy Root Clover|Trèflebai|Frohwurzel-Klee|raíz de trébol|Radice verde
+ダンデリオン|Dandelion|Tonic Flower|Vitaline|Tonicblüte|flor tónica|Fiore di campo
+ペッパーチェリー|Peppercherry|Peppercherry|Tropiquant|Pfefferkirsche|poleo chili|Bacca speziata
+黒焼きドラゴン|Charred Dragon (charred = traditional medicine made from charred ingredients)|Cinder Horse|Hippocendre|Räucherpferd|caballito seco|Grigio cenere
+<img src="lt2 DB/data/ani/subgame/tea/icon.png">
+———————————————————————————————————————————————————————————————————————————————————————————————————————————— -->
+
+<!-- @SFOLD    @WIP@    Layton, Luke and Flora board on the Molentary Express a few days after London Holiday. -->
+<!-- <it class=wip><details open><summary>Layton, Luke and Flora board on the Molentary Express a few days after London Holiday.</summary>
+    <p>London Holiday is the day when Layton receives Schrader’s letter.</p>
+    <h2>Diabolical Box<span>File: </span></h2>
+    <table><tr><th colspan=2>SPEAKER<span>File: </span></th>
+    </tr><tr><td colspan=2>🇺🇸 ENGLISH_US</td>
+    </tr><tr><td colspan=2>🇬🇧 ENGLISH_UK</td>
+    </tr><tr>
+        <td>JAPANESE</td>
+        <td><i>DEEPL_TRANSLATION</i></td>
+    </tr><tr>
+        <td>🇫🇷 FRENCH</td>
+        <td><i>TRANSLATION</i></td>
+    </tr></table>
+</details><t>#diabolical box #london holiday #timeline #molentary express</t></it> -->
 <!-- @EFOLD -->
-<!-- @SFOLD Pleynoth/Pyllnoth/Planos was first believed to be a primitive religious site, but this was later disproved. -->
-<it><details><summary>Pleynoth/Pyllnoth/Planos was first believed to be a primitive holy site, but this was later disproved.</summary><h2>Miracle Mask: Chapter 2 <span>File: txt/02/02_020030</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 Pyllnoth was theorized to be a primitive holy site. Some rather unique artifacts were discovered there.</td></tr><tr><td colspan=2>🇬🇧 Early theories held that Pleynoth was a primitive holy site, but the finding of some intricate artefacts disproved that.</td></tr><tr><td>🇯🇵 この<ruby>遺跡<rt>いせき</rt>は<rt></rt>古代<rt>こだい</rt>魔術<rt>まじゅつ</rt>に<rt></rt>使<rt>つか</rt>われていたなどの<rt></rt>見解<rt>けんかい</rt>があったが、それをひっくり<rt></rt>返<rt>かえ</rt>したのが<rt></rt>幻<rt>まぼろし</rt>と<rt></rt>思<rt>おも</rt>われていた<rt></rt>遺物<rt>いぶつ</rt>の<rt></rt>発見<rt>はっけん</rt></ruby>である。</td><td><i>There were opinions that these historic ruins (stone circle of Pleynoth) were used in ancient magic for example, but what turned those upside down is the discovery of relics which were thought to be legendary.</i></td></tr><tr><td>🇫🇷 On pensa au début que Pleynoth était un ancien site sacré. Cette hypothèse fut toutefois réfutée par les découvertes ultérieures d’artéfacts très élaborés.</td><td><i>It was first thought that Pleynoth was an ancient holy site. This hypothesis was however disproved by the later discoveries of highly sophisticated artefacts.</i></td></tr></table></details><t>#archaeology #azran civilisation #collins #donald rutledge #doris pompitous #pleynoth</t></it>
+
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          Mansion of the Deathly Mirror -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          Unwound Future -->
+<!-- OST Booklet -->
+<!-- @EFOLD -->
+<!-- @SFOLD - MANGA         Cheerful Mystery 1-4 -->
+<!-- @EFOLD -->
+<!-- @SFOLD - NOVEL         Wandering Castle -->
+
+<!-- @SFOLD    @WIP@    “Supermagnetism” makes matter float. -->
+<it><details><summary>“Supermagnetism” is a physical property which causes certain materials to float (Jeremy Campbell’s research).</summary>
+    <h2>Wandering Castle<span>Chapter 4, Part 1 (Page 261)</span></h2>
+    <table><tr><th colspan=2>Jeremy Campbell</th></tr><tr>
+        <td>「実験中、極低温状態にウランを置いたときに、ウランはまったく別の顔を見せた。ウランは<ruby>反<rt>はん</rt>強<rt>きょう</rt>磁<rt>じ</rt>性<rt>せい</rt></ruby>だ。つまり鉄とは逆で<ruby>磁<rt>じ</rt>力<rt>りょく</rt></ruby>にまったく反応しない。ところが超低温状態にすると逆に<b>超<ruby>磁<rt>じ</rt>性<rt>せい</rt></ruby></b>になり、浮くんだ」</td>
+        <td><i>“During experimentation, just when we placed uranium under extremely low temperature conditions, it showed a completely different state. Uranium is antiferromagnetic, meaning that to the opposite of iron, it doesn’t respond at all to magnetic forces. But if we cool it down, on the contrary it becomes <b>supermagnetic</b>, and floats.”</i></td>
+    </tr><tr>
+        <td>「これがいわゆるウランの二つの顔だね。<ruby>相反<rt>あいはん</rt></ruby>するものが組み合わさったときに物質はとてつもなく強くなる。ウルロックは昔、<ruby>閃光<rt>せんこう</rt>城<rt>じょう</rt>の<rt></rt>電<rt>でん</rt>磁<rt>じ</rt>力<rt>りょく</rt></ruby>とウランを使ってそれをやってのけたと言われている。だからそれを物理的に解明したいと思うんだけど、いまだ果たせないんだよ」</td>
+        <td><i>“This is what we call uranium’s two states. When opposites combine, matter becomes unbelievably strong. A long time ago, it is said that Ulrock used Flash Castle’s electromagnetic force and uranium, and managed to do just that. That’s why I want to figure this out physically, but I have yet to succeed.”</i></td>
+    </tr></table>
+    <p>Realistically, it is likely that the pseudo-scientific equivalent of a real world explanation for this phenomenon would be <a href=https://quantumlevitation.com/what-is-superconducting-levitation-and-how-does-it-work/>superconductivity and/or quantum locking</a>. However, the word「超磁性」which would literally translate as “supermagnetism” is not an actual scientific term; instead, the Japanese words for superconductivity are rather 超伝導 or 超電導 (the latter being more specific to the electric kind of superconductivity, while the former can also refer to other kinds of conductivity, such as heat conductivity).</p><p>However, this excerpt describes what could have been originally intended as the description of a superconductor in a very “Artistic Licence” manner, and cannot apply to real world superconductivity; and the fact that it is quite relevant to the plot of Wandering Castle makes it difficult to ignore.</p>
+    <p class=infoa>In real world physics, superconductivity is defined by the property of a material to have an electrical resistance of exactly zero and expell magnetic fields, not by the ability to levitate. Therefore, if we choose to side with the novel’s exact wording instead of with the artistic licence Doylist justification, then there exists in-universe a property of matter called “supermagnetism” which indeed causes matter to float.<span class=infob>Although superconductivity is commonly associated with the image of a magnet floating above rails, levitation is only caused by the fact that said magnet floats on top of another non-superconductive magnet (which means that “floating” is highly restrictive in the context of a floating castle as would be the case in the Wandering Castle novel). The topic of superconductivity is actually far more complex and broad than just “cool magnet floats in the air,” and its underlying phenomenon of quantum locking in the case of Type II superconductors even requires knowledge in quantum physics in order to be properly understood.</span></p><hr><p>Additionally, when this excerpt says “uranium,” it should be noted that Uranium as an element of the periodic table is not typically found in a pure state in the wild, at least not in the real world. Some materials which <i>contain</i> uranium as one of their core elements are indeed both antiferromagnetic and with the capability of becoming superconductors when cooled down, but they are not uranium in its pure state.</p>
+</details><t>#jeremy campbell #wandering castle #physics #uranium</t></it>
+<!-- @EFOLD -->
+
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          Inspector Chelmey’s Casebook -->
+<!-- @EFOLD -->
+<!-- @SFOLD - ARTBOOK       The Secrets of Professor Layton: Series Trilogy Official Fanbook -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          Last Specter -->
+<!-- OST Booklet -->
+<!--
+
+# Last Specter
+
+- Bird of Illusion related to the Golden Garden legend:『楽園の旅人４つの木の実で鳥たちは目覚め、舞い踊る。幻の鳥よ、太陽に口付けしておくれ旅人が、光あふれる楽園に迷い込むために。』
+Black Raven trial is based on it. The legend tells of a bird that guides those who seek the Golden Garden; it “kisses the sun and opens a door to paradise” (not exact).
+
+-->
+<!--
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+黄金宮の発掘現場で作業監督をしていた男。鋭い勘の持ち主で独自の推理を繰り広げる。無表情でリアクションが薄いが色々と複雑な事を考えている様子。取り乱すほどネズミが苦手なのは秘密。
+Nate est chargé de superviser le travail de l’équipe d’archéologues à la recherche du Jardin d’or. Même si son visage garde presque toujours la même expression, il a l’esprit vif et trouve parfois des théories très intéressantes. Il a la phobie des souris.
+Nate is the operations supervisor at the Golden Garden dig site. His expression rarely changes, but he possesses a keen mind and can come up with some unique theories. He has a severe phobia of mice but he’d never let on to anyone.
+Dugan is the supervisor for the Golden Garden excavation committee. His expression never changes, but he possesses a keen mind and can come up with some unique theories. He has a severe phobia of mice, but he’d never let it on to anyone.
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+<T>ナディンさんたちはダイナマイトで黄金宮を発掘するつもりだったのかな…？
+<T>とんでもなく大雑把な発掘方法ですよね。                                      “It’s an outrageously careless method of excavation.”
+<T>ああ、ここに黄金宮が眠っていなくて本当に良かったよ。                         “Yes, I'm so glad the Golden Palace isn't lying dormant here.”
+
+<T>Ouah !<W> Ce…<W> C’était une explosion ! Une vraie explosion !
+<T><A7/1>Je suis surpris que Nate utilise de la dynamite pour mettre au jour le Jardin d’or…
+<T><A10/1>Ce n’est pas une approche très subtile, n’est-ce pas ?
+<T><A5/1>C’est le moins que l’on puisse dire. J’espère sincèrement que le Jardin d’or ne se trouve pas là-dessous.
+
+<T>Whoa!<W> Th-<W>th-<W>that was a real live explosion!
+<T><A7/1>Nate surely can't be using dynamite to excavate the Golden Garden...
+<T><A10/1>That doesn't seem like a very safe way to do a dig.
+<T><A5/1>No, not at all. I rather hope that the Golden Garden isn't here!
+
+<T>WHOA!<W> I didn’t think that was on!
+<T><A7/1>Dugan can't be using dynamite to unearth the Golden Garden.
+<T><A10/1>That's not a good way to conduct an archaeological dig, is it?
+<T><A5/1>It is not. <W>I certainly hope the Golden Garden is somewhere else!
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+You do archaeology too?
+No, I’m just a hired excavator. Just a hunch I’ve had for years. But unless I find something, it’s all theoretical.
+カン = a hunch
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+どーも、オレは黄金宮の調査隊、メンバーのひとりのナディンだ。
+.            ^ Golden Palace Research Team/Unit
+なんせ、この町には黄金宮なんて存在しないって結論が出たんだからな。
+.   After all, it was concluded that there is no Golden Palace in this town.
+黄金宮が存在しない？
+.   The Golden Palace does not exist?
+
+それで、黄金宮が存在しないというのは？
+.       What about the fact that the Golden Palace doesn’t exist?
+この奥の発掘現場に行けば分かることだが、この町からは何ひとつ出てこなかったのさ。
+かつての文明を匂わせるような代物も人の生活や建物があったって事すら、何ひとつだ。
+黄金宮が存在した時代には、巨大生物が生きていたって話もあるが、ここにはその生物の名残すらない。
+.       There are stories that giant creatures lived here when the Golden Palace existed, but there is not even a trace of them here.
+つまり、この町のどこにも、それらしき痕跡がないって事さ。
+もしかしたら、オレたちが思っていたより下層に存在していたのかもしれんがね。
+しかし、この町の地下には水源が豊富に走っているはずです。
+その下に黄金宮があると？
+それもひとつの可能性って事さ。
+ご不満かい？
+…いえ、なかなか興味深い理論です。
+あなたも考古学を？
+いいや、オレはただの雇われ発掘屋さ。
+ただ、長年のカンがそう言ってる。
+もっとも、見つからない限りは机上の空論に過ぎないがね。
+発掘現場ならこの先だぜ。
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+クロウ
+黒カラスの試練って格好いいだろ？あれはさ、黄金宮の伝説に出てくる幻の鳥をモチーフにしてるんだ。
+レイトン
+黄金宮の伝説には、そこを目指す者を導く鳥の話が出てくるんだ。
+鳥は楽園を求める者に道を示すため太陽に向かい羽ばたく、というあの一節の事だね？
+へぇ、そんな事まで、よく知ってるんだな。
+レイトンさんはロンドンの考古学者なんだ。
+へえ、そりゃすごいや。
+それじゃあ、こんなナゾくらい簡単に解けちゃうんじゃないか？
+考古学者なんだろ？
+しっかりしてくれよ。
+数字のナゾだぜ。
+やっぱり考古学の先生は違うな。
+俺たちの正体を見破られた時から、ただ者じゃないと思ってたけど。
+伝説を模倣しているという事は君たちは町のどこかに黄金宮が存在すると考えているんだね？
+ああ、きっとオレたちの気付かない場所にあるんだと思ってるよ。
+ふふ、私も同意見だよ。
+この町で黄金宮が見つかったら、黄金宮グッズでも売り出すかな。
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+ナディン
+この辺はあらかた掘りつくしたが、出てくるのはガラクタばっかりだ。
+やっぱり『黄金宮』なんて夢のまた夢って事だったのかねえ。
+レイトン
+本当に何も出てこなかったのですか？
+多少は歴史的価値のありそうなものもあったんだがね。
+だが、それは黄金宮とは関わりもないただの出土品ていどだったのさ。
+だから、ここにいた発掘隊は引き上げてしまったという訳ですね。
+そうだな。
+ここに残ったオレの楽しみはパブに通うくらいのもんだ。
+そういえば、この町のパブの入口には変わった物が置いてあるのさ。
+こんな物なんだけどな。
+客に伝わらないんじゃ意味がないと思うんだがね。
+パブの入口にこんな物があるのさ。
+帰っちまった調査隊のメンバーは今頃は新しい仮説を立てようって躍起になってるところだろうな。
+何しろ、伝説の黄金宮の発見なんて考古学者として名誉な事はそうそうあるもんじゃないからな。
+『黄金宮』…
+本当にあるのなら見てみたいものだ。
+古代都市に黄金宮、本当にそんな物があったのかねえ。
+ぜひ、お目に掛かりたいもんだがね。
+
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+-->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          London Life -->
+<!-- @EFOLD -->
+<!-- @SFOLD - VARIOUS       Eternal Diva -->
+<!-- Professor Layton and the Eternal Diva — Luke’s Notebook -->
+<!-- @SFOLD - The Eternal Diva Jenis Quatlane - OST Booklets -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Professor Layton and the Eternal Diva (This is animation) -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva: Movie Comic Nazo?/! Volumes 1-2 -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva Manga -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva Movie Memorial Guide Art Book -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva Movie Standard Edition & Movie OST Booklet -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva Movie Limited Edition (JP) -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva Movie Limited Edition (EN) -->
+<!-- @EFOLD -->
+<!-- @SFOLD - Eternal Diva Novel -->
+<!-- @EFOLD -->
+<!-- Board Game -->
+
+<!--
+
+# Eternal Diva
+
+- Article from the London Times: title reads Prof. Layton magically cleared a “mystery” fog of London (article text is copy-pasted from Wikipedia and irrelevant)
+- Shot of Layton & Luke in winter happens on “Wintry Street (S+/-1)”
+
+- Boat speed ~60 km/h, distance from estimated Crown Petone location up to Ambrosia ~400 km (estimate) ==> ~6h40min of sailing
+- Island of Ambrosia does have birds (seagulls at least)
+- In the underground tunnels of Descole’s castle, one of the walls seems to be partially broken (similar to how Emmy later beats a henchman into a wall). I wonder why.
+
+-->
+<!-- @EFOLD -->
+<!-- @SFOLD - NOVEL         Phantom Deity -->
+<!-- @EFOLD -->
+<!-- @SFOLD - MANGA         Lost Forest Manga -->
+<!-- @EFOLD -->
+<!-- @SFOLD - NOVEL         Illusory Forest -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME-ETC      Miracle Mask -->
+<!-- Mysterious Flower Video -->
+<!-- ————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Rutledge parle d’un jumeau au Masque du Chaos.
+Le mur de Norwell est une carte qui pointe un endroit précis. Le schéma sous la carte du ciel correspond au terrain situé derrière les montagnes. Randall a suivi cette carte jusqu’à destination, bien après les collines, puis a creusé et trouvé le Masque du chaos (i1470).
+Randall a copié la page (i1500) du livre de Rutledge, « L’Aube des civilisations » (i1030). Il y a le même symbole sur le Masque que dans le livre. La boîte dans laquelle il a trouvé le Masque contenait aussi une tablette de pierre, avec un code secret inscrit dessus. Les Aslantes se sont servis du code pour laisser des messages pour la postérité. Le Masque est aussi une clé : Déchiffrer le code (i1100) montre que les inscriptions dans le Masque forment aussi une carte (i1510, cela a pris 3 mois à Randall pour la déchiffrer) qui mène jusqu'à un lieu légendaire qui a mystifié les aventuriers comme les archéologues : Akbadain (Thornley’s Gorge, due south of Stansbury).
+i1230 is the markings that Henry saw at the bottom of the ruins, right at the centre of Monte d’Or.
+i1140 is from Henry’s office in the Reunion Inn, and reads “Expedition Log.” It’s the journal of one of the search parties looking for Randall. i1460 is the same book except it is now open.
+i1260 is the Mayor’s “record detailing all the properties under Mr Ledore’s control”
+
+i1080 is the hippodrome’s maintenance records for the racing chariots.
+i1130 is in Henry’s office from the Reunion Inn. Records of the Masked Gentleman’s appearances, including copies of the warning letters and announcements.
+i1360 & i1390 are the letters sent by the Masked Gentleman to 13 citizens for the “burned alive” miracle.
+i1050 is a letter to Dalston, also sent to Layton (and probably to Henry & Angela), from the Masked Gentleman, inviting them to attend the miracle in Gallery Plaza.
+
+The tunnel linking the pedestals final room to the surface has been dug by the excavation teams looking for Randall less than two years after he disappeared (“It’s been over a year now since the boy went missing. Soon, this will all be forgotten.”)
+-->
+
+<!-- @SFOLD Donald Rutledge discovered the stone circle of Pleynoth. -->
+<it><details><summary>Donald Rutledge discovered the stone circle of Pleynoth/Pyllnoth/Planos.</summary><h2>Miracle Mask: Chapter 2<span>File: lt5/arc/lt5_b.fa/txt/02/02_020030.xs</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 One of Rutledge’s most interesting discoveries was the stone circle of Pyllnoth.</td></tr><tr><td colspan=2>🇬🇧 Let’s move on to page 14. Rutledge’s most famous discovery was the ancient stone circle of Pleynoth.</td></tr><tr><td>テキスト１４ページ。ドーン・ノーランは<ruby>考古学<rt>こうこがく</rt>的<rt>てき</rt>な<rt></rt>大発見<rt>だいはっけん</rt></ruby>プレーノスのストーンサークルを<ruby>見<rt>み</rt>つける。</ruby></td><td><i>Text page 14. Don Nolan finds an archaeological major discovery, the Stone Circle of Planos.</i></td></tr></table><p>This discovery was made long enough prior to the Miracle Mask flashbacks (18 years before the main events of Miracle Mask, ~20 years before the original trilogy) for it to appear in high school History/archaeology books.</p></details><t>#archaeology #azran civilisation #donald rutledge #pleynoth</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD Pleynoth was first believed to be a primitive religious site, but this was later disproved. -->
+<it><details><summary>Pleynoth/Pyllnoth/Planos was first believed to be a primitive holy site, but this was later disproved <span>(JP/EU only)</span>.</summary><h2>Miracle Mask: Chapter 2<span>File: lt5/arc/lt5_b.fa/txt/02/02_020030.xs</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 Pyllnoth was theorized to be a primitive holy site. Some rather unique artifacts were discovered there.</td></tr><tr><td colspan=2>🇬🇧 Early theories held that Pleynoth was a primitive holy site, but the finding of some intricate artefacts disproved that.</td></tr><tr><td>この<ruby>遺跡<rt>いせき</rt>は<rt></rt>古代<rt>こだい</rt>魔術<rt>まじゅつ</rt>に<rt></rt>使<rt>つか</rt></ruby>われていたなどの<ruby>見解<rt>けんかい</rt></ruby>があったが、それをひっくり<ruby>返<rt>かえ</rt>したのが<rt></rt>幻<rt>まぼろし</rt>と<rt></rt>思<rt>おも</rt>われていた<rt></rt>遺物<rt>いぶつ</rt>の<rt></rt>発見<rt>はっけん</rt></ruby>である。</td><td><i>There were opinions that these historic ruins (the stone circle of Planos) were used in ancient magic for example, but what turned those upside down is the discovery of relics which were thought to be legendary.</i></td></tr><tr><td>🇫🇷 On pensa au début que Pleynoth était un ancien site sacré. Cette hypothèse fut toutefois réfutée par les découvertes ultérieures d’artéfacts très élaborés.</td><td><i>It was first thought that Pleynoth was an ancient holy site. This hypothesis was however disproved by the later discoveries of highly sophisticated artefacts.</i></td></tr></table></details><t>#archaeology #azran civilisation #donald rutledge #doris pompitous #pleynoth</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Doris Pompitous demonstrated that the Azran had enhanced intelligence and a robust language. -->
-<it><details><summary>Doris Pompitous demonstrated that the Azran had enhanced intelligence and a robust language.</summary><h2>Miracle Mask: Chapter 2 <span>File: txt/02/02_020030</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 [The] artifacts [found in Pleynoth] were the basis for a complex comparative study by the noted <b>biologist</b> Doris Pompitous. She theorized that these ancient peoples exhibited heightened intelligence as well as an elaborate language.</td></tr><tr><td colspan=2>🇬🇧 [The] artefacts [which disproved the theory that Pleynoth was a primitive holy site] were the basis for a fascinating comparative study by the <b>palaeontologist</b> Doris Pompitous. Based on a wide range of evidence from different fields, Pompitous came up with radically new ideas about this civilisation. She theorised that they were scientifically advanced and had a language as evolved as our own.</td></tr><tr><td>🇯🇵 この<ruby>同時期<rt>どうじき</rt>に<rt></rt>生物<rt>せいぶつ</rt>学者<rt>がくしゃ</rt>であるコーネル・パンパトスが<rt></rt>発表<rt>はっぴょう</rt>した<rt></rt>古代人<rt>こだいじん</rt>や<rt></rt>古生物<rt>こせいぶつ</rt>に<rt></rt>対<rt>たい</rt>する<rt></rt>見解<rt>けんかい</rt>も<rt></rt>面白<rt>おもしろ</rt>い。<rt></rt>彼<rt>かれ</rt>らは<rt></rt>高<rt>たか</rt>い<rt></rt>知能<rt>ちのう</rt>を<rt></rt>持<rt>も</rt>ち、<rt></rt>優<rt>すぐ</rt>れた<rt></rt>言語<rt>げんご</rt>を<rt></rt>持<rt>も</rt>っていたと<rt></rt>発表<rt>はっぴょう</rt></ruby>されている。</td><td><i>In that same period there is <b>biologist(*)</b> Cornell Panpatos (who) published in regards to ancient men and palaeontology (and who has) fascinating opinions too. They held great intelligence, had superior language, (this is what) is published.</i></td></tr><tr><td>🇫🇷 Ces artéfacts firent l’objet d’une étude comparative fascinante dirigée par la paléontologue Doris Pompitous. Doris Pompitous émit, preuves à l’appui, de nouvelles théories radicales concernant les civilisations anciennes. Celles-ci auraient été très avancées, tant sur le plan scientifique que sur celui de la communication.</td><td><i>These artefacts were the subject of a fascinating comparative study directed by palaeontologist Doris Pompitous. Doris Pompitous formulated, with supporting evidence, new radical theories regarding ancient civilisations. These [ancient civilisations] would have been extremely advanced, both scientifically and in terms of communication.</i></td></tr></table><p>(*) “Biologist” (生物学者) and “Palaeontologist” (古生物学者) are very close words in Japanese, with palaeontologist being literally “old + biologist.” It is possible that “Cornell Panpatos” from the Japanese version was a palaeontologist instead of a biologist, but that the ‘old’ part was omitted due to the context being all about archaeology.</p></details><t>#archaeology #azran civilisation #collins #doris pompitous #pleynoth</t></it>
+<it><details><summary>Doris Pompitous demonstrated that the Azran had enhanced intelligence and a robust language.</summary><h2>Miracle Mask: Chapter 2<span>File: lt5/arc/lt5_b.fa/txt/02/02_020030.xs</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 [The] artifacts [found in Pleynoth] were the basis for a complex comparative study by the noted <b>biologist</b> Doris Pompitous. She theorized that these ancient peoples exhibited heightened intelligence as well as an elaborate language.</td></tr><tr><td colspan=2>🇬🇧 [The] artefacts [which disproved the theory that Pleynoth was a primitive holy site] were the basis for a fascinating comparative study by the <b>palaeontologist</b> Doris Pompitous. Based on a wide range of evidence from different fields, Pompitous came up with radically new ideas about this civilisation. She theorised that they were scientifically advanced and had a language as evolved as our own.</td></tr><tr><td>この<ruby>同時期<rt>どうじき</rt>に<rt></rt>生物<rt>せいぶつ</rt>学者<rt>がくしゃ</rt>であるコーネル・パンパトスが<rt></rt>発表<rt>はっぴょう</rt>した<rt></rt>古代人<rt>こだいじん</rt>や<rt></rt>古生物<rt>こせいぶつ</rt>に<rt></rt>対<rt>たい</rt>する<rt></rt>見解<rt>けんかい</rt>も<rt></rt>面白<rt>おもしろ</rt>い。<rt></rt>彼<rt>かれ</rt>らは<rt></rt>高<rt>たか</rt>い<rt></rt>知能<rt>ちのう</rt>を<rt></rt>持<rt>も</rt>ち、<rt></rt>優<rt>すぐ</rt>れた<rt></rt>言語<rt>げんご</rt>を<rt></rt>持<rt>も</rt>っていたと<rt></rt>発表<rt>はっぴょう</rt></ruby>されている。</td><td><i>In that same period there is <b>biologist(*)</b> Cornell Panpatos (who) published in regards to ancient men and palaeontology (and who has) fascinating opinions too. They held great intelligence, had superior language, (this is what) is published.</i></td></tr><tr><td>🇫🇷 Ces artéfacts firent l’objet d’une étude comparative fascinante dirigée par la paléontologue Doris Pompitous. Doris Pompitous émit, preuves à l’appui, de nouvelles théories radicales concernant les civilisations anciennes. Celles-ci auraient été très avancées, tant sur le plan scientifique que sur celui de la communication.</td><td><i>These artefacts were the subject of a fascinating comparative study directed by palaeontologist Doris Pompitous. Doris Pompitous formulated, with supporting evidence, new radical theories regarding ancient civilisations. These [ancient civilisations] would have been extremely advanced, both scientifically and in terms of communication.</i></td></tr></table><p>(*) “Biologist” (生物学者) and “Palaeontologist” (古生物学者) are very close words in Japanese, with palaeontologist being literally “old + biologist.” It is possible that “Cornell Panpatos” from the Japanese version was a palaeontologist instead of a biologist, but that the ‘old’ part was omitted due to the context being all about archaeology; this would explain the discrepancy between the US and EU translations.</p></details><t>#archaeology #azran civilisation #doris pompitous #pleynoth</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Doris Pompitous demonstrated that Earth once had a completely different ecosystem. -->
-<it><details><summary>Doris Pompitous demonstrated that Earth once had a completely different ecosystem.</summary><h2>Miracle Mask: Chapter 2 <span>File: txt/02/02_020030</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 Furthermore, through extensive fossil analysis, she proved that Earth once had an entirely different ecosystem.</td></tr><tr><td colspan=2>🇬🇧 Furthermore, through extensive fossil analysis, she proved that Earth once had a completely different ecosystem.</td></tr><tr><td>🇯🇵 <ruby>生態系<rt>せいたいけい</rt>も<rt></rt>今<rt>いま</rt>とは<rt></rt>異<rt>こと</rt>なり、<rt></rt>絶滅<rt>ぜつめつ</rt>してしまった<rt></rt>様々<rt>さまざま</rt>な<rt></rt>生<rt>い</rt>き<rt></rt>物<rt>もの</rt>たちの<rt></rt>化石<rt>かせき</rt>が<rt></rt>残<rt>のこ</rt>されていたのは<rt></rt>有名<rt>ゆうめい</rt>な<rt></rt>話<rt>はなし</rt></ruby>だな。</td><td><i>The ecosystem differed from today’s, (and) it is well known that fossils of various extinct creatures remained.</i></td></tr></table></details><t>#doris pompitous #archaeology #azran civilisation</t></it>
+<it><details><summary>Doris Pompitous demonstrated that Earth once had a completely different ecosystem.</summary><h2>Miracle Mask: Chapter 2<span>File: lt5/arc/lt5_b.fa/txt/02/02_020030.xs</span></h2><table><tr><th colspan=2>Collins</th></tr><tr><td colspan=2>🇺🇸 Furthermore, through extensive fossil analysis, she proved that Earth once had an entirely different ecosystem.</td></tr><tr><td colspan=2>🇬🇧 Furthermore, through extensive fossil analysis, she proved that Earth once had a completely different ecosystem.</td></tr><tr><td><ruby>生態系<rt>せいたいけい</rt>も<rt></rt>今<rt>いま</rt>とは<rt></rt>異<rt>こと</rt>なり、<rt></rt>絶滅<rt>ぜつめつ</rt></ruby>してしまった<ruby>様々<rt>さまざま</rt>な<rt></rt>生<rt>い</rt>き<rt></rt>物<rt>もの</rt>たちの<rt></rt>化石<rt>かせき</rt>が<rt></rt>残<rt>のこ</rt>されていたのは<rt></rt>有名<rt>ゆうめい</rt>な<rt></rt>話<rt>はなし</rt></ruby>だな。</td><td><i>The ecosystem differed from today’s, (and) it is well known that fossils of various extinct creatures remained.</i></td></tr></table></details><t>#doris pompitous #archaeology #azran civilisation</t></it>
 <!-- @EFOLD -->
 
-
-
-<!-- @SFOLD    @WIP@    The existence of the Azran amongst the general public is still up to debate even by the time Azran Legacy begins. -->
-<it class=wip><details><summary>The existence of the Azran amongst the general public is still up to debate even by the time Azran Legacy begins.</summary>
-    <h2>Azran Legacy: Chapter 1<span>File: txt/01/01_010220</span></h2>
-    <p>Layton’s response to Sycamore upon seeing Aurora trapped in ice:</p>
-    <table><tr><th colspan=2>Layton</th></tr>
-    <tr><td colspan=2>🇺🇸 🇬🇧 Were tests to confirm this, we would have concrete proof of the most ancient civilisation ever known…</td>
-    </tr><tr>
-        <td>🇯🇵 ということは、それが<ruby>証明<rt>しょうめい</rt>されれば<rt></rt>最古<rt>さいこ</rt>の<rt></rt>文明<rt>ぶんめい</rt>の<rt></rt>存在<rt>そんざい</rt>が<rt></rt>発見<rt>はっけん</rt></ruby>されたことになる。</td>
-        <td><i>So that means, if (the ice’s age estimation) is confirmed, the discovery of the existence of the oldest civilisation will have been made.</i></td>
-    </tr><tr>
-        <td>🇫🇷 Dans ce cas, nous aurions devant nous une représentante de la civilisation la plus ancienne ayant jamais existé.</td>
-        <td><i>In that case, we would have before us a representative of the oldest civilisation to ever exist.</i></td>
-    </tr></table>
-</details><t>#archaeology #azran civilisation #ancient histories (book)</t></it>
 <!-- @EFOLD -->
-
+<!-- @SFOLD - GAME-MANGA    Layton Brothers: Mystery Room -->
+<!-- @EFOLD -->
+<!-- @SFOLD - MANGA         Inazuma Eleven Birth Story Manga -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          Seven Thieves of the Century -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME-ETC      VS Ace Attorney -->
+<!-- Professor Layton VS Gyakuten Saiban Original Soundtrack with Special Anime Film -->
+<!-- Professor Layton vs. Phoenix Wright: Ace Attorney: Art Works -->
+<!-- Professor Layton vs. Phoenix Wright: Ace Attorney Magical Mystery Music -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME-ETC      Azran Legacy -->
+<!-- Professor Layton and the Azran Legacy Official Guidebook -->
+<!-- AL TRAILERS. From PV2 & PV3:
+    不死鳥伝説の眠る町　　　　    Mosinnia    | A sleeping town’s phoenix legend
+    風が吹き荒れる山間の村　　    Hoogland    | A village among the mountains​ (in which) the wind blows violently
+    太陽がふりそそぐ南の島　　    San Grio    | An island of the South (in which) the sun shines constantly
+    巨大な獣におびえる渓谷の村    Torrido     | A village’s canyon frightened by an enormous beast
+    不思議な民族が暮らす秘境　    Phong Gi    | An unexplored region (in which) curious people live
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+AL PUZZLE 104:
+JP (text000002):
+   「偉大なるアンブロシア王国ここに眠る」
+   「ここに眠るは世界の勇者たち」
+   「偉大なる王国の証」
+    Here sleeps the great kingdom of Ambrosia
+    Here sleep the heroes of the world
+    The proof of a great kingdom
+US/UK (text000002):
+    "Remember fair Ambrosia, City of Harmony."
+    "Remember our queen, the sleeping jewel."
+    "Silent in the fair City of Harmony."
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Froenborg is a "town where sleeps the [true nature] of the Azran" (本質)
+————————————————————————————————————————————————————————————————————————————————————————————————————————————
+Phong Gi, German version:
+———
+Hallimasch
+    Puh, was ist denn das für ein ekelhaft süßer Geruch? Hat etwa wieder so ein Scherzkeks die Bühne betreten?
+    Phew, what’s that sickeningly sweet smell? Has another Jokester* entered the stage?
+    *He uses "Scherzkeks", which literally translated means "Joke Cookie", which fits with the pun of smelling "sweet"
+Locklair
+    Ach, was Sie riechen, ist wahrscheinlich mein Eau de Cologne.
+    Oh, what you smell is probably my cologne.
+Hallimasch
+    Und dabei hatte ich mir schon Hoffnungen gemacht, weil Sie wie mein Lieblingspudding riechen.
+    And I had already got my hopes up because you smell like my favourite pudding.
+———
+Locklair
+    Huch, Morchella. Kann es sein, dass Ihnen das Rätsel angebrannt ist?
+    Oh, Morchella. Could it be that your puzzle burnt?
+Morchella
+    Natürlich! Mit Rätseln geräuchert ist das Gericht doch erst so richtig köstlich!
+    Of course! If you smoke it with puzzles, food becomes especially tasty!
+———————————————————————————————————————————————————————————————————————————————————————————————————————————— -->
 
 <!-- @SFOLD Aurora was sealed in the Froenborg Sanctuary at least 1.2 million years ago. -->
-<it><details><summary>Aurora was sealed in the Froenborg Sanctuary at&nbsp;least 1.2 million years ago.</summary><h2>Azran Legacy: Chapter 1<span>File: txt/01/01_010220</span></h2><table><tr><th colspan=2>Sycamore</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 I would estimate that this ice is a million years old… possibly more.</td></tr><tr><td>🇯🇵 <ruby>氷<rt>こおり</rt>は<rt></rt>少<rt>すく</rt>なく<rt></rt>見<rt>み</rt>積<rt>つ</rt>もっても、<rt></rt>１２０<rt></rt>万年前<rt>まんねんまえ</rt></ruby>のものだ。</td><td><i><ruby>The ice<rt>氷</rt></ruby> is <ruby>estimated<rt>見積もって</rt></ruby> to be <ruby>at least<rt>少なく</rt></ruby> <ruby>1.2 million years old.<rt>１２０万年前のものだ</rt></ruby></i></td></tr><tr><td>🇫🇷 D’après mes estimations, la glace s’est formée il y a plus d’un million d’années.</td><td><i>According to my estimations, the ice was formed more than a million years ago.</i></td></tr></table><p>The Azran civilisation was nearing its end at this time, therefore its birth could be even older.</p></details><t>#aurora #azran civilisation #azran golems #froenborg</t></it>
+<it><details><summary>Aurora was sealed in the Froenborg Sanctuary<br>at least 1.2 million years ago.</summary><h2>Azran Legacy: Chapter 1<span>File: lt6/arc/lt6_b.fa/txt/01/01_010220.xs</span></h2><table><tr><th colspan=2>Sycamore</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 I would estimate that this ice is a million years old… possibly more.</td></tr><tr><td><ruby>氷<rt>こおり</rt>は<rt></rt>少<rt>すく</rt>なく<rt></rt>見<rt>み</rt>積<rt>つ</rt>もっても、<rt></rt>１２０<rt></rt>万年前<rt>まんねんまえ</rt></ruby>のものだ。</td><td><i><ruby>The ice<rt>氷</rt></ruby> is <ruby>estimated<rt>見積もって</rt></ruby> to be <ruby>at least<rt>少なく</rt></ruby> <ruby>1.2 million years old.<rt>１２０万年前のものだ</rt></ruby></i></td></tr><tr><td>🇫🇷 D’après mes estimations, la glace s’est formée il y a plus d’un million d’années.</td><td><i>According to my estimations, the ice was formed more than a million years ago.</i></td></tr></table><p>The Azran civilisation was nearing its end at this time, therefore its birth could be even older.</p></details><t>#aurora #azran civilisation #azran golems #froenborg #timeline</t></it>
 <!-- @EFOLD -->
-
-
-
-
-
-
+<!-- @SFOLD    @WIP@    The existence of the Azran amongst the general public is still up to debate even by the time Azran Legacy begins. -->
+<it class=wip><details><summary>The existence of the Azran amongst the general public is still up to debate even by the time Azran Legacy begins.</summary>
+    <h2>Azran Legacy: Chapter 1<span>File: lt6/arc/lt6_b.fa/txt/01/01_010220.xs</span></h2><p>Layton’s response to Sycamore upon seeing Aurora trapped in ice:</p><table><tr><th colspan=2>Layton</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 Were tests to confirm this, we would have concrete proof of the most ancient civilisation ever known…</td></tr><tr><td>ということは、それが<ruby>証明<rt>しょうめい</rt>されれば<rt></rt>最古<rt>さいこ</rt>の<rt></rt>文明<rt>ぶんめい</rt>の<rt></rt>存在<rt>そんざい</rt>が<rt></rt>発見<rt>はっけん</rt></ruby>されたことになる。</td><td><i>So that means, if [Sycamore’s estimation of the ice’s age] is confirmed, the discovery of the existence of the oldest civilisation will have been made.</i></td></tr><tr><td>🇫🇷 Dans ce cas, nous aurions devant nous une représentante de la civilisation la plus ancienne ayant jamais existé.</td><td><i>In that case, we would have before us a representative of the oldest civilisation to have ever existed.</i></td></tr></table>
+</details><t>#archaeology #azran civilisation #ancient histories (book) #targent #hershel layton</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Sycamore deduced that Aurora was alive because the ice around her body is 6°C higher than the rest. -->
-<it><details><summary>Sycamore deduced that Aurora was alive because the ice around her body is 6°C higher than the rest.</summary><h2>Azran Legacy: Chapter 1<span>File: txt/01/01_010220</span></h2><table><tr><th colspan=2>Sycamore</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 The heat from her body creates a temperature gradient within the ice. It’s not much, but it’s a clear sign of life.</td></tr><tr><td>🇯🇵 <ruby>氷<rt>こおり</rt>の<rt></rt>中<rt>なか</rt>の<rt></rt>少女<rt>しょうじょ</rt>の<rt></rt>体<rt>からだ</rt></ruby>の<ruby>部分<rt>ぶぶん</rt>は、<rt></rt>他<rt>ほか</rt>の<rt></rt>部分<rt>ぶぶん</rt>よりも６<rt></rt>度<rt>ど</rt>も<rt></rt>温度<rt>おんど</rt>が<rt></rt>高<rt>たか</rt>い。わずかだが…<rt></rt>少女<rt>しょうじょ</rt>の<rt></rt>体<rt>からだ</rt>は、<rt></rt>生命活動<rt>せいめいかつどう</rt>を<rt></rt>行<rt>おこな</rt></ruby>っていると<ruby>考<rt>かんが</rt></ruby>えられる。</td><td><i>The parts of ice around the girl’s body have a temperature 6°C higher than the other parts. (It’s) small but… The girl’s body, it is thought that it’s performing life activity.</i></td></tr><tr><td>🇫🇷 Eh bien, la chaleur de son corps crée des écarts de température dans la glace. Ce n’est pas grand-chose, mais je pense que c’est la preuve qu’elle est toujours en vie.</td><td><i>Well, the heat from her body creates gaps in temperature within the ice. It’s not much, but I think it’s evidence that she is still alive.</i></td></tr><tr><th colspan=2>Sycamore</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 I cannot say what kind of scientific or biological phenomena are at work here… But she appears to be in suspended animation—some sort of cryogenic sleep.</td></tr><tr><td>🇯🇵 あの<ruby>少女<rt>しょうじょ</rt>の<rt></rt>体<rt>からだ</rt></ruby>に、どういう<ruby>異変<rt>いへん</rt>が<rt></rt>起<rt>お</rt></ruby>こっているのかはわからないが…。ＳＦ<ruby>小説<rt>しょうせつ</rt>に<rt></rt>出<rt>で</rt></ruby>てくる、『コールドスリープ』のような<ruby>概念<rt>がいねん</rt>で<rt></rt>人間<rt>にんげん</rt>の<rt></rt>体<rt>からだ</rt>が<rt></rt>保存<rt>ほぞん</rt></ruby>されたとも<ruby>考<rt>かんが</rt></ruby>えられる。</td><td><i>I don’t know what kind of anomalies are happening in that girl’s body, but… It is also thought that the human body was preserved in a concept similar to “cold sleep” from science-fiction novels.</i></td></tr><tr><td>🇫🇷 J’avoue être incapable d’expliquer quels phénomènes scientifiques entrent en jeu ici. Il semble néanmoins que le froid ait permis à cette jeune fille de survivre en hibernation.</td><td><i>I have to admit that I am incapable of explaining what kind of scientific phenomena are at play here. It seems nonetheless that the cold has allowed this young girl to survive in hibernation.</i></td></tr></table></details><t>#azran civilisation #archaeology #desmond sycamore #aurora</t></it>
+<it><details><summary>Sycamore deduced that Aurora was alive because the ice around her body is 6°C higher than the rest.</summary><h2>Azran Legacy: Chapter 1<span>File: lt6/arc/lt6_b.fa/txt/01/01_010220.xs</span></h2><table><tr><th colspan=2>Sycamore</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 The heat from her body creates a temperature gradient within the ice. It’s not much, but it’s a clear sign of life.</td></tr><tr><td><ruby>氷<rt>こおり</rt>の<rt></rt>中<rt>なか</rt>の<rt></rt>少女<rt>しょうじょ</rt>の<rt></rt>体<rt>からだ</rt></ruby>の<ruby>部分<rt>ぶぶん</rt>は、<rt></rt>他<rt>ほか</rt>の<rt></rt>部分<rt>ぶぶん</rt>よりも６<rt></rt>度<rt>ど</rt>も<rt></rt>温度<rt>おんど</rt>が<rt></rt>高<rt>たか</rt></ruby>い。わずかだが…<ruby>少女<rt>しょうじょ</rt>の<rt></rt>体<rt>からだ</rt>は、<rt></rt>生命活動<rt>せいめいかつどう</rt>を<rt></rt>行<rt>おこな</rt></ruby>っていると<ruby>考<rt>かんが</rt></ruby>えられる。</td><td><i>The parts of ice around the girl’s body have a temperature 6°C higher than the other parts. (It’s) small but… The girl’s body, it is thought that it’s performing life activity.</i></td></tr><tr><td>🇫🇷 Eh bien, la chaleur de son corps crée des écarts de température dans la glace. Ce n’est pas grand-chose, mais je pense que c’est la preuve qu’elle est toujours en vie.</td><td><i>Well, the heat from her body creates gaps in temperature within the ice. It’s not much, but I think it’s evidence that she is still alive.</i></td></tr><tr><th colspan=2>Sycamore</th></tr><tr><td colspan=2>🇺🇸 🇬🇧 I cannot say what kind of scientific or biological phenomena are at work here… But she appears to be in suspended animation—some sort of cryogenic sleep.</td></tr><tr><td>あの<ruby>少女<rt>しょうじょ</rt>の<rt></rt>体<rt>からだ</rt></ruby>に、どういう<ruby>異変<rt>いへん</rt>が<rt></rt>起<rt>お</rt></ruby>こっているのかはわからないが…。ＳＦ<ruby>小説<rt>しょうせつ</rt>に<rt></rt>出<rt>で</rt></ruby>てくる、『コールドスリープ』のような<ruby>概念<rt>がいねん</rt>で<rt></rt>人間<rt>にんげん</rt>の<rt></rt>体<rt>からだ</rt>が<rt></rt>保存<rt>ほぞん</rt></ruby>されたとも<ruby>考<rt>かんが</rt></ruby>えられる。</td><td><i>I don’t know what kind of anomalies are happening in that girl’s body, but… It is also thought that the human body was preserved in a concept similar to “cold sleep” from science-fiction novels.</i></td></tr><tr><td>🇫🇷 J’avoue être incapable d’expliquer quels phénomènes scientifiques entrent en jeu ici. Il semble néanmoins que le froid ait permis à cette jeune fille de survivre en hibernation.</td><td><i>I have to admit that I am incapable of explaining what kind of scientific phenomena are at play here. It seems nonetheless that the cold has allowed this young girl to survive in hibernation.</i></td></tr></table></details><t>#azran civilisation #archaeology #desmond sycamore #aurora</t></it>
 <!-- @EFOLD -->
 
 
 
-
-
-
-
+<!-- @SFOLD The Azran golems’ beam caused Targent’s machinery to start floating, then explode; but Froenborg’s houses only exploded without levitating first. -->
+<it><details><summary>The Azran golems’ beam caused Targent’s machinery to start floating, then explode; but Froenborg’s houses only exploded without levitating first.</summary><a href="https://youtu.be/e9ENtMgPofk?feature=shared&t=119"><h2>Azran Legacy: Cutscene #24<span>File: lt6/arc/lt6_b.fa/evt/mov/m24.xq</span></h2></a><p>It could be because Targent’s tanks and helicopters are mostly metallic, or it could be because the houses simply are rooted into the ground deeply enough for the levitating effect to not be noticeable before the explosion.</p><hr><p>If you consider that Jeremy Campbell’s research mentioned in Wandering Castle does imply that there is a “supermagnetic” state for some materials which causes them to float (see the <a>#physics</a> tag), then perhaps the golems’ beam can apply this property to certain materials. Additionally, perhaps this is also the reason why the golems and the Sanctuary are able to float themselves.</p></details><t>#azran golems #azran legacy #azran civilisation #physics</t></it>
+<!-- @EFOLD -->
 
 <!-- @EFOLD -->
-<!-- @SFOLD JAVASCRIPT -->
-<i id=nofind style="display:none;margin-left:50px;grid-column:span 3">No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></article></div><h2 style=margin:auto;width:80%;padding-bottom:120px>By default, only the Japanese and English versions are provided. Quotes from other languages will only be added if they provide information which neither the Japanese nor the English versions mention.</h2><script>
+<!-- @SFOLD - ARTBOOK       The World of Professor Layton -->
+<!-- @EFOLD -->
+<!-- @SFOLD - MANGA         小さなナゾ Manga -->
+<!-- @EFOLD -->
+<!-- @SFOLD - ARG           Mystery Journey: Real World Puzzling Solving Event -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME-ETC      Mystery Journey: Katrielle and the Millionaires’ Conspiracy -->
+<!-- OST Booklets? -->
+<!-- 3DS, Phone, Switch (x2) -->
+<!-- Anime -->
+<!-- Japanese Novels 1-4 -->
+<!-- French Novels (4… 5?) -->
+<!-- French Puzzle Books -->
+<!-- French Choose Your Own Adventure Novels (2) -->
+<!-- Lady Layton : Guide officiel -->
+<!-- CIAO COMICS Manga 1-2 -->
+<!-- @EFOLD -->
+<!-- @SFOLD - GAME          New World of Steam -->
+<!-- @EFOLD -->
+<!-- @SFOLD - OTHER         Magazines, ARG, etc -->
+<!-- @SFOLD - Luke and the Forest Friends Children’s Book -->
+<!-- @EFOLD -->
+<!-- Various Website Assets -->
+<!-- Professor Layton Mobile & Mobile R -->
+<!-- 3 Puzzle Maze Books -->
+<!-- 6 Science Books -->
+<!-- LEVEL-5 Premium Silver, Gold, Platinum, Diamond -->
+<!-- Famitsu Wave! 2008 (Professor Layton and the Diabolical Box) -->
+<!-- “Professor Layton” Series Soundtrack Premium CD “Puzzle ~ Professor Layton’s Theme” ~ From PRESS START 2008 ~ -->
+<!-- Professor Layton and the Mystery Solving Puzzles 2009 -->
+<!-- Slightly Funny Puzzle Videos -->
+<!-- Professor Layton Royale -->
+<!-- Layton 7 -->
+<!-- Professor Layton and the Curious Puzzles 2011 -->
+<!-- DoCoMo Events: Christmas Collection & Summer Campaign — Luke Shonen’s Nazo Book 1-2 -->
+<!-- Professor Layton and the Mystery of Pocky -->
+<!-- Layton Series Piano Best Selection — Music sheets -->
+<!-- Treasure of Domtoren (Domtoren’s Hallows) ARG -->
+<!-- The Official Nintendo Magazine #106 — April 2014 -->
+<!-- Katrielle and the Letter from the Dead ARG -->
+<!-- Katrielle and the Game House ARG -->
+<!-- Katrielle and the Disappeared Fiancée ARG -->
+<!-- Layton Mystery Detective Agency: Kat’s Mystery-Solving Book (CIAO) -->
+<!-- Katrielle and the Treasure of the Dark Underground Labyrinth ARG -->
+<!-- Weekly Famitsu Nov 8, 2018 Issue / Level-5 20th anniversary KADOKAWA -->
+<!-- Katrielle and the Unstoppable Bomb ARG -->
+<!-- Katrielle and the Mysterious Gift ARG -->
+<!-- Katrielle and the Secret Box ARG -->
+<!-- Katrielle and the Moonlit Monster ARG -->
+<!-- Katrielle and the Promised Emerald ARG -->
+<!-- Professor Layton and the Little Detective ARG -->
+<!-- Game informer — PL vs PW -->
+<!-- Game informer — Dec 2010 (?) -->
+<!-- Nintendo Power — January 2011 — 2010 game rewards and nominations -->
+<!-- Nintendo Power — September 2012 -->
+<!-- Nintendo Dream #189 — January 2010 -->
+<!-- Nintendo Power #262 — Holiday Issue 2010 -->
+<!-- @EFOLD -->
+<!-- @SFOLD # JAVASCRIPT -->
+<i id=nofind style="display:none;margin-left:50px;grid-column:span 3">No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></article></div><h2 style=margin:auto;width:90%;padding-bottom:120px>By default, only the Japanese and English versions are provided. Quotes from other languages will only be added if they provide information which neither the Japanese nor the English versions mention.</h2><script>
 const nofind=document.getElementById('nofind');const filterlist=document.getElementById("filterlist");const allit=filterlist.getElementsByTagName('it');const activetags=document.getElementById('activetags');const tagselect=document.querySelectorAll('div[id="tagselect"] input');var curtinput=[];var itags=[]
 for(i=0;i<allit.length;i++){itags.push([]);a=allit[i].getElementsByTagName("t")[0];txtValue=a.textContent||a.innerText;txtList=txtValue.toLowerCase().split("#").filter(n => n);for(w=0;w<txtList.length;w++){txtList[w]=txtList[w].trim()}itags[itags.length-1].push(txtList)}
+function getcard(id){const cd=document.getElementById(id);if(cd.open==true){cd.open=false}else{cd.open=true}}
 function addChildToParent(parent,el,msg){const node=document.createElement(el);const textnode=document.createTextNode('#'+msg);node.appendChild(textnode);parent.appendChild(node)}
 function ResetTagSelector(){curtinput=[];filterlist.style.display="none";activetags.innerHTML='';for(t=0;t<tagselect.length;t++){tagselect[t].style.backgroundColor='';tagselect[t].style.color='';tagselect[t].style.borderColor=''}}
 function AddTagSelector(tag){if(curtinput.includes(tag)){let index=curtinput.indexOf(tag);curtinput.splice(index,1);activetags.removeChild(Array.from(activetags.childNodes).find(v => v.innerHTML=='#'+tag));document.activeElement.style.backgroundColor='';document.activeElement.style.color='';document.activeElement.style.borderColor=''}else{curtinput.push(tag);addChildToParent(activetags,'p',tag);document.activeElement.style.backgroundColor="rgb(var(--fore))";document.activeElement.style.color="rgb(var(--plwhite))";document.activeElement.style.borderColor="rgb(var(--fore))"}}
@@ -163,11 +582,7 @@ function FilterItems(){var findli=allit.length;filterlist.style.display="grid";f
 function FindTag(){var taginp=document.getElementById('findtaginput').value.toLowerCase();for(i=0;i<tagselect.length;i++){var a=tagselect[i].value;if(a.includes(taginp)){tagselect[i].style.display=""}else{if(tagselect[i].style.backgroundColor==''){tagselect[i].style.display="none"}}}}
 </script>
 <!-- @EFOLD -->
-
-
-
-
-
-
-<!-- DEV TOOL FOR DEBUGGING ONLY: -->
+<!-- @SFOLD # DEV TOOL FOR DEBUGGING ONLY -->
 <style>#filterlist{display:revert!important}</style><script>documentedtags=[];for(i=0;i<tagselect.length;i++){documentedtags.push(tagselect[i].value.split('#')[1])};const allts=document.querySelectorAll('div[id="filterlist"] t');allusedtags=[];for(i=0;i<allts.length;i++){allusedtags+=allts[i].textContent.split('#')};uniq=[];usedtagslist=allusedtags.split(',');for(i=0;i<usedtagslist.length;i++){if(!uniq.includes(usedtagslist[i].trim())&&usedtagslist[i]!=''){uniq.push(usedtagslist[i].trim())}};var missingtags='';for(tag=0;tag<uniq.length;tag++){if(!documentedtags.includes(uniq[tag])){missingtags+='\n・'+uniq[tag]}}if(missingtags!=''){window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n"+missingtags)}</script>
+<!-- @EFOLD -->
+<!-- <p>&#9656; <a href="javascript:getcard('ID_OF_A_LORECARD')">REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</a></p> -->
