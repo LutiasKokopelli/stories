@@ -502,6 +502,7 @@ rt{
 .🗺️:hover c{opacity:17%}
 .🗺️:hover rt{display:revert}
 .🗺️:hover ruby{position:relative}
+.🗺️:hover ruby:before{content:'['}.🗺️:hover ruby:after{content:']'}
 .🗺️:hover rt i{position:absolute;top:-17px;display:inline-block;width:100%;left:0;text-align:center}
 .🗺️:hover .infoa{color:rgb(var(--plred));font-weight:800}
 .ext:hover p,p.ext:hover{line-height:240%}div.ext:hover{min-height:calc(var(--dlgheight) * 1.5)}
