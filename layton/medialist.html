@@ -46,19 +46,7 @@ tr:hover td{background:rgb(222,204,128)}
 td:nth-child(3),td:nth-child(4){font-size:24px}
 th{position:sticky;top:0;z-index:50;background:rgb(var(--midd));cursor:pointer}
 th:not(:first-child,:last-child,:nth-child(9)){padding-left:12px}
-th:not(:first-child,:last-child,:nth-child(9)):before{
-    content:'▼';
-    display:block;
-    width:17px;
-    height:17px;
-    position:absolute;
-    background:rgb(var(--plred));
-    color:rgb(252,252,244);
-    padding:3px;
-    border-radius:3px;
-    bottom:7px;
-    left:7px;
-}
+th:not(:first-child,:last-child,:nth-child(9)):before{content:'▼';display:block;width:17px;height:17px;position:absolute;background:rgb(var(--plred));color:rgb(252,252,244);padding:3px;border-radius:3px;bottom:7px;left:7px}
 td:first-child,td:nth-child(2){position:sticky;left:0;z-index:49}
 th:first-child,th:nth-child(2){position:sticky;left:0;z-index:51}
 td:nth-child(2),th:nth-child(2){left:180px}td:last-child{text-align:left}
@@ -74,282 +62,375 @@ h3 + table fl{font-size:17px}
 summary{font-size:24px;color:rgb(var(--fore));font-weight:800}li{list-style:'★'}
 </style><meta charset=utf-8><meta property="og:type" content="article"><meta name="viewport" content="width=device-width,initial-scale=.1,shrink-to-fit=no"><meta property=og:site_name content="The Layton Lost Media Archive"><meta property=og:title content="Professor Layton Preservation Media List"><meta property=og:description content="This web page contains a comprehensive list of all known Professor Layton media, from the DS and 3DS games to the most obscure content, as well as documentation on where to find them and how much of it has been preserved and translated to English."><meta name=keywords content="layton, professor layton"><meta name=og:url content=https://lutiaskokopelli.github.io/stories/layton/puzzle_theory.html><meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/layton/ast/logo/tophat.png><script>function sortTableNum(e){for(var r,n,a,t=0,s=!0,o="desc";s;){for(s=!1,r=table.rows,n=1;n<r.length-1;n++){a=!1,i=r[n].getElementsByTagName("TD")[e],T=r[n+1].getElementsByTagName("TD")[e];var i="-"==(i=isNaN(parseInt(i.innerHTML))?i.innerHTML.toLowerCase():parseInt(i.innerHTML))?0:i,T="-"==(T=isNaN(parseInt(T.innerHTML))?T.innerHTML.toLowerCase():parseInt(T.innerHTML))?0:T;if("asc"==o){if(T<i){a=!0;break}}else if("desc"==o&&i<T){a=!0;break}}a?(r[n].parentNode.insertBefore(r[n+1],r[n]),s=!0,t++):0==t&&"desc"==o&&(o="asc",s=!0)}}function convertDate(e){e=e.split("/");return+(e[2]+e[1]+e[0])}function sortByDate(e){for(var r,n,a,t,s,o=0,i=!0,T="asc";i;){for(i=!1,r=table.rows,n=1;n<r.length-1;n++)if(s=!1,a=r[n].getElementsByTagName("TD")[e],t=r[n+1].getElementsByTagName("TD")[e],"asc"==T){if(convertDate(a.innerHTML)>convertDate(t.innerHTML)){s=!0;break}}else if("desc"==T&&convertDate(a.innerHTML)<convertDate(t.innerHTML)){s=!0;break}s?(r[n].parentNode.insertBefore(r[n+1],r[n]),i=!0,o++):0==o&&"asc"==T&&(T="desc",i=!0)}}function sortTableStr(e){for(var r,n,a,t,s,o=0,i=!0,T="asc";i;){for(i=!1,r=table.rows,n=1;n<r.length-1;n++)if(s=!1,a=r[n].getElementsByTagName("TD")[e],t=r[n+1].getElementsByTagName("TD")[e],"asc"==T){if(a.innerHTML.toLowerCase()>t.innerHTML.toLowerCase()){s=!0;break}}else if("desc"==T&&a.innerHTML.toLowerCase()<t.innerHTML.toLowerCase()){s=!0;break}s?(r[n].parentNode.insertBefore(r[n+1],r[n]),i=!0,o++):0==o&&"asc"==T&&(T="desc",i=!0)}}</script>
 </head><h1>All Known Professor Layton Media and their State of Preservation</h1><div style=padding:50px;width:fit-content;margin-bottom:100px>
-<!-- @EFOLD -->
 <table id=TABLESORT><tr>
-    <th width=180px>Image</th>
-    <th width=200px onclick=sortTableStr(1)>Title</th>
-    <th width=180px onclick=sortTableStr(2)>Media Type</th>
-    <th width=200px onclick=sortByDate(3)>Original Version<br>Publication Date</th>
-    <th width=150px onclick=sortTableNum(4) style=text-align:right>Original Version<br>Preservation %</th>
-    <th width=150px onclick=sortTableNum(5)>Transcript<br>Progress</th>
-    <th width=150px onclick=sortTableNum(6)>Translation<br>Progress</th>
-    <th width=150px onclick=sortTableNum(7)>Lore Map<br>Progress</th>
-    <th width=240px>Links</th>
-    <th width=500px>Notes</th>
-</tr><tr>
-    <td><img src=ast/media_logo/lt1_CV_DS.jpg></td>
+<th width=180px>Image</th>
+<th width=200px onclick=sortTableStr(1)>Title</th>
+<th width=180px onclick=sortTableStr(2)>Media Type</th>
+<th width=200px onclick=sortByDate(3)>Original Version<br>Publication Date</th>
+<th width=150px onclick=sortTableNum(4) style=text-align:right>Original Version<br>Preservation %</th>
+<th width=150px onclick=sortTableNum(5)>Transcript<br>Progress</th>
+<th width=150px onclick=sortTableNum(6)>Translation<br>Progress</th>
+<th width=150px onclick=sortTableNum(7)>Lore Map<br>Progress</th>
+<th width=240px>Links</th>
+<th width=500px>Notes</th>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ DS Game @ Professor Layton and the Curious Village -->
+<tr><td><img src=ast/media_logo/lt1_CV_DS.jpg></td>
     <td><i>Professor Layton and the Curious Village</i><hr>レイトン教授と<br>不思議な町</td>
     <td>DS Game</td><td>15/02/2007</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇩🇪&#x2004;🇪🇦&#x2004;🇮🇹&#x2004;🇫🇷</fl></a></td>
     <td>This game has been officially translated into many languages, including English.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Curious_Village><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lv5_premium_silver.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @   0% @ DS Game @ LEVEL-5 Premium Silver -->
+<tr><td><img src=ast/media_logo/lv5_premium_silver.jpg></td>
     <td><i>LEVEL-5 Premium Silver</i><hr>レベルファイブ プレミアム シルバー</td>
     <td>DS Game</td><td>21/09/2007</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This promotional game for Nintendo DS was given away at Tokyo Game Show 2007. It includes the mini-story Professor Layton and the London Holiday. It also contains the Beta 1.0 version of Inazuma Eleven.</td>
-</tr><tr>
-    <td><img src=ast/lh/title_top.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ DS Game @ Professor Layton and the London Holiday -->
+<tr><td><img src=ast/lh/title_top.png></td>
     <td><i>Professor Layton and the London Holiday</i><hr>レイトン教授と<br>ロンドンの休暇</td>
-    <td>DS Game</td><td>21/09/2007</td><td>100%</td><td>100%</td><td>100%</td><td>1%</td>
+    <td>DS Game</td><td>21/09/2007</td><td>100%</td><td>100%</td><td>100%</td><td>10%</td>
     <td>Either buy the Japanese version of Diabolical/Pandora’s Box or find its Rom online<hr><a href="https://drive.google.com/drive/folders/1csbuBL61WW4CEhCs3AcKgl0xC9KUBtjI"><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Raw Text</a> <a href=html/lt1-5_lh.html><img src=ast/logo/tophat.png> Transcript & Translation<fl>🇯🇵&#x2004;🇬🇧</fl></a></td>
     <td>London Holiday is a Japan-exclusive prologue to Diabolical Box 🇺🇸 / Pandora’s Box 🇪🇺. The DS version was included as a demo in the promotional Level-5 Premium Silver collection, which was given away at Tokyo Game Show 2007. The distribution of the Premium Silver software caused the Level-5 booth at the Tokyo Game Show to be full, making distribution impossible. Due to a flood of requests and opinions from users who were unable to obtain the software and wanted to experience Professor Layton and the London Holiday, this story was included in Professor Layton and the Diabolical Box 🇺🇸 / Pandora’s Box 🇪🇺.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt2_DB_DS.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ DS Game @ Professor Layton and the Diabolical Box -->
+<tr><td><img src=ast/media_logo/lt2_DB_DS.jpg></td>
     <td><i>Professor Layton and<br>the Diabolical Box 🇺🇸<br>Pandora’s Box 🇪🇺</i><hr>レイトン教授と<br>悪魔の箱</td>
     <td>DS Game</td><td>29/11/2007</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇫🇷</fl></a></td>
     <td>This game has been officially translated into many languages, including English. It is known as either Diabolical Box (🇺🇸) or Pandora’s Box (🇪🇺).<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Diabolical_Box><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/famitsu_2008.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @   0% @ DVD     @ Famitsu Wave! 2008 (Diabolical Box) -->
+<tr><td><img src=ast/media_logo/famitsu_2008.jpg></td>
     <td><i>Famitsu Wave! 2008 (Professor Layton and the Diabolical Box)</i><hr>ファミ通Wave DVD<br>2008年1月号<br>レイトン教授と悪魔の箱<br>三国志大戦3<br>戦国BASARA2</td>
     <td>DVD</td><td class=cr>00/01/2008</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>A talk show in which Akihiro Hino and America Zarigani about the release of Professor Layton and the Diabolical Box.<hr><a href=https://www.suruga-ya.jp/product/detail/ZHAA2801>Suruga-ya</a><a href=https://ebten.jp/p/4910078190182>ebten.jp</a><a href=https://aucview.aucfan.com/yahoo/w1079238727/>Aucview</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lv5_premium_gold.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ ???% @ DS Game @ LEVEL-5 Premium Gold -->
+<tr><td><img src=ast/media_logo/lv5_premium_gold.jpg></td>
     <td><i>LEVEL-5 Premium Gold</i><hr>レベル５ プレミアム ゴールド</td>
     <td>DS Game</td><td>21/02/2008</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This promotional game for Nintendo DS was given away at Tokyo Game Show 2007. It includes a demo for Professor Layton and the Diabolical Box 🇺🇸 / Pandora’s Box 🇪🇺 as well as the mini-story Professor Layton and the London Holiday. It also contains the Beta 2.1 version of Inazuma Eleven.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt1_CV_dcm.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @   0% @ MobileR @ Professor Layton and the Curious Village -->
+<tr><td><img src=ast/media_logo/lt1_CV_dcm.jpg></td>
     <td><i>Professor Layton and the Curious Village</i><hr>レイトン教授と<br>不思議な町</td>
     <td>Layton<br>Mobile R</td><td class=cr>00/06/2008</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/19LaVsi4WKiSVnpFsfQdf8dTG_6hb09yq><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Preinstalled Demo Files<br>(penguinstrain)</a></td>
     <td>A free demo was pre-installed on some DoCoMo phones.<hr><a href=https://japanesefeaturephones.miraheze.org/wiki/Professor_Layton_and_the_Curious_Village><img src=https://japanesefeaturephones.miraheze.org/favicon.ico> Japanese Feature Phones Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt1-5_LH_dcm.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @   0% @ MobileR @ Professor Layton and the London Holiday -->
+<tr><td><img src=ast/media_logo/lt1-5_LH_dcm.jpg></td>
     <td><i>Professor Layton and the London Holiday</i><hr>レイトン教授と<br>ロンドンの休暇</td>
     <td>Layton<br>Mobile R</td><td class=cr>00/06/2008</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://japanesefeaturephones.miraheze.org/wiki/Professor_Layton_and_the_London_Holiday><img src=https://japanesefeaturephones.miraheze.org/favicon.ico> Japanese Feature Phones Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/laytonmobile.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @   0% @ MobileR @ Professor Layton Mobile -->
+<tr><td><img src=ast/media_logo/laytonmobile.jpg></td>
     <td><i>Professor Layton Mobile</i><hr>レイトン教授モバイル</td>
     <td>Layton<br>Mobile R</td><td>06/10/2008</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td></td>
     <td>This online mobile service worked on a monthly subscription and was later replaced by Layton Mobile R.<hr><a href=https://www.inside-games.jp/article/2011/05/18/49088.html>Announcement for half-price Packs<br>(Inside-Games)</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/dcm_dm_org.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @  50% @ MobileR @ Professor Layton and the Mansion of the Deathly Mirror -->
+<tr><td><img src=ast/media_logo/dcm_dm_org.jpg></td>
     <td><i>Professor Layton and the Mansion of the<br>Deathly Mirror</i><hr>レイトン教授と<br>死鏡の館</td>
     <td>Layton<br>Mobile R</td><td>10/10/2008</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>We might be able to datamine the first 3 chapters!<hr><!--<a href=>Scan/Rom</a><hr>--><a href=html/dcm_dm.html><img src=ast/logo/tophat.png> 🚧 Transcript<br>& Translation<br>(<span style=font-variant:small-caps>remix</span> version)<fl>🇯🇵&#x2004;🇬🇧</fl></a></td>
     <td>Mansion of the Deathly Mirror is a Japan-exclusive DoCoMo game with an exclusive story which was about as long as a full game from the main series. It contains six chapters, which had to be downloaded as six separate apps back when the online service was still available (prior to 2014). It is now considered lost media.<hr><a href=https://dena.com/jp/press/659/><img src=https://dena.com/favicon.ico> DeNA original announcement</a> <a href=https://lostmediawiki.com/Professor_Layton_and_the_Mansion_of_the_Deathly_Mirror_%28lost_Professor_Layton_mobile_game;_2008-2014%29><img src=https://lostmediawiki.com/w/skins/common/images/favicon2_small.png> Lost Media Wiki Page</a> <a href=https://japanesefeaturephones.miraheze.org/wiki/Professor_Layton_and_the_Mansion_of_the_Deathly_Mirror><img src=https://japanesefeaturephones.miraheze.org/favicon.ico> Japanese Feature Phones Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt1_CV_DS_friendly.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ DS Game @ Professor Layton and the Curious Village — Friendly Version -->
+<tr><td><img src=ast/media_logo/lt1_CV_DS_friendly.jpg></td>
     <td><i>Professor Layton and the Curious Village<br>— Friendly Version —</i><hr>レイトン教授と<br>不思議な町<br>フレンドリー版</td>
     <td>DS Game</td><td>23/10/2008</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find its Rom online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcript<br>& Translation</a></td>
     <td>This Japan-exclusive re-release adds furigana and makes weekly puzzles available from the start.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt2_DB_DS_friendly.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ DS Game @ Professor Layton and the Diabolical Box — Friendly Version -->
+<tr><td><img src=ast/media_logo/lt2_DB_DS_friendly.jpg></td>
     <td><i>Professor Layton and<br>the Diabolical Box 🇺🇸<br>Pandora’s Box 🇪🇺<br>— Friendly Version —</i><hr>レイトン教授と<br>悪魔の箱<br>フレンドリー版</td>
     <td>DS Game</td><td class=cr>99/10/2008</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find its Rom online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcript<br>& Translation</a></td>
     <td>This Japan-exclusive re-release adds furigana and makes weekly puzzles available from the start.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt3_UF.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ CD      @ Professor Layton Main Theme Trilogy CD -->
+<tr><td><img src=ast/media_logo/ost_trilogy-CD.png></td>
+    <td><i>Professor Layton Main Theme Trilogy CD</i><hr>レイトン教授メインテーマ<br>トリロジーＣＤ</td>
+    <td>CD</td><td>27/11/2008</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td>
+    <td></td>
+    <td><p>This piece of media contains nothing but the envelope and the CD itself. The bonus CD contains three tracks: Professor Layton’s Main Theme, and the main themes of Diabolical/Pandora’s Box and Unwound/Lost Future.</p><table><tr><th colspan=2>Written on the disc:</th></tr><tr><td><p>１　レイトン教授のテーマ</p><p>２　悪魔の箱のテーマ</p><p>３　最後の時間旅行のテーマ<br>　　（生演奏ヴァージョン）<br>　　演奏：レイトングランド<br>　　キャラバンオーケストラ</p></td><td><p>1. Professor Layton’s Theme</p><p>2. The Devil Box’s Theme</p><p>3. The Last Time Travel’s Theme<br>(Live Performance Version)<br>Performance: Layton Grand Caravan Orchestra</p></td></tr>
+        <!--「レイトン教授」シリーズ　オリジナルサウンドトラック発売決定！
+    詳しいはゲーム封入チラシ又はＷＥＢサイトをご覧ください。http://www.up-front-works.jp/frame/
+    このＣＤを、著作権法で認められている権利者の許諾を得ずに、①通貨業に使用すること、②個人的な範囲を超える使用目的で複製すること、③ネットワーク等を通じてこのＣＤに収録された音を送信できる状態にすることを禁じます。--></table><hr><a href=https://www.amazon.co.jp/レイトン教授メインテーマ-トリロジーCD/dp/B00GGE15NK><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href="https://jp.mercari.com/search?keyword=レイトン教授メインテーマ トリロジー CD"><img src=https://web-jp-assets-v2.mercdn.net/_next/static/media/favicon.cbb38c8b.ico> Mercari</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @ 100% @ DS Game @ Professor Layton and the Unwound Future -->
+<tr><td><img src=ast/media_logo/lt3_UF.jpg></td>
     <td><i>Professor Layton and the Unwound Future 🇺🇸<br>Lost Future 🇪🇺</i><hr>レイトン教授と<br>最後の時間旅行</td>
     <td>DS Game</td><td>27/11/2008</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find its Rom online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇫🇷</fl></a></td>
     <td>This game has been officially translated into many languages, including English. It is known as either Unwound Future (🇺🇸) or Lost Future (🇪🇺).<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Unwound_Future><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/manga_cheerful-1.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @ 100% @ Manga   @ Professor Layton and the Cheerful Mystery — Volume 1 -->
+<tr><td><img src=ast/media_logo/manga_cheerful-1.jpg></td>
     <td><i>Professor Layton and the Cheerful Mystery<br>— Volume 1 —</i><hr>レイトン教授と<br>ユカイな事件 ⓵</td>
     <td>Manga</td><td>27/11/2008</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><h3>Scans available on:</h3><table><tr><td><fl>🇯🇵</fl></td><td><a href=https://nyaa.si/view/1762134><img src=https://nyaa.si/static/favicon.png> nyaa.si</a> <a href=https://13dl.me/dl/レイトン教授とユカイな事件/><img src=https://i.imgur.com/LNQFI7p.png> 13dl.me</a> <a href=https://mega.nz/file/sNpCzATR#k68OImGxJR3dcL5rwsn5WCbSwzhSLI7mAcat7EZ0IM4><img src=https://mega.nz/favicon.ico> Mega</a></td></tr></table></td>
     <td>This manga has been officially translated into German, Spanish, French and Italian.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Cheerful_Mystery><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a><hr>ISBN: 978-4-09-140768-9</td>
-</tr><tr>
-    <td><img src=ast/media_logo/ost_trilogy-CD.png></td>
-    <td><i>Professor Layton Main Theme Trilogy CD</i><hr>レイトン教授メインテーマ<br>トリロジーＣＤ</td>
-    <td>CD</td><td>27/11/2008</td><td>100%</td><td>100%</td><td>100%</td><td>100%</td>
-    <td></td>
-    <td><p>This piece of media contains nothing but the envelope and the CD itself. The bonus CD contains three tracks: Professor Layton’s Main Theme, and the main themes of Diabolical/Pandora’s Box and Unwound/Lost Future.</p><table><tr><th colspan=2>Written on the disc:</th></tr><tr><td><p>１　レイトン教授のテーマ</p><p>２　悪魔の箱のテーマ</p><p>３　最後の時間旅行のテーマ<br>　　（生演奏ヴァージョン）<br>　　演奏：レイトングランド<br>　　キャラバンオーケストラ</p></td><td><p>1. Professor Layton’s Theme</p><p>2. The Devil Box’s Theme</p><p>3. The Last Time Travel’s Theme<br>(Live Performance Version)<br>Performance: Layton Grand Caravan Orchestra</p></td></tr><!--
-    「レイトン教授」シリーズ　オリジナルサウンドトラック発売決定！
-    詳しいはゲーム封入チラシ又はＷＥＢサイトをご覧ください。http://www.up-front-works.jp/frame/
-    このＣＤを、著作権法で認められている権利者の許諾を得ずに、①通貨業に使用すること、②個人的な範囲を超える使用目的で複製すること、③ネットワーク等を通じてこのＣＤに収録された音を送信できる状態にすることを禁じます。
-    --></table><hr><a href=https://www.amazon.co.jp/レイトン教授メインテーマ-トリロジーCD/dp/B00GGE15NK><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href="https://jp.mercari.com/search?keyword=レイトン教授メインテーマ トリロジー CD"><img src=https://web-jp-assets-v2.mercdn.net/_next/static/media/favicon.cbb38c8b.ico> Mercari</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/nv1_wc.jpg></td>
-    <td><i>Professor Layton and the Wandering Castle</i><hr>レイトン教授と<br>さまよえる城</td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @ 100% @ Novel   @ Professor Layton and the Wandering Castle -->
+<tr><td><img src=ast/media_logo/nv1_wc.jpg></td><td><i>Professor Layton and the Wandering Castle</i><hr>レイトン教授と<br>さまよえる城</td>
     <td>Novel</td><td>19/12/2008</td><td>100%</td><td>9%</td><td>100%</td><td>0%</td>
     <td><a href=https://www.mediafire.com/file/hkvddjp1itqmig2/Floating_Castle.zip/file><img src=https://seeklogo.com/images/M/mediafire-logo-8057F17F6B-seeklogo.com.png> Digital Scan<br>(Shinjinotikari17)</a><hr><a href=html/nv1_wc.html><img src=ast/logo/tophat.png> 🚧 Transcript</a><hr><h3>Translations:</h3><table><tr><td><fl>🇬🇧</fl></td><td><a href=https://docs.google.com/document/u/0/d/1Es1vNoMFtVoIC2ff5ba91NiaubrAFbr5nX23-MAB1j8/mobilebasic><img src=https://www.google.com/images/about/docs-icon.svg> Google Doc</a></td></tr></table></td>
     <td>This novel is Japan-exclusive.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Wandering_Castle><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a><hr>ISBN: 978-4-09-289717-5</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt1_CV_DS_OST.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @     -DATAMINE-REQUIRED-     @   0% @ CD      @ Professor Layton and the Curious Village — Original Soundtrack -->
+<tr><td><img src=ast/media_logo/lt1_CV_DS_OST.jpg></td>
     <td><i>Professor Layton and the Curious Village<br>— Original Soundtrack —</i><hr>レイトン教授と<br>不思議な町<br>オリジナル・サウンドトラック</td>
     <td>CD</td><td>24/12/2008</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://open.spotify.com/album/3DMbZq11myuK9nmMmhtxTy><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist</a> <a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-curious-village><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a></td>
     <td>Booklets available along with the physical disk have yet to be retrieved in full.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt2_DB_DS_OST.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt2_DB_DS_OST.jpg></td>
     <td><i>Professor Layton and<br>the Diabolical Box 🇺🇸<br>Pandora’s Box 🇪🇺<br>— Original Soundtrack —</i><hr>レイトン教授と<br>悪魔の箱<br>オリジナル・サウンドトラック</td>
     <td>CD</td><td>24/12/2008</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://open.spotify.com/album/61b4nt54b4IOFGaIxHiouP><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist<br>(only in Japan)</a> <a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-diabolical-box-pandora-s-box><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a></td>
     <td>Only one booklet containing concept art has been preserved and can be found on  KHinsider; the one containing the list of songs is missing.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/dcm_ic.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_ic.jpg></td>
     <td><i>Inspector Chelmey’s Casebook<br>~ Special Recipe ~</i><hr>チェルミー警部の事件簿<br>〜秘密のレシピ〜</td>
     <td>Layton<br>Mobile R</td><td class=cr>99/12/2008</td><td>95%</td><td>95%</td><td>0%</td><td>0%</td>
     <td><a href="https://www.youtube.com/watch?v=1zAwEMz31PI"><img src=https://www.youtube.com/s/desktop/7197d3dc/img/favicon.ico> Playthrough: Part 1</a> <a href="https://www.youtube.com/watch?v=DqR2kGmoYFQ"><img src=https://www.youtube.com/s/desktop/7197d3dc/img/favicon.ico> Playthrough: Part 2</a><hr><a href=html/dcm_ic.html><img src=ast/logo/tophat.png>🚧 Transcript<br>& Translation<fl>🇯🇵&#x2004;🇬🇧</fl></a></td>
     <td>Thanks to a playthrough, we were able to retrieve most of the story; only the occasional optional text is lacking (notably puzzle hints & incorrect answers).<hr>On Lutias’ to-do-list: the current translation sucks, so a more refined fan-made localisation (in a similar vein as London Holiday’s) is in the works!<hr><a href=https://keitaiwiki.miraheze.org/wiki/Inspector_Chelmey%27s_Casebook><img src=https://japanesefeaturephones.miraheze.org/favicon.ico> Japanese Feature Phones Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt3_UF_DS_OST.jpg></td>
-    <td><i>Professor Layton and the Unwound Future 🇺🇸<br>Lost Future 🇪🇺<br>— Original Soundtrack —</i><hr>レイトン教授と<br>最後の時間旅行<br>オリジナル・サウンドトラック</td>
-    <td>CD</td><td>21/01/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td><a href=https://open.spotify.com/album/2xlYkgpQIeMLV6fZO3iDdx><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist</a> <a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-unwound-future-original-soundtrack><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a></td>
-    <td>Booklets available along with the physical disk have yet to be retrieved in full.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/press_start_CD.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/press_start_CD.jpg></td>
     <td><i>“Professor Layton” Series Soundtrack Premium CD<br>“Puzzle ~ Professor Layton’s Theme”<br>~ From PRESS START 2008 ~</i><hr>「レイトン教授」シリーズ<br>サントラプレミアムＣＤ<br>「謎～レイトン教授のテーマ」<br>～PRESS START 2008より～</td>
     <td>CD</td><td>21/01/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This was a special offer for purchasers of the first three games’ soundtracks.<hr><a href=https://www.suruga-ya.jp/product/detail/120055232><img src=https://www.suruga-ya.jp/suruga.ico> Suruga</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/ab_trilogy-fanbook.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt3_UF_DS_OST.jpg></td>
+    <td><i>Professor Layton and the Unwound Future 🇺🇸<br>Lost Future 🇪🇺<br>— Original Soundtrack —</i><hr>レイトン教授と<br>最後の時間旅行<br>オリジナル・サウンドトラック</td>
+    <td>CD</td><td>21/01/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td><a href=https://open.spotify.com/album/2xlYkgpQIeMLV6fZO3iDdx><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist</a> <a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-unwound-future-original-soundtrack><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a></td>
+    <td>Booklets available along with the physical disk have yet to be retrieved in full.</td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ab_trilogy-fanbook.jpg></td>
     <td><i>The Secrets of Professor Layton: Series Trilogy<br>Official Fanbook</i><hr>レイトン教授の秘密の本<br>シリーズ三部作<br>公式ファンブック</td>
     <td>Art Book</td><td>23/01/2009</td><td>100%</td><td>1%</td><td>1%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/1nLykeQMSkVmumsz5ELvLY3JHgtl1G9bz><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (penguinstrain)</a></td>
     <td><a href=https://layton.fandom.com/wiki/The_Secrets_of_Professor_Layton:_Series_Trilogy_Official_Fanbook><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt2_DB_dcm.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt2_DB_dcm.jpg></td>
     <td><i>Professor Layton and<br>the Diabolical Box 🇺🇸<br>Pandora’s Box 🇪🇺</i><hr>レイトン教授と<br>悪魔の箱</td>
     <td>Layton<br>Mobile R</td><td>22/05/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>&nbsp;</td>
     <td>A free demo was pre-installed on some DoCoMo phones.<hr><a href=https://japanesefeaturephones.miraheze.org/wiki/Professor_Layton_and_the_Diabolical_Box><img src=https://japanesefeaturephones.miraheze.org/favicon.ico> Japanese Feature Phones Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/dcm_dm_remix.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_dm_remix.jpg></td>
     <td><i>Professor Layton and the Mansion of the<br>Deathly Mirror REMIX</i><hr>レイトン教授と<br>死鏡の館 -REMIX-</td>
     <td>Layton<br>Mobile R</td><td>01/06/2009</td><td>66%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=html/dcm_dm.html><img src=ast/logo/tophat.png> 🚧 Transcript<br>& Translation<fl>🇯🇵&#x2004;🇬🇧</fl></a></td>
     <td>The current playthrough reached up to the end of Chapter 4 (out of 6). Once Chapter 6 has been completed, the player has also planned to go back to each separate chapter (one separate app each) in order to complete the minigame, which provides additional lore.<hr><a href=https://lostmediawiki.com/Professor_Layton_and_the_Mansion_of_the_Deathly_Mirror_(lost_Professor_Layton_mobile_game;_2008-2014)><img src=https://lostmediawiki.com/w/skins/common/images/favicon2_small.png> Lost Media Wiki Page</a> <a href=https://japanesefeaturephones.miraheze.org/wiki/Professor_Layton_and_the_Mansion_of_the_Deathly_Mirror_-Remix-><img src=https://japanesefeaturephones.miraheze.org/favicon.ico> Japanese Feature Phones Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4_ls.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lv5_premium_platinum.jpg></td>
+    <td><i>Level-5 Premium Platinum</i><hr>レベルファイプ プレミアム プラチナ</td>
+    <td>DS Game</td><td>24/09/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td></td>
+    <td><p>Available during Tokyo Game Show 2009. This cartridge contains:</p><ul><li>Inazuma Eleven 2 (Demo)</li><li>Professor Layton and the Last Specter (Demo)</li><li>Ni no Kuni</li></ul><hr><a href=https://gigazine.net/news/20090924_level5_hukubukuro_tgs2009/>Gigazine</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4_ls.jpg></td>
     <td><i>Professor Layton and the Last Specter 🇺🇸<br>Spectre’s Call 🇪🇺</i></td>
     <td>DS Game</td><td>26/11/2009</td><td>100%</td><td>100%</td><td>5%</td><td>0%</td>
     <td>Either buy the game<br>or find its Rom online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇫🇷</fl></a></td>
     <td>This game has been officially translated into many languages, including English. It is known as either Last Specter (🇺🇸) or Spectre’s Call (🇪🇺).<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Last_Specter><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4_ll.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4_ll.jpg></td>
     <td><i>Professor Layton’s<br>London Life</i><hr>レイトン教授の<br>ロンドンライフ</td>
     <td>DS Game</td><td>26/11/2009</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find its Rom online</td>
     <td>This RPG game is included within the Japanese and American versions of <i>Professor Layton and the Last Specter</i>. It is absent from the European versions of the game (Spectre’s Call).<hr><a href=https://layton.fandom.com/wiki/Professor_Layton%27s_London_Life><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/manga_cheerful-2.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/manga_cheerful-2.jpg></td>
     <td><i>Professor Layton and the Cheerful Mystery<br>— Volume 2 —</i><hr>レイトン教授と<br>ユカイな事件 ⓶</td>
     <td>Manga</td><td>27/11/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://professorlayton.livejournal.com/244977.html>A few photos from LiveJournal</a></td>
     <td>This manga has been officially translated into German, Spanish, French and Italian.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Cheerful_Mystery><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a><hr>ISBN: 978-4-09-140859-4</td>
-</tr><tr>
-    <td><img src=ast/media_logo/book_nazotoki-pazuru.jpg></td>
-    <td><i>Professor Layton and the Mystery Solving Puzzles</i><hr>レイトン教授と<br>謎解きパズル<br>ナゾトキ✕パズル</td>
-    <td>Puzzle Book</td><td>11/12/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td><a href=https://www.pinterest.com/pin/355221489328481636/>A few photos from Pinterest</a> <a href=https://professorlayton.livejournal.com/244977.html>A few photos from LiveJournal</a></td>
-    <td><a href=https://layton.fandom.com/de/wiki/Layton_Ky%C5%8Dju_to_Nazotoki_Puzzle>Fandom Wiki Page (German)</a><a href=https://www.amazon.co.jp/レイトン教授と謎解きパズル-MSムック-レベルファイブ/dp/4904282728><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a><hr><h3>From the Amazon introduction:</h3><blockquote><p>大人気レイトン教授シリーズに待望のパズル誌が登場!おなじみのナゾナゾや推理問題から、いじわる4択・まちがい絵さがしなどなど、全60問を収録。ナゾ解明を導く全問ヒント＆プレゼント付き!</p><p><i>The long-awaited puzzle magazine for the popular Professor Layton series is now available! The magazine contains a total of 60 puzzles, from the well-known riddles and deduction problems, to the teasing four-option puzzles, wrong picture puzzles, and more. All puzzles come with hints and gifts to help you solve the puzzles!</i></p></blockquote><hr>ISBN-10: 4904282728<br>ISBN-13: 978-4904282724</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_luke-notebook.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_luke-notebook.jpg></td>
     <td><i>Professor Layton and the Eternal Diva — Luke’s Notebook</i><hr></td>
     <td>Book</td><td>11/12/2009</td><td>100%</td><td>100%</td><td>100%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/1ZD6iu7ymoUZnk5L4zmsyy2iClxcjyncE><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (Lenam)</a> <a href=https://drive.google.com/drive/folders/1iHPoaN8_TfwpYcLqCJajcdrfNhjd6Z6A><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Photos (Rucy)</a></td>
     <td>ISBN-10: 4092271409<br>ISBN-13: 978-4092271401<hr><a href=https://www.amazon.com/Notebook-Luke-Eternal-Professor-Layton/dp/4092271409><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/ost_jenis-quatlane.jpg></td>
-    <td><i>The Eternal Diva Jenis Quatlane</i></td>
-    <td>CD</td><td>16/12/2009</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td><a href=https://open.spotify.com/album/0q9GPjc7F2Fy6aqwjyNGS2><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist</a> <a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-eternal-diva-the-eternal-diva-jenis-quatlane><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a> <a href=https://vgmdb.net/album/16424><img src=https://vgmdb.net/favicon.ico> VGMdb</a><hr><a href=https://drive.google.com/drive/folders/1EfKDHY1Q7DjSlGTBl41sraS2umOWjqFf><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (penguinstrain)</a> <a href=https://cdn.discordapp.com/attachments/535625309647798272/1134172381355712623/THE_ETERNAL.pdf><img src=https://static-00.iconduck.com/assets.00/discord-icon-256x256-mihmpmuj.png> Scan (MaralinaSakura)</a></td>
-    <td><a href=https://layton.fandom.com/de/wiki/The_Eternal_Diva_Jenis_Quatlane><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page (German)</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/nv2_pd.jpg></td>
-    <td><i>Professor Layton and the Phantom Deity</i><hr>レイトン教授と<br>怪人ゴッド</td>
-    <td>Novel</td><td>16/12/2009</td><td>100%</td><td>8%</td><td>2%</td><td>0%</td>
-    <td><a href=https://www.mediafire.com/file/7ut8wjpfac0u621/Phantom_Mask.zip/file><img src=https://seeklogo.com/images/M/mediafire-logo-8057F17F6B-seeklogo.com.png> Digital Scan<br>(Shinjinotikari17)</a><hr><a href=https://lutiaskokopelli.github.io/stories/layton/html/nv2_pd.html><img src=ast/logo/tophat.png> 🚧 Transcript</a><hr><h3>Translations:</h3><table><tr><td><fl>🇬🇧</fl></td><td><a href=https://docs.google.com/document/u/0/d/1jDMyYwTJtIhmu4toZR37SYZ2GtT3fpTjL1BwLMUUlEA/mobilebasic><img src=https://www.google.com/images/about/docs-icon.svg> Google Doc</a></td></tr></table></td>
-    <td>This novel is Japan-exclusive.<br>324 Pages<br>ISBN: 978-4-09-289724-3<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Phantom_Deity><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a> <a href=https://www.shogakukan.co.jp/books/09289724><img src="https://static.wikia.nocookie.net/logopedia/images/4/4f/Shogakukan2001.png/revision/latest?cb=20200809122000"> Shogakukan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4_ls_OST.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/book_nazotoki-pazuru.jpg></td>
+    <td><i>Professor Layton and the Mystery Solving Puzzles</i><hr>レイトン教授と<br>謎解きパズル<br>ナゾトキ✕パズル</td>
+    <td>Puzzle Book</td><td>11/12/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td><a href=https://www.pinterest.com/pin/355221489328481636/>A few photos from Pinterest</a> <a href=https://professorlayton.livejournal.com/244977.html>A few photos from LiveJournal</a></td>
+    <td><a href=https://layton.fandom.com/de/wiki/Layton_Ky%C5%8Dju_to_Nazotoki_Puzzle>Fandom Wiki Page (German)</a><a href=https://www.amazon.co.jp/レイトン教授と謎解きパズル-MSムック-レベルファイブ/dp/4904282728><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a><hr><h3>From the Amazon introduction:</h3><blockquote><p>大人気レイトン教授シリーズに待望のパズル誌が登場!おなじみのナゾナゾや推理問題から、いじわる4択・まちがい絵さがしなどなど、全60問を収録。ナゾ解明を導く全問ヒント＆プレゼント付き!</p><p><i>The long-awaited puzzle magazine for the popular Professor Layton series is now available! The magazine contains a total of 60 puzzles, from the well-known riddles and deduction problems, to the teasing four-option puzzles, wrong picture puzzles, and more. All puzzles come with hints and gifts to help you solve the puzzles!</i></p></blockquote><hr>ISBN-10: 4904282728<br>ISBN-13: 978-4904282724</td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4_ls_OST.jpg></td>
     <td><i>Professor Layton and the<br>Last Specter 🇺🇸<br>Spectre’s Call 🇪🇺<br>— Original Soundtrack —</i><hr>レイトン教授と魔神の笛<br>オリジナル・サウンドトラック</td>
     <td>CD</td><td>16/12/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-last-specter><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a></td>
     <td><a href=https://www.amazon.co.jp/レイトン教授と魔神の笛-オリジナル・サウンドトラック-ゲーム・ミュージック/dp/B002QD2QTC><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_this-is-animation.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ost_jenis-quatlane.jpg></td>
+    <td><i>The Eternal Diva Jenis Quatlane</i></td>
+    <td>CD</td><td>16/12/2009</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td><a href=https://open.spotify.com/album/0q9GPjc7F2Fy6aqwjyNGS2><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist</a> <a href=https://downloads.khinsider.com/game-soundtracks/album/professor-layton-and-the-eternal-diva-the-eternal-diva-jenis-quatlane><img src=https://downloads.khinsider.com/images/favicon.ico> KHinsider</a> <a href=https://vgmdb.net/album/16424><img src=https://vgmdb.net/favicon.ico> VGMdb</a><hr><a href=https://drive.google.com/drive/folders/1EfKDHY1Q7DjSlGTBl41sraS2umOWjqFf><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (penguinstrain)</a> <a href=https://cdn.discordapp.com/attachments/535625309647798272/1134172381355712623/THE_ETERNAL.pdf><img src=https://static-00.iconduck.com/assets.00/discord-icon-256x256-mihmpmuj.png> Scan (MaralinaSakura)</a></td>
+    <td><a href=https://layton.fandom.com/de/wiki/The_Eternal_Diva_Jenis_Quatlane><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page (German)</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/nv2_pd.jpg></td>
+    <td><i>Professor Layton and the Phantom Deity</i><hr>レイトン教授と<br>怪人ゴッド</td>
+    <td>Novel</td><td>16/12/2009</td><td>100%</td><td>8%</td><td>2%</td><td>0%</td>
+    <td><a href=https://www.mediafire.com/file/7ut8wjpfac0u621/Phantom_Mask.zip/file><img src=https://seeklogo.com/images/M/mediafire-logo-8057F17F6B-seeklogo.com.png> Digital Scan<br>(Shinjinotikari17)</a><hr><a href=https://lutiaskokopelli.github.io/stories/layton/html/nv2_pd.html><img src=ast/logo/tophat.png> 🚧 Transcript</a><hr><h3>Translations:</h3><table><tr><td><fl>🇬🇧</fl></td><td><a href=https://docs.google.com/document/u/0/d/1jDMyYwTJtIhmu4toZR37SYZ2GtT3fpTjL1BwLMUUlEA/mobilebasic><img src=https://www.google.com/images/about/docs-icon.svg> Google Doc</a></td></tr></table></td>
+    <td>This novel is Japan-exclusive.<br>324 Pages<br>ISBN: 978-4-09-289724-3<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Phantom_Deity><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a> <a href=https://www.shogakukan.co.jp/books/09289724><img src="https://static.wikia.nocookie.net/logopedia/images/4/4f/Shogakukan2001.png/revision/latest?cb=20200809122000"> Shogakukan</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_this-is-animation.jpg></td>
     <td><i>Professor Layton and the Eternal Diva<br>(This is animation)</i><hr>映画レイトン教授とルークの最初のナゾトキの旅ストーリーダイジェスト</td>
     <td>Art Book</td><td>17/12/2009</td><td>90%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a>Scan (DearestHershel)</a></td>
     <td>At least 54 pages. Current scans are sometimes cropped in the edges, and pages 2 and 4 are lacking.<hr>ISBN-10: 4091038174<br>ISBN-13:978-4091038173<hr><a href=https://www.amazon.com/Eternal-Diva-Professor-Layton-animation/dp/4091038174><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/manga_lost-forest.jpg></td>
-    <td><i>Professor Layton and the Lost Forest</i><hr>レイトン教授と<br>迷いの森</td>
-    <td>Manga</td><td>18/12/2009</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td><a>🚧 Scan (Shinjinotikari17)<br><span style=></a><!--<hr><a href=>🚧 Transcript</a><hr><a href=>🚧 Translation</a>--></td>
-    <td>ISBN: 978-4-09-140883-9<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Lost_Forest><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_movie-comic-1.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_movie-comic-1.jpg></td>
     <td><i>Professor Layton and the Eternal Diva: Movie Comic Nazo? Volume 1</i><hr>映画レイトン教授と<br>永遠の歌姫<br>フィルムコミック<br>上ナゾ？カケ編<br>(少年サンデーコミックススペシャル)</td>
     <td>Book</td><td>18/12/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN-10: 4091220665<br>ISBN-13: 978-4091220660<hr><a href=https://www.amazon.co.jp/映画レイトン教授と永遠の歌姫-フィルムコミック●ナゾ-カケ編-少年サンデーコミックススペシャル-日野/dp/4091220665><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://www.cdjapan.co.jp/product/NEOBK-656881><img src=https://st.cdjapan.co.jp/assets/img/cdj_favicon.ico> CDJapan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_manga.jpg></td>
-    <td><i>Professor Layton and the Eternal Diva</i><hr>レイトン教授と永遠の歌姫</td>
-    <td>Manga</td><td>19/12/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td></td>
-    <td><a href=https://layton.fandom.com/de/wiki/Professor_Layton_und_die_ewige_Diva_(Manga)><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_memorial-theatres.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/manga_lost-forest.jpg></td>
+    <td><i>Professor Layton and the Lost Forest</i><hr>レイトン教授と<br>迷いの森</td>
+    <td>Manga</td><td>18/12/2009</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td><a>🚧 Scan (Shinjinotikari17)</a></td>
+    <td>ISBN: 978-4-09-140883-9<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Lost_Forest><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_memorial-theatres.jpg></td>
     <td><i>Professor Layton and the Eternal Diva<br>Movie Memorial<br>Guide Art Book</i></td>
     <td>Art Book</td><td>19/12/2009</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/1mx2n0Bu1NHLaMcBcveEyZr8KUHxDnttM><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (penguinstrain)</a></td>
     <td>This memorial book could only be obtained in the movie theaters.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed.jpg></td>
     <td><i>Professor Layton and the Eternal Diva — Movie Standard Edition</i><hr>映画 レイトン教授と永遠の歌姫 スタンダードエディション</td>
     <td>DVD</td><td>19/12/2009</td><td>100%</td><td>100%</td><td>0%</td><td>0%</td>
     <td><a href=https://archive.org/details/professor-layton-pc-collection-full-games-movie-anime/layton/11+Layton+Mystery+Tanteisha-+Katri+no+Nazotoki+File+English+Subbed/1.mp4#><img src=https://archive.org/images/glogo.jpg> HD Movie (archive.org)</a></td>
     <td><a href=https://www.amazon.co.jp/映画-レイトン教授と永遠の歌姫-スタンダードエディション-DVD-大泉洋/dp/B003M91JCE><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Eternal_Diva><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_novel.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_manga.jpg></td>
+    <td><i>Professor Layton and the Eternal Diva</i><hr>レイトン教授と永遠の歌姫</td>
+    <td>Manga</td><td>19/12/2009</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td></td>
+    <td><a href=https://layton.fandom.com/de/wiki/Professor_Layton_und_die_ewige_Diva_(Manga)><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_novel.jpg></td>
     <td><i>Professor Layton and the Eternal Diva<br>(Junior Collection)</i><hr>レイトン教授と永遠の歌姫 (ジュニア文庫)</td>
     <td>Novel</td><td>23/12/2009</td><td>100%</td><td>90%</td><td>100%</td><td>0%</td>
     <td><a href=https://lutiaslayton.tumblr.com/post/724275136811909120/><img src=https://assets.tumblr.com/pop/manifest/favicon-0e3d244a.ico> Scan (Lutias Kokopelli)</a> <a href=https://drive.google.com/drive/folders/1AhJpcBtB9nxiHfYJdodlCY8FWxenQMSb><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan & Transcript<br>(no Furigana)<br>(Lutias Kokopelli)</a> <a href=html/nvx_ed.html><img src=ast/logo/tophat.png> 🚧 Transcript</a><hr><h3>Translations:</h3><table><tr><td><fl>🇬🇧</fl></td><td><a href=https://lutiaslayton.tumblr.com/post/725010907480178688/><img src=https://assets.tumblr.com/pop/manifest/favicon-0e3d244a.ico> Layton’s Book Club</a></td></tr></table></td>
     <td>200 pages Japan-exclusive novel. The current transcript lacks most furigana.<hr>ISBN-10: 4092306024<br>ISBN-13:978-4092306028 <hr><a href=https://www.amazon.co.jp/レイトン教授と永遠の歌姫-ジュニア文庫-松井-亜弥/dp/4092306024><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td></td>
     <td><i>Nintendo Dream #189 — January 2010</i></td>
     <td>Magazine Issue</td><td class=cr>00/01/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
-</tr><tr>
-    <td></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td></td>
     <td><i>Nintendo Power #262 — Holiday Issue 2010</i></td>
     <td>Magazine Issue</td><td>01/01/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_movie-comic-2.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_movie-comic-2.jpg></td>
     <td><i>Professor Layton and the Eternal Diva: Movie Comic Nazo! Volume 2</i><hr>映画レイトン教授と<br>永遠の歌姫<br>フィルムコミック<br>下ナゾ！トキ編<br>(少年サンデーコミックススペシャル)</td>
     <td>Book</td><td>16/01/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN-10: 4091220673<br>ISBN-13: 978-4091220677<hr><a href=https://www.amazon.co.jp/映画レイトン教授と永遠の歌姫-フィルムコミック下ナゾ-トキ編-少年サンデーコミックススペシャル-日野/dp/4091220673><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/ost_lt4-5_ed.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ost_lt4-5_ed.jpg></td>
     <td><i>Professor Layton and the Eternal Diva<br>— Original Soundtrack —</i><hr>レイトン教授と永遠の歌姫<br>オリジナル・サウンドトラック</td>
     <td>CD</td><td>23/01/2010</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><hr><a href=https://drive.google.com/drive/folders/1LPGEarGHxq7cz7vuMahieeQHan8HhdcW><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scans (Lenam)</a></td>
     <td></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_limited-edition.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_limited-edition.jpg></td>
     <td><i>Professor Layton and the Eternal Diva: The Movie<br>Gressenheller College<br>Limited Edition</i><hr>アニメDVD 映画<br>レイトン教授と永遠の歌姫<br>グレッセン・ヘラー・<br>カレッジ・リミテッドエディション</td>
     <td>DVD</td><td>21/07/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
@@ -365,102 +446,138 @@ summary{font-size:24px;color:rgb(var(--fore));font-weight:800}li{list-style:'★
     <li>Making-of “Professor Layton: Puzzle of the 3DCG”</li>
     <li>Promotional video for the game series “Professor Layton”</li>
 </ul><hr><a href=https://www.amazon.co.jp/映画レイトン教授と永遠の歌姫-グレッセン・ヘラー・カレッジ-リミテッドエディション-DVD-大泉洋/dp/B003M91JBU><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a><a href=https://www.ebay.com/itm/296108584102>Ebay (1)</a><a href=https://www.ebay.com/itm/404564424162>Ebay (2)</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt4-5_ed_limited-edition-eu.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt4-5_ed_limited-edition-eu.jpg></td>
     <td><i>Professor Layton and the Eternal Diva: The Movie<br>Gressenheller College<br>Limited Edition</i></td>
     <td>DVD</td><td>21/07/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href="https://www.youtube.com/watch?v=5Nv0W48USLM"><img src=https://www.youtube.com/s/desktop/7197d3dc/img/favicon.ico> Bonus Disc<br>(MaralinaSakura)</a></td>
     <td>This limited edition contains:<ul><li>The movie disc (DVD)</li><li>The movie disc (Blu-ray)</li><li>A bonus disc</li><li>A 630-page book containing the entire storyboard of the movie with Japanese annotations</li></ul><hr><a href=https://www.fnac.com/a3045005/Professeur-Layton-et-la-Diva-de-l-eternelle-Edition-Collector-DVD-Zone-2>FNAC (French version)</a><a href="https://www.ebay.fr/itm/325933629498?chn=ps&norover=1&mkevt=1&mkrid=709-134431-41854-0&mkcid=2&mkscid=101&itemid=325933629498&targetid=1654271101122&device=c&mktype=pla&googleloc=9056139&poi=&campaignid=20841691198&mkgroupid=156215475053&rlsatarget=pla-1654271101122&abcId=9351429&merchantid=116369344&gclid=CjwKCAiA75itBhA6EiwAkho9eyoOwBcUz2HqYw7ATW7XSC4iMXjJQAh_qkoOTaMkUoA6tFoxN_hN7BoCgTUQAvD_BwE">Ebay (French version)</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/manga_cheerful-3.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/manga_cheerful-3.jpg></td>
     <td><i>Professor Layton and the Cheerful Mystery<br>— Volume 3 —</i><hr>レイトン教授と<br>ユカイな事件 ⓷</td>
     <td>Manga</td><td>26/11/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This manga has been officially translated into German, Spanish, French and Italian.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Cheerful_Mystery><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a><hr>ISBN: 978-4-09-141144-0</td>
-</tr><tr>
-    <td><img src=ast/media_logo/luke-animal-friends.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/luke-animal-friends.jpg></td>
     <td><i>Professor Layton:<br>Luke and the Forest Friends</i><hr>レイトン教授<br>ルークと森のともだち</td>
     <td>Book</td><td>05/12/2010</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This is a Japan-exclusive children’s book.<hr><a href=https://layton.fandom.com/de/wiki/Layton_Ky%C5%8Dju_Luke_to_Mori_no_Tomodachi><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page (German)</a><hr>ISBN: 978-4097264323</td>
-</tr><tr>
-    <td><img src=ast/media_logo/nv3_if.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/nv3_if.jpg></td>
     <td><i>Professor Layton and the Illusory Forest<br>(Phantom Forest /<br>Forest of Illusions)</i><hr></td>
     <td>Novel</td><td>15/12/2010</td><td>100%</td><td>20%</td><td>20%</td><td>0%</td>
     <td><a>Digital Scan<br>(Shinjinotikari17)</a><hr><a href=html/nv3_if.html><img src=ast/logo/tophat.png> 🚧 Transcript</a><hr><h3>Translations:</h3><table><tr><td><fl>🇬🇧</fl></td><td><a href=https://lutiaslayton.tumblr.com/post/737328406788800512/><img src=https://assets.tumblr.com/pop/manifest/favicon-0e3d244a.ico>🚧 Layton’s Book Club</a> <a href=https://docs.google.com/document/d/1WNKQObI39xbce7jbHbObJ4KinyUIuqujDDl72ybq28w/mobilebasic><img src=https://www.google.com/images/about/docs-icon.svg> Google Doc</a></td></tr></table></td>
     <td>ISBN: 978-4-09-289729-8<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Phantom_Forest><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt5_mm.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt5_mm.jpg></td>
     <td><i>Professor Layton and the Miracle Mask</i><hr>レイトン教授と奇跡の仮面</td>
     <td>3DS Game</td><td>26/02/2011</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg>🚧 Transcripts<br>& Translations<fl>🇺🇸 🇬🇧 🇫🇷</fl></a></td>
     <td>No Japanese ROM of the non-MM+ version has been found, therefore differences between the regular and + versions of the Japanese game have not yet been documented.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Miracle_Mask><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr>
     <td><iframe width=170 height=124 src=https://www.youtube.com/embed/NcD_UABhN0o></iframe></td>
     <td><i>Yumi Matsutoya -<br>Mysterious Flower</i><hr>松任谷由実 -<br>Mysterious Flower</td>
     <td>Video</td><td>06/04/2011</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href="https://www.youtube.com/watch?v=NcD_UABhN0o"><img src=https://www.youtube.com/s/desktop/7197d3dc/img/favicon.ico> Original Video</a></td>
     <td>Mysterious Flower is the ending theme of Professor Layton and the Miracle Mask.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/puzzle-maze-1.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/puzzle-maze-1.jpg></td>
     <td><i>Professor Layton and the Puzzle Maze</i><hr>レイトン教授のナゾ迷路</td>
     <td>Book</td><td>17/06/2011</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This book is Japan-exclusive. It works similarly to the “Where’s Waldo?” books, containing 12 illustrations.<br>ISBN-10: 4047273570<br>ISBN-13: 978-4047273573<hr><a href=https://www.amazon.co.jp/レイトン教授のナゾ迷路-ファミ通BOOKS-レベルファイブ/dp/4047273570><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://www.kadokawa.co.jp/product/201012000677/><img src=https://static.kadokawa.co.jp/common/img/favicon.ico> Kadokawa</a> <a href=https://layton.fandom.com/wiki/Professor_Layton%27s_Puzzle_Maze><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=https://vsmedia.zombie.jp/wp-content/uploads/2011/10/8689680f4762a2fc09ed16247079ebea-450x294.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=https://vsmedia.zombie.jp/wp-content/uploads/2011/10/8689680f4762a2fc09ed16247079ebea-450x294.png></td>
     <td><i>Professor Layton Royale</i><hr>レイトン教授ロワイヤル</td>
     <td>Mobile Phone</td><td>28/10/2011</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This was a Japan-exclusive online multiplayer mobile game, as well as a crossover game based on DeNA’s Royale series. It was discontinued on November 30, 2012, in favour of the newer game <i>Professor Layton and the Phantom Thieves</i>.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_Royale><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/book_curious-puzzle.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/book_curious-puzzle.jpg></td>
     <td><i>Professor Layton and the Curious Puzzles</i><hr>レイトン教授と不思議なパズルトキＸナゾ</td>
     <td>Puzzle Book</td><td>19/11/2011</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://www.pinterest.com/pin/355221489328481632/>A few photos from Pinterest</a></td>
     <td>Puzzle book, 95 pages. The answers are provided in the back.<br>ISBN-10: 4575452564<br>ISBN-13:978-4575452563<hr><a href=https://layton.fandom.com/de/wiki/Layton_Ky%C5%8Dju_to_Fushigina_Puzzle>Fandom Wiki Page (German)</a> <a href=https://www.amazon.co.jp/レイトン教授と不思議なパズル-双葉社スーパームック-デュマデジタル/dp/4575452564><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://www.cdjapan.co.jp/product/NEOBK-1042957><img src=https://st.cdjapan.co.jp/assets/img/cdj_favicon.ico> CDJapan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/dcm_christmascollection.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_christmascollection.jpg></td>
     <td><i>Christmas Collection</i><hr>レイトン教授モバイルクリスマスコレクション</td>
     <td>Layton<br>Mobile R</td><td>29/11/2011</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This was an online time-limited event which lasted between Tuesday 29 November 2011 and Monday 26 December 2011. During the event, players could obtain three Christmas Tickets per day. On the event page’s shop, the tickets could be exchanged for items to decorate the Christmas tree with, and “Decor Collection Tickets.” The Christmas trees of each player was displayed publicly on their online profile page. Christmas Tickets could also be directly purchased.<hr><a href=https://www.4gamer.net/games/144/G014424/20111130082/>4gamer</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/puzzle-maze-2.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/puzzle-maze-2.jpg></td>
     <td><i>Professor Layton and the Puzzle Maze<br>British festivals</i><hr>レイトン教授のナゾ迷路<br>イギリスの祭り</td>
     <td>Book</td><td>28/03/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This book is Japan-exclusive. It works similarly to the “Where’s Waldo?” books.<br>ISBN: 9784047279773<hr><a href=https://www.kadokawa.co.jp/product/201110000526/><img src=https://static.kadokawa.co.jp/common/img/favicon.ico> Kadokawa</a> <a href=https://layton.fandom.com/wiki/Professor_Layton%27s_Puzzle_Maze><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/manga_cheerful-4.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/manga_cheerful-4.jpg></td>
     <td><i>Professor Layton and the Cheerful Mystery<br>— Volume 4 —</i><hr>レイトン教授と<br>ユカイな事件 ⓸</td>
     <td>Manga</td><td>28/06/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This manga has been officially translated into German, Spanish, French and Italian.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Cheerful_Mystery><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a><hr>ISBN: 978-4-09-141350-5</td>
-</tr><tr>
-    <td><img src=ast/media_logo/science-book-1.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/science-book-1.jpg></td>
     <td><i>Professor Layton:<br>Curious! Why? Science Talk<br>— Volume 1 —</i><hr>レイトン教授とふしぎ！なぜ？科学の話⓵</td>
     <td>Book</td><td>20/07/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td>First Japan-exclusive Science Book out of 8.<br>ISBN-10: 4391141728<br>ISBN-13: 978-4391141726<hr><a href=https://www.amazon.co.jp/レイトン教授とふしぎ-なぜ-かがくの話-1年生-栄光ゼミナール/dp/4391141728><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/science-book-2.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/science-book-2.jpg></td>
     <td><i>Professor Layton:<br>Curious! Why? Science Talk<br>— Volume 2 —</i><hr>レイトン教授とふしぎ！なぜ？科学の話⓶</td>
     <td>Book</td><td>20/07/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td>Second Japan-exclusive Science Book out of 8.<br>ISBN-10: 4391141736<br>ISBN-13: 978-4391141733<hr><a href=https://www.amazon.co.jp/レイトン教授とふしぎ-なぜ-科学の話-2年生-栄光ゼミナール/dp/4391141736><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr>
     <td></td>
     <td><i>Nintendo Power — September 2012</i></td>
     <td>Magazine Issue</td><td class=cr>00/09/2012</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://archive.org/details/nintendo-power-issue-282-september-2012/page/2/mode/2up><img src=https://archive.org/images/glogo.jpg> archive.org</a></td>
     <td></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lbmr_ios.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lbmr_ios.png></td>
     <td><i>Layton Brothers: Mystery Room</i><hr>レイトンブラザーズ・ミステリールーム</td>
     <td>Mobile Phone</td><td>21/09/2012</td><td>70%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Download on iOS/Android<br>(First 3 cases are free)<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇺🇸</fl></a></td>
     <td><a href=https://layton.fandom.com/wiki/Layton_Brothers:_Mystery_Room><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/manga_inazuma.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/manga_inazuma.jpg></td>
     <td><i>Inazuma Eleven Birth Story</i><hr>イナズマイレブン<br>誕生物語</td>
     <td>Manga</td><td>31/10/2012</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a>Scan (Shinjinotikari17)</a></td>
@@ -468,8 +585,10 @@ summary{font-size:24px;color:rgb(var(--fore));font-weight:800}li{list-style:'★
 Tentōmusi CORO CORO COMICS SPECIAL	イナズマイレブン誕生物語®
 監修・協力　株式会社レベルファイブ　©LEVEL-5 Inc.	稲光伸二
      -->ISBN: 4091415385<hr><a href=https://www.amazon.fr/Inazuma-Eleven-ladybug-Comics-Special/dp/4091415385><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/seven-thieves.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/seven-thieves.jpg></td>
     <td><i>Professor Layton and the Seven Thieves of the Century</i><hr>レイトン教授と<br>世紀の七怪盗</td>
     <td>Mobile Phone</td><td>14/11/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
@@ -525,846 +644,591 @@ Tentōmusi CORO CORO COMICS SPECIAL	イナズマイレブン誕生物語®
     http://www.level5.co.jp/products/layton-7kaito/
     -->
     </td>
-</tr><tr>
-    <td><img src=ast/media_logo/ltvs.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ltvs.jpg></td>
     <td><i>Professor Layton vs. Phoenix Wright: Ace Attorney</i><hr>レイトン教授ＶＳ逆転裁判</td>
     <td>3DS Game</td><td>29/11/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇺🇸&#x2004;🇬🇧&#x2004;🇩🇪&#x2004;🇪🇦&#x2004;🇮🇹&#x2004;🇫🇷</fl></a></td>
     <td><a href=https://layton.fandom.com/wiki/Professor_Layton_vs._Phoenix_Wright:_Ace_Attorney><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/ltvs_ost_special.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ltvs_ost_special.jpg></td>
     <td><i>Professor Layton VS Gyakuten Saiban Original Soundtrack with Special Anime Film</i><hr>レイトン教授ＶＳ逆転裁判<br>特製アニメフィルム付き<br>オリジナル<br>サウンドトラック</td>
     <td>CD</td><td>29/11/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This was released as a promotional CD bundled with pre-ordered copies of Professor Layton vs. Phoenix Wright: Ace Attorney in Japan. It also included a celluloid film strip containing select animation cels.<hr><a href=https://aceattorney.fandom.com/wiki/Professor_Layton_VS_Gyakuten_Saiban_Original_Soundtrack_with_Special_Anime_Film><img src=https://static.wikia.nocookie.net/aceattorney/images/4/4a/Site-favicon.ico/revision/latest> Ace Attorney Wiki</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/science-book-3.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/science-book-3.jpg></td>
     <td><i>Professor Layton:<br>Curious! Why? Science Talk<br>— Volume 3 —</i><hr>レイトン教授とふしぎ！なぜ？科学の話⓷</td>
     <td>Book</td><td>21/12/2012</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td>Third Japan-exclusive Science Book out of 8.<br>ISBN-10: 4391141744<br>ISBN-13: 978-4391141740<hr><a href=https://www.amazon.co.jp/レイトン教授とふしぎ-なぜ-科学の話-3年生-栄光ゼミナール/dp/4391141744><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt5_mmplus.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt5_mmplus.png></td>
     <td><i>Professor Layton and the Miracle Mask Plus</i><hr>レイトン教授と<br>奇跡の仮面プラス</td>
     <td>3DS Game</td><td>06/02/2013</td><td>100%</td><td>100%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find a Rom online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Transcript</a></td>
     <td>Japan-exclusive, re-edition of Miracle Mask which adds features such as new cutscenes and puzzles, or the ability for Japan cartridges of Miracle Mask to hold three save files instead of one.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Miracle_Mask><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/ab_ltvs.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ab_ltvs.jpg></td>
     <td><i>Professor Layton vs. Phoenix Wright: Ace Attorney: Art Works</i><hr>レイトン教授ＶＳ逆転裁判<br>設定画集</td>
     <td>Art Book</td><td>14/02/2013</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/1hCs3mGLW1IQiOCo7e5GcF8KevL9elmP_><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (penguinstrain)</a></td>
     <td>ISBN: 978-4862333865<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_vs._Phoenix_Wright:_Ace_Attorney:_Art_Works><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/puzzle-maze-3.jpg></td>
-    <td><i>Professor Layton and the Puzzle Maze<br>British Heroes</i><hr>レイトン教授のナゾ迷路<br>イギリスの英雄</td>
-    <td>Book</td><td>15/02/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
-    <td>This book is Japan-exclusive. It works similarly to the “Where’s Waldo?” books.<blockquote><p><i>The third volume of the Puzzle Maze series is themed around historical figures such as Newton, who discovered the Law of Universal Gravitation, and Watt, who invented the steam engine, Darwin, who advocated the Theory of Evolution, and 12 other great men who are well-known not only in the UK but to everyone in the world. Characters from Professor Layton and the Azran Legacy also make an appearance.</i></p></blockquote>ISBN-10:4047287288<br>ISBN-13:978-4047287280<hr><a href=https://www.amazon.co.jp/レイトン教授のナゾ迷路-イギリスの英雄-ファミ通BOOKS-レベルファイブ/dp/4047287288><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://www.kadokawa.co.jp/product/201210000129/><img src=https://static.kadokawa.co.jp/common/img/favicon.ico> Kadokawa</a> <a href=https://layton.fandom.com/wiki/Professor_Layton%27s_Puzzle_Maze><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/science-book-4.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/science-book-4.jpg></td>
     <td><i>Professor Layton:<br>Curious! Why? Science Talk<br>— Volume 4 —</i><hr>レイトン教授とふしぎ！なぜ？科学の話⓸</td>
     <td>Book</td><td>15/02/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td>Fourth Japan-exclusive Science Book out of 8.<br>ISBN-10: 4391141752<br>ISBN-13: 978-4391141757<hr><a href=https://www.amazon.co.jp/レイトン教授とふしぎ-なぜ-科学の話-4年生-栄光ゼミナール/dp/4391141752><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/chottofunny.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/puzzle-maze-3.jpg></td>
+    <td><i>Professor Layton and the Puzzle Maze<br>British Heroes</i><hr>レイトン教授のナゾ迷路<br>イギリスの英雄</td>
+    <td>Book</td><td>15/02/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
+    <td>This book is Japan-exclusive. It works similarly to the “Where’s Waldo?” books.<blockquote><p><i>The third volume of the Puzzle Maze series is themed around historical figures such as Newton, who discovered the Law of Universal Gravitation, and Watt, who invented the steam engine, Darwin, who advocated the Theory of Evolution, and 12 other great men who are well-known not only in the UK but to everyone in the world. Characters from Professor Layton and the Azran Legacy also make an appearance.</i></p></blockquote>ISBN-10:4047287288<br>ISBN-13:978-4047287280<hr><a href=https://www.amazon.co.jp/レイトン教授のナゾ迷路-イギリスの英雄-ファミ通BOOKS-レベルファイブ/dp/4047287288><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://www.kadokawa.co.jp/product/201210000129/><img src=https://static.kadokawa.co.jp/common/img/favicon.ico> Kadokawa</a> <a href=https://layton.fandom.com/wiki/Professor_Layton%27s_Puzzle_Maze><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/chottofunny.jpg></td>
     <td><i>“Professor Layton and the Slightly Funny Puzzle” Videos</i><hr>れいとん教授と<br>ちょっと笑えるナゾ</td>
     <td>Video</td><td>20/02/2013</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://www.layton.jp/choubunmei/movie/index.html#waraerunazo>Official Website</a></td>
     <td></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt6_al.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt6_al.jpg></td>
     <td><i>Professor Layton and the Azran Legacy</i><hr>レイトン教授と<br>超文明Ａの遺産</td>
     <td>3DS Game</td><td>28/02/2013</td><td>100%</td><td>100%</td><td>5%</td><td>1%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇫🇷</fl></a> <a href=https://drive.google.com/drive/folders/1d2Y2Q6jPK8r_38xjhDF-kQ-sWG1oZZhW><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> “Secret Puzzle-Solving<br>Room” Screenshots<br>(brynnbird)</a></td>
     <td><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Azran_Legacy><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a> <a href=https://www.layton.jp/choubunmei/nazotokiroom/index.html>Layton.JP — Secret Room</a><hr>The Japanese version of the game contains a small game mode, the “Secret Puzzle-Solving Room” (ひみつのナゾトキルーム), which provies some dialogue and a few puzzles. The official website introduces this game mode.</td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt6_al_ab.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt6_al_ab.jpg></td>
     <td><i>Professor Layton and the Azran Legacy<br>Official Guidebook</i><hr>レイトン教授と<br>超文明Ａの遺産<br>公式ガイドブック</td>
     <td>Art Book</td><td>22/03/2013</td><td>100%</td><td>1%</td><td>1%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/1M6hn__QedEABwu_dM2tYfLmdOrQ8tdgs><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scan (Lutias Kokopelli)</a><hr><a href=https://lutiaslayton.tumblr.com/post/724727118367490048/><img src=https://assets.tumblr.com/pop/manifest/favicon-0e3d244a.ico> Transcript & Translation of Emmy’s Letter</a></td>
     <td>The book itself contains 128 pages, as well as Emmy’s Letter, an 8-page-long mini-booklet attached to the end which reveals Emmy’s whereabouts some undefined time after the events of Professor Layton and the Curious Village.<br>Lutias will finish cleaning up the scans someday.<hr>ISBN: 978-4198635930<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Azran_Legacy:_Official_Guide_Book><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/domtoren.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/domtoren.png></td>
     <td><i>Professor Layton and the Treasure of Domtoren<br>(Domtoren’s Hallows)</i><hr>レイトン教授と<br>ドムトールンの秘宝</td>
     <td>ARG</td><td>23/03/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://otajo.jp/11477/amp>Otajo</a> <a href=https://htbmattari.exblog.jp/17525831/>HTBmattari</a> <a href=https://blog.goo.ne.jp/hiyocomamegoo/e/df7e194bee710f55102791b165f9b351>blog.goo.ne</a> <a href=https://web.archive.org/web/20150111081603/http://www.huistenbosch.co.jp/htbblog/index_14.html><img src=https://archive.org/images/glogo.jpg> archive.org (1)</a> <a href=https://web.archive.org/web/20130801230450/http://www.huistenbosch.co.jp:80/event/layton/><img src=https://archive.org/images/glogo.jpg> archive.org (2)</a> <a href=https://twitter.com/lt_choubunmei/status/313571715491975168>Twitter</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/ltvs_ost.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ltvs_ost.jpg></td>
     <td><i>Professor Layton vs. Phoenix Wright: Ace Attorney<br>Magical Mystery Music</i><hr><span style=font-variant:small-caps>professor layton vs gyakuten saiban<br>magical mystery music</span></td>
     <td>CD</td><td>10/04/2013</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://archive.org/details/professor-layton-vs.-gyakuten-saiban-magical-mystery-music><img src=https://archive.org/images/glogo.jpg> Scan & Music<br>on archive.org</a></td>
     <td><a href=https://aceattorney.fandom.com/wiki/Professor_Layton_VS_Gyakuten_Saiban_Magical_Mystery_Music><img src=https://static.wikia.nocookie.net/aceattorney/images/4/4a/Site-favicon.ico/revision/latest> Ace Attorney Fandom Wiki</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/worldofpl.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/worldofpl.jpg></td>
     <td><i>The World of Professor Layton<br>~ Official Fanbook ~</i><hr>レイトン教授の世界<br>～公式ファンブック～</td>
     <td>Art Book</td><td>27/04/2013</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td><a href=https://www.reddit.com/r/ProfessorLayton/comments/10j6x2c/><img src=https://www.logo.wine/a/logo/Reddit/Reddit-Logomark-Color-Logo.wine.svg>Photos of the<br>English Version</a><a href=https://drive.google.com/drive/folders/1siDUibpaTIvbF2Blu6sRTItMQRWt_VmA><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> High Quality Photos of the<br>Japanese Version (neev)</a></td>
+    <td><a href=https://www.reddit.com/r/ProfessorLayton/comments/10j6x2c/><img src=https://www.logo.wine/a/logo/Reddit/Reddit-Logomark-Color-Logo.wine.svg>Photos of the<br>English Version</a><a href=https://drive.google.com/drive/folders/1siDUibpaTIvbF2Blu6sRTItMQRWt_VmA><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> High Quality Photos of the Japanese Version (neev)</a></td>
     <td>ISBN: 978-4-906752-02-7<hr><a href=https://layton.fandom.com/wiki/The_World_of_Professor_Layton><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/piano-selection.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/piano-selection.png></td>
     <td><i>Layton Series<br>Piano Best Selection</i><hr>レイトン教授シリーズ<br>ピアノ・ベスト・セレクション</td>
     <td>Music Sheet</td><td>15/06/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
-    <td>Contains music sheets for piano from all 6 games.<hr><a href=https://www.ebay.com/itm/285244068058>Ebay</a> <a href=https://www.animebooks.com/prlainpisobe.html>Anime Books</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/science-book-5.jpg></td>
+    <td>Contains music sheets for piano from all 6 games.<hr><a href=https://www.ebay.com/itm/285244068058>Ebay</a> <a href=https://www.animebooks.com/prlainpisobe.html>Anime Books</a> <a href=https://www.amazon.co.jp/ピアノソロ-「レイトン教授」シリーズ-ピアノ・ベスト・セレクション-株式会社レベルファイブ/dp/4636897579><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/science-book-5.jpg></td>
     <td><i>Professor Layton:<br>Curious! Why? Science Talk<br>— Volume 5 —</i><hr>レイトン教授とふしぎ！なぜ？科学の話⓹</td>
     <td>Book</td><td>05/07/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td>Fifth Japan-exclusive Science Book out of 8.<br>ISBN-10: 4391141760<br>ISBN-13: 978-4391141764<hr><a href=https://www.amazon.co.jp/栄光ゼミナール/dp/4391141760><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/science-book-6.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/science-book-6.jpg></td>
     <td><i>Professor Layton:<br>Curious! Why? Science Talk<br>— Volume 6 —</i><hr>レイトン教授とふしぎ！なぜ？科学の話⓺</td>
     <td>Book</td><td>05/07/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td><td></td>
     <td>Sixth Japan-exclusive Science Book out of 8.<br>ISBN-10: 4391141779<br>ISBN-13: 978-4391141771<hr><a href=https://www.amazon.co.jp/レイトン教授とふしぎ-なぜ-科学の話-6年生-栄光ゼミナール/dp/4391141779><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/chiisananazo.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/chiisananazo.jpg></td>
     <td><i>Professor Layton and the Small Mysteries<br>(Small Puzzles)</i><hr>レイトン教授と小さなナゾ</td>
     <td>Manga</td><td>26/07/2013</td><td>10%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN-10: 4091416861<br>ISBN-13: 978-4091416865<hr><a href=https://www.amazon.co.jp/レイトン教授と小さなナゾ-てんとう虫コミックススペシャル-せいの-奈々/dp/4091416861><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://books.rakuten.co.jp/rb/12342016/>Find on Rakuten</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/layton7.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/layton7.jpg></td>
     <td><i>Layton 7</i><hr>レイトンセブン</td>
     <td>Mobile Phone</td><td class=cr>99/99/2013</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This game was announced in 2013, but its development is most likely cancelled.<hr><a href=https://layton.fandom.com/wiki/Layton_7><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/onm106.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/onm106.jpg></td>
     <td><i>The Official Nintendo Magazine #106 — April 2014</i></td>
     <td>Magazine Issue</td><td class=cr>00/04/2014</td><td>100%</td><td>0%</td><td>100%</td><td>0%</td>
     <td><a href=https://drive.google.com/drive/folders/1kY60Ib-PhVdXmB5JqB0MUkZSLuNKPz7F><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Scans<br>(SpyroTF)</a></td>
     <td>“Move Over Sherlock! Final verdict on the smartest game on Nintendo 3DS Professor Layton Vs Phoenix Wright: Ace Attorney”<br>The scans for this issue are in English.</td>
-</tr><tr>
-    <td><img src=https://www.layton.jp/mystery-journey/laytonworld/img/uk/img_main.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=https://www.layton.jp/mystery-journey/laytonworld/img/uk/img_main.jpg></td>
     <td><i>Layton’s Mystery Journey&trade;: Real World Puzzling Solving Event</i></td>
     <td>ARG</td><td class=cr>00/00/2017</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://www.layton.jp/mystery-journey/laytonworld/uk.html>Official Web Page (UK)</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_3ds.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_3ds.jpg></td>
     <td><i>Layton’s Mystery Journey: Katrielle and the Millionaires’ Conspiracy</i><hr>レイトン<br>ミステリージャーニー<br>カトリーエイルと<br>大富豪の陰謀</td>
     <td>3DS Game</td><td>20/07/2017</td><td>0%</td><td>0%</td><td>100%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online</td>
     <td><a href=https://www.amazon.co.jp/レベルファイブ-レイトン-ミステリージャーニー-カトリーエイルと大富豪の陰謀-3DS/dp/B071XNC6VZ><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://layton.fandom.com/wiki/Layton%27s_Mystery_Journey:_Katrielle_and_the_Millionaires%27_Conspiracy><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_ios.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_ios.jpg></td>
     <td><i>Layton’s Mystery Journey: Katrielle and the Millionaires’ Conspiracy</i><hr>レイトン<br>ミステリージャーニー<br>カトリーエイルと<br>大富豪の陰謀</td>
     <td>Mobile Phone</td><td>20/07/2017</td><td>0%</td><td>0%</td><td>100%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online</td>
     <td><a href=https://apps.apple.com/jp/app/レイトン-ミステリージャーニー-カトリーエイルと大富豪の陰謀/id1242757451>Apple App Store</a> <a href=https://layton.fandom.com/wiki/Layton%27s_Mystery_Journey:_Katrielle_and_the_Millionaires%27_Conspiracy><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_anime.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_anime.jpg></td>
     <td><i>Layton<br>Mystery Detective Agency:<br>Kat’s Mystery-Solving Files</i><hr>レイトン<br>ミステリー探偵社<br>～カトリーの<br>ナゾトキファイル～</td>
     <td>Anime</td><td>08/04/2018</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://archive.org/details/professor-layton-pc-collection-full-games-movie-anime/layton/11+Layton+Mystery+Tanteisha-+Katri+no+Nazotoki+File+English+Subbed/1.mp4><img src=https://archive.org/images/glogo.jpg> 50 Episodes Playlist<br>(archive.org)<fl>🇯🇵</fl></a> <a href="https://www.youtube.com/playlist?list=PLbaBdkphnp-fnYoe8-mq5GVRDakNIk0rl"><img src=https://www.youtube.com/s/desktop/7197d3dc/img/favicon.ico> 50 Episodes Playlist<br>Fan-made VOSTFR<br>(Youtube)<fl>🇯🇵&#x2004;🇫🇷</fl></a></td>
     <td>Aired in Japan from April 8, 2018 to March 31, 2019. Was released as 4 Blu-Ray Boxes and 13 DVD Volumes.<hr><a href=https://www.layton-anime.jp/><img src=https://www.layton-anime.jp/wp-layton/wp-content/themes/layton-anime/favicon.ico> Official Website</a> <a href=https://layton.fandom.com/wiki/Layton_Mystery_Detective_Agency:_Kat%27s_Mystery-Solving_Files><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a><hr><details><summary>DVD Boxes:</summary><img src=ast/media_logo/lmj_anime_dvd.jpg style=width:100%><img src=ast/media_logo/lmj_anime_dvd_1.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_2.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_3.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_4.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_5.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_6.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_7.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_8.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_9.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_10.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_11.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_12.jpg style=width:19%><img src=ast/media_logo/lmj_anime_dvd_13.jpg style=width:19%><hr><a href=https://www.suruga-ya.jp/product/detail/728038314>Suruga-Ya (13 DVDs)</a> <a href=https://canime.jp/product/PCBP000054001/>CAnime DVD #1</a> <a href=https://www.amazon.co.jp/レイトン-ミステリー探偵社-カトリーのナゾトキファイル-DVD-Vol-2-日野晃博/dp/B07DJG5DLY><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon DVD #2</a> <a href=https://www.amazon.co.jp/レイトン-ミステリー探偵社-カトリーのナゾトキファイル-DVD-Vol-3-日野晃博/dp/B07DJG4G7H><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon DVD #3</a> <a href=https://canime.jp/product/PCBP000054004/>CAnime DVD #4</a> <a href=https://canime.jp/product/PCBP000054005/>CAnime DVD #5</a> <a href=https://canime.jp/product/PCBP000054006/>CAnime DVD #6</a> <a href=https://www.amazon.co.jp/レイトン-ミステリー探偵社-カトリーのナゾトキファイル-DVD-Vol-7/dp/B07HGZ8JTD><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon DVD #7</a> <a href=https://www.amazon.co.jp/レイトン-ミステリー探偵社-カトリーのナゾトキファイル-DVD-Vol-8/dp/B07JM123DX><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon DVD #8</a> <a href=https://www.amazon.co.jp/レイトン-ミステリー探偵社-カトリーのナゾトキファイル-DVD-Vol-9/dp/B07KPP7Y11><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon DVD #9</a> <a href=https://canime.jp/product/PCBP000054010/>CAnime DVD #10</a> <a href=https://canime.jp/product/PCBP000054011/>CAnime DVD #11</a> <a href=https://canime.jp/product/PCBP000054012/>CAnime DVD #12</a> <a href=https://canime.jp/product/PCBP000054013/>CAnime DVD #13</a></details><details><summary>Blu-Ray Boxes:</summary><img src=ast/media_logo/lmj_anime_blu-ray_1.jpg style=width:20%><img src=ast/media_logo/lmj_anime_blu-ray_2.jpg style=width:20%><img src=ast/media_logo/lmj_anime_blu-ray_3.jpg style=width:20%><img src=ast/media_logo/lmj_anime_blu-ray_4.jpg style=width:20%><a href=https://www.amazon.co.jp/レイトン-ミステリー探偵社-カトリーのナゾトキファイル-Blu-ray-BOX-1-日野晃博/dp/B07DJS3VMJ><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon: Blu-Ray Box 1</a> <a href="https://www.amazon.co.jp/-/en/Leighton-Mystery-Detective-Nazotoki-Blu-ray/dp/B07G3KYYSF/ref=sr_1_2?crid=AQYYBH3XP8LA&keywords=レイトン+ミステリー探偵社+~カトリーのナゾトキファイル~+Blu-ray+BOX+2&qid=1705337194&s=dvd&sprefix=レイトン+ミステリー探偵社+カトリーのナゾトキファイル+blu-ray+box+2%2Cdvd%2C187&sr=1-2"><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon: Blu-Ray Box 2</a> <a href="https://www.amazon.co.jp/-/en/花澤香菜/dp/B07KQ24NFN/ref=sr_1_2?crid=T77HSUA68Y0Y&keywords=レイトン+ミステリー探偵社+~カトリーのナゾトキファイル~+Blu-ray+BOX+3&qid=1705337069&s=dvd&sprefix=%2Cdvd%2C623&sr=1-2"><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon: Blu-Ray Box 3</a> <a href="https://www.amazon.co.jp/-/en/花澤香菜/dp/B07NFXH4CJ/ref=pd_sbs_d_sccl_1_2/358-1480509-0946419?pd_rd_w=hpscS&content-id=amzn1.sym.e146c92a-7981-4c58-8351-e2a023395915&pf_rd_p=e146c92a-7981-4c58-8351-e2a023395915&pf_rd_r=R3RARQSJ7ERKJF01TC5V&pd_rd_wg=z1N6B&pd_rd_r=604e29f3-255a-4e6c-b889-bcb4da14eec0&pd_rd_i=B07NFXH4CJ&psc=1"><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon: Blu-Ray Box 4</a></details></td>
-</tr><tr>
-    <td><img src=ast/media_logo/letterfromthedead.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/letterfromthedead.jpg></td>
     <td><i>Katrielle and the<br>Letter from the Dead</i><hr>カトリーエイルと<br>死者からの手紙</td>
     <td>ARG</td><td>08/06/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
-    <td><a href=https://plasticpolymerpotato.tumblr.com/post/175420871514/tokyo-mystery-circus-x-layton-crossover-there>Tumblr Post</a> <a href=https://app.famitsu.com/20180629_1316179/>Famitsu</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt1_CV_EXHD.png></td>
+    <td>A Japanese escape game.<hr><a href=https://plasticpolymerpotato.tumblr.com/post/175420871514/tokyo-mystery-circus-x-layton-crossover-there>Tumblr Post</a> <a href=https://app.famitsu.com/20180629_1316179/>Famitsu</a> <a href="https://twitter.com/asamint88/status/1751513944106401843?t=UBZj-lLKBNEsGsQUyaFJ9A&s=19">Some photos on Twitter</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt1_CV_EXHD.png></td>
     <td><i>Professor Layton and the Curious Village EX HD</i><hr>レイトン教授と<br>不思議な町ＥＸＨＤ<br>for スマートフォン</td>
     <td>Mobile Phone</td><td>08/06/2018</td><td>100%</td><td>100%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇬🇧&#x2004;🇩🇪&#x2004;🇪🇦&#x2004;🇮🇹&#x2004;🇫🇷</fl></a></td>
     <td><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Curious_Village><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_jp_novel_1.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_jp_novel_1.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Files<br>— Volume 1 —</i><hr>レイトン<br>ミステリー探偵社<br>カトリーの<br>ナゾトキファイル⓵<br>(Shogakukan Junior Bunko)</td>
     <td>Novel</td><td>29/06/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN: 9784092312418<hr><a href="https://shogakukan-comic.jp/book?isbn=9784092312418"><img src=https://shogakukan-comic.jp/wp-content/uploads/2016/07/cropped-512-1-1-32x32.png> Shogakukan</a> <a href=https://www.cdjapan.co.jp/product/NEOBK-2248408><img src=https://st.cdjapan.co.jp/assets/img/cdj_favicon.ico> CDJapan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/gamehouse.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/gamehouse.jpg></td>
     <td><i>Katrielle and the<br>Game House</i><hr>カトリーエイルと<br>ゲームの館</td>
     <td>ARG</td><td class=cr>29/06/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://www.takarush.jp/promo/sega_layton/>Takarush</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_jp_novel_2.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_jp_novel_2.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Files<br>— Volume 2 —</i><hr>レイトン<br>ミステリー探偵社<br>カトリーの<br>ナゾトキファイル⓶<br>(Shogakukan Junior Bunko)</td>
     <td>Novel</td><td>27/07/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN: 9784092312500<hr><a href="https://shogakukan-comic.jp/book?isbn=9784092312500"><img src=https://shogakukan-comic.jp/wp-content/uploads/2016/07/cropped-512-1-1-32x32.png> Shogakukan</a> <a href=https://www.cdjapan.co.jp/product/NEOBK-2258451><img src=https://st.cdjapan.co.jp/assets/img/cdj_favicon.ico> CDJapan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_01.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_01.jpg></td>
     <td><i>French Novel<br>— Volume 1 —</i><hr>Lady Layton – Tome 1 : Un mystérieux vol</td>
     <td>Novel</td><td>08/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>EAN13: 9782017040248<br><a href=https://www.fnac.com/a11539208/Lady-Layton-Tome-1-Lady-Layton-01-Un-mysterieux-vol-Level-5>FNAC</a> <a href=https://www.eyrolles.com/Litterature/Livre/lady-layton-01-un-mysterieux-vol-9782017040248/>Eyrolles</a> <a href=https://www.chasse-aux-livres.fr/prix/201704024X/lady-layton-01-un-mysterieux-vol>Chasse aux Livres</a> <a href=https://www.mollat.com/livres/2204019/elisabeth-barfety-l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-vol-1-un-mysterieux-vol>Mollat</a> <a href=https://www.cultura.com/p-lady-layton-t-1-un-mysterieux-vol-9782017040248.html>Cultura</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_puzzlesgames.jpg></td>
-    <td><i>French Puzzle Book<br>Lady Layton: Puzzles and Games</i><hr>Lady Layton : Énigmes et jeux</td>
-    <td>Puzzle Book</td><td>08/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td></td>
-    <td>ISBN-13: 9782017049999<hr><a href=https://www.fnac.com/a11831111/Lady-Layton-Enigmes-et-jeux-Collectif>FNAC</a> <a href=https://www.chasse-aux-livres.fr/prix/2017049999/l-aventure-layton-enigmes-et-jeux>Chasse aux Livres</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_udahero.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_udahero.jpg></td>
     <td><i>French Book<br>Layton’s Mystery Journey: Katrielle and the Millionaires’ Conspiracy: You’re the Hero</i><hr>L’aventure Layton : Katrielle et la conspiration des millionnaires : c’est toi le héros</td>
     <td>Book</td><td>08/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>32 pages.<br>ISBN-13: 9782017049982<hr><a href=https://www.chasse-aux-livres.fr/prix/2017049980/l-aventure-layton-c-est-toi-le-heros>Chasse aux Livres</a> <a href=https://www.fnac.com/a11539289/Lady-Layton-L-Aventure-Layton-C-est-toi-le-heros-Katrielle-et-la-conspiration-des-millionnaires-Collectif>FNAC</a> <a href=https://www.mollat.com/livres/2215351/l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-c-est-toi-le-heros>Mollat</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_switch_dx.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_puzzlesgames.jpg></td>
+    <td><i>French Puzzle Book<br>Lady Layton: Puzzles and Games</i><hr>Lady Layton : Énigmes et jeux</td>
+    <td>Puzzle Book</td><td>08/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td></td>
+    <td>ISBN-13: 9782017049999<hr><a href=https://www.fnac.com/a11831111/Lady-Layton-Enigmes-et-jeux-Collectif>FNAC</a> <a href=https://www.chasse-aux-livres.fr/prix/2017049999/l-aventure-layton-enigmes-et-jeux>Chasse aux Livres</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_switch_dx.jpg></td>
     <td><i>Layton’s Mystery Journey: Katrielle and the Millionaires’ Conspiracy DX<br>(Deluxe Edition)</i><hr>レイトン<br>ミステリージャーニー<br>カトリーエイルと大富豪の陰謀ＤＸ</td>
     <td>Switch Game</td><td>09/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://www.amazon.co.jp/レベルファイブ-レイトン-ミステリージャーニー-カトリーエイルと大富豪の陰謀DX-Switch/dp/B07D5FFXVQ><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/disappearedfiancee.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/disappearedfiancee.png></td>
     <td><i>Katrielle and the<br>Disappeared Fiancée</i><hr>カトリーエイルと<br>消えたフィアンセ</td>
     <td>ARG</td><td class=cr>09/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://www.takarush.jp/promo/katrielle/>Takarush</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_ciao-1.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_ciao-1.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Files<br>— Volume 1 —<br>(CIAO Comics)</i><hr>レイトンミステリー探偵社<br>カトリーのナゾトキ事件簿（１）</td>
     <td>Manga</td><td>17/08/2018</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://mega.nz/file/dqYAXCoa#rSzCG94dvn2dpoQDE9wLdEAXlEFis5A9W_46mHa0axE><img src=https://mega.nz/favicon.ico> Digital Scan<br>(Palas183)</a></td>
     <td><a href=https://bookwalker.jp/de5567429c-83a7-4017-a39c-ea0a471e0f5d/>Bookwalker</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_jp_novel_3.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_jp_novel_3.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Files<br>— Volume 3 —</i><hr>レイトン<br>ミステリー探偵社<br>カトリーの<br>ナゾトキファイル⓷<br>(Shogakukan Junior Bunko)</td>
     <td>Novel</td><td>24/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN: 9784092312586<hr><a href="https://shogakukan-comic.jp/book?isbn=9784092312586"><img src=https://shogakukan-comic.jp/wp-content/uploads/2016/07/cropped-512-1-1-32x32.png> Shogakukan</a> <a href=https://www.cdjapan.co.jp/product/NEOBK-2268711><img src=https://st.cdjapan.co.jp/assets/img/cdj_favicon.ico> CDJapan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_nazotoki-book.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_nazotoki-book.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Book (CIAO)</i><hr>レイトン<br>ミステリー探偵社<br>カトリーの<br>ナゾトキブック</td>
     <td>Puzzle Book</td><td class=cr>99/08/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN: 9784092898004<hr><a href=https://www.cdjapan.co.jp/product/NEOBK-2268713><img src=https://st.cdjapan.co.jp/assets/img/cdj_favicon.ico> CDJapan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_jp_novel_4.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_jp_novel_4.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Files<br>— Volume 4 —</i><hr>レイトン<br>ミステリー探偵社<br>カトリーの<br>ナゾトキファイル⓸<br>(Shogakukan Junior Bunko)</td>
     <td>Novel</td><td>28/09/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN: 9784092312630<hr><a href="https://shogakukan-comic.jp/book?isbn=9784092312630"><img src=https://shogakukan-comic.jp/wp-content/uploads/2016/07/cropped-512-1-1-32x32.png> Shogakukan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/undergroundlabyrinth.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/undergroundlabyrinth.jpg></td>
     <td><i>Katrielle and the<br>Treasure of the Dark Underground Labyrinth</i><hr>カトリーエイルと<br>暗黒地下迷宮の秘密</td>
     <td>ARG</td><td>30/09/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://ameblo.jp/zekkyobancho/entry-12641236870.html>Ameblo (1)</a> <a href=https://ameblo.jp/tomorrow-child/entry-12429719777.html>Ameblo (2)</a> <a href=https://www.unjyou.com/entry/2019/05/14/200000>Unjyou</a> <a href="https://www.e-hon.ne.jp/bec/SA/DetailMulti?refSdCode=040000000500000-227941&Rec_id=3004&Action_id=111&Sza_id=F2">e-hon.ne.jp</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_xxl.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_xxl.jpg></td>
     <td><i>French Book<br>Lady Layton: XXL Adventures<br>You’re the Hero!</i><hr>Lady Layton : Aventures sur mesure XXL<br>C’est toi le héros!</td>
     <td>Novel</td><td>03/10/2018</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td>
     <td>Acquired by Rucy</td>
     <td>Choose your own adventure novel. 144 pages.<br>ISBN-13:9782017071532<hr><a href=https://www.fnac.com/a12568978/Lady-Layton-Lady-Layton-Aventures-sur-mesure-XXL-Level-5>FNAC</a> <a href=https://www.chasse-aux-livres.fr/prix/2017071536/lady-layton-aventures-sur-mesure-xxl>Chasse aux Livres</a> <a href=https://www.mollat.com/livres/2268283/elisabeth-barfety-l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-c-est-toi-le-heros>Mollat</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_guide.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_guide.jpg></td>
     <td><i>French Book<br>Lady Layton: Official Guide</i><hr>Lady Layton : Guide officiel</td>
     <td>Book</td><td>24/10/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN-13: 9782017050315<hr><a href=https://www.fnac.com/a12420417/Lady-Layton-Guide-officiel-Collectif>FNAC</a> <a href=https://www.chasse-aux-livres.fr/prix/2017050318/l-aventure-layton-guide-officiel>Chasse aux Livres</a></td>
-</tr><tr>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr>
     <td></td>
     <td><i>Weekly Famitsu Nov 8, 2018 Issue / Level-5 20th anniversary KADOKAWA</i></td>
     <td>Magazine Issue</td><td>08/11/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_02.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_02.jpg></td>
     <td><i>French Novel<br>— Volume 2 —</i><hr>Lady Layton – Tome 2 : La légende de la Tamise</td>
     <td>Novel</td><td>28/11/2018</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://www.fnac.com/a12354699/Lady-Layton-Tome-2-Lady-Layton-02-La-legende-de-la-Tamise-Level-5>FNAC</a> <a href=https://www.mollat.com/livres/2251098/elisabeth-barfety-l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-vol-2-la-legende-de-la-tamise>Mollat</a> <a href="https://www.bullesetjeunesse.fr/?view=product&lang=en_US&product_id=1421">Bulles et Jeunesse</a> <a href=https://www.chasse-aux-livres.fr/prix/201706131X/lady-layton-02-la-legende-de-la-tamise>Chasse aux Livres</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt2_DB_EXHD.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt2_DB_EXHD.png></td>
     <td><i>Professor Layton and<br>the Diabolical Box 🇺🇸<br>Pandora’s Box 🇪🇺 EX HD</i><hr>レイトン教授と<br>悪魔の箱ＥＸＨＤ<br>for スマートフォン</td>
     <td>Mobile Phone</td><td>05/12/2018</td><td>100%</td><td>100%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇬🇧&#x2004;🇩🇪&#x2004;🇪🇦&#x2004;🇮🇹&#x2004;🇫🇷</fl></a></td>
     <td>This game has been officially translated into many languages, including English. It is known as either Diabolical Box (🇺🇸) or Pandora’s Box (🇪🇺). Additionally, the Japan-exclusive prologue London Holiday was also included in the Japanese version of this game.<hr><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Diabolical_Box><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_ciao-2.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_ciao-2.jpg></td>
     <td><i>Layton Mystery Detective Agency: Kat’s Mystery-Solving Files<br>— Volume 2 —<br>(CIAO Comics)</i><hr>レイトンミステリー探偵社<br>カトリーのナゾトキ事件簿（２）</td>
     <td>Manga</td><td>15/02/2019</td><td>100%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://mega.nz/file/dqYAXCoa#rSzCG94dvn2dpoQDE9wLdEAXlEFis5A9W_46mHa0axE><img src=https://mega.nz/favicon.ico> Digital Scan<br>(Palas183)</a></td>
     <td><a href=https://bookwalker.jp/de8b20d1ab-38c5-450e-95de-6cd7170057ac/>Bookwalker</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_03.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_03.jpg></td>
     <td><i>French Novel<br>— Volume 3 —</i><hr>Lady Layton – Tome 3 : Le manoir hanté</td>
     <td>Novel</td><td>13/03/2019</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
-    <td>ISBN-10: 201707182X<br>ISBN-13:978-2017071822<hr><a href=https://www.fnac.com/a13104319/Lady-Layton-Tome-3-Lady-Layton-03-Le-manoir-hante-Level-5>FNAC</a> <a href=https://www.amazon.fr/Lady-Layton-03-manoir-hant%C3%A9/dp/201707182X>Amazon</a> <a href=https://www.mollat.com/livres/2283621/elisabeth-barfety-l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-vol-3-le-manoir-hante>Mollat</a> <a href=https://www.chasse-aux-livres.fr/prix/201707182X/lady-layton-03-le-manoir-hante>Chasse aux Livres</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/unstoppablebomb.jpg></td>
+    <td>ISBN-10: 201707182X<br>ISBN-13:978-2017071822<hr><a href=https://www.fnac.com/a13104319/Lady-Layton-Tome-3-Lady-Layton-03-Le-manoir-hante-Level-5>FNAC</a> <a href=https://www.amazon.fr/Lady-Layton-03-manoir-hant%C3%A9/dp/201707182X><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a> <a href=https://www.mollat.com/livres/2283621/elisabeth-barfety-l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-vol-3-le-manoir-hante>Mollat</a> <a href=https://www.chasse-aux-livres.fr/prix/201707182X/lady-layton-03-le-manoir-hante>Chasse aux Livres</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/unstoppablebomb.jpg></td>
     <td><i>Katrielle and the<br>Unstoppable Bomb</i><hr>カトリーエイルと<br>止まらない爆弾</td>
     <td>ARG</td><td class=cr>00/04/2019</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://twitter.com/nazotomocafe/status/1122063016873406464>Twitter</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/mysteriousgift.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/mysteriousgift.jpg></td>
     <td><i>Katrielle and the<br>Mysterious Gift</i><hr>カトリーエイルと<br>不思議な贈り物</td>
     <td>ARG</td><td class=cr>00/04/2019</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://twitter.com/nazotomocafe/status/1122063016873406464>Twitter</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_fr_04.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_fr_04.jpg></td>
     <td><i>French Novel<br>— Volume 4 —</i><hr>Lady Layton – Tome 4 : Le casse du siècle</td>
     <td>Novel</td><td>12/06/2019</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://www.fnac.com/a13420452/Lady-Layton-Tome-4-Lady-Layton-04-Le-casse-du-siecle-Level-5>FNAC</a> <a href=https://www.mollat.com/livres/2318031/elisabeth-barfety-l-aventure-layton-katrielle-et-la-conspiration-des-millionnaires-vol-4-le-casse-du-siecle>Mollat</a> <a href=https://www.chasse-aux-livres.fr/prix/201709000X/lady-layton-04-le-casse-du-siecle>Chasse aux Livres</a></td>
-</tr><tr>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr>
     <td></td>
     <td><i>French Novel<br>— Volume 5 —</i><hr>Lady Layton – Tome 5 : ???</td>
     <td>Novel</td><td>09/10/2019</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>ISBN: 2017105074<br>EAN: 9782017105077<br>SKU: 4599293</td>
-</tr><tr>
-    <td><img src=ast/media_logo/secretbox.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/secretbox.jpg></td>
     <td><i>Katrielle and the<br>Secret Box</i><hr>カトリーエイルと<br>秘密の箱<br><br>レイトンミステリー探偵社カトリーのナゾトキファイル in <span style=font-variant:small-caps>nazo tomo cafe</span></td>
     <td>ARG</td><td class=cr>00/04/2020</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://wakachan228.com/1402>Wakachan</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt3_UF_EXHD.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt3_UF_EXHD.png></td>
     <td><i>Professor Layton and the<br>Unwound Future 🇺🇸<br>Lost Future 🇪🇺 EX HD</i><hr>レイトン教授と<br>最後の時間旅行ＥＸＨＤ<br>for スマートフォン</td>
     <td>Mobile Phone</td><td>13/07/2020</td><td>100%</td><td>100%</td><td>0%</td><td>0%</td>
     <td>Either buy the game<br>or find Roms online<hr><a href=https://drive.google.com/drive/folders/1o7P_i9Xpds3n8FVu0Qd-WMuIy107-zU0><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> 🚧 Transcripts<br>& Translations<fl>🇯🇵&#x2004;🇬🇧&#x2004;🇩🇪&#x2004;🇪🇦&#x2004;🇮🇹&#x2004;🇫🇷</fl></a></td>
     <td><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_Unwound_Future><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/moonlit_monster.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/moonlit_monster.jpg></td>
     <td><i>Katrielle and the<br>Moonlit Monster</i><hr>カトリーエイルと<br>月夜の怪物</td>
     <td>ARG</td><td>13/02/2021</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>A real life escape game on tour, taking place in various locations in Japan.<hr><a href=https://realdgame.jp/event/laytondanintour.html>realdgame (1)</a> <a href=https://realdgame.jp/layton_tour2020/>realdgame (2)</a> <a href=https://spice.eplus.jp/articles/274384>spice.eplus</a> <a href="https://scrapticket.jp/events/index?content_code=layton2021&shop_id=108">Scrapticket</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/promisedemerald.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/promisedemerald.jpg></td>
     <td><i>Katrielle and the<br>Promised Emerald</i><hr>カトリーエイルと<br>約束のエメラルド<br>Promised Emerald</td>
     <td>ARG</td><td class=cr>05/03/2021</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://prtimes.jp/main/html/rd/p/000000104.000034930.html>prtimes.jp</a> <a href=https://www.takarush.jp/promo/sega_layton2/>Takarush</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/chiisanatantei.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/chiisanatantei.png></td>
     <td><i>Professor Layton and the Little Detective</i><hr>レイトン教授と小さな探偵</td>
     <td>ARG</td><td>05/03/2021</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://huntersvillage.jp/quest/layton2><img src=https://huntersvillage.jp/wordpress/fabicon.png> Hunters Village</a> <a href=https://prtimes.jp/main/html/rd/p/000000104.000034930.html>prtimes.jp</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_switch_dx_plus.jpg></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_switch_dx_plus.jpg></td>
     <td><i>Layton’s Mystery Journey: Katrielle and the Millionaires’ Conspiracy DX+<br>(Deluxe Edition Plus)</i><hr>レイトン<br>ミステリージャーニー<br>カトリーエイルと大富豪の陰謀ＤＸ＋</td>
     <td>Switch Game</td><td>08/07/2021</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This Japan-exclusive re-release added bonuses and notably used voice-acting with the same voice actors as the anime (contrary to the previous releases of the game).<hr><a href=https://www.at-field-shop.jp/product/1117>at-field-shop.jp</a></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lbmr_manga.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lbmr_manga.png></td>
     <td><i>Layton Brothers: Mystery Room Perfect Crime Puzzle</i><hr>レイトンブラザーズ・<br>ミステリールーム<br>完全犯罪のパズル</td>
-    <td>Manga</td><td>18/12/2021</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td>
-    <td><a href=https://manga-5.com/content/00610001><img src=https://cdn.manga-5.com/contents/img/favicon.ico> Read on Manga-5<br>(Official Website)</a></td>
-    <td>The manga is still ongoing; it has so far been released as three digital volumes. The release dates are the following:<ul><li>Volume 1: 24/08/2022</li><li>Volume 2: 15/02/2023</li><li>Volume 3: 19/01/2024</li></ul></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lmj_ost.jpg></td>
+    <td>Manga</td><td>18/12/2021</td><td>100%</td><td>0%</td><td>100%</td><td>0%</td>
+    <td><a href=https://manga-5.com/content/00610001><img src=https://cdn.manga-5.com/contents/img/favicon.ico> Read on Manga-5<br>(Official Website)</a> <a href=https://discord.gg/ha3wH7SQUG><img src=https://www.svgrepo.com/show/331368/discord-v2.svg> Follow the Ongoing<br>English Fan-Translation’s<br>Progress on Discord</a></td>
+    <td>This manga can be read on the official Japanese website provided here in its original version. Even if you don’t speak Japanese, we kindly request that you still go visit it and give each chapter a thumbs up! Since the series is still ongoing, it is important to show Level-5 our interest so we can get more.<hr>So far, the manga has been released as three digital volumes. The release dates are the following:<ul><li>Volume 1: 24/08/2022</li><li>Volume 2: 15/02/2023</li><li>Volume 3: 19/01/2024</li></ul><a href=https://www.amazon.co.jp/-/en/dp/B0B8Z9QGG9><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px>&ensp;Buy the bundle for all 3 volumes on Amazon</a></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lmj_ost.jpg></td>
     <td><i>Layton’s Mystery Journey: Katrielle and the Millionaires’ Conspiracy</i><hr>レイトン ミステリージャーニー カトリーエイルと大富豪の陰謀（オリジナル・サウンドトラック）</td>
     <td>CD</td><td>20/04/2022</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td><a href=https://open.spotify.com/album/3Dfee6etXLP2MpIL1kPCbR><img src=https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg> Spotify Playlist</a></td>
     <td></td>
-</tr><tr>
-    <td><img src=ast/media_logo/lt7_nwos.png></td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @  20% @ -->
+<tr><td><img src=https://64.media.tumblr.com/48f6d9d920c9798a944a6c0520d1a253/2232910970e4eabd-43/s1280x1920/18faf00ef1e1083e351a8b8d7fed07a582bef611.jpg></td>
+    <td>LEVEL5 GO TO THE FUTURE 25TH ANNIVERSARY</td>
+    <td>Art Book</td><td>21/09/2023</td><td>20%</td><td>0%</td><td>0%</td><td>0%</td>
+    <td><a href=https://lutiaslayton.tumblr.com/post/731551141936218112><img src=https://assets.tumblr.com/pop/manifest/favicon-0e3d244a.ico> Scans of the Layton-related pages (Descalled)</a></td>
+    <td>Booklet from TGS 2023 for Level-5’s 25th anniversary.</td>
+</tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lt7_nwos.png></td>
     <td><i>Professor Layton and the New World of Steam</i><hr>レイトン教授と<br>蒸気の新世界</td>
     <td>Switch Game</td><td class=cr>99/99/2025</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://layton.fandom.com/wiki/Professor_Layton_and_the_New_World_of_Steam><img src=https://static.wikia.nocookie.net/layton/images/4/4a/Site-favicon.ico> Fandom Wiki Page</a></td>
 </tr>
+<!-- @EFOLD -->
 
 
-<tr>
-    <td><img src=ast/media_logo/laytonmobileR.jpg></td>
+
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/laytonmobileR.jpg></td>
     <td><i>Professor Layton Mobile R</i><hr>レイトン教授モバイルＲ</td>
     <td>Layton<br>Mobile R</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This online mobile service worked on a monthly subscription system and was closed on 2014. It was required in order to access application games such as <i>Professor Layton and the Mansion of the Deathly Mirror</i> or <i>Inspector Chelmey’s Casebook</i>.<hr><a href=https://www.inside-games.jp/article/2011/05/18/49088.html>Announcement for half-price Packs<br>(Inside-Games)</a></td>
 </tr>
-<tr>
-    <td><img src=ast/media_logo/dcm_lukenazobook.jpg></td>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_lukenazobook.jpg></td>
     <td><i>Young Boy Luke’s<br>Puzzle Book</i><hr>ルーク少年のナゾブック</td>
     <td>Layton<br>Mobile R</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This application was presumably centred only on solving puzzles and did not contain any kind of story. It seems to have contained a leaderboard.<hr><a href=https://ameblo.jp/amaebi491224/entry-10237403034.html>Ameblo</a></td>
 </tr>
-<tr>
-    <td><img src=ast/media_logo/dcm_lukenazobook2.jpg></td>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_lukenazobook2.jpg></td>
     <td><i>Young Boy Luke’s<br>Puzzle Book 2</i><hr>ルーク少年のナゾブック２</td>
     <td>Layton<br>Mobile R</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This application was presumably centred only on solving puzzles and did not contain any kind of story. It seems to have contained a leaderboard.<hr><a href=https://dengekionline.com/elem/000/000/185/185811/>Dangeki Online</a></td>
 </tr>
+<!-- @EFOLD -->
 
-<tr>
-    <td><img src=ast/media_logo/dcm_summercampaign.jpg></td>
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_summercampaign.jpg></td>
     <td><i>Professor Layton Mobile<br>Summer Campaign</i><hr>レイトン教授モバイル<br>サマーキャンペーン</td>
     <td>Layton<br>Mobile R</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This seems to have been an online time-limited event.</td>
 </tr>
-<tr>
-    <td><img src=ast/media_logo/dcm_pocky.jpg></td>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/dcm_pocky.jpg></td>
     <td><i>Professor Layton and the<br>Mystery of Pocky</i><hr>レイトン教授と<br>ポッキーの謎</td>
     <td>Layton<br>Mobile R</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td>This application was a time-limited collaboration with Pocky.<hr><a href=https://game.watch.impress.co.jp/docs/news/484060.html>Blog post about Level5 Vision 2011</a></td>
 </tr>
+<!-- @EFOLD -->
 
 
 
 
 
 
-<tr>
-    <td><img src=ast/media_logo/ed_boardgame.jpg></td>
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/ed_boardgame.jpg></td>
     <td><i>Professor Layton and the<br>Eternal Diva<br>— Board Game —</i><hr>ボードゲーム レイトン教授と永遠の歌姫</td>
     <td>Board Game</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td><a href=https://jp.mercari.com/item/m68031535126>Mercari</a> <a href="https://www.amazon.co.jp/dp/B002H9W992?ref_=cm_sw_r_apan_dp_0XQVBE9R9R0KSDQJ38R3"><img src=https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg style=background:white;padding:2px;border-radius:3px> Amazon</a></td>
 </tr>
+<!-- @EFOLD -->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<tr>
+<!-- @SFOLD @   0% @ -->
+<tr><td><img src=ast/media_logo/lv5_premium_diamond.jpg></td>
+    <td><i>Level-5 Premium Diamond</i><hr>レベルファイブ プレミアム ダイアモンド</td>
+    <td>DVD</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
+    <td></td>
+</tr>
+<!-- @EFOLD -->
+
+<!-- @SFOLD @   0% @ Magazine @ Nintendo Power — January 2011 — 2010 game rewards and nominations -->
+<tr><td></td>
     <td><i>Nintendo Power — January 2011 — 2010 game rewards and nominations</i></td>
     <td>Magazine Issue</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
 </tr>
-<tr>
-    <td></td>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ Magazine @ Game informer — Dec 2010 (?) -->
+<tr><td></td>
     <td><i>Game informer — Dec 2010 (?)</i></td>
     <td>Magazine Issue</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
 </tr>
-<tr>
-    <td></td>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ Magazine @ Game informer — PL vs PW -->
+<tr><td></td>
     <td><i>Game informer — PL vs PW</i></td>
     <td>Magazine Issue</td><td class=cr>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
 </tr>
+<!-- @EFOLD -->
 
 
 
-<!--
-<tr>
-    <td><img src=ast/media_logo/></td>
+<!-- @SFOLD @ XXX% @ TEMPLATE -->
+<!--<tr><td><img src=ast/media_logo/></td>
     <td><i></i><hr></td>
     <td>TYPE</td><td>99/99/2099</td><td>0%</td><td>0%</td><td>0%</td><td>0%</td>
     <td></td>
     <td></td>
-</tr>
--->
-
-
-
-
-
-
-
-<!--
-
-lv5_premium_platinum.jpg
-レベルファイプ プレミアム プラチナ
-Tokyo Game Show 2009
-https://gigazine.net/news/20090924_level5_hukubukuro_tgs2009/
-Before 2009年09月24
-Platinum contains:
-    Inazuma Eleven 2 (Demo)
-    Profesor Layton y la Llamada del Espectro (Demo)
-    Ni no Kuni
-
-diamond.jpg
-レベルファイブ プレミアム ダイアモンド
-
-
-
-|レイトン教授の算数スキル３年上<br>Professor Layton’s maths skills 3 years up.|(A math book)
-|-|-|
-|<h4>Notebooks</h4><ul><li>Eternal Diva Notebook</li><li>Azran Legacy ("PL and the Treasure of<br>Domtoren" event at PL Café in Huis Ten Bosch, Japan</li><li>Layton Mystery Journey DX</li><li>Katrielle Anime (Fuji TV)</li><li>Layton Mystery Tanteisha Ministop (x4)</li>|<img src="https://static.wikia.nocookie.net/layton/images/7/71/Layton_ewige_Diva_Notizbuch.png/revision/latest?cb=20190925150502&path-prefix=de" style=height:100px> <img src="https://static.wikia.nocookie.net/layton/images/3/36/Layton_Kyouju_to_Chou-Bunmei_A_no_Isan_-_Notebook_%28Movic%29.jpg/revision/latest?cb=20180722100128&path-prefix=de" style=height:100px> <img src="https://static.wikia.nocookie.net/layton/images/7/7e/Laytons_Mystery_Journey_DX_Notebook.jpg/revision/latest?cb=20190111205208&path-prefix=de" style=height:100px> <img src="https://static.wikia.nocookie.net/layton/images/8/8f/Katrielles_Notizbuch_Fuji_Tv.jpg/revision/latest?cb=20180626201657&path-prefix=de" style=height:100px> <img src="https://static.wikia.nocookie.net/layton/images/a/a1/Layton_Ministop_Notizb%C3%BCcher.jpg/revision/latest?cb=20180705165857&path-prefix=de" style=height:100px>|
-
-
-
-
-
-UNAVAILABLE FOR NOW:
-
-    - Small Mystery: https://www.reddit.com/r/ProfessorLayton/comments/qw4w55/professor_layton_and_the_smallest_mystery_chapter/?utm_medium=android_app&utm_source=share
-
-    - Eternal Diva: Movie Comic Nazo? Volume 1-2 (first & second half of the Eternal Diva movie as comic with pictures from the movie)
-    - Eternal Diva: Manga (https://layton.fandom.com/de/wiki/Professor_Layton_und_die_ewige_Diva_(Manga))
-
-    - Eternal Diva: Memorial Guide Artbook
-
-    - https://layton-fandom-com.translate.goog/de/wiki/Layton_Ky%C5%8Dju_Luke_to_Mori_no_Tomodachi?_x_tr_sl=de&_x_tr_tl=en&_x_tr_hl=fr&_x_tr_pto=wapp
-
-
-
-
-
-
-
-
-
-
-
-Small Mystery/Smallest Mystery:
-
-Image 1/20 & 2/20:
-レイトン教授と小さなナゾ (Professor Layton and the Small Puzzles)
-せいの奈々 (???)
-
-Image 3/20, Right Page (Index):　小さなナゾ１、２、３、４、５　＆　おまけナゾ (Little Puzzles 1-5 & Bonus Puzzle)
-Image 3/20, Left Page:　小さなナゾ１：花嫁争奪レース
-
-Image 4/20 (Pages 6-7):
-　ロンドン = London
-Luke:　レイトン先生……。もっと速くならないんですかぁ？
-
-Image 5/20 (Page 8):
-Layton:　うーん…。４０キロが限界だね。
-Luke:　４０キロ⁉先生は大学の教授なんですから、もっと速くていい車に乗ったほうがいいですよ！
-Layton:　わたしは気に入っているけどね、ルーク。
-Luke:　…あれっ、先生。
-
-Image 6/20 (Page 9):
-Luke:　ずいぷんじゅうたいしてますね。工事でもしてるんでしょうか…。
-
-Image 7/20 (Page 10):
-Layton:　フム。まあ、しかたない。　　　いかがかな？
-Luke:　先生はぜんぜん(急?)いで[unreadable]　　　[???]って研究室の片づけとかあるんてしょ？
-Layton:　うん。でも、いまは紅茶を[???]しもうじゃないか。
-Image 7/20 (Page 11):
-　５分後
-　１０分後
-Luke:　ちっとも進みませにょ。
-Layton:　…それも困るね。ちょっと見てくれ、ルーク。
-Luke:　はい。　　　あっ…。
-
-Image 8/20 (Page 12):
-Luke:　先頭は２台の白いリムジンです。　　　結婚式…？
-Layton:　２台もいるとは珍しいね。
-Luke:　でも、なんで進まないんでしょう…？
-
-Image 9/20 (Page 13):
-Layton:　どれ。
-Luke:　あ、先生？
-Guy 1:　おまえが行け‼
-Guy 2:　いや、おまえが先に行け‼
-(Angry mob behind says stuff like "コラ", "なにしてんだ", "はやくいけ", "ジャムだ")
-
-Image 10/20 (Page 14):
-Layton:　あの…、失礼。　　　後ろの方たちも困っているようですし…、よければ事情を聞かせてもらえませんか？
-Guy 1:　…なんだ、あんた？
-Luke:　あんたじゃない！レイトン先生は大学の教授でナゾトキの…！
-Layton:　いや、わたしも通行人の一人でして。　　　なにかお困りでしたらお手伝いしますよ。
-
-Image 11/20 (Page 15):
-Layton:　なるほど、１人の結婚相手をめぐって競争中とは…。
-Guy 1:　そうとも！おれが勝てば彼女と結婚できるのさ‼
-Guy 2:　いや、おれだ‼
-Luke:　競争中ならなんでこんなところで止まってるんですか？早く走ればいいのに。
-Guy 2:　ふつうのレースだったらな…、ボウズ。
-Luke:　ボウズ…（ぼくは先生の一番弟子…！）
-Guy 2:　それもこれも、かのじょの父親が出したイジワルな条件で…。
-Father:　しつこいのう…！娘を賭けてレースなど許さん‼
-
-Image 12/20 (Pages 16-17):
-Father:　どこのだれかもわからん若造どもめ‼
-Guy 1:　お父さん！おれたちはレーサーだ、かせぎもある。
-Guy 2:　そうだ！このじょだってこのレース[??????]してくれてい[unreadable]　　　お父さんお父さん言うな！[unreadable]
-Father:　どうしても引き下がらんつもりだな…。　　　よかろう。　　　レースは認める。
-Guy 1:　本当ですか‼
-Father:　ただし、　　　ロンドン[???]からこの屋敷まで、おそくついたほうの車の勝ちとする‼　名づけて「ノロノロ競争」だ‼
-Guy 2:　…？　ノロノロ競争…⁉
-Father:　この条件がのめなければ娘はすっぱりあきらめろ‼
-Luke:　相手よりもおそく…、ですか。　だからなかなか進めないんですね…。
-
-Image 13/20 (Page 18):
-Guy 1:　…急にあっさり「認める」なんて変だと思ったんだ。　おれたちだまされたのかな…？
-Guy 2:　こんなにおそいおうい[unreadable]
-Layton:　そのお父さん、よほどかれらをゴールさせたくないんだね。
-Luke:　でも(そのおずぜて???)[unreadable]
-Luke:　いつこうに決着のつかない「ノロノロ競争」…。早く決着をつけて道を通れるように
-Luke:　むずかしいナゾトキです…！
-
-Image 13/20 (Page 19):
-　ないのか…⁉　[unreadable]がおくれちまう。
-　うちは子どもが[滅?]て[??????]に行かなくちゃいけないのよー‼
-Luke:　[???]えてるばあいじゃなかった…！
-Layton:　どこに行くんだい？
-Luke:　そのイジワルなお父さんに抗議しに行きましょう！　こんなむちゃくちゃなレース、早くやめさせるんです…‼
-Guys 1 & 2:　それはダメだ‼
-Guy 1:　おれたちはもう約束してるんだ…！　レースを[kanji unknown, pronounced リタイア]したらかのじょをあきらめることになる。
-
-Image 14/20 (Pages 20-21):
-(The top of the page is cropped and unreadable)
-Luke:　くやしいけど、これでは解決できません…。
-Layton:　事件を聞いたからには、必ず解決してあげるものさ。　英国紳士と[unreadable]。　　　見ててごらん。　　　さがって。
-
-Image 15/20 (Pages 22-23):
-Layton:　さあ、みなさん、じゅうたいは解消されましたよ。　どうぞ進んでくださーい！
-
-Image 16/20 (Page 24):
-Luke: [unreadable]　　　先生…、いったいあの２人になんて…？
-Layton:　うん、ちょっとアドバイスをね。　　　おそくついた車の勝ち…。　だから相手より[unreadable]
-
-Image 16/20 (Page 25):
-Layton:　わたしの答えは、「たがいの車を交換して走りなさい」。
-Luke:　交換…？
-Layton:　そひたらあとは、どうすればいいか…、わかるかい？ルーク。
-Luke:　相手の車に乗るんだから…、相手の車を早くゴールさせればいい…？
-Layton:　そう。ふつうのスピードレースに早変わりさ。
-
-Image 17/20 (Pages 26-27):
-Guy 1/2:　レースはやっぱりこうだぜ‼　さあ、どっちが勝ってもうらみつこナゾだぞ‼ (really unsure, it's far too blurry. The third bubble is unreadable.)
-Guy 1/2:　あの紳士に感謝しなくちゃな‼
-Luke:　先生‼　すごいです‼　きっとそのお父さんもビックリしますよ‼
-Layton:　そうかもしれないね。　しかし…、道を通るためとはいえ、ちょっと、悪いことをしたね…。
-Luke:　どうして…？[unreadable]
-Layton:　フフッ。　ルークも大人になればね。
-Luke: [unreadable]
-Layton:　[???]ちゃんのときからいっしょに暮らしてきた娘を、嫁に出すということは、きっと…。
-Father:　…あいつら、ナゾを解いて来やがった…！
-
-Image 18/20 (Page 28):
-Bride:　…ソバッテ…
-Father:　いつかは、この日が来ると思っておった。　おまえは、本当にこれで、満足か…？
-Bride:　…わたしを心から好いてくださる方でしたら、[there is probably another bubble that is hidden]
-
-Image 19/20 (Page 29):
-　ガンバッテ――――‼
-　…さあっ、来い‼　どっちだ‼　手を抜いたら許さんぞ、バカヤロ――――‼
-Luke:　先生……。　バンクですかぁ。
-　やはりタイヤくらいは新品にしておくか…。
-
-Image 20/20 (Page 30):
-レイトン教授とちいさな謎    Professor Layton and the Small Mystery (this time it's written "mystery" instead of "puzzle")
-
-
-
-
-
-
-
-
-There is at least one colored page for which you did not show a photo. Just how big is the physical book you have? Is it really only 20 pages long, or is there more to it and you simply didn't give photos of it because it isn't related to the story itself? The last page says "Page 30," so there is more that you didn't take photos for \^\^' (probably because you didn't think they were worth sharing)
-
-Those questions are just out of personal curiosity, nothing more. I am thankful that the dialogue seems to have a lot of furigana — I personally don't speak Japanese, but I can read at least that much so it would make its transcript + translation much easier for me (alongside my trusty tools, Japanese dictionary and DeepL). I don't have the time to work on it right now, but this seems like it might be feasible for me at some point to give a complete translation! It'll all depend on how well I can read lol, I hope the text won't be too blurry.
-
-[EDIT] Looking again at photo 3 and the colored page you didn't show, it seems to be an index that mentions five puzzles in total, + a "bonus puzzle" (おまけナゾ). Are the five others in the same book and you only showed us the first one?
-
-[EDIT-2] Ok I actually tried my best to give a transcript, and boy I didn't realise that I would encounter so many moments in which the text is blatantly unreadable due to being too close to the binding. It's far from perfect, but I did what I could:
-
-———
-
-**Image 1/20 & 2/20:**
-レイトン教授と小さなナゾ (Professor Layton and the Small Puzzles)
-せいの奈々 (???)
-
-**Image 3/20, Right Page (Index):**　小さなナゾ１、２、３、４、５　＆　おまけナゾ (Little Puzzles 1-5 & Bonus Puzzle)
-**Image 3/20, Left Page:**　小さなナゾ１：花嫁争奪レース (Small Puzzle 1: Race to win a Bride)
-
-**Image 4/20 (Pages 6-7):**
-　ロンドン = London
-Luke:　レイトン先生……。もっと速くならないんですかぁ？ (Professor Layton... Can't we go faster?)
-
-**Image 5/20 (Page 8):**
-Layton:　うーん…。４０キロが限界だね。 (Hmm... 40 kilometers is the limit.)
-Luke:　４０キロ⁉先生は大学の教授なんですから、もっと速くていい車に乗ったほうがいいですよ！ (40 kilometers⁉ You are a university professor, you should drive a faster and better car!)
-Layton:　わたしは気に入っているけどね、ルーク。 (I like it, Luke.)
-Luke:　…あれっ、先生。 (...Oh, Professor.)
-
-**Image 6/20 (Page 9):**
-Luke:　ずいぷんじゅうたいしてますね。工事でもしてるんでしょうか…。 (It looks like a lot of work is being done. I wonder if they are doing construction...)
-
-**Image 7/20 (Page 10):**
-Layton:　フム。まあ、しかたない。　　　いかがかな？ (Hm. Well, we can't help it.　　　What do you think?)
-*(No translation for what's below until I get the full text, sorry :'))*
-Luke:　先生はぜんぜん(急?)いで[unreadable]　　　[???]って研究室の片づけとかあるんてしょ？
-Layton:　うん。でも、いまは紅茶を[???]しもうじゃないか。
-
-**Image 7/20 (Page 11):**
-　５分後 (After 5 minutes)
-　１０分後 (After 10 minutes)
-Luke:　ちっとも進みませにょ。 (We're not making any progress at all.)
-Layton:　…それも困るね。ちょっと見てくれ、ルーク。 (...I don't want that either. Please take a look, Luke.)
-Luke:　はい。　　　あっ…。 (Yes.    Uh...)
-
-**Image 8/20 (Page 12):**
-Luke:　先頭は２台の白いリムジンです。　　　結婚式…？ (Leading the way are two white limousines.　　　A wedding...?)
-Layton:　２台もいるとは珍しいね。 (It's unusual to see two at the same time.)
-Luke:　でも、なんで進まないんでしょう…？ (But why can't they move forward...?)
-
-**Image 9/20 (Page 13):**
-Layton:　どれ。
-Luke:　あ、先生？
-Guy 1:　おまえが行け‼ (You go!!)
-Guy 2:　いや、おまえが先に行け‼ (No, you go first!)
-(Angry mob behind says stuff like "コラ", "なにしてんだ", "はやくいけ", "ジャムだ", meaning "Hey you!", "What are you doing?", "Hurry up and go", etc)
-
-**Image 10/20 (Page 14):**
-Layton:　あの…、失礼。　　　後ろの方たちも困っているようですし…、よければ事情を聞かせてもらえませんか？ (Um... Excuse me.  The people in the back seem to be in trouble... If you don't mind, can you tell us what's going on?)
-Guy 1:　…なんだ、あんた？ (What is it, man?)
-Luke:　あんたじゃない！レイトン先生は大学の教授でナゾトキの…！ (Why, you! Professor Layton is a puzzle-solving university professor...!)
-Layton:　いや、わたしも通行人の一人でして。　　　なにかお困りでしたらお手伝いしますよ。 (No, I'm just a passerby.　　　If you need any help, I'm here to assist.)
-
-**Image 11/20 (Page 15):**
-Layton:　なるほど、１人の結婚相手をめぐって競争中とは…。 (I see, you are in competition for one marriage partner...)
-Guy 1:　そうとも！おれが勝てば彼女と結婚できるのさ‼ (Yes, that's right! If I win, I get to marry her.)
-Guy 2:　いや、おれだ‼ (No, it's me!)
-Luke:　競争中ならなんでこんなところで止まってるんですか？早く走ればいいのに。 (If you are in a race, why are you stopping here? Why don't you just run faster?)
-Guy 2:　ふつうのレースだったらな…、ボウズ。 ([We'd do that] if it were a normal race... Boy.)
-Luke:　ボウズ…（ぼくは先生の一番弟子…！） (Boy... (I'm the professor's apprentice number one!))
-Guy 2:　それもこれも、かのじょの父親が出したイジワルな条件で…。 (This was all done under the teasing conditions set forth by our sweetheart's father...)
-Father:　しつこいのう…！娘を賭けてレースなど許さん‼ (You are persistent...! I will not allow you to race against my daughter!)
-
-**Image 12/20 (Pages 16-17):**
-Father:　どこのだれかもわからん若造どもめ‼ (I don't even know who these young men are!)
-Guy 1:　お父さん！おれたちはレーサーだ、かせぎもある。 (Sir! We're racers, we earn money.)
-Guy 2:　そうだ！このじょだってこのレース[??????]してくれてい[unreadable]　　　お父さんお父さん言うな！[unreadable] *(No translation until I get the full text, sorry)*
-Father:　どうしても引き下がらんつもりだな…。　　　よかろう。　　　レースは認める。 (You're not going to back down by any means....　　　Very well.　　　I approve of the race.)
-Guy 1:　本当ですか‼ (Really!!)
-Father:　ただし、　　　ロンドン[???]からこの屋敷まで、おそくついたほうの車の勝ちとする‼　名づけて「ノロノロ競争」だ‼ (However, the car that gets from London[?????] to this mansion the quickest won't win. The car that arrives last from London [???] to this mansion wins.)
-Guy 2:　…？　ノロノロ競争…⁉ (A slow race...!?)
-Father:　この条件がのめなければ娘はすっぱりあきらめろ‼ (If you don't accept these conditions, give up on my daughter once and for all!)
-Luke:　相手よりもおそく…、ですか。　だからなかなか進めないんですね…。 (You have to be the last to arrive... So it's hard to make any progress...)
-
-**Image 13/20 (Page 18):**
-Guy 1:　…急にあっさり「認める」なんて変だと思ったんだ。　おれたちだまされたのかな…？ (I thought it was strange that he would suddenly and easily "admit" to it.　Were we deceived...?)
-Guy 2:　こんなにおそいおうい[unreadable]
-Layton:　そのお父さん、よほどかれらをゴールさせたくないんだね。 (That father must not want them to reach the finish line.)
-Luke:　でも(そのおずぜて???)[unreadable]
-Luke:　いつこうに決着のつかない「ノロノロ競争」…。早く決着をつけて道を通れるように[unreadable] (The "slow race" that can't be settled anytime soon... I can't wait to settle this so we can get through [...])
-Luke:　むずかしいナゾトキです…！ (It's a difficult puzzle...!)
-
-
-...... I am not joking, DeepL froze on me and refuses to work now. I'll give the rest of the transcription without translation, sorry T-T
-If it can be any consolation, I know this puzzle and I know its solution: so what Layton told the two guys was basically "The father's conditions that it's your *car* that must arrive last. So just trade cars and the one who arrives first wins." (because the one who arrives first will make the other guy's car arrive first, therefore make him lose)
-
-
-**Image 13/20 (Page 19):**
-　ないのか…⁉　[unreadable]がおくれちまう。
-　うちは子どもが[滅?]て[??????]に行かなくちゃいけないのよー‼
-Luke:　[???]えてるばあいじゃなかった…！
-Layton:　どこに行くんだい？ ()
-Luke:　そのイジワルなお父さんに抗議しに行きましょう！　こんなむちゃくちゃなレース、早くやめさせるんです…‼
-Guys 1 & 2:　それはダメだ‼
-Guy 1:　おれたちはもう約束してるんだ…！　レースを[kanji unknown, pronounced リタイア]したらかのじょをあきらめることになる。
-
-**Image 14/20 (Pages 20-21):**
-*(The top of the page is cropped and unreadable)*
-Luke:　くやしいけど、これでは解決できません…。
-Layton:　事件を聞いたからには、必ず解決してあげるものさ。　英国紳士と[unreadable]。　　　見ててごらん。　　　さがって。
-
-**Image 15/20 (Pages 22-23):**
-Layton:　さあ、みなさん、じゅうたいは解消されましたよ。　どうぞ進んでくださーい！
-
-**Image 16/20 (Page 24):**
-Luke: [unreadable]　　　先生…、いったいあの２人になんて…？
-Layton:　うん、ちょっとアドバイスをね。　　　おそくついた車の勝ち…。　だから相手より[unreadable]
-
-**Image 16/20 (Page 25):**
-Layton:　わたしの答えは、「たがいの車を交換して走りなさい」。
-Luke:　交換…？
-Layton:　そひたらあとは、どうすればいいか…、わかるかい？ルーク。
-Luke:　相手の車に乗るんだから…、相手の車を早くゴールさせればいい…？
-Layton:　そう。ふつうのスピードレースに早変わりさ。
-
-**Image 17/20 (Pages 26-27):**
-Guy 1/2:　レースはやっぱりこうだぜ‼　さあ、どっちが勝ってもうらみつこナゾだぞ‼ *(really unsure, it's far too blurry. The third bubble is unreadable.)*
-Guy 1/2:　あの紳士に感謝しなくちゃな‼
-Luke:　先生‼　すごいです‼　きっとそのお父さんもビックリしますよ‼
-Layton:　そうかもしれないね。　しかし…、道を通るためとはいえ、ちょっと、悪いことをしたね…。
-Luke:　どうして…？[unreadable]
-Layton:　フフッ。　ルークも大人になればね。
-Luke: [unreadable]
-Layton:　[???]ちゃんのときからいっしょに暮らしてきた娘を、嫁に出すということは、きっと…。
-Father:　…あいつら、ナゾを解いて来やがった…！
-
-**Image 18/20 (Page 28):**
-Bride:　…ソバッテ…
-Father:　いつかは、この日が来ると思っておった。　おまえは、本当にこれで、満足か…？
-Bride:　…わたしを心から好いてくださる方でしたら、[there is probably another bubble that is hidden]
-
-**Image 19/20 (Page 29):**
-　ガンバッテ――――‼
-　…さあっ、来い‼　どっちだ‼　手を抜いたら許さんぞ、バカヤロ――――‼
-Luke:　先生……。　バンクですかぁ。
-　やはりタイヤくらいは新品にしておくか…。
-
-**Image 20/20 (Page 30):**
-レイトン教授とちいさな謎    Professor Layton and the Small Mystery (this time it's written "mystery" instead of "puzzle")
-
-
-
-
-
-
-
-
-https://web.archive.org/web/20220610195702/https://github.com/burodepeper/minimal-syntax
-
-https://layton.fandom.com/de/wiki/Fanartikel
-https://drive.google.com/drive/folders/1ompmN6aDl4-l8d5MXR2WVAR9euEyHAir
-
-
-
-ALL PL OST:
-https://drive.google.com/drive/folders/1yLgbB2webeyKJpRY0w-YmfEjXDESax21
-
-
--->
-
-
-
-
-
-
-
-
-
-<tr>
-    <td style=background:rgb(217,200,121)></td>
-    <td style=background:rgb(217,200,121)>Various Official Website Assets</td>
+</tr>-->
+<!-- @EFOLD -->
+
+<!-- @SFOLD @ @@@% @ Various @ Various Official Website Assets -->
+<tr><td style=background:rgb(217,200,121)></td><td style=background:rgb(217,200,121)>Various Official Website Assets</td>
     <td style=background:rgb(217,200,121)>Website</td><td style=background:rgb(217,200,121);color:transparent>99/99/9999</td><td>50%</td><td>0%</td><td>0%</td><td>0%</td>
     <td style=background:rgb(217,200,121)><a href=https://drive.google.com/drive/folders/1lJjd85hFATtpBVDqyLoofExuxEtX_2Ig><img src=https://upload.wikimedia.org/wikipedia/commons/1/12/Google_Drive_icon_%282020%29.svg> Assets archived<br>by brynnbird</a></td>
     <td style=background:rgb(217,200,121)></td>
 </tr>
+<!-- @EFOLD -->
+<!-- @SFOLD @   0% @ Manga @@@ Layton Mystery Detective Agency: Kat’s Mystery Solving Files (10 Korean Volumes) -->
 <tr>
     <td style=background:rgb(186,181,87)><img src=https://64.media.tumblr.com/11929e3f086b44a0ff97989217b831a5/7a77e54811defb4a-02/s1280x1920/b83820c2a824b058d72c5053e5e7124c2bf48025.jpg></td>
     <td style=background:rgb(186,181,87)><i>Layton Mystery Detective Agency: Kat’s Mystery Solving Files<br>(10 Korean Volumes)</i><hr></td>
@@ -1372,6 +1236,7 @@ https://drive.google.com/drive/folders/1yLgbB2webeyKJpRY0w-YmfEjXDESax21
     <td style=background:rgb(186,181,87)><a href=https://www.tumblr.com/laytontreasures/728548663874535424/>🚧 Translation</a></td>
     <td style=background:rgb(186,181,87)>These are NOT official. They were created by <a href="https://href.li/?https://x.com/Layton_Creative?t=eb0FKSj8KORyB_Lx6ArDaQ&s=09">@Layton_Creative</a>.</td>
 </tr>
+<!-- @EFOLD -->
 <!-- @SFOLD Javascript -->
 </table><script>
 const table=document.getElementById("TABLESORT");
@@ -1390,14 +1255,3 @@ for(r=1;r<rows.length;r++){
     }
 }</script></div>
 <!-- @EFOLD -->
-<!-- 🇯🇵 🇺🇸 🇪🇺 🇬🇧 🇩🇪 🇪🇦 🇮🇹 🇫🇷 ① ② ③ ④ ⑤ ⑥ ⑦ ⑧ ⑨ ⑩ ⑪ ⑫ ⑬ ⑭ ⑮ ⑯ ⑰ ⑱ ⑲ ⑳ ㉑ ㉒ ㉓ ㉔ ㉕ ㉖ ㉗ ㉘ ㉙ ㉚ ㉛ ㉜ ㉝ ㉞ ㉟ ㊱ ㊲ ㊳ ㊴ ㊵ ㊶ ㊷ ㊸ ㊹ ㊺ ㊻ ㊼ ㊽ ㊾ ㊿ -->
-<!-- ⓵ ⓶ ⓷ ⓸ ⓹ ⓺ ⓻ ⓼ ⓽ ⓾ -->
-<!-- <ul>
-    <li><a href="https://www.reddit.com/r/ProfessorLayton/comments/18s7yjq/layton_vs_ace_attorney_media_chart_v3_updated/">PL &amp; AA Media chart (V3)</a></li>
-    <li><a href="https://layton.fandom.com/de/wiki/Fanartikel">German Wiki: Massive List of Media &amp; Merchandise</a></li>
-</ul>
-🇪🇺
-🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇩🇪&#x2004;🇪🇦&#x2004;🇮🇹&#x2004;🇫🇷
-🇯🇵&#x2004;🇺🇸&#x2004;🇬🇧&#x2004;🇫🇷
-🇯🇵&#x2004;🇬🇧
--->
