@@ -1,0 +1,252 @@
+<!-- @SFOLD HTML -->
+<head><title>Time Loop Calendar</title><link rel=icon href=../RESOURCES/favicon.ico><link rel=stylesheet href=css.css><style>
+body{padding-bottom:1200px}
+.chp{max-width:unset;width:90%}
+td{padding:0 12px}th{padding:12px}
+table{border-spacing:0}
+tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
+table{margin:17px auto}
+#calendar th{background:rgba(0,0,0,.8)}
+#calendar th:first-child{border-radius:17px 0 0 17px}
+#calendar th:last-child{border-radius:0 17px 17px 0}
+#calendar td:first-child{border-left:3px solid rgb(var(--white));padding-left:42px}
+#calendar td:last-child{border-right:3px solid rgb(var(--white))}
+#calendar td:nth-child(n+2):not(:nth-child(7)){text-align:right;font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
+#calendar tr:hover:not(:last-child,:nth-child(2)){background:rgba(var(--blue),.42)}
+#calendar tr:nth-child(2) td{border-top:3px solid rgb(var(--white))}
+#calendar tr:nth-child(2) td:first-child{border-top-left-radius:17px}
+#calendar tr:nth-child(2) td:last-child{border-top-right-radius:17px}
+#calendar tr:last-child td{border-bottom:3px solid rgb(var(--white))}
+#calendar tr:last-child td:first-child{border-bottom-left-radius:17px}
+#calendar tr:last-child td:last-child{border-bottom-right-radius:17px}
+#calendar td:nth-child(n+9){text-align:center!important}
+table img{display:inline-block;max-height:42px;vertical-align:middle;margin-left:-42px}
+
+.tagcategory{padding:17px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
+.tagcategory h2{font-size:24px;opacity:.9}
+.tagcategory hr{margin:17px -17px;height:3px;width:calc(100% + 34px)}
+.tagcategory img{height:32px;display:inline-block;border:none;vertical-align:middle}
+.tagcategory p{text-indent:-36px;padding-left:36px}
+input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod))}
+input:not(#resetsearch,#startsearch,#findtaginput):not(.active){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
+input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
+
+/* #calendar td:nth-child(n+2):not(:nth-child(n+10),:nth-child(8)),#calendar th:nth-child(n+2):not(:nth-child(n+10),:nth-child(8)){display:none}#calendar{width:800px} */
+
+</style></head><div class=chp><h1>Time Loop Calendar</h1>
+
+<div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:1fr 1fr;border:5px solid rgb(var(--redd))'>
+<div class=tagcategory><h2>Astral Bodies</h2>
+    <input value=#sun style='background:url(img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#ember twin'style='background:url(img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#ash twin'style='background:url(img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#timber hearth'style='background:url(img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#attlerock'style='background:url(img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#brittle hollow'style='background:url(img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#hollow’s lantern'style='background:url(img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#giant’s deep'style='background:url(img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#dark bramble'style='background:url(img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#interloper'style='background:url(img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#white hole'style='background:url(img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#white hole station'style='background:url(img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#orbital probe cannon'style='background:url(img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#sun station'style='background:url(img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#the stranger'style='background:url(img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#deep space satellite'type=button onclick=AddTagSelector(this)>
+</div>
+<div class=tagcategory><h2>Sub-Locations</h2>
+<p><img src=img/astr_ashtwin.png>
+    <input value='#ash twin project'type=button onclick=AddTagSelector(this)>
+</p><p><img src=img/astr_embertwin.png>
+    <input value='#sunless city'type=button onclick=AddTagSelector(this)>
+    <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this)>
+</p><p><img src=img/astr_brittlehollow.png>
+    <input value='#hanging city'type=button onclick=AddTagSelector(this)>
+</p><p><img src=img/astr_giantsdeep.png>
+    <input value='#core of giant’s deep' type=button onclick=AddTagSelector(this)>
+    <input value='#statue island' type=button onclick=AddTagSelector(this)>
+    <input value='#gabbro’s island' type=button onclick=AddTagSelector(this)>
+</p><p><img src=img/astr_opc.png>
+    <input value='#control module' type=button onclick=AddTagSelector(this)>
+    <input value='#launch module' type=button onclick=AddTagSelector(this)>
+    <input value='#probe tracking module' type=button onclick=AddTagSelector(this)>
+</p>
+</div>
+</div>
+
+<table id=calendar><tr><th>Event</th><th>Week Time (s)</th><th>Sunrise n°</th><th>Attlerock (°)</th><th>Sun angle (°)</th><th>Time (s)</th><th>Human time since waking up</th><th>% of loop</th><th>Hearthian Time</th><th>Game Time</th></tr></table>
+<!-- @EFOLD -->
+<!-- @SFOLD JSON -->
+<script>
+const cdta=[{
+    "113 Start of Mask Cutscene":[46896.0,113,150.291,263.077,["keep"],"rgba(var(--greenl),.42)"],
+    "113 Wake Up":[46905.0,113,176.505,270.865,["keep"],"rgba(var(--goldl),.3)"],
+    "113 Crickets Eclipse":[46951.1,113,310.777,310.760,["hide","timber hearth","hearthian clock"]],
+    "114 Sunrise":[47008.0,114,116.505,0.000,[
+        "timber hearth","hearthian clock"],"rgba(var(--goldd),.2)"],
+    "114 Midday Eclipse":[47126.9,114,102.816,102.894,["hide","timber hearth","hearthian clock"]],
+    "114 Sunset":[47212.0,114,350.680,176.538,[
+        "timber hearth","hearthian clock"]],
+    "114 Midnight Eclipse":[47302.8,114,255.146,255.115,["hide","timber hearth","hearthian clock"]],
+    "114 <img src=img/astr_sunstation.png>Sun Station Warp Pad":[47335.0,114,348.932,282.981,
+        ["sun station","warp windows"],"rgba(var(--redd),.4)"],
+    "115 Sunrise":[47424.0,115,248.155,0.000,[
+        "timber hearth","hearthian clock"],"rgba(var(--goldd),.2)"],
+    "115 Forenoon Eclipse":[47478.6,115,47.184,47.250,["hide","timber hearth","hearthian clock"]],
+    "115 <img src=img/Steam_Lv3_Red_Giant.png><img src=img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>Sun Station is engulfed by the sun":[47595.0,115,26.214,147.981,
+        ["sun station","sun"],"rgba(var(--indigol),.34)"],
+    "115 Sunset":[47628.0,115,122.330,176.538,
+        ["timber hearth","hearthian clock"]],
+    "115 Dusk Eclipse":[47654.5,115,199.515,199.471,["hide","timber hearth","hearthian clock"]],
+    "115 Sunrise Eclipse":[47830.3,115,351.553,351.606,["hide","timber hearth","hearthian clock"]],
+    "116 Sunrise":[47840.0,116,19.806,0.000,
+        ["timber hearth","hearthian clock"],"rgba(var(--goldd),.2)"],
+    "116 Undern Eclipse":[48006.2,116,143.883,143.827,["hide","timber hearth","hearthian clock"]],
+    "116 Sunset":[48044.0,116,253.981,176.538,
+        ["timber hearth","hearthian clock"]],
+    "116 <img src=img/astr_interloper.png>The Interloper is engulfed by the sun":[48105.0,116,71.650,229.327,
+        ["interloper","sun"],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/Steam_Lv3_Red_Giant.png>End Times starts playing":[48140.0,116,173.592,259.615,
+        [""],"rgba(var(--indigod),.34)"],
+    "116 Crickets Eclipse":[48182.0,116,295.922,295.962,["hide","timber hearth","hearthian clock"]],
+    "116 <img src=img/Steam_Lv4_Star_Collapse.png>Sun starts to collapse":[48225.0,116,61.165,333.173,
+        [""],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/Steam_Lv5_Supernova.png>Sun starts to explode":[48235.0,116,90.291,341.827,
+        [""],"rgba(var(--indigol),.34)"],
+    "116 The Ash Twin Project’s black hole starts to form":[48238.1,116,99.320,344.510,
+        ["ash twin project"],"rgba(var(--goldl),.3)"],
+    "116 The Ash Twin Project’s black hole is at full size":[48239.1,116,102.233,345.375,
+        ["ash twin project"],"rgba(var(--goldl),.3)"],
+    "116 <img src=img/astr_ashtwin.png>Supernova reaches Ash Twin <smol>(North pole)</smol>":[48247.5,116,126.699,352.644,
+        [""],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/astr_embertwin.png>Supernova reaches Ember Twin <smol>(Chert’s camp)</smol>":[48248.0,116,128.155,353.077,
+        [""],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/astr_timberhearth.png>Supernova reaches Timber Hearth <smol>(Spawn point)</smol>":[48252.0,116,139.806,356.538,
+        ["timber hearth","sun"],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/astr_timberhearth.png>Supernova reaches Timber Hearth <smol>(North pole)</smol>":[48252.5,116,141.262,356.971,
+        ["timber hearth","sun"],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/astr_attlerock.png>Supernova reaches the Attlerock<br><smol>(Esker’s Observation platform on the North pole)</smol>":[48253.0,116,142.718,357.404,
+        [""],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/astr_brittlehollow.png>Supernova reaches Brittle Hollow<br><smol>(Black Hole Forge warp pad)</smol>":[48255.0,116,148.544,359.135,
+        ["brittle hollow","sun"],"rgba(var(--indigol),.34)"],
+    "116 <img src=img/astr_hollowlantern.png>Supernova reaches Hollow’s Lantern<br><smol>(Project Platform at North pole)</smol>":[48254.3,116,146.505,358.529,
+        ["hollow’s lantern","sun"],"rgba(var(--indigol),.34)"],
+    "117 <i>Sunrise</i> (after Timber Hearth was destroyed)":[48256.0,117,151.456,0.000,["hide","timber hearth"],"rgba(var(--goldd),.2)"],
+    "117 <img src=img/astr_giantsdeep.png><img src=img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol>":[48258.0,117,157.282,1.731,
+        ["probe tracking module","giant’s deep","sun"],"rgba(var(--indigol),.34)"],
+    "117 <img src=img/astr_giantsdeep.png>Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol>":[48259.5,117,161.650,3.029,
+        ["giant’s deep","sun"],"rgba(var(--indigol),.34)"],
+    "117 <img src=img/astr_opc.png>Supernova reaches the Orbital Probe Cannon":[48260.0,117,163.107,3.462,
+        ["orbital probe cannon","sun"],"rgba(var(--indigol),.34)"],
+    "117 <img src=img/astr_darkbramble.png>Supernova reaches Dark Bramble <smol>(Outside)</smol>":[48262.3,117,169.806,5.452,
+        ["dark bramble","sun"],"rgba(var(--indigol),.34)"],
+    "117 The Ash Twin Project’s black hole starts to vanish":[48263.1,117,172.136,6.144,
+        ["ash twin project"],"rgba(var(--goldl),.3)"],
+    "117 <img src=img/astr_whitehole.png>Supernova reaches the White Hole":[48263.4,117,173.010,6.404,
+        ["white hole","sun"],"rgba(var(--indigol),.34)"],
+    "117 <img src=img/astr_whiteholestation.png>Supernova reaches the White Hole Station":[48263.6,117,173.592,6.577,
+        ["white hole","white hole station","sun"],"rgba(var(--indigol),.34)"],
+    "117 <img src=img/astr_darkbramble.png>Supernova reaches the Vessel":[48264.0,117,174.757,6.923,
+        ["dark bramble","the vessel","sun"],"rgba(var(--indigol),.34)"],
+    "117 The Ash Twin Project’s black hole disappeared<br>& Purple lines cutscene starts":[48264.0,117,174.757,6.923,
+        ["ash twin project"],"rgba(var(--goldl),.3)"],
+    "117 End of Loop":[48265.0,117,177.670,7.788,["keep"],"rgba(var(--greenl),.42)"]
+}]
+</script>
+<!-- @EFOLD -->
+<!-- @SFOLD JAVASCRIPT -->
+<script>
+table=document.getElementById('calendar')
+const sun_angspeed=36/416
+const attle_angspd=2.9126213592233
+const formatDuration=ms=>{
+    if(ms<0)ms=-ms;
+    const time={
+        day:Math.floor(ms/86_400),
+        h:Math.floor(ms/3_600)%24,
+        min:Math.floor(ms/60)%60,
+        s:Math.floor(ms)%60
+    }
+    return Object.entries(time)
+    .filter(val=>val[1]!==0)
+    .map(([key,val])=>`${val}${key}${val!==1&&key=='day'?'s':''}`)
+    .join(', ');
+}
+const hearthiantime=v=>{
+    const time={
+        d:v[1],
+        m:('00'+Math.trunc(v[3]/360*60)).slice(-2),
+        s:('00'+Math.round(v[3]/360*60*60)%60).slice(-2)
+    }
+    return Object.entries(time)
+    .map(([key,val])=>`${val}${key=='d'?'c ':':'}`)
+    .join('')
+    .slice(0,-1)
+}
+const gametime=t=>{
+    const time={
+        m:('00'+Math.trunc(t/60)).slice(-2),
+        s:('00'+Math.round(t)%60).slice(-2)
+    }
+    return Object.entries(time).map(([key,val])=>`${val}:`).join('').slice(0,-1)
+}
+function load_calendar() {
+    for(const[k,v]of Object.entries(cdta[0])){
+        newtr=document.createElement('tr');newtr.setAttribute('id',k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));table.appendChild(newtr)
+        newtd1=document.createElement('td');newtd1.innerHTML=k.slice(4)
+        newtd2=document.createElement('td');newtd2.innerHTML=v[0].toFixed()
+        newtd3=document.createElement('td');newtd3.innerHTML=v[1].toFixed(0)
+        newtd4=document.createElement('td');newtd4.innerHTML=v[2].toFixed(3)
+        newtd5=document.createElement('td');newtd5.innerHTML=v[3].toFixed(3)
+        newtd6=document.createElement('td');newtd6.innerHTML=Math.round(10*(v[0]-cdta[0]['113 Wake Up'][0])).toFixed()
+        newtd7=document.createElement('td');newtd7.innerHTML=formatDuration(10*(v[0]-cdta[0]['113 Wake Up'][0]))
+        newtd8=document.createElement('td');newtd8.innerHTML=(Math.round(10*(v[0]-cdta[0]['113 Wake Up'][0])/(cdta[0]['117 End of Loop'][0]-cdta[0]['113 Wake Up'][0])*1000)/100).toFixed(2)
+        newtd9=document.createElement('td');newtd9.innerHTML=hearthiantime(v)
+        newtd10=document.createElement('td');newtd10.innerHTML=gametime(v[0]-cdta[0]['113 Wake Up'][0])
+        if(v.length>5){
+            newtd1.style.background=v[5]
+            newtd2.style.background=v[5]
+            newtd3.style.background=v[5]
+            newtd4.style.background=v[5]
+            newtd5.style.background=v[5]
+            newtd6.style.background=v[5]
+            newtd7.style.background=v[5]
+            newtd8.style.background=v[5]
+            newtd9.style.background=v[5]
+            newtd10.style.background=v[5]
+        }
+        newtr.appendChild(newtd1);newtr.appendChild(newtd2);newtr.appendChild(newtd3);newtr.appendChild(newtd4);newtr.appendChild(newtd5)
+        newtr.appendChild(newtd6);newtr.appendChild(newtd7);newtr.appendChild(newtd8);newtr.appendChild(newtd9);newtr.appendChild(newtd10)
+        if(v[4][0]=='hide'){newtr.style.display='none'}
+    }
+}
+window.onLoad=load_calendar()
+
+
+
+
+
+allactive=[]
+function AddTagSelector(btn){
+    if(btn.classList.contains('active')){
+        allactive.splice(allactive.indexOf(btn.value),1)
+        btn.classList.remove('active')
+    }else{
+        allactive.push(btn.value)
+        btn.classList.add('active')
+    }
+    for(i=0;i<allactive.length;i++){
+        for(const[k,v]of Object.entries(cdta[0])){
+            ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));flag=true
+            if(v[4].includes(allactive[i].replace('#',''))||v[4].includes('keep')){ctr.style.display='revert'}else{ctr.style.display='none'}
+        }
+    }
+    if(allactive==[]){for(const[k,v]of Object.entries(cdta[0])){
+
+            ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''))
+            ctr.style.display='revert'
+
+    }}
+}
+</script></div>
+<!-- @EFOLD -->
