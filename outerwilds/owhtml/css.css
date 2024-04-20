@@ -291,7 +291,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
 @font-face{font-family:"AxisStd";src:url("font/Type Project - AxisStd-Medium_Dynamic.otf")format("opentype");font-weight:normal;font-style:normal}
 
-body{background:url(../RESOURCES/1989-3840x2160-desktop-4k-outer-wilds-background-photo.jpg)fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify;font-size:18px}
+body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.jpg)fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify;font-size:18px}
 /* https://wallpaperaccess.com/full/4268160.jpg */
 *{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;
 
