@@ -170,32 +170,29 @@ a:hover h3 span{color:rgb(var(--plred))}
     top:1vh;
     font-size:2vh;
     cursor:pointer;
-    background:rgb(var(--indigol));
-    color:rgb(var(--plwhite));
+    background:rgb(var(--indigod));
+    color:rgb(var(--white));
     padding:1.5vh 2vh;
     border:none;
     border-radius:2vh
-}
-#openbtn:hover {
-    background:rgb(var(--plred));
-}
+}#openbtn:hover{background:rgba(var(--indigol),.8);color:white}
+#closbtn{cursor:pointer}
 #closbtn h1{
-    background:rgb(var(--indigol));
+    background:rgba(var(--indigod),.6);
     font-size:3.4vh;
-    color:rgb(var(--plwhite));
-}
-#midxbtn h1:hover{
-    filter:saturate(200%);
-}
-#midxbtn h2{
-    margin:0 auto;padding-bottom:12px;border-bottom:3px solid rgb(var(--indigol))
+    color:rgb(var(--white));
+    padding:7px
 }
 #closbtn span {
     position: absolute;
-    font-size: 5vh;
+    font-size: 6vh;
     color: rgb(var(--white));
-    top:-2px;
+    top:-5px;
     right: 25px;
+}
+#midxbtn h1:hover{filter:saturate(200%)}
+#midxbtn h2{
+    margin:0 auto;padding-bottom:12px;border-bottom:3px solid rgb(var(--indigol))
 }
 #sidenav,#bottnav {
     position:fixed;
@@ -227,8 +224,6 @@ a:hover h3 span{color:rgb(var(--plred))}
     margin-left:3%;
 }
 #sidenav ul hr,#bottnav ul hr{margin:12px -12px 12px -7px}
-#sidenav a,#bottnav a{color:rgb(var(--indigol))}
-#sidenav a:hover,#bottnav a:hover{color:rgb(var(--plred))}
 #langidx{text-align:center;font-size:42px;padding-bottom:5px;background:rgba(var(--indigod),.5);position:relative}
 #langidx .infoa{position:unset}
 #langidx .infob{
@@ -240,14 +235,13 @@ a:hover h3 span{color:rgb(var(--plred))}
     font-size:2vh;
 }
 
-.sbar{margin-bottom:20px;border-radius:7px;border:3px solid rgb(48,32,32);position:relative}
-.sbar > a{display:block;width:58px;height:58px;position:absolute}
-.bartitle,.lbl-toggle{display:block;cursor:pointer;border-radius:5px;padding:17px;margin-bottom:0;background:rgb(var(--indigod));color:rgb(var(--plblack));font-size:1.2em;font-weight:800;text-align:center}
+.sbar{margin-bottom:20px;border-radius:7px;border:3px solid rgba(var(--indigod),.5);position:relative}
+.sbar > a{display:block;width:45px;height:45px;position:absolute}
+.bartitle,.lbl-toggle{display:block;cursor:pointer;border-radius:5px;padding:17px;margin-bottom:0;background:rgb(var(--indigod));color:rgb(var(--white));font-size:1.2em;font-weight:800;text-align:center}
 .lbl-toggle::before{content:' ';display:inline-block;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:10px solid currentColor;vertical-align:middle;margin-right:.7rem;transform:translateY(-2px);transition:transform .2s ease-out}.toggle:checked+.lbl-toggle::before{transform:rotate(90deg)translateX(-3px)}
 .toggle:checked+.lbl-toggle{border-radius:5px 5px 0 0}
 .barss{max-height:0px;overflow:hidden;transition:max-height .25s ease-in-out;background:rgba(var(--black),.8);border-radius:0 0 5px 5px}.toggle:checked+.lbl-toggle+.barss{max-height:100%;padding:5px}
 .barss ul{padding-left:34px}
-.chprt{display:flex;flex-wrap:wrap;justify-content:center}.chprt a{width:60px}
 h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-right:12px}
 
 #navctn{padding:12px;overflow:auto}
@@ -323,12 +317,10 @@ img{max-width:100%}
 .vs{margin-bottom:0}.vs + *{margin-top:0}
 
 hr{
-    border: none;
-    height: 2px;
+    border:none;
+    height:2px;
     background:linear-gradient(to left,transparent,currentcolor,transparent);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    width: 70%;
+    margin:80px
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
 
