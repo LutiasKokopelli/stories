@@ -167,7 +167,7 @@ a:hover h3 span{color:rgb(var(--plred))}
 }
 #openbtn {
     position:fixed;
-    top:1vh;
+    bottom:1vh;
     font-size:2vh;
     cursor:pointer;
     background:rgb(var(--indigod));
@@ -266,6 +266,25 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
 /* OUTER WILDS STUFF */
 
+.chp{
+    background:rgba(0,0,0,.8);
+    padding:calc(var(--chpborder)/2);
+
+}
+
+@media only screen and (orientation: landscape) {
+    .chp {
+        border-radius:var(--chpborder);
+        box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);
+        box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
+    }
+}
+@media only screen and (orientation: portrait) {
+    .chp {
+        width: 100%;
+    }
+}
+
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-RegularItalic.ttf")format("truetype");font-weight:normal;font-style:italic}
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Thin.ttf")format("truetype");font-weight:100;font-style:normal}
@@ -312,7 +331,6 @@ body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.j
 
 scrollbar-color:rgb(var(--indigod))rgb(var(--black))}
 img{max-width:100%}
-.chp{border-radius:var(--chpborder);background:rgba(0,0,0,.8);box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);padding:calc(var(--chpborder)/2);box-sizing:border-box;width:80%;max-width:800px;margin:42px auto}
 .chp > p{text-indent:2em}
 .vs{margin-bottom:0}.vs + *{margin-top:0}
 
@@ -320,7 +338,7 @@ hr{
     border:none;
     height:2px;
     background:linear-gradient(to left,transparent,currentcolor,transparent);
-    margin:80px
+    margin:80px auto
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
 
@@ -332,7 +350,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog_diary h2{font-size:1.7em}
 p.time{color:rgb(var(--blue));font-size:1.2em;font-weight:600;margin:42px 0 12px 0}
 orng,.red{color:rgb(var(--orng))}
-.grey{opacity:.8}
+.grey{opacity:.5}
 blue{color:rgb(var(--blue))}
 green{color:rgb(var(--greenl))}
 li{list-style:'– '}
