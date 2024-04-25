@@ -278,11 +278,13 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
         box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);
         box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
     }
+    .chp:last-child{margin-bottom:120px}
 }
 @media only screen and (orientation: portrait) {
     .chp {
         width: 100%;
     }
+    .chp:last-child{padding-bottom:120px}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
