@@ -148,9 +148,6 @@ a:active button{background:rgb(var(--indigod))}
 
 
 
-#sidenav{left:-100%;width:24%}
-#bottnav{bottom:-100%;width:100%}
-#openbtn{left:1vh}
 
 a:hover h3 span{color:rgb(var(--plred))}
 #midxbtn{
@@ -174,7 +171,8 @@ a:hover h3 span{color:rgb(var(--plred))}
     color:rgb(var(--white));
     padding:1.5vh 2vh;
     border:none;
-    border-radius:2vh
+    border-radius:2vh;
+    z-index:99
 }#openbtn:hover{background:rgba(var(--indigol),.8);color:white}
 #closbtn{cursor:pointer}
 #closbtn h1{
@@ -278,12 +276,15 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
         box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);
         box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
     }    .chp:last-child{margin-bottom:10vh}
+    #bottnav{bottom:-100%;width:100%}
+    #sidenav{left:0;width:24%}
+    #openbtn{left:-100%}
 }
 @media only screen and (orientation: portrait) {
-    .chp {
-        width: 100%;
-    }
+    .chp{width:100%}
     .chp:last-child{padding-bottom:10vh}
+    #sidenav{left:-100%;width:50%}
+    #openbtn{left:1vh}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
