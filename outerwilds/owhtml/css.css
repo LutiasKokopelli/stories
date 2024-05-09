@@ -267,7 +267,6 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 .chp{
     background:rgba(0,0,0,.8);
     padding:calc(var(--chpborder)/2);
-
 }
 
 @media only screen and (orientation: landscape) {
@@ -275,7 +274,8 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
         border-radius:var(--chpborder);
         box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);
         box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
-    }    .chp:last-child{margin-bottom:10vh}
+    }
+    .chp:last-child{margin-bottom:10vh}
     #bottnav{bottom:-100%;width:100%}
     #sidenav{left:0;width:20%}
     #openbtn{left:-100%}
@@ -314,7 +314,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
 body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.jpg)fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify;font-size:18px}
 /* https://wallpaperaccess.com/full/4268160.jpg */
-*{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;
+*{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;--lblue:180,224,236;--orng2:252,173,30;
 
 --greend:56,138,93;
 --greenl:104,255,172;
@@ -334,13 +334,14 @@ body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.j
 scrollbar-color:rgb(var(--indigod))rgb(var(--black))}
 img{max-width:100%}
 .chp > p{text-indent:2em}
-.vs{margin-bottom:0}.vs + *{margin-top:0}
+.vs{margin-bottom:.2em}.vs + *{margin-top:.2em}
 
 hr{
     border:none;
     height:2px;
-    background:linear-gradient(to left,transparent,currentcolor,transparent);
-    margin:80px auto
+    background:linear-gradient(90deg,transparent,currentcolor 25%,currentcolor 75%,transparent);
+    margin:80px auto;
+    width:80%
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
 
@@ -352,20 +353,23 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog_diary h2{font-size:1.7em}
 p.time{color:rgb(var(--blue));font-size:1.2em;font-weight:600;margin:42px 0 12px 0}
 orng,.red{color:rgb(var(--orng))}
+.orng{color:rgb(var(--orng2))}
 .grey{opacity:.5}
-blue{color:rgb(var(--blue))}
-green{color:rgb(var(--greenl))}
+.blue{color:rgb(var(--blue))}
+.green{color:rgb(var(--greenl))}
+.lblue{color:rgb(var(--lblue))}
 li{list-style:'– '}
 .shiplog_diary li::marker{color:rgb(var(--white))}
 
 smol{font-size:.7rem;font-family:Space Mono}
 .smol{font-size:.8em}
+.scaps{font-variant:petite-caps;font-weight:500}
 .radio{
     color:transparent;
     mix-blend-mode:plus-lighter;
     background-clip:text;-webkit-background-clip:text;
     filter:contrast(1000%);
-    font-weight:600;
+    font-weight:500;
     animation:.5s 0s glitch infinite
 }
 @keyframes glitch {
@@ -375,20 +379,21 @@ smol{font-size:.7rem;font-family:Space Mono}
     75%{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.3' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3Crect width='100%25' height='100%25' fill='white' opacity='.2'/%3E%3C/svg%3E")}
     100%{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.2' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3Crect width='100%25' height='100%25' fill='white' opacity='.2'/%3E%3C/svg%3E")}
 }
-.nomai{}
+
+/* #workskin .radio{
+    color:transparent;
+    background-clip:text;-webkit-background-clip:text;
+    font-weight:500;
+    background-image:url("https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/img/bg_radio.gif");
+    background-size:50%;
+} */
+
+.nomai{padding:17px;text-align:center;width:87%;font-family:Space Mono,Monospace;background:radial-gradient(rgb(42,110,100),black 80%);margin:0 auto;text-shadow:0 0 1.2em currentcolor;text-indent:0!important;color:rgb(177,252,252);box-shadow:0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8)}
+:not(.nomai)+.nomai,.nomai:first-child{margin-top:17px;border-radius:17px 17px 0 0}
+.nomai:has(+:not(.nomai)),.nomai:last-child{margin-bottom:17px;border-radius:0 0 17px 17px}
+
+p>svg{display:inline-block;height:1.1em;background:currentcolor;vertical-align:middle;margin-top:-3px}
+
+img.isnomai{height:1.1em;vertical-align:middle;margin-top:-3px}
+
 .owlk{}
-.scaps{font-variant:small-caps;font-weight:500}
-
-
-/*
-AO3 skin:
-
-#workskin .radio {
-  color: transparent;
-  background: url("https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/img/bg_radio.png");
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-weight: 600;
-}
-
-*/
