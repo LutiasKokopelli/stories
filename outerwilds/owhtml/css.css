@@ -345,12 +345,12 @@ hr{
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
 
-.chp > *:first-child,wip > *:first-child,.shiplog_diary > *:first-child{margin-top:0}
-.chp > *:last-child,wip > *:last-child,.shiplog_diary > *:last-child{margin-bottom:0}
+.chp > *:first-child,wip > *:first-child,.shiplog > *:first-child{margin-top:0}
+.chp > *:last-child,wip > *:last-child,.shiplog > *:last-child{margin-bottom:0}
 
-.shiplog_diary{background:rgb(var(--black));color:rgb(var(--white));border:3px solid rgb(var(--blue));padding:20px;font-family:Space Mono;width:95%;margin:20px auto}
-.shiplog_diary p{margin:12px 0}
-.shiplog_diary h2{font-size:1.7em}
+.shiplog{background:rgb(var(--black));color:rgb(var(--white));border:3px solid rgb(var(--blue));padding:20px;font-family:Space Mono;width:95%;margin:20px auto}
+.shiplog p{margin:12px 0}
+.shiplog h2{font-size:1.7em}
 p.time{color:rgb(var(--blue));font-size:1.2em;font-weight:600;margin:42px 0 12px 0}
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
@@ -359,7 +359,7 @@ orng,.red{color:rgb(var(--orng))}
 .green{color:rgb(var(--greenl))}
 .lblue{color:rgb(var(--lblue))}
 li{list-style:'– '}
-.shiplog_diary li::marker{color:rgb(var(--white))}
+.shiplog li::marker{color:rgb(var(--white))}
 
 smol{font-size:.7rem;font-family:Space Mono}
 .smol{font-size:.8em}
