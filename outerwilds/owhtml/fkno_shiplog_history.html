@@ -1,0 +1,148 @@
+<!-- @SFOLD — HEADER ———————————————————————————————————————————————————————————————————————————————————————————————————— -->
+<title>Firn’s Ship Log</title><link rel=icon href=img/favicon.ico><link rel=stylesheet href=css.css><style>body{text-align:left;font-family:Space Mono;text-shadow:0 0 5px currentcolor}
+*{--bg:5,19,31}
+.hudblue *,.hudblue{--hud:royalblue}.blue{color:royalblue;--hud:royalblue!important}
+.hudorange *,.hudorange{--hud:orange}.orange{color:orange;--hud:orange!important}
+.huddarkorange *,.huddarkorange{--hud:darkorange}.darkorange{color:darkorange;--hud:darkorange!important}
+.hudgreen *,.hudgreen{--hud:mediumseagreen}.green{color:mediumseagreen;--hud:mediumseagreen!important}
+.hudlgreen *,.hudlgreen{--hud:springgreen}.lgreen{color:springgreen;--hud:springgreen!important}
+.hudred *,.hudred{--hud:crimson}.red{color:crimson;--hud:crimson!important}
+.hudgrey *,.hudgrey{--hud:grey}.grey{color:grey;--hud:grey!important}
+
+.hudlblue *,.hudlblue{--hud:lightblue}.lblue{color:lightblue;--hud:lightblue!important}
+
+
+.old{opacity:.5}
+#screen{
+    margin:2% auto;
+    height:90%;
+    aspect-ratio:1.6;
+    box-shadow:0 0 1vw 2vw rgb(var(--bg));
+    border:2px solid royalblue;
+    background:rgb(var(--bg));
+    opacity:.95;
+    position:relative;
+    padding:1.55%;padding-right:.9%;
+    overflow:hidden
+}
+#screen:before{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 26'%3E%3Cpath d='M1 0 1 26M3 0 3 26M5 0 5 26M7 0 7 26M9 0 9 26M11 0 11 26M13 0 13 26M15 0 15 26M17 0 17 26M19 0 19 26M23 0 23 26M25 0 25 26M27 0 27 26M29 0 29 26M31 0 31 26M33 0 33 26M35 0 35 26M37 0 37 26M39 0 39 26M41 0 41 26M0 1 42 1M0 3 42 3M0 5 42 5M0 7 42 7M0 9 42 9M0 11 42 11M0 15 42 15M0 17 42 17M0 19 42 19M0 21 42 21M0 23 42 23M0 25 42 25' style='stroke:rgb(100,128,216);stroke-width:.005px' /%3E%3C/svg%3E");position:absolute;height:100%;width:100%;filter:drop-shadow(0 0 2px royalblue);z-index:-1;top:0;left:0}
+#screen:after{content:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 10'%3E%3Cpath d='M0 5 16 5' style='stroke:rgba(100,128,216,.2);stroke-width:.02px' /%3E%3Cpath d='M8 0 8 10' style='stroke:rgba(100,128,216,.2);stroke-width:.015px' /%3E%3C/svg%3E");position:absolute;height:100%;width:100%;filter:drop-shadow(0 0 1px royalblue);z-index:-1;top:0;left:0}
+#history{overflow:auto;height:calc(100% - 7px);scrollbar-color:transparent transparent;padding-bottom:500px}
+#history>div>div{opacity:.8;margin-top:12px}
+#history>div>div:hover{opacity:1}
+#history>div{padding-top:90px}
+h1{color:mediumseagreen;font-weight:800;padding:0 2%;font-size:40px;border:2px solid royalblue;text-align:left;box-shadow:0 0 1px royalblue;position:absolute;width:95.3%;z-index:2;top:3.6%;background:rgba(var(--bg),.9)}
+.time{color:var(--hud);vertical-align:top;margin:42px 7px 42px 0}
+details{display:inline-block;width:calc(100% - 175px);margin:0}
+summary{list-style:none}
+ul{margin:0 0 0 19px;border:2px solid var(--hud);border-right:none;border-top:none;width:calc(100% - 12px);box-shadow:-1px 1px 1px var(--hud)}
+details>li{margin:3px 24px}
+ul li:first-child{margin-top:0;padding-top:7px}
+li{list-style:'– ';margin-left:4px}
+li::marker{color:var(--hud);font-weight:800}
+li:first-of-type{padding-top:3px}
+u{background:var(--hud);padding:2px 12px;border-radius:50px;color:rgb(var(--bg))!important;text-shadow:none;filter:drop-shadow(0 0 2px var(--hud))}
+#history>div>div>div{display:inline-block}
+</style><script src=js.js></script>
+<!-- @EFOLD -->
+<div id=screen><div id=history>
+<div id=hloop1><h1>Loop 1</h1>
+    <div class=hudgrey><span class=time>[06d04s 39:59]</span><u>Liftoff</u></div>
+    <div class=hudgrey><span class=time>[06d04s 42:02]</span><details open><summary><u>Lock On</u> Giant’s Deep</summary><li>Distance: <span class=orange>82.452km</span><span class=old> (from Center of Mass)</span></li><li>Velocity: <span class=blue>431m/s</span></li></details></div>
+    <div class=hudgrey><span class=time>[06d04s 42:04]</span><u>Engaging Autopilot</u></div>
+    <div class=hudgreen><span class=time>[06d04s 44:35]</span><details open><summary><u>Created New Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span></summary><ul><li>The Nomai statue in the observatory turned toward Hal and opened its eyes! The experience left them even more shaken than you’d expect.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d04s 44:59]</span><details open><summary><u>Added Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li>Hal says they saw their own memories flash before their eyes. Whether that was the statue’s doing or not, they were clearly not okay for a few minutes. But after that, they looked completely normal (save for still being upset by whatever happened).</li><li>They pondered whether the Nomai could’ve had mind-reading technology.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d04s 45:11]</span><details open><summary><u>Added Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Timing</span></summary><ul><li>It’s not the first time Hal or even Hornfels went close to that statue, and it was inert when Gabbro brought it back from Giant’s Deep and even chipped it. Why did it only act up today?</li><li>Even if it were related to the way Hornfels prepped it for the museum, Hal had been standing by its side for a while before it started moving.</li><li>Hornfels had been trying to get its eyes to open for weeks, without success... But today, it did it all on its own for no apparent reason. If Hal did something to trigger it, they have no idea what it is.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d04s 47:12]</span><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li>Hal also mentioned me “not seeing” something. They weren’t clear on what it was, but apparently they saw more than just the statue moving on its own.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d04s 47:26]</span><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li><span class=old>Hal also mentioned me “not seeing” something. They weren’t clear on what it was, but apparently they saw more than just the statue moving on its own.</span> I’m not completely sure they meant the memories thing.</li></ul></details></div>
+    <div class=hudgrey><span class=time>[06d04s 47:44]</span><u>Autopilot Complete</u></div>
+    <div class=hudgrey><span class=time>[06d04s 49:04]</span><details open><summary><u>Deploying Signalscope</u></summary><li>Frequency: <span class=orange>Outer Wilds Ventures</span></li></details></div>
+    <div class=hudgrey><span class=time>[06d04s 56:48]</span><u>Activating Landing Camera</u></div>
+    <div class=hudgrey><span class=time>[06d04s 57:09]</span><u>Landing Complete</u></summary></div>
+    <div class=hudgreen><span class=time>[06d04s 57:13]</span><u>Saved New Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Gabbro’s Island</span></div>
+    <div class=hudgreen><span class=time>[06d05s 06:24]</span><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Gabbro’s Island &gt; <span class=orange>Gabbro</span></summary><ul><li>Gabbro found another Nomai statue, which opened its eyes at them some time after Hal’s did.</li><li>They’re showing the same symptoms as Hal did during the few minutes after the museum’s statue looked at them. Gabbro called it “getting their brain turned upside down” and something about a “spiritual experience.” Whatever that means.</li><li><span class=orange>Note for later: Try to ask Hal if they can explain a bit better what it felt like. There’s no doubt now that those statues definitely did <i>something</i> to their brains.</span></li></ul></details></div>
+    <div class=hudorange><span class=time>[06d05s 07:35]</span><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li><span class=old>Hal also mentioned me “not seeing” something.<span class=red> They weren’t clear on what it was, but apparently they saw more than just the statue moving on its own. I’m not completely sure they meant the memories thing.</span></span> They asked Gabbro about a “glowing eyes thing.” I don’t remember seeing anything glowing, but Gabbro knew exactly what they were talking about.</li></ul></details></div>
+    <div class=hudred><span class=time>[06d05s 07:43]</span><u>Renamed Entry</u> <span class=red>“Hal’s Experience”</span> into <span class=lgreen>“Hal and Gabbro’s Experience”</span></div>
+    <div class=hudorange><span class=time>[06d05s 09:59]</span><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal and Gabbro’s Experience</span></summary><ul><li>Gabbro talked about “seeing and hearing double” with some of it being in fast motion. Hal said it had felt the same for them, and that it felt like living through two different moments at the same time.</li><li>Hal mentioned something about “putting things back in order.” With Gabbro saying that their statue turned their brain upside-down, it seems like the few minutes afterwards were both of them trying to fix whatever had been done to them?</li><li><span class=old>Hal says they saw their own memories flash before their eyes. <span class=red>Whether that was the statue’s doing or not, they were clearly not okay for a few minutes. But after that, they looked completely normal (save for still being upset by whatever happened).</span></span> Sounds like it had to be taken literally, and that it’s why they were so disoriented for the few minutes after the statue opened its eyes.</li><li><span class='old red'>They pondered whether the Nomai could’ve had mind-reading technology.</span></li></ul></details></div>
+    <div class=hudgrey><span class=time>[06d05s 12:01]</span><u>Liftoff</u></div>
+    <div class=hudgrey><span class=time>[06d05s 15:13]</span><u>Activating Landing Camera</u></div>
+    <div class=hudred><span class=time>[06d05s 15:31]</span><u>Starboard Thruster Bank Damaged</u> Impact Severity: Low</div>
+    <div class=hudgrey><span class=time>[06d05s 15:42]</span><u>Landing Complete</u></summary></div>
+    <div class=hudgreen><span class=time>[06d05s 15:45]</span><u>Saved New Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Statue Island</span></div>
+    <div class=hudorange><span class=time>[06d05s 15:48]</span><details open><summary><u>Edited Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Statue Island</span></summary><ul><li>Statue Island (as Gabbro calls it) is the one with two islands connected by a natural rock arch.</li></ul></details></div>
+    <div class=hudgreen><span class=time>[06d05s 17:25]</span><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Statue Island &gt; <span class=orange>Nomai Statue (Gabbro)</span></summary><ul><li>The statue that opened its eyes at Gabbro is lying on the beach of “Statue Island” (as they call it). It looks just like the one in our observatory.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d05s 17:37]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-17-25_nomaistatue_giantsdeep_front.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 17:41]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-17-41_nomaistatue_giantsdeep_right.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 17:54]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-17-54_nomaistatue_giantsdeep_back.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 18:00]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-00_nomaistatue_giantsdeep_left.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 18:11]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-11_nomaistatue_giantsdeep_face_closeup.jpg”</span></div>
+    <div class=hudorange><span class=time>[06d05s 18:17]</span><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Statue Island &gt; <span class=orange>Nomai Statue (Gabbro)</span></summary><li>Linked File <span class=lblue>“06d05s-18-11_nomaistatue_giantsdeep_face_closeup.jpg”</span></li></details></div>
+    <div class=hudred><span class=time>[06d05s 18:20]</span><u>Renamed Entry</u> <span class=red>“Nomai Statue”</span> into <span class=lgreen>“Nomai Statues”</span></div>
+    <div class=hudorange><span class=time>[06d05s 18:17]</span><details open><summary><u>Edited Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statues</span></summary><ul class=orange><li>Note for later: Try to figure something out for linking this to the other entry in the<span class=lblue> Giant’s Deep &gt; Statue Island</span> folder. Way too tedious for the suit’s HUD to handle. And by “tedious” I mean I can’t find the buttons for it.</li><li>Also ask Slate next time you see them what their idea was when making it so that you can’t reopen previous photos after they’ve been uploaded to the ship log. Seriously? Even modifying previous log entries is clunky.</li><li>…Guess they didn’t realize I’d want to be able to <i>edit</i> previous files even from outside the ship, not just write new ones. Still a bummer.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d05s 19:35]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-35_giantsdeep_statueisland_beach_1.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 19:39]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-39_giantsdeep_statueisland_beach_2.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 19:46]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-46_giantsdeep_statueisland_beach_3.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 19:52]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-52_giantsdeep_statueisland_blocked_entrance.jpg”</span></div>
+    <div class=hudblue><span class=time>[06d05s 19:58]</span><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-58_giantsdeep_statueisland_blocked_entrance_sign.jpg”</span></div>
+    <div class=hudgreen><span class=time>[06d05s 23:08]</span><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Statue Island &gt; <span class=orange>Statue Workshop</span></summary><ul><li>This island must be where the Nomai created statues like the one in our observatory. I found a sign for a “Statue Workshop” next to a broken door that used to lead inside the island.</li></ul></details></div>
+    <div class=hudgreen><span class=time>[06d06s 03:31]</span><u>Saved New Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Space Station in Orbit</span></div>
+    <div class=hudgreen><span class=time>[06d06s 04:12]</span><u>Created New Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span></div>
+    <div class=hudblue><span class=time>[06d06s 04:34]</span><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Invisible Light</span></summary><ul><li>Gabbro says that the projection stone they found was glowing in the dark, but it just looks like a regular chunk of carved Nomai stone to me.</li><li>Judging from Riebeck’s reaction, they likely don’t see it glowing either.</li><li>Gabbro forgot their flashlight at their camp, and yet they could tell it apart from other debris at a glance.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d06s 05:56]</span><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span></summary><ul><li>According to Riebeck, their purpose was to connect two different locations for instantaneous communication. They can’t do anything on their own, but can be paired with some mechanisms.</li></ul></details></div>
+    <div class=hudgreen><span class=time>[06d06s 09:02]</span><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>The projection stone fused to the mechanism at the center of this room has a symbol with two hexagons branching off carved on it. According to Riebeck, this symbol must be representing our current location, the space station orbiting Giant’s Deep.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d06s 21:42]</span><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Projection Pool</span></summary><ul><li>Using the projection stone with one hexagon on the mechanism at the center of the room <span class=smol>(probably)</span> represented by two hexagons triggered some unknown Nomai technology (which we might as well call “projection pool”).</li><li>It creates a strange liquid which will let you see the other location in real time if you stand inside it. The Nomai must have used them to not only talk, but also see each other and perhaps even remotely interact with distant locations.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d06s 22:27]</span><details open><summary><u>Edited Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Projection Pool</span></summary><ul><li>I tried sending my scout inside the pool. Though it appears on the other side, I can’t use it to take photos of the other location <span class=smol>(the scout only returns black pictures)</span>.</li></ul></details></div>
+    <div class=hudgreen><span class=time>[06d06s 23:01]</span><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>One Hexagon Location</span></summary><ul><li>The symbol with only one hexagon branching off which we found on a projection stone seems to be linked to another part of this space station.</li><li>The room looks nearly identical to the one from the <span class=lightblue>Two Hexagons Location</span> <span class=smol>(I hope we’ll figure out their real names sooner rather than later, if they have one)</span>, except it looks in far better shape.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d06s 23:52]</span><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>The symbol with two hexagons branching off seems to refer only to one compartment of this space station. The compartment in question is heavily damaged. Its viewport window is fractured, exposing it to the vacuum of space.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d06s 25:04]</span><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>Even though this compartment’s airlock is open, the corridor which would lead to the rest of the space station from inside this room collapsed and is impassable.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d06s 32:16]</span><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Projection Wall</span></summary><ul><li>Using a projection stone near a vertical wall caused some Nomai text to spontaneously carve itself on its surface. It seems like two or more Nomai could exchange messages across two different locations that way.</li></ul></details></div>
+    <div class=hudred><span class=time>[06d06s 33:57]</span><u>Renamed Destination Marker</u> <span class=red>“Space Station in Orbit”</span> into <span class=lgreen>“Orbital Probe Cannon”</span></div>
+    <div class=hudorange><span class=time>[06d06s 34:04]</span><details open><summary><u>Edited Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Orbital Probe Cannon</span></summary><ul><li>The Orbital Probe Cannon was created to find the precise location of something called the <span class=lblue>Eye of the universe</span>.</li><li>They had been searching for it for multiple generations.</li><li>This station’s purpose seems to have been to launch a probe somewhere...</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d06s 34:49]</span><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>The Nomai pushed the Orbital Probe Cannon above its maximum power setting to create the greatest chance of finding the <span class=lightblue>Eye of the universe</span>.</li></ul></details></div>
+    <div class=hudblue><span class=time>[06d06s 41:23]</span><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Two Hexagons Location</span> &gt; <span class=blue>Probe Firing</span></summary><ul><li>I saw a bright flash of light in front of Giant’s Deep upon waking up. I think it could have been the Orbital Probe Cannon firing... But why would it only fire now?</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d06s 43:02]</span><details open><summary><u>Edited Sub-Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Two Hexagons Location</span> &gt; <span class=blue>Probe Firing</span></summary><ul><li>Is its firing connected to the statues acting up as well? If so, the cannon launched the probe first, and the statues activated after.</li></ul></details></div>
+    <div class=hudorange><span class=time>[06d07s 00:01]</span><details open><summary><u>Edited Sub-Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Invisible Light</span></summary><ul><li>Gabbro was able to locate another projection stone (…and the bench it was left on) while completely in the dark.</li></ul></details></div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Upper Hull Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Cockpit Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Port Hull Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Port Thruster Bank Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Starboard Hull Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Starboard Thruster Bank Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Fuel Tank Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Oxygen Tank Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Reactor Damaged</u> Impact Severity: Critical</div>
+    <div class=hudred><span class=time>[06d07s 00:16]</span><u>Electrical Systems Damaged</u> Impact Severity: Cr�</div>
+</div>
+
+<!-- @SFOLD — Javascript -->
+</div></div>
+<!-- 1 day		   = 416*22   human seconds
+1 sunrise	 	   = 416      human seconds
+1 Hearthian minute = 416/60   human seconds
+1 Hearthian second = 416/3600 human seconds -->
+<script>musthide=document.querySelectorAll('*[id^="hloop"]:not(#h'+window.location.href.split('#')[1]+')');for(i=0;i<musthide.length;i++){musthide[i].style.display='none'}
+const gametime=t=>{const time={m:('00'+Math.trunc(t/60)).slice(-2),s:('00'+Math.round(t)%60).slice(-2)};return Object.entries(time).map(([key,val])=>`${val}:`).join('').slice(0,-1)}
+function hearthiantime_to_gametime(time){
+    day=time[0]+time[1]
+    sunrise=time[3]+time[4]
+    minutes=time[7]+time[8]
+    seconds=time[10]+time[11]
+    humanseconds=(day-1)*22*416+(sunrise-1)*416+minutes*416/60+seconds*416/3600-46905
+    window.alert('Input: '+time+'\nIn-game time: '+gametime(humanseconds))
+    return(gametime(humanseconds))
+}
+function gametime_to_hearthiantime(time){
+    minutes=time[0]+time[1]
+    seconds=time[3]+time[4]
+    humanseconds=Number(minutes)*60+Number(seconds)+46905
+    nbdays=Math.trunc(1+humanseconds/(22*416))
+    nbsuns=Math.trunc(1+(humanseconds-22*nbdays)/416)%22
+    nbmins=Math.trunc((humanseconds-416*22*Math.trunc(humanseconds/(22*416))-416*(Math.trunc((humanseconds-22*nbdays)/416)%22))/416*60)
+    if(nbmins>59){nbmins-=60;nbsuns+=1}
+    nbsecs=Math.round((humanseconds-(nbdays-1)*22*416-(nbsuns-1)*416-nbmins*416/60)/(416/3600))
+    window.alert('Input: '+time+'\nHearthian time: '+('00'+nbdays).slice(-2)+'d'+('00'+nbsuns).slice(-2)+'s '+('00'+nbmins).slice(-2)+':'+('00'+nbsecs).slice(-2))
+}
+// hearthiantime_to_gametime('06d06s 57:25')
+// gametime_to_hearthiantime('07:14')
+</script>
+<!-- @EFOLD -->

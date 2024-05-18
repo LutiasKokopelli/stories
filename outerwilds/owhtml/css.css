@@ -347,10 +347,13 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 
 .chp > *:first-child,wip > *:first-child,.shiplog > *:first-child{margin-top:0}
 .chp > *:last-child,wip > *:last-child,.shiplog > *:last-child{margin-bottom:0}
-
 .shiplog{background:rgb(var(--black));color:rgb(var(--white));border:3px solid rgb(var(--blue));padding:20px;font-family:Space Mono;width:95%;margin:20px auto}
 .shiplog p{margin:12px 0}
 .shiplog h2{font-size:1.7em}
+.shiplog li{list-style:'– '}
+.shiplog li::marker{color:rgb(var(--white))}
+/* .history{text-indent:-9em;padding-left:9em;font-size:80%} */
+
 p.time{color:rgb(var(--blue));font-size:1.2em;font-weight:600;margin:42px 0 12px 0}
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
@@ -358,8 +361,18 @@ orng,.red{color:rgb(var(--orng))}
 .blue{color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
 .lblue{color:rgb(var(--lblue))}
-li{list-style:'– '}
-.shiplog li::marker{color:rgb(var(--white))}
+.redl{color:rgb(var(--redl))}
+.redd{color:rgb(var(--redd))}
+.greend{color:rgb(var(--greend))}
+.greenl{color:rgb(var(--greenl))}
+.indigol{color:rgb(var(--indigol))}
+.indigod{color:rgb(var(--indigod))}
+.purplel{color:rgb(var(--purplel))}
+.purpled{color:rgb(var(--purpled))}
+.goldl{color:rgb(var(--goldl))}
+.goldd{color:rgb(var(--goldd))}
+.greyl{color:rgb(var(--greyl))}
+.greyd{color:rgb(var(--greyd))}
 
 smol{font-size:.7rem;font-family:Space Mono}
 .smol{font-size:.8em}
@@ -386,7 +399,19 @@ smol{font-size:.7rem;font-family:Space Mono}
     font-weight:500;
     background-image:url("https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/img/bg_radio.gif");
     background-size:50%;
-} */
+}
+#workskin .shiplog {
+  padding: 20px;
+  font-family: Space Mono;
+  width: 80%;
+  margin: 20px auto;
+}
+
+#workskin .time {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+*/
 
 .nomai{padding:17px;text-align:center;width:87%;font-family:Space Mono,Monospace;background:radial-gradient(rgb(42,110,100),black 80%);margin:0 auto;text-shadow:0 0 1.2em currentcolor;text-indent:0!important;color:rgb(177,252,252);box-shadow:0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8)}
 :not(.nomai)+.nomai,.nomai:first-child{margin-top:17px;border-radius:17px 17px 0 0}
