@@ -1,9 +1,15 @@
 <!-- @SFOLD — HEADER ———————————————————————————————————————————————————————————————————————————————————————————————————— -->
-<title>Fate Knows No One</title><link rel=icon href=img/favicon.ico><link rel=stylesheet href=css.css><style>h1,h2,h3{text-align:center}
-.shiplog *{text-align:left}details{background:rgba(var(--indigol),.7);padding:7px 17px;border-radius:17px;margin:17px auto}details a{color:rgba(var(--blue),.8);filter:brightness(200%)}
-summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margin:-7px -17px}details[open] summary{border-radius:17px 17px 0 0}summary *{display:inline-block}
-.chprt a{display:block;background:rgba(var(--indigod),.5);color:rgba(var(--white),.8);padding:7px 17px;border-radius:50px;text-wrap:nowrap;overflow-x:hidden;text-overflow:ellipsis}.chprt a+a{margin-top:5px}.chprt a:hover{color:white;background:rgba(var(--indigol),.5)}.lbl-toggle{padding:7px}.sbar{margin-bottom:7px}
-#navctn a{color:rgba(var(--white),.8)}#navctn a:hover{color:white}
+<title>Fate Knows No One</title><link rel=icon href=img/favicon.ico><link rel=stylesheet href=css.css>
+
+<style>
+h1,h2,h3{text-align:center}
+.chprt a{display:block;background:rgba(var(--indigod),.5);color:rgba(var(--white),.8);padding:7px 17px;border-radius:50px;text-wrap:nowrap;overflow-x:hidden;text-overflow:ellipsis}
+.chprt a+a{margin-top:5px}
+.chprt a:hover{color:white;background:rgba(var(--indigol),.5)}
+.lbl-toggle{padding:7px}
+.sbar{margin-bottom:7px}
+#navctn a{color:rgba(var(--white),.8)}
+#navctn a:hover{color:white}
 .lbl-toggle:after{content:'';background:url(img/Steam_Lv5_Supernova.png)center;background-size:100%;width:5vh;height:5vh;position:absolute;left:0;top:0}
 
 /* FOR LOW CONTRAST MODE */
@@ -16,47 +22,42 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
     <a href=#WIP_POINT style=margin:8px;background:rgba(var(--redd),.7);padding:12px;border-radius:50px;text-align:center><b>WIP Point</b></a>
     <a href=#ch0 style='margin:8px;padding:7px 17px;border-radius:50px'><b>Prologue:</b> Attempt #459</a>
     </div>
-    <div class=sbar><input id=lbl1 class=toggle type=checkbox><label for=lbl1 class=lbl-toggle><a href=#ch1_1>Loop 1:</a></label><div class='barss chprt'>
+    <div class=sbar><input id=lbl1 class=toggle type=checkbox checked=true><label for=lbl1 class=lbl-toggle><a href=#ch1_1>Loop 1:</a></label><div class='barss chprt'>
         <a href=#ch1_1><b>Chapter 1:</b> Launch Day</a>
         <a href=#ch2_1><b>Chapter 2:</b> 9,318,054</a>
         <a href=#ch3_1><b>Chapter 3:</b> The Rock That Looks Like a Face Rock</a>
         <a href=#ch4_1><b>Chapter 4:</b> Probing for Clues in Orbit</a>
+        <a href=#int_1><b>Interlude:</b> Firn’s Ship Log</a>
     </div></div>
-    <div class=sbar><input id=lbl2 class=toggle type=checkbox><label for=lbl2 class=lbl-toggle><a href=#ch1_2>Loop 2:</a></label><div class='barss chprt'>
+    <div class=sbar><input id=lbl2 class=toggle type=checkbox checked=true><label for=lbl2 class=lbl-toggle><a href=#ch1_2>Loop 2:</a></label><div class='barss chprt'>
         <a href=#ch1_2><b>Chapter 1²:</b> Good Morning</a>
-        <a href=#ch2_2><b>Chapter 2²:</b> Lunar Exploration</a>
-        <a href=#ch2_3><b>Chapter 3²:</b> A Letter From Tomorrow</a>
+        <a href=#ch2_2><b>Chapter 2²:</b> Cyclone Riders</a>
+        <a href=#ch3_2><b>Chapter 3²:</b> Lunar Exploration</a>
+        <a href=#ch4_2><b>Chapter 4²:</b> A Letter From Tomorrow</a>
     </div></div>
-    <div class=sbar><input id=lbl3 class=toggle type=checkbox><label for=lbl3 class=lbl-toggle><a href=#ch1_3>Loop 3:</a></label><div class='barss chprt'>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+    <div class=sbar><input id=lbl3 class=toggle type=checkbox checked=true><label for=lbl3 class=lbl-toggle><a href=#ch1_3>Loop 3:</a></label><div class='barss chprt'>
+        <a href=#ch1_3><b>Chapter 1³:</b> Untitled</a>
     </div></div>
-    <div class=sbar><input id=lbl4 class=toggle type=checkbox><label for=lbl4 class=lbl-toggle><a href=#ch1_4>Loop 4:</a></label><div class='barss chprt'>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+    <div class=sbar><input id=lbl4 class=toggle type=checkbox checked=true><label for=lbl4 class=lbl-toggle><a href=#ch1_4>Loop 4:</a></label><div class='barss chprt'>
+        <a href=#ch1_4><b>Chapter 1⁴:</b> Untitled</a>
     </div></div>
-    <div class=sbar><input id=lbl5 class=toggle type=checkbox><label for=lbl5 class=lbl-toggle><a href=#ch1_5>Loop 5:</a></label><div class='barss chprt'>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+    <div class=sbar><input id=lbl5 class=toggle type=checkbox checked=true><label for=lbl5 class=lbl-toggle><a href=#ch1_5>Loop 5:</a></label><div class='barss chprt'>
+        <a href=#ch1_5><b>Chapter 1⁵:</b> Untitled</a>
     </div></div>
-    <div class=sbar><input id=lbl6 class=toggle type=checkbox><label for=lbl6 class=lbl-toggle><a href=#ch1_6>Loop 6:</a></label><div class='barss chprt'>
+    <div class=sbar><input id=lbl6 class=toggle type=checkbox checked=true><label for=lbl6 class=lbl-toggle><a href=#ch1_6>Loop 6:</a></label><div class='barss chprt'>
         <p>Hal snaps.</p>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+        <a href=#ch1_6><b>Chapter 1⁶:</b> Untitled</a>
     </div></div>
-    <div class=sbar><input id=lbl7 class=toggle type=checkbox><label for=lbl7 class=lbl-toggle><a href=#ch1_7>Loop 7:</a></label><div class='barss chprt'>
+    <div class=sbar><input id=lbl7 class=toggle type=checkbox checked=true><label for=lbl7 class=lbl-toggle><a href=#ch1_7>Loop 7:</a></label><div class='barss chprt'>
         <p>Firn, after being convinced and learning about the plan to get paired with a statue, gets overzealous due to the fact that they don’t have much time left in the loop. They don’t want to tell Hal about the plan, instead wanting to keep it a surprise and wanting them to see for themself as it happens; but in their hurry, they crash the ship on Giant’s Deep and Hal dies horribly, both impaled with glass and suffocating due to their lack of spacesuit.</p>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+        <a href=#ch1_7><b>Chapter 1⁷:</b> Untitled</a>
     </div></div>
-    <div class=sbar><input id=lbl8 class=toggle type=checkbox><label for=lbl8 class=lbl-toggle><a href=#ch1_8>Loop 8:</a></label><div class='barss chprt'>
+    <div class=sbar><input id=lbl8 class=toggle type=checkbox checked=true><label for=lbl8 class=lbl-toggle><a href=#ch1_8>Loop 8:</a></label><div class='barss chprt'>
         <p>Hal is taken to Gneiss, traumatized by the crash. Gossan takes Firn to meet Gabbro on Giant’s Deep and attempt to follow the plan, but both fail to pair with any statue.</p>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+        <a href=#ch1_8><b>Chapter 1⁸:</b> Untitled</a>
     </div></div>
-    <div class=sbar><input id=lbl9 class=toggle type=checkbox><label for=lbl9 class=lbl-toggle><a href=#ch1_9>Loop 9:</a></label><div class='barss chprt'>
-        <!-- <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a>
-        <a href=#chxxx><b>Chapter X:</b> XXXXXXX</a> -->
+    <div class=sbar><input id=lbl9 class=toggle type=checkbox checked=true><label for=lbl9 class=lbl-toggle><a href=#ch1_9>Loop 9:</a></label><div class='barss chprt'>
+        <a href=#ch1_9><b>Chapter 1⁹:</b> Untitled</a>
     </div></div>
 
 </div></div><button id=openbtn onclick=openNav()>&#9776; Index</button>
@@ -69,7 +70,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
     <li>The time loop occurs between the 113th and 117th sunrises of the week, which are the third and seventh sunrises of the sixth day (written respectively as 06d03s and 06d07s), which correspond to the waking sunrise cycles within the sixth day of the week. If I were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
 </ul></div>
 <!-- @EFOLD -->
-<!-- @SFOLD — 000 — PROLOGUE: Attempt #459 —————————————————————————————————————————————————————————————————————————————— -->
+<!-- @SFOLD — OOO — PROLOGUE: Attempt #459 —————————————————————————————————————————————————————————————————————————————— -->
 <div class=chp id=ch0><h1>Prologue</h1><h2>Attempt #459</h2><hr>
 <p>The first thing Firn saw upon waking up was a strange flash of light coming from Giant’s Deep.</p>
 <p class=vs>The second thing Firn saw as they sat up and yawned quietly was Slate, tending to the campfire and evidently planning to soon roast some marshmallows. They decided to join in, happily reaching out for their stick as the realization of just which day this was drew in.</p>
@@ -776,7 +777,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Both Hearthians exchanged a silent look, mixed with such a large number of emotions. With only one sentence, there were so many things to unpack! Riebeck was vibrating in place, physically trying to restrain themself from snatching the translator off Firn’s hands so they could read everything at once.</p>
 <p>“Ooh, it really works! And it did it so fast, too!” they heaved with a massive curious grin. “And now– So they were building a cannon, and something about locating an ‘eye’…”</p>
 <p>Firn squinted, seemingly focused on an entirely different part of the message. “…‘Relatively speaking’?” they read in confusion. “That’s an… odd thing to say here. You think there could be something lost in translation?”</p>
-<p>“Don’t you trust your own hard work?” Riebeck asked with a raised eyebrow; but they instantly stepped closer to the wall, hesitantly bringing a finger to underline the carved scriptures, then mumbling some foreign words to themself for a few moments. Eventually, they called out into their radio: “Hal, if I say <!--<img src=https://lutiaskokopelli.github.io/stories/outerwilds/TMP_soon-relatively-speaking.png class=isnomai>-->… How would you translate the <!--<img src=https://lutiaskokopelli.github.io/stories/outerwilds/TMP_relatively-speaking.png class=isnomai>--> part? The translator reads it as ‘relatively speaking,’ but… That sounds a bit out of place, without context. O-or at least Firn finds that weird.”</p>
+<p>“Don’t you trust your own hard work?” Riebeck asked with a raised eyebrow; but they instantly stepped closer to the wall, hesitantly bringing a finger to underline the carved scriptures, then mumbling some foreign words to themself for a few moments. Eventually, they called out into their radio: “Hal, if I say <img src=../TMP_soon-relatively-speaking.png class=isnomai>… How would you translate the <img src=../TMP_relatively-speaking.png class=isnomai> part? The translator reads it as ‘relatively speaking,’ but… That sounds a bit out of place, without context. O-or at least Firn finds that weird.”</p>
 <p>“I’m not saying the translation’s inaccurate,” they corrected quickly. “All I’m saying is that maybe its meaning is clearer when it’s read in its original language. I don’t know, maybe there’s some subtlety that’s taken out when it’s translated to Hearthian or something.”</p>
 <p>All the way back from Timber Hearth, the linguist took a few moments to ponder their options. Soon, their answer came out with a sigh: <span class=radio>“…No, I’m pretty sure this is as accurate as we could make it. Now that you say it though, I do wonder what they meant by that. They must be referring to something you didn’t read yet, assuming it’s written at all. What does the rest say?”</span></p>
 <p>Answering with a dubious hum instead of words, Firn moved their translator to read each reply to this first message, one after the other. When Riebeck started reading each sentence out loud for ground control to hear, Gabbro felt obliged to listen in as well:</p>
@@ -841,6 +842,75 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Firn opened their mouth wide, ready to share the news with a shocked gasp — but before they could utter a single word, the three second-to-last Hearthians in existence were burned alive in an instant.</p>
 </div>
 <!-- @EFOLD -->
+<!-- @SFOLD — 001 — INTERLUDE: Firn’s Ship Log -->
+<table id=int_1 class=shiplog style=width:50%><tr><td colspan=2><h1>Interlude</h1><h2>Firn’s Ship Log</h2><hr></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 39:59]</td><td><details open><summary><u>Liftoff</u></summary></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 42:02]</td><td><details open><summary><u>Lock On</u> Giant’s Deep</summary><li>Distance: <span class=orange>82.452km</span><span class=old> (from Center of Mass)</span></li><li>Velocity: <span class=blue>431m/s</span></li></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 42:04]</td><td><details open><summary><u>Engaging Autopilot</u></summary></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d04s 44:35]</td><td><details open><summary><u>Created New Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span></summary><ul><li>The Nomai statue in the observatory turned toward Hal and opened its eyes! The experience left them even more shaken than you’d expect.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d04s 44:59]</td><td><details open><summary><u>Added Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li>Hal says they saw their own memories flash before their eyes. Whether that was the statue’s doing or not, they were clearly not okay for a few minutes. But after that, they looked completely normal (save for still being upset by whatever happened).</li><li>They pondered whether the Nomai could’ve had mind-reading technology.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d04s 45:11]</td><td><details open><summary><u>Added Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Timing</span></summary><ul><li>It’s not the first time Hal or even Hornfels went close to that statue, and it was inert when Gabbro brought it back from Giant’s Deep and even chipped it. Why did it only act up today?</li><li>Even if it were related to the way Hornfels prepped it for the museum, Hal had been standing by its side for a while before it started moving.</li><li>Hornfels had been trying to get its eyes to open for weeks, without success... But today, it did it all on its own for no apparent reason. If Hal did something to trigger it, they have no idea what it is.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d04s 47:12]</td><td><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li>Hal also mentioned me “not seeing” something. They weren’t clear on what it was, but apparently they saw more than just the statue moving on its own.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d04s 47:26]</td><td><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li><span class=old>Hal also mentioned me “not seeing” something. They weren’t clear on what it was, but apparently they saw more than just the statue moving on its own.</span> I’m not completely sure they meant the memories thing.</li></ul></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 47:44]</td><td><details open><summary><u>Autopilot Complete</u></summary></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 49:04]</td><td><details open><summary><u>Deploying Signalscope</u></summary><li>Frequency: <span class=orange>Outer Wilds Ventures</span></li></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 56:48]</td><td><details open><summary><u>Activating Landing Camera</u></summary></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d04s 57:09]</td><td><details open><summary><u>Landing Complete</u></summary></summary></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d04s 57:13]</td><td><details open><summary><u>Saved New Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Gabbro’s Island</span></summary></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d05s 06:24]</td><td><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Gabbro’s Island &gt; <span class=orange>Gabbro</span></summary><ul><li>Gabbro found another Nomai statue, which opened its eyes at them some time after Hal’s did.</li><li>They’re showing the same symptoms as Hal did during the few minutes after the museum’s statue looked at them. Gabbro called it “getting their brain turned upside down” and something about a “spiritual experience.” Whatever that means.</li><li><span class=orange>Note for later: Try to ask Hal if they can explain a bit better what it felt like. There’s no doubt now that those statues definitely did <i>something</i> to their brains.</span></li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d05s 07:35]</td><td><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal’s Experience</span></summary><ul><li><span class=old>Hal also mentioned me “not seeing” something. <s class=red>They weren’t clear on what it was, but apparently they saw more than just the statue moving on its own. I’m not completely sure they meant the memories thing.</s></span> They asked Gabbro about a “glowing eyes thing.” I don’t remember seeing anything glowing, but Gabbro knew exactly what they were talking about.</li></ul></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d05s 07:43]</td><td><details open><summary><u>Renamed Entry</u> <span class=red>“Hal’s Experience”</span> into <span class=lgreen>“Hal and Gabbro’s Experience”</span></summary></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d05s 09:59]</td><td><details open><summary><u>Edited Sub-Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statue</span> &gt; <span class=blue>Hal and Gabbro’s Experience</span></summary><ul><li>Gabbro talked about “seeing and hearing double” with some of it being in fast motion. Hal said it had felt the same for them, and that it felt like living through two different moments at the same time.</li><li>Hal mentioned something about “putting things back in order.” With Gabbro saying that their statue turned their brain upside-down, it seems like the few minutes afterwards were both of them trying to fix whatever had been done to them?</li><li><span class=old>Hal says they saw their own memories flash before their eyes. <s class=red>Whether that was the statue’s doing or not, they were clearly not okay for a few minutes. But after that, they looked completely normal (save for still being upset by whatever happened).</s></span> Sounds like it had to be taken literally, and that it’s why they were so disoriented for the few minutes after the statue opened its eyes.</li><li><s class='old red'>They pondered whether the Nomai could’ve had mind-reading technology.</s></li></ul></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d05s 12:01]</td><td><details open><summary><u>Liftoff</u></summary></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d05s 15:13]</td><td><details open><summary><u>Activating Landing Camera</u></summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d05s 15:31]</td><td><details open><summary><u>Starboard Thruster Bank Damaged</u> Impact Severity: Low</summary></details></td></tr>
+    <tr class=hudgrey      ><td class=time>[06d05s 15:42]</td><td><details open><summary><u>Landing Complete</u></summary></summary></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d05s 15:45]</td><td><details open><summary><u>Saved New Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Statue Island</span></summary></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d05s 15:48]</td><td><details open><summary><u>Edited Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Statue Island</span></summary><ul><li>This is the one with two islands connected by a natural rock arch.</li></ul></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d05s 17:25]</td><td><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Statue Island &gt; <span class=orange>Nomai Statue (Gabbro)</span></summary><ul><li>The statue that opened its eyes at Gabbro is lying on the beach of “Statue Island” (as they call it). It looks just like the one in our observatory.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 17:37]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-17-37_nomaistatue-giantsdeep-front.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 17:41]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-17-41_nomaistatue-giantsdeep-right.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 17:54]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-17-54_nomaistatue-giantsdeep-back.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 18:00]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-00_nomaistatue-giantsdeep-left.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 18:11]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-18-11_nomaistatue-giantsdeep-face-closeup.img”</span></summary></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d05s 18:17]</td><td><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Statue Island &gt; <span class=orange>Nomai Statue (Gabbro)</span></summary><li>Linked File <span class=lblue>“06d05s-18-11-nomaistatue-giantsdeep-face-closeup.img”</span></li></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d05s 18:20]</td><td><details open><summary><u>Renamed Entry</u> <span class=red>“Nomai Statue”</span> into <span class=lgreen>“Nomai Statues”</span></summary></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d05s 18:17]</td><td><details open><summary><u>Edited Entry</u> Timber Hearth &gt; Village &gt; <span class=orange>Nomai Statues</span></summary><ul class=orange><li>Note for later: Try to figure something out for linking this to the other entry in the<span class=lblue> Giant’s Deep &gt; Statue Island</span> folder. Way too tedious for the suit’s HUD to handle. And by “tedious” I mean I can’t find the buttons for it.</li><li>Also ask Slate next time you see them what their idea was when making it so that you can’t reopen previous photos after they’ve been uploaded to the ship log. I mean, <i>seriously</i>? Even modifying previous log entries is clunky.</li><li>Guess they didn’t realize I’d want to be able to <i>edit</i> previous files even from outside the ship, not just write new ones. Still a bummer.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 19:35]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-19-35_giantsdeep-statueisland-beach1.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 19:39]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-19-39_giantsdeep-statueisland-beach2.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 19:46]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-19-46_giantsdeep-statueisland-beach3.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 19:52]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-19-52_giantsdeep-statueisland-blocked-entrance.img”</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d05s 19:58]</td><td><details open><summary><u>Saved Scout Photo</u> as <span class=lblue>“06d05s-19-58_giantsdeep-statueisland-blocked-entrance-sign.img”</span></summary></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d05s 23:08]</td><td><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Statue Island &gt; <span class=orange>Statue Workshop</span></summary><ul><li>This island must be where the Nomai created statues like the one in our observatory. I found a sign for a “Statue Workshop” next to a broken door that used to lead inside the island.</li></ul></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d06s 03:31]</td><td><details open><summary><u>Saved New Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Space Station in Orbit</span></summary></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d06s 04:12]</td><td><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span></summary></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d06s 04:34]</td><td><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Invisible Light</span></summary><ul><li>Gabbro says that the projection stone they found was glowing in the dark, but it just looks like a regular chunk of carved Nomai stone to me.</li><li>Judging from Riebeck’s reaction, they likely don’t see it glowing either.</li><li>Gabbro forgot their flashlight at their camp, and yet they could tell it apart from other debris at a glance.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 05:56]</td><td><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span></summary><ul><li>According to Riebeck, their purpose was to connect two different locations for instantaneous communication. They can’t do anything on their own, but they can be paired with other Nomai mechanisms.</li></ul></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d06s 09:02]</td><td><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>The projection stone fused to the mechanism at the center of this room has a symbol with two hexagons branching off carved on it.</li><li>According to Riebeck, this symbol must be representing our current location: the space station orbiting Giant’s Deep.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d06s 21:42]</td><td><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Projection Pool</span></summary><ul><li>Using the projection stone with one hexagon on the mechanism at the center of the room <span class=smol>(probably)</span> represented by two hexagons triggered some unknown Nomai technology (which we might as well call “projection pool”).</li><li>It creates a strange liquid which will let you see the other location in real time if you stand inside it.</li><li>The Nomai must have used them to not only talk, but also see each other and perhaps even remotely interact with distant locations.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 22:27]</td><td><details open><summary><u>Edited Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Projection Pool</span></summary><ul><li>I tried sending my scout inside the pool. Though it appears on the other side, I can’t use it to take photos of the other location <span class=smol>(or of our current location, for that matter, the scout only returns black pictures)</span>.</li></ul></details></td></tr>
+    <tr class=hudgreen     ><td class=time>[06d06s 23:01]</td><td><details open><summary><u>Created New Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>One Hexagon Location</span></summary><ul><li>The symbol with only one hexagon branching off which we found on a projection stone seems to be linked to another part of this space station.</li><li>The room looks nearly identical to the one from the <span class=lightblue>Two Hexagons Location</span> <span class=smol>(I hope we’ll figure out their real names sooner rather than later, if they have one)</span>, except it looks in far better shape.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 23:52]</td><td><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li><s class='old red'>According to Riebeck, this symbol must be representing our current location: the space station orbiting Giant’s Deep.</s> The two hexagons symbol seems to refer only to one compartment of this space station.</li><li>This compartment is heavily damaged. Its viewport window is fractured, exposing it to the vacuum of space.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 25:04]</td><td><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>Even though this compartment’s airlock is open, the corridor which would lead to the rest of the space station from inside this room collapsed and is impassable.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d06s 32:16]</td><td><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Space Station in Orbit &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Projection Wall</span></summary><ul><li>Using a projection stone near a vertical wall caused some Nomai text to spontaneously carve itself on its surface. It seems like two or more Nomai could exchange messages across two different locations that way.</li></ul></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d06s 33:57]</td><td><details open><summary><u>Renamed Destination Marker</u> <span class=red>“Space Station in Orbit”</span> into <span class=lgreen>“Orbital Probe Cannon”</span></summary></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 34:04]</td><td><details open><summary><u>Edited Destination Marker</u> Giant’s Deep &gt; <span class=lgreen>Orbital Probe Cannon</span></summary><ul><li>The Orbital Probe Cannon was created to find the precise location of something called the <span class=lblue>Eye of the universe</span>. They had been searching for it for multiple generations.</li><li>This station’s purpose seems to have been to launch a probe somewhere...</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 34:49]</td><td><details open><summary><u>Edited Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Two Hexagons Location</span></summary><ul><li>The Nomai pushed the Orbital Probe Cannon above its maximum power setting to create the greatest chance of finding the <span class=lightblue>Eye of the universe</span>.</li></ul></details></td></tr>
+    <tr class=hudblue      ><td class=time>[06d06s 41:23]</td><td><details open><summary><u>Added Sub-Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Two Hexagons Location</span> &gt; <span class=blue>Probe Firing</span></summary><ul><li>I saw a bright flash of light in front of Giant’s Deep upon waking up. I think it could have been the Orbital Probe Cannon firing... But why would it only fire now?</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d06s 43:02]</td><td><details open><summary><u>Edited Sub-Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Two Hexagons Location</span> &gt; <span class=blue>Probe Firing</span></summary><ul><li>Is its firing connected to the statues acting up as well? If so, the cannon launched the probe first, and the statues activated after.</li></ul></details></td></tr>
+    <tr class=huddarkorange><td class=time>[06d07s 00:01]</td><td><details open><summary><u>Edited Sub-Entry</u> Giant’s Deep &gt; Orbital Probe Cannon &gt; <span class=orange>Projection Stone</span> &gt; <span class=blue>Invisible Light</span></summary><ul><li>Gabbro was able to locate another projection stone (...and the bench it was left on) while completely in the dark.</li></ul></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Upper Hull Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Cockpit Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Port Hull Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Port Thruster Bank Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Starboard Hull Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Starboard Thruster Bank Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Fuel Tank Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Oxygen Tank Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Reactor Damaged</u> Impact Severity: Critical</summary></details></td></tr>
+    <tr class=hudred       ><td class=time>[06d07s 00:16]</td><td><details open><summary><u>Electrical Systems Damaged</u> Impact Severity: Cr�</summary></details></td></tr>
+</table>
+<!-- @EFOLD -->
 
 <!-- @SFOLD — 002 — CHAPTER 1²: Good Morning ———————————————————————————————————————————————————————————————————————————— -->
 <div class=chp id=ch1_2><h1>Chapter 1²</h1><h2>Good Morning</h2><hr>
@@ -849,7 +919,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>As they watched Marl stomp their way down the mountain road and back to the village below, Hal’s ears caught the sound of laughter coming from behind.</p>
 <p>Out of any Hearthian’s sight, yet from not too far away, a Nomai statue, marvel of eons old technology, remembered three very important things.</p>
 <p>“They’ll never change, will they?”</p>
-<p>First, its orientation was wrong. Clockwise, it was exactly two hundreds and forty-one degrees off.</p>
+<p>First, its orientation was wrong. Clockwise, it was exactly two hundred and forty-one degrees off.</p>
 <p>Hal looked up the path they had intended to take up to the observatory, and found that Gossan was currently walking down from it, having likely witnessed the scene from afar on their way.</p>
 <p>Second, its eyes were not supposed to be closed.</p>
 <p>The flight coach sent them a friendly wave right after their quip, and with a small tired smile, Hal waved back.</p>
@@ -891,7 +961,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Hal had indeed felt <i>something</i> reach out, briefly, before it started; but by the time their senses had been cut off and the metaphorical tape deck had started playing as a temporary replacement, this sensation had become all but an afterthought — not unlike the inconvenience of having been bit by a mosquito in the back of their head while they weren’t looking, but of being unable to do anything about it now that the void-forsaken thing had already taken off and vanished into the night.</p>
 <p>By the time the memory of meeting and getting stared at by the museum’s statue came, Hal felt an additional layer of intrigue: somehow, this reminisced sensation was <i>supposed</i> to be new, and yet it felt familiar, as if they had experienced it a few dozen minutes ago – a few dozen minutes which were, in reality, two seconds and nine hundredths.</p>
 <p>And then, as the metaphorical tape reel met its end with a sudden and burning finale, the Ash Twin Project returned the last thing it had taken: in an instant, Hal regained their senses – in the most literal meaning possible.</p>
-<p>The image of Hornfels’ ground control panel disappeared with an eeriely bright and burning flash of light; and as their true vision cleared, Hal startled to the sight of Gossan’s face, too little too close to their own for comfort, and to the touch of a glove holding their chin. As soon as this realization set in, the unexplained and unexplainable breach of their personal space caused them to jump backwards with a high-pitched yelp.</p>
+<p>The image of Hornfels’ ground control panel disappeared with an eerily bright and burning flash of light; and as their true vision cleared, Hal startled to the sight of Gossan’s face, too little too close to their own for comfort, and to the touch of a glove holding their chin. As soon as this realization set in, the unexplained and unexplainable breach of their personal space caused them to jump backwards with a high-pitched yelp.</p>
 <p>Gossan’s hand remained still and stuck in midair for a second or two, cupping something that no longer was there, as they stared back in shock; but soon, they brought their arm down to their side and sighed.</p>
 <p>“<i>Finally</i>,” Hal heard the founder exhale, eyes briefly rising to the stars. The three eyes lowered instantly to meet theirs again, and the next words they heard were clearly destined to them: “Oi, hatchling. You good?”</p>
 <p>Hal tried and failed to stop themself from taking a few more steps backwards and away from them, uncomfortably rubbing their chin in confusion.</p>
@@ -934,9 +1004,9 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Thankfully, after a while, the silence became too heavy for Hal to bear; and the Interloper somehow found its way close enough to the sun for its casing to melt, if ever so slightly.</p>
 <p>“Gossan…” They gulped. They needed answers, but there simply was no way to voice this question in a manner which would not raise even <i>more</i> concerns. “What was I doing before I, uh— before it happened? When did it start?”</p>
 <p>“You’d just told Marl to leave that tree alone,” they soon answered. Then, after a short pause: “<i>Please</i> tell me you remember that.”</p>
-<p>“Oh– o-oh yeah, yeah, I remember that,” they nodded eagerly. They decided not to mention that, from their own perspective, they remembered this having happened a grand total of three sunrises earlier, rather than the few minutes it had presumably been since they somehow woke up back there. “And after that you came down the path from the observatory and we started talking.”</p>
+<p>“Oh– o-oh yeah, yeah, I remember that,” they nodded eagerly. They decided not to mention that, from their own perspective, they remembered this having happened at least a couple sunrises earlier, rather than the few minutes it had presumably been since they somehow woke up back there. “And after that you came down the path from the observatory and we started talking.”</p>
 <p>A single, decisive nod. “And then you froze mid-sentence.”</p>
-<p>Hal bit their lip. “I thought we had a full conversation… before I woke up and realized it had all been in my imagination somehow, that is.” The whole conversation<i> and</i> the three sunrises, apparently.</p>
+<p>Hal bit their lip. “I thought we had a full conversation… before I woke up and realized it had all been in my imagination somehow, that is.” The whole conversation<i> and</i> the couple sunrises, apparently.</p>
 <p>Gossan gave a small, nervous smile. “So you just kept talking inside your head and forgot to say any of it out loud?”</p>
 <p>“Yeah, and I guess I even hallucinated your answers too,” Hal chuckled tiredly, “with all that stuff about Firn’s launch day and your idea to make me feel better by giving them some last minute training with some mining equipment that broke, or something.”</p>
 <p class=vs>Gossan’s eyes widened at once. Courtesy of their lowered guard and missing eye combined, they slipped on a misplaced and treacherously unstable rock, and almost lost their balance. Hal turned to them in alert, ready to help but coming after they had already regained their footing on their own.</p>
@@ -954,7 +1024,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>“I-it’s just like— it’s <i>turned</i>, too, just like how it did when it looked at me,” Hal blabbered in panic. They seemed about to say more, but their head had turned to the side for a brief moment; and when their eyes met those of the other Hearthian next to them, their mouth slammed shut. Instead of sharing any further thought, they cowered and fiddled with their hands, avoiding their gaze. “G-<span class=scaps>g</span>ossan, I…”</p>
 <p>“Hal, you can stop pretending that you’re the problem,” they called out in a low tone, shaking their head nervously. “It’s not sap wine, and I hope we both agree that you’re not crazy. It’s the third time you’ve talked about something you shouldn’t be able to know— <i>Something</i> is going on, and that something isn’t you being unwell. I’ve seen enough evidence to at least take you seriously, and because of that, I need you to tell me what <i>really</i> happened.”</p>
 <p class=vs>Admittedly, it would have been a lie to say that they were fully, blindly trusting their words, or even that they would be naive enough to take them at face value. As much as they had told Marl that the likelihood of this situation being yet another elaborate prank from Firn was infinitesimal considering the fact that Hal had never before been a willing accomplice, and that they most likely would never be… Hal had many times been an <i>involuntary</i> accomplice.</p>
-<p>Gossan could not begin to fathom how any kind of scheme capable of explaining Hal’s behavior and incongruous knowledge could have been set up, let alone without having Hal themself figure out that they were somehow tricked into seeing things; but if only because the alternative somehow sounded even <i>more</i> dubious than this already farfetched idea… They still thought that, farfetched and evidence-lacking as it currently was, it was a little too early to rule out this option just yet.</p>
+<p>Gossan could not begin to fathom how any kind of scheme capable of explaining Hal’s behavior and incongruous knowledge could have been set up, let alone without having Hal themself figure out that they were somehow tricked into seeing things; but if only because the alternative somehow sounded even <i>more</i> dubious than this already far-fetched idea… They still thought that, far-fetched and evidence-lacking as it currently was, it was a little too early to rule out this option just yet.</p>
 <p class=vs>Firn’s pranks were either imperceptible or confusing until it was too late to stop them, and given the fact that they tended to happen weekly or even biweekly on average, they also became paranoia-inducing rather quickly. And yet… In this current situation, it sounded almost like a comforting thought, while compared to the idea of being confronted to the utter inexplicable.</p>
 <p>Firn’s pranks were charted territory – the familiar kind of unpredictable chaos. This, on the other hand… If Firn had nothing to do with it, then the sheer impossibility that remained felt darker and deadlier than even Brittle Hollow’s black hole.</p>
 <p>All the while… Regardless of Gossan’s words and invitation to share their experience, Hal had remained silent, shy and anxious, guiltily staring at the ground.</p>
@@ -967,7 +1037,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Gossan pinched their lips together, squinting in order to try hiding their disbelief. It was time to finally stop beating around the bush and call the situation for what it was: “So… you saw the <i>future</i>, then?”</p>
 <p>Hal pouted, mouth and eyebrows crumpling into indecision. “Some future that d-didn’t happen, I guess?”</p>
 <p>“But a future I could imagine happen if you <i>hadn’t</i> been frozen to see it in the first place,” Gossan mumbled dubiously, unsure themself whether they should trust their own words or listen to their instinct to discredit them as pure and simple insanity. “I think we’re past questioning whether that vision you had was <i>accurate</i> – and at the stage of questioning <i>how</i> it could’ve shown you things you couldn’t possibly have known.”</p>
-<p>As well as, perhaps, at the stage of actually experimenting further and testing whether Hal would be able to predict even more events or details they should not be able to know normally. Three sunrises was quite a lot of time, considering the circumstances; and even though Gossan had heard enough to have their curiosity piqued and their disbelief heavily challenged… Well, this tale simply was too outlandish, and as such, they certainly would appreciate seeing more evidence to further prove their version of the events.</p>
+<p>As well as, perhaps, at the stage of actually experimenting further and testing whether Hal would be able to predict even more events or details they should not be able to know normally. Three sunrises was quite a lot of time, given the circumstances; and even though Gossan had heard enough to have their curiosity piqued and their disbelief heavily challenged… Well, this tale simply was too outlandish, and as such, they certainly would appreciate seeing more evidence to further prove their version of the events.</p>
 <p>Though, of course… For this to happen, they first needed the hatchling’s cooperation. Unfortunately, in the current moment, their anxiety made this far more difficult than it needed to be; but they still had to commend them for their attempt at remaining calm… and could only fathom just how distressing their experience must have been for them to be left in such a state.</p>
 <p>Hal was trying to take deep breath after deep breath, keeping their eyes closed in silence; and Gossan soon recognized it as the breathing technique Gabbro had taught them so long ago.</p>
 <p class=vs>Precisely because they were such a worrywart, this technique was one of the first things Gabbro had shared with them, perhaps as far back as the very first time the two had met, when Hal had to be barely taller than Tephra. As much as the saying <i>‘Gabbro is Gabbro’</i> went in the village… If they often invited Hal to follow them to some kind of secret spot in the woods every once in a while, and if Hal came back afterwards feeling far more at peace than they had upon leaving, then this certainly had to account for something.</p>
@@ -989,7 +1059,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Marl caught up with them in large strides, stopping in front of the open door and waving their arms in panic. “No no no, you don’t get it,” they pleaded, “this time it was something <i>really</i> weird!” With a fast blink, the young adult diverted their eyes away from the elder and pleaded to another: “Gossan, you can vouch for me! A little help? Please? You saw it just like me! They just stayed frozen for a whole minute, like a statue!”</p>
 <p class=vs>Gossan’s mouth twisted into a conflicted frown, as they sent Hal a quick, apologetic glance. It <i>had</i> been their initial request to fetch medical help after all, even though they were now unsure just how useful it was supposed to be. Panic aside, Hal indeed appeared to be in perfect shape physically speaking, and spending time examining them would be time spent both distressing them and not solving the actual problem… But still, what could be made of their previous state? Could there be undetectable, lingering consequences?</p>
 <p>Regardless of what their eventual decision would have been, they would not have been given time to act upon it, as Rutile was faster than all:</p>
-<p>“Syncope it is, then,” they sighed while rubbing their upper eyes. “Look, the fact is that whatever happened, I don’t see anything unusual here. So if you don’t mind, I have a first launch to watch and buckets of water to prepare, and then Tektite said they would give me some news about that smoke they saw in Youngback Crater — speaking of, Marl, be on your guard because your help might be needed there.”</p>
+<p>“Syncope it is, then,” they sighed while rubbing their upper eyes. “Look, the fact is that whatever happened, I don’t see anything unusual here. So if you don’t mind, I have a first launch to watch and buckets of water to prepare, and then Tektite said they would give me some news about that smoke they saw in Youngbark Crater — speaking of, Marl, be on your guard because your help might be needed there.”</p>
 <p>The lumberjack’s ears deflated. “But…”</p>
 <p>“Look, Porphy can give you something if they think it’ll help, but really— I’d wager they just worried themself to death all night and didn’t have enough sleep,” the elder grumbled with a wide eye roll. “What else do you want me to say? Eat more sugar, don’t climb up harsh slopes when you’re feeling tired, and Hal,” they concluded as they turned to point a stern finger at the hatchling in question all the while stepping backwards and out of the museum, “<i>stop</i> being so void-numbingly scared of everything.”</p>
 <p>Had the museum been built with a working door, Rutile would most likely have punctuated their harangue with a peremptory slam, asserting both the authority of their final say and the unsaid <i>“Stop wasting my time, you all know that I have a whole village to maintain in a non-burning state.”</i></p>
@@ -997,69 +1067,103 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>“<i>Seriously?</i> You didn’t even try to say<i> anything!?</i>”</p>
 <p>Gossan gritted their teeth awkwardly. “I’m sorry for all this, Marl. You did well, you couldn’t have known. It’s just that… the situation has evolved a little bit since you left.”</p>
 <p>Marl raised an eyebrow in disbelief. “Evolved how? You found the meteorite that conked them, or Hal admitted that their whole delirium thing was a prank?”</p>
-<p>Hal’s lips pressed shut into a thin line, ears drooping tensely. Gossan closed their eyes and brought a gloved hand to rub their forehead. “…Let’s go with neither,” the founder sighed. “It’s a little more complicated than that.”</p>
-<div id=WIP_POINT></div>
-<p style=min-height:20px;background:rgba(var(--orng),.2)>(insert quick narration)</p>
+<p>Hal’s lips pressed shut into a thin line, ears drooping anxiously. Gossan closed their eyes and brought a gloved hand to rub their forehead. “…Let’s go with neither,” the founder sighed. “It’s a little more complicated than that.”</p>
+<p>At first, Marl frowned in confusion, struggling to comprehend how there could somehow be a third option; but then, as they studied their faces one by one, as well as the embarrassed but knowing glance they exchanged in silence, their mouth hung open in bewilderment as they finally understood what this third option seemed to be – a third option which, evidently, did not deserve to be considered as such even for a single second.</p>
 <p>“Whoa, whoa, whoa. Don’t tell me you actually <i>believe them</i>? Gossan, they thought Firn’d already launched! And that Riebeck was on <i>Giant’s Deep</i>, for some reason.”</p>
-<p style=min-height:20px;background:rgba(var(--orng),.2)>(insert quick narration)</p>
-<p>“Hal, this might… take a minute. Go see Hornfels in the meantime and tell them about the statue, okay? I’ll be there soon.”</p>
+<p>“I know what they said,” the coach sighed tensely, struggling to think of the way they could come any close to even <i>begin</i> to explain and justify their choice. “It’s just… Listen, hear me out, but they said some other things while you were gone, things that should be impossible for them to know—”</p>
+<p>There was a humorous huff, followed by an exasperated roll of their eyes. “What, they told you about your ‘secret’ meeting from two days ago? Sorry to break it to you, but the fact that you and Porphy have a thing for each other is a secret to absolutely nobody.”</p>
+<p>Gossan’s ears promptly gained a purple tint, mouth slamming shut in shock and embarrassment. After a few seconds of stunned silence, they slightly shook their head with a grunt as an attempt to regain their senses. “—A-alright, you know what, this is– this isn’t important right now.”</p>
+<p>“Oh no, really, if anything I’m glad someone <i>finally</i> bothered to unplug the geyser in the room. Quite surprised Hal would be the one to do it, though. And even more surprised that you’d take <i>that</i> as proof that everything else they said makes any sense! I mean, <i>really</i>, Gossan?”</p>
+<p>The founder took a deep breath through their nose, rubbing their forehead as an attempt to hide the fact that the red value of their face’s overall color was rapidly increasing. “Hal, this might… take a minute. Go see Hornfels in the meantime and tell them about the statue, okay? I’ll be there soon.”</p>
 <p>Marl huffed, offended enough to let their disbelief resonate like shocked laughter. “Oh, <i>oh</i>, so now you’re just acting like <i>I’m</i> the problem to deal with!? Gossan, if whatever got them’s contagious or something—”</p>
-<p>As the flight coach tried to apologize and explain at the same time, unsurprisingly ending up failing at both as a result, Hal shyly stepped backwards and out of the room.</p>
+<p>As the flight coach tried to defend their pride and explain the situation at the same time, unsurprisingly ending up failing at both as a result, Hal shyly stepped backwards and out of the room.</p>
+<p class=vs>But then, as they were about to reach the stairs leading to the observatory… They paused for a short instant.</p>
 <p>When they had mentioned Hornfels’ name, Hal realized that Gossan had just brought up a rather intriguing, perhaps even worrying point:</p>
 <p>Where <i>was</i> Hornfels?</p>
-<p class=vs>In this future that had never been, from the very moment when Hal thought they remembered stepping in this room, Hornfels had been standing right here, looking at the statue. While, evidently… This time, they were not.</p>
-<p>Hal had a very clear idea as to where else they could be, this was not the question. With Firn’s first launch, actually, it should have been <i>more</i> surprising for Hornfels to be anywhere other than at their post on ground control, making sure that everything was ready… and, perhaps, making sure that Firn would be kept away from the launch codes all the way until the right time came.</p>
-
-
-
-<!-- <p>“Do you think Hornfels got to see it move?”</p>
-<p>“I’d asked them to stay focused on their ground control job and not let the statue distract them from Firn’s launch day, so I’d actually rather they didn’t.” “…Also, I’d bet that if they had noticed, they would’ve been glued to it. I’d wager the fact they’re not in this room means they don’t know yet.”</p> -->
-
-<wip>Hal then ponders why, in their vision, Hornfels had been downstairs looking at the statue when they arrived:</wip>
-
-<p>As Hal climbed the stairs to the observatory, they could not help but ponder: if they had seen the future, and nobody else had, then why would their memory of Hornfels be off? Was the future supposed to be deterministic, or was every person given enough free will to act differently while put under the exact same circumstances, even without knowing it? Or, more simply, were they and Gossan wrong, and had this vision truly been some kind of partial fluke, half impossibly accurate, but for the most part utter nonsense?</p>
+<p>In this future that had never been, from the very moment when Hal thought they remembered stepping in this room, Hornfels had been standing right here, looking at the back of the statue. While, evidently… This time, they were not.</p>
+<p class=vs>Hal had a very clear idea as to where else they could be, this was not the question. With Firn’s first launch, actually, it should have been <i>more</i> surprising for Hornfels to be anywhere other than at their post on ground control, making sure that everything was ready… and, perhaps, making sure that Firn would be kept away from the launch codes all the way until the right time came.</p>
+<p>If Hornfels had been done prepping the statue at least a sunrise or two before they had made their way to the museum, then what had they been doing downstairs the first time, that they would not be doing the second?</p>
+<p class=vs>As Hal resumed their climb up the stairs, they could not help but ponder yet another question, under a different angle: if they had indeed seen the future somehow, and nobody else had, then why would their memory of Hornfels be off? Was the future supposed to be deterministic, or was every person given enough free will to act differently despite being set under the exact same circumstances, even without knowing it?</p>
+<p>Or, perhaps more simply, were they and Gossan wrong, and had this vision truly been some kind of partial fluke, in part impossibly accurate, but for the most part utter nonsense?</p>
 <hr>
-<p class=vs>In truth, there was no such thing as unpredictable behavior – as true, unaltered and unbiased randomness could influence matter, perhaps, but rarely ever could it be strong to influence an observer’s choices. Even in a solar system in which the Eye of the Universe’s influence had spread, the Eye’s purpose was to search for untouched observers.</p>
-<p>Therefore, how indeed could a Hearthian’s mind be changed enough for them to spontaneously behave in such a vastly different way, so as to no longer be in the same location?</p>
-<p>Strangely enough, the answer to this mystery lied somewhere else entirely, so very far from the small museum on Timber Hearth, and some some sixteen minutes and forty-five seconds earlier.</p>
-<hr>
+<p>In truth, there was no such thing as truly unpredictable behavior: for behavior was defined by one’s choices – even the choice to leave things to ‘chance’, ironically, provided ‘chance’ itself could count as true randomness, which it most often could not; and for no choice could ever be made without an aware consciousness to collapse their own uncertainty into a set decision.</p>
+<p class=vs>True, unaltered and unbiased randomness could bend matter to its absolute unpredictability, born out of the simultaneous existence of all possibilities at once, perhaps; but rarely ever could it be enough to impede on an observer’s choices, for it was not supposed to choose in their stead. Quantum objects were meant to be everything at once, so that conscious observers alone could ultimately decide upon which reality to forge – in the current universe, as well as in the next one.</p>
+<p>This simple rule was an integral part of the laws of this world, and still applied even in a solar system in which the Eye of the Universe’s influence had spread, as a result of its initial cry into the void of space having been muffled for too long. Save for the hypothetical scenario of a direct confrontation with the truly random fluctuations of a quantum object, no conscious mind could be swayed so easily: indecision was, after all, what the Eye needed to avoid, for its purpose to be fulfilled safely – most of all the kind of indecision which would be caused by its own uncollapsed nature.</p>
+<p>Therefore, how indeed could a Hearthian’s mind be changed enough for them to spontaneously behave in such a vastly different way, so as to no longer be in the same location? Was it truly so self-centered of Hal to instinctively believe that every detail should have remained strictly identical to their memories, and that only their own actions should be enough to cause change on a macroscopic scale?</p>
+<p>It could be naively hypothesized that, courtesy of the museum housing a quantum shard with a tendency to appear in a truly random state upon each new observation, it somehow was to blame for this discrepancy. However… This hypothesis was incorrect.</p>
+<p>Instead, strangely enough, the answer to this mystery lied somewhere else entirely: in a place so very far from the small museum on Timber Hearth, and in a time some sixteen minutes and forty-five seconds earlier.</p>
+</div>
+<!-- @EFOLD -->
+
+<!-- @SFOLD — 002 — CHAPTER 2²: Cyclone Riders ———————————————————————————————————————————————————————————————————————————— -->
+<div class=chp id=ch2_2><h1>Chapter 2²</h1><h2>Cyclone Riders</h2><hr>
 <p>Through the thick stormy clouds, a massive explosion from orbit was reflected in purple flashes amongst the sky of Giant’s Deep.</p>
-<p>With a short gasp and a blink, Gabbro startled at the sudden change in luminosity – the second to occur in, well, less than a second.</p>
+<p>With a short gasp and a blink, Gabbro startled at the sudden change in both gravity and, most importantly, in luminosity – the second to occur in, well, less than a second.</p>
 <p>There were many reasons for Gabbro to feel disorientation and panic, in this moment; but, on the one hand because <i>‘Gabbro is Gabbro’</i> and Gabbro <i>doesn’t</i> panic, and on the other because there were so many reasons to panic that they could not even set their mind on which one to panic about… For a moment, they simply remained still, assessing one by one every element they could see.</p>
 <p class=vs>A second ago, they had been in almost complete darkness – behind the shadow of their favorite planet, sitting on a bench inside one of the two (three?) chambers of the Orbital Probe Cannon.</p>
 <p class=vs>Less than a second ago, their eyes had been burned by intense light brighter than their imagination could have fathomed – though it was not long before more than just their eyes were burned away.</p>
-<p>And then, even less than less than a second ago, the light vanished into not darkness, but bright green skies – the familiar and normal amount of bright, caused by Giant’s Deep’s lack of day-night cycle, courtesy of the sun’s light being reflected and refracted within the atmosphere ad nauseum. And instantly, with barely the time to even realize that they were back on Giant’s Deep, here had come this second flash of light, purple and dim this time, but noticeably distinct from the eternal storm’s usual thunder strikes.</p>
+<p class=vs>And then, even less than less than a second ago, the light vanished into not darkness, but bright green skies – the familiar and normal amount of bright, caused by Giant’s Deep’s lack of day-night cycle, courtesy of the sun’s light being reflected and refracted within the atmosphere until the electric clouds themselves became a source of light in their own right.</p>
+<p>And instantly after, with barely enough time to even process that their location had somehow changed, here had come this second flash of light, purple and dim this time, but noticeably distinct from the eternal storm’s usual thunder strikes.</p>
 <p>The first thing Gabbro realized and found all at once curious, incomprehensible, and terrifying, was the fact that they were not sitting on a bench anymore. Somehow, they had not just been transported from one location to another — <i>their body had been moved</i>. They were standing up, an arm pointing at the sky, signalscope in hand, seconds away from pressing the final button confirming a soon-to-be established connection with… ground control?</p>
-<p>As though they had been suffering from some kind of sleep paralysis, and only now were able to regain control of their limbs, Gabbro finally displayed a so rare and uncharacteristic external sign of distress: they promptly opened their hand and stepped back rapidly, looking for a split second like they expected their signalscope to explode.</p>
+<p>As though they had been suffering from some kind of sleep paralysis, and only now were able to fully regain control of their limbs, Gabbro finally displayed a so rare and uncharacteristic external sign of distress: they opened their hand and stepped back rapidly, expression of fear beneath their helmet looking for a split second like they expected their signalscope to explode.</p>
 <p>Then… they simply stared at it. Nope, not going to explode. Not going to magically move on its own and turn to them to finally explain what in the void brambling geysers had just happened, either. Not that the latter would have been any more reassuring, mind you.</p>
 <p>Gabbro, legs trembling, looked around proper, recognizing their current location to be their favorite island, the one they had set up camp on.</p>
-<p>No, really. <i>What</i> in the world had just happened?</p>
-<p>The instant this question was being formed inside their mind with enough insistence, it felt as if a cyclone came around and swept them away – even though, all at once, they had also never moved from here.</p>
-<p>Simultaneously to reality, they saw their own hands holding the signalscope once again, their eyes staring at the sky, and their true head staring at the ground instead.</p>
-<p>They were silent; they were speaking.</p>
-<p>“Hey, Horns, you still here? Gossan must’ve left by now, right?”</p>
-<p>[Hornfels has an audible eye roll.] “Gabbro, I really need to focus on Firn’s first launch. What is it? You’ve got a problem with my request from earlier?”</p>
-<p>The past Gabbro marked an awkward pause. The present Gabbro knew exactly why. “Yeah… Yeah. Yeah, it’s about that statue again.” Another pause, even more awkward than the last. Void did Gabbro sometimes wish they could lie properly. “Sooo… Just <i>how badly</i> do you need another one?”</p>
-<p>A loud sigh. “Just say it if you’re too lazy to get to work, will you?”</p>
-<p>For once, both past and present Gabbro wished that ‘laziness’ could have been the culprit. But unfortunately… the cyclone which had swept away their ship and launched it out of their sight about five to ten minutes earlier was, in fact, the real reason. Not that either version of Gabbro felt like admitting it, because admitting it would make them look even more irresponsible than just pretending that they didn’t want to get the job done.</p>
-<p>“Gabbro, as incredible as your discovery was, the fact that you chipped it… I’ve been starting to think that it may be the reason why it won’t open its eyes. I believe you damaged it more than we initially thought.”</p>
-<p>“Come on, it’s not <i>that</i> bad,” they simultaneously said and didn’t say. “I bet you couldn’t even find <i>where</i> it’s been chipped.”</p>
-<p>“Gabbro, the part you showed was <i>gigantic</i>,” (No, it absolutely was not,) “of course I know…”</p>
-<p>But then, the illusory Hornfels trailed off, and Gabbro felt an equally illusory smug grin make its way on their illusory face. “Nope. You don’t. You’ve been staring it for weeks and you couldn’t tell the difference.”</p>
-<p>“I will find it,” the curator grumbled stubbornly, “just you wait.” And then, instead of words, the radio transmitted the sounds of a microphone being picked up, then of footsteps stomping down the observatory’s staircase.</p>
-<p>“Had to be somewhere within the mane, I think,” they said helpfully and condescendingly at once. “With the alien anatomy and all the fluff, I’m sure it’s hard to tell what part of it is supposed to be missing anyway. If <i>you</i> can’t tell, you can be sure that no one will notice.”</p>
-<p>()</p>
-<p>“Someone’s coming,” Hornfels grunted. “Gabbro, you think I didn’t know what you’ve been playing here? You’ve wasted enough of my time stalling and looking for the stupidest excuses you could think of. I want you to <i>get out of your camp</i> and <i>get to work</i>. Understood?”</p>
-<p>Then, the radio from the past was turned off at once, and the illusory Gabbro found themself alone with the uncomfortable realization that they had somehow managed to get themself in even more trouble than they had started with. They found themself hoping that the planet would take pity on them and have the politeness to give them their ship back, sooner rather than later, if only so they could avoid another earful from ground control now berating them for <i>two</i> problems rather than one.</p>
-<p>And then… just as suddenly as a real one would, the cyclone passed, and Gabbro’s mind was once again dropped and drenched into full reality, freed from the grip of the wind.</p>
-<p>Gabbro had to give it to whoever, or whatever had been responsible for this: this seemed to explain why they were standing up in the exact same position as they once had in this past moment, or at least what this previous position corresponded to.</p>
-<p>This just happened to also raise an unhearthian amount of <i>other</i> questions – if only the one related to <i>why</i> their own memories had started replaying before their mind just now, especially in such a vivid way – but they instantly felt another cyclone coming, somehow some kind of triple cyclone with the mental and blurry image of three eyes opening this time, and before they could be thrown into the orbit of their own subconscious <i>again</i>, they vehemently shook their head and stepped back again.</p>
-<p>Strangely enough, their loudly and squeakily voiced <i>“<span class=scaps>nope</span>”</i> seemed to successfully chase the cyclone away. Huh.</p>
-<p>Gabbro guessed that they… might need to watch what kind of thought they were having, now. Joy. Not horrifying in the slightest, no siree.</p>
-<p>Deciding to try not to linger on their <i>questions</i> — for more reasons than one, seriously <i>what</i> on Hearth was– <i>no no no stop asking</i> — Gabbro tried to instead focus on what clues they already had. Too bad being focused was, uh, not really their strong suit.</p>
-<p>(They decide to first lie down, so they walk down and see that their hammock was not set up. Bummer.)</p>
-<p>(So they set up their hammock and lie down in it, starting to play their flute. Playing usually helped them focus.)</p>
-<p>So. Now, they were set, and ready for pondering.</p>
+<p>No, really. <i>What</i> in the world had just happened, and most importantly, what were they even doing with their signalscope in hand?</p>
+<p>The instant this last question was being formed inside their mind with enough insistence, it felt as though a cyclone was coming around and sweeping them away – even though, all at the same time, no wind was currently here to so much as rotate their helmet’s anemometer.</p>
+<p>Overlaid on top of reality, they saw their own hands holding the signalscope once again, even as they could still feel their arms lying by their side and their fingers being fully extended into anything but a grabbing gesture, their eyes staring at the sky, and yet their true head simultaneously staring down at the very same signalscope which was lying on the ground instead, definitely away from their grip.</p>
+<p class=vs>Mouth agape and throat tightening, they were silent;</p>
+<p>Smile plastered on their face and vocal cords humming, they were speaking.</p>
+<p><i>“Hey, Horns, you still here? Gossan must’ve left by now, right?”</i></p>
+<p>Gabbro felt a shiver run down their spine when they finally understood: they had, after all, experienced this once before. They recognized these words, just as much as they knew where the soon-to-be conversation was going to go — for this entire upcoming scene, too, had been experienced once before.</p>
+<p>Amongst the winds of the past and present alike, Gabbro heard what they now remembered to be naught but a far too vivid memory: <i>“Gabbro, I really need to focus on Firn’s first launch. What is it? You’ve got a problem with my request from earlier?”</i></p>
+<p>The past Gabbro marked an awkward pause. The present Gabbro knew exactly why. <i>“Yeah… Yeah. Yeah, it’s about that statue again.”</i> Another pause, even more awkward than the last. Void did Gabbro sometimes wish they could lie properly. <i>“Sooo… Just </i>how badly<i> do you need another one?”</i></p>
+<p>A loud, not-truly-existent sigh. <i>“Just say it if you’re too lazy to get to work, will you?”</i></p>
+<p class=vs>For once, both past and present Gabbro wished that ‘laziness’ could have been the culprit; but alas, the cyclone which had swept away their ship and launched it out of their sight about five to ten minutes earlier was, in fact, the real reason.</p>
+<p>Not that either version of Gabbro felt like admitting it, because admitting it would make them look even more irresponsible than just pretending that they didn’t want to get the job done.</p>
+<p><i>“Gabbro, as incredible as your discovery was, the fact that you chipped it… I’ve been thinking that it may be the reason why it won’t open its eyes. I am starting to believe that you must have damaged it more than we initially thought.”</i></p>
+<p>Both in the past and in the present, this remark made them exhale a silent, tired sigh, alongside an eye roll. It felt surprisingly nice, for just one moment, to have both their body and the illusion of it find at least one or two actions to agree upon, small and fleeting as they were.</p>
+<p class=vs><i>“Come on,”</i> their past self started,</p>
+<p>“Come on,” they voiced in sync— and their real mouth slammed shut, eyes instantly widening in terror. Even as they did so, they could still feel their lips tremble, and with a shiver they realized that they still felt the urge to keep talking, repeating the words they once had before.</p>
+<p><i>“—it’s not <i>that</i> bad,”</i> they simultaneously said and tried their hardest not to. <i>“I bet you couldn’t even find </i>where<i> it’s been chipped.”</i></p>
+<p class=vs>Scary how even their current body felt subconsciously compelled to re-enact the past as it played out, even if there was no Hornfels to talk to this time, and no signalscope in hand for their fingers to nervously tinker with. So much for having been glad a moment before to have this exact thing happen – just, out of the pleasant surprise to have their past self behave in a similar enough way to their current thoughts as to give the illusion of following their own present self’s volition, not by having it somehow happen in the exact reverse.</p>
+<p>They quickly found solace in the fact that stopping their body from copying their past self’s actions was not <i>too</i> difficult, quite easy in fact: after all, they had been doing it perfectly at first without even trying, and it had only become a problem once they had made a conscious effort of noticing the similarity… Nonetheless, their positively horrified state of mind definitely made it much harder than it needed to be.</p>
+<p>Even as a memory, Hornfels’ eye roll was almost audible. <i>“Gabbro, the broken part you gave Slate was </i>gigantic<i>,”</i> (No, it absolutely was not, Slate even had complained about it being too small to do anything worthwhile with – until they found out just how much more powerful of a processor and storage unit it was than they had first assumed, that was), <i>“of course I know where…”</i></p>
+<p>But then, the illusory Hornfels trailed off, and Gabbro felt an equally illusory smug grin make its way on their illusory face. <i>“Nope. You don’t. You’ve been staring at it for weeks and you couldn’t tell the difference.”</i></p>
+<p><i>“I will find it,”</i> the curator grumbled stubbornly, <i>“just you wait.”</i> And then, instead of words, the memory of their radio transmitted the sounds of a microphone being picked up, then of footsteps stomping down the observatory’s staircase.</p>
+<p><i>“Had to be somewhere within the mane, I think,”</i> they said helpfully and condescendingly at once. <i>“With the alien anatomy and all the fluff, I’m sure it’s hard to tell what part of it is supposed to be missing anyway. If even </i>you<i> can’t tell, you can be sure that no one will notice.”</i></p>
+<p>The radio from inside their head shared some annoyed grunts and unintelligible grumbles of protestation, and for a little while, this was all that Gabbro could experience: themself standing upright near their camp, on one side looking humorously at the sky with a signalscope in hand, on the other trying to remain composed with clenching and unclenching hands, trying not to think about the fact that one of them was distinctly itching to hold something that wasn’t there.</p>
+<p><i>“So, having any luck down there?”</i> their past self prompted jokingly when they started to think that the silence was getting overbearing, only to receive as answer nothing but more grumbles, of which Gabbro could barely distinguish something about wishing Slate hadn’t taken the broken part before they were given the time to see where on the statue it used to fit.</p>
+<p><i>“You know, Hornfels, I’ve also been thinking… It wouldn’t be very nice of me to just start looking for another, especially today.”</i></p>
+<p>Gabbro could so perfectly picture Memory Hornfels’ exasperated glare into the void, for lack of being able to glare at them directly. <i>“…Would you care to elaborate? Do I even want you to?”</i></p>
+<p><i>“Today’s supposed to be the first one’s big day, right? First day as a museum exhibit, biggest star of the whole place, and you already want me to look for a replacement to steal its spotlight? I can only imagine how betrayed and jealous that must make it feel.”</i></p>
+<p>Silence resumed for a moment more, this time full of bafflement at the audacity. <i>“I don’t even know why I bother,”</i> the curator eventually grumbled in a frankly appalled whisper. Then, changing their tone to a far more annoyed and stern one, they soon spoke some more… and Gabbro understood that they may have gotten past the limits of their patience. <i>“Gabbro, you think I don’t know what you’ve been playing at here? You’ve wasted enough of my time stalling and looking for the stupidest excuses you could think of! So now, I want you to </i>get out of your camp<i> and </i>go back to work<i>. Understood?”</i></p>
+<p class=vs>Then, the radio from the past was turned off at once, and the illusory Gabbro found themself alone with the uncomfortable realization that they had somehow managed to get themself in even more trouble than they had started with.</p>
+<p>They found themself hoping that the planet would take pity on them and have the politeness to give them their ship back, sooner rather than later, if only so they could avoid another earful from ground control now berating them for <i>two</i> problems rather than one.</p>
+<p>And then, with this last thought from past and present alike trailing into nothingness…</p>
+<p>Just as abruptly as a real one would, the cyclone finally left and vanished: and instantly after, Gabbro’s mind was once again dropped and drenched into full reality, freed from the grip of the winds.</p>
+<p>Left all alone in shock, now back to only having to deal with one very real body and no urge to move in ways they only had wished to some time in the past, but no longer in the present… Gabbro simply stared vacantly for a while.</p>
+<p>What had triggered this in the first place? What <i>was</i> this whole sequence?</p>
+<p>Instantly, the answer was dropped onto them from the skies, in the form of the unclear memory of a thought they had once formulated: <i>‘What were they doing with their signalscope in hand?’</i></p>
+<p>Gabbro kept staring for a while longer.</p>
+<p>They had to give it to whoever, or whatever had been responsible for this: what it had done seemingly successfully provided at least some kind of answer to their question. It had not answered with words, but it had rather… <i>given context</i> to a past event they remembered having lived through a few sunrises ago, during which they had indeed been standing upright with a signalscope in hand, in what was (probably not so) coincidentally the exact same way as they had upon finding themself back here.</p>
+<p>This just happened to also raise an unhearthian amount of <i>other</i> questions – if only the one related to <i>why</i> their own memories had started replaying before their mind just now, especially in such a vivid way – but they instantly felt another cyclone coming, somehow some kind of triple cyclone with the mental and blurry image of three eyes opening this time, and before they could be thrown into the orbit of their own subconscious <i>again</i>, they vehemently shook their head and stepped back, as if walking further away from the signalscope could let them escape their own mind.</p>
+<p>…Strangely enough, their loudly and squeakily voiced <i>“<span class=scaps>nope</span>”</i> seemed to successfully chase the cyclone away. Huh.</p>
+<p class=vs>So it seemed like… <i>something</i> was listening to their inner questions – listening to their <i>mind</i> – and somehow thought that it would be a perfectly acceptable idea to provide answers by forcing them to relive their own recent memories?</p>
+<p>If so, then Gabbro guessed that they… might need to watch what kind of thought they were going to have, from now on. Joy. Not horrifying in the slightest, no siree.</p>
+<p class=vs>Deciding to try not to linger on their <i>questions</i> — for more reasons than one, seriously <i>what</i> on Hearth was– <i>no no no stop asking</i> — Gabbro tried to instead focus on what clues they already had.</p>
+<p>Too bad staying focused was, uh, not really their strong suit.</p>
+<p>So. It was pondering time, which meant that they needed the proper equipment; thankfully, they reassured themself as they walked down the path to the beach, everything should be already there, since they had prepared everything earlier this morning—</p>
+<p class=vs>—Gabbro looked ahead, and saw no hammock waiting for them. Bummer.</p>
+<p>This also added yet another question to the pile: the mystery of the vanishing Personal Pondering Equipment (PPE for short). It did not seem to be the work of a cyclone, because if it had, clearly the trees they had attached it to would have shown far more obvious signs of tear, and likely lost quite a few leaves in the struggle.</p>
+<p>With a sign, Gabbro turned back around to walk up to their campfire, hoping to find their spare hammock; but once they reached it and their belongings, both their mouth and eyes opened wide in shock when they found that everything had somehow found its way back inside their bag: hammock, flute, lantern, canned rations… All of it, inexplicably tucked in their protective cases away from the danger of the cyclones – exactly the way it would be at the beginning of each morning, after they would have lit up the camp for breakfast, but before they would have gone to work proper.</p>
+<p>…Exactly the way it had been <i>before they had radioed Hornfels</i>, they finally realized.</p>
+<p>Was this a ridiculous idea? Maybe. But everything lately had been pretty ridiculous to begin with. This idea warranted its stay, Gabbro decided as they begrudgingly carried their bags back down to the beach and started prepping their hammock all over again.</p>
+
+<div id=WIP_POINT></div>
+
+<p>One tree was attached, then the other; balance between softness, flexibility and durability alike was rapidly tested, then adjusted; and once satisfied, Gabbro hopped in.</p>
+<p>End of the flute went to the specially built-in part of their helmet, and with a few seconds of calm breathing as warm-up, the music started. Playing was an integral part of the pondering process, after all, given the fact that its repetitiveness and relative simplicity helped them focus.</p>
+<p>So. Now, they were set, and ready for the pondering.</p>
 <p>The weirdness had started with that first impossibly bright and <i>lethally hot</i> light. Perhaps it had even started a bit before, actually, if the mysterious and coincidentally quite close to the end disappearance of ground control had anything to do with it.</p>
 <p>That light had hurt so much, for how brief it was. Lethally so, they were certain, it had hurt way too much for it not to be. Had they… died?</p>
 <p>And yet, now– they were <i>fine</i>. Physically speaking.</p>
@@ -1072,24 +1176,32 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>Their thoughts eventually went to their signalscope, unceremoniously dropped on the ground like a freshly caught fish trying to flap around and bite.</p>
 <p>Crazy thought, but… They might as well use it? They would have to give it a small apology for the rough handling, too. It wasn’t its fault, the poor thing. Gabbro hoped they hadn’t damaged it.</p>
 
-<!--
-    Gabbro’s start of loop is when they wake up in a start, having to adjust to the inexplicable change of gravity.
-    Make this also a flashback as they reminisce: Gabbro stands upright, they question what they’re doing here and why they’re holding their signalscope — and immediately, the Ash Twin Project answers their question with a metaphorical cyclone seizing them and flinging them into a memory of the past, of their own past self from the start of the first loop holding the signalscope and calling Hornfels to ask about the statue, and ‘So just how badly do you need another one,’ while the narration makes it clear that it is Gabbro stalling and making up excuses to avoid work, rather than them truly wanting to know how the TH statue is faring (and saying that it might get jealous if they bring back another one to steal the spotlight).
-
-    When the flashback ends, Gabbro shakes themself back to reality, disoriented and struggling to stay calm. They still have the signalscope in hand, they remember dying, they have this whole strange situation: they might as well radio Hornfels again, but this time asking them whether they too remember dying.
--->
+<!-- @ They remember dying, they have this whole strange situation: they might as well radio Hornfels again, but this time asking them whether they too remember dying. -->
 
 <hr>
-
-<wip>(Hal tries to reason how weird it would be for Hornfels to change the statue’s position, especially when Gossan has <i>been here</i> just a few minutes ago and saw how Hornfels had intended for the statue to look like, and how its eyes were closed. Gossan cannot explain why, but says that Hornfels must have found a way to open its eyes and… rotated it for some reason?<br>Hal also mentions that Hornfels had asked Gossan to go get Hal on their way to here.)</wip>
-<p>Gossan froze. “How would you know that?”</p>
-<p>“Because Hornfels told me when I arrived here the first time– s-soon before the third sunrise.”</p>
-
-<!-- Hal says that in their vision, Hornfels was in the statue room when they arrived, and they wonder why they were then but not now. Aside from Hal’s freezing up causing changes around them, what else could have changed? Was it self-centered of them to believe that things should have been strictly identical save for when they came to shake things up? -->
 
 <wip>(When Gossan and Hal go to the observatory to find Hornfels, Gossan asks if they already saw Hal today; to which Hornfels says no, of course not:</wip>
 <p>“Why would I have asked you to go fetch them for me if I had already seen them today? I didn’t expect them to be awake yet at this hour, for that matter, you know they and Firn are late risers.”</p>
 <wip>At this point, Hal wonders why Hornfels was downstairs to greet them in the statue room during the first loop; if they say that this is what they remembered, Hornfels will deny it, and Gossan will say that this was practically the opposite of what they had asked Hornfels to do, as Gossan wanted Hornfels to stay at their post in ground control and monitor Firn.</wip>
+
+
+<wip>Gabbro asking Hornfels if they died too:</wip>
+<p>“Gabbro, if this is about the time when you asked me if each moment is the death of our past self and the birth of our future self, then you already know my thoughts about this kind of metaphor. You’re in space to do some field work, not some philosophical ponderings like these.”</p>
+<p>Somehow, as they answered, Gabbro’s voice sounded rushed and genuinely confused. “N-no, wait, I wasn’t…” But their sentence trailed off; and soon, with a sigh, they concluded: “…Never mind.”</p>
+<p>Hal still was unsure what had occurred just a few minutes earlier, but what they knew was that <i>something</i> had happened, and somehow only they seemed to have noticed. Unless… unless Gabbro had, too. “I— I remember dying too,” they blurted out into the microphone.</p>
+<p>Hornfels turned to them with four shut slits instead of eyes. “What are you talking about?”</p>
+<p>“Oh, cool! So it wasn’t just me,” Gabbro piped up with a speck of enthusiasm. “One moment I’m in some kind of Nomai structure in orbit ‘till I spot some kind of big white light, and… I think that was the sun? Exploding on us?” “Then the weird statue thing happened again, and next time I opened my eyes, I was back here—on Giant’s Deep, I mean.”</p>
+<p>Hornfels stared at the microphone as if a bramble seed had just taken over it.</p>
+<p>“I— I know it sounds crazy, and I don’t even know <i>what</i> happened,” Hal blabbered nervously. “But one minute we were right here talking to them while Firn and Riebeck were studying the Nomai ruins Gabbro just talked about, and the next… I think for one second everything got <i>really</i> hot. But it was over the next second and I was right back outside the museum, <i>somehow</i>. I— I don’t remember walking out of there, how was that possible?”</p>
+<p>“Both of you are pulling my leg, aren’t you,” Hornfels simply deadpanned. In return, their answer was Hal’s even more blasé stare. They crossed their arms. “That would be a first, I know, but whatever you two are spouting makes absolutely no sense, and I am not going to fall for it.”</p>
+<wip></wip>
+<p>Hornfels stared as if Hal’s forehead had just grown a fifth eye.</p>
+
+
+
+
+
+
 
 
 <wip>(Gabbro radioes to ask Hornfels whether they died too. At this point, Hal, Gossan and Hornfels (and maybe Marl and Rutile too?) are in the observatory near the comms.)</wip>
@@ -1100,8 +1212,7 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 
 
 
-<!-- <p>Nobody knew what they were doing there, and as far as Gossan knew, nobody asked, because nobody needed to. Prior to Gabbro’s first launch, they would meet like this perhaps once or twice a week for a few sunrises, feeling refreshed yet never speaking of it; and, knowing Gabbro, Gossan was certain that the reason why Hal couldn’t come up with anything to say was because the both of them had simply spent the entire time lying down in the grass and staring at the sky in silence while smelling the pine trees. Hal could not say anything about it… because there was nothing to say. Simple as that.</p> -->
-<!--  and being mindful of others’ schedules and obligations – as an astronaut, they had gained a lot of experience as a <i>lone</i> field explorer; and as a Hearthian, it felt like they did not truly care about other people, albeit without being actively uncaring for others -->
+
 
 
 
@@ -1115,8 +1226,24 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <p>“Hey Hal! Hornfels,” they saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</p>
 </div>
 <!-- @EFOLD -->
-<!-- @SFOLD — 002 — CHAPTER 2²: XXXXXXXXXXX ————————————————————————————————————————————————————————————————————————————— -->
-<div class=chp id=ch2_2><h1>Chapter 2²</h1><h2>XXXXXXXXXXXX</h2><hr>
+<!-- @SFOLD — 002 — CHAPTER 3²: Lunar Exploration ——————————————————————————————————————————————————————————————————————— -->
+<div class=chp id=ch2_3><h1>Chapter 3²</h1><h2>Lunar Exploration</h2><hr>
+
+
+
+
+<wip>Firn getting the launch codes: Hornfels takes a key from their pocket and uses it to unlock a drawer, from which they need a few dozen seconds to dig up the one (1) note with the launch codes written on it from a pile of other similarly shaped notes.</wip>
+
+<p>“Haha, wow, you kept it locked up <i>and</i> camouflaged and everything, huh?”</p>
+<p>Hornfels deadpanned. “You may be the only Hearthian in existence who would want a repeat of <i>Riebeck’s</i> launch day.”</p>
+<p>Firn pouted. “In my defense, they actually <i>appreciated</i> the fact that it gave them one more day in the village. And honestly, I could’ve gone with far worse, like crickets or – ew – <i>fish</i>. Silkmoths don’t do anything but stand around looking cute and fluffy, they don’t even eat or poop, they just exist to mate and lay eggs.”</p>
+<p>“Yes, and <i>speaking of eggs</i>–”</p>
+<p>“<i>I thought Slate would’ve been more thorough in cleaning up and I didn’t know the cracks between the wall planks were wide enough for them to crawl behind.</i>” “…Also I’m pretty sure Riebeck got to keep one as a pet afterwards.”</p>
+<p>Hornfels crossed their arms. “Firn. You <i>spiked their mallows</i> to make sure the sound of the elevator wouldn’t wake them up. Do you even realize how dangerous it would have been if they <i>had</i> launched regardless?”</p>
+<p>“I made sure not to give them <i>too</i> much,” they mumbled, though this time they did feel apologetic. They definitely didn’t want them to collapse near an unattended <i>campfire</i>, and had stood around in the bushes ensuring that they would fall asleep normally instead.</p>
+
+
+
 
 
 <p>That was when it finally clicked.</p>
@@ -1129,39 +1256,35 @@ summary{background:rgb(var(--indigod));padding:7px 17px;border-radius:17px;margi
 <wip>(Sees Hal’s distraught expression.)</wip>
 <p>They stared back, frowning in confusion. “…Or not? Is there something wrong?”</p>
 
+<wip></wip>
+
+<p>They gave a soft snicker, blowing humorously though their nose. “Hal, it feels like you think I’m a ghost. I haven’t even launched yet, I can’t have already crashed to my death and come back to haunt you. Give that at least one or two more sunrises, will you?”</p>
+<p>No reaction. Hal’s stare kept trembling, perhaps a little more than before, but their mouth remained motionless.</p>
+<p>“Okay, for real though,” Firn quickly whispered in a far lower volume, “I’ll be <i>fine</i>. I’ll even promise to be extra careful this time around. Just…” “Hal. What’s wrong? Bad dream?”</p>
+<p>Hal’s eyes twitched. Then, slowly, one pair at a time, they looked away and to the ground. “…I guess. Maybe… Maybe that was that. I mean… Yeah. You’re here, and you haven’t launched yet.” But then, the statue…?</p>
+<p>Firn’s crossed arms tightened. “You don’t sound convinced. It really was that bad, huh?”</p>
+<p>“Not… <i>all</i> bad, I guess. But you cut it close many times. You and Gabbro were on Giant’s Deep, and a cyclone threw you into orbit, and you had no fuel left and barely enough oxygen to stay alive until <i>Riebeck</i> had to come rescue you! Riebeck!” They snickered. “And then you’d started exploring the ruins that orbit Giant’s Deep, and…” “…and then it ended, I guess. That was… that was weird.”</p>
 
 
-<!--
-LOOP 2:
-They gave a soft snicker, blowing humorously though their nose. “Hal, it feels like you think I’m a ghost. I haven’t even launched yet, I can’t have already crashed to my death and come back to haunt you. Give that at least one or two more sunrises, will you?”
-No reaction. Hal’s stare kept trembling, perhaps a little more than before, but their mouth remained motionless.
-“Okay, for real though,” Firn quickly whispered in a far lower volume, “I’ll be <i>fine</i>. I’ll even promise to be extra careful this time around. Just…” “Hal. What’s wrong? Bad dream?”
-Hal’s eyes twitched. Then, slowly, one pair at a time, they looked away and to the ground. “…I guess. Maybe… Maybe that was that. I mean… Yeah. You’re here, and you haven’t launched yet.” But then, the statue…?
-Firn’s crossed arms tightened. “You don’t sound convinced. It really was that bad, huh?”
-“Not… <i>all</i> bad, I guess. But you cut it close many times. You and Gabbro were on Giant’s Deep, and a cyclone threw you into orbit, and you had no fuel left and barely enough oxygen to stay alive until <i>Riebeck</i> had to come rescue you! Riebeck!” They snickered. “And then you’d started exploring the ruins that orbit Giant’s Deep, and…” “…and then it ended, I guess. That was… that was weird.”
-
-Loop 2, Firn notices extremely late that something is wrong with their ship log, because they are discovering something new.
--->
 <wip>Hal lets them go, too heartbroken to tell them about the time loop. Firn is suspicious and worried, but takes the codes and leaves. Hal, Hornfels and Gabbro keep talking about the statues and the time loop(?); but then, later on, Firn radioes them.</wip>
 
 <!--
+Firn notices only at the end of their Attlerock exploration that something is wrong with their ship log, because they are discovering something new.
 In Loops 2—5, Firn dismisses Hal because they assume Hal is worried about them crashing or getting injured, going “Hey, even if I break a thing or two, that’ll make some good souvenirs. I’ll bring you back some cool rocks! Maybe even moon bark to whittle, we’ll see if that makes a difference.”
-
-
 -->
+
 <hr style=margin-top:500px>
 <p>An exploration of the Attlerock, all wrapped up! With the translator, it was almost a shame just how trivialized the whole thing had become: from North to South pole, with a chill talk with Esker and a few golden mallows to boot, the Attlerock was pretty much entirely done and over with — in barely more than a full sunrise, no less!</p>
 <wip>(They sit at their computer, ready to put their ship log entries in order and organize the fancy corkboard-like diagram. But then, they find out about the ship log.)</wip>
 <p>“Hal. When you told me about your– your ‘dream.’ How’d you call those ruins again?”</p>
 <p class=radio>“Uh– what ruins? You mean the ‘Orbital Probe Cannon’? Why do you ask?”</p>
 <p>Firn could hardly hear their last question over the sound of their own finger pummeling on the wood to the side of their keyboard. Their eyes were now fully focused on one specific action which their computer’s terminal had saved into its log history:</p>
-<div class=shiplog><p class=history><span class=indigod><b>[06dXXs.XX:XX]</b></span> Renamed file <span class=redd>“Space station orbiting Giant’s Deep.log”</span> into <span class=greenl>“Orbital Probe Cannon.log”</span></p></div>
+
+<div class=shiplog><div class=hudred><p class=time>[06d06s 33:57]</p><p><u>Renamed Destination Marker</u> <span class=red>“Space Station in Orbit”</span> into <span class=lgreen>“Orbital Probe Cannon”</span></p></div></div>
 </div>
 <!-- @EFOLD -->
-<!-- @SFOLD — 002 — CHAPTER 3²: A Letter From Tomorrow —————————————————————————————————————————————————————————————————— -->
-<div class=chp id=ch2_3><h1>Chapter 3²</h1><h2>A Letter From Tomorrow</h2><hr>
-
-<!-- THIS IS FOR CHAPTER 2² ONWARDS, MOST LIKELY. -->
+<!-- @SFOLD — 002 — CHAPTER 4²: A Letter From Tomorrow —————————————————————————————————————————————————————————————————— -->
+<div class=chp id=ch4_2><h1>Chapter 4²</h1><h2>A Letter From Tomorrow</h2><hr>
 
 <p><span class=radio>“Okay, uh. Hornfels? Call me crazy but… How do I put this.”</span> Their voice crackled through the receiver, both due to the reception and their evident unease. <span class=radio>“I went back to my ship to put my notes in order, but then I— I saw that… There were <i>other</i> notes? Written by me? That I don’t remember writing? They talk about some Nomai statues on Giant’s Deep, and a note says that the one in the museum opened its eyes, and did something to…”</span></p>
 <wip></wip>
@@ -1190,13 +1313,15 @@ In Loops 2—5, Firn dismisses Hal because they assume Hal is worried about them
 <wip>Slate marks the OPC’s location on the HUD, and when they look at the marker from inside the visor, they realize that the marker is aligned with Giant’s Deep— perhaps even, aligned with something slightly misaligned with it.</wip>
 <p>“I can’t believe this,” they sputtered in shock. “The location tracker is only capable of pinpointing locations this ship’s already <i>been</i> to. <i>This ship</i> thinks it’s already landed on Giant’s Deep.” “Hatchling, if you messed with my autopilot—”</p>
 <p>“I didn’t!” “Slate, you <i>have</i> to believe me!”</p>
-
-<!-- Also, ridiculous argument maybe, but bear with me for a second: I’ve been looking forward to getting off this rock for <i>years</i>! Why would I pull a prank that <i>obviously</i> would get me straight back to Timber Hearth to get my equipment checked?
-Hornfels:…I hate to admit it, but they’ve got a good point there. -->
+<wip></wip>
+<p>Also, ridiculous argument maybe, but bear with me for a second: I’ve been looking forward to getting off this rock for <i>years</i>! Why would I pull a prank that <i>obviously</i> would get me straight back to Timber Hearth to get my equipment checked?</p>
+Hornfels:
+<p>…I hate to admit it, but they’ve got a good point there.</p>
 
 <!--
-LOOP 2: When Slate and Hornfels get to see the ship log, Slate also sees that there is a marker for multiple locations: Gabbro’s Island, Statue Island, and the OPC’s Launch Module. They will ask Gossan to pilot the ship and follow those markers to make sure that they’re accurate — so even though Gossan believes Hal and Firn (thanks to Hal), they can’t stay with the two and they can’t give Firn the ship back.
+Firn thinks that Slate and Hornfels are the ones who pranked them in return, though they are also extremely confused. "Slate can't code this well." The reason why they are willing to let go the prank explanation is because of Hal's earlier behavior, and Gabbro's remarks about them also noticing that time went back. (Because there is no way <i>Gabbro</i> would take part in a prank, especially not from outer space)
 -->
+
 <wip>Firn tells Slate and Hornfels that they couldn’t possibly have added those extra entries:</wip>
 <p>“Slate, you were <i>there</i> when we recorded those test entries to check that the ship log’s speech-to-text and remote transmission worked. You were there when we deleted all those test files – when we <i>wiped the whole thing clean</i>. <i>You were there</i> when I left the ship to you, with the suit and helmet and everything in it — you <i>know</i> the ship log was empty back then, and you <i>know</i> I didn’t have access to any means to fill it since then! Especially not after Hornfels reset the launch codes– <i>specifically</i> so I wouldn’t be able to get to the ship early!”</p>
 <p>Hornfels turned to Slate, frowning: “Do you agree with all this?”</p>
@@ -1205,12 +1330,16 @@ LOOP 2: When Slate and Hornfels get to see the ship log, Slate also sees that th
 <p>“You’ll get your ship back,” Slate assured lightly. “Just give it a couple sunrises. Maybe up till tomorrow at the latest.”</p>
 <wip>Starting from the moment when Firn is chastised off their ship, they and Hal walk out of the village on a trek to talk about Hal’s experience in peace. The place they go to ends up being one from which they can witness the supernova…? (But then how can you make it so that Hal’s experience with it on Loop 6 feels fresh?). Location idea: Northern geyser mountains? How far from the village are they?</wip>
 
+<wip>LOOP 2: When Slate and Hornfels get to see the ship log, Slate also sees that there is a marker for multiple locations: Gabbro’s Island, Statue Island, and the OPC’s Launch Module. They will ask Gossan to pilot the ship and follow those markers to make sure that they’re accurate — so even though Gossan believes Hal and Firn (thanks to Hal), they can’t stay with the two and they can’t give Firn the ship back.</wip>
+
 
 <wip>Firn ends up grounded and stuck with Hal, as they try to figure out what happened? Hal apologizes about not having been able to help convincing Slate, but Firn sighs and admits that it’s a grave they may have dug for themself there, and that Hal likely wouldn’t have been able to do much.</wip>
 <p>“They would’ve just accused you of trying to cover me,” Firn sighed. “It’s just… <i class=grey>Ugh.</i> Worst part is, that’s <i>totally</i> something I would do. Just, you know, not on <i>my</i> first launch.” “I’m sure that would’ve been enough to convince them if it had been anyone else’s ship, but… Yeah. Too bad I got to work on the <i>one</i> part of the ship that <i>just so happened</i> to malfunction, eh?”</p>
 <p>“I thought the photos were pretty convincing,” Hal shrugged heavily.</p>
 <p>“They’re just the interior of Nomai structures. I bet Hornfels just thought those could’ve been some of Riebeck’s photos of the Hanging City for all we know. And the ones about that beach on Giant’s Deep… Well, even if Gabbro doesn’t work much, I bet even they must’ve shared a bunch when they came back with your statue.”</p>
-<!-- Actually, Firn forgot to take even a single photo of the OPC aside from their failed attempt from inside the projection pool. Too bad :P -->
+<!--
+Actually, Firn forgot to take even a single photo of the OPC aside from their failed attempt from inside the projection pool. Too bad :P
+-->
 <wip></wip>
 <p>“So… What do you think that whole thing was even about?” Hal pondered uneasily. “What even <i>happened?</i>”</p>
 <p>“You tell me,” Firn sighed with a humorless laugh, “I’m not the one who got to remember anything about our first time around.”</p>
@@ -1226,110 +1355,41 @@ LOOP 2: When Slate and Hornfels get to see the ship log, Slate also sees that th
 <p>“They didn’t say, but…” Hal shuddered, closing their eyes tightly shut and taking a sharp inhale. The phantom pain, when would they ever get <i>rid</i> of it?</p>
 <p>Firn tried to give their shoulder a gentle squeeze, but when their friend seethed through their teeth in response, they immediately took their hand away. “So like– <i>right now</i>, you’re– Geez.”</p>
 <p>A pause.</p>
-<p>“Earlier this time around,” Hal gulped. “Gabbro asked Hornfels if they’d died.” [-] “…Do you think I died, Firn? I-it hurt <i>so</i> much, and then it just… didn’t.”</p>
+<p>“Earlier this time around,” Hal gulped. “Gabbro asked Hornfels if they’d died.”  “…Do you think I died, Firn? I-it hurt <i>so</i> much, and then it just… didn’t.”</p>
 <p>“Can’t you, uh, try to think of a <i>different</i> memory, maybe? You think that would help? Find a funny one. What about that one time, you know— the ?”</p>
 <wip>Hal stifles a short laugh; but then, they realize that the memory does not become overly vivid, and instead remains as just an afterthought. They frown.</wip>
 <p>“That’s weird. Or, uh… I guess that’s <i>not</i> weird, but like— That was just normal remembering. Not… feeling like I was back there all over again.”</p>
 <wip>They realize that the only memories that get Hal stuck living two events at once are those starting from the moment when they met Gossan, and that all memories prior to that are unaffected. Firn wants to take a look at the statue, but Hal isn’t too enthusiastic.</wip>
 <p>Hal blinked and looked up at them in worry. Then, a sad corner of their mouth was twisted upright, more out of nervous angst than anything else. “…Right. You don’t… You don’t remember when we were…”</p>
 
-<!-- “Uh. Is it just me, or does the sun look… bigger than usual?” -->
-
-<!--
-// <p>Hal brought a shaking hand to their forehead, almost stumbling from some kind of vertigo. "This… Stars, it really did happen. The sun really blew up."</p>
-// <p>A heavy silence fell in the room. Firn's eyes shifted from one to the other, to the computer screen, back to them, shuffling their feet uncomfortably.</p>
-// <p>"You… think it'll do that again this time around?"</p>
-// <p>Hornfels politely but shakily tried to shove the youngsters away from their path as they tried to exit the ship. "I will contact Chert. I asked them to update the star charts—It appears there is a star that needs far more scrutiny now than any other."</p>
-// <p>“Think I managed to rope <i>Gabbro</i> into it? And– and Riebeck! Look at this one! That doesn’t make any sense, they would’ve told <i>everyone</i> about that discovery!”</p>
 
 
+<wip>Loop 2 end: Firn and Hal have walked far enough from the crater to see the supernova early, but they don’t get to see the sun crumple in on itself?</wip>
 
-"I saw it again."
-Hal blinked, staring up at the receiver as if they could see Firn’s face through it.
-"Saw what?"
-"The— the thing. The cannon in my notes. First thing I saw when I woke up—it exploded. Again." "It happened just like my notes said it."
+<p>“Uh. Is it just me, or does the sun look… bigger than usual?”</p>
+<p>“…Huh, you’re… you’re right. Is that some kind of optical illusion, or…?”</p>
+<p>Firn squinted and pursed their lips, deep in thought, considering multiple hypotheses. But then… Slowly, frigid horror dawned upon their face.</p>
+<p>“Hal. When you– ‘died.’ Or when it ended, whatever. What’d you say it felt like?”</p>
+<p>“Burning? I think? But also, way hotter than you’d imagine from a campfire, so, I’m not completely sure?”</p>
+<p>Firn gulped, eyes locked on to the sky. “Did you ask Gabbro how they died too?”</p>
+<p>“Uh– not really. Same thing, I assume?”</p>
+<p>Hal looked at the sun, then at their best friend, then at the sun and then their friend again, finally settling on the latter. “You’re not serious.”</p>
+<p>“<i>You</i> tell me I’m guessing wrong.” Firn raised both hands to hold their upper arms, trying to masquerade the gesture as simply crossing their arms but failing to hide just how tightly they were holding on.</p>
+<p>“It’s– N-no, that can’t— Did we <i>all</i> die last time!? I-is it about to happen again– It <i>can’t</i> happen again! W-w-what if this time it’s permanent!?”</p>
+<p>“What if it <i>isn’t</i> permanent…?” Firn mumbled under their breath, otherwise petrified and incapable of doing anything else.</p>
 
+<wip>(Eventually they see the sun start to collapse, but Hal at least doesn’t want to look. They either bury their head inside Firn’s chest and cry, or try to run back to the village, even knowing that it wouldn’t accomplish anything.)</wip>
 
-"That would come with the time loop, I suppose."
-"Did the statue act up again?"
-A pause. "Its eyes were already open when I came to check."
-
-
-Loop 2:
-- Hal jolts awake, shaken by the supernova, and looks around, shocked to realize where they are. They notice the statue’s eyes are open, and go ask Hornfels to verify that, indeed, the statue’s eyes were not open before, confirming that they did not hallucinate that part.
-- Gabbro radioes Hornfels while Hal is still here and asks whether they died too, and Hal gasps upon realizing that the past loop did indeed happen.
-- Firn arrives to ask for the launch codes, and Hal is devastated to see that they don’t remember anything about having gone to Giant’s Deep.
-- It hadn’t clicked yet for Hal that Hornfels did not remember because at the time they were still thinking that, somehow, it had been some sort of weird dream.
-
-Thanks to having access to Ground Control and Hornfels, Hal is capable of giving orders and indications to pretty much every traveler. However, they will still require Firn most of the time due to the ship log’s ability to keep track of things, while Hal cannot take any notes that will last otherwise. Also, only Firn has the Nomai translator.
-
-
-
-Gabbro asking Hornfels if they died too:
-“Gabbro, if this is about the time when you asked me if each moment is the death of our past self and the birth of our future self, then you already know my thoughts about this kind of metaphor. You’re in space to do some field work, not some philosophical ponderings like these.”
-Somehow, as they answered, Gabbro’s voice sounded rushed and genuinely confused. “N-no, wait, I wasn’t…” But their sentence trailed off; and soon, with a sigh, they concluded: “…Never mind.”
-Hal still was unsure what had occurred just a few minutes earlier, but what they knew was that <i>something</i> had happened, and somehow only they seemed to have noticed. Unless… unless Gabbro had, too. “I— I remember dying too,” they blurted out into the microphone.
-Hornfels turned to them with four shut slits instead of eyes. “What are you talking about?”
-“Oh, cool! So it wasn’t just me,” Gabbro piped up with a speck of enthusiasm. “One moment I’m in some kind of Nomai structure in orbit ‘till I spot some kind of big white light, and… I think that was the sun? Exploding on us?” “Then the weird statue thing happened again, and next time I opened my eyes, I was back here—on Giant’s Deep, I mean.”
-Hornfels stared at the microphone as if a bramble seed had just taken over it.
-“I— I know it sounds crazy, and I don’t even know <i>what</i> happened,” Hal blabbered nervously. “But one minute we were right here talking to them while Firn and Riebeck were studying the Nomai ruins Gabbro just talked about, and the next… I think for one second everything got <i>really</i> hot. But it was over the next second and I was right back outside the museum, <i>somehow</i>. I— I don’t remember walking out of there, how was that possible?”
-“Both of you are pulling my leg, aren’t you,” Hornfels simply deadpanned. In return, their answer was Hal’s even more blasé stare. They crossed their arms. “That would be a first, I know, but whatever you two are spouting makes absolutely no sense, and I am not going to fall for it.”
-
-Hornfels stared as if Hal’s forehead had just grown a fifth eye.
-
-
-
-
-
-
-"Hornfels!" Chert exclaimed, pleasantly surprised. "I'm updating the star charts, like you asked. I've got some amazing luck today, I've somehow managed to catch two supernovae in just the last twenty minutes!"
-"Forget about the other stars," Hornfels shook their head tensely. "Can you take a closer look at the sun?"
-[..]
-"What's wrong with the sun?"
-"Just answer the question."
-Chert paused for a few seconds, and when sound resumed, it was rather noise caused by the tinkering of various instruments. Finally, after a few minutes, they concluded: "It looks… <i>somewhat</i> redder than usual? But— no, it’s surely because you’re making me look for something, I can’t be impartial."
-Hal bit their lip. "If… Imagine it was about to go supernova. How long does it look like it would take before it happens?"
-"Ha, ha, very funny. There's no way it will happen in our lifetimes, is there?"
-
-
-
-
-
-
-
-
-
-At some point after getting confirmation that the ship log works, Firn will change the setting so that the ship log screen will flash and show the TL;DR (so the in-game ship log) first thing they do, making it impossible for them to not notice provided they use their ship. This would be at a point when Firn is convinced that there is an infinite time loop, so it isn’t this early.
--->
-
-<!--
-Loop 2, Firn thinks that Slate and Hornfels are the ones who pranked them in return, though they are also extremely confused. "Slate can't code this well." (?) The reason why they are willing to let go the prank explanation is because of Hal's earlier behavior, and Gabbro's remarks about them also noticing that time went back. (Because there is no way <i>Gabbro</i> would take part in a prank, especially not from outer space)
-Loop 2 end: Firn and Hal have walked far enough from the crater to see the supernova early, but they don't get to see the sun crumple in on itself?
-Firn sees that the sun looks noticeably bigger and redder, and when Hal goes:
-"…Huh, you're… you're right. Is that some kind of optical illusion, or…?"
-Firn squinted and pursed their lips, deep in thought, considering multiple hypotheses. But then… Slowly, frigid horror dawned upon their face.
-"Hal. When you– 'died.' Or when it ended, whatever. What'd you say it felt like?"
-"Burning? I think? But also, way hotter than you'd imagine from a campfire, so, I'm not completely sure?"
-Firn gulped, eyes locked on to the sky. "Did you ask Gabbro how they died too?"
-"Uh– not really. Same thing, I assume?"
-Hal looked at the sun, then at their best friend, then the sun and their friend again, finally settling on the latter. "You’re not serious."
-"<i>You</i> tell me I’m guessing wrong." Firn raised both hands to hold their upper arms, trying to masquerade the gesture as simply crossing their arms but failing to hide just how tightly they were holding on.
-"It's– N-no, that can't— Did we <i>all</i> die last time!? I-is it about to happen again– it *can't* happen again! W-w-what if this time it's permanent!?"
-"What if it <i>isn’t</i> permanent…?" Firn mumbled under their breath, otherwise petrified and incapable of doing anything else.
-(Eventually they see the sun start to collapse, but Hal at least doesn't want to look. They either bury their head inside Firn's chest and cry, or try to run back to the village, even knowing that it wouldn't accomplish anything.)
--->
-
-<!-- <wip>End of loop 2, Firn on the Attlerock sees the supernova:</wip>
-<p>“Dark brambling <i>geysers</i>— is that the <i class=scaps>sun!?</i>”</p> -->
 </div>
 <!-- @EFOLD -->
-<!--
+<!-- @ ⁰¹²³⁴⁵⁶⁷⁸⁹
 - If Firn skips the zero-g training, they find Hornfels for the launch codes at 06d04s.02:04 (17min after waking up). If Gossan gets Firn to repair the mining equipment, then Firn makes it to the museum at 06d04s.17:25 instead (32min after waking up).
 
 - Loops 3-5: Hal tries to radio Firn in order to ask them to check their ship log first, but they don’t know how and Hornfels doesn’t take them seriously?
 - Loop 4, Hal tries to tell both Hornfels and Firn about the time loop at the same time, as they arrive, but neither believes them. Hal gives up soon, deflated and unwilling to have things devolve into an argument.
+
+- At some point after getting confirmation that the ship log works, Firn will change the setting so that the ship log screen will flash and show the TL;DR (so the in-game ship log) first thing they do, making it impossible for them to not notice provided they use their ship. This would be at a point when Firn is convinced that there is an infinite time loop, so it isn’t this early.
 -->
-<!-- ⁰¹²³⁴⁵⁶⁷⁸⁹ -->
 <!-- @SFOLD — 003 — CHAPTER 1³: XXXXXXXXXXXXX ——————————————————————————————————————————————————————————————————————————— -->
 <div class=chp id=ch1_3><h1>Chapter 1³</h1><h2>XXXXXXXXXXXXX</h2><hr>
 
@@ -1383,113 +1443,117 @@ Hal looked at the sun, then at their best friend, then the sun and their friend 
 <p>Gossan tilted their head, having heard pretty much the <i>last</i> thing they would have put on their list of guesses. “Why them?”</p>
 <p>Hal’s lips twisted into a small, pained smirk, sighing darkly. “Because if <i>I’m</i> the one partaking in the joke, then they’re the one I’m teaming up with this time.”</p>
 
+<wip></wip>
 
-<!--
 <p>As the two approached the entrance to the museum and faced the misplaced Nomai statue, Gossan had a double take. “It wasn’t like that the last time I was here,” they heaved. “And I was—”</p>
 <p>“It was like that the last time <i>I</i> was here,” Hal simply retorted, voice weak and tired, but unwavering. Their grip on their forearms tightened as they passed by, but their pace had remained uninterrupted all the while, and their eyes had hardly moved to even look at it.</p>
--->
 
 
-<!--
+
+<!-- .
 Loop 3+:
-Hornfels: "Since when are you invested in getting any kind of work done?"
+Hornfels: “Since when are you invested in getting any kind of work done?”
 Gabbro: “Even broken clocks are right twice a day,” somehow managing the exact same audible shrug as the last loop.
 “That and I don’t think the time loop is really giving them much of a choice,” Hal sighed.
 
 Gabbro advises Hal not to tell Hornfels about the time loop.
 “We’re gonna have to tell them anyway when your buddy sees their ship log,” they sighed. “Trying to explain it once every few hours is already going to be a pain, imagine having to explain it <i>twice</i> per loop.”
 By Loop 3, Gabbro recommends Hal to not tell Hornfels about the time loop until Firn finds out; which contributes to Hal feeling like they can’t even be honest until halfway through the loop.
-
-
-
-Hal’s lower left eye twitched. They had heard that before, and this felt wrong. This was just… completely *wrong.*
-Firn had always been known for two things: for one, they were sarcastic; but most importantly, they were *unpredictable*. (resourceful?)
-What they had just heard this time had not been just the same words—they had used the exact same tone of voice, the exact same gestures, with the exact same timing right down to a fraction of a millisecond.
-It made sense, Hal knew it, and they knew that they should have anticipated it; but it was still *wrong*.
-While too dumbfounded to openly react, their ears picked up on the sound of Hornfels giving, they too, the exact same words and actions that they had displayed less than four hours prior. Hal glanced from the corner of their top right eye, and just as they should have known, Hornfels found the launch codes on the exact same note as the last two times, in the exact same state and location as before.
-The fact that, in this room, only they seemed to have any idea that anything at all was so *wrong*, made them nauseous. Surely Gabbro would have given a reaction if they had been standing in this room, and not kilometers away on another planet, right? Surely they could not be the only one seeing this scene unfold under their eyes and feel like they were trapped with ghosts of the past…
-But also, even if they had been standing in this room, how could they ever expect a reaction of any kind from *Gabbro?* They had seen the sun itself *explode*, according to their account — *twice*, even — and yet they had been… so relaxed about it all, as they always were. Out of all emotions they could have possibly expressed, were they confused and lost by the logical intricacies of the predicament they were in? Of course. After all, strange as they were, they still had *some* common sense.
-But now, shocked, distraught, horrified? Hal hoped that the only reason they could not detect any of it was because they could not see the Hearthian face to face.
-
-
-
-
-
-Loop 3: Hal tries to convince Firn to visit something other than the Attlerock, and when they’re not convinced, Hal mentions the statue; but then, instead, Hornfels walks down the stairs and forgets the comms, therefore leaving Firn to visit the Attlerock. It is Gossan who shows up at some point, because Firn had tried to radio Hornfels, and when Hornfels did not respond, they tried to radio Gossan instead.
-“Firn, listen, the statue’s eyes opened, and–”
-If a Nomai statue’s eyes had opened, Hornfels’ widened ten times more. “Its eyes—! Hal, why didn’t you say so earlier!?”
-Before Hal could even attempt to answer that question, the curator had already disappeared to the floor below, completely abandonning the ground control post.
-“Wait, no– <i>Hornfels!</i> Hornfels, come back!”
-Firn placed a comforting hand around their shoulder (which did nothing except for send a shiver down their spine), laughing softly. “Relax. I don’t need to be kept on a leash to still be safe in space. I can totally take off without them.”
-Hal was trembling too much to find in them the capability to reply that, surprisingly enough, Firn’s flight capabilities were currently the least of their worries.
-(Firn and Hal go down the stairs after them. They exchange a few words, then Firn is ready to leave. Hal tries to stop them, but Hornfels catches their arm in excitement, asking them to tell them everything about what they saw with that statue.)
-“Have fun, you two!” Firn snickered before they turned around and waved them goodbye without looking, stepping out of the museum with an entusiasm loud enough to drown out the sound of Hal’s desperate attempts at calling after them.
-—
-Much later, Gossan arrives and glares at Hornfels for not being at their job.
-“Hornfels, I hate to disrupt your fascinating research, but may I ask what you are doing <i>away from the comms</i> on Firn’s first launch?”
-“Gossan? What brings you here?”
-Gossan tapped at the radio on their belt. “Firn tried to contact ground control. When they couldn’t get to you, they tried getting to me instead.” “Hornfels, again– What are you doing here instead of upstairs, making sure they’re doing alright? You’re lucky they didn’t sound <i>injured</i> when they called me.”
-Hornfels looked evidently displeased by the distraction, but sighed and slowly went for the stairs, mumbling to themself that Firn had better not have crashed somewhere and be asking for a rescue mission.
-Gossan’s three eyes turned to the other Hearthian next to them, tone now softer but traits on their face just as grave as before, if not with even deeper creaks.
-“You should come with, Hal,” they sighed tensely. “Firn said they wanted to talk to you specifically.”
-
-Firn’s “diary” ship log entries can be shown at the end of each loop until the moment when they get locked behind a password. After this point, no longer show them and keep everything for post-sun station and try your best to make the audience forget about them.
-
-
-Firn tells Hornfels they want to go to the Attlerock.
-Hal took a quick and nervous step forward, blurting out, "What about– uh, Brittle Hollow? The south pole maybe?"
-Firn gave them a confused look. Briefly turning to Hornfels, they asked: "Isn't Riebeck already there?"
-"Just like Esker is already on the Attlerock, yes," Hal interrupted again with just a little more insistence, "so what?"
-Again silence. "I thought you *wanted* to see what the rest of the southern ruins were talking about?"
-"I… changed my mind?"
-The radio crackled, giving a sigh from hundreds of kilometers away. "Just let them go, buddy. They'll find out soon enough."
-
-
-
-
-Loop 3/4/5 Firn realizes that something is wrong as soon as they try to write down their first discovery, because their ship log will reply with "ERROR: DUPLICATE ENTRY."
-Firn: "Uh… Hi, uh, Hornfels? Do you copy?"
-The elder startled; Hal's ears dropped.
-"Yes, Firn, loud and clear. What is it?"
-"I wanted to update my ship log, but I just got a weird error message. It read something like– "ERROR: DUPLICATE ENTRY." So I went back to my ship to check on what that was about, and…"
-"…and everything you were about to write about was already there?" Hal guessed with a painful sigh.
-Their response was a shocked silence. Then: "Hal, how in the *geysers* could you have guessed that?"
-"You did say the error message was about a 'duplicate entry'," Gabbro came in with their signature audible shrug.
-"W-well *yeah*, sure, but— Gabbro, it wasn’t *just* the entry I had just finished typing, it was a whole, I don’t know, probably a day's worth of findings I'd never made! *Already in there!*" "And the entry I wanted to add was just *word for word* the exact same as the one– I just…" There came the pained sigh.
-Hal decided it was time to drop the anvil. Again. "You already explored the Attlerock, Firn."
-Hornfels' hands twitched, uncomfortably fiddling with the corners of some of their notebook's pages in silence.
-The radio crackled again, repressing a shocked strangled sound. "…*What?*"
-"You just forgot," Hal continued. "Everyone forgot except me and Gabbro."
-"And your ship," Gabbro completed.
-"It's the third time you had your 'first launch,' Firn. And I don’t think… By this point you might have your fourth and fifth time or— I don't know if time is going to repeat *again*, but it's rewound twice already and I don’t know what we could ever do about it."
-After their tirade went a long, long pause. Finally, with a timid voice, the radio went again:
-"…You're crazy. This has to be a joke. It *has* to."
-"Firn, nobody could have possibly predicted what you were about to write in your ship log down to the *exact same words* like you just said yourself, and you *know* it."
-Silence returned.
-"Okay. Gonna… okay. The last two times, when did time start, I don’t know, looping back? Is that what you think happened?"
-"It ended soon before the nineth sunrise," Hal sighed. "When the, uh. According to what you said last time, it was when the sun went supernova."
-"*WHAT!?*"
-"Both times," Gabbro added for emphasis. "My mallows are on it having happened the first time too. Ending felt the same."
-Hal turned to Hornfels, worried about their continued silence, and saw them shaking like a pine tree needle falling to the wind. Their shaken eyes betrayed the same feeling Hal had witnessed when they had obtained the first few photos with their telescope and discovered that instead of merely stars, the universe was littered with entire galaxies; the same feeling of a truth being revealed all at once, too heavy to bear, leaving them in overwhelmed awe and wishing for a chair to sit down so they could focus on catching their breath.
-Except of course, this time, awe likely had to be replaced, or at the very least ensnared within a thick layer of raw fear and terror.
-Firn was far too quiet. So quiet, even the static seemed to have quieted down, and Hal almost wondered if they had turned their radio off.
-When their voice was finally heard again, their tone was filled with determination.
-"Tell me everything."
-
-
-
-
-### Loop 3:
-Firn frowned, biting their lips. "How many times has this been my 'first launch'?"
-"Three in total," Hal sighed. "Your first one was on Giant's Deep and then in the thing *orbiting* Giant's Deep, and the previous one was you… also exploring the Attlerock."
-(Firn apologizes because Hal tried to encourage them to go elsewhere, and failed)
-"So that's why you said you'd changed your mind."
-"…Yeah."
-"I should've listened. I'm sorry."
-
-
-
 -->
+
+<wip></wip>
+<p>Hal’s lower left eye twitched. They had heard that before, and this felt wrong. This was just… completely <i>wrong.</i></p>
+<p>Firn had always been known for two things: for one, they were sarcastic; but most importantly, they were <i>unpredictable</i>. (resourceful?)</p>
+<p>What they had just heard this time had not been just the same words—they had used the exact same tone of voice, the exact same gestures, with the exact same timing right down to a fraction of a millisecond.</p>
+<p>It made sense, Hal knew it, and they knew that they should have anticipated it; but it was still <i>wrong</i>.</p>
+<p>While too dumbfounded to openly react, their ears picked up on the sound of Hornfels giving, they too, the exact same words and actions that they had displayed less than four hours prior. Hal glanced from the corner of their top right eye, and just as they should have known, Hornfels found the launch codes on the exact same note as the last two times, in the exact same state and location as before.</p>
+<p>The fact that, in this room, only they seemed to have any idea that anything at all was so <i>wrong</i>, made them nauseous. Surely Gabbro would have given a reaction if they had been standing in this room, and not kilometers away on another planet, right? Surely they could not be the only one seeing this scene unfold under their eyes and feel like they were trapped with ghosts of the past…</p>
+<p>But also, even if they had been standing in this room, how could they ever expect a reaction of any kind from <i>Gabbro?</i> They had seen the sun itself <i>explode</i>, according to their account — <i>twice</i>, even — and yet they had been… so relaxed about it all, as they always were. Out of all emotions they could have possibly expressed, were they confused and lost by the logical intricacies of the predicament they were in? Of course. After all, strange as they were, they still had <i>some</i> common sense.</p>
+<p>But now, shocked, distraught, horrified? Hal hoped that the only reason they could not detect any of it was because they could not see the Hearthian face to face.</p>
+
+
+
+
+<wip>Firn tells Hornfels they want to go to the Attlerock.</wip>
+<p>Hal took a quick and nervous step forward, blurting out, “What about– uh, Brittle Hollow? The south pole maybe?”</p>
+<p>Firn gave them a confused look. Briefly turning to Hornfels, they asked: “Isn’t Riebeck already there?”</p>
+<p>“Just like Esker is already on the Attlerock, yes,” Hal interrupted again with just a little more insistence, “so what?”</p>
+<p>Again, silence. “I thought you <i>wanted</i> to see what the rest of the southern ruins were talking about?”</p>
+<p>“I… changed my mind?”</p>
+<p>The radio crackled, giving a sigh from hundreds of kilometers away. “Just let them go, buddy. They’ll find out soon enough.”</p>
+
+
+
+<wip>Loop 3: Hal tries to convince Firn to visit something other than the Attlerock, and when they’re not convinced, Hal mentions the statue; but then, instead, Hornfels walks down the stairs and forgets the comms, therefore leaving Firn to visit the Attlerock. It is Gossan who shows up at some point, because Firn had tried to radio Hornfels, and when Hornfels did not respond, they tried to radio Gossan instead.</wip>
+<p>“Firn, listen, the statue’s eyes opened, and–”</p>
+<p>If a Nomai statue’s eyes had opened, Hornfels’ widened ten times more. “Its eyes—! Hal, why didn’t you say so earlier!?”</p>
+<p>Before Hal could even attempt to answer that question, the curator had already disappeared to the floor below, completely abandonning the ground control post.</p>
+<p>“Wait, no– <i>Hornfels!</i> Hornfels, come back!”</p>
+<p>Firn placed a comforting hand around their shoulder (which did nothing except for send a shiver down their spine), laughing softly. “Relax. I don’t need to be kept on a leash to still be safe in space. I can totally take off without them.”</p>
+<p>Hal was trembling too much to find in them the capability to reply that, surprisingly enough, Firn’s flight capabilities were currently the least of their worries.</p>
+<p>(Firn and Hal go down the stairs after them. They exchange a few words, then Firn is ready to leave. Hal tries to stop them, but Hornfels catches their arm in excitement, asking them to tell them everything about what they saw with that statue.)</p>
+<p>“Have fun, you two!” Firn snickered before they turned around and waved them goodbye without looking, stepping out of the museum with an entusiasm loud enough to drown out the sound of Hal’s desperate attempts at calling after them.</p>
+
+
+
+<wip>Much later, Gossan arrives and glares at Hornfels for not being at their job.</wip>
+<p>“Hornfels, I hate to disrupt your fascinating research, but may I ask what you are doing <i>away from the comms</i> on Firn’s first launch?”</p>
+<p>“Gossan? What brings you here?”</p>
+<p>Gossan tapped at the radio on their belt. “Firn tried to contact ground control. When they couldn’t get to you, they tried getting to me instead.” “Hornfels, again– What are you doing here instead of upstairs, making sure they’re doing alright? You’re lucky they didn’t sound <i>injured</i> when they called me.”</p>
+<p>Hornfels looked evidently displeased by the distraction, but sighed and slowly went for the stairs, mumbling to themself that Firn had better not have crashed somewhere and be asking for a rescue mission.</p>
+<p>Gossan’s three eyes turned to the other Hearthian next to them, tone now softer but traits on their face just as grave as before, if not with even deeper creaks.</p>
+<p>“You should come with, Hal,” they sighed tensely. “Firn said they wanted to talk to you specifically.”</p>
+
+
+
+
+
+<wip>Loop 3/4/5 Firn realizes that something is wrong as soon as they try to write down their first discovery, because their ship log will reply with "ERROR: DUPLICATE ENTRY."</wip>
+<p class=radio>“Uh… Hi, uh, Hornfels? Do you copy?”</p>
+<p>The elder startled; Hal’s ears dropped.</p>
+<p>“Yes, Firn, loud and clear. What is it?”</p>
+<p class=radio>“I wanted to update my ship log, but I just got a weird error message. It read something like– ‘<span class=scaps>error: duplicate entry</span>’…? So I went back to my ship to check on what that was about, and…”</p>
+<p>“…and everything you were about to write about was already there?” Hal guessed with a painful sigh.</p>
+<p>Their response was a shocked silence. Then: “Hal, how in the <i>geysers</i> could you have guessed that?”</p>
+<p>“You did say the error message was about a ‘duplicate entry’,” Gabbro came in with their signature audible shrug.</p>
+<p>“W-well <i>yeah</i>, sure, but— Gabbro, it wasn’t <i>just</i> the entry I had just finished typing, it was a whole, I don’t know, probably a day’s worth of findings I’d never made! <i>Already in there!</i>” “And the entry I wanted to add was just <i>word for word</i> the exact same as the one– I just…” There came the pained sigh.</p>
+<p>Hal decided it was time to drop the anvil. Again. “You already explored the Attlerock, Firn.”</p>
+<p>Hornfels’ hands twitched, uncomfortably fiddling with the corners of some of their notebook’s pages in silence.</p>
+<p>The radio crackled again, repressing a shocked strangled sound. “…<i>What?</i>”</p>
+<p>“You just forgot,” Hal continued. “Everyone forgot except me and Gabbro.”</p>
+<p>“And your ship,” Gabbro completed.</p>
+<p>“It’s the third time you had your ‘first launch,’ Firn. And I don’t think… By this point you might have your fourth and fifth time or— I don’t know if time is going to repeat <i>again</i>, but it’s rewound twice already and I don’t know what we could ever do about it.”</p>
+<p>After their tirade went a long, long pause. Finally, with a timid voice, the radio went again:</p>
+<p>“…You’re crazy. This has to be a joke. It <i>has</i> to.”</p>
+<p>“Firn, nobody could have possibly predicted what you were about to write in your ship log down to the <i>exact same words</i> like you just said yourself, and you <i>know</i> it.”</p>
+<p>Silence returned.</p>
+<p>“Okay. Gonna… okay. The last two times, when did time start, I don’t know, looping back? Is that what you think happened?”</p>
+<p>“It ended soon before the nineth sunrise,” Hal sighed. “When the, uh. According to what you said last time, it was when the sun went supernova.”</p>
+<p>“<i class=scaps>what!?</i>”</p>
+<p>“Both times,” Gabbro added for emphasis. “My mallows are on it having happened the first time too. Ending felt the same.”</p>
+<p>Hal turned to Hornfels, worried about their continued silence, and saw them shaking like a pine tree needle falling to the wind. Their shaken eyes betrayed the same feeling Hal had witnessed when they had obtained the first few photos with their telescope and discovered that instead of merely stars, the universe was littered with entire galaxies; the same feeling of a truth being revealed all at once, too heavy to bear, leaving them in overwhelmed awe and wishing for a chair to sit down so they could focus on catching their breath.</p>
+<p>Except of course, this time, awe likely had to be replaced, or at the very least ensnared within a thick layer of raw fear and terror.</p>
+<p>Firn was far too quiet. So quiet, even the static seemed to have quieted down, and Hal almost wondered if they had turned their radio off.</p>
+<p>When their voice was finally heard again, their tone was filled with determination.</p>
+<p>“Tell me everything.”</p>
+
+
+
+
+
+
+<wip>### Loop 3:</wip>
+<p>Firn frowned, biting their lips. “How many times has it been my ‘first launch’?”</p>
+<p>“Three in total,” Hal sighed. “Your first one was on Giant’s Deep and then in the thing <i>orbiting</i> Giant’s Deep, and the previous one was you… also exploring the Attlerock.”</p>
+<p>(Firn apologizes because Hal tried to encourage them to go elsewhere, and failed)</p>
+<p>“So that’s why you said you’d changed your mind.”</p>
+<p>“…Yeah.”</p>
+<p>“I should’ve listened. I’m sorry.”</p>
+
+
+
+
+
 <hr>
 <div class=shiplog><h2>Reading Entry: “so time got wacky and i forgot stuff TWICE but my ship didn’t what in the brambling geysers is going on.log”</h2>
 <p class=time>06d05s 32:14</p>
@@ -1526,9 +1590,52 @@ Firn frowned, biting their lips. "How many times has this been my 'first launch'
 <p>“Welcome back to the living,” Marl soon came in, just as oblivious as the previous time.</p>
 
 <p>Ears flattening all the way to their shoulders, Hal closed their eyes tightly shut and gritted their teeth, heaving a tired sigh. “Hi, you two. I’m <i>fine</i>. Forget it.”</p>
-<p></p>
+<wip></wip>
 
-<!--
+<!-- Do you keep this for Loop 5 instead?
+
+In their… second loop? Yeah, probably second if they decided they would count the one in which the statue did its thing as the first one. It felt appropriate to do it like that.
+Anyway– in their <i>second loop</i>, then, they had managed to get Gossan on their side rather easily enough, all things considered. Maybe they could just… say the things they had said back then, instead of just wallowing in their predicament so much that they forgot the obvious solution?
+“Gossan, I– I think I’m stuck in some kind of time loop,” they muttered. Geez, it still felt wrong and utterly insane to say.
+“Yeah, ha, I know that sounds crazy, but just– hear me out?” They took a deep breath. Necessary as it was for their own well-being, it still felt mean to just… drop the anvil <i>too</i> suddenly. “It’s the fourth loop. We talked a lot, in the previous ones. And, uh– Okay, don’t freak out, alright?”
+“Just say it,” Gossan grumbled, evidently losing patience, and Hal buried their head inside their shoulders with a small but cold shudder.
+“–Tektite told you yesterday that some mining equipment broke in the zero-g cave and you were considering the idea to use it to give Firn some last minute training,” they heaved rapidly in one single breath, eyes closed so as to avoid looking at Gossan’s face. “You also told me you hadn’t made up your mind yet by this point. A-and, uh, also, you told Hornfels to focus on getting everything ready for Firn’s first launch, and in return they actually asked you to come fetch me to tell me that the statue was ready, too. And also if we both go to the museum we’ll see that it’ll have moved on its own even though its eyes were closed when you left, and you’ll say, uh, and I quote, ‘It wasn’t like that the last time I was here, and I was here less than ten minutes ago.’ But the mining equipment thing seemed to be more convincing when I told you about it, because it’s the only one where you told me it’s literally impossible for anyone else to have told me since, uh, that one never left your mind and you weren’t even sure about it yet.”
+Silence fell. After a whizzling inhale making its way inwards through their gritted teeth, Hal dared open one lower eye to peek.
+Gossan’s mouth was hanging open, as now was their turn to freeze in place.
+Yep, pretty much what they had expected.
+Marl, eyes squinting dubiously, turned their head to one Hearthian, then the other, back and forth. “Uh. Whaaaaaat…? Gossan? Any idea what they’re on about?”
+As much as they hated doing that to them, Hal did not have the strength to deal with Marl. Opening their three remaining eyes and instantly diverting them to the ground at their side, they heaved an apologetic sigh, trying to finish with Gossan first. “S-sorry, I’m not sure there’s any non-creepy way to bring it up,” they mumbled. “But, uh, I hope I at least got your attention with that –uh– ‘mind-reading’ demonstration, heh, e-even though of course I can’t <i>actually</i> read your mind or anything. I-it’s just that we’ve been through this before, and you just d-don’t… remember it. And Marl doesn’t either.”
+Still keeping their silence and their semi-gaping mouth, Gossan’s head slowly bobbled up and down in a shocked nod. Then, as they were still nodding, this time with more purpose: “Alright, hatchling. You… got my attention alright.”
+Hal sighed again, this time in immense relief. Marl squinted even further with a baffled <i>“Huuuuuh???”</i> Gossan, on the other hand, saw their expression melt into horror.
+“Stars above… But then, now what? Have you just been <i>trapped</i> like this…? For how long? How long do we have before it’ll happen again?”
+“Just about three sunrises,” Hal answered mechanically, trying to avoid thinking too hard about the other two questions.
+Gossan’s eyes slid away from them as they nodded again, always with smaller amplitude and greater frequency, each time coming closer to turn their nodding into blatant trembling instead. “Marl, I think they’re actually serious about this.”
+Marl was stammering, desperately trying to hang on to the last straws of doubt but being incapable of coming up with any better explanation. “Okay, either you’ve both been roped in a Firn prank, or you’ve both been conked in the head pretty hard, or–”
+“Or we have actual evidence, or at least <i>some</i> evidence, that time has indeed been acting weird,” Gossan frowned, sending the lumberjack a stern look. “Marl, do you seriously believe Firn would convince <i>me</i> to take part in a scheme of theirs?”
+Hal rubbed their upper arm, giving a tense and humorless chuckle. “You can also try to get Rutile, but the last times you tried it they just sort of– I’m <i>physically okay</i>, and they’re very busy, so they just never took the time to look into it or take you seriously at all. Today is sort of a crazy day for a lot of reasons, even without the time loop thing, so even if they don’t remember the loops either, they just… you know. They’re Rutile.”
+Marl’s eyebrows trembled nervously, in a disjointed rhythm to that of their equally trembling lips. “This is nuts. All of this is nuts.” However, from the tone of these assertions, it sounded like they had indeed run out of arguments.
+Hal’s eyes widened. A loop in which <i>Marl</i> was actually convinced as well? Finally? They hadn’t dared hope to see the day.
+
+
+
+Loop 6 (or Loop 5?), Hal starts their loop by turning around to stare Marl down before they can reach them.
+There was the sound of rushing footsteps in their back. With a sharp inhale, Hal turned around and crossed their arms “Welcome back to the living.”
+Marl stopped straight in their tracks, almost slipping on a stray rock in the process, as their eyes tripled in size. “W-<i>what?</i>”
+“That’s what you were about to say, right?” Hal doubled down, mouth drawing a smirk that absolutely did not belong on such a face. With a nervous breath loudly entering through their nose, they pivoted so they could look at both Hearthians at the same time; then, they added: “I’ve been stuck in a time loop. Gossan, you haven’t set your mind on it, but you’ve been considering offering Firn some last minute training in the zero-g cave ever since Tektite told you that some equipment broke down there. Is that good enough to convince you both that I’m serious?”
+Gossan stumbled back, eyes widening in turn.
+Marl frowned with trembling eyebrows, trying to figure out whether they should be more confused or more utterly freaked out. “Uh– A t-‘time loop’– Sorry, I just don’t– How does that even work?”
+“I don’t know the details of how it works, but while I was frozen in place— I basically got memories from the previous loops– so basically a bunch of future events that never happened, I guess. That’s how I know things I shouldn’t be able to: you both <i>told me</i> those things before, you just don’t remember that you did.” “I think the reason I freeze up like that and get those memories is because the first time around, the Nomai statue in the museum opened its eyes at me and did <i>something</i>– and Gabbro’s in it too, by the way, they found another statue on Giant’s Deep and it opened its eyes at them too.” With a pause, they pinched their lips together and looked at both one by one. “Other questions?”
+Gossan crossed their arms, gaze wavering between stern straight-to-business practicality and concerned horror. “Any clues on how to fix this?”
+Hal’s ears dropped. “Not really.” They gulped, trying not to let their mind think too hard about it– to not let their emotions surface… “We’ve tried a few things, but we don’t even know <i>why</i> there’s a time loop, or why the statues did their thing, or why the Nomai somehow built statues that can basically send memories back in time. We’re… w-we’re sort of j-just stuck, right now…”
+[Marl and Gossan exchange a horrified look. Marl is the first to slowly approach, raising a tentative arm, and Hal hesitantly but gladly takes their offer, wrapping their arms around their chest and hugging tight.] “Geez, Hal… That’s rough. That’s so rough. I mean, <i>geysers</i>, that’s… wow.”
+A gloved hand went to lay on their shoulder. It wasn’t long before Gossan joined the embrace, keeping their silence.
+Hal’s shoulders quivered, and a few seconds later, there was a wet sniffle. Then another. Then a third, and a fourth, each coming more rapidly than the previous one.
+So much for trying to hold it together.
+
+
+
+
+
 Hornfels: "Since when are you invested in getting any kind of work done?"
 Gabbro: "Even broken clocks are right twice a day," somehow managing the exact same audible shrug as the last loop.
 Hal is upset that Gabbro would dispell Hornfels’ doubts the exact same way as the previous time.
@@ -1613,7 +1720,7 @@ Hal shook their head. "They’ll be alright," they mumbled shakily. "Time will g
 <div class=shiplog><h2>Reading Entry: “TIME LOOP CONFIRMED.log”</h2>
 <p class=time>06d05s 29:04</p>
 <p>Yes! YES!! I <i>knew</i> it! It really works! It’s completely crazy, but it <i>works!</i> Ha, I knew I’d be leaving some notes for myself. Great job, me.</p>
-<p>But also OH GEEZ, oh no, the time loop is real and we’re already close to like halfway through. Why did Gossan have to rope me into fixing their mining equipment!?</p>
+<p>But also OH GEEZ, oh no, the time loop is real and we’re already close to like halfway through. Why did Tephra have to rope me into a game of <i>hide and seek</i> of all things!? WHY DID I SAY YES???</p>
 <p>Ok that means there’s no time for fooling around, it’s my turn to keep future me up to date and get as much work done as I can. The time loop stuff is DEFINITELY related to that weird Nomai statue business and apparently nobody ever managed to get to that statue workshop to investigate, so that’s where I’m going.</p>
 <p>I’ll come back later with a full report. I’ll be leaving condensed notes in real time in the main ship log as usual, but I thought it’d probably be better to make a different version here as well at the end of each loop, just for me.</p><p>Though there’s probably going to be more rambling. Oops.</p>
 </div>
@@ -1626,7 +1733,7 @@ Hal shook their head. "They’ll be alright," they mumbled shakily. "Time will g
 <p>Both stared in disbelief. The lumberjack pursed their lips and offered a hypothesis with a noncommittal shrug: “Think they just remembered they forgot something important?”</p>
 <hr>
 
-<!--
+<!-- .
 Hornfels: "Since when are you invested in getting any kind of work done?"
 Gabbro: "Even broken clocks are right twice a day," somehow managing the exact same audible shrug as the last loop.
 One pair at a time, Hal rubbed their eyes with two exhausted fingers and tried not to audibly groan.
@@ -1682,7 +1789,7 @@ A pause.
 <p>The moment the Nomai magic gave them back proper control to their body, Hal slapped Gossan’s hand away from their face and darted to the observatory without a word. Both adults were too shocked to follow.</p>
 <hr>
 
-<!--
+<!-- .
 Hornfels: "Since when are you invested in getting any kind of work done?"
 Gabbro: "Even broken clocks are right twice a day," somehow managing the exact same audible shrug as the last loop.
 
@@ -1915,7 +2022,7 @@ The supernova’s roar took their words, then their life. Somewhere in the land 
 <!-- @SFOLD — 007 — CHAPTER 1⁷: XXXXXXXXXXXXX — Firn attempts a slingshot and kills Hal. ———————————————————————————————— -->
 <div class=chp id=ch1_7><h1>Chapter 1⁷</h1><h2>XXXXXXXXXXXXX</h2><hr>
 
-<!--
+<!-- .
 
 
 
@@ -1964,7 +2071,7 @@ Hal sighed. "Just– just… come along. Please."
 The next time Hal took a look at Firn, they
 "Okay, I think we should go meet up with Gabbro," they asserted with confidence, despite a slightly wavering voice. When Hal merely stared at them, they blinked in return and frowned, lips slightly trembling. "What?"
 Hal blinked again. "That’s… That’s it? I mean, you’re just gonna…"
-"Time loop, supernova, Nomai statues, Gabbro’s in it too, something on Giant’s Deep that might be worth looking into," they shrugged heavily. "Did I forget anything?"
+"Time loop, supernova, Nomai statues, Gabbro’s in it too, something on Giant’s Deep that might be worth looking into," they shrugged heavily. "Did I forget– Uh. I mean, anything else I should’ve listed?"
 At a loss for words, Hal merely turned their eyes to the computer screen, then to Firn, back and forth. Finally, they managed to ask: "…What on Hearth did you write in that ship log that could convince you so quickly?"
 "A few notes about the thing orbiting Giant's Deep that I saw exploding first thing this morning, and how it's literally impossible for my ship log to have any kind of info about that whatsoever unless, somehow, it already happened before. Which is impossible because the notes mention that the cannon was destroyed upon firing, and the cannon I saw this morning also was destroyed when it fired." "Also, the ship logs have dates, and I don’t think you or Marl would know how to hack it in order to make it look like those notes were written in the future."
 After hearing this, Hal found that they needed just a few instants to merely process what had been said. Their eyes met with a small potted plant, and suddenly its tiny hatchling leaves felt like the most fascinating sight in the galaxy.
@@ -2044,7 +2151,7 @@ The founder rolled their eyes. “None taken. I think. I get where you’re comi
 <p class=vs>Wait. Wouldn’t the other one need a spacesuit, at least? Did Firn have a spare one?</p>
 <p>…Meh. They would manage. They’d be surprised if Hal planned to actually step out of that ship while in space, anyway.</p>
 <hr>
-<!--
+<!-- .
 — Ship log notes:
 <li>Apparently from the past loops, we got to discover that there’s a whole workshop on Giant’s Deep. There’s <i>bound</i> to be tons of other statues there!</li>
 <li>Maybe we could even pull a few others in it too, like Hornfels. It’d be super useful to have ground control support, and Hal wouldn’t even <i>have</i> to go to space to avoid them anymore. (I mean, of course they’re still welcome, it’s just that I don’t think they’re really enjoying their time out there.)</li>
@@ -2340,7 +2447,7 @@ Firn sat down, seized the levers, then took a deep breath. “…Okay. <span cla
 <p>“S– Sorry.” Deep breath. “I. I don’t think anyone else was supposed to see this.”</p>
 <p>“Like that’s supposed to make me feel better,” Slate sputtered with concern.</p>
 
-<!--
+<!-- .
 
 
 
@@ -2414,7 +2521,7 @@ A  pained sigh. "Sorry, I'm just rambling by this point. It's just… There's on
 <!-- @EFOLD -->
 <!-- @SFOLD — 009 — CHAPTER 1⁹: XXXXXXXXXXXXX ——————————————————————————————————————————————————————————————————————————— -->
 <div class=chp id=ch1_9><h1>Chapter 1⁹</h1><h2>XXXXXXXXXXXXX</h2><hr>
-<!--
+<!-- .
 (First thing Hal does when they come to is hug Gossan out of nowhere.)
 
 Gossan is shocked, but returns the hug warmly.
@@ -2618,7 +2725,7 @@ Gossan frowned, frozen in place. "I didn't tell *anyone* about the training idea
 </div>
 <!-- @EFOLD -->
 <!-- @SFOLD LOOP 9+, VARIOUS ———————————————————————————————————————————————————————————————————————————————————————————— -->
-<!--
+<!-- .
 
 
 
@@ -3055,7 +3162,7 @@ Hal’s jaw dropped to the ground. In fact, they were currently not looking at t
 
 -->
 <!-- @SFOLD STRANGER -->
-<!--
+<!-- .
 (about the Strangers’ language)
 "This is *fascinating*. Their entire culture revolves around light and dark, down to their writing! It took me forever to figure out that it's not just the writing that has meaning, but also the empty space *between* their glyphs! For so long I thought the additional dots and waves were meant to be little more than small alterations, but no, they define entire new words!"
 
@@ -3207,7 +3314,7 @@ Hal, after a good half minute of just staring in shock and 'cannot compute how a
 -->
 <!-- @EFOLD -->
 <!-- @SFOLD Loop where probe crashes into ship -->
-<!--
+<!-- .
 Loop where the probe crashes into the ship:
 
 Skin paling to a concerning grey from below their scales, Firn first found themselves paralyzed. Then, all their muscles were freed at once.
@@ -3278,7 +3385,7 @@ Firn doesn’t get to find Hal when the loop is about to end and they see the su
 -->
 <!-- @EFOLD -->
 <!-- @SFOLD Core of Giant’s Deep -->
-<!--
+<!-- .
 When they get to the core of Giant’s Deep and see that the Eye was found on loop #xxx and that they are on loop #yyy:
 
 
@@ -3449,7 +3556,7 @@ The pilot frowned. "I still don't see anything, though."
 
 <!-- @EFOLD -->
 <!-- @SFOLD Ash Twin Project & Shenanigans -->
-<!--
+<!-- .
 
 
 ————
@@ -3783,7 +3890,7 @@ Gossan:
 
 -->
 <!-- @EFOLD -->
-<!--
+<!-- .
 
 
 Endgame plan for the last loop: evacuate everyone on the Stranger, while Hal and Firn(?) fetch the advanced warp core and get the Vessel to the eye so that it survives the supernova. From there, they find and disable the Stranger's signal blocker, and with Hal having taught someone (Gossan or Slate if they're still in the loop) how to pilot and turn the Stranger visible again, they become able to radio each other.

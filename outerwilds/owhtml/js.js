@@ -61,6 +61,13 @@ function ScrollToPage() {
     document.getElementById('page' + input.value).scrollIntoView();
   }
 }
+function ScrollToLoop() {
+  var input, p;
+  input = document.getElementById('selpage');
+  if (event.key === "Enter") {
+    document.getElementById('loop' + input.value).scrollIntoView();
+  }
+}
 function Toggle(cl){
   var button=document.getElementById(cl);
   var els=document.getElementsByClassName(cl);

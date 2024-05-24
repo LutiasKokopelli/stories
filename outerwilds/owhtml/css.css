@@ -345,16 +345,16 @@ hr{
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
 
-.chp > *:first-child,wip > *:first-child,.shiplog > *:first-child{margin-top:0}
-.chp > *:last-child,wip > *:last-child,.shiplog > *:last-child{margin-bottom:0}
-.shiplog{background:rgb(var(--black));color:rgb(var(--white));border:3px solid rgb(var(--blue));padding:20px;font-family:Space Mono;width:95%;margin:20px auto}
-.shiplog p{margin:12px 0}
-.shiplog h2{font-size:1.7em}
-.shiplog li{list-style:'– '}
-.shiplog li::marker{color:rgb(var(--white))}
-/* .history{text-indent:-9em;padding-left:9em;font-size:80%} */
+.chp > *:first-child,wip > *:first-child{margin-top:0}
+.chp > *:last-child,wip > *:last-child{margin-bottom:0}
 
-p.time{color:rgb(var(--blue));font-size:1.2em;font-weight:600;margin:42px 0 12px 0}
+.shiplog > div{padding:1em}
+.shiplog > div > *:first-child{margin-top:0}
+.shiplog > div > *:last-child{margin-bottom:0}
+.shiplog p:not(.time){padding:0 1.7em}
+.shiplog p.time{border-bottom:3px solid currentcolor;padding-bottom:.5em;color:rgb(var(--blue));font-size:1.2em;font-weight:600}
+.shiplog h2{font-size:1.7em}
+
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
 .grey{opacity:.5}
@@ -375,6 +375,7 @@ orng,.red{color:rgb(var(--orng))}
 .greyd{color:rgb(var(--greyd))}
 
 smol{font-size:.7rem;font-family:Space Mono}
+code{font-family:Space Mono}
 .smol{font-size:.8em}
 .scaps{font-variant:petite-caps;font-weight:500}
 .radio{
@@ -400,12 +401,6 @@ smol{font-size:.7rem;font-family:Space Mono}
     background-image:url("https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/img/bg_radio.gif");
     background-size:50%;
 }
-#workskin .shiplog {
-  padding: 20px;
-  font-family: Space Mono;
-  width: 80%;
-  margin: 20px auto;
-}
 
 #workskin .time {
   font-size: 1.2em;
@@ -422,3 +417,103 @@ p>svg{display:inline-block;height:1.1em;background:currentcolor;vertical-align:m
 img.isnomai{height:1.1em;vertical-align:middle;margin-top:-3px}
 
 .owlk{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.shiplog{text-align:left;
+    font: 90%/1.25 Space Mono,Consolas,Courrier,monospace;
+    text-shadow:0 0 5px currentcolor;color:rgb(207,207,209);opacity:.95;
+    margin:2.5vw auto;
+    width:92%;
+    box-shadow:0 0 1vw 2vw rgb(5,19,31);
+    border:2px solid royalblue;
+    background: url(img/shiplog_bg.png);background-position:center;
+    padding:1.55%;padding-right:.9%;
+    position:relative;
+    border-collapse:separate;
+    border-spacing:2vh;
+    word-break:break-word;
+}
+.old{opacity:.5}
+.shiplog tr{opacity:.8;-moz-transition:all 0.3s ease-in-out}
+.shiplog tr:first-child{opacity:1}
+.shiplog tr:hover{opacity:1}
+.shiplog tr:hover td{background:none}
+.shiplog td:first-child{width:17%}
+.shiplog td,.shiplog tr:hover,.shiplog tr:hover td{background:none!important}
+.shiplog details{display:inline-block;width:100%;margin:0}
+.shiplog summary{list-style:none;text-indent:-2.5em;margin-left:2.5em}
+.shiplog details>li{margin:3px 24px}
+.shiplog td.time{line-height:1.7}
+
+.shiplog li{list-style:none!important;margin:0;margin-left:-1.32em;position:relative}
+.shiplog li:before{content:'– ';font-weight:800;position:absolute;left:-1.05em}
+
+.shiplog ul>li{padding:.5em 0;margin-left:0}
+.shiplog ul>li:first-child{margin-top:0}
+.shiplog td{vertical-align:top}
+.shiplog u{padding:2px 12px;border-radius:50px;color:rgb(5,19,31)!important;text-shadow:none;text-decoration:none;line-height:1.7}
+
+.shiplog .hudblue .time{color:royalblue}
+.shiplog .hudblue u{background:royalblue;filter:drop-shadow(0 0 2px royalblue)}
+.shiplog .hudblue ul{border:2px solid royalblue;box-shadow:-1px 1px 1px royalblue}
+.shiplog .hudblue li:before{color:royalblue}
+.shiplog .blue{color:royalblue}
+
+.shiplog .hudlblue .time{color:lightblue}
+.shiplog .hudlblue u{background:lightblue;filter:drop-shadow(0 0 2px lightblue)}
+.shiplog .hudlblue ul{border:2px solid lightblue;box-shadow:-1px 1px 1px lightblue}
+.shiplog .hudlblue li:before{color:lightblue}
+.shiplog .lblue{color:lightblue}
+
+.shiplog .hudorange .time{color:orange}
+.shiplog .hudorange u{background:orange;filter:drop-shadow(0 0 2px orange)}
+.shiplog .hudorange ul{border:2px solid orange;box-shadow:-1px 1px 1px orange}
+.shiplog .hudorange li:before{color:orange}
+.shiplog .orange{color:orange}
+
+.shiplog .huddarkorange .time{color:darkorange}
+.shiplog .huddarkorange u{background:darkorange;filter:drop-shadow(0 0 2px darkorange)}
+.shiplog .huddarkorange ul{border:2px solid darkorange;box-shadow:-1px 1px 1px darkorange}
+.shiplog .huddarkorange li:before{color:darkorange}
+.shiplog .darkorange{color:darkorange}
+
+.shiplog .hudgreen .time{color:mediumseagreen}
+.shiplog .hudgreen u{background:mediumseagreen;filter:drop-shadow(0 0 2px mediumseagreen)}
+.shiplog .hudgreen ul{border:2px solid mediumseagreen;box-shadow:-1px 1px 1px mediumseagreen}
+.shiplog .hudgreen li:before{color:mediumseagreen}
+.shiplog .green{color:mediumseagreen}
+
+.shiplog .hudlgreen .time{color:springgreen}
+.shiplog .hudlgreen u{background:springgreen;filter:drop-shadow(0 0 2px springgreen)}
+.shiplog .hudlgreen ul{border:2px solid springgreen;box-shadow:-1px 1px 1px springgreen}
+.shiplog .hudlgreen li:before{color:springgreen}
+.shiplog .lgreen{color:springgreen}
+
+.shiplog .hudred .time{color:crimson}
+.shiplog .hudred u{background:crimson;filter:drop-shadow(0 0 2px crimson)}
+.shiplog .hudred ul{border:2px solid crimson;box-shadow:-1px 1px 1px crimson}
+.shiplog .hudred li:before{color:crimson}
+.shiplog .red{color:crimson}
+
+.shiplog .hudgrey .time{color:grey}
+.shiplog .hudgrey u{background:grey;filter:drop-shadow(0 0 2px grey)}
+.shiplog .hudgrey ul{border:2px solid grey;box-shadow:-1px 1px 1px grey}
+.shiplog .hudgrey li:before{color:grey}
+.shiplog .grey{color:grey}
+
+.shiplog ul{margin:0 0 0 19px;border-right:none!important;border-top:none!important;padding-left:1em}

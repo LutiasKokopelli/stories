@@ -1,5 +1,5 @@
 <!-- @SFOLD HTML -->
-<head><title>Time Loop Calendar</title><link rel=icon href=../RESOURCES/favicon.ico><link rel=stylesheet href=css.css><style>
+<head><title>Time Loop Calendar</title><link rel=icon href=img/favicon.ico><link rel=stylesheet href=css.css><style>
 body{padding-bottom:1200px}
 .chp{max-width:unset;width:90%}
 td{padding:0 12px}th{padding:12px}
@@ -172,14 +172,26 @@ const formatDuration=ms=>{
     .map(([key,val])=>`${val}${key}${val!==1&&key=='day'?'s':''}`)
     .join(', ');
 }
+// const hearthiantime=v=>{
+//     const time={
+//         d:v[1],
+//         m:('00'+Math.trunc(v[3]/360*60)).slice(-2),
+//         s:('00'+Math.round(v[3]/360*60*60)%60).slice(-2)
+//     }
+//     return Object.entries(time)
+//     .map(([key,val])=>`${val}${key=='d'?'c ':':'}`)
+//     .join('')
+//     .slice(0,-1)
+// }
 const hearthiantime=v=>{
     const time={
-        d:v[1],
+        d:('00'+Math.trunc(1+v[1]/22)).slice(-2),
+        r:('00'+v[1]%22).slice(-2),
         m:('00'+Math.trunc(v[3]/360*60)).slice(-2),
         s:('00'+Math.round(v[3]/360*60*60)%60).slice(-2)
     }
     return Object.entries(time)
-    .map(([key,val])=>`${val}${key=='d'?'c ':':'}`)
+    .map(([key,val])=>`${val}${key=='d'?'d' : (key=='r'?'s ' : ':') }`)
     .join('')
     .slice(0,-1)
 }
