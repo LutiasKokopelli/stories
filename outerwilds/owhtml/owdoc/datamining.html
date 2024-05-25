@@ -1,0 +1,516 @@
+<!-- @SFOLD HEADER -->
+<head><title>Outer Wilds File Structure</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><style>
+.chp{max-width:unset}
+details > *:first-child{margin-top:0}details > *:last-child{margin-bottom:0}
+details summary::-webkit-details-marker,details summary::marker{display:none;content:""}
+.chp>details{border:5px solid rgb(var(--blue));border-radius:17px;outline:5px solid rgb(var(--blue));outline-offset:-3px;margin:17px auto}
+.chp>details>summary>*{border-left:none}
+details{background:rgba(var(--blue),.3);font-family:Space Mono}
+details summary *{text-align:left;/*color:rgb(var(--orng));*/text-align:left}
+details:not([open]) summary *{margin-bottom:auto;margin-bottom:-3px}
+details>:not(summary){margin-left:50px}
+details :not(li) + li{border-top:3px solid rgb(var(--blue));padding-top:7px}
+details>ul>:not(summary){margin-left:-3px}
+details>ul{margin:0;margin-left:50px;border-left:3px solid rgb(var(--blue));font-weight:600;color:rgba(var(--white),.9);padding:0}
+details>ul>li:first-child{margin-top:0;padding-top:7px}details>ul>li:last-child{margin-bottom:0;padding-bottom:7px}
+details>ul>li{list-style:none;margin-left:-3px}
+details>ul>li:before{content:'➙';color:rgb(var(--blue));padding-right:5px}
+summary *{padding:7px 17px 3px 17px;margin:auto;border-bottom:3px solid rgb(var(--blue));border-left:3px solid rgb(var(--blue));margin-bottom:-3px}
+:not(.chp) > details[open] > summary *,:not(.chp) > details[open] + details[open] > summary *{border-bottom-left-radius:12px}
+:not(.chp) > details > summary *{border-top:3px solid rgb(var(--blue))}
+:not(.chp) > details[open] + details > summary *{border-top-left-radius:12px}
+details + details summary *{border-top:3px solid rgb(var(--blue));margin-top:-3px}
+details p{border-left:3px solid rgb(var(--blue));margin:0 0 0 50px;padding:7px 50px;color:rgba(var(--white),.8)}
+li details{display:inline-block;background:none;width:calc(100% - 24.5px)}
+li details summary{color:rgb(var(--green))}
+li details[open] summary{border-bottom:2px solid rgb(var(--blue))}
+li > *{vertical-align:text-top}
+</style></head><div class=chp><h1>Datamining: Outer Wilds Game Files Tree Structure</h1>
+<!-- <h2>If you need extra info, you can reopen the raw files in AssetStudio and look at a file’s “Dump” tab instead of “Preview” (right panel).</h2> -->
+<details open><summary><h2>/mnt/c/Program Files (x86)/Steam/steamapps/common/Outer Wilds/OuterWilds_Data/</h2></summary>
+<!-- @EFOLD -->
+<!-- @SFOLD [Files] (Basically done, AssetStudio can’t do more) -->
+<ul>
+<li>app.info</li>
+<li>boot.config</li>
+<li class=green>globalgamemanagers</li>
+<li class=green>globalgamemanagers.assets</li>
+<li class=green>level0</li>
+<li class=green>level1</li>
+<li class=green>level2</li>
+<li class=green>level3</li>
+<li class=green>level4</li>
+<li class=green>level5</li>
+<li class=green>resources.assets</li>
+<li class=blue>resources.assets.resS</li>
+<li class=blue>resources.resource</li>
+<li class=green>sharedassets0.assets</li>
+<li class=blue>sharedassets0.assets.resS</li>
+<li class=blue>sharedassets0.resource</li>
+<li class=green>sharedassets1.assets</li>
+<li class=blue>sharedassets1.assets.resS</li>
+<li class=green>sharedassets2.assets</li>
+<li class=blue>sharedassets2.assets.resS</li>
+<li class=blue>sharedassets2.resource</li>
+<li class=green>sharedassets3.assets</li>
+<li class=green>sharedassets4.assets</li>
+<li class=green>sharedassets5.assets</li>
+<li class=blue>sharedassets5.assets.resS</li>
+</ul>
+<!-- @EFOLD -->
+<!-- @SFOLD Managed/ (Basically done, AssetStudio can’t do more) -->
+<details><summary><h2>Managed/</h2></summary><ul>
+<li class=blue>Assembly-CSharp-firstpass.dll</li>
+<li class=blue>Assembly-CSharp.dll</li>
+<li class=blue>Autodesk.Fbx.dll</li>
+<li class=blue>EOS-SDK.dll</li>
+<li class=blue>Mono.Security.dll</li>
+<li class=blue>Newtonsoft.Json.dll</li>
+<li class=blue>System.ComponentModel.Composition.dll</li>
+<li class=blue>System.Configuration.dll</li>
+<li class=blue>System.Core.dll</li>
+<li class=blue>System.Data.dll</li>
+<li class=blue>System.Diagnostics.StackTrace.dll</li>
+<li class=blue>System.Drawing.dll</li>
+<li class=blue>System.EnterpriseServices.dll</li>
+<li class=blue>System.Globalization.Extensions.dll</li>
+<li class=blue>System.IO.Compression.FileSystem.dll</li>
+<li class=blue>System.IO.Compression.dll</li>
+<li class=blue>System.Net.Http.dll</li>
+<li class=blue>System.Numerics.dll</li>
+<li class=blue>System.Runtime.Serialization.Xml.dll</li>
+<li class=blue>System.Runtime.Serialization.dll</li>
+<li class=blue>System.ServiceModel.Internals.dll</li>
+<li class=blue>System.Transactions.dll</li>
+<li class=blue>System.Xml.Linq.dll</li>
+<li class=blue>System.Xml.XPath.XDocument.dll</li>
+<li class=blue>System.Xml.dll</li>
+<li class=blue>System.dll</li>
+<li class=blue>Unity.Addressables.dll</li>
+<li class=blue>Unity.Formats.Fbx.Runtime.dll</li>
+<li class=blue>Unity.InputSystem.dll</li>
+<li class=blue>Unity.MemoryProfiler.dll</li>
+<li class=blue>Unity.Recorder.dll</li>
+<li class=blue>Unity.ResourceManager.dll</li>
+<li class=blue>Unity.ScriptableBuildPipeline.dll</li>
+<li class=blue>Unity.TextMeshPro.dll</li>
+<li class=blue>Unity.Timeline.dll</li>
+<li class=blue>UnityEngine.AIModule.dll</li>
+<li class=blue>UnityEngine.ARModule.dll</li>
+<li class=blue>UnityEngine.AccessibilityModule.dll</li>
+<li class=blue>UnityEngine.AndroidJNIModule.dll</li>
+<li class=blue>UnityEngine.AnimationModule.dll</li>
+<li class=blue>UnityEngine.AssetBundleModule.dll</li>
+<li class=blue>UnityEngine.AudioModule.dll</li>
+<li class=blue>UnityEngine.ClothModule.dll</li>
+<li class=blue>UnityEngine.ClusterInputModule.dll</li>
+<li class=blue>UnityEngine.ClusterRendererModule.dll</li>
+<li class=blue>UnityEngine.CoreModule.dll</li>
+<li class=blue>UnityEngine.CrashReportingModule.dll</li>
+<li class=blue>UnityEngine.DSPGraphModule.dll</li>
+<li class=blue>UnityEngine.DirectorModule.dll</li>
+<li class=blue>UnityEngine.GameCenterModule.dll</li>
+<li class=blue>UnityEngine.GridModule.dll</li>
+<li class=blue>UnityEngine.HotReloadModule.dll</li>
+<li class=blue>UnityEngine.IMGUIModule.dll</li>
+<li class=blue>UnityEngine.ImageConversionModule.dll</li>
+<li class=blue>UnityEngine.InputLegacyModule.dll</li>
+<li class=blue>UnityEngine.InputModule.dll</li>
+<li class=blue>UnityEngine.JSONSerializeModule.dll</li>
+<li class=blue>UnityEngine.LocalizationModule.dll</li>
+<li class=blue>UnityEngine.ParticleSystemModule.dll</li>
+<li class=blue>UnityEngine.PerformanceReportingModule.dll</li>
+<li class=blue>UnityEngine.Physics2DModule.dll</li>
+<li class=blue>UnityEngine.PhysicsModule.dll</li>
+<li class=blue>UnityEngine.ProfilerModule.dll</li>
+<li class=blue>UnityEngine.ScreenCaptureModule.dll</li>
+<li class=blue>UnityEngine.SharedInternalsModule.dll</li>
+<li class=blue>UnityEngine.SpatialTracking.dll</li>
+<li class=blue>UnityEngine.SpriteMaskModule.dll</li>
+<li class=blue>UnityEngine.SpriteShapeModule.dll</li>
+<li class=blue>UnityEngine.StreamingModule.dll</li>
+<li class=blue>UnityEngine.SubstanceModule.dll</li>
+<li class=blue>UnityEngine.SubsystemsModule.dll</li>
+<li class=blue>UnityEngine.TLSModule.dll</li>
+<li class=blue>UnityEngine.TerrainModule.dll</li>
+<li class=blue>UnityEngine.TerrainPhysicsModule.dll</li>
+<li class=blue>UnityEngine.TextCoreModule.dll</li>
+<li class=blue>UnityEngine.TextRenderingModule.dll</li>
+<li class=blue>UnityEngine.TilemapModule.dll</li>
+<li class=blue>UnityEngine.UI.dll</li>
+<li class=blue>UnityEngine.UIElementsModule.dll</li>
+<li class=blue>UnityEngine.UIModule.dll</li>
+<li class=blue>UnityEngine.UNETModule.dll</li>
+<li class=blue>UnityEngine.UmbraModule.dll</li>
+<li class=blue>UnityEngine.UnityAnalyticsModule.dll</li>
+<li class=blue>UnityEngine.UnityConnectModule.dll</li>
+<li class=blue>UnityEngine.UnityTestProtocolModule.dll</li>
+<li class=blue>UnityEngine.UnityWebRequestAssetBundleModule.dll</li>
+<li class=blue>UnityEngine.UnityWebRequestAudioModule.dll</li>
+<li class=blue>UnityEngine.UnityWebRequestModule.dll</li>
+<li class=blue>UnityEngine.UnityWebRequestTextureModule.dll</li>
+<li class=blue>UnityEngine.UnityWebRequestWWWModule.dll</li>
+<li class=blue>UnityEngine.VFXModule.dll</li>
+<li class=blue>UnityEngine.VRModule.dll</li>
+<li class=blue>UnityEngine.VehiclesModule.dll</li>
+<li class=blue>UnityEngine.VideoModule.dll</li>
+<li class=blue>UnityEngine.WindModule.dll</li>
+<li class=blue>UnityEngine.XR.LegacyInputHelpers.dll</li>
+<li class=blue>UnityEngine.XRModule.dll</li>
+<li class=blue>UnityEngine.dll</li>
+<li class=blue>XGamingRuntime.dll</li>
+<li class=blue>com.rlabrecque.steamworks.net.dll</li>
+<li class=blue>mscorlib.dll</li>
+<li class=blue>netstandard.dll</li>
+</ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD Plugins/x86_64/ (Basically done, AssetStudio can’t do more) -->
+<details><summary><h2>Plugins/x86_64/</h2></summary><ul>
+<li class=blue>EOSSDK-Win64-Shipping.dll</li>
+<li class=blue>Microsoft_Xbox_Services_141_GDK_C_Thunks.dll</li>
+<li class=blue>UnityFbxSdkNative.dll</li>
+<li class=blue>XGamingRuntimeThunks.dll</li>
+<li class=blue>steam_api64.dll</li>
+<li class=blue>user32.dll</li>
+</ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD Resources/ -->
+<details><summary><h2>Resources/</h2></summary><ul>
+<li class=green>unity default resources</li>
+<li class=green>unity_builtin_extra</li>
+</ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD StreamingAssets/ -->
+<!-- @SFOLD StreamingAssets/* -->
+<details open><summary><h2>StreamingAssets/</h2></summary><ul>
+    <li>buildlogtep.json</li>
+    <li>SaveIcon.png</li>
+    <li>SaveIconPS5.png</li>
+    <li>StreamingAssets.manifest</li>
+    <li>StreamingAssetsTable.json</li>
+    </ul>
+<!-- @EFOLD -->
+<!-- @SFOLD                /brittlehollow/ -->
+    <details><summary><h3>brittlehollow/</h3></summary><ul>
+        <li class=green>bakedvertexinstancestreamrenderers</li>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+        </ul>
+        <details><summary><h4>meshes/</h4></summary><ul>
+            <li class=green>characters</li>
+            <li class=green>effects</li>
+            <li class=green>props</li>
+            <li class=green>structures</li>
+            <li class=green>terrain</li>
+        </ul></details>
+        <details><summary><h4>textures/</h4></summary><ul>
+            <li class=green>effects</li>
+            <li class=green>murals</li>
+            <li class=green>props</li>
+            <li class=green>riebeck</li>
+            <li class=green>terrain</li>
+            <li class=green>volcanicmoon</li>
+        </details>
+    </ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /comet/ -->
+    <details><summary><h3>comet/</h3></summary><ul><li class=green>detailpatches</li></ul>
+        <details><summary><h4>meshes/</h4></summary><ul>
+            <li class=green>props</li>
+            <li class=green>structures</li>
+            <li class=green>terrain</li>
+        </ul></details>
+        <details><summary><h4>textures/</h4></summary><ul>
+            <li class=green>effects</li>
+            <li class=green>terrain</li>
+        </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /darkbramble/ -->
+    <details><summary><h3>darkbramble/</h3></summary><ul>
+        <li class=green>bakedvertexinstancestreamrenderers</li>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul>
+    <details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>anglerfish</li>
+        <li class=green>effects</li>
+        <li class=green>feldspar</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /dreamworld/ -->
+    <details><summary><h3>dreamworld/</h3></summary><ul>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>effects</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>atmosphere</li>
+        <li class=green>decals</li>
+        <li class=green>effects</li>
+        <li class=green>ghostbird</li>
+        <li class=green>props</li>
+        <li class=green>proxy</li>
+        <li class=green>slidereelmaterials</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /eyeoftheuniverse/textures/ -->
+    <details><summary><h3>eyeoftheuniverse/textures/</h3></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>effects</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /giantsdeep/ -->
+    <details><summary><h3>giantsdeep/</h3></summary><ul>
+        <li class=green>bakedvertexinstancestreamrenderers</li>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>effects</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>effects</li>
+        <li class=green>gabbro</li>
+        <li class=green>jellyfish</li>
+        <li class=green>murals</li>
+        <li class=green>props</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /hourglasstwins/ -->
+    <details><summary><h3>hourglasstwins/</h3></summary><ul>
+        <li class=green>bakedvertexinstancestreamrenderers</li>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>effects</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>chert</li>
+        <li class=green>decals</li>
+        <li class=green>murals</li>
+        <li class=green>props</li>
+        <li class=green>terrain</li>
+        <li class=green>ttprops</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /invisibleplanet/textures/ -->
+    <details><summary><h3>invisibleplanet/textures/</h3></summary><ul>
+        <li class=green>1_dreamrule</li>
+        <li class=green>1_librarypath</li>
+        <li class=green>1_story</li>
+        <li class=green>2_dreamrule</li>
+        <li class=green>2_dreamrule_alt</li>
+        <li class=green>2_librarypath</li>
+        <li class=green>2_story</li>
+        <li class=green>2_story_vision</li>
+        <li class=green>3_dreamrule</li>
+        <li class=green>3_librarypath</li>
+        <li class=green>3_story</li>
+        <li class=green>4_story</li>
+        <li class=green>4_story_burned</li>
+        <li class=green>5_story</li>
+        <li class=green>burning</li>
+        <li class=green>damagereport</li>
+        <li class=green>destroyed</li>
+        <li class=green>experimentfails</li>
+        <li class=green>experimentsuccess</li>
+        <li class=green>experimentwatch</li>
+        <li class=green>homeworld</li>
+        <li class=green>lanternsecret</li>
+        <li class=green>prisonerfarewell</li>
+        <li class=green>prisonpeephole</li>
+        <li class=green>reel_1_seal</li>
+        <li class=green>reel_2_seal</li>
+        <li class=green>reel_3_seal</li>
+        <li class=green>signaljammer</li>
+        <li class=green>supernovaescape</li>
+        <li class=green>towervision</li>
+    </ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /quantummoon/ -->
+    <details><summary><h3>quantummoon/</h3></summary><ul>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>effects</li>
+        <li class=green>murals</li>
+        <li class=green>props</li>
+        <li class=green>solanum</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /ringworld/ -->
+    <details><summary><h3>ringworld/</h3></summary><ul>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>effects</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>architecture</li>
+        <li class=green>decals</li>
+        <li class=green>dwarchitecture</li>
+        <li class=green>effects</li>
+        <li class=green>ghostbird</li>
+        <li class=green>props</li>
+        <li class=green>proxy</li>
+        <li class=green>slidereelmaterials</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /solarsystem/ -->
+    <details><summary><h3>solarsystem/</h3></summary><ul>
+        <li><details><summary>decals</summary><ul><li>Decal_Decal_JudgementMural.obj</li></ul></details></li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li><details><summary>props</summary><ul>
+            <li>Prop_NOM_VaseThin_Geo.obj</li>
+            <li>Props_NOM_Bowl_Geo.obj</li>
+            <li>Props_NOM_Box_Geo.obj</li>
+            <li>Props_NOM_Container_geo.obj</li>
+            <li>Props_NOM_HoloTV_Seat1.obj</li>
+            <li>Props_NOM_HoloTV_Seat2.obj</li>
+            <li>Props_NOM_HoloTV_Seat3.obj</li>
+            <li>Props_NOM_HoloTV_Seat5.obj</li>
+            <li>Props_NOM_HoloTV_Seat6.obj</li>
+            <li>Props_NOM_HoloTV_Seat7.obj</li>
+            <li>Props_NOM_Mask_NewGeo.obj</li>
+            <li>Props_NOM_Rubble_Brick_B_geo.obj</li>
+            <li>Props_NOM_Rubble_Floor_A_geo.obj</li>
+            <li>Props_NOM_Rubble_Floor_B_geo.obj</li>
+            <li>Props_NOM_Rubble_Trim_C_geo.obj</li>
+            <li>Props_NOM_Rubble_Wall_A_geo.obj</li>
+            <li>Props_NOM_Rubble_Wall_B_geo.obj</li>
+            <li>Props_NOM_Rubble_Wall_C_geo.obj</li>
+            <li>Props_NOM_SimpleChair_Geo.obj</li>
+            <li>Props_NOM_Staff_Geo.obj</li>
+            <li>Props_NOM_Treepot_geo.obj</li>
+            <li>Props_NOM_VaseThick_Broken_Geo.obj</li>
+            <li>Statue_Bust.obj</li>
+            <li>Statue_Eyes.obj</li>
+            <li>Strucutre_NOM_Shelf_Geo.obj</li>
+            <li>eyelid_bot 1.obj</li>
+            <li>eyelid_bot 2.obj</li>
+            <li>eyelid_bot.obj</li>
+            <li>eyelid_top 1.obj</li>
+            <li>eyelid_top 2.obj</li>
+            <li>eyelid_top.obj</li>
+        </ul></details></li>
+        <li><details><summary>structures</summary><ul>
+            <li>Structure_NOM_Column_Base_Square_Geo.obj</li>
+            <li>Structure_NOM_Railing_Geo.obj</li>
+            <li>Structure_NOM_TallColumn_Base_Square_Geo.obj</li>
+            <li>Structure_NOM_WarpReceiver_Effects.obj</li>
+            <li>Structure_NOM_WarpReceiver_PlatformOnly_Copper.obj</li>
+            <li>Structure_NOM_WarpReceiver_PlatformOnly_Geo.obj</li>
+            <li>Structure_NOM_WarpReceiver_PlatformOnly_Glass.obj</li>
+            <li>blastDoor.obj</li>
+            <li>body 1.obj</li>
+            <li>body.obj</li>
+            <li>front_door_lamps.obj</li>
+            <li>glass.obj</li>
+            <li>glass_window.obj</li>
+            <li>wall 1.obj</li>
+            <li>wall.obj</li>
+            <li>warp_ext.obj</li>
+            <li>warp_int.obj</li>
+            <li>warp_lamp.obj</li>
+        </ul></details></li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=blue><details><summary>murals</summary><ul>
+            <li>Decal_NOM_JudgementMural.png</li>
+        </ul>
+        <p style="border-top:3px solid rgb(var(--blue))">File location after extracting:</p><ul><li>Assets/Materials/environment/nomai/decals/sunStation/StreamingMaterialTable_SS_Murals_LOD/StreamingTextureLookup.asset</li></ul>
+        </details></li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /timberhearth/ -->
+    <details><summary><h3>timberhearth/</h3></summary><ul>
+        <li class=green>bakedvertexinstancestreamrenderers</li>
+        <li class=green>batchedrenderers</li>
+        <li class=green>decals</li>
+        <li class=green>detailpatches</li>
+    </ul><details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>characters</li>
+        <li class=green>effects</li>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    <details><summary><h4>textures/</h4></summary><ul>
+        <li class=green>decals</li>
+        <li class=green>effects</li>
+        <li class=green>moon</li>
+        <li class=green>murals</li>
+        <li class=green>observatory</li>
+        <li class=green>props</li>
+        <li class=green>terrain</li>
+        <li class=green>villagers</li>
+    </ul></details>
+    </details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /Video/ -->
+<details><summary><h3>Video/</h3></summary><ul><li>Ai_Sat_Video.mp4</li><li>Fig_Backer_Sat_Video_V3_NoAudio.mp4</li></ul></details>
+<!-- @EFOLD -->
+<!-- @SFOLD                /whitehole/ -->
+    <details><summary><h3>whitehole/</h3></summary><ul>
+        <li><details><summary>batchedrenderers</summary><ul><li>Renderer_Geometry_WhiteholeStation_*.obj</li><li>Renderer_Rocks_IceSpikes_0.obj</li></ul></details></li>
+        <li><details><summary>decals</summary><ul><li>Decal_MeshProjector.obj</li></ul></details></li>
+    </ul>
+    <details><summary><h4>meshes/</h4></summary><ul>
+        <li class=green>props</li>
+        <li class=green>structures</li>
+        <li class=green>terrain</li>
+    </ul></details>
+    </details>
+</details></details></div>
+<!-- @EFOLD -->
+<!-- @EFOLD -->

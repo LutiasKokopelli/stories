@@ -1,0 +1,302 @@
+<!--
+https://stackoverflow.com/questions/60887392/can-you-use-polar-coordinates-in-an-svg-file
+https://www.w3schools.com/js/js_json.asp
+
+Search geometry drawing websites online and learn how they let the user draw their own distances/angles. Make them also dynamic and capable of displaying accurate values when the time stamp is changed.
+-->
+
+<!-- @SFOLD # Header -->
+<head><meta http-equiv=content-type content="text/html;charset=UTF-8"><title>Outer Wilds Solar System</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><style>
+body{background:rgb(var(--black));height:100%;width:100%}
+#timer{position:fixed;bottom:0;left:0;right:0;padding:7px 24px;height:10%;background:rgba(var(--blue),.2);z-index:99}
+</style><script src=../js.js></script></head>
+<!-- @EFOLD -->
+<div id=timer><table>
+    <tr><th>Zoom:</th><td style='font-family:Space Mono'><input type=range id=zoom name=zoom min=1000 max=50000 value=50000 step=1000 style=width:500px;height:7px;display:inline-block;margin-right:24px oninput='this.nextElementSibling.value=this.value'/><output>50000</output></td></tr>
+    <tr><th>Time:</th><td style='font-family:Space Mono'><input type=range id=times name=times min=0 max=1360 value=119 step=.01 style=width:88%;height:7px;display:inline-block;margin-right:24px oninput='this.nextElementSibling.value=Math.floor(this.value/60).toString().padStart(2,"0")+":"+(this.value%60).toFixed(3).padStart(6,"0")'><output>01:59.000</output></td></tr>
+</table></div>
+<svg id=solarsystem viewBox='0 0 60000 60000'style=width:10000px;height:10000px>
+<g id=meridians>
+    <g id=meridian128><line x1=30000 y1=30000 x2=250000 y2=50% stroke=white stroke-width=3 /></g>
+    <g id=meridian256><line x1=30000 y1=30000 x2=250000 y2=50% stroke=white stroke-width=1 /></g>
+    <g id=meridian512><line x1=35000 y1=30000 x2=250000 y2=50% stroke=white stroke-width=.7 /></g>
+</g>
+
+<circle cx=30000 cy=30000 r=2000 fill=darkgoldenrod />
+<circle cx=30000 cy=30000 r=2100 stroke=white stroke-width=7 fill=none />
+<image x=29768.13990898844 y=27804.143870300628 width=200 height=200 xlink:href=../img/astr_sunstation.png transform=rotate(3.6000000000000227,29868.13990898844,27904.143870300628) />
+<circle cx=30000 cy=30000 r=5000 stroke=brown stroke-width=20 fill=none />
+<circle cx=25017.535703752477 cy=29581.610783338423 r=250 fill=none stroke=brown stroke-width=15 />
+<circle cx=24769.731818689594 cy=29614.674880902705 r=170 fill=#ff5733 />
+<circle cx=25265.33958881536 cy=29548.54668577414 r=169 fill=gold />
+<image x=25062.53958881536 y=29345.746685774142 width=405.59999999999997 height=405.59999999999997 xlink:href=../img/astr_ashtwin.png style=opacity:.7 transform=rotate(-175,25265.33958881536,29548.54668577414) />
+<circle cx=24939.731818689594 cy=29614.674880902705 r=7 fill=red stroke=white stroke-width=7 />
+<circle cx=25432.25891837594 cy=29574.984110365942 r=12 fill=red />
+<circle cx=25342.063983271346 cy=29397.966583186306 r=12 fill=red />
+<circle cx=25145.838542794834 cy=29429.045639753615 r=12 fill=red />
+<circle cx=25114.759486227525 cy=29625.271080230126 r=12 fill=red />
+<circle cx=25280.068909339716 cy=29716.903589751648 r=12 fill=red />
+<circle cx=30000 cy=30000 r=8593.085981 stroke=green stroke-width=20 fill=none />
+<circle cx=26307.350917816926 cy=22240.781648083925 r=254 fill=green stroke=blue stroke-width=15 />
+<circle cx=26054.789080007093 cy=22213.79057396452 r=50 fill=white />
+<circle cx=26307.350917816926 cy=22240.781648083925 r=900 stroke=grey stroke-width=10 fill=none />
+<circle cx=26312.063285265205 cy=21340.793985061242 r=80 fill=grey />
+<circle cx=26311.644408158692 cy=21420.792888441036 r=7 fill=white />
+<circle cx=30000 cy=30000 r=11690.89 stroke=purple stroke-width=20 fill=none />
+<circle cx=23752.945462041967 cy=20118.136886604938 r=272 fill=purple />
+<circle cx=23752.945462041967 cy=20118.136886604938 r=40 fill=black />
+<circle cx=23752.945462041967 cy=20118.136886604938 r=1000 stroke=crimson stroke-width=10 fill=none />
+<circle cx=24644.74299164718 cy=19665.702177293155 r=97.3 fill=crimson />
+<circle cx=30000 cy=30000 r=16490 stroke=darkcyan stroke-width=20 fill=none />
+<circle cx=46195.21413512025 cy=26895.947951853715 r=950 fill=darkcyan />
+<circle cx=46195.21413512025 cy=26895.947951853715 r=850 fill=cyan />
+<circle cx=46195.21413512025 cy=26895.947951853715 r=500 fill=blue />
+<circle cx=46195.21413512025 cy=26895.947951853715 r=445 fill=darkblue />
+<circle cx=46195.21413512025 cy=26895.947951853715 r=200 fill=purple />
+<circle cx=46195.21413512025 cy=26895.947951853715 r=1200 stroke=white stroke-width=5 fill=none />
+<circle cx=46966.5592667441 cy=25976.694620110942 r=80 fill=darkgoldenrod stroke=white stroke-width=10 />
+<circle cx=47134.34392334315 cy=26148.930387888573 r=30 fill=darkgoldenrod stroke=white stroke-width=10 />
+<circle cx=47264.42196414629 cy=26351.159352166258 r=30 fill=darkgoldenrod stroke=white stroke-width=10 />
+<text x=47395.21413512025 y=28095.947951853715 fill=white style="font-family:Space Mono;font-size:10vw"><tspan style=font-size:20vw>GIANT’S DEEP </tspan><tspan x=47395.21413512025 dy=420 dx=100 style=font-size:15vw>Layers:</tspan><tspan x=47395.21413512025 dy=250 dx=250 fill=darkcyan stroke=white stroke-width=7>⬤ </tspan><tspan>Clouds</tspan><tspan x=47395.21413512025 dy=200 dx=250 fill=blue stroke=white stroke-width=7>⬤ </tspan><tspan>Water</tspan><tspan x=47395.21413512025 dy=200 dx=250 fill=darkblue stroke=white stroke-width=7>⬤ </tspan><tspan>Under the current</tspan><tspan x=47395.21413512025 dy=200 dx=250 fill=purple stroke=white stroke-width=7>⬤ </tspan><tspan>Core</tspan></text>
+<circle cx=30000 cy=30000 r=20000 stroke=white stroke-width=20 fill=none />
+<circle cx=10173.388434332886 cy=27372.173174626038 r=630 fill=darkcyan opacity=.7 />
+<circle cx=10173.388434332886 cy=27372.173174626038 r=203.3 fill=darkbrown stroke=white stroke-width=15 />
+<circle cx= 9029.472997726964  cy= 39446.533610109975  r= 50  fill=white />
+<text x=9229.472997726964 y=39646.533610109975 fill=white style="font-family:Space Mono;font-size:10vw">WHITE HOLE</text>
+<line x1=25432.25891837594 y1=29574.984110365942 x2=25017.535703752477 y2=29581.610783338423 stroke=white stroke-width=20 stroke-dasharray=10,40 stroke-linecap=round stroke-opacity=.7 />
+
+<!-- @SFOLD Planets done by hand - remove if python works -->
+<!-- <g id=timberhearth>
+    <circle cx=30000 cy=30000 r=8590 stroke=green stroke-width=20 fill=none />
+    <circle cx=26232.287 cy=22280.386 r=254 fill=green />
+    <circle cx=26232.287 cy=22280.386 r=20 fill=white />
+    White crater
+</g> -->
+<!-- <g id=brittlehollow>
+    <circle cx=30000 cy=30000 r=11690.89 stroke=purple stroke-width=20 fill=none />
+</g> -->
+<!-- <g id=giantsdeep>
+    <circle cx=30000 cy=30000 r=16490 stroke=darkcyan stroke-width=20 fill=none />
+</g> -->
+<!-- <circle cx=10000 cy=10000 r=950 fill=darkcyan /> -->
+<!-- <g id=darkbramble>
+    <circle cx=30000 cy=30000 r=20000 stroke=grey stroke-width=20 fill=none />
+</g> -->
+
+<!-- <g id=interloper>
+</g> -->
+    <!-- <ellipse cx=100 cy=50 rx=100 ry=50 /> -->
+    <!-- -65.5° rotation. Orbit of the Interloper varies slightly through time, so drawing it might not be worth the trouble. -->
+
+<!-- @EFOLD -->
+
+
+
+
+
+
+
+
+
+
+
+
+<line x1=30000 y1=0 x2=30000 y2=60000 stroke=rgb(0,255,0) stroke-width=3 />
+<line x1=0 y1=30000 x2=60000 y2=30000 stroke=rgb(0,255,0) stroke-width=3 />
+
+</svg>
+
+
+
+
+
+
+
+<script>
+const container=document.getElementById("solarsystem")
+for(var i=1;i<250;i++){
+    var smol=document.createElementNS("http://www.w3.org/2000/svg","circle")
+    smol.setAttributeNS(null,'cx','50%');
+    smol.setAttributeNS(null,'cy','50%');
+    smol.setAttributeNS(null,'r',(i*200).toString());
+    smol.setAttributeNS(null,'style','fill:none;stroke:rgba(255,255,255,1);stroke-width:1');
+    container.insertBefore(smol,container.firstChild);
+    var bigg=document.createElementNS("http://www.w3.org/2000/svg","circle")
+    bigg.setAttributeNS(null,'cx','50%');
+    bigg.setAttributeNS(null,'cy','50%');
+    bigg.setAttributeNS(null,'r',(i*200+100).toString());
+    bigg.setAttributeNS(null,'style','fill:none;stroke:rgba(255,255,255,.5);stroke-width:3');
+    container.insertBefore(bigg,container.firstChild);
+}
+for(i=1;i<128;i=i+1){
+    var deg=i*360/128
+    var new_tick=meridian128.cloneNode(true);
+    new_tick.removeAttribute("id");
+    new_tick.setAttribute("transform","rotate("+deg+",30000,30000)");
+    meridians.appendChild(new_tick);
+}
+for(i=0;i<128;i=i+1){
+    var deg=i*360/128+360/256
+    var new_tick2=meridian256.cloneNode(true);
+    new_tick2.removeAttribute("id");
+    new_tick2.setAttribute("transform","rotate("+deg+",30000,30000)");
+    meridians.appendChild(new_tick2);
+    var deg=i*360/128+360/512
+    var new_tick3=meridian512.cloneNode(true);
+    new_tick3.removeAttribute("id");
+    new_tick3.setAttribute("transform","rotate("+deg+",30000,30000)");
+    meridians.appendChild(new_tick3);
+    var deg=i*360/128+3*360/512
+    var new_tick3=meridian512.cloneNode(true);
+    new_tick3.removeAttribute("id");
+    new_tick3.setAttribute("transform","rotate("+deg+",30000,30000)");
+    meridians.appendChild(new_tick3);
+}
+zoom.onchange=function(){
+    var zoom=document.getElementById('zoom');
+    var scale=zoom.value*.2
+    container.style.width=scale.toString()+'px';
+    container.style.height=scale.toString()+'px';
+}
+</script>
+
+
+
+
+
+<!-- @SFOLD # SIDEBAR -->
+<!-- <div id=bottnav style=bottom:-100%>
+    <div id=midxbtn><a href=javascript:void(0) onclick=closeNav() id=closbtn><h1>Close<span>&times;</span></h1></a></div>
+
+
+    <div id=navctn>
+        <h1 style=margin-top:50px;color:rgba(var(--white),.9)>Outer Wilds Solar System Top View</h1>
+
+        <div>
+        </div>
+
+        <div>
+          <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="90" step="10" />
+          <label for="cowbell">Cowbell</label>
+        </div>
+
+        <p align=center><i>This web page was created and maintained by Lutias Kokopelli.</i></p>
+    </div>
+</div>
+<button id=openbtn onclick=openNav() style=bottom:1vh;top:unset>&#9776; Guide & Info</button> -->
+
+<script>
+ const maxScale = 5,
+            minScale = 0.15;
+
+        var selected,
+            scale = 1,
+            svg = document.querySelector('svg');
+
+        function beginDrag(e) {
+            e.stopPropagation();
+            let target = e.target;
+
+            // if (target.classList.contains('draggable')) {
+            selected = target;
+            // } else {
+            //     selected = document.querySelector('.main-container');
+            // }
+
+            selected.dataset.startMouseX = e.clientX;
+            selected.dataset.startMouseY = e.clientY;
+        }
+
+        function drag(e) {
+            if (!selected) return;
+            e.stopPropagation();
+
+            let startX = parseFloat(selected.dataset.startMouseX),
+                startY = parseFloat(selected.dataset.startMouseY),
+                dx = (e.clientX - startX),
+                dy = (e.clientY - startY);
+
+            // if (selected.classList.contains('draggable')) {
+                let selectedBox = selected.getBoundingClientRect(),
+                    boundaryBox = selected.parentElement.getBoundingClientRect();
+
+                if (selectedBox.right + dx > boundaryBox.right) {
+                    dx = (boundaryBox.right - selectedBox.right);
+                } else if (selectedBox.left + dx < boundaryBox.left) {
+                    dx = (boundaryBox.left - selectedBox.left);
+                }
+
+                if (selectedBox.bottom + dy > boundaryBox.bottom) {
+                    dy = (boundaryBox.bottom - selectedBox.bottom);
+                }
+                else if (selectedBox.top + dy < boundaryBox.top) {
+                    dy = (boundaryBox.top - selectedBox.top);
+                }
+            // }
+
+            let currentMatrix = selected.transform.baseVal.consolidate().matrix,
+                newMatrix = currentMatrix.translate(dx / scale, dy / scale),
+                transform = svg.createSVGTransformFromMatrix(newMatrix);
+
+            selected.transform.baseVal.initialize(transform);
+            selected.dataset.startMouseX = dx + startX;
+            selected.dataset.startMouseY = dy + startY;
+        }
+
+        function endDrag(e) {
+            e.stopPropagation();
+
+            if (selected) {
+                selected = undefined;
+            }
+        }
+
+
+        function zoom(e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            let delta = e.wheelDelta,
+                container = document.querySelector('svg'),
+                // container = document.querySelector('svg .main-container'),
+                scaleStep = delta > 0 ? 1.25 : 0.8;
+
+            if (scale * scaleStep > maxScale) {
+                scaleStep = maxScale / scale;
+            }
+
+            if (scale * scaleStep < minScale) {
+                scaleStep = minScale / scale;
+            }
+
+            scale *= scaleStep;
+
+            let box = svg.getBoundingClientRect();
+            let point = svg.createSVGPoint();
+            point.x = e.clientX - box.left;
+            point.y = e.clientY - box.top;
+
+            let currentZoomMatrix = container.getCTM();
+
+            point = point.matrixTransform(currentZoomMatrix.inverse());
+
+            let matrix = svg.createSVGMatrix()
+                .translate(point.x, point.y)
+                .scale(scaleStep)
+                .translate(-point.x, -point.y);
+
+
+            let newZoomMatrix = currentZoomMatrix.multiply(matrix);
+            container.transform.baseVal.initialize(svg.createSVGTransformFromMatrix(newZoomMatrix));
+
+            console.log("scale", scale);
+            let t = newZoomMatrix;
+            console.log("zoomMatrix", t.a, t.b, t.c, t.d, t.e, t.f);
+        }
+
+        document.querySelector('svg').addEventListener('mousedown', beginDrag);
+        document.querySelector('svg').addEventListener('mousewheel', zoom);
+        svg.addEventListener('mousemove', drag);
+        window.addEventListener('mouseup', endDrag);
+</script>
+<!-- @EFOLD -->
