@@ -279,6 +279,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     #bottnav{bottom:-100%;width:100%}
     #sidenav{left:0;width:20%}
     #openbtn{left:-100%}
+    :not(.chp) .shiplog{width:50%}
 }
 @media only screen and (orientation: portrait) {
     .chp{width:100%}
@@ -430,10 +431,7 @@ img.isnomai{height:1.1em;vertical-align:middle;margin-top:-3px}
 
 
 
-
-
-
-
+b{font-weight:500}
 .shiplog{text-align:left;
     font: 90%/1.25 Space Mono,Consolas,Courrier,monospace;
     text-shadow:0 0 5px currentcolor;color:rgb(207,207,209);opacity:.95;
