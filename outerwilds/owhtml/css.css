@@ -432,6 +432,7 @@ img.isnomai{height:1.1em;vertical-align:middle;margin-top:-3px}
 
 
 b{font-weight:500}
+.radio b{font-weight:600}
 .shiplog{text-align:left;
     font: 90%/1.25 Space Mono,Consolas,Courrier,monospace;
     text-shadow:0 0 5px currentcolor;color:rgb(207,207,209);opacity:.95;
@@ -439,7 +440,7 @@ b{font-weight:500}
     width:92%;
     box-shadow:0 0 1vw 2vw rgb(5,19,31);
     border:2px solid royalblue;
-    background: url(img/shiplog_bg.png);background-position:center;
+    background:url(img/shiplog_bg.png);background-position:center;
     padding:1.55%;padding-right:.9%;
     position:relative;
     border-collapse:separate;
