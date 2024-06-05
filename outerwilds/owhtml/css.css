@@ -1,5 +1,5 @@
 *{
-    -moz-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
     scrollbar-width:auto;
     overflow-anchor:none;
     --txtshw: 0 0 0.2em rgb(var(--black)), 0 0 0.2em rgb(var(--black)), 0 0 0.2em rgb(var(--black)), 0 0 0.2em rgb(var(--black)), 0 0 0.2em rgb(var(--black));
@@ -120,7 +120,7 @@ button {
     cursor: pointer;
     border-radius: 5px 5px 0 0;
 }
-a{text-decoration:none}
+a{text-decoration:none;color:rgb(var(--orng))}a:hover{color:rgb(var(--goldl))}
 a:active button{background:rgb(var(--indigod))}
 .rmk {
     width: 512px;
@@ -279,7 +279,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     #bottnav{bottom:-100%;width:100%}
     #sidenav{left:0;width:20%}
     #openbtn{left:-100%}
-    :not(.chp) .shiplog{width:50%}
+    table[id^="int_"].shiplog{width:50%}
 }
 @media only screen and (orientation: portrait) {
     .chp{width:100%}
@@ -354,6 +354,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog > div > *:last-child{margin-bottom:0}
 .shiplog p:not(.time){padding:0 1.7em}
 .shiplog p.time{border-bottom:3px solid currentcolor;padding-bottom:.5em;color:rgb(var(--blue));font-size:1.2em;font-weight:600}
+.shiplog p.time u{font-size:initial;font-weight:400}
 .shiplog h2{font-size:1.7em}
 
 orng,.red{color:rgb(var(--orng))}
@@ -448,7 +449,7 @@ b{font-weight:500}
     word-break:break-word;
 }
 .old{opacity:.5}
-.shiplog tr{opacity:.8;-moz-transition:all 0.3s ease-in-out}
+.shiplog tr{opacity:.8}
 .shiplog tr:first-child{opacity:1}
 .shiplog tr:hover{opacity:1}
 .shiplog tr:hover td{background:none}
