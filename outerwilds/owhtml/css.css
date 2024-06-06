@@ -266,7 +266,6 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
 .chp{
     background:rgba(0,0,0,.8);
-    padding:calc(var(--chpborder)/2);
 }
 
 @media only screen and (orientation: landscape) {
@@ -274,6 +273,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
         border-radius:var(--chpborder);
         box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);
         box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
+        padding:calc(var(--chpborder)/2);
     }
     .chp:last-child{margin-bottom:10vh}
     #bottnav{bottom:-100%;width:100%}
@@ -285,17 +285,9 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 }
 @media only screen and (orientation: portrait) {
     .chp{width:100%}
-    .chp:last-child{padding-bottom:10vh}
+    .chp:last-child{padding-bottom:20vh}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
-
-    /* table[id^="int_"].shiplog{font-size:2.2vw}
-    .shiplog td:first-child{width:17vw;font-size:2.2vw} */
-    /* body{font-size:4vw}
-    h1{font-size:9vw}
-    h2{font-size:7vw}
-    h3{font-size:6vw} */
-
     table[id^="int_"].shiplog{font-size:1.9vw}
     .shiplog td:first-child{width:17vw;font-size:1.9vw}
     body{font-size:4vw}
