@@ -284,7 +284,6 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 }
 @media only screen and (orientation: portrait) {
     .chp{width:100%;padding:20vh 2.5vw}
-    .chp:first-child{padding-top:2.5vw}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
     table[id^="int_"].shiplog{font-size:1.9vw}
@@ -293,7 +292,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     h1{font-size:8vw}
     h2{font-size:6vw}
     h3{font-size:5vw}
-    hr{margin:5vw auto}
+    hr{margin:10vw auto}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
