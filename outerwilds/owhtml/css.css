@@ -291,17 +291,17 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
     table[id^="int_"].shiplog{font-size:2.2vw}
     .shiplog td:first-child{width:17vw;font-size:2.2vw}
-    body{font-size:5vw}
+    /* body{font-size:5vw}
     h1{font-size:9vw}
     h2{font-size:7vw}
-    h3{font-size:6vw}
+    h3{font-size:6vw} */
 
-    /* table[id^="int_"].shiplog,.time u{font-size:1.9vw}
-    .shiplog td:first-child{width:17vw;font-size:1.9vw}
+    /* table[id^="int_"].shiplog{font-size:1.9vw}
+    .shiplog td:first-child{width:17vw;font-size:1.9vw} */
     body{font-size:3vw}
     h1{font-size:7vw}
     h2{font-size:5vw}
-    h3{font-size:4vw} */
+    h3{font-size:4vw}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
