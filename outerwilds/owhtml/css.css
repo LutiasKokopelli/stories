@@ -264,9 +264,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
 /* OUTER WILDS STUFF */
 
-.chp{
-    background:rgba(0,0,0,.8);
-}
+.chp{background:rgba(0,0,0,.8)}
 
 @media only screen and (orientation: landscape) {
     .chp {
@@ -282,10 +280,10 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     table[id^="int_"].shiplog{width:50%}
     .shiplog td:first-child{width:17%}
     body{font-size:18px}
+    hr{margin:80px auto}
 }
 @media only screen and (orientation: portrait) {
-    .chp{width:100%;padding:2.5vw}
-    .chp:last-child{padding-bottom:20vh}
+    .chp{width:100%;padding:20vh 2.5vw}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
     table[id^="int_"].shiplog{font-size:1.9vw}
@@ -294,6 +292,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     h1{font-size:8vw}
     h2{font-size:6vw}
     h3{font-size:5vw}
+    hr{margin:12vh auto}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
@@ -349,7 +348,6 @@ hr{
     border:none;
     height:2px;
     background:linear-gradient(90deg,transparent,currentcolor 25%,currentcolor 75%,transparent);
-    margin:80px auto;
     width:80%
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
