@@ -288,12 +288,20 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     .chp:last-child{padding-bottom:10vh}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
-    table[id^="int_"].shiplog,.time u{font-size:1.9vw}
+
+    table[id^="int_"].shiplog{font-size:2.2vw}
+    .shiplog td:first-child{width:17vw;font-size:2.2vw}
+    body{font-size:5vw}
+    h1{font-size:9vw}
+    h2{font-size:7vw}
+    h3{font-size:6vw}
+
+    /* table[id^="int_"].shiplog,.time u{font-size:1.9vw}
     .shiplog td:first-child{width:17vw;font-size:1.9vw}
     body{font-size:3vw}
     h1{font-size:7vw}
     h2{font-size:5vw}
-    h3{font-size:4vw}
+    h3{font-size:4vw} */
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
@@ -362,7 +370,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog > div > *:last-child{margin-bottom:0}
 .shiplog p:not(.time){padding:0 1.7em}
 .shiplog p.time{border-bottom:3px solid currentcolor;padding-bottom:.5em;color:rgb(var(--blue));font-size:1.2em;font-weight:600}
-.shiplog p.time u{font-size:initial;font-weight:400}
+/* .shiplog p.time u{font-size:initial;font-weight:400} */
 .shiplog h2{font-size:1.7em}
 
 orng,.red{color:rgb(var(--orng))}
