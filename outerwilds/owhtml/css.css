@@ -265,6 +265,8 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 /* OUTER WILDS STUFF */
 
 .chp{background:rgba(0,0,0,.8)}
+h1{margin-bottom:3%}
+h2+hr{margin-top:5%}
 
 @media only screen and (orientation: landscape) {
     .chp {
@@ -428,6 +430,11 @@ img.isnomai{height:1.1em;vertical-align:middle;margin-top:-3px}
 
 
 
+h1,h2,h3{text-align:center}
+.chprt a{display:block;background:rgba(var(--indigod),.5);color:rgba(var(--white),.8);padding:7px 17px;border-radius:50px;text-wrap:nowrap;overflow-x:hidden;text-overflow:ellipsis}.chprt a+a{margin-top:5px}.chprt a:hover{color:white;background:rgba(var(--indigol),.5)}
+.lbl-toggle{padding:7px}
+#navctn a{color:rgba(var(--white),.8)}#navctn a:hover{color:white}
+.lbl-toggle:after{content:'';background:url(img/Steam_Lv5_Supernova.png)center;background-size:100%;width:5vh;height:5vh;position:absolute;left:0;top:0}
 
 
 
