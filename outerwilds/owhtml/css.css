@@ -290,7 +290,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     #openbtn{left:1vh}
     table[id^="int_"].shiplog{font-size:.7em}
     .shiplog td:first-child{width:20%}
-    body{font-size:initial}
+    body,.time u{font-size:12px}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
