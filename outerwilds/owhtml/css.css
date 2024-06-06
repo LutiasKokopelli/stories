@@ -44,7 +44,7 @@ h3{font-size:1.2rem;color:rgb(var(--indigol));
     margin-bottom:12px;
 }
 h1 span{color:rgb(var(--indigod));font-size:.7em}
-table{width:100%;font-size:1.25rem;overflow-y:visible!important}
+table{width:100%;overflow-y:visible!important}
 td{height:100%}
 
 #findtaginput::placeholder,
@@ -280,12 +280,17 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     #sidenav{left:0;width:20%}
     #openbtn{left:-100%}
     table[id^="int_"].shiplog{width:50%}
+    .shiplog td:first-child{width:17%}
+    body{font-size:18px}
 }
 @media only screen and (orientation: portrait) {
     .chp{width:100%}
     .chp:last-child{padding-bottom:10vh}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
+    table[id^="int_"].shiplog{font-size:.7em}
+    .shiplog td:first-child{width:20%}
+    body{font-size:1vh}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
@@ -313,7 +318,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 
 @font-face{font-family:"AxisStd";src:url("font/Type Project - AxisStd-Medium_Dynamic.otf")format("opentype");font-weight:normal;font-style:normal}
 
-body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.jpg)fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify;font-size:18px}
+body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.jpg)fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify}
 /* https://wallpaperaccess.com/full/4268160.jpg */
 *{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;--lblue:180,224,236;--orng2:252,173,30;
 
@@ -453,7 +458,6 @@ b{font-weight:500}
 .shiplog tr:first-child{opacity:1}
 .shiplog tr:hover{opacity:1}
 .shiplog tr:hover td{background:none}
-.shiplog td:first-child{width:17%}
 .shiplog td,.shiplog tr:hover,.shiplog tr:hover td{background:none!important}
 .shiplog details{display:inline-block;width:100%;margin:0}
 .shiplog summary{list-style:none;text-indent:-2.5em;margin-left:2.5em}
