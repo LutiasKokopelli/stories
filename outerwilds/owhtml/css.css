@@ -288,9 +288,12 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
     .chp:last-child{padding-bottom:10vh}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
-    table[id^="int_"].shiplog{font-size:1vw}
-    .shiplog td:first-child{width:17vw;font-size:1vw}
-    body,.time u{font-size:1vw}
+    table[id^="int_"].shiplog,.time u{font-size:1.9vw}
+    .shiplog td:first-child{width:17vw;font-size:1.9vw}
+    body{font-size:3vw}
+    h1{font-size:7vw}
+    h2{font-size:5vw}
+    h3{font-size:4vw}
 }
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
