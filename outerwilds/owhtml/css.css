@@ -368,7 +368,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
 .grey{opacity:.5}
-.blue{color:rgb(var(--blue))}
+blue,.blue{color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
 .lblue{color:rgb(var(--lblue))}
 .redl{color:rgb(var(--redl))}
