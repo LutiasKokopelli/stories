@@ -233,12 +233,12 @@ a:hover h3 span{color:rgb(var(--plred))}
     font-size:2vh;
 }
 
-.sbar{margin-bottom:7px;border-radius:7px;border:3px solid rgba(var(--indigod),.5);position:relative}
+.sbar{margin-bottom:7px;border-radius:24px;border:3px solid rgba(var(--indigod),.5);position:relative}
 .sbar > a{display:block;width:5vh;height:5vh;position:absolute}
-.lbl-toggle{display:block;cursor:pointer;border-radius:5px;padding:17px;margin-bottom:0;background:rgb(var(--indigod));color:rgb(var(--white));font-size:2.5vh;height:5vh;font-weight:800;text-align:center}
+.lbl-toggle{display:block;cursor:pointer;border-radius:20px;padding:17px;margin-bottom:0;background:rgb(var(--indigod));color:rgb(var(--white));font-size:2.5vh;height:5vh;font-weight:800;text-align:center}
 .lbl-toggle::before{content:' ';display:inline-block;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:10px solid currentColor;vertical-align:middle;margin-right:.7rem;transform:translateY(-2px);transition:transform .2s ease-out}.toggle:checked+.lbl-toggle::before{transform:rotate(90deg)translateX(-3px)}
-.toggle:checked+.lbl-toggle{border-radius:5px 5px 0 0}
-.barss{max-height:0px;overflow:hidden;transition:max-height .25s ease-in-out;background:rgba(var(--black),.8);border-radius:0 0 5px 5px}.toggle:checked+.lbl-toggle+.barss{max-height:100%;padding:5px}
+.toggle:checked+.lbl-toggle{border-radius:20px 20px 0 0}
+.barss{max-height:0px;overflow:hidden;transition:max-height .25s ease-in-out;background:rgba(var(--black),.8);border-radius:0 0 20px 20px}.toggle:checked+.lbl-toggle+.barss{max-height:100%;padding:5px}
 .barss ul{padding-left:34px}
 h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-right:12px}
 
@@ -353,6 +353,7 @@ hr{
     width:80%
 }
 wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17px;margin:17px auto}
+.wip{background:rgba(var(--orng),.17)}
 
 .chp > *:first-child,wip > *:first-child{margin-top:0}
 .chp > *:last-child,wip > *:last-child{margin-bottom:0}
