@@ -271,9 +271,9 @@ h2+hr{margin-top:5%}
 @media only screen and (orientation: landscape) {
     .chp {
         border-radius:var(--chpborder);
-        box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8);
         box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
         padding:calc(var(--chpborder)/2);
+        box-shadow:0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8),0 0 calc(var(--chpborder)/2)rgba(0,0,0,.8)
     }
     .chp:last-child{margin-bottom:10vh}
     #bottnav{bottom:-100%;width:100%}
@@ -285,7 +285,7 @@ h2+hr{margin-top:5%}
     hr{margin:80px auto}
 }
 @media only screen and (orientation: portrait) {
-    .chp{width:100%;padding:20vh 2.5vw}
+    .chp{width:100%;padding:20vh 2.5vw;margin:12.5vw auto;box-shadow:0 0 1vw 2.5vw rgba(0,0,0,.8)}
     #sidenav{left:-100%;width:50%}
     #openbtn{left:1vh}
     table[id^="int_"].shiplog{font-size:1.9vw}
@@ -296,6 +296,7 @@ h2+hr{margin-top:5%}
     h3{font-size:5vw}
     hr{margin:17vw auto}
 }
+
 
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-Regular.ttf")format("truetype");font-weight:normal;font-style:normal}
 @font-face{font-family:"BrandonGrotesque";src:url("font/bdgt/BrandonGrotesque-RegularItalic.ttf")format("truetype");font-weight:normal;font-style:italic}
@@ -529,4 +530,3 @@ b{font-weight:500}
 .shiplog .hudgrey ul{border:2px solid grey;box-shadow:-1px 1px 1px grey}
 .shiplog .hudgrey li:before{color:grey}
 .shiplog .grey{color:grey}
-
