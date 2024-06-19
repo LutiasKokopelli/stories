@@ -279,7 +279,7 @@ h2+hr{margin-top:5%}
     #bottnav{bottom:-100%;width:100%}
     #sidenav{left:0;width:20%}
     #openbtn{left:-100%}
-    table[id^="int_"].shiplog{width:50%}
+    [id^="int_"].shiplog{width:50%}
     .shiplog td:first-child{width:17%}
     body{font-size:18px}
     hr{margin:80px auto}
@@ -476,6 +476,7 @@ b{font-weight:500}
 .shiplog li{list-style:none!important;margin:0;margin-left:-1.32em;position:relative}
 .shiplog li:before{content:'– ';font-weight:800;position:absolute;left:-1.05em}
 
+.shiplog ul{margin:0 0 0 19px;border-right:none!important;border-top:none!important;padding-left:1em}
 .shiplog ul>li{padding:.5em 0;margin-left:0}
 .shiplog ul>li:first-child{margin-top:0}
 .shiplog td{vertical-align:top}
@@ -529,4 +530,3 @@ b{font-weight:500}
 .shiplog .hudgrey li:before{color:grey}
 .shiplog .grey{color:grey}
 
-.shiplog ul{margin:0 0 0 19px;border-right:none!important;border-top:none!important;padding-left:1em}
