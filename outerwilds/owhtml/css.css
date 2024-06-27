@@ -120,7 +120,8 @@ button {
     cursor: pointer;
     border-radius: 5px 5px 0 0;
 }
-a{text-decoration:none;color:rgb(var(--orng))}a:hover{color:rgb(var(--goldl))}
+a{text-decoration:none;color:rgb(var(--orng))}
+a:hover{filter:contrast(200%)brightness(200%)}
 a:active button{background:rgb(var(--indigod))}
 .rmk {
     width: 512px;
@@ -146,10 +147,6 @@ a:active button{background:rgb(var(--indigod))}
 
 
 
-
-
-
-a:hover h3 span{color:rgb(var(--plred))}
 #midxbtn{
     background:rgba(var(--grey),.9);
     border-bottom:3px solid rgb(var(--indigol));
@@ -277,8 +274,8 @@ h2+hr{margin-top:5%}
     }
     .chp:last-child{margin-bottom:10vh}
     #bottnav{bottom:-100%;width:100%}
-    #sidenav{left:0;width:20%}
-    #openbtn{left:-100%}
+    /* #sidenav{left:0;width:20%}#openbtn{left:-100%} */
+    #sidenav{left:-100%;width:20%}#openbtn{left:1vh}
     [id^="int_"].shiplog{width:50%}
     .shiplog td:first-child{width:17%}
     body{font-size:18px}
@@ -364,7 +361,6 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog > div > *:last-child{margin-bottom:0}
 .shiplog p:not(.time){padding:0 1.7em}
 .shiplog p.time{border-bottom:3px solid currentcolor;padding-bottom:.5em;color:rgb(var(--blue));font-size:1.2em;font-weight:600}
-/* .shiplog p.time u{font-size:initial;font-weight:400} */
 .shiplog h2{font-size:1.7em}
 
 orng,.red{color:rgb(var(--orng))}
@@ -406,20 +402,6 @@ code{font-family:Space Mono}
     100%{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.2' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3Crect width='100%25' height='100%25' fill='white' opacity='.2'/%3E%3C/svg%3E")}
 }
 
-/* #workskin .radio{
-    color:transparent;
-    background-clip:text;-webkit-background-clip:text;
-    font-weight:500;
-    background-image:url("https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/img/bg_radio.gif");
-    background-size:50%;
-}
-
-#workskin .time {
-  font-size: 1.2em;
-  font-weight: 600;
-}
-*/
-
 .nomai{padding:17px;text-align:center;width:87%;font-family:Space Mono,Monospace;background:radial-gradient(rgb(42,110,100),black 80%);margin:0 auto;text-shadow:0 0 1.2em currentcolor;text-indent:0!important;color:rgb(177,252,252);box-shadow:0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8)}
 :not(.nomai)+.nomai,.nomai:first-child{margin-top:17px;border-radius:17px 17px 0 0}
 .nomai:has(+:not(.nomai)),.nomai:last-child{margin-bottom:17px;border-radius:0 0 17px 17px}
@@ -433,7 +415,8 @@ img.isnomai{height:1.1em;vertical-align:middle;margin-top:-3px}
 
 
 h1,h2,h3{text-align:center}
-.chprt a{display:block;background:rgba(var(--indigod),.5);color:rgba(var(--white),.8);padding:7px 17px;border-radius:50px;text-wrap:nowrap;overflow-x:hidden;text-overflow:ellipsis}.chprt a+a{margin-top:5px}.chprt a:hover{color:white;background:rgba(var(--indigol),.5)}
+.chprt a{display:block;background:rgba(var(--indigod),.5);color:rgba(var(--white),.8);padding:7px 17px;border-radius:50px;text-wrap:nowrap;overflow-x:hidden;text-overflow:ellipsis}
+.chprt a:hover{color:white;background:rgba(var(--indigol),.5);filter:none}.chprt a+a{margin-top:5px}
 .lbl-toggle{padding:7px}
 #navctn a{color:rgba(var(--white),.8)}#navctn a:hover{color:white}
 .lbl-toggle:after{content:'';background:url(img/Steam_Lv5_Supernova.png)center;background-size:100%;width:5vh;height:5vh;position:absolute;left:0;top:0}
@@ -470,7 +453,7 @@ b{font-weight:500}
 .shiplog tr:hover td{background:none}
 .shiplog td,.shiplog tr:hover,.shiplog tr:hover td{background:none!important}
 .shiplog details{display:inline-block;width:100%;margin:0}
-.shiplog summary{list-style:none;text-indent:-2.5em;margin-left:2.5em}
+.shiplog summary{list-style:none;text-indent:-2.5em;margin-left:2.5em;pointer-events:none}
 .shiplog details>li{margin:3px 24px}
 .shiplog td.time{line-height:1.7}
 
@@ -482,6 +465,7 @@ b{font-weight:500}
 .shiplog ul>li:first-child{margin-top:0}
 .shiplog td{vertical-align:top}
 .shiplog u{padding:2px 12px;border-radius:50px;color:rgb(5,19,31)!important;text-shadow:none;text-decoration:none;line-height:1.7}
+.shiplog u b{font-weight:800}
 
 .shiplog .hudblue .time{color:royalblue}
 .shiplog .hudblue u{background:royalblue;filter:drop-shadow(0 0 2px royalblue)}
