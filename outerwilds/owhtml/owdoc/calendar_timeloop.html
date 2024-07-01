@@ -1,17 +1,25 @@
 <!-- @SFOLD HTML -->
-<head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><style>
+<head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
+<meta http-equiv=content-type content='text/html;charset=utf-8'>
+<meta name=viewport content='width=device-width,initial-scale=1'>
+<meta property=og:type content=article>
+<meta name=theme-color content=#1D4A94>
+<meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
+<meta property=og:title content="Outer Wilds Time Loop Events">
+<meta property=og:description content="A summary of all the scripted events which occur at fixed times during the time loop.">
+<meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png>
+<style>
 body{padding-bottom:1200px}
 .chp{max-width:unset;width:90%}
 td{padding:0 12px}th{padding:12px}
-table{border-spacing:0}
+table{border-spacing:0;margin:17px auto}
+table img{display:inline-block;max-height:42px;vertical-align:middle;margin-left:-42px}
 tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
-table{margin:17px auto}
 #calendar th{background:rgba(0,0,0,.8)}
 #calendar th:first-child{border-radius:17px 0 0 17px}
 #calendar th:last-child{border-radius:0 17px 17px 0}
 #calendar td:first-child{border-left:3px solid rgb(var(--white));padding-left:42px}
 #calendar td:last-child{border-right:3px solid rgb(var(--white))}
-#calendar td:nth-child(n+2):not(:nth-child(7)){text-align:right;font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
 #calendar tr:hover:not(:last-child,:nth-child(2)){background:rgba(var(--blue),.42)}
 #calendar tr:nth-child(2) td{border-top:3px solid rgb(var(--white))}
 #calendar tr:nth-child(2) td:first-child{border-top-left-radius:17px}
@@ -19,9 +27,8 @@ table{margin:17px auto}
 #calendar tr:last-child td{border-bottom:3px solid rgb(var(--white))}
 #calendar tr:last-child td:first-child{border-bottom-left-radius:17px}
 #calendar tr:last-child td:last-child{border-bottom-right-radius:17px}
-#calendar td:nth-child(n+9){text-align:center!important}
-table img{display:inline-block;max-height:42px;vertical-align:middle;margin-left:-42px}
-
+#calendar td:nth-child(n+2){text-align:center;font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
+#calendar td:nth-child(3){text-align:right!important;width:100px}
 .tagcategory{padding:17px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
 .tagcategory h2{font-size:24px;opacity:.9}
 .tagcategory hr{margin:17px -17px;height:3px;width:calc(100% + 34px)}
@@ -30,11 +37,7 @@ table img{display:inline-block;max-height:42px;vertical-align:middle;margin-left
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod))}
 input:not(#resetsearch,#startsearch,#findtaginput):not(.active){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
-
-/* #calendar td:nth-child(n+2):not(:nth-child(n+10),:nth-child(8)),#calendar th:nth-child(n+2):not(:nth-child(n+10),:nth-child(8)){display:none}#calendar{width:800px} */
-
 </style></head><div class=chp><h1>Time Loop Calendar</h1>
-
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:1fr 1fr;border:5px solid rgb(var(--redd))'>
 <div class=tagcategory><h2>Astral Bodies</h2>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
@@ -51,15 +54,18 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#the stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#deep space satellite'type=button onclick=AddTagSelector(this)>
 </div>
 <div class=tagcategory><h2>Sub-Locations</h2>
+<p style=text-indent:0>
+    <input value='#warp windows'type=button onclick=AddTagSelector(this)>
+    <input value='#hearthian clock'type=button onclick=AddTagSelector(this)>
+</p>
 <p><img src=../img/astr_ashtwin.png>
     <input value='#ash twin project'type=button onclick=AddTagSelector(this)>
 </p><p><img src=../img/astr_embertwin.png>
     <input value='#sunless city'type=button onclick=AddTagSelector(this)>
-    <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this)>
 </p><p><img src=../img/astr_brittlehollow.png>
     <input value='#hanging city'type=button onclick=AddTagSelector(this)>
 </p><p><img src=../img/astr_giantsdeep.png>
@@ -71,174 +77,220 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     <input value='#launch module' type=button onclick=AddTagSelector(this)>
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this)>
 </p>
-</div>
-</div>
-
-<table id=calendar><tr><th>Event</th><th>Week Time (s)</th><th>Sunrise n°</th><th>Attlerock (°)</th><th>Sun angle (°)</th><th>Time (s)</th><th>Human time since waking up</th><th>% of loop</th><th>Hearthian Time</th><th>Game Time</th></tr></table>
+</div></div><table id=calendar><tr><th>Event</th><th>Game Time</th><th>% of Loop</th><th>FKNO Hearthian Time</th></tr></table>
 <!-- @EFOLD -->
 <!-- @SFOLD JSON -->
-<script>
-const cdta=[{
-    "113 Start of Mask Cutscene":[46896.0,113,150.291,263.077,["keep"],"rgba(var(--greenl),.42)"],
-    "113 Wake Up":[46905.0,113,176.505,270.865,["keep"],"rgba(var(--goldl),.3)"],
-    "113 Crickets Eclipse":[46951.1,113,310.777,310.760,["hide","timber hearth","hearthian clock"]],
-    "114 Sunrise":[47008.0,114,116.505,0.000,[
-        "timber hearth","hearthian clock"],"rgba(var(--goldd),.2)"],
-    "114 Midday Eclipse":[47126.9,114,102.816,102.894,["hide","timber hearth","hearthian clock"]],
-    "114 Sunset":[47212.0,114,350.680,176.538,[
-        "timber hearth","hearthian clock"]],
-    "114 Midnight Eclipse":[47302.8,114,255.146,255.115,["hide","timber hearth","hearthian clock"]],
-    "114 <img src=../img/astr_sunstation.png>Sun Station Warp Pad":[47335.0,114,348.932,282.981,
-        ["sun station","warp windows"],"rgba(var(--redd),.4)"],
-    "115 Sunrise":[47424.0,115,248.155,0.000,[
-        "timber hearth","hearthian clock"],"rgba(var(--goldd),.2)"],
-    "115 Forenoon Eclipse":[47478.6,115,47.184,47.250,["hide","timber hearth","hearthian clock"]],
-    "115 <img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>Sun Station is engulfed by the sun":[47595.0,115,26.214,147.981,
-        ["sun station","sun"],"rgba(var(--indigol),.34)"],
-    "115 Sunset":[47628.0,115,122.330,176.538,
-        ["timber hearth","hearthian clock"]],
-    "115 Dusk Eclipse":[47654.5,115,199.515,199.471,["hide","timber hearth","hearthian clock"]],
-    "115 Sunrise Eclipse":[47830.3,115,351.553,351.606,["hide","timber hearth","hearthian clock"]],
-    "116 Sunrise":[47840.0,116,19.806,0.000,
-        ["timber hearth","hearthian clock"],"rgba(var(--goldd),.2)"],
-    "116 Undern Eclipse":[48006.2,116,143.883,143.827,["hide","timber hearth","hearthian clock"]],
-    "116 Sunset":[48044.0,116,253.981,176.538,
-        ["timber hearth","hearthian clock"]],
-    "116 <img src=../img/astr_interloper.png>The Interloper is engulfed by the sun":[48105.0,116,71.650,229.327,
-        ["interloper","sun"],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/Steam_Lv3_Red_Giant.png>End Times starts playing":[48140.0,116,173.592,259.615,
-        [""],"rgba(var(--indigod),.34)"],
-    "116 Crickets Eclipse":[48182.0,116,295.922,295.962,["hide","timber hearth","hearthian clock"]],
-    "116 <img src=../img/Steam_Lv4_Star_Collapse.png>Sun starts to collapse":[48225.0,116,61.165,333.173,
-        [""],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/Steam_Lv5_Supernova.png>Sun starts to explode":[48235.0,116,90.291,341.827,
-        [""],"rgba(var(--indigol),.34)"],
-    "116 The Ash Twin Project’s black hole starts to form":[48238.1,116,99.320,344.510,
-        ["ash twin project"],"rgba(var(--goldl),.3)"],
-    "116 The Ash Twin Project’s black hole is at full size":[48239.1,116,102.233,345.375,
-        ["ash twin project"],"rgba(var(--goldl),.3)"],
-    "116 <img src=../img/astr_ashtwin.png>Supernova reaches Ash Twin <smol>(North pole)</smol>":[48247.5,116,126.699,352.644,
-        [""],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/astr_embertwin.png>Supernova reaches Ember Twin <smol>(Chert’s camp)</smol>":[48248.0,116,128.155,353.077,
-        [""],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/astr_timberhearth.png>Supernova reaches Timber Hearth <smol>(Spawn point)</smol>":[48252.0,116,139.806,356.538,
-        ["timber hearth","sun"],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/astr_timberhearth.png>Supernova reaches Timber Hearth <smol>(North pole)</smol>":[48252.5,116,141.262,356.971,
-        ["timber hearth","sun"],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/astr_attlerock.png>Supernova reaches the Attlerock<br><smol>(Esker’s Observation platform on the North pole)</smol>":[48253.0,116,142.718,357.404,
-        [""],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/astr_brittlehollow.png>Supernova reaches Brittle Hollow<br><smol>(Black Hole Forge warp pad)</smol>":[48255.0,116,148.544,359.135,
-        ["brittle hollow","sun"],"rgba(var(--indigol),.34)"],
-    "116 <img src=../img/astr_hollowlantern.png>Supernova reaches Hollow’s Lantern<br><smol>(Project Platform at North pole)</smol>":[48254.3,116,146.505,358.529,
-        ["hollow’s lantern","sun"],"rgba(var(--indigol),.34)"],
-    "117 <i>Sunrise</i> (after Timber Hearth was destroyed)":[48256.0,117,151.456,0.000,["hide","timber hearth"],"rgba(var(--goldd),.2)"],
-    "117 <img src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol>":[48258.0,117,157.282,1.731,
-        ["probe tracking module","giant’s deep","sun"],"rgba(var(--indigol),.34)"],
-    "117 <img src=../img/astr_giantsdeep.png>Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol>":[48259.5,117,161.650,3.029,
-        ["giant’s deep","sun"],"rgba(var(--indigol),.34)"],
-    "117 <img src=../img/astr_opc.png>Supernova reaches the Orbital Probe Cannon":[48260.0,117,163.107,3.462,
-        ["orbital probe cannon","sun"],"rgba(var(--indigol),.34)"],
-    "117 <img src=../img/astr_darkbramble.png>Supernova reaches Dark Bramble <smol>(Outside)</smol>":[48262.3,117,169.806,5.452,
-        ["dark bramble","sun"],"rgba(var(--indigol),.34)"],
-    "117 The Ash Twin Project’s black hole starts to vanish":[48263.1,117,172.136,6.144,
-        ["ash twin project"],"rgba(var(--goldl),.3)"],
-    "117 <img src=../img/astr_whitehole.png>Supernova reaches the White Hole":[48263.4,117,173.010,6.404,
-        ["white hole","sun"],"rgba(var(--indigol),.34)"],
-    "117 <img src=../img/astr_whiteholestation.png>Supernova reaches the White Hole Station":[48263.6,117,173.592,6.577,
-        ["white hole","white hole station","sun"],"rgba(var(--indigol),.34)"],
-    "117 <img src=../img/astr_darkbramble.png>Supernova reaches the Vessel":[48264.0,117,174.757,6.923,
-        ["dark bramble","the vessel","sun"],"rgba(var(--indigol),.34)"],
-    "117 The Ash Twin Project’s black hole disappeared<br>& Purple lines cutscene starts":[48264.0,117,174.757,6.923,
-        ["ash twin project"],"rgba(var(--goldl),.3)"],
-    "117 End of Loop":[48265.0,117,177.670,7.788,["keep"],"rgba(var(--greenl),.42)"]
-}]
+<script>const weekoffset=46905
+const cdta={
+    "Wake Up":{
+        "GameTime":0,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
+    },
+    "113 Crickets Eclipse":{
+        "GameTime":46.1,"Attlerock/Sun angle":[310.777,310.760],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "First Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
+        "GameTime":1*60+43,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "Hourglass Twins column of sand starts forming":{
+        "GameTime":2*60,"Tags":["hourglass twins"],
+    },
+    "114 Midday Eclipse":{
+        "GameTime":3*60+41.9,"Attlerock/Sun angle":[102.816,102.894],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "First Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
+        "GameTime":5*60+7,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "114 Midnight Eclipse":{
+        "GameTime":6*60+37.8,"Attlerock/Sun angle":[255.146,255.115],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "The Stranger’s solar sails start deploying (sound cue)":{
+        "GameTime":6*60+48,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "The Stranger’s solar sails are completely open":{
+        "GameTime":7*60,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "Sun Station Warp Window":{
+        "GameTime":7*60+10,"Tags":["sun station","warp windows"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_sunstation.png>"
+    },
+    "Second Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
+        "GameTime":8*60+39,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "115 Forenoon Eclipse":{
+        "GameTime":9*60+33.6,"Attlerock/Sun angle":[47.184,47.250],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "Sun Station is engulfed by the sun":{
+        "GameTime":11*60+30,"Tags":["sun station","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+    },
+    "Second Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
+        "GameTime":12*60+3,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "115 Dusk Eclipse":{
+        "GameTime":12*60+29.5,"Attlerock/Sun angle":[199.515,199.471],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "The Stranger’s dam bursts":{
+        "GameTime":13*60,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "The River Lowlands are flooded":{
+        "GameTime":13*60+10,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "The Cinder Isles are flooded":{
+        "GameTime":13*60+30,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "The Hidden Gorge walkways are destroyed":{
+        "GameTime":13*60+40,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "115 Sunrise Eclipse":{
+        "GameTime":15*60+25.3,"Attlerock/Sun angle":[351.553,351.606],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "Third Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
+        "GameTime":15*60+35,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "116 Undern Eclipse":{
+        "GameTime":18*60+21.2,"Attlerock/Sun angle":[143.883,143.827],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "Third Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
+        "GameTime":18*60+59,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "The Interloper is engulfed by the sun":{
+        "GameTime":20*60,"Tags":["interloper","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_interloper.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+    },
+    "The Cinder Isles tower completely falls":{
+        "GameTime":20*60+30,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
+    },
+    "Will automatically wake up from “Doze off” & Cannot go back to sleep":{
+        "GameTime":20*60+32,"Tags":[]
+    },
+    "End Times starts playing":{
+        "GameTime":20*60+35,"Tags":[],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png>"
+    },
+    "116 Crickets Eclipse":{
+        "GameTime":21*60+17,"Attlerock/Sun angle":[295.922,295.962],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "Sun starts to collapse":{
+        "GameTime":22*60,"Tags":["sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv4_Star_Collapse.png>"
+    },
+    "Sun starts to explode":{
+        "GameTime":22*60+10,"Tags":["sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv5_Supernova.png>"
+    },
+    "The Ash Twin Project’s black hole starts to form":{
+        "GameTime":22*60+13.1,"Tags":["ash twin project"],"Color":"rgba(var(--goldl),.3)"
+    },
+    "The Ash Twin Project’s black hole is at full size":{
+        "GameTime":22*60+14.1,"Tags":["ash twin project"],"Color":"rgba(var(--goldl),.3)"
+    },
+    "Supernova reaches Ash Twin <smol>(North pole)</smol>":{
+        "GameTime":22*60+22.5,"Tags":["ash twin","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_ashtwin.png>"
+    },
+    "Supernova reaches Ember Twin <smol>(Chert’s camp)</smol>":{
+        "GameTime":22*60+23,"Tags":["ember twin","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_embertwin.png>"
+    },
+    "Supernova reaches Timber Hearth <smol>(Spawn point)</smol>":{
+        "GameTime":22*60+27,"Tags":["timber hearth","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "Supernova reaches Timber Hearth <smol>(North pole)</smol>":{
+        "GameTime":22*60+27.5,"Tags":["timber hearth","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "Supernova reaches the Attlerock<br><smol>(Esker’s Observation platform on the North pole)</smol>":{
+        "GameTime":22*60+28,"Tags":["attlerock","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_attlerock.png>"
+    },
+    "Supernova reaches Hollow’s Lantern<br><smol>(Project Platform at North pole)</smol>":{
+        "GameTime":22*60+29.3,"Tags":["hollow’s lantern","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_hollowlantern.png>"
+    },
+    "Supernova reaches Brittle Hollow<br><smol>(Black Hole Forge warp pad)</smol>":{
+        "GameTime":22*60+30,"Tags":["brittle hollow","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_brittlehollow.png>"
+    },
+    "<i>Fourth Sunrise of the Loop</i> (from Timber Hearth’s Spawn Point, after Timber Hearth was destroyed)":{
+        "GameTime":22*60+31,"Tags":["hide","timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol>":{
+        "GameTime":22*60+33,"Tags":["probe tracking module","giant’s deep","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+    },
+    "Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol>":{
+        "GameTime":22*60+34.5,"Tags":["giant’s deep","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_giantsdeep.png>"
+    },
+    "Supernova reaches the Orbital Probe Cannon":{
+        "GameTime":22*60+35,"Tags":["orbital probe cannon","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_opc.png>"
+    },
+    "Supernova reaches Dark Bramble <smol>(Outside)</smol>":{
+        "GameTime":22*60+37.3,"Tags":["dark bramble","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_darkbramble.png>"
+    },
+    "The Ash Twin Project’s black hole starts to vanish":{
+        "GameTime":22*60+38.1,"Tags":["ash twin project"],"Color":"rgba(var(--goldl),.3)"
+    },
+    "Supernova reaches the White Hole":{
+        "GameTime":22*60+38.4,"Tags":["white hole","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_whitehole.png>"
+    },
+    "Supernova reaches the White Hole Station":{
+        "GameTime":22*60+38.6,"Tags":["white hole","white hole station","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_whiteholestation.png>"
+    },
+    "Supernova reaches the Vessel":{
+        "GameTime":22*60+39,"Tags":["dark bramble","the vessel","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_darkbramble.png>"
+    },
+    "The Ash Twin Project’s black hole is gone & Purple lines cutscene starts":{
+        "GameTime":22*60+39,"Tags":["ash twin project"],"Color":"rgba(var(--goldl),.3)"
+    },
+
+
+
+    // "":{
+    //     "GameTime":,"Tags":[],"Color":"","Image":""
+    // },
+    "End of Loop":{
+        "GameTime":22*60+40,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
+    }
+}
 </script>
 <!-- @EFOLD -->
 <!-- @SFOLD JAVASCRIPT -->
 <script>
 table=document.getElementById('calendar')
-const sun_angspeed=36/416
-const attle_angspd=2.9126213592233
-const formatDuration=ms=>{
-    if(ms<0)ms=-ms;
-    const time={
-        day:Math.floor(ms/86_400),
-        h:Math.floor(ms/3_600)%24,
-        min:Math.floor(ms/60)%60,
-        s:Math.floor(ms)%60
-    }
-    return Object.entries(time)
-    .filter(val=>val[1]!==0)
-    .map(([key,val])=>`${val}${key}${val!==1&&key=='day'?'s':''}`)
-    .join(', ');
+const GMtime=t=>{const time={m:('00'+Math.trunc(t/60)).slice(-2),s:('00'+Math.round(t)%60).slice(-2)};return Object.entries(time).map(([key,val])=>`${val}:`).join('').slice(0,-1)}
+function THtime2GMtime(time){
+    day=time[0]+time[1]
+    sunrise=time[3]+time[4]
+    minutes=time[7]+time[8]
+    seconds=time[10]+time[11]
+    HMseconds=(day-1)*22*416+(sunrise-1)*416+minutes*416/60+seconds*416/3600-weekoffset
+    return(GMtime(HMseconds))
 }
-// const hearthiantime=v=>{
-//     const time={
-//         d:v[1],
-//         m:('00'+Math.trunc(v[3]/360*60)).slice(-2),
-//         s:('00'+Math.round(v[3]/360*60*60)%60).slice(-2)
-//     }
-//     return Object.entries(time)
-//     .map(([key,val])=>`${val}${key=='d'?'c ':':'}`)
-//     .join('')
-//     .slice(0,-1)
-// }
-const hearthiantime=v=>{
-    const time={
-        d:('00'+Math.trunc(1+v[1]/22)).slice(-2),
-        r:('00'+v[1]%22).slice(-2),
-        m:('00'+Math.trunc(v[3]/360*60)).slice(-2),
-        s:('00'+Math.round(v[3]/360*60*60)%60).slice(-2)
-    }
-    return Object.entries(time)
-    .map(([key,val])=>`${val}${key=='d'?'d' : (key=='r'?'s ' : ':') }`)
-    .join('')
-    .slice(0,-1)
+function GMtime2THtime(time){
+    minutes=time[0]+time[1]
+    seconds=time[3]+time[4]
+    HMseconds=Number(minutes)*60+Number(seconds)+weekoffset
+    nbdays=Math.trunc(1+HMseconds/(22*416))
+    nbsuns=Math.trunc(1+(HMseconds-22*nbdays)/416)%22
+    nbmins=Math.trunc((HMseconds-416*22*Math.trunc(HMseconds/(22*416))-416*(Math.trunc((HMseconds-22*nbdays)/416)%22))/416*60)
+    if(nbmins>59){nbmins-=60;nbsuns+=1}
+    nbsecs=Math.round((HMseconds-(nbdays-1)*22*416-(nbsuns-1)*416-nbmins*416/60)/(416/3600))
+    return(('00'+nbdays).slice(-2)+'d'+('00'+nbsuns).slice(-2)+'s '+('00'+nbmins).slice(-2)+':'+('00'+nbsecs).slice(-2))
 }
-const gametime=t=>{
-    const time={
-        m:('00'+Math.trunc(t/60)).slice(-2),
-        s:('00'+Math.round(t)%60).slice(-2)
-    }
-    return Object.entries(time).map(([key,val])=>`${val}:`).join('').slice(0,-1)
+function HMsecs2THtime(t){
+    HMseconds=t+weekoffset
+    nbdays=Math.trunc(1+HMseconds/(22*416))
+    nbsuns=Math.trunc(1+(HMseconds-22*nbdays)/416)%22
+    nbmins=Math.trunc((HMseconds-416*22*Math.trunc(HMseconds/(22*416))-416*(Math.trunc((HMseconds-22*nbdays)/416)%22))/416*60)
+    if(nbmins>59){nbmins-=60;nbsuns+=1}
+    nbsecs=Math.round((HMseconds-(nbdays-1)*22*416-(nbsuns-1)*416-nbmins*416/60)/(416/3600))
+    return(('00'+nbdays).slice(-2)+'d'+('00'+nbsuns).slice(-2)+'s '+('00'+nbmins).slice(-2)+':'+('00'+nbsecs).slice(-2))
 }
-function load_calendar() {
-    for(const[k,v]of Object.entries(cdta[0])){
+var prevtime=0
+function load_calendar(){
+    for(const[k,v]of Object.entries(cdta)){
         newtr=document.createElement('tr');newtr.setAttribute('id',k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));table.appendChild(newtr)
-        newtd1=document.createElement('td');newtd1.innerHTML=k.slice(4)
-        newtd2=document.createElement('td');newtd2.innerHTML=v[0].toFixed()
-        newtd3=document.createElement('td');newtd3.innerHTML=v[1].toFixed(0)
-        newtd4=document.createElement('td');newtd4.innerHTML=v[2].toFixed(3)
-        newtd5=document.createElement('td');newtd5.innerHTML=v[3].toFixed(3)
-        newtd6=document.createElement('td');newtd6.innerHTML=Math.round(10*(v[0]-cdta[0]['113 Wake Up'][0])).toFixed()
-        newtd7=document.createElement('td');newtd7.innerHTML=formatDuration(10*(v[0]-cdta[0]['113 Wake Up'][0]))
-        newtd8=document.createElement('td');newtd8.innerHTML=(Math.round(10*(v[0]-cdta[0]['113 Wake Up'][0])/(cdta[0]['117 End of Loop'][0]-cdta[0]['113 Wake Up'][0])*1000)/100).toFixed(2)
-        newtd9=document.createElement('td');newtd9.innerHTML=hearthiantime(v)
-        newtd10=document.createElement('td');newtd10.innerHTML=gametime(v[0]-cdta[0]['113 Wake Up'][0])
-        if(v.length>5){
-            newtd1.style.background=v[5]
-            newtd2.style.background=v[5]
-            newtd3.style.background=v[5]
-            newtd4.style.background=v[5]
-            newtd5.style.background=v[5]
-            newtd6.style.background=v[5]
-            newtd7.style.background=v[5]
-            newtd8.style.background=v[5]
-            newtd9.style.background=v[5]
-            newtd10.style.background=v[5]
-        }
-        newtr.appendChild(newtd1);newtr.appendChild(newtd2);newtr.appendChild(newtd3);newtr.appendChild(newtd4);newtr.appendChild(newtd5)
-        newtr.appendChild(newtd6);newtr.appendChild(newtd7);newtr.appendChild(newtd8);newtr.appendChild(newtd9);newtr.appendChild(newtd10)
-        if(v[4][0]=='hide'){newtr.style.display='none'}
+        newtd1=document.createElement('td');newtd2=document.createElement('td');newtd3=document.createElement('td');newtd5=document.createElement('td')
+        if(prevtime>v["GameTime"]){window.alert("The following event should be moved up in the chronology:\n"+k)}
+        if("Image"in v){newtd1.innerHTML=v["Image"]+k}else{newtd1.innerHTML=k}
+        newtd2.innerHTML=GMtime(v["GameTime"])
+        newtd3.innerHTML=(Math.round(10*v["GameTime"]/(cdta['End of Loop']['GameTime'])*1000)/100).toFixed(2)
+        newtd5.innerHTML=HMsecs2THtime(v["GameTime"])
+        if("Color"in v){newtd1.style.background=v['Color'];newtd2.style.background=v['Color'];newtd3.style.background=v['Color'];newtd5.style.background=v['Color']}
+        newtr.appendChild(newtd1);newtr.appendChild(newtd2);newtr.appendChild(newtd3);newtr.appendChild(newtd5)
+        if(v["Tags"][0]=='hide'){newtr.style.display='none'}
+        prevtime=v["GameTime"]
     }
 }
 window.onLoad=load_calendar()
-
-
-
-
-
-allactive=[]
+var allactive=[]
 function AddTagSelector(btn){
     if(btn.classList.contains('active')){
         allactive.splice(allactive.indexOf(btn.value),1)
@@ -247,18 +299,14 @@ function AddTagSelector(btn){
         allactive.push(btn.value)
         btn.classList.add('active')
     }
-    for(i=0;i<allactive.length;i++){
-        for(const[k,v]of Object.entries(cdta[0])){
-            ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));flag=true
-            if(v[4].includes(allactive[i].replace('#',''))||v[4].includes('keep')){ctr.style.display='revert'}else{ctr.style.display='none'}
-        }
+    for(const[k,v]of Object.entries(cdta)){
+        ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));flag=true
+        for(i=0;i<allactive.length;i++){if(!(v["Tags"].includes(allactive[i].replace('#','')))){flag=false}}
+        if(v["Tags"].includes('keep')){flag=true}
+        if(v["Tags"].includes('hide')){flag=false}
+        if(flag){ctr.style.display=''}else{ctr.style.display='none'}
     }
-    if(allactive==[]){for(const[k,v]of Object.entries(cdta[0])){
-
-            ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''))
-            ctr.style.display='revert'
-
-    }}
+    if(allactive.length===0){for(const[k,v]of Object.entries(cdta)){if(!v["Tags"].includes('hide')){ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));ctr.style.display=''}}}
 }
 </script></div>
 <!-- @EFOLD -->
