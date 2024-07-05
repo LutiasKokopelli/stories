@@ -34,7 +34,7 @@ input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 #activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
 hr{margin:17px -12px;width:calc(100% + 24px);background:rgb(var(--fore))}
-.infob{font-size:unset;left:0;top:calc(100% + 5px)}
+.infob{font-size:1.2em;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
 @media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
@@ -80,8 +80,11 @@ table+p,summary+p{margin-top:12px}
 .lorecard h3{color:rgb(var(--midd));margin:-7px -7px 17px -7px;border-bottom:2px solid rgb(var(--fore));padding-left:10px;background:rgba(var(--fore),.7);padding-bottom:3px}
 .lorecard p{margin:0}
 b{font-weight:800}
-smol,.smol,.nomai{font-size:.7em}
+smol,.smol{font-size:.7em}
 .spanintro{padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid red}
+td:has(.nomai){padding:0}
+td div:has(.nomai){margin:0!important}
+td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
 </style><script src=../js.js></script></head><body><div class=all><h1 style=margin-top:50px;color:rgba(var(--white),.9);font-size:72px>Outer Wilds Lore Map</h1>
 <h2 style='color:rgb(var(--white));padding:0 5%;font-size:34px'>Click <span class=spanintro style='border-color:rgb(var(--greend));background:rgba(var(--greend),.8)'>once</span> on a tag to add it to your search list, click <span class=spanintro style='border-color:rgb(var(--redd));background:rgba(var(--redd),.8)'>twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%;font-size:1em'>Tip: To see every single lore card in existence, click “Search” with an empty tag selection!</p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag to toggle.'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
@@ -518,12 +521,12 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 <!-- @EFOLD -->
 
 
+<!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
+<it><details open><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2><table><tr><th>Hornfels</th></tr><tr><td>…Even if I <i>have</i> been pouring over it every night for weeks.</td></tr></table><p>This does not indicate how long a night or week is.</p></details><t>#hearthians #hearthian culture</t></it>
+<!-- @EFOLD -->
 
 <!-- @SFOLD Lore Cards With Missing Data — To Finish Later -->
 
-<!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
-<it><details><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2><table><tr><th>Hornfels</th></tr><tr><td>…Even if I <i>have</i> been pouring over it every night for weeks.</td></tr></table><p>This does not indicate how long a night or week is.</p></details><t>#hearthians #hearthian culture</t></it>
-<!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Sun Data -->
 <it class=tl style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun</b></summary>
     <h2>Main Properties</h2>
@@ -549,7 +552,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
     <table style='margin:12px auto'>
         <tr><th>Mass</th><td>3.00 &times; 10<sup>5</sup></td></tr>
         <tr><th>Orbit Radius</th><td>~ 2100 m</td></tr>
-        <tr><th>Surface Gravity <span style=position:unset;display:inline>(gravity panels)</span></th><td>0.2–0.4 (parallel to the sun)<br>0.7–0.8 (perpendicular to the sun)</td></tr>
+        <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>0.2–0.4 (parallel to the sun)<br>0.7–0.8 (perpendicular to the sun)</td></tr>
     </table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
     <h2>Scripted Events</h2>
     <table class=spmono><tr><th>Time</th><th>Event</th></tr>
@@ -663,6 +666,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+    <!-- Timing of Fall of Tower of Quantum Knowledge? -->
 </details><t>#time loop event #in-game calculations #brittle hollow</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Hollow’s Lantern Data -->
@@ -792,7 +796,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
     <tr><th>Mass</th><td>9 &times; 10<sup>6</sup></td></tr>
     <tr><th>Orbit Radius</th><td>~ 410 – 657 km</td></tr>
 </table>
-<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6 km</b>.<br><a href="javascript:getcard('data_QM')">See data about the Quantum Moon?</a></p>
+<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>. <a href="javascript:getcard('data_QM')">See&nbsp;data about the Quantum Moon?</a></p>
 <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
 </details><t>#time loop event #in-game calculations #eye of the universe</t></it>
 <!-- @EFOLD -->
@@ -826,13 +830,15 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 </details><t>#deep space satellite #time loop event #in-game calculations #the stranger</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
-<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary>
+<it><details open><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary>
     <h2>Control Module (Core of Giant’s Deep)</h2>
     <table>
         <tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr>
-        <tr><td class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</td></tr>
-        <tr><td class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</td></tr>
-        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
+        <tr><td>
+            <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
+            <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X1</smol>:</p><blockquote>SHIP_LOG_INFO</blockquote></div></div>
+            <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X2</smol>:</p><blockquote>SHIP_LOG_INFO</blockquote></div></div>
+        </td></tr>
     </table>
     <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
     <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
@@ -918,10 +924,10 @@ for (i = 0; i < allit.length; i++) {
     itags[itags.length - 1].push(txtList);
     if(!allit[i].getElementsByTagName("details")[0].open==true){allit[i].style.display='none'}
 }
-function getcard(id) {
+function getcard(id){
     const cd=document.getElementById(id);cd.style.display=""
     if(cd.getElementsByTagName("details")[0].open==true){cd.getElementsByTagName("details")[0].open=false}
-    else {cd.getElementsByTagName("details")[0].open=true}
+    else{cd.getElementsByTagName("details")[0].open=true;cd.scrollIntoView()}
 }
 function addChildToParent(parent, el, msg, state) {
     const node = document.createElement(el);
