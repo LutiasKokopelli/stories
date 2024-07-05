@@ -464,7 +464,7 @@ b{font-weight:500}
 .shiplog ul>li{padding:.5em 0;margin-left:0}
 .shiplog ul>li:first-child{margin-top:0}
 .shiplog td{vertical-align:top}
-.shiplog u{padding:2px 12px;border-radius:50px;color:rgb(5,19,31)!important;text-shadow:none;text-decoration:none;line-height:1.7}
+.shiplog u{padding:2px 12px;border-radius:50px;color:rgb(5,19,31)!important;text-shadow:none;text-decoration:none;line-height:1.7;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .shiplog u b{font-weight:800}
 
 .shiplog .hudblue .time{color:royalblue}
