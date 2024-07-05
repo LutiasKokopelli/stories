@@ -35,7 +35,7 @@ input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
 hr{margin:17px -12px;width:calc(100% + 24px);background:rgb(var(--fore))}
 table div:has(.infob):before{content:'⊛';color:orange;position:absolute;left:1%;top:calc(50% - .7em)}
-table p{padding-left:2em!important}
+td>div>p,td>p{padding-left:2em!important}
 .infob{font-size:1.2em;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
@@ -844,8 +844,8 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
         <tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr>
         <tr><td>
             <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
-            <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X1</smol>:</p><blockquote></blockquote></div></div>
-            <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X2</smol>:</p><blockquote></blockquote></div></div>
+            <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X1</smol>:</p><blockquote>SHIP_LOG_INFO</blockquote></div></div>
+            <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X2</smol>:</p><blockquote>SHIP_LOG_INFO</blockquote></div></div>
         </td></tr>
     </table>
     <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
