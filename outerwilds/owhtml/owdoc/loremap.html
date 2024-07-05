@@ -33,7 +33,7 @@ input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 #activetags p{font-family:Calibri;font-size:14px;display:inline-block;padding:5px 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid}
 #activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
-hr{margin:17px -12px;width:calc(100% + 24px)}
+hr{margin:17px -12px;width:calc(100% + 24px);background:rgb(var(--fore))}
 .infob{font-size:unset;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
@@ -55,12 +55,11 @@ it h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 1
 t{font-family:Calibri;font-size:.7em;display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 12px 12px;white-space:nowrap;overflow:auto;scrollbar-width:none;border-top:3px solid rgb(var(--midd));background:rgba(var(--midd),.5);color:rgba(var(--white),.7)}
 t:after{content:'';width:7px;display:inline-block}
 th,td{vertical-align:middle;font-size:.85em}
-th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd))}
+th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
 a{color:rgb(var(--redd))}
 a:hover{color:rgb(var(--redl));border-bottom:2px dashed rgb(var(--greend))}
 a h2{color:rgb(var(--redl))}
 a:hover h2{color:white;background:rgb(var(--redl))}
-/* details *:not(summary) span:not(.infob){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7} */
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
 summary span{font-size:.7em}
 details th span:not([class]){position:absolute;width:100%;text-align:right;top:7px;right:5px;font-weight:800}
@@ -827,17 +826,19 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 </details><t>#deep space satellite #time loop event #in-game calculations #the stranger</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
-<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>. This is the probe which finds the Eye of the Universe.</summary>
-    <h2>Control Module found in the core of Giant’s Deep</h2>
+<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary>
+    <h2>Control Module (Core of Giant’s Deep)</h2>
     <table>
         <tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr>
         <tr><td class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</td></tr>
-        <tr><td class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</td></tr><!-- Reveals ship log fact OPC_SUNKEN_MODULE_X1 -->
-        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr><!-- Reveals ship log fact OPC_SUNKEN_MODULE_X2 -->
+        <tr><td class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</td></tr>
+        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
     </table>
-    <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p>
-    <p>It is of note that the ‘current trajectory’ as it is displayed in-game does not match the trajectory which presumably found the Eye of the Universe. This must be an oversight from the developers, who understandably would not have prepared a special animation for the highly unlikely possibility that a player would make it to the Control Module on the same loop as the one during which the Protagonist was paired with the statue (the same way the fact that the first loop’s countdown to the supernova doesn’t start until the protagonist gets paired with the museum’s statue is not accurate to the lore).</p>
-</details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue</t></it>
+    <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
+    <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
+    <p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
+    <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
+</details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD TH day/night cycle -->
 <it class=tl><details><summary>A full day/night cycle on Timber Hearth lasts <b>6min&nbsp;56s</b>. The&nbsp;day lasts ~3min&nbsp;24s, the night ~3min&nbsp;31s.</summary>
