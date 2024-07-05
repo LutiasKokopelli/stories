@@ -34,9 +34,9 @@ hr{margin:17px -12px;width:calc(100% + 24px)}
 .infob{font-size:unset;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
-@media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--h2pad:5%}#filterlist{column-width:var(--colwid)}}
-@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--h2pad:10%}#filterlist{column-width:var(--colwid)}}
-@media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--h2pad:29%}#filterlist{column-width:var(--colwid)}}
+@media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
+@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
+@media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}#filterlist{column-width:var(--colwid)}}
 it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70;}
 it.tl,it.tl *{--emph:var(--orng);--fore:var(--goldd);--midd:128,84,52;}
 it.misc,it.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod);}
@@ -80,7 +80,7 @@ table+p,summary+p{margin-top:12px}
 b{font-weight:800}
 </style><script src=../js.js></script></head><body><div class=all><h1 style=margin-top:50px;color:rgba(var(--white),.9);font-size:4.2em>Outer Wilds Lore Map</h1>
 <h2 style='color:rgb(var(--white));padding:0 5%'>Click <span style="padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--greend));background:rgba(var(--greend),.8)">once</span> on a tag to add it to your search list, click <span style="padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.8)">twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%'>Tip: To see every single lore card in existence, click “Search” with an empty tag selection!</p><input id=findtaginput onkeyup=FindTag() placeholder=' Type here to quickly find a specific tag to toggle. Beware of typos!'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
-<div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:1fr 1fr 1fr;border:5px solid rgb(var(--redd))'>
+<div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd))'>
 <!-- @EFOLD -->
 <!-- @SFOLD Select Tags -->
 <div class=tagcategory><h2>Hearthians</h2><input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
