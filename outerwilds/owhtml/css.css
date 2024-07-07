@@ -81,13 +81,14 @@ td{height:100%}
 .infob {
     font-weight: initial;
     font-style: initial;
+    font-family:BrandonGrotesque;
+    font-size:revert;
     display:none;
     z-index: 99;
     background: rgba(var(--black), 0.95);
     border: 2px solid rgb(var(--indigod));
     padding: 7px;
     text-align: left;
-    font-size: 17px;
     color: rgb(var(--white));
     min-width: 256px;
     max-height: 500px;
@@ -96,13 +97,17 @@ td{height:100%}
     left: -1rem;
     overflow:auto
 }
+.infob p{
+    padding-left:1%!important;
+    font-size:1em
+}
 .infob h2{
     padding: 0 0 3px 0;
     margin: 0 0 17px 0;
-    line-height: 120%;
     text-align: left;
-    font-size: 20px;
-    border-bottom: 2px solid rgb(var(--indigod));
+    font-size: 1.4em ;
+    border-bottom: 2px solid rgb(var(--midd));
+    color:rgb(var(--fore))
 }
 .infob h2:not(h2:first-child){margin-top:17px}
 
@@ -320,8 +325,7 @@ h2+hr{margin-top:5%}
 
 @font-face{font-family:"AxisStd";src:url("font/Type Project - AxisStd-Medium_Dynamic.otf")format("opentype");font-weight:normal;font-style:normal}
 
-body{background:url(img/1989-3840x2160-desktop-4k-outer-wilds-background-photo.jpg)fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify}
-/* https://wallpaperaccess.com/full/4268160.jpg */
+body{background:no-repeat url(img/2462x1386.jpg)bottom fixed;color:white;font-family:"BrandonGrotesque";text-align:justify}
 *{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;--lblue:180,224,236;--orng2:252,173,30;
 
 --greend:56,138,93;
@@ -368,7 +372,7 @@ orng,.red{color:rgb(var(--orng))}
 .grey{opacity:.5}
 blue,.blue{color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
-.lblue{color:rgb(var(--lblue))}
+.lblue{color:lightblue}
 .redl{color:rgb(var(--redl))}
 .redd{color:rgb(var(--redd))}
 .greend{color:rgb(var(--greend))}
@@ -457,8 +461,8 @@ b{font-weight:500}
 .shiplog details>li{margin:3px 24px}
 .shiplog td.time{line-height:1.7}
 
-.shiplog li{list-style:none!important;margin:0;margin-left:-1.32em;position:relative}
-.shiplog li:before{content:'– ';font-weight:800;position:absolute;left:-1.05em}
+.shiplog ul li{list-style:none!important;margin:0;margin-left:-1.32em;position:relative}
+.shiplog ul li:before{content:'– ';font-weight:800;position:absolute;left:-1.05em}
 
 .shiplog ul{margin:0 0 0 19px;border-right:none!important;border-top:none!important;padding-left:1em}
 .shiplog ul>li{padding:.5em 0;margin-left:0}

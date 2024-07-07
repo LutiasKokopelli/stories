@@ -261,7 +261,8 @@ function THtime2GMtime(time){
     minutes=time[7]+time[8]
     seconds=time[10]+time[11]
     HMseconds=(day-1)*22*416+(sunrise-1)*416+minutes*416/60+seconds*416/3600-weekoffset
-    return(GMtime(HMseconds))
+    // return(GMtime(HMseconds))
+    return(GMtime(HMseconds)+'\n'+HMseconds.toString())
 }
 function GMtime2THtime(time){
     minutes=time[0]+time[1]
@@ -318,5 +319,7 @@ function AddTagSelector(btn){
     }
     if(allactive.length===0){for(const[k,v]of Object.entries(cdta)){if(!v["Tags"].includes('hide')){ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));ctr.style.display=''}}}
 }
-</script></div>
 <!-- @EFOLD -->
+// window.alert(THtime2GMtime("06d03s 52:17"))
+// window.alert(GMtime2THtime("00:00"))
+</script></div>

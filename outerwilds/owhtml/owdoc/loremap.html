@@ -37,29 +37,31 @@ input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
 hr{margin:17px -12px;width:calc(100% + 24px);background:rgb(var(--fore))}
 table div:has(.infob):before{content:'⊛';color:orange;position:absolute;left:1%;top:calc(50% - .7em)}
-td>div>p,td>p{padding-left:2em!important}
+td>div>p:not(.infob),td>p:not(.infob){padding-left:2em!important}
 .infob{font-size:1.2em;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
+p.infob{padding:7px;margin:0}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
 @media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
 @media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
 @media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}#filterlist{column-width:var(--colwid)}}
-it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70;}
-it.tl,it.tl *{--emph:var(--orng);--fore:var(--goldd);--midd:128,84,52;}
-it.misc,it.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod);}
-it.dub,it.dub *{--emph:var(--blue);--fore:150,152,145;--midd:var(--greyd);}
-it.ret,it.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd);}
-it.fkno,it.fkno *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled);}
+it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
+.tl,.tl *{--emph:var(--orng);--fore:var(--goldd);--midd:128,84,52}
+.misc,.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod)}
+.dub,.dub *{--emph:var(--blue);--fore:150,152,145;--midd:var(--greyd)}
+.ret,.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd)}
+.fkno,.fkno *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled)}
 it{break-inside:avoid;display:block;width:100%;height:fit-content;border-radius:17px;padding:10px;text-align:left;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.1);margin-bottom:17px}
 it *{margin-top:0}
 it *:not(rt,table,li,img,span,p,t)+*:not(rt,table,li,img,span,p,t){margin-top:12px}
 details > *:last-child{margin-bottom:0}
 it h1{font-size:1.5em;margin-bottom:17px;border-bottom:3px solid rgb(var(--emph));color:rgb(var(--white))}
-it h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
+it details > h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
 t{font-family:Calibri;font-size:.7em;display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 12px 12px;white-space:nowrap;overflow:auto;scrollbar-width:none;border-top:3px solid rgb(var(--midd));background:rgba(var(--midd),.5);color:rgba(var(--white),.7)}
 t:after{content:'';width:7px;display:inline-block}
 th,td{vertical-align:middle;font-size:.85em}
 td:has(p){font-size:1em}
+table.fkno td p:not(.infob){padding-left:0!important}
 th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
 a{color:rgb(var(--redd))}
 a:hover{color:rgb(var(--redl));border-bottom:2px dashed rgb(var(--greend))}
@@ -79,6 +81,8 @@ details table:not(.spmono) td{width:50%}
 details p{font-size:.85em}
 table.spmono{margin-top:12px;font-family:Space Mono;font-size:.7em}
 table.spmono th:first-child,table.spmono td:first-child{width:17%;text-align:center}
+table.spmono.fkno th:first-child,table.spmono.fkno td:first-child{width:22%;text-align:center}
+table.spmono.fkno th:nth-child(2):not(:last-child),table.spmono.fkno td:nth-child(2):not(:last-child){width:17%;text-align:center}
 table+p,summary+p{margin-top:12px}
 .wip{filter:hue-rotate(180deg)saturate(200%)contrast(150%)}
 .lorecard{border:3px solid rgb(var(--fore));background:rgba(var(--midd),.2);padding:7px;border-radius:7px;display:inline-block;margin:7px}
@@ -90,15 +94,14 @@ smol,.smol{font-size:.7em}
 td:has(.nomai){padding:0}
 td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
-</style><script src=../js.js></script></head><body><div class=all><h1 style=margin-top:50px;color:rgba(var(--white),.9);font-size:72px>Outer Wilds Lore Map</h1>
-<h2 style='color:rgb(var(--white));padding:0 5%;font-size:34px'>Click <span class=spanintro style='border-color:rgb(var(--greend));background:rgba(var(--greend),.8)'>once</span> on a tag to add it to your search list, click <span class=spanintro style='border-color:rgb(var(--redd));background:rgba(var(--redd),.8)'>twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%;font-size:1em'>Tip: To see every single lore card in existence, click “Search” with an empty tag selection!</p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag to toggle.'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
+it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
+</style><script src=../js.js></script></head><body><div class=all><h1 style=margin-top:50px;color:rgba(var(--white),.9);font-size:72px>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
+<h2 style='color:rgb(var(--white));padding:0 5%;font-size:34px'>Click <span class=spanintro style='border-color:rgb(var(--greend));background:rgba(var(--greend),.8)'>once</span> on a tag to add it to your search list, click <span class=spanintro style='border-color:rgb(var(--redd));background:rgba(var(--redd),.8)'>twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%;font-size:1em'>Tip: To see every single lore card in existence, click “Search” with an empty tag selection!</p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a tag to add/exclude/remove!'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <!-- @EFOLD -->
 <!-- @SFOLD Select Tags -->
 <div class=tagcategory><h2>Hearthians</h2><input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-
     <!-- <input value=#protagonist src=../img/chr_hea_firn.png type=image onclick=AddTagSelector(this.value) style=width:30%;border-radius:50%> -->
-
     <span class=infoa><input value=#protagonist type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_firn.png></span></span>
     <span class=infoa><input value=#arkose type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_arkose.png></span></span>
     <span class=infoa><input value=#chert type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_chert.png></span></span>
@@ -129,10 +132,9 @@ td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!importan
     <input value=#solanum type=button onclick=AddTagSelector(this.value)>
     <input value=#taget type=button onclick=AddTagSelector(this.value)>
 </div>
-<div class=tagcategory><h2>Stranger</h2><input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)> <input value=#prisoner type=button onclick=AddTagSelector(this.value)></div>
+<div class=tagcategory><h2>Stranger</h2><input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)> <input value=#prisoner type=button onclick=AddTagSelector(this.value)></div>
 <div class=tagcategory><h2>Astral Bodies</h2>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value=#supernova type=button onclick=AddTagSelector(this.value)>
     <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
@@ -158,6 +160,7 @@ td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!importan
     <input value='#gabbro’s ship'type=button onclick=AddTagSelector(this.value)>
     <input value='#riebeck’s ship'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai shuttle'type=button onclick=AddTagSelector(this.value)>
+    <input value='#nomai vessel' type=button onclick=AddTagSelector(this.value)>
 </div>
 <div class=tagcategory><h2>Sub-Locations</h2>
 <p><img src=../img/astr_ashtwin.png>
@@ -167,34 +170,46 @@ td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!importan
     <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_brittlehollow.png>
     <input value='#hanging city'type=button onclick=AddTagSelector(this.value)>
+    <input value='#tower of quantum knowledge'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_giantsdeep.png>
     <input value='#core of giant’s deep' type=button onclick=AddTagSelector(this.value)>
     <input value='#statue island' type=button onclick=AddTagSelector(this.value)>
     <input value='#gabbro’s island' type=button onclick=AddTagSelector(this.value)>
+    <input value='#tower of quantum trials'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_opc.png>
     <input value='#control module' type=button onclick=AddTagSelector(this.value)>
     <input value='#launch module' type=button onclick=AddTagSelector(this.value)>
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this.value)>
+<!-- </p><p><img src=../img/astr_darkbramble.png> -->
 </p>
 </div>
 <div class=tagcategory><h2>Worldbuilding</h2>
-    <input value=#history type=button onclick=AddTagSelector(this.value)>
-    <input value=#biology type=button onclick=AddTagSelector(this.value)>
-    <input value=#physics type=button onclick=AddTagSelector(this.value)>
-    <input value=#quantum type=button onclick=AddTagSelector(this.value)>
-    <input value=#archeology type=button onclick=AddTagSelector(this.value)>
-    <input value='#time loop event'type=button onclick=AddTagSelector(this.value)>
     <input value='#hearthian culture'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai culture'type=button onclick=AddTagSelector(this.value)>
     <input value='#strangers’ culture'type=button onclick=AddTagSelector(this.value)>
+    <input value='#time loop event'type=button onclick=AddTagSelector(this.value)>
+    <input value=#archeology type=button onclick=AddTagSelector(this.value)>
+    <input value=#biology type=button onclick=AddTagSelector(this.value)>
+    <input value=#history type=button onclick=AddTagSelector(this.value)>
+    <input value=#physics type=button onclick=AddTagSelector(this.value)>
+    <input value=#quantum type=button onclick=AddTagSelector(this.value)>
     <input value='#ghost matter' type=button onclick=AddTagSelector(this.value)>
+    <input value='#gravity crystal'type=button onclick=AddTagSelector(this.value)>
 </div>
 <div class=tagcategory><h2>Objects of interest</h2>
-    <input value='#nomai statue'type=button onclick=AddTagSelector(this.value)>
-    <input value='#gravity crystal'type=button onclick=AddTagSelector(this.value)>
-    <input value='#warp core'type=button onclick=AddTagSelector(this.value)>
+    <p style=padding-left:0;text-indent:0><input value='#hearthian technology'style='outline:3px solid rgb(var(--indigol))'type=button onclick=AddTagSelector(this.value)>
     <input value=#signalscope type=button onclick=AddTagSelector(this.value)>
-</div>
+    <input value='#nomai translator' type=button onclick=AddTagSelector(this.value)>
+</p><p style=padding-left:0;text-indent:0>
+    <input value='#nomai technology'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
+    <input value='#nomai statue'type=button onclick=AddTagSelector(this.value)>
+    <input value='#gravity cannon'type=button onclick=AddTagSelector(this.value)>
+    <input value='#warp core'type=button onclick=AddTagSelector(this.value)>
+</p><p style=padding-left:0;text-indent:0>
+    <input value='#stranger technology'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)>
+    <input value='#vision torch'type=button onclick=AddTagSelector(this.value)>
+    <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)>
+</p></div>
 <div class=tagcategory><h2>Lore Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
     <input value='#fkno headcanons'style='outline:3px solid rgb(var(--purpled))'type=button id=fknotag class=exclude onclick=AddTagSelector(this.value)>
     <input value='#in-game calculations'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)>
@@ -207,7 +222,6 @@ td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!importan
     <p class=exclude>#fkno headcanons</p>
 </div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
-
 
 
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
@@ -453,23 +467,208 @@ T+9:00:00 a.m. PDT
 * cannot access map
 * no scout
 
+
+
+
+<a href=https://www.mobiusdigitalgames.com/news/outerwilds-venture-is-recruiting>This blog article from Mobius Digital</a> confirms that ghost matter is completely unrelated from quantum effects (I mean, it's not worth creating a lore card just for this, since the Interloper comes from elsewhere and was deadly before it could have been close enough to the Eye to get quantum... Right?)
+
+
+REDDIT AMA      https://www.reddit.com/r/PS4/comments/diafuh/official_ama_with_outer_wilds_developers_mobius/
+
+List of web pages that haven't been checked out yet: (list made on 2024/07/06)
+https://www.mobiusdigitalgames.com/news/searching-for-beacon-88
+https://www.mobiusdigitalgames.com/news/roots-and-beginnings
+https://www.mobiusdigitalgames.com/news/evolvingdevolving
+https://www.mobiusdigitalgames.com/news/the-newest-addition-to-the-beacon-38-universe
+https://www.mobiusdigitalgames.com/news/fuel-flower-power
+https://www.mobiusdigitalgames.com/news/all-systems-go
+https://www.mobiusdigitalgames.com/news/masi-oka-discusses-producing-igf-winner-outer-wilds
+https://www.mobiusdigitalgames.com/news/to-observe-is-to-influence
+https://www.mobiusdigitalgames.com/news/breaking-the-laws-of-physics
+https://www.mobiusdigitalgames.com/news/a-very-narrative-update
+https://www.mobiusdigitalgames.com/news/the-music-of-outer-wilds-episode-1
+https://www.mobiusdigitalgames.com/news/mobius-ventures-how-our-past-work-ties-into-outer-wilds
+https://www.mobiusdigitalgames.com/news/demaking-outer-wilds
+https://www.mobiusdigitalgames.com/news/changing-the-outer-wilds-art-style
+https://www.mobiusdigitalgames.com/news/outer-wilds-launches-new-crowdfunding-platform-fig
+https://www.mobiusdigitalgames.com/news/beacon-38-now-available
+https://www.mobiusdigitalgames.com/news/the-atmosphere-awakens
+https://www.mobiusdigitalgames.com/news/updating-the-probe-launcher
+https://www.mobiusdigitalgames.com/news/concepting-dark-bramble
+https://www.mobiusdigitalgames.com/news/doubling-down-at-the-day-of-the-devs
+https://www.mobiusdigitalgames.com/news/ice-ice-baby
+https://www.mobiusdigitalgames.com/news/meet-the-team-welsey-martin
+https://www.mobiusdigitalgames.com/news/from-design-to-art-with-love
+https://www.mobiusdigitalgames.com/news/happy-new-years-from-outer-wilds-ventures
+https://www.mobiusdigitalgames.com/news/the-creepy-hearthians
+https://www.mobiusdigitalgames.com/news/meet-the-team-jeffrey-yu
+https://www.mobiusdigitalgames.com/news/crystal-clear
+https://www.mobiusdigitalgames.com/news/concepting-ui
+https://www.mobiusdigitalgames.com/news/alex-the-nomai
+https://www.mobiusdigitalgames.com/news/april-playtests-april-concept-art
+https://www.mobiusdigitalgames.com/news/filling-out-the-toolbox
+https://www.mobiusdigitalgames.com/news/taking-off
+https://www.mobiusdigitalgames.com/news/the-intentionality-of-wandering
+https://www.mobiusdigitalgames.com/news/separating-the-signal-from-the-noise
+https://www.mobiusdigitalgames.com/news/making-an-ocean
+https://www.mobiusdigitalgames.com/news/a-timber-hearth-soundscape
+https://www.mobiusdigitalgames.com/news/outer-wilds-ventures-to-earth
+https://www.mobiusdigitalgames.com/news/meet-kelsey
+https://www.mobiusdigitalgames.com/news/giants-deep-is-done
+https://www.mobiusdigitalgames.com/news/the-team-is-complete
+https://www.mobiusdigitalgames.com/news/lets-talk-concept-art
+https://www.mobiusdigitalgames.com/news/an-eclipse
+https://www.mobiusdigitalgames.com/news/development-update
+https://www.mobiusdigitalgames.com/news/ship-damage-and-more
+https://www.mobiusdigitalgames.com/news/october-recap
+https://www.mobiusdigitalgames.com/news/more-playtest-review
+https://www.mobiusdigitalgames.com/news/whats-that-sound
+https://www.mobiusdigitalgames.com/news/whos-that-hearthian
+https://www.mobiusdigitalgames.com/news/planet-progress
+https://www.mobiusdigitalgames.com/news/its-a-new-year
+https://www.mobiusdigitalgames.com/news/a-look-into-playtests
+https://www.mobiusdigitalgames.com/news/another-brief-update
+https://www.mobiusdigitalgames.com/news/a-look-at-new-ui-and-proxies
+https://www.mobiusdigitalgames.com/news/weve-announced
+https://www.mobiusdigitalgames.com/news/our-new-style
+https://www.mobiusdigitalgames.com/news/then-and-now
+https://www.mobiusdigitalgames.com/news/taking-on-timber-hearth
+https://www.mobiusdigitalgames.com/news/assembling-the-hourglass-twins
+https://www.mobiusdigitalgames.com/news/diving-into-giants-deep
+https://www.mobiusdigitalgames.com/news/xbox-release-announcement
+https://www.mobiusdigitalgames.com/news/giants-deep-visual-effects-vfx
+https://www.mobiusdigitalgames.com/news/descending-into-dark-bramble
+https://www.mobiusdigitalgames.com/news/skating-on-the-interloper
+https://www.mobiusdigitalgames.com/news/brittle-hollow-rocks
+https://www.mobiusdigitalgames.com/news/brittle-hollow-visual-effects-vfx
+https://www.mobiusdigitalgames.com/news/the-erupting-volcanic-moon
+https://www.mobiusdigitalgames.com/news/hearthian-introduction
+https://www.mobiusdigitalgames.com/news/quality-assurance
+https://www.mobiusdigitalgames.com/news/happy-halloween
+https://www.mobiusdigitalgames.com/news/localization
+https://www.mobiusdigitalgames.com/news/optimizing-for-different-platforms
+https://www.mobiusdigitalgames.com/news/the-final-stretch
+https://www.mobiusdigitalgames.com/news/general-synopsis
+https://www.mobiusdigitalgames.com/news/physical-backer-rewards
+https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
+
 -->
+<!-- @EFOLD -->
+
+
+<!-- @SFOLD FKNO Facts -->
+
+
+
+
+<!-- @SFOLD    @WIP@    Pre-Time Loop Timeline -->
+<it class=fkno><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
+    <!-- <tr><td></td><td>Hornfels decides to radio Gabbro to ask them if they could find another statue, since they’re back on Giant’s Deep and it has been a while since they last did any field work.<br>Gabbro is embarrassed by the fact that their ship was taken by a cyclone during the night, but keeps silent about it as they are not very willing to break down the news just yet.</td></tr>
+    <tr><td></td><td>Hornfels finishes prepping the statue while Gossan comes to say hi. They talk a bit about the fact that it’s an incredible find, but that it’s still a shame that Gabbro chipped a part of it when bringing it back to Timber Hearth.</td></tr>
+    <tr><td></td><td>Gossan shows up to say hi somewhere in the middle of Hornfels and Gabbro’s conversation, Hornfels mutes the radio to chat with Gossan for a bit, Gossan asks Hornfels to stay focused and make sure Firn’s launch day goes smoothly.</td></tr> -->
+    <tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
+    <tr style=background:rgba(var(--fore),.5)><td>06d03s 45:09</td><td class=infoa>Start of the time loop.<p class=infob>“And don’t forget the <i>blinds</i>, next time!”</p></td></tr>
+</table></details><t>#fkno headcanons #time loop event</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Loop 1 Timeline -->
+<it class=fkno><details><summary>FKNO Loop 1 Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+    <tr style=background:rgba(var(--midd),.5)><td>06d03s 46:43</td><td>00:11</td><td>The OPC fires while Hal and Gossan talk.</td></tr>
+<!--
+    <tr><td></td><td>:</td><td></td></tr>
+    <tr><td></td><td>:</td><td></td></tr>
+- Right as the time loop starts, Gabbro radioes Hornfels to ask about the statue, asking something like “so how big was the dent anyway,” which prompts Hornfels to go back downstairs and chat a bit with them while they look at it and argue that yes, they do need another one. It ends in a philosophical debate over whether it even matters because with the shape of the mane and antlers it’s not even easy to remember where the chipped part was supposed to be, and Hornfels ends up hanging up after cutting Gabbro short and saying that their decision is final.
+  Gabbro went on this tangent partly because they don’t like work, partly because “so my ship has been taken by a cyclone somewhere during the past sunrise and I do not quite feel like telling them that just yet, maybe Giant’s Deep will be nice and return it at some point. Hmmmm okay I guess I’ll instead go the ‘So how badly do you need that intact statue anyway’ route.”
+  (And then a cyclone did indeed bring something to them, except it was Statue Island instead of their ship)
+- Hal shows up soon after Hornfels hung up, they exchange a few words, and then Hornfels remembers their promise to Gossan so they go back upstairs again and stay there until the end of the loop.
+
+t = 0	Gabbro starts the loop on their island.                                  = 06d03s 45:09
+5min:	Gabbro’s hammock is hung up, they take a break.
+6min:	Hal’s conversation with Gossan ends.
+9min:	Hal arrives at the museum, Hornfels is just coming down from upstairs to look at the statue.
+30min:	Hal gets paired.
+40min:	Firn decides to go to Giant’s Deep, they go see Hornfels with Hal.       = 06d04s 25:09
+45min:	Firn leaves the observatory.
+56min:	Firn gets in their ship.                                                 = 06d04s 41:09
+60min:	Statue Island comes by, Gabbro takes the opportunity to cross it.        = 06d04s 45:09
+65min:	Statue pairs with Gabbro.
+70min:	Gabbro is back in the hammock, in pain, not playing their flute.         = 06d04s 55:09
+72min:	Firn lands on Gabbro’s Island.                                           = 06d04s 57:09
+
+t =         Firn & Gabbro land on Statue Island.                                 = 06d05s 15:42
+t = 101min	Firn and Gabbro are in orbit (“less than a half sunrise”).           = 06d05s 25:00
+
+Riebeck arrives on the OPC                                                       = 06d06s 00:00
+Firn wakes up                                                                    = 06d06s 02:00
+-->
+    <tr><td>06d06s 59:25</td><td>22:27</td><td>The supernova reaches the observatory.</td></tr>
+    <tr><td>06d07s 00:17</td><td>22:35</td><td>The supernova reaches the OPC.</td></tr>
+</table></details><t>#fkno headcanons #time loop event</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Loop 2 Timeline -->
+<it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
+    <table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+        <tr style=background:rgba(var(--midd),.5)><td>06d03s 45:21</td><td>00:01</td><td>Hal and Gabbro freeze in place as the ATP sends their memories back.</td></tr>
+        <tr style=background:rgba(var(--midd),.5)><td>06d03s 47:02</td><td>00:13</td><td>The OPC fires, Hal and Gabbro “wake up.”</td></tr>
+        <tr><td>06d03s 52:17</td><td>00:49</td><td>Hal & Gossan go to the observatory.</td></tr>
+        <tr><td>06d03s 55:04</td><td>01:09</td><td>Hal & Gossan arrive at the statue room.</td></tr>
+        <tr><td>06d03s 56:51</td><td>01:21</td><td>Gabbro walks down to the beach and notices that their hammock is gone.</td></tr>
+        <tr><td>06d04s 00:19</td><td>01:45</td><td>Marl and Rutile arrive.</td></tr>
+        <tr><td>06d04s 00:42</td><td>01:48</td><td>Gabbro’s hammock is set up.</td></tr>
+        <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
+        <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
+        <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
+        <!-- <tr><td></td><td>:</td><td></td></tr> -->
+    </table>
+</details><t>#fkno headcanons #time loop event</t></it>
+<!-- @EFOLD -->
+
 <!-- @EFOLD -->
 
 
 
 
 
+<!-- @SFOLD    @WIP@    Paired with statue on same loop as launch of probe 9,318,054 -->
+<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary>
+    <h2>Control Module (Core of Giant’s Deep)</h2>
+    <table>
+        <tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr>
+        <tr><td>
+            <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
+            <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob>Reveals ship log fact <smol class=green>OPC_SUNKEN_MODULE_X1</smol><!--:</p><blockquote>SHIP_LOG_INFO</blockquote>--></div></div>
+            <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob>Reveals ship log fact <smol class=green>OPC_SUNKEN_MODULE_X2</smol><!--:</p><blockquote>SHIP_LOG_INFO</blockquote>--></div></div>
+        </td></tr>
+    </table>
+    <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
+    <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
+    <p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
+    <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
+    <h2>Updates from previous patches</h2>
+    <p>The third line of file <code class='smol orng'>OPC_Sunken_AllLaunchesData</code> has been modified twice:</p>
+    <table>
+        <tr class=ret><th><code>Before Patch 1.0.7.481</code></th></tr>
+        <tr class=ret><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9354.</td></tr>
+        <tr><th><code>Until Patch 1.1.10.47</code></th></tr>
+        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
+        <tr><th><code>Current Patch</code></th></tr>
+        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe &lt;FirstLoop&gt;.</td></tr>
+    </table>
+    <p>Up until Patch 1.0.7 at the latest, less than ten thousands of probes had been launched instead of over nine million. Though the current version has “<smol>&lt;FirstLoop&gt;</smol>” in its code, the number seen in-game is still 9,318,054.</p>
+</details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro #time loop event</t></it>
+<!-- @EFOLD -->
 
 
 
 
 
-
-
-
-
-
+<!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
+<!-- <it><details open><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
+    <table><tr><th>Hornfels</th></tr>
+        <tr><td>…Even if I <i>have</i> been pouring over it every night for weeks.</td></tr>
+    </table><p>This does not indicate how long a night or week is.</p>
+</details><t>#hearthians #hearthian culture</t></it> -->
+<!-- JUST CHECK WHETHER ANY SHIP LOG FACT IS UNLOCKED BY THIS (probably not) + DELETE FROM TextAssets -->
+<!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Solanum, Laevi, Ilex, Lami and Taget were playing together in the Sunless City -->
 <!--
 <it><details open><summary>Solanum, Laevi, Ilex, Lami and Taget would play near the anglerfish fossil on Ember Twin as children.</summary>
@@ -526,14 +725,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 <!-- @EFOLD -->
 
 
-<!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
-<it><details open><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
-    <table><tr><th>Hornfels</th></tr>
-        <!-- <tr><td><p>…Even if I <i>have</i> been pouring over it every night for weeks.</p></td></tr> -->
-        <tr><td>…Even if I <i>have</i> been pouring over it every night for weeks.</td></tr>
-    </table><p>This does not indicate how long a night or week is.</p></details><t>#hearthians #hearthian culture</t></it>
-<!-- JUST CHECK WHETHER ANY SHIP LOG FACT IS UNLOCKED BY THIS (probably not) + DELETE FROM TextAssets -->
-<!-- @EFOLD -->
+
 
 <!-- @SFOLD Lore Cards With Missing Data — To Finish Later -->
 
@@ -553,7 +745,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
         <tr><td>22:00</td><td>The sun starts collapsing on itself.</td></tr>
         <tr><td>22:10</td><td>The sun starts to explode.</td></tr>
     </table>
-</details><t>#time loop event #in-game calculations #sun #supernova</t></it>
+</details><t>#time loop event #in-game calculations #sun</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Sun Station Data -->
 <it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun Station</b></summary>
@@ -799,6 +991,38 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 <!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 
+<!-- @SFOLD FKNO: Hearthian calendar -->
+<it class=fkno><details><summary>FKNO: Hearthian calendar</summary>
+<div class=shiplog>
+    <h2>In-Game Observations</h2><ul>
+        <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
+        <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b> counting from the moment when the OPC fires, with the notable detail that it actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the time loop’s actual duration is slightly longer than 220min + 400s).</li>
+        <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
+    </ul>
+</div>
+<div class=shiplog>
+    <h2>Extrapolations</h2><ul>
+        <li>The periodicity of the Hearthian calendar is based not only on the position of the sun in the Hearthian sky, but also of the Attlerock’s. Indeed, a <b class=indigol>solar eclipse</b> occurs every <b class=greenl>29min 18s</b> on average, and the time at which the eclipse occurs relative to the village’s sky can be used as a reference.</li>
+        <li>The longest cycle which can be constructed directly from this is the time between two <b class=indigol>perfect eclipse sunrises</b> (during which the Attlerock and sun rise in the sky at the same time as an eclipse), which occurs every <b class=greenl>14days 21h 4min</b> in human units.</li>
+        <li>A natural day/night cycle is called a <b class=indigol>Hearthian sunrise</b>, and would be the human equivalent to an ‘hour.’ <b class=indigol>Hearthian minutes</b> and <b class=indigol>seconds</b> are respectively a 60th and 3600th of a sunrise: a <b class=indigol>Hearthian second</b> is thus a little longer than its human counterpart, and lasts about <b class=greenl>1.16s</b> in human units.</li>
+    </ul>
+</div>
+<div class=shiplog>
+    <h2>Headcanons</h2><ul>
+        <li>A <b class=indigol>Hearthian day</b> (our equivalent to a 24h ‘day’) is made of 52 eclipses and <b class=orng>22 day/night cycles</b>, of which, on average, 11 are dedicated to sleep and 11 to waking hours. Hatchlings sleep the most, while adults will tend to be active for longer in order to help the community. In human units, a Hearthian day lasts <b class=greenl>25h 22min 44s</b>.</li>
+        <li>A <b class=indigol>Hearthian week</b> starts with an <b>eclipse sunrise</b>. A week contains <b class=orng>309 sunrises</b> split into <b class=orng>14 days with one extra sunrise</b> at the end.</li>
+        <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
+        <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
+    </ul>
+</div>
+</details><t>#fkno headcanons #hearthian culture</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO Hearthians age ranges at the start of the time loop -->
+<it class=fkno><details><summary>FKNO Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#fkno headcanons #hearthians #protagonist #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons. -->
+<it class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This is a simple visual observation from looking at the architecture of both types of contraption.</p></details><t>#nomai technology #orbital probe cannon #gravity cannon #nomai shuttle</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Eye of the Universe Data -->
 <it class=tl style=position:relative><details><summary style=font-size:30px;font-weight:600>General Data about the <b>Eye of the Universe</b></summary><h2>Main Properties</h2>
 <table style='margin:12px auto'>
@@ -839,23 +1063,6 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 <img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x - 15.086&Tab;|&Tab;R² = 1</p>
 </details><t>#deep space satellite #time loop event #in-game calculations #the stranger</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
-<it><details open><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary>
-    <h2>Control Module (Core of Giant’s Deep)</h2>
-    <table>
-        <tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr>
-        <tr><td>
-            <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
-            <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X1</smol>:</p><blockquote>SHIP_LOG_INFO</blockquote></div></div>
-            <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol>OPC_SUNKEN_MODULE_X2</smol>:</p><blockquote>SHIP_LOG_INFO</blockquote></div></div>
-        </td></tr>
-    </table>
-    <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
-    <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
-    <p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
-    <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
-</details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro</t></it>
-<!-- @EFOLD -->
 <!-- @SFOLD TH day/night cycle -->
 <it class=tl><details><summary>A full day/night cycle on Timber Hearth lasts <b>6min&nbsp;56s</b>. The&nbsp;day lasts ~3min&nbsp;24s, the night ~3min&nbsp;31s.</summary>
     <p>This result was timed from the length of two consecutive days in the same loop (there is no fourth sunrise before the supernova) on a Switch game without ever moving from the spawn location.</p><p>It is considered sunrise when the soundtrack “Timber Hearth” begins, and sunset once this track ends.</p>
@@ -887,7 +1094,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 <div id=sidenav><div id=midxbtn><a href=javascript:void(0) onclick=closeNav() id=closbtn style=color:#fff><h1>Close<span>&times;</span></h1></a></div><div id=navctn>
     <h2 style=color:rgb(var(--white));margin-top:revert>Lore Card Color Chart:</h2>
     <div class=lorecard style=--fore:var(--purpled);--midd:var(--purplel)><h3>FKNO Headcanons</h3>
-        <p>This lore card color is just for Lutias’ headcanons and theories which are included in her fics. Please ignore them, they’re just notes for making my own job easier jfdklmsjg</p><p>All lore cards of this color come with the <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#fkno headcanons</code> tag, which is always excluded from your search by default.</p>
+        <p>This lore card color is just for Lutias’ headcanons and theories which are included in her fics, notably <a href=https://archiveofourown.org/works/55228189><i>Fate Knows No One</i></a> (hence the acronym). Please ignore them, they’re just notes for making my own job easier jfdklmsjg</p><p>All lore cards of this color come with the <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#fkno headcanons</code> tag, which is always excluded from your search by default.</p>
     </div>
     <div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3>Regular Lore Card</h3>
         <p>This lore card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p>
@@ -950,6 +1157,7 @@ function addChildToParent(parent, el, msg, state) {
 function ResetTagSelector(){
     curtinput = ["fkno headcanons0"];
     filterlist.style.display = "none";
+    // activetags.innerHTML = "<input id=tag_fknoheadcanons class=exclude value='#fkno headcanons' type=button onclick=AddTagSelector(this.value)>";
     activetags.innerHTML = "<p id=tag_fknoheadcanons class=exclude>#fkno headcanons</p>";
     for (t = 0; t < tagselect.length; t++) {
         tagselect[t].classList.remove("include")
