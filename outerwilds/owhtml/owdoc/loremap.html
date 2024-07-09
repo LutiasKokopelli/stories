@@ -36,11 +36,12 @@ input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 #activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
 hr{margin:17px -12px;width:calc(100% + 24px);background:rgb(var(--fore))}
-table div:has(.infob):before{content:'⊛';color:orange;position:absolute;left:1%;top:calc(50% - .7em)}
+table div:has(.infob):before{content:'*';color:orange;position:absolute;left:1%;top:calc(50% - .7em);border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em}
 td>div>p:not(.infob),td>p:not(.infob){padding-left:2em!important}
 .infob{font-size:1.2em;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
 p.infob{padding:7px;margin:0}
+.infob > *:last-child{margin-bottom:0}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
 @media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
 @media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
@@ -96,7 +97,7 @@ td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 </style><script src=../js.js></script></head><body><div class=all><h1 style=margin-top:50px;color:rgba(var(--white),.9);font-size:72px>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
-<h2 style='color:rgb(var(--white));padding:0 5%;font-size:34px'>Click <span class=spanintro style='border-color:rgb(var(--greend));background:rgba(var(--greend),.8)'>once</span> on a tag to add it to your search list, click <span class=spanintro style='border-color:rgb(var(--redd));background:rgba(var(--redd),.8)'>twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%;font-size:1em'>Tip: To see every single lore card in existence, click “Search” with an empty tag selection!</p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a tag to add/exclude/remove!'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
+<h2 style='color:rgb(var(--white));padding:0 5%;font-size:34px'>Click <span class=spanintro style='border-color:rgb(var(--greend));background:rgba(var(--greend),.8)'>once</span> on a tag to add it to your search list, click <span class=spanintro style='border-color:rgb(var(--redd));background:rgba(var(--redd),.8)'>twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%;font-size:1em'>Tips: To see every single lore card in existence, click “Search” with an empty tag selection!<br>If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span></p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a tag to add/exclude/remove!'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <!-- @EFOLD -->
 <!-- @SFOLD Select Tags -->
@@ -223,18 +224,11 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 </div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 
-
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
-<!--
-
-By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
-
-
+<!-- By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
 
 Air is breathable on ALL of Gabbro’s island, not just the tiny spot around the campfire. It is not safe to swim around though, you drown fast.
 The signalscope works perfectly from inside the ATP. It is hard to aim though, as the travelers’ signals come from the path parallel to the walkable ground.
-
-
 
 The launch module has:
 -[x] A working gravity floor on ONE side. The other side does not work.
@@ -245,8 +239,6 @@ The launch module has:
 -[x] Projection stone: Probe Tracking Module                               (Sitting on a bench next to the wall)
 -[x] A wall for Nomai writing for Launch Module x {insert stone}           >> 2 possible texts, involving Mallow (Launch Module), Avens (Control Module) and Privet (Probe Tracking Module)
 -[x] A projection pool for Launch Module x {insert stone}
-
-
 
 ———
 FKNO:
@@ -556,110 +548,6 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 <!-- @EFOLD -->
 
 
-<!-- @SFOLD FKNO Facts -->
-
-
-
-
-<!-- @SFOLD    @WIP@    Pre-Time Loop Timeline -->
-<it class=fkno><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
-    <!-- <tr><td></td><td>Hornfels decides to radio Gabbro to ask them if they could find another statue, since they’re back on Giant’s Deep and it has been a while since they last did any field work.<br>Gabbro is embarrassed by the fact that their ship was taken by a cyclone during the night, but keeps silent about it as they are not very willing to break down the news just yet.</td></tr>
-    <tr><td></td><td>Hornfels finishes prepping the statue while Gossan comes to say hi. They talk a bit about the fact that it’s an incredible find, but that it’s still a shame that Gabbro chipped a part of it when bringing it back to Timber Hearth.</td></tr>
-    <tr><td></td><td>Gossan shows up to say hi somewhere in the middle of Hornfels and Gabbro’s conversation, Hornfels mutes the radio to chat with Gossan for a bit, Gossan asks Hornfels to stay focused and make sure Firn’s launch day goes smoothly.</td></tr> -->
-    <tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
-    <tr style=background:rgba(var(--fore),.5)><td>06d03s 45:09</td><td class=infoa>Start of the time loop.<p class=infob>“And don’t forget the <i>blinds</i>, next time!”</p></td></tr>
-</table></details><t>#fkno headcanons #time loop event</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Loop 1 Timeline -->
-<it class=fkno><details><summary>FKNO Loop 1 Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
-    <tr style=background:rgba(var(--midd),.5)><td>06d03s 46:43</td><td>00:11</td><td>The OPC fires while Hal and Gossan talk.</td></tr>
-<!--
-    <tr><td></td><td>:</td><td></td></tr>
-    <tr><td></td><td>:</td><td></td></tr>
-- Right as the time loop starts, Gabbro radioes Hornfels to ask about the statue, asking something like “so how big was the dent anyway,” which prompts Hornfels to go back downstairs and chat a bit with them while they look at it and argue that yes, they do need another one. It ends in a philosophical debate over whether it even matters because with the shape of the mane and antlers it’s not even easy to remember where the chipped part was supposed to be, and Hornfels ends up hanging up after cutting Gabbro short and saying that their decision is final.
-  Gabbro went on this tangent partly because they don’t like work, partly because “so my ship has been taken by a cyclone somewhere during the past sunrise and I do not quite feel like telling them that just yet, maybe Giant’s Deep will be nice and return it at some point. Hmmmm okay I guess I’ll instead go the ‘So how badly do you need that intact statue anyway’ route.”
-  (And then a cyclone did indeed bring something to them, except it was Statue Island instead of their ship)
-- Hal shows up soon after Hornfels hung up, they exchange a few words, and then Hornfels remembers their promise to Gossan so they go back upstairs again and stay there until the end of the loop.
-
-t = 0	Gabbro starts the loop on their island.                                  = 06d03s 45:09
-5min:	Gabbro’s hammock is hung up, they take a break.
-6min:	Hal’s conversation with Gossan ends.
-9min:	Hal arrives at the museum, Hornfels is just coming down from upstairs to look at the statue.
-30min:	Hal gets paired.
-40min:	Firn decides to go to Giant’s Deep, they go see Hornfels with Hal.       = 06d04s 25:09
-45min:	Firn leaves the observatory.
-56min:	Firn gets in their ship.                                                 = 06d04s 41:09
-60min:	Statue Island comes by, Gabbro takes the opportunity to cross it.        = 06d04s 45:09
-65min:	Statue pairs with Gabbro.
-70min:	Gabbro is back in the hammock, in pain, not playing their flute.         = 06d04s 55:09
-72min:	Firn lands on Gabbro’s Island.                                           = 06d04s 57:09
-
-t =         Firn & Gabbro land on Statue Island.                                 = 06d05s 15:42
-t = 101min	Firn and Gabbro are in orbit (“less than a half sunrise”).           = 06d05s 25:00
-
-Riebeck arrives on the OPC                                                       = 06d06s 00:00
-Firn wakes up                                                                    = 06d06s 02:00
--->
-    <tr><td>06d06s 59:25</td><td>22:27</td><td>The supernova reaches the observatory.</td></tr>
-    <tr><td>06d07s 00:17</td><td>22:35</td><td>The supernova reaches the OPC.</td></tr>
-</table></details><t>#fkno headcanons #time loop event</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Loop 2 Timeline -->
-<it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
-    <table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
-        <tr style=background:rgba(var(--midd),.5)><td>06d03s 45:21</td><td>00:01</td><td>Hal and Gabbro freeze in place as the ATP sends their memories back.</td></tr>
-        <tr style=background:rgba(var(--midd),.5)><td>06d03s 47:02</td><td>00:13</td><td>The OPC fires, Hal and Gabbro “wake up.”</td></tr>
-        <tr><td>06d03s 52:17</td><td>00:49</td><td>Hal & Gossan go to the observatory.</td></tr>
-        <tr><td>06d03s 55:04</td><td>01:09</td><td>Hal & Gossan arrive at the statue room.</td></tr>
-        <tr><td>06d03s 56:51</td><td>01:21</td><td>Gabbro walks down to the beach and notices that their hammock is gone.</td></tr>
-        <tr><td>06d04s 00:19</td><td>01:45</td><td>Marl and Rutile arrive.</td></tr>
-        <tr><td>06d04s 00:42</td><td>01:48</td><td>Gabbro’s hammock is set up.</td></tr>
-        <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
-        <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
-        <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
-        <!-- <tr><td></td><td>:</td><td></td></tr> -->
-    </table>
-</details><t>#fkno headcanons #time loop event</t></it>
-<!-- @EFOLD -->
-
-<!-- @EFOLD -->
-
-
-
-
-
-<!-- @SFOLD    @WIP@    Paired with statue on same loop as launch of probe 9,318,054 -->
-<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary>
-    <h2>Control Module (Core of Giant’s Deep)</h2>
-    <table>
-        <tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr>
-        <tr><td>
-            <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
-            <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob>Reveals ship log fact <smol class=green>OPC_SUNKEN_MODULE_X1</smol><!--:</p><blockquote>SHIP_LOG_INFO</blockquote>--></div></div>
-            <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob>Reveals ship log fact <smol class=green>OPC_SUNKEN_MODULE_X2</smol><!--:</p><blockquote>SHIP_LOG_INFO</blockquote>--></div></div>
-        </td></tr>
-    </table>
-    <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
-    <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
-    <p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
-    <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
-    <h2>Updates from previous patches</h2>
-    <p>The third line of file <code class='smol orng'>OPC_Sunken_AllLaunchesData</code> has been modified twice:</p>
-    <table>
-        <tr class=ret><th><code>Before Patch 1.0.7.481</code></th></tr>
-        <tr class=ret><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9354.</td></tr>
-        <tr><th><code>Until Patch 1.1.10.47</code></th></tr>
-        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
-        <tr><th><code>Current Patch</code></th></tr>
-        <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe &lt;FirstLoop&gt;.</td></tr>
-    </table>
-    <p>Up until Patch 1.0.7 at the latest, less than ten thousands of probes had been launched instead of over nine million. Though the current version has “<smol>&lt;FirstLoop&gt;</smol>” in its code, the number seen in-game is still 9,318,054.</p>
-</details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro #time loop event</t></it>
-<!-- @EFOLD -->
-
-
-
-
 
 <!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
 <!-- <it><details open><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
@@ -726,8 +614,7 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 
 
 
-
-<!-- @SFOLD Lore Cards With Missing Data — To Finish Later -->
+<!-- @SFOLD    @WIP@    Lore Cards With Missing Data — To Finish Later -->
 
 <!-- @SFOLD    @WIP@    Sun Data -->
 <it class=tl style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun</b></summary>
@@ -951,6 +838,18 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
 </details><t>#time loop event #in-game calculations #white hole</t></it>
 <!-- @EFOLD -->
+<!-- @SFOLD Eye of the Universe Data -->
+<it class=tl style=position:relative><details><summary style=font-size:30px;font-weight:600>General Data about the <b>Eye of the Universe</b></summary><h2>Main Properties</h2>
+<table style='margin:12px auto'>
+    <tr><th style=width:20%>Radius</th><td>201 &plusmn; 10 m</td></tr>
+    <tr><th>Mass</th><td>9 &times; 10<sup>6</sup></td></tr>
+    <tr><th>Orbit Radius</th><td>~ 410 – 657 km<br>500 – 1000 km <smol>(Nomai estimation)</smol></td></tr>
+</table>
+<p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km.</p>
+<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>. <a href="javascript:getcard('data_QM')">See&nbsp;data about the Quantum Moon?</a></p>
+<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+</details><t>#time loop event #in-game calculations #eye of the universe</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Stranger Data -->
 <it class=tl style=position:relative><img src=../img/astr_stranger.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Stranger</b></summary>
     <h2>Main Properties</h2>
@@ -989,50 +888,105 @@ Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlo
 <!-- @EFOLD -->
 <!-- Initial planet positions:       https://discord.com/channels/590799151118155780/613170452680015882/1258130718047862836 -->
 <!-- @EFOLD -->
+
+<!-- @SFOLD    @WIP@    FKNO Pre-Time Loop Timeline -->
+<it class=fkno><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
+    <!-- <tr><td></td><td>Hornfels decides to radio Gabbro to ask them if they could find another statue, since they’re back on Giant’s Deep and it has been a while since they last did any field work.<br>Gabbro is embarrassed by the fact that their ship was taken by a cyclone during the night, but keeps silent about it as they are not very willing to break down the news just yet.</td></tr>
+    <tr><td></td><td>Hornfels finishes prepping the statue while Gossan comes to say hi. They talk a bit about the fact that it’s an incredible find, but that it’s still a shame that Gabbro chipped a part of it when bringing it back to Timber Hearth.</td></tr>
+    <tr><td></td><td>Gossan shows up to say hi somewhere in the middle of Hornfels and Gabbro’s conversation, Hornfels mutes the radio to chat with Gossan for a bit, Gossan asks Hornfels to stay focused and make sure Firn’s launch day goes smoothly.</td></tr> -->
+    <tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
+    <tr style=background:rgba(var(--fore),.5)><td>06d03s 45:09</td><td class=infoa>Start of the time loop.<p class=infob>“And don’t forget the <i>blinds</i>, next time!”</p></td></tr>
+</table></details><t>#fkno headcanons #time loop event</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO Loop 1 Timeline -->
+<it class=fkno><details><summary>FKNO Loop 1 Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+    <tr><td>06d03s 45:22</td><td>00:02</td><td>Gabbro radioes Hornfels to discuss their request to look for another statue (Chapter 2²). This prompts Hornfels to go to the statue room.</td></tr>
+    <tr style=background:rgba(var(--midd),.5)><td>06d03s 46:43</td><td>00:11</td><td>The OPC fires while Hal and Gossan talk.</td></tr>
+    <tr><td>06d04s 24:59</td><td>04:36</td><td>Hal is paired with the museum’s statue.</td></tr>
+    <tr><td>06d04s 36:38</td><td>05:57</td><td>Gabbro finishes hanging up their hammock, pondering what they should do since they lost their ship.</td></tr>
+    <tr><td>06d04s 46:03</td><td>07:02</td><td>Statue Island drifts by their beach, Gabbro takes the opportunity to cross the gap for a quick investigation after checking that no cyclone is headed their way.</td></tr>
+    <tr><td>06d04s 50:24</td><td>07:32</td><td>Gabbro is paired with their statue.</td></tr>
+    <tr><td>06d04s 55:53</td><td>08:10</td><td>Gabbro goes back to their hammock to recover.</td></tr>
+    <tr><td>06d04s 57:09</td><td>08:19</td><td>Firn lands on Gabbro’s Island.</td></tr>
+    <tr><td>06d05s 15:42</td><td>10:28</td><td>Firn and Gabbro land on Statue Island.</td></tr>
+    <tr><td>06d05s 25:06</td><td>11:33</td><td>Firn and Gabbro end up in orbit.</td></tr>
+    <tr><td>06d06s 00:34</td><td>15:39</td><td>Riebeck arrives on the OPC.</td></tr>
+    <tr><td>06d06s 02:12</td><td>15:50</td><td>Firn wakes up after Riebeck and Gabbro refueled their tank.</td></tr>
+    <tr><td>06d06s 59:25</td><td>22:27</td><td>The supernova reaches the observatory.</td></tr>
+    <tr><td>06d07s 00:17</td><td>22:35</td><td>The supernova reaches the OPC.</td></tr>
+</table><p>Firn’s ship log interlude (<a href=https://archiveofourown.org/works/55228189/chapters/142276075>AO3</a>) gives more details regarding the timing of Firn’s actions after their departure from Timber Hearth.</p></details><t>#fkno headcanons #time loop event</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    FKNO Loop 2 Timeline -->
+<it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
+    <table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+        <tr style=background:rgba(var(--midd),.5)><td>06d03s 45:21</td><td>00:01</td><td>Hal and Gabbro freeze in place as the ATP sends their memories back.</td></tr>
+        <tr style=background:rgba(var(--midd),.5)><td>06d03s 47:02</td><td>00:13</td><td>The OPC fires, Hal and Gabbro “wake up.”</td></tr>
+        <tr><td>06d03s 52:17</td><td>00:49</td><td>Hal & Gossan go to the observatory.</td></tr>
+        <tr><td>06d03s 55:04</td><td>01:09</td><td>Hal & Gossan arrive at the statue room.</td></tr>
+        <tr><td>06d03s 56:51</td><td>01:21</td><td>Gabbro walks down to the beach and notices that their hammock is gone.</td></tr>
+        <tr><td>06d04s 00:19</td><td>01:45</td><td>Marl and Rutile arrive.</td></tr>
+        <tr><td>06d04s 00:42</td><td>01:48</td><td>Gabbro’s hammock is set up.</td></tr>
+        <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
+        <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
+        <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
+        <!-- <tr><td></td><td>:</td><td></td></tr> -->
+    </table>
+</details><t>#fkno headcanons #time loop event</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 
-<!-- @SFOLD FKNO: Hearthian calendar -->
+<!-- @SFOLD FKNO Hearthian calendar -->
 <it class=fkno><details><summary>FKNO: Hearthian calendar</summary>
-<div class=shiplog>
-    <h2>In-Game Observations</h2><ul>
-        <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
-        <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b> counting from the moment when the OPC fires, with the notable detail that it actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the time loop’s actual duration is slightly longer than 220min + 400s).</li>
-        <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
-    </ul>
-</div>
-<div class=shiplog>
-    <h2>Extrapolations</h2><ul>
-        <li>The periodicity of the Hearthian calendar is based not only on the position of the sun in the Hearthian sky, but also of the Attlerock’s. Indeed, a <b class=indigol>solar eclipse</b> occurs every <b class=greenl>29min 18s</b> on average, and the time at which the eclipse occurs relative to the village’s sky can be used as a reference.</li>
-        <li>The longest cycle which can be constructed directly from this is the time between two <b class=indigol>perfect eclipse sunrises</b> (during which the Attlerock and sun rise in the sky at the same time as an eclipse), which occurs every <b class=greenl>14days 21h 4min</b> in human units.</li>
-        <li>A natural day/night cycle is called a <b class=indigol>Hearthian sunrise</b>, and would be the human equivalent to an ‘hour.’ <b class=indigol>Hearthian minutes</b> and <b class=indigol>seconds</b> are respectively a 60th and 3600th of a sunrise: a <b class=indigol>Hearthian second</b> is thus a little longer than its human counterpart, and lasts about <b class=greenl>1.16s</b> in human units.</li>
-    </ul>
-</div>
-<div class=shiplog>
-    <h2>Headcanons</h2><ul>
-        <li>A <b class=indigol>Hearthian day</b> (our equivalent to a 24h ‘day’) is made of 52 eclipses and <b class=orng>22 day/night cycles</b>, of which, on average, 11 are dedicated to sleep and 11 to waking hours. Hatchlings sleep the most, while adults will tend to be active for longer in order to help the community. In human units, a Hearthian day lasts <b class=greenl>25h 22min 44s</b>.</li>
-        <li>A <b class=indigol>Hearthian week</b> starts with an <b>eclipse sunrise</b>. A week contains <b class=orng>309 sunrises</b> split into <b class=orng>14 days with one extra sunrise</b> at the end.</li>
-        <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
-        <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
-    </ul>
-</div>
+    <div class=shiplog>
+        <h2>In-Game Observations</h2><ul>
+            <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
+            <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b> counting from the moment when the OPC fires, with the notable detail that it actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the time loop’s actual duration is slightly longer than 220min + 400s).</li>
+            <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
+        </ul>
+    </div>
+    <div class=shiplog>
+        <h2>Extrapolations</h2><ul>
+            <li>The periodicity of the Hearthian calendar is based not only on the position of the sun in the Hearthian sky, but also of the Attlerock’s. Indeed, a <b class=indigol>solar eclipse</b> occurs every <b class=greenl>29min 18s</b> on average, and the time at which the eclipse occurs relative to the village’s sky can be used as a reference.</li>
+            <li>The longest cycle which can be constructed directly from this is the time between two <b class=indigol>perfect eclipse sunrises</b> (during which the Attlerock and sun rise in the sky at the same time as an eclipse), which occurs every <b class=greenl>14days 21h 4min</b> in human units.</li>
+            <li>A natural day/night cycle is called a <b class=indigol>Hearthian sunrise</b>, and would be the human equivalent to an ‘hour.’ <b class=indigol>Hearthian minutes</b> and <b class=indigol>seconds</b> are respectively a 60th and 3600th of a sunrise: a <b class=indigol>Hearthian second</b> is thus a little longer than its human counterpart, and lasts about <b class=greenl>1.16s</b> in human units.</li>
+        </ul>
+    </div>
+    <div class=shiplog>
+        <h2>Headcanons</h2><ul>
+            <li>A <b class=indigol>Hearthian day</b> (our equivalent to a 24h ‘day’) is made of 52 eclipses and <b class=orng>22 day/night cycles</b>, of which, on average, 11 are dedicated to sleep and 11 to waking hours. Hatchlings sleep the most, while adults will tend to be active for longer in order to help the community. In human units, a Hearthian day lasts <b class=greenl>25h 22min 44s</b>.</li>
+            <li>A <b class=indigol>Hearthian week</b> starts with an <b>eclipse sunrise</b>. A week contains <b class=orng>309 sunrises</b> split into <b class=orng>14 days with one extra sunrise</b> at the end.</li>
+            <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
+            <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
+        </ul>
+    </div>
 </details><t>#fkno headcanons #hearthian culture</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Hearthians age ranges at the start of the time loop -->
 <it class=fkno><details><summary>FKNO Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#fkno headcanons #hearthians #protagonist #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons. -->
-<it class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This is a simple visual observation from looking at the architecture of both types of contraption.</p></details><t>#nomai technology #orbital probe cannon #gravity cannon #nomai shuttle</t></it>
+<!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
+<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary><h2>Control Module (Core of Giant’s Deep)</h2><table><tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr><tr><td>
+<p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
+<div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X1</smol>:</p><blockquote>The Orbital Probe Cannon has launched millions of probes.</blockquote><p>(This fact would mention “thousands” of probes before Patch 1.0.7.481)</p></div></div>
+<div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X2</smol>:</p><blockquote>The 9,318,054th probe located a deep space anomaly matching all known criteria for the Eye of the universe.</blockquote><p>(This fact would mention the “9,354th” probe before Patch 1.0.7.481)</p></div></div>
+</td></tr></table>
+<p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
+<p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
+<p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
+<p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
+<h2>Updates from previous patches</h2>
+<p>The third line of file <code class='smol orng'>OPC_Sunken_AllLaunchesData</code> has been modified twice:</p><table>
+<tr class=ret><th><code>Before Patch 1.0.7.481</code></th></tr>
+<tr class=ret><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9354.</td></tr>
+<tr><th><code>Modified between Patches 1.0.4 and 1.0.7.481</code></th></tr>
+<tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
+<tr><th><code>Modified between Patches 1.0.8 and 1.1.10.47</code></th></tr>
+<tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe &lt;FirstLoop&gt;.</td></tr>
+</table><p>Up until Patch 1.0.7 at the latest, less than ten thousands of probes had been launched instead of over nine million. Though the current version has “<smol>&lt;FirstLoop&gt;</smol>” in its code, the number seen in-game is still 9,318,054.</p>
+</details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro #time loop event</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Eye of the Universe Data -->
-<it class=tl style=position:relative><details><summary style=font-size:30px;font-weight:600>General Data about the <b>Eye of the Universe</b></summary><h2>Main Properties</h2>
-<table style='margin:12px auto'>
-    <tr><th style=width:20%>Radius</th><td>201 &plusmn; 10 m</td></tr>
-    <tr><th>Mass</th><td>9 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Orbit Radius</th><td>~ 410 – 657 km</td></tr>
-</table>
-<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>. <a href="javascript:getcard('data_QM')">See&nbsp;data about the Quantum Moon?</a></p>
-<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#time loop event #in-game calculations #eye of the universe</t></it>
+<!-- @SFOLD The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons. -->
+<it class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This is a simple visual observation from looking at the architecture of both types of contraption.</p><p>Additionally, flying through one of the Orbital Probe Cannon’s broken parts will launch you at higher speed much like an intact gravity cannon would (<a href=https://www.reddit.com/r/outerwilds/s/ysomw2Qjp7>Reddit: Video example</a>).</p></details><t>#nomai technology #orbital probe cannon #gravity cannon #nomai shuttle</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Deep Space Satellite Positions -->
 <it class=tl><details><summary>The Deep Space Satellite is orbiting at <b>26km</b> away from the sun, at a speed of <b>124m/s</b>. It reaches an angle of 40° <b>3min&nbsp;21s</b> after waking up.</summary>
