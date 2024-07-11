@@ -183,12 +183,13 @@ a:active button{background:rgb(var(--indigod))}
     color:rgb(var(--white));
     padding:7px
 }
-#closbtn span {
-    position: absolute;
-    font-size: 6vh;
-    color: rgb(var(--white));
-    top:-5px;
-    right: 25px;
+#closbtn span{
+    position:absolute;
+    font-size:6vh;
+    color:rgb(var(--white));
+    top:0;
+    right:25px;
+    line-height:100%
 }
 #midxbtn h1:hover{filter:saturate(200%)}
 #midxbtn h2{
@@ -518,11 +519,6 @@ b{font-weight:500}
 .shiplog .hudgrey ul{border:2px solid grey;box-shadow:-1px 1px 1px grey}
 .shiplog .hudgrey li:before{color:grey}
 .shiplog .grey{color:grey}
-
-
-
-
-
 
 .extlink{display:block;width:100%;margin:7px auto;padding:12px;border:2px solid rgb(var(--greend));background:rgba(var(--black),.7);text-align:center;font-weight:800}
 .extlink:hover{filter:brightness(120%);background:rgb(var(--greend));color:rgb(var(--black))!important;border-radius:50px}
