@@ -35,9 +35,10 @@ input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 #activetags p{font-family:Calibri;font-size:14px;display:inline-block;padding:5px 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid}
 #activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
-hr{margin:17px -12px;width:calc(100% + 24px);background:rgb(var(--fore))}
+hr{margin:12px -12px!important;width:calc(100% + 24px);background:rgb(var(--fore))}
 table div:has(.infob):before{content:'*';color:orange;position:absolute;left:1%;top:calc(50% - .7em);border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em}
 td>div>p:not(.infob),td>p:not(.infob){padding-left:2em!important}
+details>p{margin:12px 0}
 .infob{font-size:1.2em;left:0;top:calc(100% + 5px)}
 .infob img{height:revert}
 p.infob{padding:7px;margin:0}
@@ -101,7 +102,9 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <!-- @EFOLD -->
 <!-- @SFOLD Select Tags -->
-<div class=tagcategory><h2>Hearthians</h2><input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+<div class=tagcategory><h2>Hearthians</h2>
+    <input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#outer wilds ventures' type=button onclick=AddTagSelector(this.value)>
     <!-- <input value=#protagonist src=../img/chr_hea_firn.png type=image onclick=AddTagSelector(this.value) style=width:30%;border-radius:50%> -->
     <span class=infoa><input value=#protagonist type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_firn.png></span></span>
     <span class=infoa><input value=#arkose type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_arkose.png></span></span>
@@ -191,11 +194,12 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
     <input value='#time loop event'type=button onclick=AddTagSelector(this.value)>
     <input value=#archeology type=button onclick=AddTagSelector(this.value)>
     <input value=#biology type=button onclick=AddTagSelector(this.value)>
-    <input value=#history type=button onclick=AddTagSelector(this.value)>
+    <input value=#timeline type=button onclick=AddTagSelector(this.value)>
     <input value=#physics type=button onclick=AddTagSelector(this.value)>
-    <input value=#quantum type=button onclick=AddTagSelector(this.value)>
+    <input value='#quantum mechanics' type=button onclick=AddTagSelector(this.value)>
     <input value='#ghost matter' type=button onclick=AddTagSelector(this.value)>
     <input value='#gravity crystal'type=button onclick=AddTagSelector(this.value)>
+    <input value='#timber hearth geysers'type=button onclick=AddTagSelector(this.value)>
 </div>
 <div class=tagcategory><h2>Objects of interest</h2>
     <p style=padding-left:0;text-indent:0><input value='#hearthian technology'style='outline:3px solid rgb(var(--indigol))'type=button onclick=AddTagSelector(this.value)>
@@ -385,6 +389,41 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 <!-- @SFOLD FKNO Hearthians age ranges at the start of the time loop -->
 <it class=fkno><details><summary>FKNO Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#fkno headcanons #hearthians #protagonist #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data</t></it>
 <!-- @EFOLD -->
+<!-- @SFOLD FKNO Timber Hearth’s intense geological activity causes new geysers to erupt regularly. -->
+<it class=fkno><details><summary>Timber Hearth’s intense geological activity causes new geysers to erupt regularly.</summary><p>Timber Hearth has a very high geological activity, demonstrated by its geysers being powerful enough to send objects into orbit. As such, old geysers being slowly closed off and new geysers erupting instead are a common occurrence on a geological scale. Seismic activity is being monitored, but Hearthians were never capable of truly predicting when and where new geysers would erupt.</p></details><t>#fkno headcanons #timber hearth #timber hearth geysers</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO Timber Hearth’s underground waters are filled with ghost matter. -->
+<it class=fkno><details><summary>Timber Hearth’s underground waters are filled with ghost matter.</summary>
+<p>Ever since the Interloper’s core ruptured, Timber Hearth has maintained large amounts of ghost matter within its underwater currents: the water’s nullifying effect on ghost matter and the fact that said water is also for the most part sealed off slows down to a significant degree the rate at which ghost matter evaporates, and the only way for it to successfully leave the water is for it to reach the surface first, notably (but not exclusively) through geysers.</p>
+<p style=opacity:.8>In comparison, though Giant’s Deep is filled with water as well, its ocean’s open exposure to open air and even to outer space through its cyclones has on the contrary heavily accelerated the rate at which its ghost matter evaporated, leaving only a few small patches clinging to a few islands.</p>
+<hr><p>The fact that ghost matter is present in the water depths is known, but Hearthians are unable to detect ghost matter while it is in its underwater nullified state. As such, despite being aware of the danger, they are powerless to stop it or efficiently prepare themselves for it, and they are unable to tell just how much ghost matter truly is hiding dormant at the core of their planet. Ironically, staying close to bodies of water remains the safest way to deal with a ghost matter crisis.</p>
+</details><t>#fkno headcanons #timber hearth #ghost matter #hearthians #timber hearth geysers</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO New geyser + ghost matter accident from ~30 years ago -->
+<it class=fkno><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
+<p>This event is based on Arkose’s reports about the patch of ghost matter they play around, which used to be bigger when Gossan was a hatchling.</p>
+<p>The proximity of this patch of ghost matter to the village is due to the fact that it appeared more recently than the village itself, along with the small geyser erupting nearby.</p>
+<hr><p>The geyser causing the newest patch of ghost matter to appear erupted very close to what was at the time the hatchlings’ cabin, among many others. After the incident, the hatchlings were relocated to live close to the waterfall (it is the cabin whose porch Tephra and Galena are seen sitting on in-game), with the caretakers’ cabin being the one next to it and closest to the water.</p>
+<p>The former cabins were already close to the river at the top of the crater, but not close enough to prevent almost all hatchlings from dying within minutes. Hornfels, Slate, Feldspar, Gossan and Esker (who were about 12 to 18 at the time) were away on a camping trip; otherwise, the only hatchlings who survived were Porphy, Chert and Gabbro.</p>
+<hr><p>This kind of event already happened multiple times in the past, each time killing off significant parts of both the wildlife and the Hearthian population, as well as rendering various areas uninhabitable for a few decades. This also contributed to forcing Hearthians to remain hunter-gatherers for the longest time, and to adopt a way of life which makes it relatively easy to relocate through disassembling and reassembling cabins.</p>
+<p>With the years, as became usual for Hearthians, building materials and objects located within the patch of ghost matter were carefully retrieved: the bodies were buried, while objects of use were left in specific places away from the village and in open air so that the lingering ghost matter would evaporate faster and eventually make those objects usable once more.</p>
+<hr><p>Though each ghost matter incident took a huge toll on the Hearthian civilization’s progress and on the Hearthian population in general, the latest ones, and this one in particular, clearly pushed the Hearthian race closer and closer to extinction because of the dwindling genetic diversity. On the day when the sun goes supernova, the Hearthian population only counts 22 individuals in total, and it has been almost a decade since they last were able to find even a single egg.</p>
+</details><t>#fkno headcanons #hearthians #ghost matter #timber hearth geysers #timber hearth #timeline</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO Tektite lost their foot when they saved Gabbro during the ghost matter incident from ~30 years ago. -->
+<it class=fkno><details><summary>Tektite lost their foot when they saved a five-year-old Gabbro during the ghost matter incident from ~30 years ago.</summary>
+<p>While Chert and Porphy were old enough to run to safety on their own, Gabbro was still young and standing indoors while the geyser erupted and the ghost matter started expanding. Tektite was barely able to carry them out while Gabbro was already starting to inhale some diluted fumes, and Tektite lost their foot in the process.</p><hr>
+<p>Gabbro’s remembrance of the event contributes to their overall attitude once adult, as they feel like they already defied death once; it is part of the origin behind their own daredevil way of consuming or inhaling various substances out of curiosity.</p><p>The incident and its devastating effects on the dwindling Hearthian population is also the main reason behind Gabbro’s nihilistic behavior, as they believe that even prior to the supernova, they were already doomed.</p>
+</details><t>#fkno headcanons #tektite #gabbro #ghost matter #timeline</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon. -->
+<it class=fkno><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
+<p>Feldspar left for Dark Bramble right after getting out of the core of Giant’s Deep, despite their ship being in need of minor repairs, and was too excited to contact Timber Hearth. As such, when they never came back, the searches were concentrated around Giant’s Deep, and made difficult due to the cyclones and drifting islands constantly changing the planet’s layout.</p><hr>
+<p>Outer Wilds Ventures knew that Feldspar tried many times to land on the Quantum Moon, without ever succeeding. Due to Hearthians’ lack of knowledge about the Quantum Moon and macroscopic quantum mechanics in general, and with the searches on Giant’s Deep being fruitless, some started to hypothesize that Feldspar found once again the Quantum Moon on their way back, tried one more time to land on it, and actually succeeded for once; only for the Quantum Moon to disappear as it always does.</p>
+<p>Regardless of whether they assume Feldspar to have died on the spot due to the ‘teleportation’ effect being possibly lethal, to have died while stranded in space because the moon’s disappearance left them behind and too far away to make it to their ship before running out of fuel or oxygen, or to have somehow disappeared entirely and never reappeared along with the moon in its new location, Outer Wilds Ventures slowly put more and more credence in this theory and started mourning without searching any further.</p>
+<hr><p>At the time when FKNO starts, Feldspar has been gone for almost a whole year (302 Hearthian days). No Hearthian ever tried to land on the Quantum Moon after this, assuming that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
+</details><t>#fkno headcanons #feldspar #outer wilds ventures #quantum moon #quantum mechanics #hearthians</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD FKNO Pre-Time Loop Timeline -->
 <it class=fkno><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
     <tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
@@ -428,15 +467,30 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
         <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
         <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
         <!-- <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr> -->
-        <!-- “They haven’t yet,” Hornfels corrected with a roll of all four eyes.       ==>     +4min from last time stamp -->
-
+        <!-- “They haven’t <i>yet</i>,” Hornfels corrected with a roll of all four eyes.       ==>     +4min from last time stamp -->
         <!-- <tr><td></td><td>:</td><td></td></tr> -->
     </table>
 </details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    FKNO Hearthians’ reproduction system is pretty alien and can be roughly summarized to “Eggs magically appear in a pond.” -->
+<it class=fkno><details><summary>Hearthians’ reproduction system is pretty alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
+<p><i>(Look I know how this sounds without context but hear me out I know what I’m doing I just need more time to write it down in a comprehensible way JDKLSMGJDBSN)</i></p>
+<p>Long story short: Hearthians have no clue what a <i>sexual</i> relationship is because what reproduction entails is just “go to The Pond&trade; instead of the bathroom once a year” and a few months later they just see frog eggs showing up in the water and some Hearthians come with their nets to pick them up. You may think of coral reproduction as a reference.</p>
+<p>For the quick rundown into the microscopic scale: Hearthian eggs can have way more than only two parents genetically speaking, mutations are very common because of the sun and the thin atmosphere (which is both a powerful tool to create genetic diversity <i>and</i> a very effective way to kill off thousands of unborn eggs at the earliest stages), and millions of eggs are released each time but only a tiny fraction will ever make it to the stage of becoming visible to the naked eye thanks to a lot of factors, one of which being an antigen/antibody recognition system which acts as an efficient way to prevent accidental inbreeding.</p>
+<hr><p>That being said, with the current population at the time of present FKNO being 22 individuals, the genetic diversity has become too scarce for any egg to make it to the macroscopic scale, let alone to the stage of hatching. Some are still hoping for a miracle, but more and more Hearthians are slowly coming to the realization that, even without a separate event such as a supernova, their species was already nearing its end.</p>
+<p>…They have yet to tell the hatchlings, though. Most of them don’t even know how much bigger the Hearthian population used to be even just a few decades ago.</p>
+</details><t>#fkno headcanons #hearthians #biology</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    FKNO Firn proved that Gabbro’s theory about quantum objects was correct. -->
+<it class=fkno><details><summary>About five years ago, Firn came up with an experiment which proved Gabbro’s theory about quantum objects.</summary><p>I’d like to write a small one-shot or comic about it at some point, so I won’t give too many details… But this ties in with exactly <i>how</i> Gabbro came to conclude that a quantum object “exists in all possible states until it is observed” in the first place. To give a hint: Gabbro often hangs out in the Quantum Grove. Sometimes, right after a rainy day.</p></details><t>#fkno headcanons #protagonist #hal #gabbro #hornfels #quantum mechanics</t></it>
+<!-- @EFOLD -->
+
+
 
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
 <!-- By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
+
+FKNO Quantum Moon: The locations of the ground and obstacles on unobserved locations and versions of the Moon are constantly shifting, and purposefully avoiding the observer's body. This is helped in huge part by the observer taking note of the *absence* of such obstacles in their path in the one version of the Moon they are standing on. Basically all versions of the observer are walking and moving in sync on all six versions, and the main version observing one state of the moon causes the other versions of the moon to create the same type of landscape. Similarly, the shrine is constrained to be present in the same location on all versions of the Moon no matter what.
 
 Air is breathable on ALL of Gabbro’s island, not just the tiny spot around the campfire. It is not safe to swim around though, you drown fast.
 The signalscope works perfectly from inside the ATP. It is hard to aim though, as the travelers’ signals come from the path parallel to the walkable ground.
@@ -734,7 +788,16 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 
 -->
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Lore Cards With Missing Data — To Finish Later -->
+<!-- @SFOLD   @ WIP @   Lore Cards With Missing Data — To Finish Later -->
+<!-- @SFOLD    @WIP@    While Feldspar’s ship already possessed retrorockets, those are malfunctioning. Their ship also lacks downward thrusters. -->
+<it><details><summary>While Feldspar’s ship already possessed retrorockets, those are malfunctioning. Their ship also lacks downward thrusters.</summary>
+    <h2>Talking to Feldspar<span>File: </span></h2><table>
+    <tr><th>Feldspar<span>File: </span></th>
+    </tr><tr><td>🇺🇸 ENGLISH</td>
+    </tr></table>
+    <!-- Feldspar's ship has no downward thrusters, but they still have 5 directional boosters. So landing would be harder and they would need to tilt to go down but they can still break properly to avoid obstactles in front of them -->
+</details><t>#wip #feldspar #feldspar’s ship</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
 <it><details><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
     <table><tr><th>Hornfels</th></tr>
@@ -1135,6 +1198,7 @@ function FilterItems(){
     if(findli==0){nofind.style.display="block"}
     else{nofind.style.display="none"}
 }
+
 function FindTag(){
     var taginp=document.getElementById('findtaginput').value.toLowerCase();
     for(i=0;i<tagselect.length;i++){
