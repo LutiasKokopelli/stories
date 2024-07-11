@@ -13,6 +13,7 @@
 <style>
 @media only screen and (orientation:landscape){body{font-size:22px}}
 @media only screen and (orientation:portrait){body{font-size:4vw}#sidenav{width:64%}}
+.spanintro{padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.8)}
 #findtaginput{display:block;width:90%;margin:17px auto}
 .all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%}
 .tagcategory{padding:17px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
@@ -24,8 +25,8 @@
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
 input:not(#resetsearch,#startsearch,#findtaginput):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
-.exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
 .include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
+.exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
 #resetsearch,#startsearch{position:absolute;bottom:0;top:-3px;width:150px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
 #resetsearch{right:150px;border-radius:0;background:rgb(var(--redd))}
 #resetsearch:hover{background:rgb(var(--redl));color:#fff}
@@ -92,13 +93,18 @@ table+p,summary+p{margin-top:12px}
 .lorecard p{margin:0}
 b{font-weight:800}
 smol,.smol{font-size:.7em}
-.spanintro{padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid red}
 td:has(.nomai){padding:0}
 td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
-</style><script src=../js.js></script></head><body><div class=all><h1 style=margin-top:50px;color:rgba(var(--white),.9);font-size:72px>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
-<h2 style='color:rgb(var(--white));padding:0 5%;font-size:34px'>Click <span class=spanintro style='border-color:rgb(var(--greend));background:rgba(var(--greend),.8)'>once</span> on a tag to add it to your search list, click <span class=spanintro style='border-color:rgb(var(--redd));background:rgba(var(--redd),.8)'>twice</span> to add it to your list of excluded tags.</h2><p style='text-align:center;padding:0 5%;font-size:1em'>Tips: To see every single lore card in existence, click “Search” with an empty tag selection!<br>If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span></p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a tag to add/exclude/remove!'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
+</style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
+<h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order for activating tags:</h2>
+<p align=center><span class=spanintro>neutral</span> &rarr; <span class='spanintro include'>include in the search</span> &rarr; <span class='spanintro exclude'>exclude from the search</span> &rarr; <span class=spanintro>neutral</span></p><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
+For quicker access, you can also click on any tag already present in the search bar, red or green.<br>
+If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span><br>
+To see every single lore card in existence, click “Search” with an empty tag selection!<br>
+</p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag!'>
+<h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <!-- @EFOLD -->
 <!-- @SFOLD Select Tags -->
@@ -1175,10 +1181,10 @@ function FilterItems(){
     filterlist.style.display='';
     for(i=0;i<itags.length;i++){
         allit[i].style.display='none';
-        var checks = true;
-        for (tag = 0; tag < curtinput.length; tag++) {
-            if (curtinput[tag].slice(-1)=='0' && Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1)) != -1) {checks=false}
-            if (curtinput[tag].slice(-1)=='1' && Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1)) == -1 ) {checks=false}
+        var checks=true;
+        for(tag=0;tag<curtinput.length;tag++){
+            if(curtinput[tag].slice(-1)=='0'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))!=-1){checks=false}
+            if(curtinput[tag].slice(-1)=='1'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))==-1){checks=false}
         }
         if(checks){
             allit[i].style.display=""
