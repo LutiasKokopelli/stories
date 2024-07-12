@@ -326,7 +326,7 @@ h2+hr{margin-top:5%}
 
 @font-face{font-family:"AxisStd";src:url("font/Type Project - AxisStd-Medium_Dynamic.otf")format("opentype");font-weight:normal;font-style:normal}
 
-body{background:no-repeat url(img/2462x1386.jpg)bottom fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify}
+body{background:no-repeat url(img/2462x1386.jpg)bottom fixed;background-color:rgb(var(--black));background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify}
 *{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;--lblue:180,224,236;--orng2:252,173,30;
 
 --greend:56,138,93;
