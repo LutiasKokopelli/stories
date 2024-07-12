@@ -62,15 +62,17 @@ it *:not(rt,table,li,img,span,p,t)+*:not(rt,table,li,img,span,p,t){margin-top:12
 details > *:last-child{margin-bottom:0}
 it h1{font-size:1.5em;margin-bottom:17px;border-bottom:3px solid rgb(var(--emph));color:rgb(var(--white))}
 it details>h2,it details>a>h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
+a>h2{text-shadow:0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black}
+a>h2>dlgprt{filter:drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)}
 t{font-family:Calibri;font-size:.7em;display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 12px 12px;white-space:nowrap;overflow:auto;scrollbar-width:none;border-top:3px solid rgb(var(--midd));background:rgba(var(--midd),.5);color:rgba(var(--white),.7)}
 t:after{content:'';width:7px;display:inline-block}
 th,td{vertical-align:middle;font-size:.85em}
 td:has(p){font-size:1em}
 table.fkno td p:not(.infob){padding-left:0!important}
 th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
-a{color:rgb(var(--redd))}
-a:hover{color:rgb(var(--redl));border-bottom:2px dashed rgb(var(--greend))}
-a h2{color:rgb(var(--redl))}
+a{color:rgb(var(--fore));filter:brightness(150%)}
+a:hover{border-bottom:2px dashed rgb(var(--fore))}
+a h2{filter:brightness(75%)}
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
 summary span{font-size:.7em}
 details th span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
@@ -94,12 +96,13 @@ table+p,summary+p{margin-top:12px}
 .lorecard h3{color:rgb(var(--midd));margin:-7px -7px 17px -7px;border-bottom:2px solid rgb(var(--fore));padding-left:10px;background:rgba(var(--fore),.7);padding-bottom:3px}
 .lorecard p{margin:0}
 #sidenav{background:rgb(var(--black))}
-details li{font-size:.85em;list-style:square}
+details>ul>li{font-size:.85em;list-style:square}
 b{font-weight:800}
 smol,.smol{font-size:.7em}
 td:has(.nomai){padding:0}
 td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
+.nomai .infob,.nomai + .infob{font-size:.85em}
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 </style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
 <h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order for activating tags:</h2>
@@ -109,6 +112,7 @@ Click on the bottom left button for an explanation of lore card colors (eg. red 
 </p><h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>A few more fun tips:</h2><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
 For quicker access, you can also click on any tag already present in the search bar, red or green.<br>
 If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span><br>
+Some lore cards can refer to another; you can access the latter via text preceded by this symbol: <dlgprt></dlgprt><br>
 To see every single lore card in existence, click “Search” with an empty tag selection!<br>
 </p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag!'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
@@ -374,7 +378,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Orbit Radius</th><td>~ 410 – 657 km<br>Between 500 and 1000 km <smol>(Nomai estimation)</smol></td></tr>
 </table>
 <p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km (while comparing with the orbit radius of the Hourglass Twins).</p>
-<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>. <a href="javascript:getcard('data_QM')">See&nbsp;data about the Quantum Moon?</a></p>
+<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>.<br><dlgprt></dlgprt> <a href="javascript:getcard('data_QM')">See data about the Quantum Moon?</a></p>
 <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
 </details><t>#time loop event #in-game observations #eye of the universe #general data</t></it>
 <!-- @EFOLD -->
@@ -385,7 +389,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><th>The Protagonist</th></tr><tr><td><dlgprt></dlgprt> I can’t believe you destroyed your ship.</td></tr>
 <tr><th>Feldspar<span>Dialogue Branch: Feldspar6c</span></th></tr><tr><td>Easy for you to say. Your ship probably has all kinds of fancy modifications and upgrades, like “working retro boosters” and “non-flammable construction materials.”</td></tr></table>
 </details><t>#feldspar #feldspar’s ship #outer wilds ventures</t></it>
-<!-- HAS ONGOING DATAMINING (Feldspar) -->
+<!-- HAS_ONGOING_DATAMINING (Feldspar) -->
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthians have teeth -->
 <it class=misc><details><summary>Hearthians have teeth and a red tongue.</summary>
@@ -393,41 +397,62 @@ To see every single lore card in existence, click “Search” with an empty tag
     <p align=center><img src=https://payload.cargocollective.com/1/8/263533/13488403/ian-jacobson-ian-jacobson-achievements_1200.jpg><br><img src=../img/Steam_Emoticon_Big_Hearthian_Dead.png><img src=../img/Steam_Emoticon_Big_Hearthian_Shocked.png><img src=../img/Steam_Emoticon_Big_Hearthian_Sleep.png><img src=../img/Steam_Emoticon_Big_Hearthian_Smile.png><img src=../img/Steam_Emoticon_Big_Hearthian_Wink.png></p>
     <h2>Talking to Self:</h2><table><tr><th>Self<span>Dialogue Branch: Wrong3C</span></th></tr><tr><td>Besides, an extra version of us is definitely better than if we’d created an extra anglerfish or something.</td></tr><tr><th>The Protagonist</th></tr><tr><td><dlgprt></dlgprt> Agreed. We’re charming and have fewer teeth.</td></tr></table>
     <p>This quote does not quite indicate for certain whether Hearthians have teeth, just that they have less than the anglerfish do (with the number of teeth thus including the possibility for 0).</p>
-    <p>Moreover, considering the sarcasm, this may not even be biologically accurate to begin with: anglerfish only seem to have 21 teeth, while an adult human has 32, or 28 without the wisdom teeth. If Hearthians are indeed meant to have a dentition similar to humans, then the Protagonist may be thinking less in terms of actual number, and more in terms of size and sharpness.</p>
+    <p>Moreover, considering the sarcasm, this may not even be biologically accurate to begin with: anglerfish only seem to have 25 teeth, while an adult human has 32, or 28 without the wisdom teeth. If Hearthians are indeed meant to have a dentition similar to humans, then the Protagonist may be thinking less in terms of actual number, and more in terms of size and sharpness.</p>
 </details><t>#hearthians #biology #alternate sources</t></it>
-<!-- HAS ONGOING DATAMINING (ParadoxSelf) -->
+<!-- HAS_ONGOING_DATAMINING (ParadoxSelf) -->
 <!-- @EFOLD -->
 <!-- @SFOLD RTCN The Hourglass Twins’ sand column forms every 100 years. -->
 <it class=ret><details><summary>The Hourglass Twins’ sand column forms every 100 years.</summary>
-    <h2>Ship Log (2013 Alpha)</h2>
-    <table>
-        <tr><th style="font-family:Space Mono;border-bottom:none">File: computerfile.txt</th></tr>
-        <tr><td class=shiplog>Every 100 years, sand spontaneously flows from one planet to the other.</td></tr>
-        <tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/HT_Description.txt</th></tr>
-        <tr><td class=shiplog>Spontaneous sand transfer occurs once every 100 years. Geological mechanism unknown.</td></tr>
-    </table>
-    <p>However, the final release of the game arguably disproves this:</p>
-    <h2 class=tl>Radio Tower Photos</h2>
-    <p>Unless the mystery of the “anomaly” which the Deep Space Satellite detected at an angle of 40° has been unsolved for a hundred years, the fact that its pictures show the twins in the midst of a sand exchange demonstrates that the process happens a lot more frequently. The sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p>
-    <a class=reg href="javascript:getcard('chertsawAT')"><h2>» Chert has seen sandless Ash Twin «</h2></a>
-    <p>Again, unless Chert is more than a hundred years old and some, this proves that the sand columns forms more frequently than it did in the Alpha.</p>
+<h2>Ship Log: Hourglass Twins (2013 Alpha)</h2><table>
+<tr><th style="font-family:Space Mono;border-bottom:none">File: computerfile.txt</th></tr>
+<tr><td class=shiplog>Every 100 years, sand spontaneously flows from one planet to the other.</td></tr>
+<tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/HT_Description.txt</th></tr>
+<tr><td class=shiplog>Spontaneous sand transfer occurs once every 100 years. Geological mechanism unknown.</td></tr>
+</table><p>However, the final release of the game arguably disproves this:</p><h2 class=tl>Radio Tower Photos</h2>
+<p>Unless the mystery of the “anomaly” which the Deep Space Satellite detected at an angle of 40° has been unsolved for a hundred years, the fact that its pictures show the twins in the midst of a sand exchange demonstrates that the process happens a lot more frequently. The sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p>
+<a class=reg href="javascript:getcard('chertsawAT')"><h2><dlgprt></dlgprt> Chert has seen sandless Ash Twin</h2></a>
+<p>Again, unless Chert is more than a hundred years old and some, this proves that the sand columns forms more frequently than it did in the Alpha.</p>
 </details><t>#ash twin #ember twin #hourglass twins sand column #retconned #chert #deep space satellite #radio tower</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Chert knows what Ash Twin looks like once drained of its sand. -->
 <it id=chertsawAT><details><summary>Chert has seen Ash Twin without its sand before.</summary>
-<h2>Talking to Chert:</h2>
-<style></style>
-<table>
-    <tr><th>The Protagonist</th></tr>
-    <tr><td><dlgprt></dlgprt> How dangerous is that big column of falling sand?</td></tr>
-    <tr><th>Chert<span>Dialogue Branch: Chert3</span></th></tr>
-    <tr><td>On a scale of one to dead, I’d give it a seven or eight. Awfully pretty, though.</td></tr>
-    <tr><td>Right now sand is flowing from Ash Twin to Ember Twin, but did you know the process eventually reverses? We’re not completely sure why the sand flows back and forth between the Twins, but it seems to be a natural phenomena.</td></tr>
-    <tr><td>Oh, if you’d like to see something interesting, check out the other Twin once a little more of its sand drains off. I promise you won’t be disappointed.</td></tr>
-</table>
-<p>This proves that Chert knows what sandless Ash Twin looks like, and may even imply that they have visited it in the past (or at least sent their scout there to study it).</p>
+<h2>Talking to Chert:</h2><table>
+<tr><th>The Protagonist</th></tr>
+<tr><td><dlgprt></dlgprt> How dangerous is that big column of falling sand?</td></tr>
+<tr><th>Chert<span>Dialogue Branch: Chert3</span></th></tr>
+<tr><td>On a scale of one to dead, I’d give it a seven or eight. Awfully pretty, though.</td></tr>
+<tr><td>Right now sand is flowing from Ash Twin to Ember Twin, but did you know the process eventually reverses? We’re not completely sure why the sand flows back and forth between the Twins, but it seems to be a natural phenomena.</td></tr>
+<tr><td>Oh, if you’d like to see something interesting, check out the other Twin once a little more of its sand drains off. I promise you won’t be disappointed.</td></tr>
+</table><p>This proves that Chert knows what sandless Ash Twin looks like, and may even imply that they have visited it in the past (or at least sent their scout there to study it).</p>
 </details><t>#chert #ash twin #hourglass twins sand column</t></it>
-<!-- HAS ONGOING DATAMINING (Chert) -->
+<!-- HAS_ONGOING_DATAMINING (Chert) -->
+<!-- @EFOLD -->
+<!-- @SFOLD DUBS Feldspar’s ship is named Trailblazer 1. -->
+<it class=dub><details><summary>Feldspar’s ship is named Trailblazer 1.</summary>
+<h2>Ship Log: Dark Bramble (2013 & 2015 Alpha)</h2>
+<table><tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/DB_Description.txt</th></tr>
+<tr><td class=shiplog><ul><li>Source of last known transmission from Trailblazer&nbsp;1</li></ul></td></tr></table>
+<p>The fact that this is the description for Dark Bramble shows that “Trailblazer&nbsp;1” refers to Feldspar’s ship.</p>
+</details><t>#unused/concept art #feldspar #feldspar’s ship #outer wilds ventures</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD RTCN Dark Bramble is the source of the last known transmission from Feldspar’s ship. -->
+<it class=ret><details><summary>Dark Bramble is the source of the last known transmission from Feldspar’s ship.</summary>
+<h2>Ship Log: Dark Bramble (2013 & 2015 Alpha)</h2><table>
+<tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/DB_Description.txt</th></tr>
+<tr><td class=shiplog><ul><li>Source of last known transmission from Trailblazer&nbsp;1</li><li>Least explored of all planets (see above)</li></ul></td></tr>
+</table><a href="javascript:getcard('hornsthinksnobodyexploredDB')"><h2 class=reg><dlgprt></dlgprt> Hornfels doesn’t know Feldspar is there</h2></a>
+<p>Considering the fact that Hornfels (in charge of <i>ground control</i>) not only has no idea that Feldspar is in Dark Bramble, but also explicitly believes that nobody explored the planet at all, it seems reasonable to conclude that this “last known transmission” never occurred in the final release of the game.</p>
+</details><t>#retconned #feldspar #feldspar’s ship #dark bramble #hornfels #outer wilds ventures</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD Hornfels believes that nobody ever explored Dark Bramble before, and is unaware that Feldspar is there. -->
+<it id=hornsthinksnobodyexploredDB><details><summary>Hornfels believes that nobody ever explored Dark Bramble before, and is unaware that Feldspar is there.</summary>
+<h2>Talking to Hornfels:<span>File: Hornfels.txt</span></h2><table>
+<tr><th>Hornfels<span>Dialogue Branch: Curator4</span></th></tr>
+<tr><td>Should you choose to go to Dark Bramble, be <i>very</i> careful. No one’s explored there before, either, for what you’ll find are excellent reasons.</td></tr>
+<tr><th>Hornfels<span>Dialogue Branch: CuratorFeldsparFound</span></th></tr><tr><td>You found Feldspar?! And they’re in Dark Bramble?! Stars above, this is wonderful news! Thank you! Thank you for finding them!</td></tr>
+</table><p>Not only does Hornfels not know that Feldspar is in Dark Bramble, they also believe that nobody ever entered it.</p>
+</details><t>#hornfels #feldspar #dark bramble #outer wilds ventures</t></it>
+<!-- HAS_ONGOING_DATAMINING (Hornfels) -->
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Hearthian calendar -->
 <it class=fkno><details><summary>FKNO: Hearthian calendar</summary>
@@ -486,7 +511,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#fkno headcanons #timber hearth #ghost matter #hearthians #timber hearth geysers</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO New geyser + ghost matter accident from ~30 years ago -->
-<it class=fkno><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
+<it class=fkno id=fkno30yrsincident><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
 <p>This event is based on Arkose’s reports about the patch of ghost matter they play around, which used to be bigger when Gossan was a hatchling.</p>
 <p>The proximity of this patch of ghost matter to the village is due to the fact that it appeared more recently than the village itself, along with the small geyser erupting nearby.</p>
 <hr><p>The geyser causing the newest patch of ghost matter to appear erupted very close to what was at the time the hatchlings’ cabin, among many others. After the incident, the hatchlings were relocated to live close to the waterfall (it is the cabin whose porch Tephra and Galena are seen sitting on in-game), with the caretakers’ cabin being the one next to it and closest to the water.</p>
@@ -498,8 +523,9 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Tektite lost their foot when they saved Gabbro during the ghost matter incident from ~30 years ago. -->
 <it class=fkno><details><summary>Tektite lost their foot when they saved a five-year-old Gabbro during the ghost matter incident from ~30 years ago.</summary>
-<p>While Chert and Porphy were old enough to run to safety on their own, Gabbro was still young and standing indoors while the geyser erupted and the ghost matter started expanding. Tektite was barely able to carry them out while Gabbro was already starting to inhale some diluted fumes, and Tektite lost their foot in the process.</p><hr>
-<p>Gabbro’s remembrance of the event contributes to their overall attitude once adult, as they feel like they already defied death once; it is part of the origin behind their own daredevil way of consuming or inhaling various substances out of curiosity.</p><p>The incident and its devastating effects on the dwindling Hearthian population is also the main reason behind Gabbro’s nihilistic behavior, as they believe that even prior to the supernova, they were already doomed.</p>
+<p>While Chert and Porphy were old enough to run to safety on their own, Gabbro was still young and standing indoors while the geyser erupted and the ghost matter started expanding. Tektite was barely able to carry them out while Gabbro was already starting to inhale some diluted fumes, and Tektite lost their foot in the process.</p>
+<p><dlgprt></dlgprt> <a href="javascript:getcard('fkno30yrsincident')">More details about the event in general can be found here.</a></p>
+<hr><p>Gabbro’s remembrance of the event contributes to their overall attitude once adult, as they feel like they already defied death once; it is part of the origin behind their own daredevil way of consuming or inhaling various substances out of curiosity.</p><p>The incident and its devastating effects on the dwindling Hearthian population is also the main reason behind Gabbro’s nihilistic behavior, as they believe that even prior to the supernova, they were already doomed.</p>
 </details><t>#fkno headcanons #tektite #gabbro #ghost matter #timeline</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Firn proved that Gabbro’s theory about quantum objects was correct. -->
@@ -545,22 +571,22 @@ To see every single lore card in existence, click “Search” with an empty tag
 
 <!-- @SFOLD    @WIP@    FKNO Loop 2 Timeline -->
 <it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
-    <table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
-        <tr style=background:rgba(var(--midd),.5)><td>06d03s 45:21</td><td>00:01</td><td>Hal and Gabbro freeze in place as the ATP sends their memories back.</td></tr>
-        <tr style=background:rgba(var(--midd),.5)><td>06d03s 47:02</td><td>00:13</td><td>The OPC fires, Hal and Gabbro “wake up.”</td></tr>
-        <tr><td>06d03s 52:17</td><td>00:49</td><td>Hal & Gossan go to the observatory.</td></tr>
-        <tr><td>06d03s 55:04</td><td>01:09</td><td>Hal & Gossan arrive at the statue room.</td></tr>
-        <tr><td>06d03s 56:51</td><td>01:21</td><td>Gabbro walks down to the beach and notices that their hammock is gone.</td></tr>
-        <tr><td>06d04s 00:19</td><td>01:45</td><td>Marl and Rutile arrive.</td></tr>
-        <tr><td>06d04s 00:42</td><td>01:48</td><td>Gabbro’s hammock is set up.</td></tr>
-        <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
-        <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
-        <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
-        <!-- <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr> -->
-        <!-- <tr><td></td><td>:</td><td></td></tr> -->
-        <!-- “They haven’t <i>yet</i>,” Hornfels corrected with a roll of all four eyes.       ==>     +4min from last time stamp -->
-        <!-- <tr><td></td><td>:</td><td></td></tr> -->
-    </table>
+<table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+    <tr style=background:rgba(var(--midd),.5)><td>06d03s 45:21</td><td>00:01</td><td>Hal and Gabbro freeze in place as the ATP sends their memories back.</td></tr>
+    <tr style=background:rgba(var(--midd),.5)><td>06d03s 47:02</td><td>00:13</td><td>The OPC fires, Hal and Gabbro “wake up.”</td></tr>
+    <tr><td>06d03s 52:17</td><td>00:49</td><td>Hal & Gossan go to the observatory.</td></tr>
+    <tr><td>06d03s 55:04</td><td>01:09</td><td>Hal & Gossan arrive at the statue room.</td></tr>
+    <tr><td>06d03s 56:51</td><td>01:21</td><td>Gabbro walks down to the beach and notices that their hammock is gone.</td></tr>
+    <tr><td>06d04s 00:19</td><td>01:45</td><td>Marl and Rutile arrive.</td></tr>
+    <tr><td>06d04s 00:42</td><td>01:48</td><td>Gabbro’s hammock is set up.</td></tr>
+    <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
+    <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
+    <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
+    <!-- <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr> -->
+    <!-- <tr><td></td><td>:</td><td></td></tr> -->
+    <!-- “They haven’t <i>yet</i>,” Hornfels corrected with a roll of all four eyes.       ==>     +4min from last time stamp -->
+    <!-- <tr><td></td><td>:</td><td></td></tr> -->
+</table>
 </details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
 
@@ -867,7 +893,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 
 <it><details><summary>Solanum, Laevi, Ilex, Lami and Taget would play near the anglerfish fossil on Ember Twin as children.</summary>
 <h2>SOURCE<span>File: CT_City_KidDirectionToFossil_1</span></h2>
-<table>
+<table class=wip>
 <tr><th>Laevi</th></tr>
 <tr><td>We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:</td></tr>
 <tr><td>You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.</td></tr>
@@ -881,7 +907,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 <tr><td>Who cares? Ilex is still tallest.</td></tr>
 </table>
 <h2>SOURCE<span>File: CT_City_KidDirectionToFossil_2</span></h2>
-<table>
+<table class=wip>
 <tr><th>Taget</th></tr>
 <tr><td>Are we playing the fossil fish game tonight?</td></tr>
 <tr><th>Solanum</th></tr>
@@ -912,7 +938,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <table><tr><th>Hornfels<span>Dialogue Branch: CuratorEyesOpen</span></th></tr><tr><td>…Even if I <i>have</i> been poring over it every night for weeks.</td></tr></table>
 <p>This does not indicate how long a night or week is.</p>
 </details><t>#hearthians #hearthian culture</t></it>
-<!-- HAS ONGOING DATAMINING (Hornfels) -->
+<!-- HAS_ONGOING_DATAMINING (Hornfels) -->
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Ash Twin -->
 <it class=tl style=position:relative><img src=../img/astr_ashtwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Ash Twin</b></summary>
