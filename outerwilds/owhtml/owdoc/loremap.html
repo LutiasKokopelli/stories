@@ -49,17 +49,18 @@ p.infob{padding:7px;margin:0}
 @media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
 @media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}#filterlist{column-width:var(--colwid)}}
 it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
-.tl,.tl *{--emph:var(--orng);--fore:var(--goldd);--midd:128,84,52}
+.fkno,.fkno *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled)}
+.ret,.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd)}
 .misc,.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod)}
 .dub,.dub *{--emph:var(--blue);--fore:150,152,145;--midd:var(--greyd)}
-.ret,.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd)}
-.fkno,.fkno *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled)}
+.tl,.tl *{--emph:var(--orng);--fore:var(--goldd);--midd:128,84,52}
+.reg,.reg *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
 it{break-inside:avoid;display:block;width:100%;height:fit-content;border-radius:17px;padding:10px;text-align:left;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.1);margin-bottom:17px}
 it *{margin-top:0}
 it *:not(rt,table,li,img,span,p,t)+*:not(rt,table,li,img,span,p,t){margin-top:12px}
 details > *:last-child{margin-bottom:0}
 it h1{font-size:1.5em;margin-bottom:17px;border-bottom:3px solid rgb(var(--emph));color:rgb(var(--white))}
-it details > h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
+it details>h2,it details>a>h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
 t{font-family:Calibri;font-size:.7em;display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 12px 12px;white-space:nowrap;overflow:auto;scrollbar-width:none;border-top:3px solid rgb(var(--midd));background:rgba(var(--midd),.5);color:rgba(var(--white),.7)}
 t:after{content:'';width:7px;display:inline-block}
 th,td{vertical-align:middle;font-size:.85em}
@@ -69,10 +70,9 @@ th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd))
 a{color:rgb(var(--redd))}
 a:hover{color:rgb(var(--redl));border-bottom:2px dashed rgb(var(--greend))}
 a h2{color:rgb(var(--redl))}
-a:hover h2{color:white;background:rgb(var(--redl))}
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
 summary span{font-size:.7em}
-details th span:not([class]){position:absolute;width:100%;text-align:right;top:7px;right:5px;font-weight:800}
+details th span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
 .source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
 p+.source{margin-top:-12px}
 .source a{color:rgb(var(--white))}
@@ -101,7 +101,10 @@ td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!importan
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 </style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
 <h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order for activating tags:</h2>
-<p align=center><span class=spanintro>neutral</span> &rarr; <span class='spanintro include'>include in the search</span> &rarr; <span class='spanintro exclude'>exclude from the search</span> &rarr; <span class=spanintro>neutral</span></p><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
+<p align=center><span class=spanintro>neutral</span> &rarr; <span class='spanintro include'>include in the search</span> &rarr; <span class='spanintro exclude'>exclude from the search</span> &rarr; <span class=spanintro>neutral</span></p><p style='text-align:center;padding:0 5%;font-size:1em;margin:0'>
+Click on “Search!” to find all lore cards which contain <b>all</b> green tags and <b>none</b> of the red tags.<br>
+Click on the bottom left button for an explanation of lore card colors (eg. red = retconned).<br>
+</p><h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>A few more fun tips:</h2><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
 For quicker access, you can also click on any tag already present in the search bar, red or green.<br>
 If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span><br>
 To see every single lore card in existence, click “Search” with an empty tag selection!<br>
@@ -180,6 +183,12 @@ To see every single lore card in existence, click “Search” with an empty tag
 </p><p><img src=../img/astr_embertwin.png>
     <input value='#sunless city'type=button onclick=AddTagSelector(this.value)>
     <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this.value)>
+</p><p><img src=../img/astr_timberhearth.png>
+    <input value='#the village'type=button onclick=AddTagSelector(this.value)>
+    <input value='#radio tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#youngbark crater'type=button onclick=AddTagSelector(this.value)>
+    <input value='#quantum grove'type=button onclick=AddTagSelector(this.value)>
+    <input value='#geyser mountains'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_brittlehollow.png>
     <input value='#hanging city'type=button onclick=AddTagSelector(this.value)>
     <input value='#tower of quantum knowledge'type=button onclick=AddTagSelector(this.value)>
@@ -208,6 +217,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#ghost matter' type=button onclick=AddTagSelector(this.value)>
     <input value='#gravity crystal'type=button onclick=AddTagSelector(this.value)>
     <input value='#timber hearth geysers'type=button onclick=AddTagSelector(this.value)>
+    <input value='#hourglass twins sand column'type=button onclick=AddTagSelector(this.value)>
 </div>
 <div class=tagcategory><h2>Objects of interest</h2>
     <p style=padding-left:0;text-indent:0><input value='#hearthian technology'style='outline:3px solid rgb(var(--indigol))'type=button onclick=AddTagSelector(this.value)>
@@ -385,6 +395,37 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#hearthians #biology #alternate sources</t></it>
 <!-- HAS ONGOING DATAMINING (ParadoxSelf) -->
 <!-- @EFOLD -->
+<!-- @SFOLD The Hourglass Twins’ sand column forms every 100 years. -->
+<it class=ret><details><summary>The Hourglass Twins’ sand column forms every 100 years.</summary>
+    <h2>Ship Log (2013 Alpha)</h2>
+    <table>
+        <tr><th style="font-family:Space Mono;border-bottom:none">File: computerfile.txt</th></tr>
+        <tr><td class=shiplog>Every 100 years, sand spontaneously flows from one planet to the other.</td></tr>
+        <tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/HT_Description.txt</th></tr>
+        <tr><td class=shiplog>Spontaneous sand transfer occurs once every 100 years. Geological mechanism unknown.</td></tr>
+    </table>
+    <p>However, the final release of the game arguably disproves this:</p>
+    <h2 class=tl>Radio Tower Photos</h2>
+    <p>Unless the Deep Space Satellite and the detection of its “anomaly” when the satellite reaches 40° has been unsolved for a hundred years, the fact that its pictures show the twins in the midst of a sand exchange demonstrates that the process happens a lot more frequently. The sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p>
+    <a class=reg href="javascript:getcard('chertsawAT')"><h2>» Chert has seen sandless Ash Twin «</h2></a>
+    <p>Again, unless Chert is more than a hundred years old and some, this proves that the sand columns forms more frequently than it did in the Alpha.</p>
+</details><t>#ash twin #ember twin #hourglass twins sand column #retconned #chert #deep space satellite #radio tower</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD Chert knows what Ash Twin looks like once drained of its sand. -->
+<it id=chertsawAT><details><summary>Chert has seen Ash Twin without its sand before.</summary>
+<h2>Talking to Chert:</h2>
+<table>
+    <tr><th>The Protagonist</th></tr>
+    <tr><td><orng>🠶</orng> How dangerous is that big column of falling sand?</td></tr>
+    <tr><th>Chert<span>Dialogue Branch: Chert3</span></th></tr>
+    <tr><td>On a scale of one to dead, I’d give it a seven or eight. Awfully pretty, though.</td></tr>
+    <tr><td>Right now sand is flowing from Ash Twin to Ember Twin, but did you know the process eventually reverses? We’re not completely sure why the sand flows back and forth between the Twins, but it seems to be a natural phenomena.</td></tr>
+    <tr><td>Oh, if you’d like to see something interesting, check out the other Twin once a little more of its sand drains off. I promise you won’t be disappointed.</td></tr>
+</table>
+<p>This proves that Chert knows what sandless Ash Twin looks like, and may even imply that they have visited it in the past (or at least sent their scout there to study it).</p>
+</details><t>#chert #ash twin #hourglass twins sand column</t></it>
+<!-- HAS ONGOING DATAMINING (Chert) -->
+<!-- @EFOLD -->
 <!-- @SFOLD FKNO Hearthian calendar -->
 <it class=fkno><details><summary>FKNO: Hearthian calendar</summary>
     <div class=shiplog>
@@ -459,7 +500,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#fkno headcanons #tektite #gabbro #ghost matter #timeline</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Firn proved that Gabbro’s theory about quantum objects was correct. -->
-<it class=fkno><details><summary>About five years ago, Firn came up with an experiment which proved Gabbro’s theory about quantum objects.</summary><p>I’d like to write a small one-shot or comic about it at some point, so I won’t give too many details… But this ties in with exactly <i>how</i> Gabbro came to conclude that a quantum object “exists in all possible states until it is observed” in the first place. To give a hint: Gabbro often hangs out in the Quantum Grove. Sometimes, right after a rainy day.</p></details><t>#fkno headcanons #protagonist #hal #gabbro #hornfels #quantum mechanics</t></it>
+<it class=fkno><details><summary>About five years ago, Firn came up with an experiment which proved Gabbro’s theory about quantum objects.</summary><p>I’d like to write a small one-shot or comic about it at some point, so I won’t give too many details… But this ties in with exactly <i>how</i> Gabbro came to conclude that a quantum object “exists in all possible states until it is observed” in the first place. To give a hint: Gabbro often hangs out in the Quantum Grove. Sometimes, right after a rainy day.</p></details><t>#fkno headcanons #protagonist #hal #gabbro #hornfels #quantum mechanics #quantum grove</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon. -->
 <it class=fkno><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
@@ -498,6 +539,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 </table><p>Firn’s ship log interlude (<a href=https://archiveofourown.org/works/55228189/chapters/142276075>AO3</a>) gives more details regarding the timing of Firn’s actions after their departure from Timber Hearth.</p></details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
 <!-- @EFOLD -->
+
 <!-- @SFOLD    @WIP@    FKNO Loop 2 Timeline -->
 <it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
     <table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
@@ -517,6 +559,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     </table>
 </details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
+
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
 <!-- By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
 
