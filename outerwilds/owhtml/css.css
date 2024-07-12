@@ -326,7 +326,7 @@ h2+hr{margin-top:5%}
 
 @font-face{font-family:"AxisStd";src:url("font/Type Project - AxisStd-Medium_Dynamic.otf")format("opentype");font-weight:normal;font-style:normal}
 
-body{background:no-repeat url(img/2462x1386.jpg)bottom fixed;color:white;font-family:"BrandonGrotesque";text-align:justify}
+body{background:no-repeat url(img/2462x1386.jpg)bottom fixed;background-size:cover;color:white;font-family:"BrandonGrotesque";text-align:justify}
 *{--orng:255,125,36;--blue:88,120,182;--black:2,16,27;--white:207,207,209;--chpborder:80px;--lblue:180,224,236;--orng2:252,173,30;
 
 --greend:56,138,93;
@@ -519,6 +519,11 @@ b{font-weight:500}
 .shiplog .hudgrey ul{border:2px solid grey;box-shadow:-1px 1px 1px grey}
 .shiplog .hudgrey li:before{color:grey}
 .shiplog .grey{color:grey}
+
+
+
+
+
 
 .extlink{display:block;width:100%;margin:7px auto;padding:12px;border:2px solid rgb(var(--greend));background:rgba(var(--black),.7);text-align:center;font-weight:800}
 .extlink:hover{filter:brightness(120%);background:rgb(var(--greend));color:rgb(var(--black))!important;border-radius:50px}
