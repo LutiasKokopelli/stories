@@ -73,8 +73,9 @@ a:hover h2{color:white;background:rgb(var(--redl))}
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
 summary span{font-size:.7em}
 details th span:not([class]){position:absolute;width:100%;text-align:right;top:7px;right:5px;font-weight:800}
-p.source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
-p.source a{color:rgb(var(--white))}
+.source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
+p+.source{margin-top:-12px}
+.source a{color:rgb(var(--white))}
 summary{width:calc(100% + 20px);margin:-10px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:10px 10px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 details[open] summary{margin-bottom:0}
 details[open]+t{margin-top:12px}
@@ -91,6 +92,7 @@ table+p,summary+p{margin-top:12px}
 .lorecard{border:3px solid rgb(var(--fore));background:rgba(var(--midd),.2);padding:7px;border-radius:7px;display:inline-block;margin:7px}
 .lorecard h3{color:rgb(var(--midd));margin:-7px -7px 17px -7px;border-bottom:2px solid rgb(var(--fore));padding-left:10px;background:rgba(var(--fore),.7);padding-bottom:3px}
 .lorecard p{margin:0}
+details li{font-size:.85em;list-style:square}
 b{font-weight:800}
 smol,.smol{font-size:.7em}
 td:has(.nomai){padding:0}
@@ -223,15 +225,15 @@ To see every single lore card in existence, click “Search” with an empty tag
 </p></div>
 <div class=tagcategory><h2>Lore Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
     <input value='#fkno headcanons'style='outline:3px solid rgb(var(--purpled))'type=button id=btn_fknoheadcanons class=exclude onclick=AddTagSelector(this.value)>
-    <input value='#in-game calculations'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)>
+    <input value='#in-game observations'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#alternate sources'style='outline:3px solid rgb(var(--indigod))'type=button onclick=AddTagSelector(this.value)>
     <input value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#retconned'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
-    <input value='#general data' type=button onclick=AddTagSelector(this.value) style=display:none>
-    <input value=#wip type=button class=exclude id=btn_wip onclick=AddTagSelector(this.value)>
+    <input value='#general data'type=button onclick=AddTagSelector(this.value) style=display:none>
+    <input value='#wip'type=button class=exclude id=btn_wip onclick=AddTagSelector(this.value)>
 </p></div>
 <!-- <input value=# type=button onclick=AddTagSelector(this.value)> -->
-</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags><input class=exclude id=tag_wip value=#wip type=button onclick=AddTagSelector(this.value)><input class=exclude id=tag_fknoheadcanons value='#fkno headcanons'type=button onclick=AddTagSelector(this.value)></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags><input class=exclude id=tag_wip value='#wip'type=button onclick=AddTagSelector(this.value)><input class=exclude id=tag_fknoheadcanons value='#fkno headcanons'type=button onclick=AddTagSelector(this.value)></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
@@ -256,7 +258,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro #time loop event</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons. -->
-<it class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This is a simple visual observation from looking at the architecture of both types of contraption.</p><p>Additionally, flying through one of the Orbital Probe Cannon’s broken parts will launch you at higher speed much like an intact gravity cannon would (<a href=https://www.reddit.com/r/outerwilds/s/ysomw2Qjp7>Reddit: Video example</a>).</p></details><t>#nomai technology #orbital probe cannon #gravity cannon #nomai shuttle</t></it>
+<it class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This is a simple visual observation from looking at the architecture of both types of contraption.</p><p>Additionally, flying through one of the Orbital Probe Cannon’s broken parts will launch you at higher speed much like an intact gravity cannon would (<a href=https://www.reddit.com/r/outerwilds/s/ysomw2Qjp7>Reddit: Video example</a>).</p></details><t>#nomai technology #orbital probe cannon #gravity cannon #nomai shuttle #in-game observations</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Deep Space Satellite Positions -->
 <it class=tl><details><summary>The Deep Space Satellite is orbiting at <b>26km</b> away from the sun, at a speed of <b>124m/s</b>. It reaches an angle of 40° <b>3min&nbsp;21s</b> after waking up.</summary>
@@ -285,7 +287,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 </table>
 <p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733 °/s</b>, or about <b>0.005 rad/s</b><!-- 0.2733 * π/180 = 0.004769985 -->, and that the initial angle at the start of the loop is <b>-15.086°</b>. It can be calculated that the satellite’s velocity is <b>124m/s</b><!-- 26000 * 0.2733 * π/180 = 124.01961 -->.</p>
 <img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x - 15.086&Tab;|&Tab;R² = 1</p>
-</details><t>#deep space satellite #time loop event #in-game calculations #the stranger</t></it>
+</details><t>#deep space satellite #time loop event #in-game observations #the stranger</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD TH day/night cycle -->
 <it class=tl><details><summary>A full day/night cycle on Timber Hearth lasts <b>6min&nbsp;56s</b>. The&nbsp;day lasts ~3min&nbsp;24s, the night ~3min&nbsp;31s.</summary>
@@ -301,17 +303,17 @@ To see every single lore card in existence, click “Search” with an empty tag
         <tr style=background:rgba(var(--midd),.5)><td>22:31</td><td><i>(Extrapolated: would have been sunrise)</i></td></tr>
     </table>
     <p>Though close to dawn, it is still nighttime in the entire village when the supernova occurs. Even from the observatory, the explosion cannot be noticed until just a few moments before death.</p><p><b>Of note:</b> When the sun stops collapsing and starts exploding <smol>(22:10)</smol>, the Attlerock is high up in the village’s sky (at least from the spawn point). From mostly invisible due to the lack of sunlight, it momentarily glows blue, before fading back into obscurity right after.</p>
-</details><t>#time loop event #in-game calculations #timber hearth</t></it>
+</details><t>#time loop event #in-game observations #timber hearth</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD The suit’s HUD can measure distances up to 100km. -->
 <it class=tl><details><summary>The suit’s <scaps>hud</scaps> can measure distances up to <b>100km</b>.</summary>
     <p>The suit’s <scaps>hud</scaps> will display the distance between the player and any marked location (including the scout or ship) up to a distance of <b>100km</b>. If a marked location is further away, then the <scaps>hud</scaps> will display <b class=scaps>“error”</b> instead of a number.</p>
-</details><t>#in-game calculations #protagonist’s ship</t></it>
+</details><t>#in-game observations #protagonist’s ship</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD No dozing off during End Times -->
-<it class=tl><details><summary>It is impossible to doze off while End Times is playing. You will automatically wake up <b>20min&nbsp;32s</b> after the start of the loop.</summary><p>This measure was obtained by opening the game on Switch, starting the timer at the same time as pressing “Wake Up,” pressing “Doze off” when the timer reached ten seconds, then writing down the last number seen before the Protagonist woke up automatically (20:22) and adding ten seconds to it.</p></details><t>#time loop event #in-game calculations</t></it>
+<it class=tl><details><summary>It is impossible to doze off while End Times is playing. You will automatically wake up <b>20min&nbsp;32s</b> after the start of the loop.</summary><p>This measure was obtained by opening the game on Switch, starting the timer at the same time as pressing “Wake Up,” pressing “Doze off” when the timer reached ten seconds, then writing down the last number seen before the Protagonist woke up automatically (20:22) and adding ten seconds to it.</p></details><t>#time loop event #in-game observations</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Sun Data -->
+<!-- @SFOLD Data: Sun -->
 <it class=tl style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -327,9 +329,9 @@ To see every single lore card in existence, click “Search” with an empty tag
         <tr><td>22:00</td><td>The sun starts collapsing on itself.</td></tr>
         <tr><td>22:10</td><td>The sun starts to explode.</td></tr>
     </table>
-</details><t>#time loop event #in-game calculations #sun #general data</t></it>
+</details><t>#time loop event #in-game observations #sun #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Sun Station Data -->
+<!-- @SFOLD Data: Sun Station -->
 <it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun Station</b></summary>
     <h2>Main Properties</h2>
     <p>The station is tidally locked and in synchronous rotation around the sun.</p>
@@ -350,9 +352,9 @@ To see every single lore card in existence, click “Search” with an empty tag
         <tr><td>11:20</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
         <tr><td>11:30</td><td>The Sun Station is destroyed</td></tr>
     </table>
-</details><t>#time loop event #in-game calculations #sun #general data</t></it>
+</details><t>#time loop event #in-game observations #sun #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Eye of the Universe Data -->
+<!-- @SFOLD Data: Eye of the Universe -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>General Data about the <b>Eye of the Universe</b></summary><h2>Main Properties</h2>
 <table style='margin:12px auto'>
     <tr><th style=width:20%>Radius</th><td>201 &plusmn; 10 m</td></tr>
@@ -360,9 +362,28 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Orbit Radius</th><td>~ 410 – 657 km<br>Between 500 and 1000 km <smol>(Nomai estimation)</smol></td></tr>
 </table>
 <p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km (while comparing with the orbit radius of the Hourglass Twins).</p>
-<p style=margin:0>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>. <a href="javascript:getcard('data_QM')">See&nbsp;data about the Quantum Moon?</a></p>
+<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>. <a href="javascript:getcard('data_QM')">See&nbsp;data about the Quantum Moon?</a></p>
 <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#time loop event #in-game calculations #eye of the universe #general data</t></it>
+</details><t>#time loop event #in-game observations #eye of the universe #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD Feldspar’s ship’s retro rockets are malfunctioning. It lacks downward thrusters. -->
+<it><details><summary>While Feldspar’s ship already possessed retro rockets, those are malfunctioning. Their ship lacks downward thrusters.</summary>
+<p>The in-game ship model shows that it lacks downward thrusters, but still has 5 directional boosters <span class=source>(Observation by @vskii)</span>.</p>
+<h2>Talking to Feldspar:</h2><table>
+<tr><th>The Protagonist</th></tr><tr><td><orng>🠶</orng> I can’t believe you destroyed your ship.</td></tr>
+<tr><th>Feldspar<span>Dialogue Branch: Feldspar6c</span></th></tr><tr><td>Easy for you to say. Your ship probably has all kinds of fancy modifications and upgrades, like “working retro boosters” and “non-flammable construction materials.”</td></tr></table>
+</details><t>#feldspar #feldspar’s ship #outer wilds ventures</t></it>
+<!-- HAS ONGOING DATAMINING (Feldspar) -->
+<!-- @EFOLD -->
+<!-- @SFOLD Hearthians have teeth -->
+<it class=misc><details><summary>Hearthians have teeth and a red tongue.</summary>
+    <p>This can be demonstrated in some of the artworks for the achievements or in the Steam emoticons:</p>
+    <p align=center><img src=https://payload.cargocollective.com/1/8/263533/13488403/ian-jacobson-ian-jacobson-achievements_1200.jpg><br><img src=../img/Steam_Emoticon_Big_Hearthian_Dead.png><img src=../img/Steam_Emoticon_Big_Hearthian_Shocked.png><img src=../img/Steam_Emoticon_Big_Hearthian_Sleep.png><img src=../img/Steam_Emoticon_Big_Hearthian_Smile.png><img src=../img/Steam_Emoticon_Big_Hearthian_Wink.png></p>
+    <h2>Talking to Self:</h2><table><tr><th>Self<span>Dialogue Branch: Wrong3C</span></th></tr><tr><td>Besides, an extra version of us is definitely better than if we’d created an extra anglerfish or something.</td></tr><tr><th>The Protagonist</th></tr><tr><td><orng>🠶</orng> Agreed. We’re charming and have fewer teeth.</td></tr></table>
+    <p>This quote does not quite indicate for certain whether Hearthians have teeth, just that they have less than the anglerfish do (with the number of teeth thus including the possibility for 0).</p>
+    <p>Moreover, considering the sarcasm, this may not even be biologically accurate to begin with: anglerfish only seem to have 24 teeth, while an adult human has 32, or 28 without the wisdom teeth. If Hearthians are indeed meant to have a dentition similar to humans, then the Protagonist may be thinking less in terms of actual number, and more in terms of size and sharpness.</p>
+</details><t>#hearthians #biology #alternate sources</t></it>
+<!-- HAS ONGOING DATAMINING (ParadoxSelf) -->
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Hearthian calendar -->
 <it class=fkno><details><summary>FKNO: Hearthian calendar</summary>
@@ -393,6 +414,23 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @SFOLD FKNO Hearthians age ranges at the start of the time loop -->
 <it class=fkno><details><summary>FKNO Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#fkno headcanons #hearthians #protagonist #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data</t></it>
 <!-- @EFOLD -->
+<!-- @SFOLD FKNO Hearthian reproduction system -->
+<it class=fkno><details><summary>Hearthians’ reproduction system is weird and alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
+<p><i>(Look I know how this sounds without context but please hear me out)</i></p>
+<p>Long story short: Hearthians have no clue what a <i>sexual</i> relationship is (though they do know romance), and have no clear concept of a “parent” in the biological sense or even of genealogy as a whole, because what reproduction entails is just “go to The Pond&trade; instead of the bathroom once a year” and a few months later they just see eggs floating in the water and some Hearthians come with their nets to pick them up. You may think of coral reproduction as an example.</p>
+<hr><p>For the quick rundown into the microscopic scale:</p><ul>
+<li>Hearthian eggs can have <i>way</i> more than only two parents genetically speaking. While submerged in water, multiple proto-eggs will meet each other and occasionally merge, trade and mix around their genetic information, then discard the surplus until there is one complete genome. This genome is made out of random fractions coming from all proto-eggs involved.</li>
+<li>To prevent accidental inbreeding, proto-eggs use among other things an antigen/antibody recognition system which repels and stops proto-eggs from merging if they are too similar to each other. The more different the genomes, the higher the chance of the two proto-eggs to merge and lead to a viable egg.</li>
+<li>Since this merging process involves cutting multiple genomes in pieces of varying sizes and then stitching it all back together (it wouldn’t be <i>completely</i> random but rather done like “cut this/these gene(s) from these two genomes and then swap them around,” except done a thousand times with more than just two genomes), this leads to vastly increased odds for point mutations; mutations are also commonly caused by the sun’s radiation, as Timber Hearth’s atmosphere is much thinner than that of our real world Earth.</li>
+<li>Mutations are both a powerful tool to create genetic diversity and lead to a fast evolution of the species… <i>and</i> a very effective way to kill off millions of unborn proto-eggs at the earliest stages. <smol>(Don’t cry too hard, think rather of the dozens to hundreds of millions of spermatozoids who could have been you but were denied entry after only one made it)</smol></li>
+<li>As such, while hundreds of millions of proto-eggs are released each year in the same body of water, only a tiny fraction will ever make it to the stage of creating actual eggs with viable and truly novel genomes, which can start cellular mitosis and eventually grow big enough to become visible to the naked eye.</li></ul>
+<p>This results in an alien and rather awkward mixture between “Nobody knows who is related to who” and “But biology prevents inbreeding all by itself so it’s fine” sprinkled in with “Mutations happen so often anyway that it is a significant factor to the genetic diversity all on its own.” At least from what I was told (I asked a friend who asked geneticians and apparently the geneticians said that it <i>wouldn’t</i> instantly devolve into an inbreeding disaster), this could <i>theoretically</i> work on paper for a fictional genderless alien species.</p>
+<hr><p>Viable eggs look pretty much like real world frog eggs; their transparent, gelatinous shells can expand as the embryo grows and develops. Due to Hearthians’ humanoid anatomy and predator-less environment as they evolved into a civilized society, they evolved to no longer have a tadpole stage (as the connection between the skull and the spine would make them terrible swimmers if they lacked limbs to steady themselves). Therefore, hatchlings are fully formed humanoids upon hatching, and their mental capabilities are from the get-go slightly more advanced than those of a human newborn (the soft shell means that their brains have enough space to be able to develop fully before birth, unlike human babies).</p>
+<p>Once born, hatchlings still have a very thin skin which is sensitive to both humidity and general touch (pretty much like real world frogs, with the common “Don’t touch them, they breathe through their skin” saying). For the first few weeks, newly born hatchlings are cared for with constant warm baths (recreating the conditions from underground geothermal ponds) until their skins progressively thicken and adapt to being exposed to air with a scarce atmosphere, instead of water. Hearthians don’t grow scales, but they do have thicker skin than humans — to the extent that a Hearthian forgetting their spacesuit will die of oxygen deprivation faster than they will because of their body’s exposure to the void.</p>
+<hr><p>All that being said, though… With the current population at the time of present FKNO being 22 individuals, the genetic diversity has become too scarce for any egg to make it to the macroscopic scale, let alone to the point of hatching. Some are still hoping for a miracle, but more and more Hearthians are slowly coming to the realization that, even without yet another catastrophy such as a supernova or a Dark Bramble seed, their species is already doomed.</p>
+<p>…They have yet to tell the hatchlings, though. Most of them don’t even know how much bigger the Hearthian population used to be even just a few decades ago.</p>
+</details><t>#fkno headcanons #hearthians #biology #hearthian culture</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD FKNO Timber Hearth’s intense geological activity causes new geysers to erupt regularly. -->
 <it class=fkno><details><summary>Timber Hearth’s intense geological activity causes new geysers to erupt regularly.</summary><p>Timber Hearth has a very high geological activity, demonstrated by its geysers being powerful enough to send objects into orbit. As such, old geysers being slowly closed off and new geysers erupting instead are a common occurrence on a geological scale. Seismic activity is being monitored, but Hearthians were never capable of truly predicting when and where new geysers would erupt.</p></details><t>#fkno headcanons #timber hearth #timber hearth geysers</t></it>
 <!-- @EFOLD -->
@@ -419,6 +457,9 @@ To see every single lore card in existence, click “Search” with an empty tag
 <p>While Chert and Porphy were old enough to run to safety on their own, Gabbro was still young and standing indoors while the geyser erupted and the ghost matter started expanding. Tektite was barely able to carry them out while Gabbro was already starting to inhale some diluted fumes, and Tektite lost their foot in the process.</p><hr>
 <p>Gabbro’s remembrance of the event contributes to their overall attitude once adult, as they feel like they already defied death once; it is part of the origin behind their own daredevil way of consuming or inhaling various substances out of curiosity.</p><p>The incident and its devastating effects on the dwindling Hearthian population is also the main reason behind Gabbro’s nihilistic behavior, as they believe that even prior to the supernova, they were already doomed.</p>
 </details><t>#fkno headcanons #tektite #gabbro #ghost matter #timeline</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD FKNO Firn proved that Gabbro’s theory about quantum objects was correct. -->
+<it class=fkno><details><summary>About five years ago, Firn came up with an experiment which proved Gabbro’s theory about quantum objects.</summary><p>I’d like to write a small one-shot or comic about it at some point, so I won’t give too many details… But this ties in with exactly <i>how</i> Gabbro came to conclude that a quantum object “exists in all possible states until it is observed” in the first place. To give a hint: Gabbro often hangs out in the Quantum Grove. Sometimes, right after a rainy day.</p></details><t>#fkno headcanons #protagonist #hal #gabbro #hornfels #quantum mechanics</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD FKNO Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon. -->
 <it class=fkno><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
@@ -457,7 +498,6 @@ To see every single lore card in existence, click “Search” with an empty tag
 </table><p>Firn’s ship log interlude (<a href=https://archiveofourown.org/works/55228189/chapters/142276075>AO3</a>) gives more details regarding the timing of Firn’s actions after their departure from Timber Hearth.</p></details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
 <!-- @EFOLD -->
-
 <!-- @SFOLD    @WIP@    FKNO Loop 2 Timeline -->
 <it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
     <table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
@@ -477,9 +517,10 @@ To see every single lore card in existence, click “Search” with an empty tag
     </table>
 </details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
-
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
 <!-- By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
+
+The Japanese translation of “Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe X.” calls the deep space anomaly a <i>singularity</i> (特異点)
 
 FKNO Quantum Moon: The locations of the ground and obstacles on unobserved locations and versions of the Moon are constantly shifting, and purposefully avoiding the observer's body. This is helped in huge part by the observer taking note of the *absence* of such obstacles in their path in the one version of the Moon they are standing on. Basically all versions of the observer are walking and moving in sync on all six versions, and the main version observing one state of the moon causes the other versions of the moon to create the same type of landscape. Similarly, the shrine is constrained to be present in the same location on all versions of the Moon no matter what.
 
@@ -777,90 +818,56 @@ https://www.mobiusdigitalgames.com/news/general-synopsis
 https://www.mobiusdigitalgames.com/news/physical-backer-rewards
 https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 
+<it><details><summary>Solanum, Laevi, Ilex, Lami and Taget would play near the anglerfish fossil on Ember Twin as children.</summary>
+<h2>SOURCE<span>File: CT_City_KidDirectionToFossil_1</span></h2>
+<table>
+<tr><th>Laevi</th></tr>
+<tr><td>We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:</td></tr>
+<tr><td>You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.</td></tr>
+<tr><th>Taget</th></tr>
+<tr><td>I tried to get to the fossil fish through <orng>Stepping Stone Cave</orng>, but I couldn’t find the entrance. Where is it?</td></tr>
+<tr><th>Ilex</th></tr>
+<tr><td>Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlook</orng> and throw a light into his mouth, he’ll show you the way.</td></tr>
+<tr><th>Lami</th></tr>
+<tr><td>Taget can’t fit through the <orng>Anglerfish Overlook</orng> hole anymore because he grew bigger! He’s taller than Laevi now.</td></tr>
+<tr><th>Laevi</th></tr>
+<tr><td>Who cares? Ilex is still tallest.</td></tr>
+</table>
+<h2>SOURCE<span>File: CT_City_KidDirectionToFossil_2</span></h2>
+<table>
+<tr><th>Taget</th></tr>
+<tr><td>Are we playing the fossil fish game tonight?</td></tr>
+<tr><th>Solanum</th></tr>
+<tr><td>I fed the fossil fish a new lantern. If you go to <orng>Stepping Stone Cave</orng>, the entrance to the <orng>Fossil Fish Cave</orng> is easy to see now.</td></tr>
+<tr><th>Laevi</th></tr>
+<tr><td>Gratitude, Solanum! It’s good you’re small enough to climb in through the hole at the <orng>Anglerfish Overlook</orng>.</td></tr>
+<tr><th>Lami</th></tr>
+<tr><td>I’m still small enough!</td></tr>
+<tr><th>Laevi</th></tr>
+<tr><td>You won’t be for long. Mom and Dad are tall, so you and I will be tall, too.</td></tr>
+</table>
+</details><t>#nomai #solanum #laevi #ilex #lami #taget #anglerfish overlook</t></it>
+We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:
+You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.
+>> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R3”:
+Fossil Fish Cave
+Nomai children used to play a game in Fossil Fish Cave. There is a way to enter Fossil Fish Cave from Stepping Stone Cave.
+Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlook</orng> and throw a light into his mouth, he’ll show you the way.
+>> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R4”:
+Fossil Fish Cave
+The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fed a light first.
 -->
 <!-- @EFOLD -->
 <!-- @SFOLD   @ WIP @   Lore Cards With Missing Data — To Finish Later -->
-<!-- @SFOLD    @WIP@    FKNO Hearthians’ reproduction system is pretty alien and can be roughly summarized to “Eggs magically appear in a pond.” -->
-<it class=fkno><details><summary>Hearthians’ reproduction system is pretty alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
-    <p><i>(Look I know how this sounds without context but hear me out I know what I’m doing I just need more time to write it down in a comprehensible way JDKLSMGJDBSN)</i></p>
-    <p>Long story short: Hearthians have no clue what a <i>sexual</i> relationship is because what reproduction entails is just “go to The Pond&trade; instead of the bathroom once a year” and a few months later they just see frog eggs showing up in the water and some Hearthians come with their nets to pick them up. You may think of coral reproduction as a reference.</p>
-    <p>For the quick rundown into the microscopic scale: Hearthian eggs can have way more than only two parents genetically speaking, mutations are very common because of the sun and the thin atmosphere (which is both a powerful tool to create genetic diversity <i>and</i> a very effective way to kill off thousands of unborn eggs at the earliest stages), and millions of eggs are released each time but only a tiny fraction will ever make it to the stage of becoming visible to the naked eye thanks to a lot of factors, one of which being an antigen/antibody recognition system which acts as an efficient way to prevent accidental inbreeding.</p>
-    <hr><p>That being said, with the current population at the time of present FKNO being 22 individuals, the genetic diversity has become too scarce for any egg to make it to the macroscopic scale, let alone to the stage of hatching. Some are still hoping for a miracle, but more and more Hearthians are slowly coming to the realization that, even without a separate event such as a supernova, their species was already nearing its end.</p>
-    <p>…They have yet to tell the hatchlings, though. Most of them don’t even know how much bigger the Hearthian population used to be even just a few decades ago.</p>
-</details><t>#fkno headcanons #hearthians #biology</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    FKNO Firn proved that Gabbro’s theory about quantum objects was correct. -->
-<it class=fkno><details><summary>About five years ago, Firn came up with an experiment which proved Gabbro’s theory about quantum objects.</summary><p>I’d like to write a small one-shot or comic about it at some point, so I won’t give too many details… But this ties in with exactly <i>how</i> Gabbro came to conclude that a quantum object “exists in all possible states until it is observed” in the first place. To give a hint: Gabbro often hangs out in the Quantum Grove. Sometimes, right after a rainy day.</p></details><t>#fkno headcanons #protagonist #hal #gabbro #hornfels #quantum mechanics</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    While Feldspar’s ship already possessed retrorockets, those are malfunctioning. Their ship also lacks downward thrusters. -->
-<it><details><summary>While Feldspar’s ship already possessed retrorockets, those are malfunctioning. Their ship also lacks downward thrusters.</summary>
-    <h2>Talking to Feldspar<span>File: </span></h2><table>
-    <tr><th>Feldspar<span>File: </span></th>
-    </tr><tr><td>🇺🇸 ENGLISH</td>
-    </tr></table>
-    <!-- Feldspar's ship has no downward thrusters, but they still have 5 directional boosters. So landing would be harder and they would need to tilt to go down but they can still break properly to avoid obstactles in front of them -->
-</details><t>#wip #feldspar #feldspar’s ship</t></it>
-<!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY! -->
-<it><details><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary><h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
-    <table><tr><th>Hornfels</th></tr>
-        <tr><td>…Even if I <i>have</i> been pouring over it every night for weeks.</td></tr>
-    </table><p>This does not indicate how long a night or week is.</p>
-</details><t>#wip #hearthians #hearthian culture</t></it>
-<!-- JUST CHECK WHETHER ANY SHIP LOG FACT IS UNLOCKED BY THIS (probably not) + DELETE FROM TextAssets -->
+<it><details><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary>
+<h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
+<table><tr><th>Hornfels<span>Dialogue Branch: CuratorEyesOpen</span></th></tr><tr><td>…Even if I <i>have</i> been poring over it every night for weeks.</td></tr></table>
+<p>This does not indicate how long a night or week is.</p>
+</details><t>#hearthians #hearthian culture</t></it>
+<!-- HAS ONGOING DATAMINING (Hornfels) -->
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Solanum, Laevi, Ilex, Lami and Taget were playing together in the Sunless City -->
-<it><details><summary>Solanum, Laevi, Ilex, Lami and Taget would play near the anglerfish fossil on Ember Twin as children.</summary>
-    <h2>SOURCE<span>File: CT_City_KidDirectionToFossil_1</span></h2>
-    <table>
-        <tr><th>Laevi</th></tr>
-        <tr><td>We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:</td></tr>
-        <tr><td>You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.</td></tr>
-        <tr><th>Taget</th></tr>
-        <tr><td>I tried to get to the fossil fish through <orng>Stepping Stone Cave</orng>, but I couldn’t find the entrance. Where is it?</td></tr>
-        <tr><th>Ilex</th></tr>
-        <tr><td>Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlook</orng> and throw a light into his mouth, he’ll show you the way.</td></tr>
-        <tr><th>Lami</th></tr>
-        <tr><td>Taget can’t fit through the <orng>Anglerfish Overlook</orng> hole anymore because he grew bigger! He’s taller than Laevi now.</td></tr>
-        <tr><th>Laevi</th></tr>
-        <tr><td>Who cares? Ilex is still tallest.</td></tr>
-    </table>
-    <h2>SOURCE<span>File: CT_City_KidDirectionToFossil_2</span></h2>
-    <table>
-        <tr><th>Taget</th></tr>
-        <tr><td>Are we playing the fossil fish game tonight?</td></tr>
-        <tr><th>Solanum</th></tr>
-        <tr><td>I fed the fossil fish a new lantern. If you go to <orng>Stepping Stone Cave</orng>, the entrance to the <orng>Fossil Fish Cave</orng> is easy to see now.</td></tr>
-        <tr><th>Laevi</th></tr>
-        <tr><td>Gratitude, Solanum! It’s good you’re small enough to climb in through the hole at the <orng>Anglerfish Overlook</orng>.</td></tr>
-        <tr><th>Lami</th></tr>
-        <tr><td>I’m still small enough!</td></tr>
-        <tr><th>Laevi</th></tr>
-        <tr><td>You won’t be for long. Mom and Dad are tall, so you and I will be tall, too.</td></tr>
-    </table>
-    <!--
-    We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:
-    You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.
-
-    >> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R3”:
-    Fossil Fish Cave
-    Nomai children used to play a game in Fossil Fish Cave. There is a way to enter Fossil Fish Cave from Stepping Stone Cave.
-
-    Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlook</orng> and throw a light into his mouth, he’ll show you the way.
-
-    >> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R4”:
-    Fossil Fish Cave
-    The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fed a light first.
--->
-</details><t>#wip #nomai #solanum #laevi #ilex #lami #taget #anglerfish overlook</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Hearthians have teeth -->
-<it><details><summary>Hearthians have teeth.</summary>
-    <p>&nbsp;</p>
-<!-- <h2>SOURCE<span>File: </span></h2> -->
-</details><t>#wip #hearthians #biology</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Ash Twin Data -->
+<!-- @SFOLD    @WIP@    Data: Ash Twin -->
 <it class=tl style=position:relative><img src=../img/astr_ashtwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Ash Twin</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -876,9 +883,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
     </table>
     <p>All towers are located on the equator of Ash Twin, which is what allows the planetary alignments to occur in the first place.</p>
-</details><t>#wip #time loop event #in-game calculations #ash twin #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #ash twin #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Ember Twin Data -->
+<!-- @SFOLD    @WIP@    Data: Ember Twin -->
 <it class=tl style=position:relative><img src=../img/astr_embertwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Ember Twin</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -903,9 +910,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 -->
 
 
-</details><t>#wip #time loop event #in-game calculations #ember twin #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #ember twin #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Timber Hearth Data -->
+<!-- @SFOLD    @WIP@    Data: Timber Hearth -->
 <it class=tl style=position:relative><img src=../img/astr_timberhearth.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Timber Hearth</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -916,8 +923,6 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
     <!--
     <table class=spmono><tr><th>Time</th><th>Event</th></tr>
         <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-        <tr><td>02:00</td><td>Sand starts flowing to Ember Twin.</td></tr>
-        <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
     </table>
 
     TH: one full rotation around the sun lasts 250.25 +/- 0.03s
@@ -938,9 +943,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 
     In theory, a sunrise and a solar eclipse would occur simultaneously once every [72,800s (20h 13min 20s) — MUST CHECK].
     -->
-</details><t>#wip #time loop event #in-game calculations #timber hearth #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #timber hearth #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Attlerock Data -->
+<!-- @SFOLD    @WIP@    Data: Attlerock -->
 <it class=tl style=position:relative><img src=../img/astr_attlerock.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Attlerock</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -948,9 +953,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #attlerock #general data #wip</t></it>
+</details><t>#wip #time loop event #in-game observations #attlerock #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Brittle Hollow Data -->
+<!-- @SFOLD    @WIP@    Data: Brittle Hollow -->
 <it class=tl style=position:relative><img src=../img/astr_brittlehollow.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Brittle Hollow</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -959,9 +964,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
     <!-- Timing of Fall of Tower of Quantum Knowledge? -->
-</details><t>#wip #time loop event #in-game calculations #brittle hollow #general data #wip</t></it>
+</details><t>#wip #time loop event #in-game observations #brittle hollow #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Hollow’s Lantern Data -->
+<!-- @SFOLD    @WIP@    Data: Hollow’s Lantern -->
 <it class=tl style=position:relative><img src=../img/astr_hollowlantern.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Hollow’s Lantern</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -969,9 +974,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #hollow’s lantern #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #hollow’s lantern #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Giant’s Deep Data -->
+<!-- @SFOLD    @WIP@    Data: Giant’s Deep -->
 <it class=tl style=position:relative><img src=../img/astr_giantsdeep.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Giant’s Deep</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -979,9 +984,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #giant’s deep #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #giant’s deep #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Orbital Probe Cannon Data -->
+<!-- @SFOLD    @WIP@    Data: Orbital Probe Cannon -->
 <it class=tl style=position:relative><img src=../img/astr_opc.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Orbital Probe Cannon</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -989,9 +994,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #orbital probe cannon #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #orbital probe cannon #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Dark Bramble Data -->
+<!-- @SFOLD    @WIP@    Data: Dark Bramble -->
 <it class=tl style=position:relative><img src=../img/astr_darkbramble.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Dark Bramble</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -999,9 +1004,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #dark bramble #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #dark bramble #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Interloper Data -->
+<!-- @SFOLD    @WIP@    Data: Interloper -->
 <it class=tl style=position:relative><img src=../img/astr_interloper.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Interloper</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -1009,9 +1014,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #interloper #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #interloper #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Quantum Moon Data -->
+<!-- @SFOLD    @WIP@    Data: Quantum Moon -->
 <it class=tl id=data_QM style=position:relative><img src=../img/astr_qmoon.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Quantum Moon</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -1019,9 +1024,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #quantum moon #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #quantum moon #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    White Hole Station Data -->
+<!-- @SFOLD    @WIP@    Data: White Hole Station -->
 <it class=tl style=position:relative><img src=../img/astr_whiteholestation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>White Hole Station</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -1029,9 +1034,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #white hole station #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #white hole station #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    White Hole Data -->
+<!-- @SFOLD    @WIP@    Data: White Hole -->
 <it class=tl style=position:relative><img src=../img/astr_whitehole.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>White Hole</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -1039,9 +1044,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game calculations #white hole #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #white hole #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Stranger Data -->
+<!-- @SFOLD    @WIP@    Data: Stranger -->
 <it class=tl style=position:relative><img src=../img/astr_stranger.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Stranger</b></summary>
     <h2>Main Properties</h2>
     <table style='margin:12px auto'>
@@ -1059,9 +1064,9 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <tr><td>13:40</td><td>The Hidden Gorge walkways are destroyed</td></tr>
         <tr><td>20:30</td><td>The Cinder Isles tower completely falls</td></tr>
     </table>
-</details><t>#wip #time loop event #in-game calculations #the stranger #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #the stranger #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    ATP activates at 22:40 (warp window timings missing) -->
+<!-- @SFOLD    @WIP@    Data: ATP activates at 22:40 (warp window timings missing) -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>Events related to the <b>Ash Twin Project</b></summary>
 <p>If the Protagonist stays alive after the supernova, the loop ends anyway at <b>22min&nbsp;40s</b> after waking up.</p>
 <table class=spmono><tr><th>Time</th><th>Event</th></tr>
@@ -1075,12 +1080,10 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 <tr><td>22:39</td><td>The Ash Twin Project’s black hole is gone, purple lines cutscene starts</td></tr>
 <tr><td>22:40</td><td>The time loop ends</td></tr>
 </table>
-</details><t>#wip #time loop event #in-game calculations #ash twin project #general data</t></it>
+</details><t>#wip #time loop event #in-game observations #ash twin project #general data</t></it>
 <!-- @EFOLD -->
-<!-- Initial planet positions:       https://discord.com/channels/590799151118155780/613170452680015882/1258130718047862836 -->
 <!-- @EFOLD -->
-
-<!-- @SFOLD SIDEBAR -->
+<!-- @SFOLD Sidebar -->
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div>
 <h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
 <div id=sidenav><div id=midxbtn><a href=javascript:void(0) onclick=closeNav() id=closbtn style=color:#fff><h1>Close<span>&times;</span></h1></a></div><div id=navctn>
@@ -1092,7 +1095,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
         <p>This lore card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p>
     </div>
     <div class=lorecard style=--fore:var(--goldd);--midd:var(--goldl)><h3>Time Loop Scripted Events &&nbsp;Gameplay Observations</h3>
-        <p>This lore card color, as well as the associated tag <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#in-game calculations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p>
+        <p>This lore card color, as well as the associated tag <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p>
     </div>
     <div class=lorecard style=--fore:var(--indigod);--midd:var(--indigol)><h3>Alternate Official Sources</h3>
         <p>This lore card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p>
@@ -1110,7 +1113,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
     <p align=center style='padding:0 2em'><i>This web page was created and maintained by Lutias Kokopelli.</i></p>
 </div></div><button id=openbtn onclick=openNav()>&#9776; Guide & Info</button></div>
 <!-- @EFOLD -->
-<!-- @SFOLD JAVASCRIPT -->
+<!-- @SFOLD Javascript -->
 <script>
 const nofind=document.getElementById("nofind"),
     filterlist=document.getElementById("filterlist"),
@@ -1147,7 +1150,7 @@ function addChildToParent(parent,el,msg,state){
 }
 function ResetTagSelector(){
     curtinput=["wip0","fkno headcanons0"]
-    activetags.innerHTML="<input id=tag_wip class=exclude value=#wip type=button onclick=AddTagSelector(this.value)><input id=tag_fknoheadcanons class=exclude value='#fkno headcanons' type=button onclick=AddTagSelector(this.value)>";
+    activetags.innerHTML="<input id=tag_wip class=exclude value='#wip'type=button onclick=AddTagSelector(this.value)><input id=tag_fknoheadcanons class=exclude value='#fkno headcanons' type=button onclick=AddTagSelector(this.value)>";
     for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
     document.getElementById("btn_fknoheadcanons").classList.add("exclude");document.getElementById("btn_wip").classList.add("exclude");
     for(i=0;i<allit.length;i++){allit[i].style.display="none";allit[i].getElementsByTagName("details")[0].open=false}
@@ -1198,7 +1201,7 @@ function FilterItems(){
 function FindTag(){
     var taginp=document.getElementById('findtaginput').value.toLowerCase();
     for(i=0;i<tagselect.length;i++){
-        if(tagselect[i].value.includes(taginp) || tagselect[i].classList.contains("include")){tagselect[i].style.display=""}
+        if(tagselect[i].value.includes(taginp) || tagselect[i].classList.contains("include") || tagselect[i].classList.contains("exclude")){tagselect[i].style.display=""}
         else{tagselect[i].style.display="none"}
     }
 }
