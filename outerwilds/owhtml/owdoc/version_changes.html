@@ -1,0 +1,957 @@
+<!-- @SFOLD — Header -->
+<head><title>Outer Wilds Text Assets Evolution Through Patches</title>
+<link rel=icon href=../img/favicon.ico>
+<link rel=stylesheet href=../css.css>
+<style>*{text-indent:0}
+h1,h2,h3{text-align:left;margin:revert}
+h1{color:mediumseagreen}
+h2{color:lightskyblue}
+summary.collapse{pointer-events:unset!important}
+summary h2{color:royalblue}
+details.hudgrey{margin-bottom:2em}
+u{font-weight:800}
+p{padding:0!important}
+.shiplog:has(.shiplog){padding:0}
+.shiplog .shiplog{padding:5em}
+</style>
+<!--
+https://stackoverflow.com/questions/10936854/highlight-syntax-in-pre-tags-with-highlight-js
+https://jsfiddle.net/x3NXY/4/
+<script>
+window.onload = function() {
+    var aCodes = document.getElementsByTagName('pre');
+    for (var i=0; i < aCodes.length; i++) {
+        hljs.highlightBlock(aCodes[i]);
+    }
+};
+</script> -->
+<!-- On Steam you can access versions 1.1.10, 1.1.11, 1.1.12, 1.1.13 and 1.1.14:
+In your game list right click on Outer Wilds -> Click on "Properties..." -> Click on "Betas" -> Select the version you want to use.
+Use to access code 'moddersGetYourStuff' to unlock version 1.0.7. -->
+</head>
+<!-- @EFOLD -->
+<!--
+
+Found text assets in:
+    - globalgamemanagers
+    - level1
+    - level2                    HAS "_Eye"
+    - level3                    only has "credits"
+    - level4                    only has "credits"
+    - level5
+    - resources.assets
+    - sharedassets1.assets
+    - sharedassets2.assets
+    - sharedassets3.assets      only has "credits"
+    - sharedassets4.assets      only has "credits"
+    - sharedassets5.assets
+
+    resources.assets.resS       CANNOT BE LOADED
+    resources.resource          CANNOT BE LOADED
+    sharedassets*.assets.resS   CANNOT BE LOADED
+    sharedassets*.resource      CANNOT BE LOADED
+
+No text to be found in any of the subfolders.
+
+
+
+
+for f in Translation\ #2490* ; do echo $f ; head -n 7 "$f" | tail -n 1 ; echo ; done
+
+Como o Olho pode ser mais antigo que o próprio universo?        Portuguese
+Come può L'Occhio essere più antico dell'universo stesso?       Italian
+Jak Oko może być starsze od wszechświata?                       Polish
+
+Translation_eng
+Translation_fre
+Translation_ger
+Translation_ita
+Translation_jpn
+Translation_krn
+Translation_pol
+Translation_por
+Translation_rus
+Translation_spa
+Translation_zho
+
+
+
+——————————————————————————————————————————
+Patch 1.0.3 is out!
+——————————————————————————————————————————
+
+Here’s a list of the biggest and most exciting changes:
+
+    Players can now sleep at campfires to fast-forward time. This automatically becomes available after a few loops.
+
+    Updated writing, art, and level design across multiple planets to clarify the solution to the Ash Twin Project mystery:
+        Updated writing (and ship log entries) for the Black Hole Forge, High Energy Lab, White Hole Station, Nomai Mines, and Hollow’s Lantern.
+        Art and design changes for the Black Hole Forge and the area around it, including a different mural.
+        Art and design tweaks for the High Energy Lab, including a new mural, better gravity alignment, and other minor art fixes.
+        Art and design changes on Ash Twin, including a new mural and some architectural tweaks.
+    Updated writing for the Sun Station and Interloper to clarify a certain story beat.
+
+    Additional improvements to the key rebinding system.
+        It now registers more keyboard keys and controller axes (as in: more than one axis). New binds work immediately, but aren't saved until you specifically press Save and Exit.
+
+    Support for ultrawide resolutions and other aspect ratios
+        Proper scaling for the HUD, reticle, map labels, and lock-on UI elements.
+
+    Added support for 4k on the XBox One X
+
+    Added support for user-customizable FOV
+
+Design Improvements
+
+    Slightly more speed is retained when traveling through a certain area in Dark Bramble.
+    It is no longer possible to activate the "put me outside" feature of a specific Nomai device until it is necessary to do so.
+    Player ship less likely to fall into the sun after falling through the black hole.
+    Added dialogue to later Gabbro conversations to alleviate Archeologist achievement issues.
+    Translator tool is less likely to accidentally skip over unread Nomai text.
+    Translator tool now has page numbers.
+    A Nomai computer in a certain room stays activated even after the orb moves away.
+    Relocated fuel stash on the surface of Brittle Hollow for easier discoverability.
+    Removed extraneous gravity crystal path inside a building on Giant's Deep.
+    The ship’s eject button no longer allows players to bypass electricity on Giant's Deep.
+    Miscellaneous writing tweaks, including tweaks to several Hearthians.
+
+Profiles, Saves, and UI
+
+    Deleting a profile from the menu now properly deletes associated files
+    New profiles will now only copy over graphic settings, instead of all settings
+    Profile Creation window now doesn't respond to Q/E hotkeys for Submit and Default
+    Options menu will only save over settings data if something was changed.
+    Save data will be created in a temp directory first, and then overwrite the current save file.
+    Fixed returning to the settings menu from the key rebinding menu not selecting any menu options
+    The "Reset to Defaults" menu option now sets all settings to default, including graphics settings.
+    Fixed some UI elements not aligning to scaled text
+    The "Discard Changes" button has been renamed to "Discard Changes then Exit Menu"
+    Sliders in the options menu have new graphics and display numeric values when adjusting FOV and Gamma
+    Gamma will now change as it is adjusted in the settings menu, instead of only when the change is saved.
+    Fixed mouse behavior with various menu items (sliders, multiple option settings, etc)
+    Updated keyboard button prompt icons and layout to improve visibility of certain prompts
+    Fixed sound effect issues on menu elements
+
+Minor Fixes and Adjustments
+
+    Reduced jitter when zooming in with the signalscope
+    Signalscope UI element now animates on zoom
+    "Mark on HUD" and "Scroll Text" prompts in the ship log are 1.5x larger
+    Fixes for the player ship's lights being on or off at the wrong times
+    Changed the player ship's altimeter to be more visible in landing camera mode.
+    Fixed bugs with the player ship's notification display
+    Notifications on the player ship and HUD should update more consistently now
+    Fixed foliage in the player ship
+    Fixed the player ship’s landing camera view not properly showing warp fog, quantum fog, sand, and clouds.
+    Fixed player character popping during certain animations.
+    Improvements to keep the traveler's signals in sync.
+    Adjusted Brittle Hollow fragments so they would not clip through the eye shrine area in the Hanging City.
+    XB1: Fixed a bug involving an Xbox System Resume causing unwanted controller behavior
+    The sun's fog should no longer override the Hourglass Twins' fog.
+    Fixed occasionally falling off of the gravity crystal trails on Brittle Hollow
+    Fixed a bug where default hotkeys were not being applied.
+    More memory leak fixes.
+    Optimizations on the title screen, Dark Bramble, and player ship
+    Adjusted jetpack behavior to reduce jitter in certain situations.
+    Fixed warp platforms to allow the scout to warp through them again.
+    Fixed several missing arcs of text across the game.
+    Fixing geometry and visuals on the Orbital Probe Cannon
+    Toned down lights on the Orbital Probe Cannon
+    Minor changes to some areas on Giant's Deep to prevent players from getting stuck
+    Improved visual interaction of tractor beams and Giants Deep ocean shader
+    Adjusted some sandfall visuals in certain places around the Hourglass Twins
+    Fixed small art bugs (clipping meshes, seams) on the Hourglass Twins
+    Lighting pass on various characters and Nomai objects
+    Fixed missing nomai shuttle props
+    Fixing collision on certain Nomai objects
+    Adjusted art for certain Nomai objects
+    Minor art and collision adjustments on BrittleHollow
+    Adjusted vine geometry in Dark Bramble.
+    Removed extraneous fog light from Dark Bramble
+    Disabled certain shadows in dark bramble for low/medium quality settings
+    Fixed a seam on the Quantum Moon
+    Optimized materials for the player's tools and HUD helmet
+
+——————————————————————————————————————————
+
+New Patch Incoming
+We’ve been hard at work on improving the game based on all of the feedback we’ve been receiving. While our last patch was more of an emergency fix patch, this one has a bit more in the way of improvements. As before, we will do full patch notes when we release the patch later, but here is a sneak peak of some of the things we’re including:
+
+    New Feature: Sleep to pass time! A lot of players have been requesting a way to skip forward in time. Because physics is simulated in Outer Wilds it isn’t quite as simple as moving a time slider forward (which is why we didn’t already have it in the game), but we’ve found a way to allow you to pass time a bit more quickly by snoozing at campfires.
+    Endgame Tweaks: We’ve heard resounding feedback about a certain area of confusion towards the end of the game, and we’ve taken significant steps to improve it. We’ve tweaked level design and clarified writing in several areas to make certain clues more clear, as well as adding an entirely new clue to help players deduce the way forward.
+    FOV Slider in Options Menu: We’re adding adjustable FOV so that players who experience motion sickness can tweak their settings to be more comfortable.
+    HUD Improved Aspect Ratio Support: The in-game HUD now supports arbitrary aspect ratios, so users with 4:3 or double 16:9 monitor setups can have a much more usable interface.
+    Bug fixes: We’ve fixed a wide variety of bugs from Ultrawide resolutions not showing up to fixing areas where Brittle Hollow fragments were clipping through areas they shouldn’t and killing players unexpectedly. We will detail out the various bug fixes in our actual patch notes.
+
+——————————————————————————————————————————
+
+Patch Notes (relatively spoiler-free)
+PC Fixes & Improvements
+
+    Additional input devices will no longer take control from the active controller unless a brand new input is made
+    Improved some 3rd party wireless controller compatibility (We’re working on providing additional support for more controllers in future patches.)
+    If the game can’t match the language of the user’s Operating System, it will now default to English instead of an invalid language option
+    Improved reliability of save system
+
+
+Overall Fixes & Improvements
+
+    Fixed unintended signalscope behavior in a certain area
+    Fixed players getting stuck on geometry on a certain island in Giant’s Deep
+    Small tweaks to Ash Twin level design
+    Fixed missing line of text in English (“813”)
+    Fixed the player ship’s notification console inconsistently reporting damage locations
+    Fixed the player ship not updating fragment integrity
+    Fixed the player ship not being affected by certain electrical forces
+    Fixed a memory leak
+    Missable Gabbro ship log entry involving a statue is no longer required for “Archaeologist” achievement
+    Additional VFX/lighting for certain objects
+    Fixed props not appearing properly in certain ships
+
+——————————————————————————————————————————
+
+2019/05/30    Official launch:        https://www.mobiusdigitalgames.com/news/weve-achieved-liftoff
+
+——————————————————————————————————————————
+
+Patch 1.0.6 is a performance patch, improving memory usage. Please note that on PS4, the version number will read 1.04; that is correct and you are up to date! Patch 1.0.6 Changes:
+    Fixed crash due to unreleased file handles
+    Fixed crash due to memory allocation spike during scene reloads
+    Improved memory fragmentation and reduced crashes due to out of memory conditions
+
+——————————————————————————————————————————
+
+Patch 1.0.5 is now available on Epic and Xbox.  Here’s what’s new:
+    Implemented a save backup system to prevent save data corruption if the game is terminated while saving
+    Improved the logo on the title screen
+    Implemented miscellaneous bug fixes for Patch 4 content
+    Fixed visual bug when viewing parts of Brittle Hollow remotely
+    Fixed lighting bug in a specific part of Ash Twin
+
+——————————————————————————————————————————
+
+Patch 1.0.4:
+
+06/07/2019  https://www.mobiusdigitalgames.com/news/post-launch-update
+06/20/2019  https://www.mobiusdigitalgames.com/news/patch-release
+07/03/2019  https://www.mobiusdigitalgames.com/news/get-your-sleeping-bag-ready
+08/07/2019  https://www.mobiusdigitalgames.com/news/cozier-campfires
+12/03/2019  https://www.mobiusdigitalgames.com/news/patch-104-is-out
+02/04/2020  https://www.mobiusdigitalgames.com/news/patch-105-is-now-available-on-epic-and-xbox
+03/23/2020  https://www.mobiusdigitalgames.com/news/patch-106-is-now-available
+06/18/2020  https://www.mobiusdigitalgames.com/news/patch-107-is-now-available
+07/20/2020  https://www.mobiusdigitalgames.com/news/hotfix-1072-now-available-on-steam
+09/23/2021  https://www.mobiusdigitalgames.com/news/new-museum-exhibit-under-construction
+09/28/2021  https://www.mobiusdigitalgames.com/news/echoes-of-the-eye-is-here
+10/20/2021  https://www.mobiusdigitalgames.com/news/patch-1111-is-now-available
+12/18/2021  https://www.mobiusdigitalgames.com/news/patch-1112-is-now-available
+.           PATCH 12 HOTFIX (02/03/2022) brings hotfixes but no lore
+09/15/2022  https://www.mobiusdigitalgames.com/news/patch-13-is-now-available
+09/22/2023  https://www.mobiusdigitalgames.com/news/patch-14-is-now-available
+01/11/2024  https://www.mobiusdigitalgames.com/news/a-patch-is-now-available-on-switch
+04/22/2024  https://www.mobiusdigitalgames.com/news/nintendo-switch-patch-2-is-now-available
+05/07/2024  https://www.mobiusdigitalgames.com/news/nintendo-switch-patch-4-hotfix-is-now-available
+06/10/2024  https://www.mobiusdigitalgames.com/news/patch-notes-for-all-platforms-patch-15-on-pc-xbox-and-playstation-and-patch-4-on-nintendo-switch
+
+
+
+
+
+
+-->
+<div class=shiplog><h2 style='padding:1em 3em'>In every section, the newer patch is compared to the one coming right before it in this list.</h2>
+<!-- @SFOLD — Version of reference: ??? [2019/11/04] -->
+<div class=shiplog><h1>Version of reference: ???</h1><h2>Considering the date of their last modification (2019/11/04), the files attributed to this version are <i>assumed</i> to have come from Patch 1.0.3; however, this is not known for certain.</h2>
+<details><summary class=collapse><h2>» Complete File List:</h2></summary>
+<ul style=columns:3>
+<!-- <li><details open><summary>AdditionalFounders</summary>
+<pre>
+    <DialogueTree>
+            <NameField>SIGN</NameField>
+            <DialogueNode>
+                    <Name>Sign</Name>
+                    <EntryCondition>DEFAULT</EntryCondition>
+                    <Dialogue>
+                            <Page>Big thanks to these additional founding members of Outer Wilds Ventures, without whom we would never have gotten off the ground:</Page>
+                            <Page>Matthew Steinhauer</Page>
+                            <Page>Ben Etherington</Page>
+                            <Page>QwertyuiopThePie</Page>
+                            <Page>Jordan Frith</Page>
+                            <Page>Tom Cummings</Page>
+                            <Page>Sean "sharktemplar" Farrell</Page>
+                            <Page>Steven Ursell</Page>
+                            <Page>Ryan / Ohmwrecker</Page>
+                    </Dialogue>
+            </DialogueNode>
+    </DialogueTree>
+</pre>
+</details></li> -->
+<li>AdditionalFounders</li>
+<li>Arkose_GhostMatter</li>
+<li>BH_Cannon_LaunchLog</li>
+<li>BH_City_BlackholeForgeControls</li>
+<li>BH_City_EyeShrine_1</li>
+<li>BH_City_EyeShrine_2</li>
+<li>BH_City_EyeShrine_3</li>
+<li>BH_City_EyeShrine_Entrance</li>
+<li>BH_City_Forum_1</li>
+<li>BH_City_Forum_2</li>
+<li>BH_City_Forum_3</li>
+<li>BH_City_Journal_Cassava</li>
+<li>BH_City_Journal_OlderIlex</li>
+<li>BH_City_Journal_Poke</li>
+<li>BH_City_School_BigBangLesson</li>
+<li>BH_City_School_FestivalLesson</li>
+<li>BH_City_School_VesselLesson</li>
+<li>BH_EscapePod_BlackHoleWarning</li>
+<li>BH_EscapePod_CrashSiteRecording</li>
+<li>BH_EscapePod_EmergencyExit</li>
+<li>BH_EscapePod_FlightLog</li>
+<li>BH_Forge_BlackHoleCoreShipment</li>
+<li>BH_Forge_WarpCoreCompleted</li>
+<li>BH_Observatory_EyeSearch_1</li>
+<li>BH_Observatory_EyeSearch_2</li>
+<li>BH_Observatory_TornadoResearch</li>
+<li>BH_OldSettlement_ChildrensRhyme</li>
+<li>BH_OldSettlement_EyeCarving</li>
+<li>BH_OldSettlement_Flavor_1</li>
+<li>BH_OldSettlement_Flavor_2</li>
+<li>BH_OldSettlement_Flavor_3</li>
+<li>BH_OldSettlement_Flavor_4</li>
+<li>BH_OldSettlement_MigrationPlan</li>
+<li>BH_OldSettlement_NoteAboutConstruction</li>
+<li>BH_OldSettlement_QuantumMoonSighting</li>
+<li>BH_OldSettlement_WhyDidWeCrash</li>
+<li>BH_Quantum_PilgrimageHistory</li>
+<li>BH_Quantum_ShardDiscovery</li>
+<li>BH_Quantum_ShardDiscovery_2</li>
+<li>BH_Quantum_ShrineNorthHint</li>
+<li>BH_Quantum_TowerEntrance</li>
+<li>BH_Quantum_WindowNote</li>
+<li>BH_Trail_BlackholeForge</li>
+<li>BH_Trail_CannonToCrossroads</li>
+<li>BH_Trail_CannonToObservatory</li>
+<li>BH_Trail_CrossroadsToArbor</li>
+<li>BH_Trail_CrossroadsToCannon</li>
+<li>BH_Trail_CrossroadsToCity</li>
+<li>BH_Trail_CrossroadsToQuantumTower</li>
+<li>BH_Trail_DownToHangingCity</li>
+<li>BH_Trail_EyeShrineDistrict</li>
+<li>BH_Trail_ForumDistrict</li>
+<li>BH_Trail_LeftToBlackholeForge</li>
+<li>BH_Trail_QuantumToCrossroads</li>
+<li>BH_Trail_QuantumToObservatory</li>
+<li>BH_Trail_SchoolDistrict</li>
+<li>BH_Trail_ToCannonControls</li>
+<li>BH_Trail_ToLowerQuantumTower</li>
+<li>BrittleHollow</li>
+<li>COPYING</li>
+<li>CT_Cannon_LaunchShuttle</li>
+<li>CT_Cannon_RetrieveShuttle</li>
+<li>CT_Cannon_ShuttleLocation</li>
+<li>CT_City_EyeShrine_1</li>
+<li>CT_City_EyeShrine_2</li>
+<li>CT_City_EyeShrine_3</li>
+<li>CT_City_EyeShrine_Entrance</li>
+<li>CT_City_Journal_ChildIlex</li>
+<li>CT_City_KidDirectionToFossil_1</li>
+<li>CT_City_KidDirectionToFossil_2</li>
+<li>CT_City_LightSwitch_1</li>
+<li>CT_City_LightSwitch_2</li>
+<li>CT_City_LightSwitch_3</li>
+<li>CT_City_LightSwitch_4</li>
+<li>CT_City_SunStationHint</li>
+<li>CT_EscapePod_CrashSiteRecording</li>
+<li>CT_EscapePod_CrashSiteRecording_2</li>
+<li>CT_EscapePod_FlightLog</li>
+<li>CT_EscapePod_FossilDiscovery</li>
+<li>CT_EscapePod_PathToCity_1</li>
+<li>CT_EscapePod_PathToCity_1b</li>
+<li>CT_EscapePod_PathToCity_2</li>
+<li>CT_EscapePod_PathToCity_3</li>
+<li>CT_EscapePod_PathToCity_4</li>
+<li>CT_EscapePod_PathToFossil</li>
+<li>CT_EscapePod_PathToOxygen_1</li>
+<li>CT_EscapePod_PathToOxygen_2</li>
+<li>CT_EscapePod_PathToRocks</li>
+<li>CT_Fossil_AnglerfishResearch</li>
+<li>CT_Fossil_ExitHint</li>
+<li>CT_Fossil_GameRules</li>
+<li>CT_QuantumMoonObservation</li>
+<li>CT_QuantumMoonObservation_2</li>
+<li>CT_Quantum_ColeusTrapped</li>
+<li>CT_Quantum_EntanglementHint</li>
+<li>CT_Quantum_WanderingRock_1a</li>
+<li>CT_Quantum_WanderingRock_1b</li>
+<li>CT_Quantum_WanderingRock_2</li>
+<li>CT_SunStationDebate</li>
+<li>CT_TLE_CityToExperimentHint</li>
+<li>CT_TLE_Entrance</li>
+<li>CT_TLE_TimeLoopEnergyRequirements1</li>
+<li>CT_TLE_TimeLoopEnergyRequirements2</li>
+<li>CT_TLE_TimeTravelConfirmed1</li>
+<li>CT_TLE_TimeTravelConfirmed2</li>
+<li>CT_Trail_CannonToCity</li>
+<li>CT_Trail_CityToCannon</li>
+<li>CT_Trail_CityToExperiment</li>
+<li>CT_Trail_CityToFossilOverlook</li>
+<li>CT_Trail_CityToFossilSite</li>
+<li>CT_Trail_ExperimentToCity</li>
+<li>CT_Trail_ExperimentToPod</li>
+<li>CT_Trail_UpperExperimentToCity</li>
+<li>C_Interior_ChooseCarefullyRecording</li>
+<li>C_Interior_FinalRecording</li>
+<li>C_Shuttle_InsideRecording</li>
+<li>C_Shuttle_OutsideRecording</li>
+<li>CaveTwin</li>
+<li>Chert_1</li>
+<li>Chert_2</li>
+<li>Chert_3</li>
+<li>Chert_4</li>
+<li>Chert_Eye</li>
+<li>Chert_MoonCraterNotes</li>
+<li>Chert_QuantumMoonLocatorNotes</li>
+<li>Chert_QuantumSignalNotes</li>
+<li>Comet</li>
+<li>DB_EscapePod_BrambleSeedRecording</li>
+<li>DB_EscapePod_CrashSiteRecording_1</li>
+<li>DB_EscapePod_CrashSiteRecording_2</li>
+<li>DB_EscapePod_FlightLog</li>
+<li>DB_Vessel_IncomingMessages</li>
+<li>DB_Vessel_OutgoingMessages</li>
+<li>DB_Vessel_SignalFirstContact</li>
+<li>DarkBramble</li>
+<li>Esker</li>
+<li>Esker_Eye</li>
+<li>Esker_SignalscopeLog</li>
+<li>Feldspar</li>
+<li>Feldspar_Eye</li>
+<li>Feldspar_FuelStashNote</li>
+<li>Feldspar_JellyfishNotes_1</li>
+<li>Feldspar_JellyfishNotes_2</li>
+<li>Feldspar_Journal</li>
+<li>FishTankPlaque</li>
+<li>FishTankPlaque_Eye</li>
+<li>FlagPicturePlaque</li>
+<li>FoundingMembersPlaque</li>
+<li>FoundingMembersPlaque_Eye</li>
+<li>GD_ConstructionYard_CannonMerge</li>
+<li>GD_ConstructionYard_LaunchReport</li>
+<li>GD_Quantum_Entrance_1</li>
+<li>GD_Quantum_Entrance_2</li>
+<li>GD_Quantum_FinalRoom</li>
+<li>GD_Quantum_PuzzleHint_1</li>
+<li>GD_Quantum_PuzzleHint_2</li>
+<li>GD_Quantum_PuzzleHint_3</li>
+<li>GD_Quantum_PuzzleHint_4</li>
+<li>GD_StatueIsland_ConsciousnessDebate</li>
+<li>GD_StatueIsland_FirstMemoryStatueTest</li>
+<li>GD_StatueIsland_WarpReceiverNote</li>
+<li>GD_StatueIsland_WindowNote</li>
+<li>GD_StatueIsland_WorkshopSign</li>
+<li>Gabbro_1</li>
+<li>Gabbro_2F</li>
+<li>Gabbro_2T</li>
+<li>Gabbro_3F</li>
+<li>Gabbro_3T</li>
+<li>Gabbro_Eye</li>
+<li>Gabbro_merge</li>
+<li>Galena</li>
+<li>GhostMatterPlaque</li>
+<li>GiantsDeep</li>
+<li>Gneiss</li>
+<li>GoToFire</li>
+<li>Gossan</li>
+<li>Gossan_ZeroGNote</li>
+<li>GravityShardPlaque</li>
+<li>Hal_Museum</li>
+<li>Hal_Outside</li>
+<li>HologramLabel_01</li>
+<li>HologramLabel_02</li>
+<li>Hornfels</li>
+<li>Hornfels_DeepFieldNotes_1</li>
+<li>Hornfels_DeepFieldNotes_2</li>
+<li>LICENSE</li>
+<li>Marl</li>
+<li>Mica</li>
+<li>Moraine</li>
+<li>NomaiSignalDishMeshA</li>
+<li>NomaiSignalDishMeshB</li>
+<li>NomaiStatuePlaque</li>
+<li>OFL</li>
+<li>OPC_Intact_DamageReport</li>
+<li>OPC_Intact_HourglassOrdersReceived</li>
+<li>OPC_Intact_LaunchReport</li>
+<li>OPC_ModuleSign_1</li>
+<li>OPC_ModuleSign_2</li>
+<li>OPC_ModuleSign_3</li>
+<li>OPC_Sunken_AllLaunchesData</li>
+<li>OPC_Sunken_EyeCoordinates</li>
+<li>OPC_Sunken_LastLaunchData</li>
+<li>OrbitalProbeCannon</li>
+<li>Paratype End User License Agreement</li>
+<li>PilotSeatPlaque</li>
+<li>Porphy</li>
+<li>PotteryPlaque</li>
+<li>ProbePlaque</li>
+<li>ProbePlaque_Eye</li>
+<li>QM_Shrine_QuantumClues_1</li>
+<li>QM_Shrine_QuantumClues_2</li>
+<li>QM_Shrine_QuantumClues_3</li>
+<li>QM_Shuttle_IlexRecording</li>
+<li>QM_SolanumConvo_Response_Explain+Eye</li>
+<li>QM_SolanumConvo_Response_Explain+Me</li>
+<li>QM_SolanumConvo_Response_Explain+QuantumMoon</li>
+<li>QM_SolanumConvo_Response_Explain+You</li>
+<li>QM_SolanumConvo_Response_Eye+Me</li>
+<li>QM_SolanumConvo_Response_Eye+QuantumMoon</li>
+<li>QM_SolanumConvo_Response_Eye+You</li>
+<li>QM_SolanumConvo_Response_Identify+Explain</li>
+<li>QM_SolanumConvo_Response_Identify+Eye</li>
+<li>QM_SolanumConvo_Response_Identify+Me</li>
+<li>QM_SolanumConvo_Response_Identify+QuantumMoon</li>
+<li>QM_SolanumConvo_Response_Identify+You</li>
+<li>QM_SolanumConvo_Response_QuantumMoon+Me</li>
+<li>QM_SolanumConvo_Response_QuantumMoon+You</li>
+<li>QM_SolanumConvo_Response_You+Me</li>
+<li>QuantumMoon</li>
+<li>QuantumShardPlaque_2</li>
+<li>Riebeck</li>
+<li>Riebeck_AttlerockRecording</li>
+<li>Riebeck_Eye</li>
+<li>Riebeck_Journal_1</li>
+<li>Riebeck_Journal_2</li>
+<li>Riebeck_SouthPoleRecording</li>
+<li>RosettaStonePlaque</li>
+<li>Rutile</li>
+<li>SS_ApproximateTime</li>
+<li>SS_ClosingEmergencyDoor</li>
+<li>SS_EmergencyDoorLabel</li>
+<li>SS_MissionStatement</li>
+<li>ScoutPlaque_East</li>
+<li>ScoutPlaque_North</li>
+<li>ScoutPlaque_NorthWest</li>
+<li>ScoutPlaque_South</li>
+<li>Shared_BH_Cannon_BH_Quantum</li>
+<li>Shared_BH_Forge_TT_TimeLoopInterior</li>
+<li>Shared_GD_ConstructionYard_BH_Observatory</li>
+<li>Shared_GD_ConstructionYard_OPC_Intact</li>
+<li>Shared_GD_StatueIsland_TT_TimeLoopInterior</li>
+<li>Shared_OPC_Damaged_OPC_Sunken</li>
+<li>Shared_OPC_Intact_OPC_Damaged</li>
+<li>Shared_OPC_Sunken_TT_TimeLoopInterior</li>
+<li>Shared_SS_SunStation_TT_TimeLoopInterior</li>
+<li>Shared_TH_Mine_BHM_Volcano</li>
+<li>Shared_TH_Mine_TT_TimeLoopInterior</li>
+<li>SkullPlaque</li>
+<li>SkullPlaque_Eye_ExploredComet</li>
+<li>SkullPlaque_Eye_FateUnknown</li>
+<li>Slate</li>
+<li>Solanum</li>
+<li>Solanum_Eye</li>
+<li>Spinel</li>
+<li>StarLifeCycle01</li>
+<li>StarLifeCycle02</li>
+<li>StarLifeCycle03</li>
+<li>StarLifeCycle_Eye</li>
+<li>Sun</li>
+<li>SunStationLinkToTimeLoopMesh</li>
+<li>THM_SignalDish_1</li>
+<li>THM_SignalDish_2</li>
+<li>TH_Mine_FindingHearthianLife</li>
+<li>TH_Mine_SizeOfProject</li>
+<li>TH_Museum_EyeSymbol</li>
+<li>TH_Trail_MiningSite</li>
+<li>TT_TimeLoop_CoreRemovalWarning</li>
+<li>TT_TimeLoop_MaskActivationStatus</li>
+<li>TT_TimeLoop_RingShutdownLabel</li>
+<li>TT_TimeLoop_Timeline_1</li>
+<li>TT_TimeLoop_Timeline_2</li>
+<li>TT_TimeLoop_Timeline_3a</li>
+<li>TT_TimeLoop_Timeline_3b</li>
+<li>TT_TimeLoop_Timeline_3c</li>
+<li>TT_TimeLoop_Timeline_4</li>
+<li>TT_TimeLoop_Timeline_5</li>
+<li>TT_TimeLoop_Timeline_7</li>
+<li>TT_Tower_BH_1</li>
+<li>TT_Tower_CT</li>
+<li>TT_Tower_SS_1</li>
+<li>Tektite_ImpactCrater</li>
+<li>Tektite_ScoutNote</li>
+<li>Tephra</li>
+<li>TephraPostObservatory</li>
+<li>Test</li>
+<li>Test1</li>
+<li>Test2</li>
+<li>Test3</li>
+<li>Test4</li>
+<li>Test5</li>
+<li>Test6</li>
+<li>TestMural</li>
+<li>TidalBallPlaque</li>
+<li>TimberHearth</li>
+<li>TimberMoon</li>
+<li>Tombstone_1</li>
+<li>Tombstone_2</li>
+<li>Tombstone_3</li>
+<li>TowerTwin</li>
+<li>Translations</li>
+<li>Tuff</li>
+<li>UIText</li>
+<li>UI_XML_eng</li>
+<li>UI_XML_fre</li>
+<li>VolcanicMoon</li>
+<li>WH_TimeDelay_1</li>
+<li>WH_TimeDelay_2</li>
+<li>WH_WarpTowerInstructions</li>
+<li>WhiteHole</li>
+<li>XB1EventsManifest</li>
+<li>credits_fast_epic</li>
+<li>credits_fast_playstation</li>
+<li>credits_fast_xbox</li>
+<li>credits_final_epic</li>
+<li>credits_final_playstation</li>
+<li>credits_final_xbox</li>
+<li>credits_krazy_epic</li>
+<li>credits_krazy_playstation</li>
+<li>credits_krazy_xbox</li>
+<li>laradidthis</li>
+</ul>
+</details>
+</div>
+<!-- @EFOLD -->
+<!-- @SFOLD — Changes brought by Patch 1.0.4 -->
+<div class=shiplog><h1>Changes brought by Patch 1.0.4</h1>
+<h2>Addition of New Files:</h2>
+<p class=hudgrey><u>BH_Forge_Alignment_1</u><br><u>BH_Forge_Alignment_2</u><br><u>BH_Forge_Alignment_3</u><br><u>BH_Forge_Alignment_4</u><br><u>BH_Forge_Alignment_5</u></p>
+<p class=hudgrey><u>ParadoxSelf</u></p>
+<h2>Modification of Previous Files:</h2>
+<details class=hudgrey open><summary><u>BH_Forge_WarpCoreCompleted</u> Replaced the following lines:</summary><ul>
+    <li class=lgreen><s class=red>POKE: No, that’s correct. Technically, a warp tower’s alignment and its destination don’t have to be the same astral body.</s><br>POKE: No, that’s correct. For these alignments we’ve decided to treat the <span style=color:lightblue>Hourglass Twins</span> as a single astral body.</li>
+    <li class=lgreen><s class=red>POKE: This is advantageous for warping from towers that lack a clear line of sight to their destinations.</s><br>POKE: If it helps, you can imagine the <span style=color:lightblue>Hourglass Twins</span> as aligning with themselves.</li>
+</ul></details>
+<details class=hudgrey open><summary><u>BrittleHollow</u> Added a precision to one line, replaced another:</summary><ul>
+    <li>The schematic shows the six towers on Ash Twin were tuned to only five alignments<span class=lgreen> (the sun, the Hourglass Twins, Timber Hearth, Brittle Hollow, and Giant’s Deep)</span>.</li>
+    <li class=lgreen><s class=red>A warp tower’s alignment and its destination don’t have to be the same astral body.</s><br>The Nomai decided to treat the Hourglass Twins as a single astral body and alignment.</li>
+</ul></details>
+<details class=hudgrey open><summary><u>Gabbro_merge</u> Added the following text to these lines:</summary><ul>
+    <li class=green>&lt;RevealFacts&gt;&lt;FactID&gt;<span class=lgreen>GD_GABBRO_ISLAND_X0</span>&lt;&#8203;/FactID&gt;&lt;&#8203;/RevealFacts&gt;</li>
+    <li><span class=green>&lt;RevealFacts&gt;</span>&lt;FactID&gt;GD_GABBRO_ISLAND_X3&lt;&#8203;/FactID&gt;<span class=green>&lt;&#8203;/RevealFacts&gt;</span></li>
+    <li><span class=green>&lt;RevealFacts&gt;</span>&lt;FactID&gt;GD_GABBRO_ISLAND_X2&lt;&#8203;/FactID&gt;<span class=green>&lt;&#8203;/RevealFacts&gt;</span></li>
+</ul></details>
+<details class=hudgrey open><summary><u>Tuff</u> Added the following line:</summary><ul>
+    <li class=green>&lt;SetPersistentCondition><span class=lgreen>TuffTooSick</span>&lt;&#8203;/SetPersistentCondition></li>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>UIText</u> Added the following lines (49):</summary><ul>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>525</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen></span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1100</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Gear Options</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1101</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Gear Options</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1102</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>ERROR: SCOUT RECALL FAILED</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1103</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>FREEZE TIME WHILE READING</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1104</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>REBIND CONTROLS</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1105</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>CONTROL REBINDING</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1106</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>GAMEPAD</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1107</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>KEYBOARD &amp; MOUSE</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1108</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Delete Profile</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1109</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Switch Profile</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1110</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Select from pre-configured visual quality settings.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1111</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Whether the game should run as windowed or fullscreen.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1112</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Choose which monitor will display the game</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1113</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Determines which resolutions are available in the following option, based on the dimensions of the screen.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1114</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>The game will render at this pixel resolution.&lt;![CDATA[\\n]]>Rendering cost: High</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1115</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Smooths out jagged pixel edges.  SMAA is more precise and higher quality, but FXAA is faster.&lt;![CDATA[\\n]]>Rendering cost: Low</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1116</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Quality of the anti-aliasing post-processing effect.  Higher quality is more expensive.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1117</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Relative resolution of texture maps used throughout the game.&lt;![CDATA[\\n]]>Memory cost: Medium</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1118</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Amount of detail in the ocean waves and lighting quality of the water.&lt;![CDATA[\\n]]>Rendering cost: High</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1119</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>The resolution and accuracy of shadows in the game world, as well as the number of shadow-casting lights.&lt;![CDATA[\\n]]>Rendering cost: High</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1120</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Calculates ambient occlusion (the soft shadows when objects are close to each other) as a post-processing effect.&lt;![CDATA[\\n]]>Rendering cost: Medium</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1121</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Adjusts the brightness or darkness of the visuals.&lt;![CDATA[\\n]]>Rendering cost: None</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1122</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Prevents screen-tearing by synchronizing the game's framerate with the monitor's refresh rate.&lt;![CDATA[\\n]]>Rendering cost: None, but will automatically lower your framerate to the closest multiple of the monitor's sync rate</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1123</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Dithering improves color blending, but may make compressed video of the game look worse.&lt;![CDATA[\\n]]>Rendering cost: None</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1124</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>The vertical field-of-view of the in-game camera.  Warning: changing this might affect certain puzzles in Outer Wilds.&lt;![CDATA[\\n]]>Rendering cost: Low</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1125</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Jetpack boost can be triggered with a separate button press (manual) or any time upward thrust is used (auto).</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1126</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Translator can be equipped with a button press (manual) or by looking at translatable text (auto).</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1127</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Displays a HUD notification when new information is added to the ship log.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1128</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Displays rumor connections between ship log entries. Disable to minimize in-game guidance.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1129</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Disabling this will remove the ability to automatically fly between planets using autopilot.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1130</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Displays button prompts for available actions.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1131</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Change volume for all audio.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1132</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Change volume for non-diegetic music.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1133</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Change the language for all text in the game.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1134</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Change the reveal speed of text during conversation.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1135</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Freezes time while reading translated text (translator must remain stationary).&lt;![CDATA[\\n]]>NOTE: There are certain periods when time cannot be frozen.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1136</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Freezes time while using the ship log.&lt;![CDATA[\\n]]>NOTE: There are certain periods when time cannot be frozen.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1137</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Freezes time while talking to characters and reading journals or signs. This will prevent character animations from playing during conversation.&lt;![CDATA[\\n]]>NOTE: There are certain periods when time cannot be frozen.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1138</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert look y-axis when on foot.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1139</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert look y-axis when piloting your ship.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1140</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Enables gamepad vibration (gamepad only).</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1141</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Set look input sensitivity while on foot. A lower look sensitivity will result is a slower look speed that is easier to control.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1142</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Set look input sensitivity while piloting your ship. A lower look sensitivity will result is a slower look speed that is easier to control.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1143</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Determines how far (from center) the analog stick must be tilted before any input is detected.&lt;![CDATA[\\n]]>Consider increasing this dead zone if your character moves or looks around when you're not touching the analog stick.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1144</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Determines how far (from full tilt) the analog stick must be released before maximum input is no longer detected.&lt;![CDATA[\\n]]>Consider increasing this dead zone if you are unable to move or look at maximum speed.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1145</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Open this menu to modify which buttons are assigned to which in-game actions.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1150</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Throw Marshmallow</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+<li class=green>&lt;UIText>&lt;ID><span class=lgreen>1151</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Push Off</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_fast_epic</u> Added the following lines (5):</summary><ul>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>30</span>" m_string="<span class=lgreen>#          Kelsey Rice# Associate Producer#</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Title</span>" m_yOffset="<span class=lgreen>250</span>" m_string="<span class=lgreen>Business Development</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Heading</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>The Arsenal Agency</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>Tina Kowalewski</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>Caspar Gray</span>"/&#8203;></li>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_fast_playstation</u> Added the following lines (5):</summary><ul>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>30</span>" m_string="<span class=lgreen>#          Kelsey Rice# Associate Producer#</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Title</span>" m_yOffset="<span class=lgreen>250</span>" m_string="<span class=lgreen>Business Development</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Heading</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>The Arsenal Agency</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>Tina Kowalewski</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>Caspar Gray</span>"/&#8203;></li>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_fast_xbox</u> Added the following lines (5):</summary><ul>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>30</span>" m_string="<span class=lgreen>#          Kelsey Rice# Associate Producer#</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Title</span>" m_yOffset="<span class=lgreen>250</span>" m_string="<span class=lgreen>Business Development</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Heading</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>The Arsenal Agency</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>Tina Kowalewski</span>"/&#8203;></li>
+<li class=green>&lt;m_lines m_style="<span class=lgreen>Text</span>" m_yOffset="<span class=lgreen>20</span>" m_string="<span class=lgreen>Caspar Gray</span>"/&#8203;></li>
+</ul></details>
+
+<details class=hudgrey><summary class=collapse><u>credits_final_epic</u> Added 11 lines, modified one line:</summary><ul>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_final_playstation</u> Added 11 lines, modified one line:</summary><ul>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_final_xbox</u> Added 11 lines, modified one line:</summary><ul>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_krazy_epic</u> Added 5 lines, modified one line:</summary><ul>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_krazy_playstation</u> Added 5 lines, modified one line:</summary><ul>
+</ul></details>
+<details class=hudgrey><summary class=collapse><u>credits_krazy_xbox</u> Added 5 lines, modified one line:</summary><ul>
+</ul></details>
+
+<h2>Modifications in Translations:</h2>
+<h3>English</h3>
+<p>Addition of the new text from the added files (BH alignments & ParadoxSelf, UIText) and of the few modified lines. “Reset To Default Settings” (key 129) became “Default Settings.”</p>
+<h3>Chinese</h3>
+<p>A lot of lines were changed, must check later.</p>
+<h3>...</h3>
+
+</div>
+
+
+<!--
+[2024/07/05 23:18:36] Lutias@Kokopelli: TextAssets_2019-11-04_unknown-version-before-Patch-1.0.4 $ for f in * ; do diff -q "$f" "../TextAssets_2019-12-05_Patch-1.0.4/$f" ; done
+
+vimdiff Translations/Translation_Chinese    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Chinese
+vimdiff Translations/Translation_English    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_English
+vimdiff Translations/Translation_French    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_French
+vimdiff Translations/Translation_German    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_German
+vimdiff Translations/Translation_Italian    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Italian
+vimdiff Translations/Translation_Japanese    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Japanese
+vimdiff Translations/Translation_Korean    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Korean
+vimdiff Translations/Translation_Polish    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Polish
+vimdiff Translations/Translation_Portuguese    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Portuguese
+vimdiff Translations/Translation_Russian    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Russian
+vimdiff Translations/Translation_Spanish    ../TextAssets_2019-12-05_Patch-1.0.4/Translations/Translation_Spanish
+-->
+<!-- @EFOLD -->
+
+<!-- @SFOLD — Changes brought by Patch 1.0.7.481 -->
+<div class=shiplog><h1>Changes brought by Patch 1.0.7.481</h1>
+<h2>Deletion of Old Files:</h2>
+<p class=hudgrey><u>BH_Forge_Alignment_1</u><br><u>BH_Forge_Alignment_2</u><br><u>BH_Forge_Alignment_3</u><br><u>BH_Forge_Alignment_4</u><br><u>BH_Forge_Alignment_5</u></p>
+<u class=grey>BH_Forge_WarpCoreCompleted</u>
+
+<h2>Addition of New Files:</h2>
+
+<p class=hudgrey><u>BH_Forge_AlignmentWindow</u><br><u>BH_Forge_EntryClue</u><br><u>BH_Forge_HourglassAlignment</u></p>
+<p class=hudgrey><u>BH_Trail_BlackHoleForgeToSurface</u><br><u>BH_Trail_TowerToBlackHoleForge</u></p>
+<p class=hudgrey><u>TowerStatusComputer</u></p>
+<p class=hudgrey><u>credits_fast_steam</u><br><u>credits_final_steam</u><br><u>credits_krazy_steam</u></p>
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+<!-- @SFOLD — Changes brought by Patch 1.1.10.47 -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.10.47</h1>
+<h2>Addition of New Files:</h2>
+
+<p class=hudgrey><u>BHM_Computer</u></p>
+<p class=hudgrey><u>BH_Observatory_Computer</u></p>
+<p class=hudgrey><u>Gabbro_SatelliteNote</u></p>
+<p class=hudgrey><u>Hornfels_CampfireNote</u><br><u>Hornfels_CampfireNote_Vanilla</u><br><u>Hornfels_SatelliteNote</u></p>
+<p class=hudgrey><u>InvisiblePlanet</u></p>
+<p class=hudgrey><u>Prisoner_Prison</u></p>
+<p class=hudgrey><u>RadioTowerDoor_Vanilla</u></p>
+<p class=hudgrey><u>SatellitePlaque</u><br><u>SatellitePlaque_Vanilla</u></p>
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+
+
+
+
+
+
+<!-- @SFOLD — Changes brought by Patch 1.1.11.89 -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.11.89</h1>
+<!-- TextAssets_2021-11-26_Steam-Patch-1.1.11.89+ was removed because its text assets were strictly identical to those of TextAssets_2021-11-21_Steam-Patch-1.1.11.89+ -->
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+<!-- @SFOLD — Changes brought by Patch 1.1.12 -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.12</h1>
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+
+
+
+<!-- @SFOLD — Changes brought by Patch 1.1.12.168 (1) -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.12.168 (1)</h1>
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+<!-- @SFOLD — Changes brought by Patch 1.1.12.168(2) -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.12.168(2)</h1>
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+
+<!-- @SFOLD — Changes brought by Patch 1.1.13 -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.13</h1>
+<h2>Addition of New Files:</h2>
+<p class=hudgrey><u>secretsettings_default</u></p>
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+
+<!-- @SFOLD — Changes brought by Patch 1.1.13 (2) -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.13 (2)</h1>
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+<!-- @SFOLD — Changes brought by Patch 1.1.13 (3) -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.13 (3)</h1>
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+<!-- @SFOLD — Changes brought by Patch 1.1.14 -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.14</h1>
+<h2>Addition of New Files:</h2>
+
+None?
+
+<h2>Modification of Previous Files:</h2>
+
+</div>
+<!-- @EFOLD -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+for f in */*15_* ; do sed -i "s/\&lt\;SmallText\&gt\;/\&lt\;size\=20\&gt\;/g" $f ; done
+for f in */*15_* ; do sed -i "s/\&lt\;\/SmallText\&gt\;/\&lt\;\/size\&gt\;/g" $f ; done
+-->
+
+
+
+
+
+
+
+
+<!-- CHANGES BROUGHT UPON FILE:           OPC_Sunken_AllLaunchesData        Documented in WIP* folder -->
+<!-- CHANGES BROUGHT UPON FILE:           OrbitalProbeCannon        Added “statue in the ” on line 133 -->
+
+
+
+
+
+
+<!-- @SFOLD — Changes brought by Patch 1.1.15 -->
+<div class=shiplog><h1>Changes brought by Patch 1.1.15</h1>
+<h2>Addition of New File:</h2>
+<p class=hudgrey><u>jeffdidwhatnow</u></p>
+<h2>Modification of Previous Files:</h2>
+<details class=hudgrey open><summary><u>UIText</u> Added the following lines:</summary><ul>
+    <li class=green>&lt;!-- Batch 2024 01 12 --&#8203;></li>
+    <li class=green>&lt;UIText>&lt;ID><span class=lgreen>1195</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert Player Look (Horizontal)</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+    <li class=green>&lt;UIText>&lt;ID><span class=lgreen>1196</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert Ship Look (Horizontal)</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+    <li class=green>&lt;UIText>&lt;ID><span class=lgreen>1197</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert Player Look (Vertical)</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+    <li class=green>&lt;UIText>&lt;ID><span class=lgreen>1198</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert Ship Look (Vertical)</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+    <li class=green>&lt;UIText>&lt;ID><span class=lgreen>1146</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert look x-axis when on foot.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+    <li class=green>&lt;UIText>&lt;ID><span class=lgreen>1147</span>&lt;&#8203;/ID>&lt;Text><span class=lgreen>Invert look x-axis when piloting your ship.</span>&lt;&#8203;/Text>&lt;&#8203;/UIText></li>
+</ul></details>
+<details class=hudgrey open><summary><u>secretsettings_default</u> Added the following lines at the end of file:</summary><ul>
+<li class=green>// Uncomment the lines with MinSensJoystick and/or MaxSensJoystick in order to change the default sensitivity range for Look and Flight Sensitivity settings in the game options.<br>// Currently the default settings are based on typical sensitivity settings for a controller. If you find your controller requires a different range, you may adjust the minimum and maximum sensitivity values here. Having a smaller range between the minimum and maximum will increase fine control in the settings menu, whereas having a larger range of values will allow for increased compatibility at the cost of fine adjustments.<br>// The values between the minimum and maximum are determined by a square exponential function.</li>
+<li class=green>// Default value: 0.5<br>// Valid values: Positive non-zero float values up to a cap of 5.0<br>//MinSensJoystick=0.5</li>
+<li class=green>// Default value: 2.5<br>// Valid values: Positive non-zero float values greater than MinSensJoystick<br>//MaxSensJoystick=2.5</li>
+<li class=green>// Uncomment the lines with MinSensMouse and/or MaxSensMouse in order to change the default sensitivity range for Look and Flight Sensitivity settings in the game options.<br>// Prior to Patch 15, these settings were equivalent to the joystick defaults (0.5-2.5)<br>// Depending on your mouse dpi, you may change the minimum and maximum sensitivity values here. Having a smaller range between the minimum and maximum will increase fine control in the settings menu, whereas having a larger range of values will allow for increased compatibility at the cost of fine adjustments. The values between the minimum and maximum are determined by a square exponential function.</li>
+<li class=green>// Default value: 0.2<br>// Valid values: Positive non-zero float values up to a cap of 5.0<br>//MinSensMouse=0.2</li>
+<li class=green>// Default value: 2.2<br>// Valid values: Positive non-zero float values greater than MinSensMouse<br>//MaxSensMouse=2.2</li>
+<li class=green>// Uncomment this line to set the time period used for the mouse smoothing algorithm. By default, the time period is 1/6 sec. Set the time period to 0 in order to turn off mouse smoothing, increase the time to amplify the effect.</li>
+<li class=green>// For the math, the weight of a given mouse delta input is given by the following half life equation for all mouse inputs from time 0 to T:<br>// 2 ^ -(t / T * 10) where T = MouseSmoothTimeBuffer and t is the age of the mouse input</li>
+<li class=green>// Prior to Patch 15, this time period was not set in seconds but in frames, and this resulted in varying mouse smoothing effects depending on the user's framerate. A higher framerate would result in basically no smoothing at all, whereas lower framerates would have stronger mouse smoothing.</li>
+<li class=green>// Default value: 0.166667<br>// Valid values: Float values 0 and greater<br>//MouseSmoothTimeBuffer=0.166667</li>
+</ul></details>
+</div>
+<!-- @EFOLD -->
+<!-- Change in Patch 1.1.15:   &lt;size=20&gt;      became      SmallText    -->
+</div>
