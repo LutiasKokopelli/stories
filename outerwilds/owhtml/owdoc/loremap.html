@@ -1,7 +1,6 @@
 <!-- @SFOLD Header -->
 <!DOCTYPE html>
-<html>
-<head><title>Outer Wilds Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
+<html><head><title>Outer Wilds Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'>
 <meta name=viewport content='width=device-width,initial-scale=.5,interactive-widget=overlays-content'>
 <meta property=og:type content=article>
@@ -58,7 +57,7 @@ it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
 .reg,.reg *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
 it{break-inside:avoid;display:block;width:100%;height:fit-content;border-radius:17px;padding:10px;text-align:left;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.1);margin-bottom:17px}
 it *{margin-top:0}
-it *:not(rt,table,li,img,span,p,t)+*:not(rt,table,li,img,span,p,t){margin-top:12px}
+it *:not(rt,table,li,img,span,p,t,br)+*:not(rt,table,li,img,span,p,t,br){margin-top:12px}
 details > *:last-child{margin-bottom:0}
 it h1{font-size:1.5em;margin-bottom:17px;border-bottom:3px solid rgb(var(--emph));color:rgb(var(--white))}
 it details>h2,it details>a>h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
@@ -75,7 +74,7 @@ a:hover{border-bottom:2px dashed rgb(var(--fore))}
 a h2{filter:brightness(75%)}
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
 summary span{font-size:.7em}
-details th span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
+details th span:not([class]),details td span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
 .source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
 p+.source{margin-top:-12px}
 .source a{color:rgb(var(--white))}
@@ -91,7 +90,6 @@ table.spmono th:first-child,table.spmono td:first-child{width:17%;text-align:cen
 table.spmono.fkno th:first-child,table.spmono.fkno td:first-child{width:22%;text-align:center}
 table.spmono.fkno th:nth-child(2):not(:last-child),table.spmono.fkno td:nth-child(2):not(:last-child){width:17%;text-align:center}
 table+p,summary+p{margin-top:12px}
-.wip{filter:hue-rotate(180deg)saturate(200%)contrast(150%)}
 .lorecard{border:3px solid rgb(var(--fore));background:rgba(var(--midd),.2);padding:7px;border-radius:7px;display:inline-block;margin:7px}
 .lorecard h3{color:rgb(var(--midd));margin:-7px -7px 17px -7px;border-bottom:2px solid rgb(var(--fore));padding-left:10px;background:rgba(var(--fore),.7);padding-bottom:3px}
 .lorecard p{margin:0}
@@ -99,6 +97,7 @@ table+p,summary+p{margin-top:12px}
 details>ul>li{font-size:.85em;list-style:square}
 b{font-weight:800}
 smol,.smol{font-size:.7em}
+pre{font-size:.7em;font-family:Space Mono;padding-left:1em;color:rgb(var(--white))}
 td:has(.nomai){padding:0}
 td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
@@ -123,28 +122,28 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#outer wilds ventures' type=button onclick=AddTagSelector(this.value)>
     <!-- <input value=#protagonist src=../img/chr_hea_firn.png type=image onclick=AddTagSelector(this.value) style=width:30%;border-radius:50%> -->
-    <span class=infoa><input value=#protagonist type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_firn.png></span></span>
-    <span class=infoa><input value=#arkose type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_arkose.png></span></span>
-    <span class=infoa><input value=#chert type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_chert.png></span></span>
-    <span class=infoa><input value=#esker type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_esker.png></span></span>
-    <span class=infoa><input value=#feldspar type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_feldspar.png></span></span>
-    <span class=infoa><input value=#gabbro type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_gabbro.png></span></span>
-    <span class=infoa><input value=#galena type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_galena.png></span></span>
-    <span class=infoa><input value=#gneiss type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_gneiss.png></span></span>
-    <span class=infoa><input value=#gossan type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_gossan.png></span></span>
-    <span class=infoa><input value=#hal type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_hal.png></span></span>
-    <span class=infoa><input value=#hornfels type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_hornfels.png></span></span>
-    <span class=infoa><input value=#marl type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_marl.png></span></span>
-    <span class=infoa><input value=#mica type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_mica.png></span></span>
-    <span class=infoa><input value=#moraine type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_moraine.png></span></span>
-    <span class=infoa><input value=#porphy type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_porphy.png></span></span>
-    <span class=infoa><input value=#riebeck type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_riebeck.png></span></span>
-    <span class=infoa><input value=#rutile type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_rutile.png></span></span>
-    <span class=infoa><input value=#slate type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_slate.png></span></span>
-    <span class=infoa><input value=#spinel type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_spinel.png></span></span>
-    <span class=infoa><input value=#tektite type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_tektite.png></span></span>
-    <span class=infoa><input value=#tephra type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_tephra.png></span></span>
-    <span class=infoa><input value=#tuff type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_tuff.png></span></span>
+    <!--<span class=infoa>--><input value=#protagonist type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_firn.png></span></span>-->
+    <!--<span class=infoa>--><input value=#arkose type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_arkose.png></span></span>-->
+    <!--<span class=infoa>--><input value=#chert type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_chert.png></span></span>-->
+    <!--<span class=infoa>--><input value=#esker type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_esker.png></span></span>-->
+    <!--<span class=infoa>--><input value=#feldspar type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_feldspar.png></span></span>-->
+    <!--<span class=infoa>--><input value=#gabbro type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_gabbro.png></span></span>-->
+    <!--<span class=infoa>--><input value=#galena type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_galena.png></span></span>-->
+    <!--<span class=infoa>--><input value=#gneiss type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_gneiss.png></span></span>-->
+    <!--<span class=infoa>--><input value=#gossan type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_gossan.png></span></span>-->
+    <!--<span class=infoa>--><input value=#hal type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_hal.png></span></span>-->
+    <!--<span class=infoa>--><input value=#hornfels type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_hornfels.png></span></span>-->
+    <!--<span class=infoa>--><input value=#marl type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_marl.png></span></span>-->
+    <!--<span class=infoa>--><input value=#mica type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_mica.png></span></span>-->
+    <!--<span class=infoa>--><input value=#moraine type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_moraine.png></span></span>-->
+    <!--<span class=infoa>--><input value=#porphy type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_porphy.png></span></span>-->
+    <!--<span class=infoa>--><input value=#riebeck type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_riebeck.png></span></span>-->
+    <!--<span class=infoa>--><input value=#rutile type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_rutile.png></span></span>-->
+    <!--<span class=infoa>--><input value=#slate type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_slate.png></span></span>-->
+    <!--<span class=infoa>--><input value=#spinel type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_spinel.png></span></span>-->
+    <!--<span class=infoa>--><input value=#tektite type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_tektite.png></span></span>-->
+    <!--<span class=infoa>--><input value=#tephra type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_tephra.png></span></span>-->
+    <!--<span class=infoa>--><input value=#tuff type=button onclick=AddTagSelector(this.value)><!--<span class=infob><img src=../img/chr_hea_tuff.png></span></span>-->
 </div>
 <div class=tagcategory><h2>Nomai</h2><input value=#nomai style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
     <input value=#ilex type=button onclick=AddTagSelector(this.value)>
@@ -156,6 +155,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <div class=tagcategory><h2>Stranger</h2><input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)> <input value=#prisoner type=button onclick=AddTagSelector(this.value)></div>
 <div class=tagcategory><h2>Astral Bodies</h2>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#hourglass twins' type=button onclick=AddTagSelector(this.value)>
     <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
@@ -219,6 +219,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value=#biology type=button onclick=AddTagSelector(this.value)>
     <input value=#timeline type=button onclick=AddTagSelector(this.value)>
     <input value=#physics type=button onclick=AddTagSelector(this.value)>
+    <input value=#supernova type=button onclick=AddTagSelector(this.value)>
     <input value='#quantum mechanics' type=button onclick=AddTagSelector(this.value)>
     <input value='#ghost matter' type=button onclick=AddTagSelector(this.value)>
     <input value='#gravity crystal'type=button onclick=AddTagSelector(this.value)>
@@ -245,11 +246,10 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#alternate sources'style='outline:3px solid rgb(var(--indigod))'type=button onclick=AddTagSelector(this.value)>
     <input value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#retconned'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
-    <input value='#general data'type=button onclick=AddTagSelector(this.value) style=display:none>
-    <input value='#wip'type=button class=exclude id=btn_wip onclick=AddTagSelector(this.value)>
+    <input value='#general data'type=button onclick=AddTagSelector(this.value)>
 </p></div>
 <!-- <input value=# type=button onclick=AddTagSelector(this.value)> -->
-</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags><input class=exclude id=tag_wip value='#wip'type=button onclick=AddTagSelector(this.value)><input class=exclude id=tag_fknoheadcanons value='#fkno headcanons'type=button onclick=AddTagSelector(this.value)></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags><input class=exclude id=tag_fknoheadcanons value='#fkno headcanons'type=button onclick=AddTagSelector(this.value)></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
@@ -329,59 +329,6 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @SFOLD No dozing off during End Times -->
 <it class=tl><details><summary>It is impossible to doze off while End Times is playing. You will automatically wake up <b>20min&nbsp;32s</b> after the start of the loop.</summary><p>This measure was obtained by opening the game on Switch, starting the timer at the same time as pressing “Wake Up,” pressing “Doze off” when the timer reached ten seconds, then writing down the last number seen before the Protagonist woke up automatically (20:22) and adding ten seconds to it.</p></details><t>#time loop event #in-game observations</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD DATA Sun -->
-<it class=tl style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun</b></summary>
-    <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
-        <tr><th style=width:20%>Radius</th><td>2001.75 &plusmn; 7.5 m</td></tr>
-        <tr><th>Radius <span style=position:unset;display:inline>(Red Giant)</span></th><td>~ 4000 m</td></tr>
-        <tr><th>Mass</th><td>4.00 &times; 10<sup>11</sup></td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-    <h2>Scripted Events</h2>
-    <table class=spmono><tr><th>Time</th><th>Event</th></tr>
-        <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-        <tr><td>20:35</td><td>Start of the track “End Times”</td></tr>
-        <tr><td>22:00</td><td>The sun starts collapsing on itself.</td></tr>
-        <tr><td>22:10</td><td>The sun starts to explode.</td></tr>
-    </table>
-</details><t>#time loop event #in-game observations #sun #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD DATA Sun Station -->
-<it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Sun Station</b></summary>
-    <h2>Main Properties</h2>
-    <p>The station is tidally locked and in synchronous rotation around the sun.</p>
-    <table style='margin:12px auto'>
-        <tr><th>Mass</th><td>3.00 &times; 10<sup>5</sup></td></tr>
-        <tr><th>Orbit Radius</th><td>~ 2100 m</td></tr>
-        <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>0.2–0.4 (parallel to the sun)<br>0.7–0.8 (perpendicular to the sun)</td></tr>
-    </table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-    <h2>Scripted Events</h2>
-    <table class=spmono><tr><th>Time</th><th>Event</th></tr>
-        <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-        <!-- 05:15: The Sun Station warp pad becomes accessible (tower entrance to safe path). -->
-        <tr><td>07:10</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-        <tr><td>08:00</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-        <tr><td>08:50</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-        <tr><td>09:40</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-        <tr><td>10:30</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-        <tr><td>11:20</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-        <tr><td>11:30</td><td>The Sun Station is destroyed</td></tr>
-    </table>
-</details><t>#time loop event #in-game observations #sun station #sun #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD DATA Eye of the Universe -->
-<it class=tl><details><summary style=font-size:30px;font-weight:600>General Data about the <b>Eye of the Universe</b></summary><h2>Main Properties</h2>
-<table style='margin:12px auto'>
-    <tr><th style=width:20%>Radius</th><td>201 &plusmn; 10 m</td></tr>
-    <tr><th>Mass</th><td>9 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Orbit Radius</th><td>~ 410 – 657 km<br>Between 500 and 1000 km <smol>(Nomai estimation)</smol></td></tr>
-</table>
-<p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km (while comparing with the orbit radius of the Hourglass Twins).</p>
-<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>.<br><dlgprt></dlgprt> <a href="javascript:getcard('data_QM')">See data about the Quantum Moon?</a></p>
-<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#time loop event #in-game observations #eye of the universe #general data</t></it>
-<!-- @EFOLD -->
 <!-- @SFOLD Feldspar’s ship’s retro rockets are malfunctioning. It lacks downward thrusters. -->
 <it><details><summary>While Feldspar’s ship already possessed retro rockets, those are malfunctioning. Their ship lacks downward thrusters.</summary>
 <p>The in-game ship model shows that it lacks downward thrusters, but still has 5 directional boosters <span class=source>(Observation by @vskii)</span>.</p>
@@ -401,8 +348,8 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#hearthians #biology #alternate sources</t></it>
 <!-- HAS_ONGOING_DATAMINING (ParadoxSelf) -->
 <!-- @EFOLD -->
-<!-- @SFOLD RTCN The Hourglass Twins’ sand column forms every 100 years. -->
-<it class=ret><details><summary>The Hourglass Twins’ sand column forms every 100 years.</summary>
+<!-- @SFOLD RTCN The Hourglass Twins’ sand transfer occurs every 100 years. -->
+<it class=ret><details><summary>The Hourglass Twins’ sand transfer occurs every 100 years.</summary>
 <h2>Ship Log: Hourglass Twins (2013 Alpha)</h2><table>
 <tr><th style="font-family:Space Mono;border-bottom:none">File: computerfile.txt</th></tr>
 <tr><td class=shiplog>Every 100 years, sand spontaneously flows from one planet to the other.</td></tr>
@@ -411,8 +358,8 @@ To see every single lore card in existence, click “Search” with an empty tag
 </table><p>However, the final release of the game arguably disproves this:</p><h2 class=tl>Radio Tower Photos</h2>
 <p>Unless the mystery of the “anomaly” which the Deep Space Satellite detected at an angle of 40° has been unsolved for a hundred years, the fact that its pictures show the twins in the midst of a sand exchange demonstrates that the process happens a lot more frequently. The sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p>
 <a class=reg href="javascript:getcard('chertsawAT')"><h2><dlgprt></dlgprt> Chert has seen sandless Ash Twin</h2></a>
-<p>Again, unless Chert is more than a hundred years old and some, this proves that the sand columns forms more frequently than it did in the Alpha.</p>
-</details><t>#ash twin #ember twin #hourglass twins sand column #retconned #chert #deep space satellite #radio tower</t></it>
+<p>Again, unless Chert is more than a hundred years old and some, this proves that the sand column forms more frequently than it did in the Alpha.</p>
+</details><t>#ash twin #ember twin #hourglass twins sand column #retconned #chert #deep space satellite #radio tower #in-game observations</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Chert knows what Ash Twin looks like once drained of its sand. -->
 <it id=chertsawAT><details><summary>Chert has seen Ash Twin without its sand before.</summary>
@@ -590,8 +537,23 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#fkno headcanons #time loop event</t></it>
 <!-- @EFOLD -->
 
+<!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681 -->
+
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
 <!-- By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
+
+The QM clouds on the Sixth Location repels us so we can't get past it unless it's the north pole vortex??
+"on the giants deep variant of the moon when you go to the tornado part, and throw your Scout into it taking photos it usually gets above you and takes a photo of you and shows a second you only while in the air"
+
+Ghost matter becomes inert when in contact with water. This can be seen in The Stranger and on Giant's Deep.
+
+The Nomai were killed by ghost matter originating from the Interloper's core. The core was densely packed with ghost matter and ruptured when the comet came close to the sun.
+
+Dialogue with Arkose: ghost matter evaporates very slowly over time
+
+Ghost matter "burns the heck out of you"
+
+Tektite lost their foot as a result of ghost matter.
 
 The Japanese translation of “Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe X.” calls the deep space anomaly a <i>singularity</i> (特異点)
 
@@ -893,7 +855,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 
 <it><details><summary>Solanum, Laevi, Ilex, Lami and Taget would play near the anglerfish fossil on Ember Twin as children.</summary>
 <h2>SOURCE<span>File: CT_City_KidDirectionToFossil_1</span></h2>
-<table class=wip>
+<table class=tmp>
 <tr><th>Laevi</th></tr>
 <tr><td>We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:</td></tr>
 <tr><td>You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.</td></tr>
@@ -907,7 +869,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 <tr><td>Who cares? Ilex is still tallest.</td></tr>
 </table>
 <h2>SOURCE<span>File: CT_City_KidDirectionToFossil_2</span></h2>
-<table class=wip>
+<table class=tmp>
 <tr><th>Taget</th></tr>
 <tr><td>Are we playing the fossil fish game tonight?</td></tr>
 <tr><th>Solanum</th></tr>
@@ -940,55 +902,126 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 </details><t>#hearthians #hearthian culture</t></it>
 <!-- HAS_ONGOING_DATAMINING (Hornfels) -->
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA Ash Twin -->
-<it class=tl style=position:relative><img src=../img/astr_ashtwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Ash Twin</b></summary>
+<!-- @SFOLD    @WIP@    Time Loop Scripted Events -->
+<it class=tl><details><summary style=font-size:30px;font-weight:600>All Time Loop Scripted Events</summary><a href=calendar_timeloop.html><h2><dlgprt></dlgprt> Separate Web Page: Time Loop Calendar</h2></a></details><t>#in-game observations #timeline #time loop event #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Sun -->
+<it class=tl id=datasun style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Sun</b></summary>
+<h2>Main Properties</h2><table>
+    <tr><th style=width:20%>Radius <smol style=font-size:.6em;opacity:.7>(Default)</smol></th><td>2000 m</td></tr>
+    <tr><th>Radius <smol style=font-size:.6em;opacity:.7>(End Times)</smol></th><td>4000 m</td></tr>
+    <tr><th>Mass</th><td style=position:relative>4.00 &times; 10<sup>11</sup><span style=font-size:.8em>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source</a></span></td></tr>
+</table><p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r², while all other astral bodies’ are measured with a factor of 1/r instead.</p>
+<h2>Scripted Events</h2>
+<table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>10:00</td><td>The sun starts to expand.</td></tr>
+    <tr><td>20:35</td><td>The track “End Times” starts playing.</td></tr>
+    <tr><td>21:00</td><td>The sun stops expanding.</td></tr>
+    <tr><td>22:00</td><td>The sun starts collapsing on itself.</td></tr>
+    <tr><td>22:10</td><td>The sun starts to explode.</td></tr>
+</table>
+<h2>Sun Expansion to Red Giant</h2>
+<p>The sun’s color gradually changes from the very start of the loop, and its radius progressively grows starting from a certain point in the loop.</p>
+<p>The visual observation of a recording of the map locked on to the sun spanning over a full loop showed that the sun’s size <b><i>seems</i></b> static until 10:30, then starts growing in size linearly at a rate of about 3.3&nbsp;m/s, and reaches its final size at 20:35, just as the track “End Times” starts playing.</p><p>However, datamining will give a more nuanced evolution of the sun: instead of being fully linear, the sun’s expansion uses a <a href=https://en.m.wikipedia.org/wiki/Smoothstep>Smoothstep function</a> which makes it so that the sun’s radius actually starts expanding at <b>10:00</b> at a very slow rate (slow enough to almost not be visually detectable), and to stop expanding at <b>21:00</b> after the expansion rate slowed down drastically.</p>
+<h2>Sun Collapse</h2>
+<p class=red><i>TBA: The sun collapses in the span of 10&nbsp;s. Does it go linearly from 4000&nbsp;m to 0 at a constant speed of 400&nbsp;m/s? Or (more likely) does the pre-supernova singularity have a minimal radius?</i></p>
+<a href="javascript:getcard('datasupernova')"><h2><dlgprt></dlgprt> General Data: Supernova</h2></a>
+</details><t>#time loop event #in-game observations #sun #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Supernova -->
+<it class=tl id=datasupernova><details><summary>General Data: Supernova</summary>
+<p class=red><i>TBA: Determine the speed and range of the supernova</i></p>
+<a href="javascript:getcard('datasun')"><h2><dlgprt></dlgprt> General Data: The Sun</h2></a>
+<h2>Scripted Events</h2>
+<table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>22:10</td><td><img style=height:2em;margin:-.5em src=../img/Steam_Lv5_Supernova.png> The supernova occurs.</td></tr>
+    <tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_ashtwin.png> The Supernova reaches Ash Twin <smol>(North pole)</smol></td></tr>
+    <tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_embertwin.png> The Supernova reaches Ember Twin <smol>(Chert’s camp)</smol></td></tr>
+    <tr><td>22:27</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(Spawn point)</smol></td></tr>
+    <tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(North pole)</smol></td></tr>
+    <tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_attlerock.png> The Supernova reaches the Attlerock<br><smol>(Esker’s Observation platform on the North pole)</smol></td></tr>
+    <tr><td>22:29</td><td><img style=height:2em;margin:-.5em src=../img/astr_hollowlantern.png> The Supernova reaches Hollow’s Lantern<br><smol>(Project Platform at North pole)</smol></td></tr>
+    <tr><td>22:30</td><td><img style=height:2em;margin:-.5em src=../img/astr_brittlehollow.png> The Supernova reaches Brittle Hollow<br><smol>(Black Hole Forge warp pad)</smol></td></tr>
+    <tr><td>22:33</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black);height:2em;margin:-.5em'> The Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol></td></tr>
+    <tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png> The Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol></td></tr>
+    <tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_opc.png> The Supernova reaches the Orbital Probe Cannon</td></tr>
+    <tr><td>22:37</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches Dark Bramble <smol>(Outside)</smol></td></tr>
+    <tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whitehole.png> The Supernova reaches the White Hole</td></tr>
+    <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
+    <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches the Vessel</td></tr>
+</table></details><t>#sun #supernova #general data #in-game observations</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Sun Station -->
+<it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <p>The station is tidally locked and in synchronous rotation around the sun.</p>
+    <table>
+        <tr><th>Mass</th><td>3.00 &times; 10<sup>5</sup></td></tr>
+        <tr><th>Orbit Radius</th><td>~ 2200 m <smol>(Floor)</smol></td></tr>
+        <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>0.2–0.4 (parallel to the sun)<br>0.7–0.8 (perpendicular to the sun)</td></tr>
+    </table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+    <h2>Scripted Events</h2>
+    <table class=spmono><tr><th>Time</th><th>Event</th></tr>
+        <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+        <!-- 05:15: The Sun Station warp pad becomes accessible (tower entrance to safe path). -->
+        <tr><td>07:10</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
+        <tr><td>08:00</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
+        <tr><td>08:50</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
+        <tr><td>09:40</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
+        <tr><td>10:30</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
+        <tr><td>11:20</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
+        <tr><td>11:30</td><td>The Sun Station is destroyed</td></tr>
+    </table>
+</details><t>#time loop event #in-game observations #sun station #sun #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Ash Twin -->
+<it class=tl style=position:relative><img src=../img/astr_ashtwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ash Twin</b></summary>
+    <h2>Main Properties</h2><table>
         <tr><th style=width:20%>Radius</th><td>169 &plusmn; 1 m</td></tr>
         <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
+        <tr><th>Orbital Radius</th><td>5000 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ash&nbsp;Twin – Barycenter)</smol></td></tr>
         <tr><th>Angular Velocity</th><td>100/7</td></tr>
-        <tr style=color:rgb(var(--redl))><th>???</th><td>???</td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+        <tr><th>Day Length</th><td>89.75 s</td></tr>
+        <tr><th>Year Length</th><td>110.76 &plusmn; 0.24 s</td></tr>
+    </table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
     <table class=spmono><tr><th>Time</th><th>Event</th></tr>
         <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
         <tr><td>02:00</td><td>Sand starts draining off Ash Twin.</td></tr>
         <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
     </table>
-    <p>All towers are located on the equator of Ash Twin, which is what allows the planetary alignments to occur in the first place.</p>
-</details><t>#wip #time loop event #in-game observations #ash twin #general data</t></it>
+    <h2>Ash Twin Warp Towers</h2>
+    <p>All towers are located on the equator of Ash Twin, which is what allows the planetary alignments to occur in the first place.</p><p>Warp windows are coded in-game to open when the planetary alignment occurs, with a 5° margin of error — as in, the warp is active when the alignment angle is set between –2.5° and +2.5°.</p>
+</details><t>#time loop event #in-game observations #ash twin #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Ember Twin -->
-<it class=tl style=position:relative><img src=../img/astr_embertwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Ember Twin</b></summary>
-    <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
-        <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-        <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-    <table class=spmono><tr><th>Time</th><th>Event</th></tr>
-        <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-        <tr><td>02:00</td><td>Sand starts flowing to Ember Twin.</td></tr>
-        <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
-    </table>
-
-
-
-    <!--
-
-    3:00 is the last chance you have to enter the Lakebed cave, with about 30 seconds more before you need to reach the sandfall
-
-    The High Energy Lab trailhead at the bottom of the Sunless city is inaccessible at 6:08 (when the doorway crushed me),
-
+<it class=tl style=position:relative><img src=../img/astr_embertwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ember Twin</b></summary>
+<h2>Main Properties</h2>
+<table>
+    <tr><th style=width:20%>Radius</th><td>170 &plusmn; 1 m</td></tr>
+    <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
+    <tr><th>Orbital Radius</th><td>5000 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
+    <tr><th>Angular Velocity</th><td>20</td></tr>
+    <tr><th>Day Length</th><td>125.66 s</td></tr>
+    <tr><th>Year Length</th><td>110.76 &plusmn; 0.24 s</td></tr>
+</table>
+<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+<table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>02:00</td><td>Sand starts flowing to Ember Twin.</td></tr>
+    <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
+</table>
+<!--
+3:00 is the last chance you have to enter the Lakebed cave, with about 30 seconds more before you need to reach the sandfall
+The High Energy Lab trailhead at the bottom of the Sunless city is inaccessible at 6:08 (when the doorway crushed me),
 -->
-
-
-</details><t>#wip #time loop event #in-game observations #ember twin #general data</t></it>
+</details><t>#time loop event #in-game observations #ember twin #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Timber Hearth -->
-<it class=tl style=position:relative><img src=../img/astr_timberhearth.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Timber Hearth</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_timberhearth.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Timber Hearth</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
@@ -1016,113 +1049,157 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 
     In theory, a sunrise and a solar eclipse would occur simultaneously once every [72,800s (20h 13min 20s) — MUST CHECK].
     -->
-</details><t>#wip #time loop event #in-game observations #timber hearth #general data</t></it>
+</details><t>#time loop event #in-game observations #timber hearth #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Attlerock -->
-<it class=tl style=position:relative><img src=../img/astr_attlerock.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Attlerock</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_attlerock.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Attlerock</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
+    <p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r², while all other astral bodies’ are measured with a factor of 1/r instead. This explains why the Attlerock’s mass is actually higher than most other astral bodies’, including Timber Hearth’s.</p>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #attlerock #general data</t></it>
+</details><t>#time loop event #in-game observations #attlerock #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Brittle Hollow -->
-<it class=tl style=position:relative><img src=../img/astr_brittlehollow.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Brittle Hollow</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_brittlehollow.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Brittle Hollow</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
     <!-- Timing of Fall of Tower of Quantum Knowledge? -->
-</details><t>#wip #time loop event #in-game observations #brittle hollow #general data</t></it>
+</details><t>#time loop event #in-game observations #brittle hollow #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Hollow’s Lantern -->
-<it class=tl style=position:relative><img src=../img/astr_hollowlantern.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Hollow’s Lantern</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_hollowlantern.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Hollow’s Lantern</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #hollow’s lantern #general data</t></it>
+</details><t>#time loop event #in-game observations #hollow’s lantern #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Giant’s Deep -->
-<it class=tl style=position:relative><img src=../img/astr_giantsdeep.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Giant’s Deep</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_giantsdeep.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Giant’s Deep</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #giant’s deep #general data</t></it>
+</details><t>#time loop event #in-game observations #giant’s deep #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Orbital Probe Cannon -->
-<it class=tl style=position:relative><img src=../img/astr_opc.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Orbital Probe Cannon</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_opc.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Orbital Probe Cannon</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #orbital probe cannon #general data</t></it>
+</details><t>#time loop event #in-game observations #orbital probe cannon #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Dark Bramble -->
-<it class=tl style=position:relative><img src=../img/astr_darkbramble.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about <b>Dark Bramble</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_darkbramble.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Dark Bramble</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
     <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #dark bramble #general data</t></it>
+</details><t>#time loop event #in-game observations #dark bramble #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA Interloper -->
-<it class=tl style=position:relative><img src=../img/astr_interloper.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Interloper</b></summary>
-    <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
-        <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-        <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #interloper #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA Quantum Moon -->
-<it class=tl id=data_QM style=position:relative><img src=../img/astr_qmoon.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Quantum Moon</b></summary>
-    <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
-        <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-        <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #quantum moon #general data</t></it>
+<!-- @SFOLD DATA Interloper -->
+<it class=tl style=position:relative><img src=../img/astr_interloper.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Interloper</b></summary>
+<h2>Main Properties</h2><table>
+<tr><th style=width:20%>Radius</th><td>83 &plusmn; 1 m</td></tr>
+<tr><th>Mass</th><td>5.50 &times; 10<sup>5</sup></td></tr>
+<tr><th>Orbital Radius</th><td>~ 2400 – 24000 m</td></tr>
+<tr><th>Orbital Period</th><td>~ 480 s</td></tr>
+</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+<p>The Interloper is tidally locked to the sun. When it reaches its aphelion or perihelion, the Interloper’s center of mass is aligned with those of the sun and the White Hole.</p>
+<table class=spmono><tr><th>Time</th><th>Event</th></tr>
+<tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+<tr><td>03:58</td><td>Perihelion: ~ 2400 m between centers of mass. <span class=source><br>Observed by @thisisaname0</span></td></tr>
+<tr><td>07:58</td><td>Aphelion: ~ 24,000 m between centers of mass. <span class=source><br>Observed by @thisisaname0</span></td></tr>
+<tr><td>11:58</td><td>Perihelion</td></tr>
+<tr><td>15:58</td><td>Aphelion</td></tr>
+<tr><td>19:48</td><td>The Interloper is engulfed by the sun.</td></tr>
+</table><p>According to @thisisaname0’s observations, the Interloper’s orbit has an <b>orbital period of 8 min</b> and an <b>eccentricity of 0.82</b>:</p>
+<pre>Eccentricity: e
+Perihelion: P = a(1 - e)
+Aphelion: A = a(1 + e)
+</pre><pre>
+A + P = 2a,
+a = (A + P)/2 = 13200
+e = A/a - 1 = 0.82</pre><hr>
+<p>During the first loop of a new expedition, the sun does not expand and there is no time limit until the statue pairing occurs. In order to avoid a collision between the Interloper and Timber Hearth, it is hardcoded for the Interloper to automatically disappear at the <b>20:00</b> mark.</p>
+</details><t>#time loop event #in-game observations #interloper #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA White Hole Station -->
-<it class=tl style=position:relative><img src=../img/astr_whiteholestation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>White Hole Station</b></summary>
-    <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
-        <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-        <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #white hole station #general data</t></it>
+<it class=tl style=position:relative><img src=../img/astr_whiteholestation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole Station</b></summary>
+<h2>Main Properties</h2>
+<table>
+    <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
+    <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
+</table>
+<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+</details><t>#time loop event #in-game observations #white hole station #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA White Hole -->
-<it class=tl style=position:relative><img src=../img/astr_whitehole.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>White Hole</b></summary>
-    <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
-        <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-        <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    </table>
-    <p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#wip #time loop event #in-game observations #white hole #general data</t></it>
+<it class=tl style=position:relative><img src=../img/astr_whitehole.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole</b></summary><h2>Main Properties</h2><table>
+<tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>20 &plusmn; ?? m</td></tr>
+<tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
+<tr><th>Orbit Radius</th><td style=color:rgb(var(--redl))>23,000 m</td></tr>
+</table><p>The White Hole is static, located at a distance of about 23 km away from the sun.</p>
+</details><t>#time loop event #in-game observations #white hole #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD DATA Quantum Moon -->
+<it class=tl id=dataQM style=position:relative><img src=../img/astr_qmoon.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Quantum Moon</b></summary><h2>Main Properties</h2>
+<table><tr><th style=width:20%>Radius</th><td>73 &plusmn; 1 m</td></tr>
+<tr><th>Mass</th><td>5.50 &times; 10<sup>5</sup></td></tr>
+<tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_embertwin.png><smol>&ensp;<sup>1</sup></smol></th><td>1700 m</td></tr>
+<tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_timberhearth.png></th><td>1100 m</td></tr>
+<tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_brittlehollow.png></th><td>1400 m</td></tr>
+<tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_giantsdeep.png></th><td>1500 m</td></tr>
+<tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_darkbramble.png></th><td>1500 m</td></tr>
+<tr><th>Orbit Radius <smol>(Eye)</smol></th><td>6000 m</td></tr>
+<tr><th>Orbit Radius <smol>(Sixth Location<sup>2</sup>)</smol></th><td>30,000 m</td></tr>
+</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+<p class=smol><b><sup>1</sup></b> The Quantum Moon will never orbit around Ash Twin, or even around the Hourglass Twins’ barycenter; instead, the Quantum Moon orbits Ember Twin specifically.</p>
+<p class=smol><b><sup>2</sup></b> In-game, the Quantum Moon’s Sixth Location is actually set on an orbit around the sun itself with a radius of about 30km, and made (almost) invisible from outside.</p>
+<h2>Quantum Moon Orbits</h2>
+<p>In-game, whenever the possibilities are collapsed for the Quantum Moon, the following parameters are determined:</p><ul>
+<li>A center for the orbit is chosen among the following: Ember Twin<sup>1</sup>, Timber Hearth, Brittle Hollow, Giant’s Deep, Dark Bramble, or the Sun<sup>2</sup>. The orbit radius is a fixed number for each astral body.<ul><li><b>Of note:</b> If any of the six states has not been chosen over ten times in a row, then it will be forcibly chosen next (unless it’s the Hourglass Twins state and the time loop is nearing its end, see below).</li></ul></li>
+<li>The Quantum Moon is placed at a random position, provided it is at the correct distance from the chosen astral body. This means that two parameters are randomized: the angle between the solar system’s ecliptic plane and the Quantum Moon’s orbit plane (this angle can be any number between 0° and 360°), <i>and</i> the location of the Quantum Moon on this chosen orbit plane (any possible point on the defined circle).</li>
+<li>Finally, the direction in which the Quantum Moon orbits (clockwise or counterclockwise) is randomized as well.</li>
+</ul><p class=source>Observations confirmed by @ixrec through datamining</p>
+<h2>Quantum Moon Rotation</h2>
+<p>If the cloud layer is disabled in-game, it can be observed that the reason why you always land on the Quantum Moon’s south pole is because it will constantly reorient itself during your flight so that your ship will always face the south pole.</p>
+<h2>Hourglass Twins’ Early Demise</h2>
+<p>Because of the large orbit radius in the case of the Hourglass Twins’ version of the Quantum Moon, it is possible to die engulfed by the expanding sun <i>before</i> the supernova occurs. Starting from <b>15:00</b> in the loop (7&nbsp;min before the supernova), the Quantum Moon will no longer be able to appear around the Twins unless you are already standing on it.</p>
+</details><t>#time loop event #in-game observations #quantum moon #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD DATA Eye of the Universe -->
+<it class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Eye of the Universe</b></summary><h2>Main Properties</h2>
+<table>
+    <tr><th style=width:20%>Radius</th><td>201 &plusmn; 10 m</td></tr>
+    <tr><th>Mass</th><td>9 &times; 10<sup>6</sup></td></tr>
+    <tr><th>Orbit Radius</th><td>~ 410 – 657 km<br>Between 500 and 1000 km <smol>(Nomai estimation)</smol></td></tr>
+</table>
+<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+<p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km (while comparing with the orbit radius of the Hourglass Twins).</p>
+<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>.<br><dlgprt></dlgprt> <a href="javascript:getcard('dataQM')">See data about the Quantum Moon?</a></p>
+</details><t>#time loop event #in-game observations #eye of the universe #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Stranger -->
-<it class=tl style=position:relative><img src=../img/astr_stranger.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data about the <b>Stranger</b></summary>
+<it class=tl style=position:relative><img src=../img/astr_stranger.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>The Stranger</b></summary>
     <h2>Main Properties</h2>
-    <table style='margin:12px auto'>
+    <table>
         <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
         <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
     </table>
@@ -1137,11 +1214,11 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
         <tr><td>13:40</td><td>The Hidden Gorge walkways are destroyed</td></tr>
         <tr><td>20:30</td><td>The Cinder Isles tower completely falls</td></tr>
     </table>
-</details><t>#wip #time loop event #in-game observations #the stranger #general data</t></it>
+</details><t>#time loop event #in-game observations #the stranger #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA ATP activates at 22:40 (warp window timings missing) -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>Events related to the <b>Ash Twin Project</b></summary>
-<p>If the Protagonist stays alive after the supernova, the loop ends anyway at <b>22min&nbsp;40s</b> after waking up.</p>
+<p>If the Protagonist stays alive after the supernova, the loop ends anyway at <b>22min&nbsp;40s</b> after waking up. The end of loop cutscene starts at 22min 40s (about one second after the black hole disappears) and ends at 22min 43s.</p>
 <table class=spmono><tr><th>Time</th><th>Event</th></tr>
 <tr><td>07:50</td><td>The Ash Twin warp pad becomes accessible</td></tr>
 <tr><td style=color:rgb(var(--redl))>??:??</td><td>Warp pad window</td></tr>
@@ -1150,10 +1227,9 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <tr><td>22:13</td><td>The Ash Twin Project’s black hole starts to form</td></tr>
 <tr><td>22:14</td><td>The Ash Twin Project’s black hole is at full size</td></tr>
 <tr><td>22:38</td><td>The Ash Twin Project’s black hole starts to vanish</td></tr>
-<tr><td>22:39</td><td>The Ash Twin Project’s black hole is gone, purple lines cutscene starts</td></tr>
+<tr><td>22:39</td><td>The Ash Twin Project’s black hole is gone</td></tr>
 <tr><td>22:40</td><td>The time loop ends</td></tr>
-</table>
-</details><t>#wip #time loop event #in-game observations #ash twin project #general data</t></it>
+</table></details><t>#time loop event #in-game observations #ash twin project #general data</t></it>
 <!-- @EFOLD -->
 <!-- @EFOLD -->
 <!-- @SFOLD Sidebar -->
@@ -1193,7 +1269,7 @@ const nofind=document.getElementById("nofind"),
     allit=filterlist.getElementsByTagName("it"),
     activetags=document.getElementById("activetags"),
     tagselect=document.querySelectorAll('div[id="tagselect"] input');
-var curtinput=["wip0","fkno headcanons0"];
+var curtinput=["fkno headcanons0"];
     itags=[];
 for(i=0;i<allit.length;i++){
     itags.push([]);
@@ -1222,10 +1298,10 @@ function addChildToParent(parent,el,msg,state){
     parent.appendChild(node)
 }
 function ResetTagSelector(){
-    curtinput=["wip0","fkno headcanons0"]
-    activetags.innerHTML="<input id=tag_wip class=exclude value='#wip'type=button onclick=AddTagSelector(this.value)><input id=tag_fknoheadcanons class=exclude value='#fkno headcanons' type=button onclick=AddTagSelector(this.value)>";
+    curtinput=["fkno headcanons0"]
+    activetags.innerHTML="<input id=tag_fknoheadcanons class=exclude value='#fkno headcanons' type=button onclick=AddTagSelector(this.value)>";
     for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
-    document.getElementById("btn_fknoheadcanons").classList.add("exclude");document.getElementById("btn_wip").classList.add("exclude");
+    document.getElementById("btn_fknoheadcanons").classList.add("exclude")
     for(i=0;i<allit.length;i++){allit[i].style.display="none";allit[i].getElementsByTagName("details")[0].open=false}
 }
 function AddTagSelector(tag){
