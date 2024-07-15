@@ -1,5 +1,6 @@
 <!-- @SFOLD HTML -->
-<head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
+<!DOCTYPE html>
+<html><head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'>
 <meta name=viewport content='width=device-width,initial-scale=1'>
 <meta property=og:type content=article>
@@ -20,7 +21,7 @@ tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
 #calendar th:last-child{border-radius:0 17px 17px 0}
 #calendar td:first-child{border-left:3px solid rgb(var(--white));padding-left:42px}
 #calendar td:last-child{border-right:3px solid rgb(var(--white))}
-#calendar tr:hover:not(:last-child,:nth-child(2)){background:rgba(var(--blue),.42)}
+#calendar tr:hover:not(:last-child,:nth-child(2),:nth-last-child(2),:nth-last-child(3)){background:rgba(var(--blue),.42)}
 #calendar tr:nth-child(2) td{border-top:3px solid rgb(var(--white))}
 #calendar tr:nth-child(2) td:first-child{border-top-left-radius:17px}
 #calendar tr:nth-child(2) td:last-child{border-top-right-radius:17px}
@@ -128,6 +129,9 @@ const cdta={
     "115 Forenoon Eclipse":{
         "GameTime":9*60+33.6,"Attlerock/Sun angle":[47.184,47.250],"Tags":["hide","timber hearth","hearthian clock"]
     },
+    "The Sun starts to expand":{
+        "GameTime":10*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv2_SubGiant.png>"
+    },
     "Sun Station is engulfed by the sun":{
         "GameTime":11*60+30,"Tags":["sun station","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
     },
@@ -172,6 +176,9 @@ const cdta={
     },
     "End Times starts playing":{
         "GameTime":20*60+35,"Tags":[],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png>"
+    },
+    "The Red Giant reaches its maximal size":{
+        "GameTime":21*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png>"
     },
     "116 Crickets Eclipse":{
         "GameTime":21*60+17,"Attlerock/Sun angle":[295.922,295.962],"Tags":["hide","timber hearth","hearthian clock"]
@@ -236,7 +243,7 @@ const cdta={
     "Supernova reaches the Vessel":{
         "GameTime":22*60+39,"Tags":["dark bramble","the vessel","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_darkbramble.png>"
     },
-    "The Ash Twin Project’s black hole is gone & Purple lines cutscene starts":{
+    "The Ash Twin Project’s black hole is gone":{
         "GameTime":22*60+39,"Tags":["ash twin project"],"Color":"rgba(var(--goldl),.3)"
     },
 
@@ -247,7 +254,16 @@ const cdta={
     // },
     "End of Loop":{
         "GameTime":22*60+40,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
-    }
+    },
+    "End of Loop: Purple lines cutscene starts":{
+        "GameTime":22*60+40,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
+    },
+    "End of Loop: Purple lines cutscene stops, fade to black":{
+        "GameTime":22*60+43,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
+    },
+    // "End of Loop":{
+    //     "GameTime":22*60+43.314,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
+    // },
 }
 </script>
 <!-- @EFOLD -->
@@ -320,6 +336,6 @@ function AddTagSelector(btn){
     if(allactive.length===0){for(const[k,v]of Object.entries(cdta)){if(!v["Tags"].includes('hide')){ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));ctr.style.display=''}}}
 }
 <!-- @EFOLD -->
-// window.alert(THtime2GMtime("06d03s 52:17"))
-// window.alert(GMtime2THtime("00:00"))
-</script></div>
+// window.alert(THtime2GMtime("06d04s 14:20"))
+// window.alert(GMtime2THtime("05:57"))
+</script></div></body></html>
