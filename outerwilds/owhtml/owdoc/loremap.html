@@ -16,23 +16,25 @@ dlgprt{width:1em;display:inline-block;height:.7em;background:url("data:image/svg
 .spanintro{padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.8);box-decoration-break:clone;-webkit-box-decoration-break:clone}
 #findtaginput{display:block;width:90%;margin:17px auto}
 .all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%}
-.tagcategory{padding:17px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
+.tagcategory{padding:17px;height:267px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
 .tagcategory h2{font-size:1.4em;opacity:.9}
 .tagcategory hr{margin:17px -17px;height:3px;width:calc(100% + 34px)}
 .tagcategory img{height:32px;display:inline-block;vertical-align:middle}
 .tagcategory p{text-indent:-36px;padding-left:36px}
 .tagcategory .infob{position:fixed;top:5%;left:unset;right:5%}
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
-input:not(#resetsearch,#startsearch,#findtaginput):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
+input:not(#resetsearch,#startsearch,#findtaginput,#toggledlc):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 .include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
 .exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
-#resetsearch,#startsearch{position:absolute;bottom:0;top:-3px;width:150px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
-#resetsearch{right:150px;border-radius:0;background:rgb(var(--redd))}
+#resetsearch,#toggledlc,#startsearch{position:absolute;bottom:0;top:-3px;width:150px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
+#resetsearch{right:290px;border-radius:0;background:rgb(var(--redd))}
 #resetsearch:hover{background:rgb(var(--redl));color:#fff}
+#toggledlc{right:150px;border-radius:0;background-color:rgb(var(--indigod));background-image:url(../img/EotE-show.png);background-size:100% auto;background-position:center;background-repeat:no-repeat;width:140px}
+#toggledlc.no{background-image:url(../img/EotE-hide.png)}
 #startsearch{right:0;border-radius:0 20px 20px 0;background:rgb(var(--greend))}
 #startsearch:hover{background:rgb(var(--greenl));color:#fff}
-#activetags{padding:20px;min-height:50px;width:calc(100% - 300px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
+#activetags{padding:20px;min-height:50px;width:calc(100% - 440px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
 #activetags p{font-family:Calibri;font-size:14px;display:inline-block;padding:5px 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid}
 #activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
@@ -45,6 +47,7 @@ details>p{margin:12px 0}
 p.infob{padding:7px;margin:0}
 .infob > *:last-child{margin-bottom:0}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
+#tagselect{height:810px;max-height:810px}
 @media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
 @media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
 @media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}#filterlist{column-width:var(--colwid)}}
@@ -104,6 +107,7 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 <h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order for activating tags:</h2>
 <p align=center><span class=spanintro>neutral</span> &rarr; <span class='spanintro include'>include&nbsp;in&nbsp;the&nbsp;search</span> &rarr; <span class='spanintro exclude'>exclude&nbsp;from&nbsp;the&nbsp;search</span> &rarr; <span class=spanintro>neutral</span></p><p style='text-align:center;padding:0 5%;font-size:1em;margin:0'>
 Click on “Search!” to find all lore cards which contain <b>all</b> green tags and <b>none</b> of the red tags.<br>
+Toggle the blue button next to Search to access or conceal Echoes of the Eye (DLC) spoilers.<br>
 Click on the bottom left button for an explanation of lore card colors (eg. red = retconned).<br>
 </p><h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>A few more fun tips:</h2><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
 For quicker access, you can also click on any tag already present in the search bar, red or green.<br>
@@ -123,7 +127,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value=#solanum type=button onclick=AddTagSelector(this.value)>
     <input value=#taget type=button onclick=AddTagSelector(this.value)>
 </div>
-<div class=tagcategory><h2>Stranger</h2><input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)> <input value=#prisoner type=button onclick=AddTagSelector(this.value)></div>
+<div class=tagcategory><div class=dlc><h2>Stranger</h2><input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)> <input value=#prisoner type=button onclick=AddTagSelector(this.value)></div></div>
 <div class=tagcategory><h2>Astral Bodies</h2>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#hourglass twins' type=button onclick=AddTagSelector(this.value)>
@@ -144,7 +148,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#the stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#the stranger'class=dlc style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#deep space satellite'type=button onclick=AddTagSelector(this.value)>
     <input value='#protagonist’s ship'type=button onclick=AddTagSelector(this.value)>
     <input value='#feldspar’s ship'type=button onclick=AddTagSelector(this.value)>
@@ -180,12 +184,20 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#launch module' type=button onclick=AddTagSelector(this.value)>
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this.value)>
 <!-- </p><p><img src=../img/astr_darkbramble.png> -->
-</p>
-</div>
+</p><p class=dlc><img src=../img/astr_stranger.png>
+    <input value='#river lowlands'type=button onclick=AddTagSelector(this.value)>
+    <input value='#cinder isles'type=button onclick=AddTagSelector(this.value)>
+    <input value='#island tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#hidden gorge'type=button onclick=AddTagSelector(this.value)>
+    <input value='#abandoned temple'type=button onclick=AddTagSelector(this.value)>
+    <input value=#reservoir type=button onclick=AddTagSelector(this.value)>
+    <input value='#submerged structure'type=button onclick=AddTagSelector(this.value)>
+    <input value=#simulation type=button onclick=AddTagSelector(this.value)>
+</p></div>
 <div class=tagcategory><h2>Worldbuilding</h2>
     <input value='#hearthian culture'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai culture'type=button onclick=AddTagSelector(this.value)>
-    <input value='#strangers’ culture'type=button onclick=AddTagSelector(this.value)>
+    <input value='#strangers’ culture'class=dlc type=button onclick=AddTagSelector(this.value)>
     <input value='#time loop event'type=button onclick=AddTagSelector(this.value)>
     <input value=#archeology type=button onclick=AddTagSelector(this.value)>
     <input value=#biology type=button onclick=AddTagSelector(this.value)>
@@ -208,7 +220,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#gravity cannon'type=button onclick=AddTagSelector(this.value)>
     <input value='#warp core'type=button onclick=AddTagSelector(this.value)>
     <input value='#warp tower'type=button onclick=AddTagSelector(this.value)>
-</p><p style=padding-left:0;text-indent:0>
+</p><p class=dlc style=padding-left:0;text-indent:0>
     <input value='#stranger technology'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)>
     <input value='#vision torch'type=button onclick=AddTagSelector(this.value)>
     <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)>
@@ -219,7 +231,8 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#retconned'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#general data'type=button onclick=AddTagSelector(this.value)>
-</p></div></div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+    <input value=#dlc type=button onclick=AddTagSelector(this.value) style=display:none>
+</p></div></div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD — GENERAL DATA LORE CARDS -->
 <!-- @SFOLD Time Loop Scripted Events -->
@@ -553,7 +566,7 @@ e = A/a - 1 = 0.82</pre>
     <tr><td>13:40</td><td>The Hidden Gorge walkways are destroyed</td></tr>
     <tr><td>20:30</td><td>The Cinder Isles tower completely falls</td></tr>
 </table>
-</details><t>#time loop event #in-game observations #the stranger #general data</t></it>
+</details><t>#dlc #time loop event #in-game observations #the stranger #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA ATP activates at 22:40 (warp window timings missing) -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>Events related to the <b>Ash Twin Project</b></summary>
@@ -569,6 +582,23 @@ e = A/a - 1 = 0.82</pre>
 <tr><td>22:39</td><td>The Ash Twin Project’s black hole is gone</td></tr>
 <tr><td>22:40</td><td>The time loop ends (start of purple lines cutscene)</td></tr>
 </table></details><t>#time loop event #in-game observations #ash twin project #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Warp Tower Alignment: Timber Hearth Warp Windows -->
+<it class=tl><details><summary>Warp Tower Alignment: Timber Hearth Warp Windows</summary>
+<p>For the time being, only warp windows which will actually result in a possible warp are displayed. Earlier warp windows can exist, but will not result in a warp because of the sand still covering the warp pad.</p>
+<!-- Interesting warp window: At 10:13.8, the warp "semi-activates" — because the sand has not yet lowered enough, the black hole opens but no warping can occur. This seems to result however in an abnormally long warp window…? More research needed here. -->
+<table class=spmono>
+<tr><td>11:23:1</td></tr>
+<tr><td>12:33.1</td></tr>
+<tr><td>13:32.4</td></tr>
+<tr><td>14:38.3</td></tr>
+<tr><td>15:51.6</td><td>Caution: The column of sand passes overhead around the same time.</td></tr>
+<tr><td>16:50.7</td></tr>
+<tr><td>17:55.6</td></tr>
+<tr><td>19:10.0</td></tr>
+<tr><td>20:08.8</td></tr>
+<tr><td>21:14.4</td></tr>
+</table></details><t>#timber hearth #ash twin #warp tower</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Warp tower alignments angles need to be within 5° of the astral body’s center. -->
 <it id=warptower5deg><details><summary>Warp tower alignments angles need to be within 5° of the astral body’s center.</summary>
@@ -602,6 +632,10 @@ e = A/a - 1 = 0.82</pre>
 <!--
 3:00 is the last chance you have to enter the Lakebed cave, with about 30 seconds more before you need to reach the sandfall
 The High Energy Lab trailhead at the bottom of the Sunless city is inaccessible at 6:08 (when the doorway crushed me),
+
+Rule of quantum entanglement works with ANY quantum object, not just the shards & Quantum Moon!
+
+The Black Hole Forge’s door automatically closes as it starts descending closer to the black hole (https://www.youtube.com/watch?v=isEhZLDBdKc).
 -->
 
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
@@ -934,7 +968,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 </table>
 <p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733 °/s</b>, or about <b>0.005 rad/s</b><!-- 0.2733 * π/180 = 0.004769985 -->, and that the initial angle at the start of the loop is <b>-15.086°</b>. It can be calculated that the satellite’s velocity is <b>124m/s</b><!-- 26000 * 0.2733 * π/180 = 124.01961 -->.</p>
 <img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x – 15.086&Tab;|&Tab;R² = 1</p>
-</details><t>#deep space satellite #time loop event #in-game observations #the stranger</t></it>
+</details><t>#dlc #deep space satellite #time loop event #in-game observations #the stranger</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD TH day/night cycle -->
 <it class=tl id=datathdaynight><details><summary>A full day/night cycle on Timber Hearth lasts <b>6min&nbsp;56s</b>. The&nbsp;day lasts ~3min&nbsp;24s, the night ~3min&nbsp;31s.</summary>
@@ -1063,6 +1097,7 @@ const nofind=document.getElementById("nofind"),
     filterlist=document.getElementById("filterlist"),
     allit=filterlist.getElementsByTagName("it"),
     activetags=document.getElementById("activetags"),
+    alldlc=document.getElementsByClassName('dlc'),
     tagselect=document.querySelectorAll('div[id="tagselect"] input');
 var curtinput=[];
     itags=[];
@@ -1144,6 +1179,12 @@ function FindTag(){
         else{tagselect[i].style.display="none"}
     }
 }
+function ToggleDLC(){
+    document.activeElement.classList.toggle('no')
+    if(document.activeElement.classList.contains('no')){curtinput.push("dlc0");for(d=0;d<alldlc.length;d++){alldlc[d].style.display='none'}}
+    else{curtinput.splice(curtinput.indexOf('dlc0'),1);for(d=0;d<alldlc.length;d++){alldlc[d].style.display=''}}
+}
+for(d=0;d<alldlc.length;d++){alldlc[d].style.display='none'}
 for(i=0;i<tagselect.length;i++){tagselect[i].id="btn_"+tagselect[i].value.replace(/\s/g,'').slice(1)}
 for(documentedtags=[],i=0;i<tagselect.length;i++) documentedtags.push(tagselect[i].value.split("#")[1]);
 const allts = document.querySelectorAll('div[id="filterlist"] t');
@@ -1154,3 +1195,5 @@ for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (mi
 "" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
+<!-- <p><dlgprt></dlgprt> <a href="javascript:getcard('ID_OF_A_LORECARD')">REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</a></p> -->
+<!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to get some progress done on checking the multiple version changes & translations. -->
