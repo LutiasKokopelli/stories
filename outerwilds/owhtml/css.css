@@ -68,7 +68,6 @@ td{height:100%}
     caret-color: rgb(var(--white));
 }
 #findtaginput:focus-visible::placeholder,#filterinput:focus-visible::placeholder{opacity:.5}
-#findtaginput:focus-within,#filterinput:focus-within{padding-left:50px}
 #findtaginput,#filterinput{
     width: 100%;
     font-size: 16px;

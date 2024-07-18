@@ -16,25 +16,24 @@ dlgprt{width:1em;display:inline-block;height:.7em;background:url("data:image/svg
 .spanintro{padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.8);box-decoration-break:clone;-webkit-box-decoration-break:clone}
 #findtaginput{display:block;width:90%;margin:17px auto}
 .all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%}
-.tagcategory{padding:17px;height:267px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
+.tagcategory{padding:17px;height:270px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
 .tagcategory h2{font-size:1.4em;opacity:.9}
 .tagcategory hr{margin:17px -17px;height:3px;width:calc(100% + 34px)}
 .tagcategory img{height:32px;display:inline-block;vertical-align:middle}
-.tagcategory p{text-indent:-36px;padding-left:36px}
 .tagcategory .infob{position:fixed;top:5%;left:unset;right:5%}
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
 input:not(#resetsearch,#startsearch,#findtaginput,#toggledlc):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 .include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
 .exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
-#resetsearch,#toggledlc,#startsearch{position:absolute;bottom:0;top:-3px;width:150px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
-#resetsearch{right:290px;border-radius:0;background:rgb(var(--redd))}
+#resetsearch,#toggledlc,#startsearch{position:absolute;bottom:0;top:-3px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
+#resetsearch{right:250px;border-radius:0;background:rgb(var(--redd));width:100px}
 #resetsearch:hover{background:rgb(var(--redl));color:#fff}
-#toggledlc{right:150px;border-radius:0;background-color:rgb(var(--indigod));background-image:url(../img/EotE-show.png);background-size:100% auto;background-position:center;background-repeat:no-repeat;width:140px}
+#toggledlc{right:110px;border-radius:0;background-color:rgb(var(--indigod));background-image:url(../img/EotE-show.png);background-size:100% auto;background-position:center;background-repeat:no-repeat;width:140px}
 #toggledlc.no{background-image:url(../img/EotE-hide.png)}
-#startsearch{right:0;border-radius:0 20px 20px 0;background:rgb(var(--greend))}
+#startsearch{right:0;border-radius:0 20px 20px 0;background:rgb(var(--greend));width:110px}
 #startsearch:hover{background:rgb(var(--greenl));color:#fff}
-#activetags{padding:20px;min-height:50px;width:calc(100% - 440px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
+#activetags{padding:20px;min-height:50px;width:calc(100% - 350px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
 #activetags p{font-family:Calibri;font-size:14px;display:inline-block;padding:5px 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid}
 #activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
@@ -47,10 +46,22 @@ details>p{margin:12px 0}
 p.infob{padding:7px;margin:0}
 .infob > *:last-child{margin-bottom:0}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
-#tagselect{height:810px;max-height:810px}
-@media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
-@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
-@media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}#filterlist{column-width:var(--colwid)}}
+@media only screen and (max-aspect-ratio:3/4){
+    *{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}
+    #filterlist{column-width:var(--colwid)}
+    #taglocs{height:540px}
+    #tagend{height:220px}
+}
+@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){
+    *{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}
+    #filterlist{column-width:var(--colwid)}
+    #taglocs{grid-row:1/5;height:1080px}
+}
+@media only screen and (min-aspect-ratio:4/3){
+    *{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}
+    #filterlist{column-width:var(--colwid)}
+    #taglocs{grid-row:1/3;height:540px}
+}
 it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
 .ret,.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd)}
 .misc,.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod)}
@@ -116,75 +127,70 @@ Some lore cards can refer to another; you can access the latter via text precede
 To see every single lore card in existence, click “Search” with an empty tag selection!<br>
 </p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag!'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
-<div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <!-- @EFOLD -->
 <!-- @SFOLD Select Tags -->
-<div class=tagcategory><h2>Hearthians</h2><input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)> <input value='#outer wilds ventures' type=button onclick=AddTagSelector(this.value)> <input value=#protagonist type=button onclick=AddTagSelector(this.value)> <input value=#arkose type=button onclick=AddTagSelector(this.value)> <input value=#chert type=button onclick=AddTagSelector(this.value)> <input value=#esker type=button onclick=AddTagSelector(this.value)> <input value=#feldspar type=button onclick=AddTagSelector(this.value)> <input value=#gabbro type=button onclick=AddTagSelector(this.value)> <input value=#galena type=button onclick=AddTagSelector(this.value)> <input value=#gneiss type=button onclick=AddTagSelector(this.value)> <input value=#gossan type=button onclick=AddTagSelector(this.value)> <input value=#hal type=button onclick=AddTagSelector(this.value)> <input value=#hornfels type=button onclick=AddTagSelector(this.value)> <input value=#marl type=button onclick=AddTagSelector(this.value)> <input value=#mica type=button onclick=AddTagSelector(this.value)> <input value=#moraine type=button onclick=AddTagSelector(this.value)> <input value=#porphy type=button onclick=AddTagSelector(this.value)> <input value=#riebeck type=button onclick=AddTagSelector(this.value)> <input value=#rutile type=button onclick=AddTagSelector(this.value)> <input value=#slate type=button onclick=AddTagSelector(this.value)> <input value=#spinel type=button onclick=AddTagSelector(this.value)> <input value=#tektite type=button onclick=AddTagSelector(this.value)> <input value=#tephra type=button onclick=AddTagSelector(this.value)> <input value=#tuff type=button onclick=AddTagSelector(this.value)></div>
-<div class=tagcategory><h2>Nomai</h2><input value=#nomai style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
-    <input value=#ilex type=button onclick=AddTagSelector(this.value)>
-    <input value=#laevi type=button onclick=AddTagSelector(this.value)>
-    <input value=#lami type=button onclick=AddTagSelector(this.value)>
-    <input value=#solanum type=button onclick=AddTagSelector(this.value)>
-    <input value=#taget type=button onclick=AddTagSelector(this.value)>
-</div>
-<div class=tagcategory><div class=dlc><h2>Stranger</h2><input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)> <input value=#prisoner type=button onclick=AddTagSelector(this.value)></div></div>
-<div class=tagcategory><h2>Astral Bodies</h2>
+<div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
+<!-- @SFOLD Astral Bodies & Locations -->
+<div class=tagcategory id=taglocs><h2>Astral Bodies & Locations</h2><p>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#hourglass twins' type=button onclick=AddTagSelector(this.value)>
-    <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value=#attlerock style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#giant’s deep'style='background:url(../img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value=#interloper style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#white hole'style='background:url(../img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#quantum moon'style='background:url(../img/astr_qmoon.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#eye of the universe'type=button onclick=AddTagSelector(this.value)>
-</div>
-<div class=tagcategory><h2>Artificial Satellites, Stations, Ships</h2>
-    <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#the stranger'class=dlc style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#deep space satellite'type=button onclick=AddTagSelector(this.value)>
-    <input value='#protagonist’s ship'type=button onclick=AddTagSelector(this.value)>
-    <input value='#feldspar’s ship'type=button onclick=AddTagSelector(this.value)>
-    <input value='#chert’s ship'type=button onclick=AddTagSelector(this.value)>
-    <input value='#gabbro’s ship'type=button onclick=AddTagSelector(this.value)>
-    <input value='#riebeck’s ship'type=button onclick=AddTagSelector(this.value)>
-    <input value='#nomai shuttle'type=button onclick=AddTagSelector(this.value)>
-    <input value='#nomai vessel' type=button onclick=AddTagSelector(this.value)>
-</div>
-<div class=tagcategory><h2>Sub-Locations</h2>
-<p><img src=../img/astr_ashtwin.png>
+</p><p>
+    <input value='#hourglass twins' type=button onclick=AddTagSelector(this.value)>
+    <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#ash twin project'type=button onclick=AddTagSelector(this.value)>
-</p><p><img src=../img/astr_embertwin.png>
+    <input value='#sun station warp tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#ash twin warp tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#ember twin warp tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#timber hearth warp tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#brittle hollow warp tower'type=button onclick=AddTagSelector(this.value)>
+    <input value='#giant’s deep warp tower'type=button onclick=AddTagSelector(this.value)>
+<br>
+    <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#sunless city'type=button onclick=AddTagSelector(this.value)>
     <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this.value)>
-</p><p><img src=../img/astr_timberhearth.png>
+</p><p>
+    <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#the village'type=button onclick=AddTagSelector(this.value)>
     <input value='#radio tower'type=button onclick=AddTagSelector(this.value)>
     <input value='#youngbark crater'type=button onclick=AddTagSelector(this.value)>
     <input value='#quantum grove'type=button onclick=AddTagSelector(this.value)>
     <input value='#geyser mountains'type=button onclick=AddTagSelector(this.value)>
-</p><p><img src=../img/astr_brittlehollow.png>
+<br>
+    <input value=#attlerock style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#south pole locator'type=button onclick=AddTagSelector(this.value)>
+</p><p>
+    <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#black hole forge'type=button onclick=AddTagSelector(this.value)>
     <input value='#hanging city'type=button onclick=AddTagSelector(this.value)>
     <input value='#tower of quantum knowledge'type=button onclick=AddTagSelector(this.value)>
-</p><p><img src=../img/astr_giantsdeep.png>
-    <input value='#core of giant’s deep' type=button onclick=AddTagSelector(this.value)>
-    <input value='#statue island' type=button onclick=AddTagSelector(this.value)>
+<br>
+    <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+</p><p>
+    <input value='#giant’s deep'style='background:url(../img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#bramble island' type=button onclick=AddTagSelector(this.value)>
+    <input value='#construction yard' type=button onclick=AddTagSelector(this.value)>
     <input value='#gabbro’s island' type=button onclick=AddTagSelector(this.value)>
+    <input value='#statue island' type=button onclick=AddTagSelector(this.value)>
+    <input value='#statue workshop' type=button onclick=AddTagSelector(this.value)>
     <input value='#tower of quantum trials'type=button onclick=AddTagSelector(this.value)>
-</p><p><img src=../img/astr_opc.png>
+    <input value='#core of giant’s deep' type=button onclick=AddTagSelector(this.value)>
+</p><p>
+    <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#control module' type=button onclick=AddTagSelector(this.value)>
     <input value='#launch module' type=button onclick=AddTagSelector(this.value)>
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this.value)>
-<!-- </p><p><img src=../img/astr_darkbramble.png> -->
-</p><p class=dlc><img src=../img/astr_stranger.png>
+</p><p>
+    <input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#nomai vessel' type=button onclick=AddTagSelector(this.value)>
+</p><p>
+    <input value=#interloper style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#white hole'style='background:url(../img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+</p><p>
+    <input value='#eye of the universe'type=button onclick=AddTagSelector(this.value)>
+    <input value='#quantum moon'style='background:url(../img/astr_qmoon.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+</p><p class=dlc>
+    <input value='#the stranger'class=dlc style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#river lowlands'type=button onclick=AddTagSelector(this.value)>
     <input value='#cinder isles'type=button onclick=AddTagSelector(this.value)>
     <input value='#island tower'type=button onclick=AddTagSelector(this.value)>
@@ -194,6 +200,46 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#submerged structure'type=button onclick=AddTagSelector(this.value)>
     <input value=#simulation type=button onclick=AddTagSelector(this.value)>
 </p></div>
+<!-- @EFOLD -->
+<!-- @SFOLD Characters -->
+<div class=tagcategory><h2>Characters</h2><p>
+    <input value=#hearthians style='outline:3px solid rgb(var(--indigol));background:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png)no-repeat left center;background-size:21px 21px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#outer wilds ventures' type=button onclick=AddTagSelector(this.value)>
+    <input value=#protagonist type=button onclick=AddTagSelector(this.value)>
+    <input value=#arkose type=button onclick=AddTagSelector(this.value)>
+    <input value=#chert type=button onclick=AddTagSelector(this.value)>
+    <input value=#esker type=button onclick=AddTagSelector(this.value)>
+    <input value=#feldspar type=button onclick=AddTagSelector(this.value)>
+    <input value=#gabbro type=button onclick=AddTagSelector(this.value)>
+    <input value=#galena type=button onclick=AddTagSelector(this.value)>
+    <input value=#gneiss type=button onclick=AddTagSelector(this.value)>
+    <input value=#gossan type=button onclick=AddTagSelector(this.value)>
+    <input value=#hal type=button onclick=AddTagSelector(this.value)>
+    <input value=#hornfels type=button onclick=AddTagSelector(this.value)>
+    <input value=#marl type=button onclick=AddTagSelector(this.value)>
+    <input value=#mica type=button onclick=AddTagSelector(this.value)>
+    <input value=#moraine type=button onclick=AddTagSelector(this.value)>
+    <input value=#porphy type=button onclick=AddTagSelector(this.value)>
+    <input value=#riebeck type=button onclick=AddTagSelector(this.value)>
+    <input value=#rutile type=button onclick=AddTagSelector(this.value)>
+    <input value=#slate type=button onclick=AddTagSelector(this.value)>
+    <input value=#spinel type=button onclick=AddTagSelector(this.value)>
+    <input value=#tektite type=button onclick=AddTagSelector(this.value)>
+    <input value=#tephra type=button onclick=AddTagSelector(this.value)>
+    <input value=#tuff type=button onclick=AddTagSelector(this.value)>
+</p><p>
+    <input value=#nomai style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
+    <input value=#ilex type=button onclick=AddTagSelector(this.value)>
+    <input value=#laevi type=button onclick=AddTagSelector(this.value)>
+    <input value=#lami type=button onclick=AddTagSelector(this.value)>
+    <input value=#solanum type=button onclick=AddTagSelector(this.value)>
+    <input value=#taget type=button onclick=AddTagSelector(this.value)>
+</p><p class=dlc>
+    <input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)>
+    <input value=#prisoner type=button onclick=AddTagSelector(this.value)></p>
+</div>
+<!-- @EFOLD -->
+<!-- @SFOLD Worldbuilding -->
 <div class=tagcategory><h2>Worldbuilding</h2>
     <input value='#hearthian culture'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai culture'type=button onclick=AddTagSelector(this.value)>
@@ -210,12 +256,23 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#timber hearth geysers'type=button onclick=AddTagSelector(this.value)>
     <input value='#hourglass twins sand column'type=button onclick=AddTagSelector(this.value)>
 </div>
+<!-- @EFOLD -->
+<!-- @SFOLD Objects of interest -->
 <div class=tagcategory><h2>Objects of interest</h2>
     <p style=padding-left:0;text-indent:0><input value='#hearthian technology'style='outline:3px solid rgb(var(--indigol))'type=button onclick=AddTagSelector(this.value)>
     <input value=#signalscope type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai translator' type=button onclick=AddTagSelector(this.value)>
+    <input value='#sky shutter'type=button onclick=AddTagSelector(this.value)>
+    <input value='#deep space satellite'type=button onclick=AddTagSelector(this.value)>
+    <input value='#protagonist’s ship'type=button onclick=AddTagSelector(this.value)>
+    <input value='#feldspar’s ship'type=button onclick=AddTagSelector(this.value)>
+    <input value='#chert’s ship'type=button onclick=AddTagSelector(this.value)>
+    <input value='#gabbro’s ship'type=button onclick=AddTagSelector(this.value)>
+    <input value='#riebeck’s ship'type=button onclick=AddTagSelector(this.value)>
+    <input value=#marshmallows type=button onclick=AddTagSelector(this.value)>
 </p><p style=padding-left:0;text-indent:0>
     <input value='#nomai technology'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
+    <input value='#nomai shuttle'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai statue'type=button onclick=AddTagSelector(this.value)>
     <input value='#gravity cannon'type=button onclick=AddTagSelector(this.value)>
     <input value='#warp core'type=button onclick=AddTagSelector(this.value)>
@@ -225,14 +282,19 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#vision torch'type=button onclick=AddTagSelector(this.value)>
     <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)>
 </p></div>
-<div class=tagcategory><h2>Lore Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
+<!-- @EFOLD -->
+<!-- @SFOLD Lore Card Types -->
+<div class=tagcategory id=tagend><h2>Lore Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
     <input value='#in-game observations'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#alternate sources'style='outline:3px solid rgb(var(--indigod))'type=button onclick=AddTagSelector(this.value)>
     <input value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#retconned'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#general data'type=button onclick=AddTagSelector(this.value)>
     <input value=#dlc type=button onclick=AddTagSelector(this.value) style=display:none>
-</p></div></div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+</p></div>
+<!-- @EFOLD -->
+</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2>
+<div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD — GENERAL DATA LORE CARDS -->
 <!-- @SFOLD Time Loop Scripted Events -->
@@ -621,13 +683,13 @@ e = A/a - 1 = 0.82</pre>
 <!-- @EFOLD -->
 <!-- @EFOLD -->
 
-
 <!-- @SFOLD    @WIP@    Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds. -->
 <!-- <it class=ret><details open><summary>Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds.</summary>
 <h2>Text Adventure Introduction Notes<span>File: SomeContextForTheThingYouJustDownloaded.txt</span></h2><blockquote>“I still think Dark Bramble being a carnivorous plant is a fun idea, even if the final version definitely works better overall.” — Alex Beachum</blockquote><p>This clearly shows that Dark Bramble is not carnivorous in the final version of the game (regardless of whether it could be shown or not in gameplay).</p>
 </details><t>#retconned #dark bramble</t></it> -->
 <!-- @EFOLD -->
 
+<!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
 <!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681 -->
 <!--
 3:00 is the last chance you have to enter the Lakebed cave, with about 30 seconds more before you need to reach the sandfall
@@ -636,10 +698,20 @@ The High Energy Lab trailhead at the bottom of the Sunless city is inaccessible 
 Rule of quantum entanglement works with ANY quantum object, not just the shards & Quantum Moon!
 
 The Black Hole Forge’s door automatically closes as it starts descending closer to the black hole (https://www.youtube.com/watch?v=isEhZLDBdKc).
--->
 
-<!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
-<!-- By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
+Staying ON the edge of the Supernova?	https://www.youtube.com/watch?v=rss6yp2UaXM
+Going THROUGH the Sun?			https://www.youtube.com/watch?v=wWhQRRa_RRY
+Freezing the STRANGER in time?		https://www.youtube.com/watch?v=_6mZIzGbjjI
+
+Exploring the Simulation with the SECOND ARTIFACT PROTOTYPE	https://www.youtube.com/watch?v=n-BkKJpg52I
+Exploring Dark Bramble WITHOUT FOG				https://www.youtube.com/watch?v=o-k3kQ7WIB0
+EotE - Easter Eggs And Views Out Of Bounds: The Prisoner	https://www.youtube.com/watch?v=h93GaqXhezo
+
+https://www.reddit.com/r/outerwilds/comments/zsq743/outer_wilds_echoes_of_the_eye_concept_art_or/
+
+<a href=https://www.youtube.com/watch?v=vLSK3xXjjZ0>Close look to the Orbital Probe Cannon’s start of loop explosion</a>
+
+By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
 
 —————————— HEL Experiment (@thisisaname0):
 5 minutes, 55 seconds: Sand covers cacti leading to HEL.
@@ -1067,7 +1139,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <!-- HAS_ONGOING_DATAMINING (Hornfels) -->
 <!-- @EFOLD -->
 <!-- @EFOLD -->
-<!-- @SFOLD Sidebar & JS -->
+<!-- @SFOLD Sidebar -->
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div>
 <h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
 <div id=sidenav><div id=midxbtn><a href=javascript:void(0) onclick=closeNav() id=closbtn style=color:#fff><h1>Close<span>&times;</span></h1></a></div><div id=navctn>
@@ -1092,7 +1164,10 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
     <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p>
 </div>
 <p align=center style='padding:0 2em'><i>This web page was created and is maintained by Lutias Kokopelli.</i></p>
-</div></div><button id=openbtn onclick=openNav()>&#9776; Guide & Info</button></div><script>
+</div></div><button id=openbtn onclick=openNav()>&#9776; Guide & Info</button></div>
+<!-- @EFOLD -->
+<!-- @SFOLD Javascript -->
+<script>
 const nofind=document.getElementById("nofind"),
     filterlist=document.getElementById("filterlist"),
     allit=filterlist.getElementsByTagName("it"),
@@ -1155,7 +1230,6 @@ function AddTagSelector(tag){
 }
 function FilterItems(){
     var findli=allit.length;
-    filterlist.style.display='';
     for(i=0;i<itags.length;i++){
         allit[i].style.display='none';
         var checks=true;
@@ -1173,9 +1247,11 @@ function FilterItems(){
     else{nofind.style.display="none"}
 }
 function FindTag(){
-    var taginp=document.getElementById('findtaginput').value.toLowerCase();
+    var taginput=document.getElementById('findtaginput').value.toLowerCase().replaceAll("'",'’').split(' ');
     for(i=0;i<tagselect.length;i++){
-        if(tagselect[i].value.includes(taginp) || tagselect[i].classList.contains("include") || tagselect[i].classList.contains("exclude")){tagselect[i].style.display=""}
+        check=true
+        for(t=0;t<taginput.length;t++){if(tagselect[i].value.includes(taginput[t])&&check){check=true}else{check=false}}
+        if(check || tagselect[i].classList.contains("include") || tagselect[i].classList.contains("exclude")){tagselect[i].style.display=""}
         else{tagselect[i].style.display="none"}
     }
 }
