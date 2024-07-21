@@ -362,14 +362,27 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
     <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
     <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
     <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
-    <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr>
-    <tr><td></td><td>:</td><td></td></tr>
-    <!-- “They haven’t <i>yet</i>,” Hornfels corrected with a roll of all four eyes.       ==>     +4min from last time stamp -->
+    <!-- <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr>
+    <tr><td>06d04s 21:04</td><td>04:09</td><td>Hornfels, Gossan and Hal (+ Gabbro through Hornfels’ portable radio) go down to the statue room.</td></tr> -->
     <!-- <tr><td></td><td>:</td><td></td></tr> -->
+
+<!-- <script>window.alert(THtime2GMtime("06d04s 21:04"))</script> -->
+<!-- <script>window.alert(GMtime2THtime("05:57"))</script> -->
+
 </table></details><t>#time loop event</t></it>
 <!-- @EFOLD -->
 
+<!-- @SFOLD NOTES FOR LATER -->
 <!--
+Hearthian bugs have evolved to:
+- Lay eggs on *land* instead of water (no predators)
+- Lay tiny batches of eggs every here and there instead of all in one spot, aiming for tiny nooks and crannies (even if ghost matter shows up, not all eggs will die)
+- Be able to see ghost matter so as to easily avoid it
+
+
+Why are some lanterns purple? Do you go with something simple (https://www.scientificamerican.com/article/streetlights-are-mysteriously-turning-purple-heres-why/) or with “Nomaian information in liquid-ish form” technology?
+
+
 Hearthian trees are radiotrophic: they do not require air as they do not breathe, and instead use radiation from the sun as the source of energy for their metabolism (radiosynthesis) on top of photosynthesis. They reject dioxygen as waste, therefore creating atmosphere on a local area surrounding them rich in oxygen and somewhat cleansed of radiation.
 
 Quantum Moon: The locations of the ground and obstacles on unobserved locations and versions of the Moon are constantly shifting, and purposefully avoiding the observer's body. This is helped in huge part by the observer taking note of the *absence* of such obstacles in their path in the one version of the Moon they are standing on. Basically all versions of the observer are walking and moving in sync on all six versions, and the main version observing one state of the moon causes the other versions of the moon to create the same type of landscape. Similarly, the shrine is constrained to be present in the same location on all versions of the Moon no matter what.
@@ -386,7 +399,19 @@ The hatchlings' cabin had to be relocated, and they chose a spot closest to the 
 Despite the elders not wanting them to know, Firn 100% has overheard them talk about the hatchling crisis at least once, and maybe about the ghost matter issue as well.
 Feldspar tried and failed to land on the Quantum Moon many, many times. When they disappeared and the preliminary search parties did not turn up anything, everyone started thinking that they had either died, or that they had finally managed to land on the Quantum Moon… and then vanished along with it, spirited away.
 As a safety mechanism because biology is a wonderful machine, inbreeding defects will *always* lead to death prior to hatching (with in 99% of cases leading to "the egg doesn’t even reach the stage of growing into macroscopic eggs that can be visible to the naked eye and picked up by a caretaker to begin with")
+
+Hornfels’ cabin also is Feldspar’s (and Slate’s); but they have been sleeping more and more often at the observatory ever since Feldspar disappeared so as to avoid remembering that Feldspar is no longer sleeping in there. Slate doesn’t resent Hornfels for leaving them alone at night, but they do feel the strain.
+Gossan lives in a different cabin, which they share with Tuff (and used to share with Esker and Riebeck).
+
+Hatchlings' cabin:	Arkose	Tephra	Galena	Moraine	Mica
+Caretakers' cabin:	Rutile	Gneiss	Tektite	Spinel
+
+	Hal	Firn	Marl
+	Hrnfels	Slate	Feldspar
+	Chert	Gabbro	Porphy
+	Gossan	Esker	Tuff	Riebeck
 -->
+<!-- @EFOLD -->
 
 <!-- @SFOLD Javascript -->
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div></div><script>
@@ -394,8 +419,9 @@ const nofind=document.getElementById("nofind"),
     filterlist=document.getElementById("filterlist"),
     allit=filterlist.getElementsByTagName("it"),
     activetags=document.getElementById("activetags"),
-    tagselect=document.querySelectorAll('div[id="tagselect"] input');
-var curtinput=[];
+    tagselect=document.querySelectorAll('div[id="tagselect"] input'),
+    defaultinput=[];
+var curtinput=[],
     itags=[];
 for(i=0;i<allit.length;i++){
     itags.push([]);
@@ -409,78 +435,12 @@ for(i=0;i<allit.length;i++){
     itags[itags.length-1].push(txtList);
     if(!allit[i].getElementsByTagName("details")[0].open==true){allit[i].style.display='none'}
 }
-function getcard(id){const cd=document.getElementById(id);cd.style.display="";cd.getElementsByTagName("details")[0].open=true;cd.scrollIntoView()}
-function addChildToParent(parent,el,msg,state){
-    const node=document.createElement(el);
-    node.id="tag_"+msg.replace(/\s/g,'')
-    node.value="#"+msg
-    node.type='button'
-    node.setAttribute('onclick','AddTagSelector(this.value)')
-    node.classList.add(state)
-    parent.appendChild(node)
-}
-function ResetTagSelector(){
-    curtinput=[]
-    activetags.innerHTML="";
-    for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
-    for(i=0;i<allit.length;i++){allit[i].style.display="none";allit[i].getElementsByTagName("details")[0].open=false}
-}
-function AddTagSelector(tag){
-    tag=tag.split('#')[1]
-    if(curtinput.includes(tag+"0")){            // RETURN TO NEUTRAL
-        let index=curtinput.indexOf(tag+"0");
-        curtinput.splice(index,1);
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.remove("exclude");
-        activetags.removeChild(Array.from(activetags.childNodes).find((v)=>v.value=='#'+tag));
-    }
-    else if(curtinput.includes(tag+"1")){       // TURN GREEN TAG INTO RED TAG
-        let index=curtinput.indexOf(tag+"1");
-        curtinput.splice(index,1);
-        curtinput.push(tag+"0");
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.remove("include");
-        document.getElementById("tag_"+tag.replace(/\s/g,'')).classList.remove("include");
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.add("exclude");
-        document.getElementById("tag_"+tag.replace(/\s/g,'')).classList.add("exclude");
-    }
-    else{                                       // ACTIVATE GREEN TAG
-        curtinput.push(tag+"1");
-        addChildToParent(activetags,"input",tag,"include");
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.add("include");
-        document.getElementById("tag_"+tag.replace(/\s/g,'')).classList.add("include");
-    }
-}
-function FilterItems(){
-    var findli=allit.length;
-    filterlist.style.display='';
-    for(i=0;i<itags.length;i++){
-        allit[i].style.display='none';
-        var checks=true;
-        for(tag=0;tag<curtinput.length;tag++){
-            if(curtinput[tag].slice(-1)=='0'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))!=-1){checks=false}
-            if(curtinput[tag].slice(-1)=='1'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))==-1){checks=false}
-        }
-        if(checks){
-            allit[i].style.display=""
-            if(allit[i].getElementsByTagName("t")[0].innerHTML.includes("#general data")){allit[i].getElementsByTagName("details")[0].open=true}
-        }
-        else{findli-=1}
-    }
-    if(findli==0){nofind.style.display="block"}
-    else{nofind.style.display="none"}
-}
-function FindTag(){
-    var taginp=document.getElementById('findtaginput').value.toLowerCase();
-    for(i=0;i<tagselect.length;i++){
-        if(tagselect[i].value.includes(taginp) || tagselect[i].classList.contains("include") || tagselect[i].classList.contains("exclude")){tagselect[i].style.display=""}
-        else{tagselect[i].style.display="none"}
-    }
-}
 for(i=0;i<tagselect.length;i++){tagselect[i].id="btn_"+tagselect[i].value.replace(/\s/g,'').slice(1)}
 for(documentedtags=[],i=0;i<tagselect.length;i++) documentedtags.push(tagselect[i].value.split("#")[1]);
-const allts = document.querySelectorAll('div[id="filterlist"] t');
+const allts=document.querySelectorAll('div[id="filterlist"] t');
 for(allusedtags = [], i = 0; i < allts.length; i++) allusedtags += allts[i].textContent.split("#");
 for(uniq = [], usedtagslist = allusedtags.split(","), i = 0; i < usedtagslist.length; i++) uniq.includes(usedtagslist[i].trim()) || "" == usedtagslist[i] || uniq.push(usedtagslist[i].trim());
-var missingtags = "";
+var missingtags="";
 for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (missingtags += "\n・" + uniq[tag]);
 "" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>

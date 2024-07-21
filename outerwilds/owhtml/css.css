@@ -276,6 +276,7 @@ h2+hr{margin-top:5%}
 
 @media only screen and (orientation: landscape) {
     .chp {
+        border:1px solid rgba(0,0,0,.1);
         border-radius:var(--chpborder);
         box-sizing:border-box;width:80%;max-width:800px;margin:42px auto;
         padding:calc(var(--chpborder)/2);

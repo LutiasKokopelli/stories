@@ -83,6 +83,7 @@ th,td{vertical-align:middle;font-size:.85em}
 td:has(p){font-size:1em}
 th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
 a{color:rgb(var(--fore));filter:brightness(150%)}
+.cardext{filter:none}.cardext *{--fore:var(--blue);--midd:var(--black2)}.cardext:hover{filter:contrast(150%)brightness(200%)}
 a:hover{border-bottom:2px dashed rgb(var(--fore))}
 a h2{filter:brightness(75%)}
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
@@ -90,7 +91,6 @@ summary span{font-size:.7em}
 details th span:not([class]),details td span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
 .source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
 p+.source{margin-top:-12px}
-.source a{color:rgb(var(--white))}
 summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:10px 10px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 details[open] summary{margin-bottom:0}
 details[open]+t{margin-top:12px}
@@ -134,10 +134,12 @@ To see every single lore card in existence, click “Search” with an empty tag
 <div class=tagcategory id=taglocs><h2>Astral Bodies & Locations</h2><p>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#sun station warp receiver'type=button onclick=AddTagSelector(this.value)>
 </p><p>
     <input value='#hourglass twins' type=button onclick=AddTagSelector(this.value)>
     <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#ash twin project'type=button onclick=AddTagSelector(this.value)>
+    <input value='#ash twin project warp receiver'type=button onclick=AddTagSelector(this.value)>
     <input value='#sun station warp tower'type=button onclick=AddTagSelector(this.value)>
     <input value='#ash twin warp tower'type=button onclick=AddTagSelector(this.value)>
     <input value='#ember twin warp tower'type=button onclick=AddTagSelector(this.value)>
@@ -146,8 +148,20 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#giant’s deep warp tower'type=button onclick=AddTagSelector(this.value)>
 <br>
     <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#chert’s camp'type=button onclick=AddTagSelector(this.value)>
     <input value='#sunless city'type=button onclick=AddTagSelector(this.value)>
-    <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this.value)>
+    <input value='#anglerfish overlook district'type=button onclick=AddTagSelector(this.value)>
+    <input value='#anglerfish fossil'type=button onclick=AddTagSelector(this.value)>
+    <input value='#stepping stone district'type=button onclick=AddTagSelector(this.value)>
+    <input value='#eye shrine district'type=button onclick=AddTagSelector(this.value)>
+    <input value='#high energy lab trailhead' type=button onclick=AddTagSelector(this.value)>
+    <input value='#high energy lab' type=button onclick=AddTagSelector(this.value)>
+    <input value='#escape pod 2' type=button onclick=AddTagSelector(this.value)>
+    <input value='#ember twin gravity cannon'type=button onclick=AddTagSelector(this.value)>
+    <input value='#quantum caves'type=button onclick=AddTagSelector(this.value)>
+    <input value='#lakebed cave'type=button onclick=AddTagSelector(this.value)>
+    <input value='#quantum moon locator'type=button onclick=AddTagSelector(this.value)>
+    <input value='#ember twin warp receiver'type=button onclick=AddTagSelector(this.value)>
 </p><p>
     <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#the village'type=button onclick=AddTagSelector(this.value)>
@@ -155,14 +169,19 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#youngbark crater'type=button onclick=AddTagSelector(this.value)>
     <input value='#quantum grove'type=button onclick=AddTagSelector(this.value)>
     <input value='#geyser mountains'type=button onclick=AddTagSelector(this.value)>
+    <input value='#timber hearth warp receiver'type=button onclick=AddTagSelector(this.value)>
 <br>
     <input value=#attlerock style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#south pole locator'type=button onclick=AddTagSelector(this.value)>
 </p><p>
     <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#riebeck’s camp'type=button onclick=AddTagSelector(this.value)>
     <input value='#black hole forge'type=button onclick=AddTagSelector(this.value)>
     <input value='#hanging city'type=button onclick=AddTagSelector(this.value)>
     <input value='#tower of quantum knowledge'type=button onclick=AddTagSelector(this.value)>
+    <input value='#escape pod 1' type=button onclick=AddTagSelector(this.value)>
+    <input value='#brittle hollow gravity cannon'type=button onclick=AddTagSelector(this.value)>
+    <input value='#brittlehollow warp receiver'type=button onclick=AddTagSelector(this.value)>
 <br>
     <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
 </p><p>
@@ -174,6 +193,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#statue workshop' type=button onclick=AddTagSelector(this.value)>
     <input value='#tower of quantum trials'type=button onclick=AddTagSelector(this.value)>
     <input value='#core of giant’s deep' type=button onclick=AddTagSelector(this.value)>
+    <input value='#giant’s deep warp receiver'type=button onclick=AddTagSelector(this.value)>
 </p><p>
     <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#control module' type=button onclick=AddTagSelector(this.value)>
@@ -181,6 +201,8 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this.value)>
 </p><p>
     <input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value='#feldspar’s camp' type=button onclick=AddTagSelector(this.value)>
+    <input value='#escape pod 3' type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai vessel' type=button onclick=AddTagSelector(this.value)>
 </p><p>
     <input value=#interloper style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
@@ -243,9 +265,10 @@ To see every single lore card in existence, click “Search” with an empty tag
 <div class=tagcategory><h2>Worldbuilding</h2>
     <input value='#hearthian culture'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai culture'type=button onclick=AddTagSelector(this.value)>
-    <input value='#strangers’ culture'class=dlc type=button onclick=AddTagSelector(this.value)>
+    <span class=dlc><input value='#strangers’ culture' type=button onclick=AddTagSelector(this.value)></span>
     <input value='#time loop event'type=button onclick=AddTagSelector(this.value)>
     <input value=#archeology type=button onclick=AddTagSelector(this.value)>
+    <input value=#astronomy type=button onclick=AddTagSelector(this.value)>
     <input value=#biology type=button onclick=AddTagSelector(this.value)>
     <input value=#timeline type=button onclick=AddTagSelector(this.value)>
     <input value=#physics type=button onclick=AddTagSelector(this.value)>
@@ -295,19 +318,16 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 </div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2>
 <div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+<a href=calendar_timeloop.html class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> All Time Loop Scripted Events <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #timeline #time loop event #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
+<a href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> Solar System Data <span class=source style=color:initial;opacity:.5>(Spreadsheet by Trifid)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
 <!-- @EFOLD -->
 <!-- @SFOLD — GENERAL DATA LORE CARDS -->
-<!-- @SFOLD Time Loop Scripted Events -->
-<it class=tl><details><summary style=font-size:30px;font-weight:600>All Time Loop Scripted Events</summary><a href=calendar_timeloop.html><h2 class=YYY><dlgprt></dlgprt> Separate Web Page: Time Loop Calendar</h2></a></details><t>#in-game observations #timeline #time loop event #general data</t></it>
-<!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Sun -->
-<it class=tl id=datasun style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Sun</b></summary>
-<h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius <smol style=font-size:.6em;opacity:.7>(Default)</smol></th><td>2000 m</td></tr>
-    <tr><th>Radius <smol style=font-size:.6em;opacity:.7>(End Times)</smol></th><td>4000 m</td></tr>
-    <tr><th>Mass</th><td style=position:relative>4.00 &times; 10<sup>11</sup><span style=font-size:.8em>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source</a></span></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>8.3 (hypothetical for 2km radius)</td></tr>
-    <!-- Hypothetical sun gravity if one were to stand on its surface: 100m/s2 ==> 8.3g for normal start of loop sun -->
+<it class=tl id=datasun style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Sun</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:22%>Surface Radius</th><td>2000&#8239;m <smol style=font-size:.6em;opacity:.7>(Default)</smol><br>4000&#8239;m <smol style=font-size:.6em;opacity:.7>(End Times)</smol></td></tr>
+    <tr><th>Atmosphere Radius</th><td>3000&#8239;m <smol style=font-size:.6em;opacity:.7>(Default)</smol><br>6000&#8239;m <smol style=font-size:.6em;opacity:.7>(End Times)</smol></td></tr>
+    <tr><th>Mass</th><td style=position:relative>4.00 &times; 10<sup>11</sup></td></tr>
+    <tr><th>Surface Gravity</th><td><b>Absolute:</b> <smol>(Hypothetical for 2&#8239;km radius)</smol><br>100&#8239;m/s²&emsp;8.3&#8239;x</td></tr>
 </table><p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r², while all other astral bodies’ are measured with a factor of 1/r instead.</p>
 <h2>Scripted Events</h2>
 <table class=spmono><tr><th>Time</th><th>Event</th></tr>
@@ -320,123 +340,147 @@ To see every single lore card in existence, click “Search” with an empty tag
 </table>
 <h2>Expansion to Red Giant</h2>
 <p>The sun’s color gradually changes from the very start of the loop, and its radius progressively grows starting from a certain point in the loop.</p>
-<p>The visual observation of a recording of the map locked on to the sun spanning over a full loop showed that the sun’s size <b><i>seems</i></b> static until 10:30, then starts growing in size linearly at a rate of about 3.3&nbsp;m/s, and reaches its final size at 20:35, just as the track “End Times” starts playing.</p><p>However, datamining will give a more nuanced evolution of the sun: instead of being fully linear, the sun’s expansion uses a <a href=https://en.m.wikipedia.org/wiki/Smoothstep>Smoothstep function</a> which makes it so that the sun’s radius actually starts expanding at <b>10:00</b> at a very slow rate (slow enough to almost not be visually detectable), and to stop expanding at <b>21:00</b> after the expansion rate slowed down drastically.</p>
+<p>The visual observation of a recording of the map locked on to the sun spanning over a full loop showed that the sun’s size <b><i>seems</i></b> static until 10:30, then starts growing in size linearly at a rate of about 3.3&#8239;m/s, and reaches its final size at 20:35, just as the track “End Times” starts playing.</p><p>However, datamining will give a more nuanced evolution of the sun: instead of being fully linear, the sun’s expansion uses a <a href=https://en.m.wikipedia.org/wiki/Smoothstep>Smoothstep function</a> which makes it so that the sun’s radius actually starts expanding at <b>10:00</b> at a very slow rate (slow enough to almost not be visually detectable), and to stop expanding at <b>21:00</b> after the expansion rate slowed down drastically.</p>
 <h2>Collapse</h2>
-<p class=red><i>TBA: The sun collapses in the span of 10&nbsp;s. Does it go linearly from 4000&nbsp;m to 0 at a constant speed of 400&nbsp;m/s? Or (more likely) does the pre-supernova singularity have a minimal radius?</i></p>
-<a href="javascript:getcard('datasupernova')"><h2><dlgprt></dlgprt> General Data: Supernova</h2></a></details><t>#time loop event #in-game observations #sun #general data</t></it>
+<p style=color:rgb(var(--redl))><i>TBA: The sun collapses in the span of 10&#8239;s. Does it go linearly from 4000&#8239;m to 0&#8239;m at a constant speed of 400&#8239;m/s? Or (more likely) does the pre-supernova singularity have a non-zero minimal radius?</i></p>
+<a href="javascript:getcard('datasupernova')"><h2><dlgprt></dlgprt> General Data: Supernova</h2></a></details><t>#time loop event #astronomy #in-game observations #sun #general data</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Supernova -->
-<it class=tl id=datasupernova style=position:relative><details><img src=../img/Steam_Lv5_Supernova.png style=height:60px;position:absolute;left:0;top:0><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Supernova</b></summary>
-<p class=red><i>TBA: Determine the speed and range of the supernova. Is it 50 km?</i></p>
-<!-- The supernova’s hitbox stops expanding at about 50km -->
+<it class=tl id=datasupernova style=position:relative><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em><img src=../img/Steam_Lv5_Supernova.png style=height:60px;position:absolute;left:0;top:0>General Data: <b>Supernova</b></summary>
 <a href="javascript:getcard('datasun')"><h2><dlgprt></dlgprt> General Data: The Sun</h2></a>
+<i><ol style=color:rgb(var(--redl))><li>TBA: Determine the speed and full range of the supernova. Is it 50&#8239;km? The supernova’s hitbox stops expanding at about 50&#8239;km according to <a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg Boing’s video</a>.</li><li>TBA: At the end of the time loop, what is the supernova’s radius? The White Hole (23&#8239;km away from the sun) is reached near the end of the time loop and the deep space satellite (26&#8239;km away from the sun) is spared, meaning that the supernova does not have time to finish expanding to its full size before the Ash Twin Project recalls the protagonist’s memories.</li></ol></i>
 <h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
-    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <tr><td>22:10</td><td><img style=height:2em;margin:-.5em src=../img/Steam_Lv5_Supernova.png> The Supernova occurs.</td></tr>
-    <tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_ashtwin.png> The Supernova reaches Ash Twin <smol>(North pole)</smol></td></tr>
-    <tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_embertwin.png> The Supernova reaches Ember Twin <smol>(Chert’s camp)</smol></td></tr>
-    <tr><td>22:27</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(Spawn point)</smol></td></tr>
-    <tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(North pole)</smol></td></tr>
-    <tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_attlerock.png> The Supernova reaches the Attlerock<br><smol>(Esker’s Observation platform on the North pole)</smol></td></tr>
-    <tr><td>22:29</td><td><img style=height:2em;margin:-.5em src=../img/astr_hollowlantern.png> The Supernova reaches Hollow’s Lantern<br><smol>(Project Platform at North pole)</smol></td></tr>
-    <tr><td>22:30</td><td><img style=height:2em;margin:-.5em src=../img/astr_brittlehollow.png> The Supernova reaches Brittle Hollow<br><smol>(Black Hole Forge warp pad)</smol></td></tr>
-    <tr><td>22:33</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black);height:2em;margin:-.5em'> The Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol></td></tr>
-    <tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png> The Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol></td></tr>
-    <tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_opc.png> The Supernova reaches the Orbital Probe Cannon</td></tr>
-    <tr><td>22:37</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches Dark Bramble <smol>(Outside)</smol></td></tr>
-    <tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whitehole.png> The Supernova reaches the White Hole</td></tr>
-    <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
-    <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches the Vessel</td></tr>
-</table></details><t>#sun #supernova #general data #in-game observations</t></it>
+<tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+<tr><td>22:10</td><td><img style=height:2em;margin:-.5em src=../img/Steam_Lv5_Supernova.png> The Supernova occurs.</td></tr>
+<tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_ashtwin.png> The Supernova reaches Ash Twin <smol>(North pole)</smol></td></tr>
+<tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_embertwin.png> The Supernova reaches Ember Twin <smol>(Chert’s camp)</smol></td></tr>
+<tr><td>22:27</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(Spawn point)</smol></td></tr>
+<tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(North pole)</smol></td></tr>
+<tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_attlerock.png> The Supernova reaches the Attlerock<br><smol>(Esker’s Observation platform on the North pole)</smol></td></tr>
+<tr><td>22:29</td><td><img style=height:2em;margin:-.5em src=../img/astr_hollowlantern.png> The Supernova reaches Hollow’s Lantern<br><smol>(Project Platform at North pole)</smol></td></tr>
+<tr><td>22:30</td><td><img style=height:2em;margin:-.5em src=../img/astr_brittlehollow.png> The Supernova reaches Brittle Hollow<br><smol>(Black Hole Forge warp platform)</smol></td></tr>
+<tr><td>22:33</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black);height:2em;margin:-.5em'> The Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol></td></tr>
+<tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png> The Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol></td></tr>
+<tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_opc.png> The Supernova reaches the Orbital Probe Cannon</td></tr>
+<tr><td>22:37</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches Dark Bramble <smol>(Outside)</smol></td></tr>
+<tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whitehole.png> The Supernova reaches the White Hole</td></tr>
+<tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
+<tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches the Vessel</td></tr>
+<tr><td>22:40</td><td style=color:rgb(var(--redl))>Supernova radius at the end of the loop: ??&#8239;km</td></tr>
+</table><p><b>Of note:</b> The time loop ends before the supernova has time to reach its full size. As such, it can be avoided within the confines of the time loop by staying as close to about <span class=t style=color:rgb(var(--redl))>??&#8239;km</span> or more from the sun: for example, <b>staying in orbit alongside the deep space satellite will not result in a death by supernova</b> unless the advanced warp core has been removed from the Ash Twin Project.</p><h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project was disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p><b>Of note:</b> Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg&nbsp;Boing</a>)</span>.</p></details><t>#sun #supernova #general data #astronomy #in-game observations</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Sun Station -->
-<it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary><h2>Main Properties</h2>
-<p>The station is tidally locked and in synchronous rotation around the sun.</p><p><b>Of note:</b> The warp windows actually open when the warp tower aligns with the <i>sun</i>, rather than with the station (Video evidence by @thisisaname0 showed not only that the warp window did not open when the sun station was aligned with the tower, but that it did instead a second later when the tower aligned with the center of the sun).</p><table>
-    <tr><th>Mass</th><td style=position:relative>3.00 &times; 10<sup>5</sup> <span style=font-size:.8em>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source</a></span></td></tr>
-    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>0.2–0.4 (parallel to the sun)<br>0.7–0.8 (perpendicular to the sun)</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 2300 m <smol>(Center of mass)</smol></td></tr>
-    <tr><th>Revolution Period</th><td>~ 35 s</td></tr>
-    <tr><th>Velocity</th><td>417 m/s</td></tr>
-</table>
+<it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:25%>Mass</th><td style=position:relative>3.00 &times; 10<sup>5</sup></td></tr>
+    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s²&emsp;0.417&#8239;x<br><b>Perceived:</b><br>0.2–0.4&#8239;x&emsp;<smol>(parallel to the sun)</smol><br>0.7–0.8&#8239;x&emsp;<smol>(perpendicular to the sun)</smol></td></tr>
+    <tr><th>Orbit Radius</th><td>2296&#8239;m <smol>(Center of mass)</smol></td></tr>
+    <tr><th>Orbit Period</th><td>34.6&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>417.4&#8239;m/s</td></tr>
+</table><p>The station is tidally locked and in synchronous rotation around the sun.</p>
 <h2>Orbit Radius & Period Calculations</h2>
-<p>Using a solar mass of <code class=smol>4 &times; 10<sup>11</sup></code> units and known <code class=smol>G = 0.001</code>, @thisisaname0 found:<code>&emsp;R = (GM (T/(2π))<sup>2</sup>)<sup>1/3</sup> = 2315 m</code></p>
-<p>By forcing R = 2300 m, the theoretical period becomes T = 34.65 s.</p>
+<p>Using a solar mass of&ensp;<code class=smol>4 &times; 10<sup>11</sup></code>&ensp;units and known&ensp;<code class=smol>G&nbsp;=&nbsp;0.001</code>, Name found:&ensp;<code class=smol>R&nbsp;=&nbsp;(GM&nbsp;(T/(2π))<sup>2</sup>)<sup>1/3</sup></code></p>
+<p>By forcing&ensp;<code class=smol>R&nbsp;=&nbsp;2296&#8239;m</code>, the theoretical period becomes&ensp;<code class=smol>T&nbsp;=&nbsp;34.562703&#8239;s</code>.</p>
 <h2>Scripted Events</h2>
 <table class=spmono><tr><th>Time</th><th>Event</th></tr>
     <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <!-- 05:15: The Sun Station warp pad becomes accessible (tower entrance to safe path). -->
-    <tr><td>07:10</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-    <tr><td>08:00</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-    <tr><td>08:50</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-    <tr><td>09:40</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-    <tr><td>10:30</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-    <tr><td>11:20</td><td>Alignment with Ash Twin’s Sun Station warp pad</td></tr>
-    <tr><td>11:30</td><td>The Sun Station is destroyed</td></tr>
-</table></details><t>#time loop event #in-game observations #sun station #sun #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA Ash Twin -->
-<it class=tl style=position:relative><img src=../img/astr_ashtwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ash Twin</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>169 &plusmn; 1 m</td></tr>
-    <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>5000 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ash&nbsp;Twin – Barycenter)</smol></td></tr>
-    <tr><th>Orbit Period</th><td>110.76 &plusmn; 0.24 s</td></tr>
-    <tr><th>Angular Velocity</th><td>100/7</td></tr>
-    <tr><th>Day Length</th><td>89.75 s</td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-<table class=spmono><tr><th>Time</th><th>Event</th></tr>
-    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <tr><td>02:00</td><td>Sand starts draining off Ash Twin.</td></tr>
-    <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
-</table>
-<h2>Ash Twin Warp Towers</h2><p>All towers are located on the equator of Ash Twin, which is what allows the planetary alignments to occur in the first place.</p>
-<a href="javascript:getcard('warptower5deg')"><h2 class=reg><dlgprt></dlgprt> Warp Towers: 5° Margin of Error</h2></a>
-</details><t>#time loop event #in-game observations #ash twin #general data</t></it>
+    <tr><td>05:10</td><td>The Sun warp tower’s outer door is uncovered enough to pass through.</td></tr>
+    <tr><td>05:20</td><td>The Sun warp tower’s inner door leading to the tractor beam is uncovered enough to pass through, thus making the warp platform accessible.</td></tr>
+    <tr><td>11:30</td><td>The Sun Station is destroyed.</td></tr>
+</table><p>The warp tower timings were estimated thanks to the <a href=https://outerwildsmods.com/mods/sandcontrol/>Sand Control</a> mod.</p>
+<a href="javascript:getcard('WWsun')"><h2><dlgprt></dlgprt> Sun Station Warp Windows</h2></a>
+<p><b>Of note:</b> The warp windows actually open when the warp tower aligns with the <i>sun</i>, rather than with the station (Video evidence by Name showed not only that the warp window did not open when the sun station was aligned with the tower, but that it did instead a second later when the tower aligned with the center of the sun).</p>
+</details><t>#time loop event #in-game observations #sun station #sun #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Ember Twin -->
 <it class=tl style=position:relative><img src=../img/astr_embertwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ember Twin</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>170 &plusmn; 1 m</td></tr>
+    <tr><th style=width:22%>Surface Radius</th><td>15 &rarr; 155&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Sand)</smol><br>220&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Structure)</smol><br>199&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Terrain)</smol><br>~&#8239;150&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Average Terrain)</smol><br>23&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Lowest Cave)</smol></td></tr>
+    <tr><th>Atmosphere Radius</th><td>250&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>200&#8239;m</td></tr>
     <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>5000 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
-    <tr><th>Orbit Period</th><td>110.76 &plusmn; 0.24 s</td></tr>
-    <tr><th>Angular Velocity</th><td>20</td></tr>
-    <tr><th>Day Length</th><td>125.66 s</td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-<table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr><th>Surface Gravity</th><td>8&#8239;m/s²&emsp;0.6–0.7&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>5000&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
+    <tr><th>Orbit Period</th><td>111.07&#8239;s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol></td></tr>
+    <tr><th>Revolution Velocity</th><td>282.8&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>284.3&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
+    <tr><th>Sidereal Day</th><td>125.66&#8239;s</td></tr>
+    <tr><th>Rotation Velocity</th><td>0.05&#8239;rad/s</td></tr>
+    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>20 (From old spreadsheet. Unit?)</td></tr>
+    <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
+</table>
+<h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
     <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
     <tr><td>02:00</td><td>Sand starts flowing to Ember Twin.</td></tr>
     <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
-</table></details><t>#time loop event #in-game observations #ember twin #general data</t></it>
+</table></details><t>#time loop event #in-game observations #ember twin #hourglass twins #general data #astronomy</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Ash Twin -->
+<it class=tl style=position:relative><img src=../img/astr_ashtwin.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ash Twin</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:22%>Surface Radius</th><td>165 &rarr; 38&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Sand)</smol><br>
+    172&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Solar Tower Peak)</smol><br>
+    123&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Terrain)</smol><br>
+    ~&#8239;90&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Average Terrain)</smol><br>
+    40–33&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ash Twin Project Shell)</smol></td></tr>
+    <tr><th>Atmosphere Radius</th><td>250&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>200&#8239;m</td></tr>
+    <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
+    <tr><th>Surface Gravity</th><td>8&#8239;m/s²&emsp;0.6–0.7&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>5000&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ash&nbsp;Twin – Barycenter)</smol></td></tr>
+    <tr><th>Orbit Period</th><td>111.07&#8239;s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol></td></tr>
+    <tr><th>Revolution Velocity</th><td>282.8&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>284.3&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
+    <tr><th>Sidereal Day</th><td>89.76&#8239;s</td></tr>
+    <tr><th>Rotation Velocity</th><td>0.07&#8239;rad/s</td></tr>
+    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>100/7 (From old spreadsheet. Unit?)</td></tr>
+    <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
+</table>
+<h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>02:00</td><td>Sand starts draining off Ash Twin.</td></tr>
+    <tr><td>20:20</td><td>Sand stops flowing.</td></tr>
+</table><h2>Ash Twin Warp Towers</h2><p>All towers are located on the equator of Ash Twin, which is what allows the planetary alignments to occur in the first place.</p>
+<a href="javascript:getcard('warptower5deg')"><h2 class=reg><dlgprt></dlgprt> Warp Towers: 5° Margin of Error</h2></a>
+</details><t>#time loop event #in-game observations #ash twin #hourglass twins #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Timber Hearth -->
 <it class=tl style=position:relative><img src=../img/astr_timberhearth.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Timber Hearth</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>254 &plusmn; 1 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Outside the crater)</smol></td></tr>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        335&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Mountain)</smol><br>
+        250&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Grasslands)</smol><br>
+        173&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Lowest Crater)</smol><br>
+        50&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Zero-G Cave)</smol>
+    </td></tr>
+    <tr><th>Atmosphere Radius</th><td>380&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>250&#8239;m</td></tr>
     <tr><th>Mass</th><td>3.00 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>1.0</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 8600 m</td></tr>
-    <tr><th>Orbit Period</th><td>250.25 &plusmn; 0.03 s</td></tr>
-    <tr><th>Angular Velocity</th><td>100</td></tr>
-    <tr><th>Day Length</th><td>628.31 s <smol style=font-size:.6em;opacity:.7;line-height:.6em>(200 &times; <smol style=font-size:1.2em>&pi;</smol>)</smol></td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-<p><dlgprt></dlgprt> <a href="javascript:getcard('datathdaynight')">Details about day/night cycles on Timber Hearth</a></p>
-</details><t>#time loop event #in-game observations #timber hearth #general data</t></it>
+    <tr><th>Surface Gravity</th><td>12&#8239;m/s²&emsp;1.0&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>8593&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td>250.25&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>215.8&#8239;m/s</td></tr>
+    <tr><th>Sidereal Day</th><td>628.32&#8239;s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(200&#8239;&times;&#8239;<smol style=font-size:1.2em>&pi;</smol>)</smol></td></tr>
+    <tr><th>Rotation Velocity</th><td>–0.01&#8239;s</td></tr>
+    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>100 (From old spreadsheet. Unit?)</td></tr>
+    <tr><th>Day Length</th><td>416&#8239;s</td></tr>
+</table><a href="javascript:getcard('datathdaynight')"><h2><dlgprt></dlgprt> Timber Hearth Day/Night Cycle</h2></a>
+</details><t>#time loop event #in-game observations #timber hearth #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Attlerock -->
 <it class=tl style=position:relative><img src=../img/astr_attlerock.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Attlerock</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>80 &plusmn; 0.6 m</td></tr>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        85&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Ridge)</smol><br>
+        75&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Flat Terrain)</smol><br>
+        30&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Lowest Crater)</smol>
+    </td></tr>
+    <tr><th>Gravitational Radius</th><td>100&#8239;m</td></tr>
     <tr><th>Mass</th><td>5.00 &times; 10<sup>7</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>900 m</td></tr>
-    <tr><th>Revolution Period</th><td>103.29 &plusmn; 0.07 s</td></tr>
-    <tr><th>Angular Velocity</th><td>16.44</td></tr>
-    <tr><th>Day Length</th><td>103.29 &plusmn; 0.07 s</td></tr>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>900&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td>103.29 &plusmn; 0.07&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>222.6&#8239;m/s</td></tr>
+    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>16.44 (From old spreadsheet. Unit?)</td></tr>
+    <tr><th>Day Length</th><td>103.29 &plusmn; 0.07&#8239;s</td></tr>
 </table>
-<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
 <p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r², while all other astral bodies’ are measured with a factor of 1/r instead. This explains why the Attlerock’s mass is actually higher than most other astral bodies’, including Timber Hearth’s.</p>
-<p>The Attlerock is tidally locked to Timber Hearth.</p>
+<p>The Attlerock is tidally locked and in synchronous rotation around Timber Hearth. It passes overhead at the same position in the Hearthian sky every <b>123.6&#8239;s</b>.</p>
 <h2>Timber Hearth Solar Eclipses</h2>
-<p>The Attlerock passes exactly between the sun and Timber Hearth every <b>176&nbsp;&plusmn;&nbsp;1.3&nbsp;s</b>, thus causing a solar eclipse somewhere on Timber Hearth. There are eight eclipses during the time loop:</p>
+<p>The Attlerock passes exactly between the sun and Timber Hearth every <b>176&nbsp;&plusmn;&nbsp;1.3&#8239;s</b>, thus causing a solar eclipse somewhere on Timber Hearth. There are eight eclipses during the time loop:</p>
 <table class=spmono>
     <tr><th>Time</th><th>Position of the sun relative to the village’s sky<br>(0° = midnight, 180° = noon)</th></tr>
     <tr><td>00:43</td><td>~40°</td></tr>
@@ -447,141 +491,256 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><td>15:22</td><td>~80°</td></tr>
     <tr><td>18:17</td><td>~230°</td></tr>
     <tr><td>21:13</td><td>~25°</td></tr>
-</table></details><t>#time loop event #in-game observations #attlerock #general data</t></it>
+</table>
+</details><t>#time loop event #in-game observations #attlerock #general data #astronomy</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Sky Shutter -->
+<it class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Sky Shutter</b></summary>
+<p>Sky Shutter is the Hearthian satellite linked to the exhibit “Postcards From Orbit.” It passes overhead in the Hearthian sky every <b>42.9&#8239;&plusmn;&#8239;0.036&#8239;s</b>.</p>
+<h2>Main Properties</h2><table>
+    <tr><th style=width:22%>Size</th><td>1.3&#8239;&times;&#8239;1.3&#8239;&times;&#8239;1.3&#8239;m<sup>3</sup></td></tr>
+    <tr><th>Mass</th><td>0.01</td></tr>
+    <tr><th>Orbit Radius</th><td>350.1&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>222.6&#8239;m/s</td></tr>
+</table></details><t>#timber hearth #sky shutter #general data #time loop event #in-game observations #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Brittle Hollow -->
 <it class=tl style=position:relative><img src=../img/astr_brittlehollow.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Brittle Hollow</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>272 &plusmn; 13 m</td></tr>
-    <tr><th>Black Hole Radius</th><td>40 m</td></tr>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        350–256&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Surface Terrain)</smol><br>
+        ~&#8239;300&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Average Terrain)</smol><br>
+        ~&#8239;290–115&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Interior Terrain)</smol><br>
+        63&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Forge Tip)</smol><br>
+        40&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Black Hole)</smol></td></tr>
+    <tr><th>Atmosphere Radius</th><td>500&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>300&#8239;m</td></tr>
     <tr><th>Mass</th><td>3.00 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 11691 m</td></tr>
-    <tr><th>Orbit Period</th><td>397.94 &plusmn; 0.77 s</td></tr>
-    <tr><th>Angular Velocity</th><td>50</td></tr>
-    <tr><th>Day Length</th><td>314.15 s</td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+    <tr><th>Surface Gravity</th><td>10&#8239;m/s²&emsp;0.833&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>11690.9&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td>397.12&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>185.0&#8239;m/s</td></tr>
+    <tr><th>Sidereal Day</th><td>314.16&#8239;s</td></tr>
+    <tr><th>Rotation Velocity</th><td>0.02&#8239;rad/s</td></tr>
+    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>50 (From old spreadsheet. Unit?)</td></tr>
+    <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
+</table>
 <!-- Timing of Fall of Tower of Quantum Knowledge? -->
-</details><t>#time loop event #in-game observations #brittle hollow #general data</t></it>
+</details><t>#time loop event #in-game observations #brittle hollow #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Hollow’s Lantern -->
 <it class=tl style=position:relative><img src=../img/astr_hollowlantern.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Hollow’s Lantern</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>97.3 &plusmn; 2.5 m</td></tr>
-    <tr><th>Mass</th><td>9.10 &times; 10<sup>5</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>1000 m</td></tr>
-    <tr><th>Revolution Period</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Angular Velocity</th><td>5</td></tr>
-    <tr><th>Day Length</th><td>31.41 s <smol style=font-size:.6em;opacity:.7;line-height:.6em>(10 &times; <smol style=font-size:1.2em>&pi;</smol>)</smol></td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#time loop event #in-game observations #hollow’s lantern #general data</t></it>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        100.62 &rarr; 85.31&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Lava)</smol><br>
+        146&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Volcano)</smol><br>
+        ~&#8239;90&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Average Terrain)</smol><br>
+        73&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Lowest Terrain)</smol>
+    </td></tr>
+    <tr><th>Atmosphere Radius</th><td>150&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>130&#8239;m</td></tr>
+    <tr><th>Mass</th><td>909999.9</td></tr>
+    <tr><th>Surface Gravity</th><td>7&#8239;m/s²&emsp;0.583&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>1000&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>239.7&#8239;m/s</td></tr>
+    <tr><th>Sidereal Day</th><td>31.42&#8239;s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(10&#8239;&times;&#8239;<smol style=font-size:1.2em>&pi;</smol>)</smol></td></tr>
+    <tr><th>Rotation Velocity</th><td>–0.2&#8239;rad/s</td></tr>
+    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>5 (From old spreadsheet. Unit?)</td></tr>
+    <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
+</table></details><t>#time loop event #in-game observations #hollow’s lantern #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Giant’s Deep -->
 <it class=tl style=position:relative><img src=../img/astr_giantsdeep.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Giant’s Deep</b></summary><h2>Main Properties</h2><table>
-    <tr><th>Radius <smol style=opacity:.7>(Cloud&nbsp;Layer&nbsp;Top)</smol></th><td>~ 950-960 m</td></tr>
-    <tr><th>Radius <smol style=opacity:.7>(Cloud&nbsp;Layer&nbsp;Bottom)</smol></th><td>~ 850 m</td></tr>
-    <tr><th>Radius <smol style=opacity:.7>(Ocean&nbsp;Surface)</smol></th><td>500 &plusmn; 1 m</td></tr>
-    <tr><th>Radius <smol style=opacity:.7>(Current)</smol></th><td>~ 445 m</td></tr>
-    <tr><th>Radius <smol style=opacity:.7>(Core)</smol></th><td>~ 200 m</td></tr>
-    <tr><th>Mass</th><td>2.18 &times; 10<sup>7</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 16460 m</td></tr>
-    <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Day Length</th><td>Does not rotate</td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#time loop event #in-game observations #giant’s deep #general data</t></it>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        760&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Tower Peak)</smol><br>
+        564–295&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Island Terrain)</smol><br>
+        500&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ocean)</smol><br>
+        450&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Current)</smol><br>
+        200&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Electric Barrier)</smol><br>
+        210–25&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Coral Forest)</smol>
+    </td></tr>
+    <tr><th>Atmosphere Radius</th><td>950–850&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Clouds)</smol></td></tr>
+    <tr><th>Gravitational Radius</th><td>900&#8239;m</td></tr>
+    <tr><th>Mass</th><td>2.178&#8239;&times;&#8239;10<sup>7</sup></td></tr>
+    <tr><th>Surface Gravity</th><td>24.2&#8239;m/s²&emsp;2.017&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>16457.6&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td>663.28&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>155.9&#8239;m/s</td></tr>
+</table><p>Giant’s Deep does not rotate.</p>
+</details><t>#time loop event #in-game observations #giant’s deep #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Orbital Probe Cannon -->
 <it class=tl style=position:relative><img src=../img/astr_opc.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Orbital Probe Cannon</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 1160–1240 m <smol style=font-size:.6em;opacity:.7;line-height:.6em>(locked on to Giant’s Deep, oscillations from staying on the landing pad)</smol></td></tr>
-    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Revolution Period</th><td style=color:rgb(var(--redl))>??</td></tr>
-</table></details><t>#time loop event #in-game observations #orbital probe cannon #general data</t></it>
+    <tr><th style=width:22%>Size</th><td>
+        270&#8239;&times;&#8239;240&#8239;&times;&#8239;394&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Full Size)</smol><br>
+        20&#8239;&times;&#8239;20&#8239;&times;&#8239;65&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Core Interior)</smol><br>
+        44&#8239;&times;&#8239;30&#8239;&times;&#8239;35&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Module)</smol><br>
+        40&#8239;&times;&#8239;35&#8239;&times;&#8239;35&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Probe)</smol>
+    </td></tr>
+    <tr><th>Mass</th><td>300000 each</td></tr>
+    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s²&emsp;0.417&#8239;x<br><span class=d style=color:rgb(var(--redl))><b>Perceived:</b><br>??&#8239;m/s²&emsp;??&#8239;x</span></td></tr>
+    <tr><th>Orbit Radius</th><td>1200&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??</td></tr>
+    <tr><th>Revolution Velocity</th><td>280.4&#8239;m/s</td></tr>
+</table></details><t>#time loop event #in-game observations #orbital probe cannon #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Dark Bramble -->
 <it class=tl style=position:relative><img src=../img/astr_darkbramble.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Dark Bramble</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius <smol style=opacity:.7>(Seed)</smol></th><td>203.3 &plusmn; 0.7 m</td></tr>
-    <tr><th>Radius <smol style=opacity:.7>(Ice)</smol></th><td>612 &plusmn; 16 m<br>651 &plusmn; 13 m</td></tr>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        955–480&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ice Surfaces)</smol><br>
+        ~&#8239;650&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Average Terrain)</smol><br>
+        ~&#8239;200&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Seed Radius)</smol><br>
+        ~&#8239;60&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Entrance Diameter)</smol>
+    </td></tr>
+    <tr><th>Gravitational Radius</th><td>650&#8239;m</td></tr>
     <tr><th>Mass</th><td>3.25 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>20000 m</td></tr>
-    <tr><th>Orbit Period</th><td>875.16 &plusmn; 0.12 s</td></tr>
-    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Day Length</th><td>Does not rotate</td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-</details><t>#time loop event #in-game observations #dark bramble #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD DATA Interloper -->
-<it class=tl style=position:relative><img src=../img/astr_interloper.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Interloper</b></summary>
-<h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>83 &plusmn; 1 m</td></tr>
-    <tr><th>Mass</th><td>5.50 &times; 10<sup>5</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 2400 – 24000 m</td></tr>
-    <tr><th>Orbit Period</th><td>~ 480 s</td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-<p>The Interloper is tidally locked to the sun. When it reaches its aphelion or perihelion, the Interloper’s center of mass is aligned with those of the sun and the White Hole. The Interloper accelerates as it orbits closer to the sun, and decelerates as it leaves the perihelion.</p>
-<table class=spmono><tr><th>Time</th><th>Event</th></tr>
-    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <tr><td>03:58</td><td>Perihelion: ~ 2400 m between centers of mass. <span class=source><br>Observed by @thisisaname0</span></td></tr>
-    <tr><td>07:58</td><td>Aphelion: ~ 24,000 m between centers of mass. <span class=source><br>Observed by @thisisaname0</span></td></tr>
-    <tr><td>11:58</td><td>Perihelion</td></tr>
-    <tr><td>15:58</td><td>Aphelion</td></tr>
-    <tr><td>19:48</td><td>The Interloper is engulfed by the sun.</td></tr>
-</table><p>According to @thisisaname0’s observations, the Interloper’s orbit has an <b>orbital period of 8 min</b> and an <b>eccentricity of 0.82</b>:</p>
-<pre>Eccentricity: e
-Perihelion: P = a(1 - e)
-Aphelion: A = a(1 + e)
-</pre><pre>
-A + P = 2a,
-a = (A + P)/2 = 13200
-e = A/a - 1 = 0.82</pre>
-<h2>Accessing the Core</h2>
-<p style=color:rgb(var(--redl))>TBH: At which maximal distance from the sun does the ice start to crack? Which maximal distance at which the player character can fit in?</p>
-<h2>Automatic Destruction</h2>
-<p>During the first loop of a new expedition, the sun does not expand and there is no time limit until the statue pairing occurs. In order to avoid a collision between the Interloper and Timber Hearth, it is hardcoded for the Interloper to automatically disappear at the <b>20:00</b> mark.</p>
-</details><t>#time loop event #in-game observations #interloper #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA White Hole Station -->
-<it class=tl style=position:relative><img src=../img/astr_whiteholestation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole Station</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-    <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??</td></tr>
-</table>
-<p style=color:rgb(var(--redl))>TBA: Is the White Hole Station’s position in the solar system completely static? Is it worth trying to document the warp windows with or without activating it? (speed at which the station reorients itself)</p>
-</details><t>#time loop event #in-game observations #white hole station #general data</t></it>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>20000&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td>888.58&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>141.4&#8239;m/s</td></tr>
+</table><p>Dark Bramble does not rotate.</p>
+</details><t>#time loop event #in-game observations #dark bramble #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA White Hole -->
 <it class=tl style=position:relative><img src=../img/astr_whitehole.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:22%>Radius</th><td style=color:rgb(var(--redl))>20 &plusmn; ?? m</td></tr>
-    <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Distance to the Sun</th><td>~ 23000 m</td></tr>
-</table><p>The White Hole is static, located at a distance of about 23 km away from the sun.</p>
-</details><t>#time loop event #in-game observations #white hole #general data</t></it>
+    <tr><th style=width:22%>Surface Radius</th><td>40&#8239;m</td></tr>
+    <tr><th>Mass</th><td>999.9999</sup></td></tr>
+    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??&#8239;m/s²&emsp;??&#8239;x</td></tr>
+    <tr><th>Distance to the Sun</th><td>23000&#8239;m</td></tr>
+</table><p>The White Hole is static, located at a distance of 23&#8239;km away from the sun.</p>
+</details><t>#time loop event #in-game observations #white hole #general data #astronomy</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA White Hole Station -->
+<it class=tl style=position:relative><img src=../img/astr_whiteholestation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole Station</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        53&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ice Radius)</smol><br>
+        39&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ring Radius)</smol><br>
+        84&#8239;&times;&#8239;30&#8239;&times;&#8239;81&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Structure)</smol><br>
+        22&#8239;&times;&#8239;16&#8239;&times;&#8239;33&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Interior)</smol>
+    </td></tr>
+    <tr><th>Mass</th><td>100 + 100</sup></td></tr>
+    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>22538.19&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Sun)</smol><br>461.815&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(White Hole)</smol></td></tr>
+    <tr><th>Sidereal Day</th><td>41.89&#8239;s</td></tr>
+    <tr><th>Rotation Velocity</th><td>0.18&#8239;rad/s</td></tr>
+</table>
+<p>The White Hole Station is static, aligned between the White Hole and the sun at a distance of about <b>22.5&#8239;km</b> from the sun and about <b>462&#8239;m</b> away from the white hole.</p>
+</details><t>#time loop event #in-game observations #white hole station #general data #astronomy</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD DATA Interloper -->
+<it class=tl style=position:relative><img src=../img/astr_interloper.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>The Interloper</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:22%>Surface Radius</th><td>
+        218&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Tail Spike)</smol><br>
+        86&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Highest Snow)</smol><br>
+        ~&#8239;80&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Surface Ice)</smol><br>
+        50&#8239;&times;&#8239;50&#8239;&times;&#8239;50&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Center Chamber)</smol>
+    </td></tr>
+    <tr><th>Atmosphere Radius</th><td>
+        ~&#8239;3000&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ion Tail)</smol><br>
+        ~&#8239;1200&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Dust Tail)</smol>
+    </td></tr>
+    <tr><th>Gravitational Radius</th><td>110&#8239;m</td></tr>
+    <tr><th>Mass</th><td>5.50&#8239;&times;&#8239;10<sup>5</sup></td></tr>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td><b>Apoapsis:</b>&emsp;24100&#8239;m<br><b>Periapsis:</b>&emsp;2392.613&#8239;m<br><b>Eccentricity:</b>&emsp;0.819</td></tr>
+    <tr><th>Orbit Period</th><td>478.95&#8239;s</td></tr>
+</table>
+<p>The Interloper is tidally locked to the sun. When it reaches its aphelion or perihelion, the Interloper’s center of mass is aligned with those of the sun and the White Hole. The Interloper accelerates as it orbits closer to the sun, and decelerates as it leaves the perihelion.</p>
+<h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>03:58</td><td>Perihelion</td></tr>
+    <tr><td>07:58</td><td>Aphelion</td></tr>
+    <tr><td>11:58</td><td>Perihelion</td></tr>
+    <tr><td>15:58</td><td>Aphelion</td></tr>
+    <tr><td>19:48</td><td>The Interloper is engulfed by the sun.</td></tr>
+</table><p>The Interloper has an <b>orbital period of 8&#8239;min</b> and an <b>eccentricity of 0.82</b>:</p>
+<pre>Eccentricity: e
+    Perihelion: P = a(1 - e)
+    Aphelion: A = a(1 + e)
+</pre><pre>
+    A + P = 2a,
+    a = (A + P)/2 = 13200
+    e = A/a - 1 = 0.82</pre>
+    <p class=source>(Observation & calculus by Name)</p>
+    <h2>Accessing the Core</h2>
+    <p>Datamining revealed that the ice is programmed to start melting when the Interloper is 8&nbsp;km away from the sun <span class=source>(Trifid)</span>, and use of <a href="https://en.wikipedia.org/wiki/Kepler's_equation">Kepler’s Equation</a> calculates that the first occurrence should happen at <b>03:31</b> <span class=source>(Name)</span>. However, the opening of the ice is only detectable by the naked eye a few seconds later, and the opening is wide enough to let the player through sometime between 03:40 and 03:43 <span class=source>(Name)</span>.</p>
+    <p style=color:rgb(var(--redl))>TBA: At which maximal distance from the sun can the player character fit through the cracks?</p>
+    <h2>Automatic Destruction</h2>
+    <p>During the first loop of a new expedition, the sun does not expand and there is no time limit until the statue pairing occurs. In order to avoid a collision between the Interloper and Timber Hearth, it is hardcoded for the Interloper to automatically disappear at the <b>20:00</b> mark.</p>
+</details><t>#time loop event #in-game observations #interloper #general data #astronomy</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD DATA Deep Space Satellite -->
+<it class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Deep Space Satellite</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:22%>Size</th><td>6.5&#8239;&times;&#8239;4.4&#8239;&times;&#8239;2.9&#8239;m</td></tr>
+    <tr><th>Mass</th><td>0.5</td></tr>
+    <tr><th>Orbit Radius</th><td>26000&#8239;m</td></tr>
+    <tr><th>Orbit Period</th><td>1317.08&#8239;s</td></tr>
+    <tr><th>Revolution Velocity</th><td>124.0&#8239;m/s</td></tr>
+</table>
+<h2>Scripted Events</h2>
+<p>The satellite reaches an angle of 40° at <b>03:21</b> into the loop. During the same loop, the following angles were recorded:</p>
+<table class=spmono><tr><th>Time</th><th>Angle</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>02:45</td><td>30°</td></tr>
+    <tr><td>03:03</td><td>35°</td></tr>
+    <tr style=background:rgba(var(--greend),.5);color:rgb(var(--greenl))><td>03:21</td><td>40°</td></tr>
+    <tr><td>03:40</td><td>45°</td></tr>
+    <tr><td>03:58</td><td>50°</td></tr>
+    <tr><td>04:35</td><td>60°</td></tr>
+    <tr><td>05:12</td><td>70°</td></tr>
+    <tr><td>05:48</td><td>80°</td></tr>
+    <tr><td>07:56</td><td>115°</td></tr>
+    <tr><td>08:14</td><td>120°</td></tr>
+    <tr><td>08:51</td><td>130°</td></tr>
+    <tr><td>09:28</td><td>140°</td></tr>
+    <tr><td>10:04</td><td>150°</td></tr>
+    <tr><td>10:41</td><td>160°</td></tr>
+    <tr><td>11:17</td><td>170°</td></tr>
+    <tr><td>11:54</td><td>180°</td></tr>
+    <tr><td>12:30</td><td>190°</td></tr>
+    <tr><td>13:07</td><td>200°</td></tr>
+</table>
+<p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733&#8239;°/s</b>, or about <b>0.005&#8239;rad/s</b><!-- 0.2733 * π/180 = 0.004769985 -->, and that the initial angle at the start of the loop is <b>–15.086°</b>. It can be calculated that the satellite’s velocity is <b>124&#8239;m/s</b><!-- 26000 * 0.2733 * π/180 = 124.01961 -->.</p>
+<img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x – 15.086&Tab;|&Tab;R² = 1</p>
+</details><t>#dlc #deep space satellite #time loop event #in-game observations #the stranger #astronomy</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    DATA Stranger -->
+<it class=tl style=position:relative><img src=../img/astr_stranger.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>The Stranger</b></summary><h2>Main Properties</h2><table>
+    <tr><th style=width:26%>Surface Radius</th><td style=color:rgb(var(--redl))>??&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>330–200&#8239;m</td></tr>
+    <tr><th>Mass</th><td>300000</td></tr>
+    <tr><th>Surface Gravity</th><td>15&#8239;m/s²&emsp;1.25&#8239;x</td></tr>
+    <tr><th>Distance to the Sun</th><td>~&#8239;11900&#8239;m</td></tr>
+    <tr><th>Sidereal Day</th><td>125.66&#8239;s</td></tr>
+    <tr><th>Rotation Velocity</th><td>–0.05&#8239;rad/s</td></tr>
+    <tr><th>Velocity with solar sails</th><td style=color:rgb(var(--redl))>??</td></tr>
+</table>
+<h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+    <tr><td>06:48</td><td>The solar sails start deploying (sound cue)</td></tr>
+    <tr><td>07:00</td><td>The solar sails are completely open</td></tr>
+    <tr><td>13:00</td><td>The dam bursts</td></tr>
+    <tr><td>13:10</td><td>The River Lowlands are flooded</td></tr>
+    <tr><td>13:30</td><td>The Cinder Isles are flooded</td></tr>
+    <tr><td>13:40</td><td>The Hidden Gorge walkways are destroyed</td></tr>
+    <tr><td>20:30</td><td>The Cinder Isles tower completely falls</td></tr>
+</table><p style=color:rgb(var(--redl))>TBA: Trajectory of the Stranger during the loop & distance from the sun after the solar sails open?</p></details><t>#dlc #time loop event #in-game observations #the stranger #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD DATA Quantum Moon -->
 <it class=tl id=dataQM style=position:relative><img src=../img/astr_qmoon.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Quantum Moon</b></summary><h2>Main Properties</h2>
-<table><tr><th style=width:20%>Radius</th><td>73 &plusmn; 1 m</td></tr>
+<table><tr><th style=width:22%>Surface Radius</th><td>70&#8239;m</td></tr>
+    <tr><th>Atmosphere Radius</th><td>100–110&#8239;m</td></tr>
+    <tr><th>Gravitational Radius</th><td>110&#8239;m</td></tr>
     <tr><th>Mass</th><td>5.50 &times; 10<sup>5</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_embertwin.png><smol>&ensp;<sup>1</sup></smol></th><td>1700 m</td></tr>
-    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_timberhearth.png></th><td>1100 m</td></tr>
-    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_brittlehollow.png></th><td>1400 m</td></tr>
-    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_giantsdeep.png></th><td>1500 m</td></tr>
-    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_darkbramble.png></th><td>1500 m</td></tr>
-    <tr><th>Orbit Radius <smol>(Eye)</smol></th><td>6000 m</td></tr>
-    <tr><th>Orbit Radius <smol>(Sixth Location<sup>2</sup>)</smol></th><td>30,000 m</td></tr>
-    <!-- <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??</td></tr> -->
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_embertwin.png><smol>&ensp;<sup>1</sup></smol></th><td>1700&#8239;m</td></tr>
+    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_timberhearth.png></th><td>1100&#8239;m</td></tr>
+    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_brittlehollow.png></th><td>1400&#8239;m</td></tr>
+    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_giantsdeep.png></th><td>1500&#8239;m</td></tr>
+    <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_darkbramble.png></th><td>1500&#8239;m</td></tr>
+    <tr><th>Orbit Radius <smol>(Eye)</smol></th><td>6000&#8239;m</td></tr>
+    <tr><th>Orbit Radius <smol>(Sixth Location<sup>2</sup>)</smol></th><td>30,000&#8239;m</td></tr>
+</table>
 <p class=smol><b><sup>1</sup></b> The Quantum Moon will never orbit around Ash Twin, or even around the Hourglass Twins’ barycenter; instead, the Quantum Moon orbits Ember Twin specifically.</p>
 <p class=smol><b><sup>2</sup></b> In-game, the Quantum Moon’s Sixth Location is actually set on an orbit around the sun itself with a radius of about 30km, and made (almost) invisible from outside.</p>
 <h2>Quantum Moon Orbits</h2>
@@ -593,51 +752,35 @@ e = A/a - 1 = 0.82</pre>
 <h2>Quantum Moon Rotation</h2>
 <p>If the cloud layer is disabled in-game, it can be observed that the reason why you always land on the Quantum Moon’s south pole is because it will constantly reorient itself during your flight so that your ship will always face the south pole.</p>
 <h2>Hourglass Twins’ Early Demise</h2>
-<p>Because of the large orbit radius in the case of the Hourglass Twins’ version of the Quantum Moon, it is possible to die engulfed by the expanding sun <i>before</i> the supernova occurs. Starting from <b>15:00</b> in the loop (7&nbsp;min before the supernova), the Quantum Moon will no longer be able to appear around the Twins unless you are already standing on it.</p>
-</details><t>#time loop event #in-game observations #quantum moon #general data</t></it>
+<p>Because of the large orbit radius in the case of the Hourglass Twins’ version of the Quantum Moon, it is possible to die engulfed by the expanding sun <i>before</i> the supernova occurs. Starting from <b>15:00</b> in the loop (7&#8239;min before the supernova), the Quantum Moon will no longer be able to appear around the Twins unless you are already standing on it.</p>
+</details><t>#time loop event #in-game observations #quantum moon #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD DATA Eye of the Universe -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Eye of the Universe</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:20%>Radius</th><td>201 &plusmn; 10 m</td></tr>
-    <tr><th>Mass</th><td>9 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Orbit Radius</th><td>~ 410 – 657 km<br>Between 500 and 1000 km <smol>(Nomai estimation)</smol></td></tr>
-</table><p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
+    <tr><th style=width:22%>Surface Radius</th><td>201 &plusmn; 10&#8239;m <span class=source><a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>(Source)</a></span></td></tr>
+    <tr><th>Gravitational Radius</th><td>300&#8239;m</td></tr>
+    <tr><th>Mass</th><td>9&#8239;&times;&#8239;10<sup>6</sup></td></tr>
+    <tr><th>Surface Gravity</th><td>30&#8239;m/s²&emsp;2.5&#8239;x</td></tr>
+    <tr><th>Orbit Radius</th><td>353593&#8239;m <span class=source>(by Trifid & Name)</span><br>Between 500 and 1000&#8239;km <smol>(Nomai estimation)</smol></td></tr>
+    <!-- Trifid, 2024/07/18: according to the sun object in the eye scene, the distance is exactly 1283160 m. which gives a period of 5 days, if its an orbit -->
+    <tr><th>Orbit Period</th><td>18&#8239;h 20&#8239;min 55&#8239;s<smol>(Hypothetically)</smol></td></tr>
+</table>
+<p>Trifid and Name calculated the Eye’s orbital radius via measuring the angular size of the sun with pixel measurements.</p>
 <p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km (while comparing with the orbit radius of the Hourglass Twins).</p>
-<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6km</b>.<br><dlgprt></dlgprt> <a href="javascript:getcard('dataQM')">See data about the Quantum Moon?</a></p>
-</details><t>#time loop event #in-game observations #eye of the universe #general data</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA Stranger -->
-<it class=tl style=position:relative><img src=../img/astr_stranger.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>The Stranger</b></summary>
-<h2>Main Properties</h2>
-<table>
-    <tr><th style=width:26%>Radius</th><td style=color:rgb(var(--redl))>?? &plusmn; ?? m</td></tr>
-    <tr><th>Mass</th><td style=color:rgb(var(--redl))>?? &times; 10<sup>??</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Distance to the Sun</th><td style=color:rgb(var(--redl))>??</td></tr>
-    <tr><th>Velocity with solar sails</th><td style=color:rgb(var(--redl))>??</td></tr>
-</table>
-<p class=source>» <a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>Source of these measurements</a></p>
-<table class=spmono><tr><th>Time</th><th>Event</th></tr>
-    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <tr><td>06:48</td><td>The solar sails start deploying (sound cue)</td></tr>
-    <tr><td>07:00</td><td>The solar sails are completely open</td></tr>
-    <tr><td>13:00</td><td>The dam bursts</td></tr>
-    <tr><td>13:10</td><td>The River Lowlands are flooded</td></tr>
-    <tr><td>13:30</td><td>The Cinder Isles are flooded</td></tr>
-    <tr><td>13:40</td><td>The Hidden Gorge walkways are destroyed</td></tr>
-    <tr><td>20:30</td><td>The Cinder Isles tower completely falls</td></tr>
-</table>
-</details><t>#dlc #time loop event #in-game observations #the stranger #general data</t></it>
+<p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6&#8239;km</b>.<br><dlgprt></dlgprt> <a href="javascript:getcard('dataQM')">See data about the Quantum Moon?</a></p>
+</details><t>#time loop event #in-game observations #eye of the universe #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA ATP activates at 22:40 (warp window timings missing) -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>Events related to the <b>Ash Twin Project</b></summary>
-<p>If the Protagonist stays alive after the supernova, the loop ends anyway at <b>22min&nbsp;40s</b> after waking up. The end of loop cutscene starts at 22min 40s (about one second after the black hole disappears) and ends at 22min 43s.</p>
+<p>If the Protagonist stays alive after the supernova, the loop ends anyway at <b>22&#8239;min&nbsp;40&#8239;s</b> after waking up. The end of loop cutscene starts at 22&#8239;min&nbsp;40&#8239;s (about one second after the black hole disappears) and ends at 22&#8239;min&nbsp;43&#8239;s.</p>
 <table class=spmono><tr><th>Time</th><th>Event</th></tr>
-<tr><td>07:50</td><td>The Ash Twin warp pad becomes accessible</td></tr>
-<tr><td style=color:rgb(var(--redl))>??:??</td><td>Warp pad window</td></tr>
-<tr><td style=color:rgb(var(--redl))>??:??</td><td>Warp pad window</td></tr>
-<tr><td style=color:rgb(var(--redl))>??:??</td><td>Warp pad window</td></tr>
+<tr><td>07:50</td><td>The Ash Twin warp platform becomes accessible</td></tr>
+<tr><td>07:53</td><td>Start of Warp Window</td></tr>
+<tr><td>10:18</td><td>Start of Warp Window</td></tr>
+<tr><td>12:44</td><td>Start of Warp Window</td></tr>
+<tr><td>15:10</td><td>Start of Warp Window</td></tr>
+<tr><td>17:35</td><td>Start of Warp Window</td></tr>
+<tr><td>20:01</td><td>Start of Warp Window</td></tr>
 <tr><td>22:13</td><td>The Ash Twin Project’s black hole starts to form</td></tr>
 <tr><td>22:14</td><td>The Ash Twin Project’s black hole is at full size</td></tr>
 <tr><td>22:38</td><td>The Ash Twin Project’s black hole starts to vanish</td></tr>
@@ -645,31 +788,91 @@ e = A/a - 1 = 0.82</pre>
 <tr><td>22:40</td><td>The time loop ends (start of purple lines cutscene)</td></tr>
 </table></details><t>#time loop event #in-game observations #ash twin project #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Warp Tower Alignment: Timber Hearth Warp Windows -->
-<it class=tl><details><summary>Warp Tower Alignment: Timber Hearth Warp Windows</summary>
-<p>For the time being, only warp windows which will actually result in a possible warp are displayed. Earlier warp windows can exist, but will not result in a warp because of the sand still covering the warp pad.</p>
-<!-- Interesting warp window: At 10:13.8, the warp "semi-activates" — because the sand has not yet lowered enough, the black hole opens but no warping can occur. This seems to result however in an abnormally long warp window…? More research needed here. -->
-<table class=spmono>
-<tr><td>11:23:1</td></tr>
-<tr><td>12:33.1</td></tr>
-<tr><td>13:32.4</td></tr>
-<tr><td>14:38.3</td></tr>
-<tr><td>15:51.6</td><td>Caution: The column of sand passes overhead around the same time.</td></tr>
-<tr><td>16:50.7</td></tr>
-<tr><td>17:55.6</td></tr>
-<tr><td>19:10.0</td></tr>
-<tr><td>20:08.8</td></tr>
-<tr><td>21:14.4</td></tr>
-</table></details><t>#timber hearth #ash twin #warp tower</t></it>
+<!-- @SFOLD    @WIP@    Warp Tower Alignments: Sun Station -->
+<it class=tl id=WWsun><details><summary>Warp Tower Alignments: Sun Station</summary>
+<p>Red timings correspond to warp windows which cannot be used in-game due to Ash Twin’s sand level being too high to allow warping.</p>
+<table class=spmono><tr><th>Window opening</th><th>Stays open (s)</th><th>Notes</th></tr>
+<tr><td style=background:rgba(var(--redd),.3);color:rgb(var(--redl))>03:01.7</td><td></td><td>Inaccessible</td></tr>
+<tr><td style=background:rgba(var(--redd),.3);color:rgb(var(--redl))>03:51.1</td><td></td><td>Inaccessible</td></tr>
+<tr><td style=background:rgba(var(--redd),.3);color:rgb(var(--redl))>04:40.3</td><td></td><td>Inaccessible</td></tr>
+<tr><td>05:30.7</td><td></td><td></td></tr>
+<tr><td>06:20.0</td><td></td><td></td></tr>
+<tr><td>07:09.3</td><td></td><td></td></tr>
+<tr><td>07:59.6</td><td></td><td></td></tr>
+<tr><td>08:48.8</td><td></td><td></td></tr>
+<tr><td>09:38.2</td><td></td><td></td></tr>
+<tr><td>10:28.6</td><td></td><td></td></tr>
+<tr><td>11:17.7</td><td></td><td></td></tr>
+</table><p>The sun station’s destruction prevents any warp windows after 11:30.</p><p>Due to the alignment being between the tower and the sun itself, the warp windows open once every <b>49.6&#8239;s</b>. The distance between Ash Twin and the sun also remains constant, therefore all windows remain open for <b style=color:rgb(var(--redl))>??&#8239;s</b>.</p>
+</details><t>#general data #warp tower #sun station #sun station warp tower</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    Warp tower alignments angles need to be within 5° of the astral body’s center. -->
-<it id=warptower5deg><details><summary>Warp tower alignments angles need to be within 5° of the astral body’s center.</summary>
+<!-- @SFOLD    @WIP@    Warp Tower Alignments: Ember Twin & Ash Twin -->
+<it class=tl><details><summary>Warp Tower Alignments: Ember Twin & Ash Twin</summary>
+<p>Red timings correspond to warp windows which cannot be used in-game due to Ash Twin’s sand level being too high to allow warping.</p>
+<table class=spmono><tr><th>Window opening</th><th>Stays open (s)</th><th>Notes</th></tr>
+<tr><td>07:53.2</td><td></td><td></td></tr>
+<tr><td>10:18.7</td><td></td><td></td></tr>
+<tr><td>12:44.3</td><td></td><td></td></tr>
+<tr><td>15:10.0</td><td></td><td></td></tr>
+<tr><td>17:35.6</td><td></td><td></td></tr>
+<tr><td>20:01.1</td><td></td><td></td></tr>
+</table></details><t>#general data #ash twin #ember twin #hourglass twins #warp tower #ember twin warp tower #ash twin warp tower</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Warp Tower Alignments: Timber Hearth -->
+<it class=tl><details><summary>Warp Tower Alignments: Timber Hearth</summary>
+<p>For the time being, only warp windows which will actually result in a possible warp are displayed. Earlier warp windows can exist, but will not result in a warp because of the sand still covering the warp platform.</p>
+<p>Red timings correspond to warp windows which cannot be used in-game due to Ash Twin’s sand level being too high to allow warping.</p>
+<!-- Interesting warp window: At 10:13.8, the warp "semi-activates" — because the sand has not yet lowered enough, the black hole opens but no warping can occur. This seems to result however in an abnormally long warp window…? More research needed here. -->
+<table class=spmono><tr><th>Window opening</th><th>Stays open (s)</th><th>Notes</th></tr>
+<tr><td style=background:rgba(var(--redd),.3);color:rgb(var(--redl))>10:13.8</td><td></td><td>This warp is <i>almost</i> functional. The black hole opens, but the sand is still too high to let you enter it.</td></tr>
+<tr><td>11:23.1</td><td></td><td></td></tr>
+<tr><td>12:33.1</td><td></td><td></td></tr>
+<tr><td>13:32.4</td><td></td><td></td></tr>
+<tr><td>14:38.3</td><td></td><td></td></tr>
+<tr><td>15:51.6</td><td></td><td>Caution: The column of sand passes overhead around the same time.</td></tr>
+<tr><td>16:50.7</td><td></td><td></td></tr>
+<tr><td>17:55.6</td><td></td><td></td></tr>
+<tr><td>19:10.0</td><td></td><td></td></tr>
+<tr><td>20:08.8</td><td></td><td></td></tr>
+<tr><td>21:14.4</td><td></td><td></td></tr>
+</table></details><t>#timber hearth #ash twin #warp tower #timber hearth warp tower #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Warp Tower Alignments: Brittle Hollow -->
+<it class=tl><details><summary>Warp Tower Alignments: Brittle Hollow</summary>
+<p>Red timings correspond to warp windows which cannot be used in-game due to Ash Twin’s sand level being too high to allow warping.</p>
+<!-- Ash Twin sand % for the warp to be only partially available: 53.2% -->
+<table class=spmono><tr><th>Window opening</th><th>Stays open (s)</th><th>Notes</th></tr>
+<tr><td>10:52.1</td><td></td><td></td></tr>
+<tr><td>12:12.8</td><td></td><td></td></tr>
+<tr><td>13:19.4</td><td></td><td></td></tr>
+<tr><td>14:37.7</td><td></td><td></td></tr>
+<tr><td>15:46.8</td><td></td><td></td></tr>
+<tr><td>17:00.5</td><td></td><td></td></tr>
+<tr><td>18:14.2</td><td></td><td></td></tr>
+<tr><td>19.23.6</td><td></td><td></td></tr>
+<tr><td>20:41.6</td><td></td><td></td></tr>
+<tr><td>21:48.7</td><td></td><td></td></tr>
+</table></details><t>#brittle hollow #ash twin #warp tower #brittle hollow warp tower #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Warp Tower Alignments: Giant’s Deep -->
+<it class=tl><details><summary>Warp Tower Alignments: Giant’s Deep</summary>
+<p>Red timings correspond to warp windows which cannot be used in-game due to Ash Twin’s sand level being too high to allow warping.</p>
+<table class=spmono><tr><th>Window opening</th><th>Stays open (s)</th><th>Notes</th></tr>
+
+</table></details><t>#giant’s deep #ash twin #warp tower #giant’s deep warp tower #general data</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD    @WIP@    Warp tower alignment angles need to be within 5° of the astral body’s center. -->
+<it id=warptower5deg><details><summary>Warp windows activate when the tower aligns with the astral body’s center and can be triggered up to a misalignment of 5°.</summary>
 <h2>Black Hole Forge Alignments</h2><table><tr><th><code>File: BH_Forge_AlignmentWindow</code></th></tr><tr><td>
     <div class=infoa><p class=nomai>POKE: We don’t need the alignment angle to be exact; it only needs to be within five degrees of the astral body’s center.</p><div class=infob><p>Reveals ship log fact <smol class=orng>BH_WARP_ALIGNMENT_MAP_X2</smol>:</p><p class=shiplog>Warp tower alignment angles are not exact. They only need to be within five degrees of the astral body’s center.</p></div></div>
     <div class=infoa><p class=nomai>POKE: Of note: This gives us a slightly longer warp window. I imagine this window will last roughly several seconds.</p><div class=infob><p>Reveals ship log fact <smol class=orng>BH_WARP_ALIGNMENT_MAP_X3</smol>:</p><p class=shiplog>This results in slightly longer warp windows that last roughly several seconds.</p></div></div>
     <div class=infoa><p class=nomai>POKE: As such, any Nomai stepping onto the warp platform during the active window will be immediately warped. We will need to be careful around the platform for the duration of the time it’s active to avoid accidental transportation.</p><div class=infob><p>Reveals ship log fact <smol class=orng>BH_WARP_ALIGNMENT_MAP_X4</smol>:</p><p class=shiplog>Anyone stepping onto the warp platform during the active window will be immediately warped.</p></div></div>
 </td></tr></table>
-<p>Just as stated in-game, warp windows are designed to open when the planetary alignment occurs, with a 5° margin of error — as in, the warp is active when the alignment angle is set <b>between –2.5° and +2.5°</b>.</p>
+<h2 class=tl>In-game Observations</h2>
+<p>Just as stated by Poke, warp windows are designed to open when the planetary alignment occurs, with a 5° margin of error.</p>
+<p>It is only possible to <i>activate</i> the warp platform starting from the moment when <b>the warp platform aligns with the center of the astral body</b>, and up to the moment when <b>the angle reaches 5°</b>. This margin of error results in an <b>inconsistent warp window duration</b> for any astral body other than the sun or the Hourglass Twins (in which case the circular orbit gives periodicity in both the timing and duration of the warp windows), as the window duration depends on the distance between the warp platform and the astral body.</p>
+<h2 class=tl>Obstructing the Warp Platform</h2>
+<p><b>Of note:</b> If the warp window is activated but there is an obstruction to prevent the object from actually warping (such as the sand level being too high), then the black hole will remain open for four seconds in total before vanishing, thus remaining open much longer than for the duration of a normal warp window.</p><p>This last observation has been observed multiple times with multiple warp windows in the sun, Brittle Hollow and Giant’s Deep towers, by manually adjusting the sand level so as to obstruct their warp platforms. In every warp window documented, the warp window behaves exactly the same way: <b>The&nbsp;black hole opens in 1&#8239;s, remains open for 2&#8239;s, then takes 1&#8239;s to close</b>.</p>
 </details><t>#warp core #warp tower #in-game observations #black hole forge</t></it>
 <!-- HAS_ONGOING_DATAMINING (BrittleHollow) -->
 <!-- @EFOLD -->
@@ -692,6 +895,16 @@ e = A/a - 1 = 0.82</pre>
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
 <!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681 -->
 <!--
+
+Trifid’s spreadsheet:       https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20
+Eriksonn:                   https://www.desmos.com/calculator/5rqhgrui0i
+
+Datamining: “TLE” may refer to the High Energy Lab? (time loop experiment)
+
+Prisoner sights:    https://www.youtube.com/watch?v=h93GaqXhezo
+QM from the Eye is intangible, but cool sight of the Eye itself!    https://www.youtube.com/watch?v=_MzK5bDQ1DI
+Duplicating scout with time paradoxes shenanigans (read comments for ideas):    https://www.youtube.com/watch?v=epWKYwQBwyQ
+
 3:00 is the last chance you have to enter the Lakebed cave, with about 30 seconds more before you need to reach the sandfall
 The High Energy Lab trailhead at the bottom of the Sunless city is inaccessible at 6:08 (when the doorway crushed me),
 
@@ -713,7 +926,7 @@ https://www.reddit.com/r/outerwilds/comments/zsq743/outer_wilds_echoes_of_the_ey
 
 By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
 
-—————————— HEL Experiment (@thisisaname0):
+—————————— HEL Experiment (Name):
 5 minutes, 55 seconds: Sand covers cacti leading to HEL.
 Letting t = 0 be the Scout Launch in High Energy Lab time machine:
 t = 0:00 : Launch
@@ -800,11 +1013,6 @@ XX MINUTES UNTIL END-OF-CYCLE TRANSMISSION
 
 Hearthians are aware that ghost matter is nullified by water (Riebeck being told about the Interloper: “It’s lucky we hadn’t evolved to live on land yet.”)
 
-## The tiny Hearthian satellite (postcards from orbit) orbiting TH is called “Sky Shutter.”
-It's the tiny light that looks like a shooting star if you don't know what you're looking at. This satellite passes overhead in the night sky, at the same position in the night sky, every in-game **42.900 +/- 0.036 s**
-## The Attlerock periodically passes overhead at the same position in the Hearthian sky.
-The period is **123.6s**.
-
 Removing the warp core and staying inside the Ash Twin Project will result in a "YOU ARE DEAD" ending at 22:41/22:42, as the supernova burns through the protective shell and destroys Ash Twin.
 
 > Can you recall your scout right before breaking spacetime Like recall it before it goes through either portal??
@@ -818,14 +1026,6 @@ Use this timeline’s screenshots as a way to locate each Nomai text displayed h
 
 Moraine is referred to as “KidSignalscope” in the game files
 "ORBITAL_PROBE_CANNON_X1" is unlocked by teleporting inside Probe cannon main hub.
-
-Ash Twin Project Warp Windows:
-07:50
-10:20
-12:45
-15:10
-17:30
-20:00
 
 21:30           “Warp Platforms Inactive”…?
 
@@ -975,7 +1175,7 @@ https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
 <tr><th>Laevi</th></tr>
 <tr><td>You won’t be for long. Mom and Dad are tall, so you and I will be tall, too.</td></tr>
 </table>
-</details><t>#nomai #solanum #laevi #ilex #lami #taget #anglerfish overlook</t></it>
+</details><t>#nomai #solanum #laevi #ilex #lami #taget #anglerfish overlook district #anglerfish fossil</t></it>
 We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:
 You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.
 >> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R3”:
@@ -992,8 +1192,8 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
 <it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary><h2>Control Module (Core of Giant’s Deep)</h2><table><tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr><tr><td>
 <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
-<div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X1</smol>:</p><p class=shiplog>The Orbital Probe Cannon has launched millions of probes.</p><p>(This fact would mention “thousands” of probes before Patch 1.0.7.481)</p></div></div>
-<div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X2</smol>:</p><p class=shiplog>The 9,318,054th probe located a deep space anomaly matching all known criteria for the Eye of the universe.</p><p>(This fact would mention the “9,354th” probe before Patch 1.0.7.481)</p></div></div>
+<div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X1</smol>:</p><p class=shiplog>The Orbital Probe Cannon has launched millions of probes.</p><p>(This fact would mention “thousands” of probes before Patch 1.0.7)</p></div></div>
+<div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X2</smol>:</p><p class=shiplog>The 9,318,054th probe located a deep space anomaly matching all known criteria for the Eye of the universe.</p><p>(This fact would mention the “9,354th” probe before Patch 1.0.7)</p></div></div>
 </td></tr></table>
 <p>If the Control module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>&lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
 <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the Universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
@@ -1001,11 +1201,11 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
 <h2>Updates from previous patches</h2>
 <p>The third line of file <code class='smol orng'>OPC_Sunken_AllLaunchesData</code> has been modified twice:</p><table>
-<tr class=ret><th><code>Before Patch 1.0.7.481</code></th></tr>
+<tr class=ret><th><code>Before Patch 1.0.7</code></th></tr>
 <tr class=ret><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9354.</td></tr>
-<tr><th><code>Modified between Patches 1.0.4 and 1.0.7.481</code></th></tr>
+<tr><th><code>Modified between Patches 1.0.4 and 1.0.7</code></th></tr>
 <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
-<tr><th><code>Modified between Patches 1.0.8 and 1.1.10.47</code></th></tr>
+<tr><th><code>Modified between Patches 1.0.8 and 1.1.10</code></th></tr>
 <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe &lt;FirstLoop&gt;.</td></tr>
 </table><p>Up until Patch 1.0.7 at the latest, less than ten thousands of probes had been launched instead of over nine million. Though the current version has “<smol>&lt;FirstLoop&gt;</smol>” in its code, the number seen in-game is still 9,318,054.</p>
 </details><t>#orbital probe cannon #ash twin project #control module #core of giant’s deep #nomai statue #protagonist #gabbro #time loop event</t></it>
@@ -1013,37 +1213,8 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <!-- @SFOLD The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons. -->
 <it class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This is a simple visual observation from looking at the architecture of both types of contraption.</p><p>Additionally, flying through one of the Orbital Probe Cannon’s broken parts will launch you at higher speed much like an intact gravity cannon would (<a href=https://www.reddit.com/r/outerwilds/s/ysomw2Qjp7>Reddit: Video example</a>).</p></details><t>#nomai technology #orbital probe cannon #gravity cannon #nomai shuttle #in-game observations</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Deep Space Satellite Positions -->
-<it class=tl><details><summary>The Deep Space Satellite is orbiting at <b>26km</b> away from the sun, at a speed of <b>124m/s</b>. It reaches an angle of 40° <b>3min&nbsp;21s</b> after waking up.</summary>
-<p>The satellite’s orbit radius was measured twice on Switch at two different times by staying as close to the satellite as possible and locking onto the sun.</p>
-<p>During the same loop, the following angles were recorded:</p>
-<table class=spmono><tr><th>Time</th><th>Angle</th></tr>
-<tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-<tr><td>02:45</td><td>30°</td></tr>
-<tr><td>03:03</td><td>35°</td></tr>
-<tr style=background:rgba(var(--greend),.5);color:rgb(var(--greenl))><td>03:21</td><td>40°</td></tr>
-<tr><td>03:40</td><td>45°</td></tr>
-<tr><td>03:58</td><td>50°</td></tr>
-<tr><td>04:35</td><td>60°</td></tr>
-<tr><td>05:12</td><td>70°</td></tr>
-<tr><td>05:48</td><td>80°</td></tr>
-<tr><td>07:56</td><td>115°</td></tr>
-<tr><td>08:14</td><td>120°</td></tr>
-<tr><td>08:51</td><td>130°</td></tr>
-<tr><td>09:28</td><td>140°</td></tr>
-<tr><td>10:04</td><td>150°</td></tr>
-<tr><td>10:41</td><td>160°</td></tr>
-<tr><td>11:17</td><td>170°</td></tr>
-<tr><td>11:54</td><td>180°</td></tr>
-<tr><td>12:30</td><td>190°</td></tr>
-<tr><td>13:07</td><td>200°</td></tr>
-</table>
-<p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733 °/s</b>, or about <b>0.005 rad/s</b><!-- 0.2733 * π/180 = 0.004769985 -->, and that the initial angle at the start of the loop is <b>-15.086°</b>. It can be calculated that the satellite’s velocity is <b>124m/s</b><!-- 26000 * 0.2733 * π/180 = 124.01961 -->.</p>
-<img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x – 15.086&Tab;|&Tab;R² = 1</p>
-</details><t>#dlc #deep space satellite #time loop event #in-game observations #the stranger</t></it>
-<!-- @EFOLD -->
 <!-- @SFOLD TH day/night cycle -->
-<it class=tl id=datathdaynight><details><summary>A full day/night cycle on Timber Hearth lasts <b>6min&nbsp;56s</b>. The&nbsp;day lasts ~3min&nbsp;24s, the night ~3min&nbsp;31s.</summary>
+<it class=tl id=datathdaynight><details><summary>A full day/night cycle on Timber Hearth lasts <b>6&#8239;min&nbsp;56&#8239;s</b>. The&nbsp;day lasts ~&#8239;3&#8239;min&nbsp;24&#8239;s, the night ~&#8239;3&#8239;min&nbsp;31&#8239;s.</summary>
     <p>This result was timed from the length of two consecutive days in the same loop (there is no fourth sunrise before the supernova) on a Switch game without ever moving from the spawn location.</p><p>It is considered sunrise when the soundtrack “Timber Hearth” begins, and sunset once this track ends.</p>
     <table class=spmono><tr><th>Time</th><th>Event</th></tr>
         <tr><td>01:43</td><td>☀️ Sunrise</td></tr>
@@ -1056,15 +1227,15 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
         <tr style=background:rgba(var(--midd),.5)><td>22:31</td><td><i>(Extrapolated: would have been sunrise)</i></td></tr>
     </table>
     <p>Though close to dawn, it is still nighttime in the entire village when the supernova occurs. Even from the observatory, the explosion cannot be noticed until just a few moments before death.</p><p><b>Of note:</b> When the sun stops collapsing and starts exploding <smol>(22:10)</smol>, the Attlerock is high up in the village’s sky (at least from the spawn point). From mostly invisible due to the lack of sunlight, it momentarily glows blue, before fading back into obscurity right after.</p>
-</details><t>#time loop event #in-game observations #timber hearth</t></it>
+</details><t>#time loop event #in-game observations #timber hearth #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD The suit’s HUD can measure distances up to 100km. -->
-<it class=tl><details><summary>The suit’s <scaps>hud</scaps> can measure distances up to <b>100km</b>.</summary>
-    <p>The suit’s <scaps>hud</scaps> will display the distance between the player and any marked location (including the scout or ship) up to a distance of <b>100km</b>. If a marked location is further away, then the <scaps>hud</scaps> will display <b class=scaps>“error”</b> instead of a number.</p>
+<it class=tl><details><summary>The suit’s <scaps>hud</scaps> can measure distances up to <b>100&#8239;km</b>.</summary>
+    <p>The suit’s <scaps>hud</scaps> will display the distance between the player and any marked location (including the scout or ship) up to a distance of <b>100&#8239;km</b>. If a marked location is further away, then the <scaps>hud</scaps> will display <b class=scaps>“error”</b> instead of a number.</p>
 </details><t>#in-game observations #protagonist’s ship</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD No dozing off during End Times -->
-<it class=tl><details><summary>It is impossible to doze off while End Times is playing. You will automatically wake up <b>20min&nbsp;32s</b> after the start of the loop.</summary><p>This measure was obtained by opening the game on Switch, starting the timer at the same time as pressing “Wake Up,” pressing “Doze off” when the timer reached ten seconds, then writing down the last number seen before the Protagonist woke up automatically (20:22) and adding ten seconds to it.</p></details><t>#time loop event #in-game observations</t></it>
+<it class=tl><details><summary>It is impossible to doze off while End Times is playing. You will automatically wake up at <b>20:32</b> into the loop.</summary><p>This measure was obtained by opening the game on Switch, starting the timer at the same time as pressing “Wake Up,” pressing “Doze off” when the timer reached ten seconds, then writing down the last number seen before the Protagonist woke up automatically (20:22) and adding ten seconds to it.</p></details><t>#time loop event #in-game observations</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Feldspar’s ship’s retro rockets are malfunctioning. It lacks downward thrusters. -->
 <it><details><summary>While Feldspar’s ship already possessed retro rockets, those are malfunctioning. Their ship lacks downward thrusters.</summary>
@@ -1096,7 +1267,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <p>Unless the mystery of the “anomaly” which the Deep Space Satellite detected at an angle of 40° has been unsolved for a hundred years, the fact that its pictures show the twins in the midst of a sand exchange demonstrates that the process happens a lot more frequently. The sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p>
 <a class=reg href="javascript:getcard('chertsawAT')"><h2><dlgprt></dlgprt> Chert has seen sandless Ash Twin</h2></a>
 <p>Again, unless Chert is more than a hundred years old and some, this proves that the sand column forms more frequently than it did in the Alpha.</p>
-</details><t>#ash twin #ember twin #hourglass twins sand column #retconned #chert #deep space satellite #radio tower #in-game observations</t></it>
+</details><t>#ash twin #ember twin #hourglass twins #hourglass twins sand column #retconned #chert #deep space satellite #radio tower #in-game observations</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Chert knows what Ash Twin looks like once drained of its sand. -->
 <it id=chertsawAT><details><summary>Chert has seen Ash Twin without its sand before.</summary>
@@ -1108,7 +1279,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <tr><td>Right now sand is flowing from Ash Twin to Ember Twin, but did you know the process eventually reverses? We’re not completely sure why the sand flows back and forth between the Twins, but it seems to be a natural phenomena.</td></tr>
 <tr><td>Oh, if you’d like to see something interesting, check out the other Twin once a little more of its sand drains off. I promise you won’t be disappointed.</td></tr>
 </table><p>This proves that Chert knows what sandless Ash Twin looks like, and may even imply that they have visited it in the past (or at least sent their scout there to study it).</p>
-</details><t>#chert #ash twin #hourglass twins sand column</t></it>
+</details><t>#chert #ash twin #hourglass twins #hourglass twins sand column</t></it>
 <!-- HAS_ONGOING_DATAMINING (Chert) -->
 <!-- @EFOLD -->
 <!-- @SFOLD DUBS Feldspar’s ship is named Trailblazer 1. -->
@@ -1172,9 +1343,10 @@ const nofind=document.getElementById("nofind"),
     filterlist=document.getElementById("filterlist"),
     allit=filterlist.getElementsByTagName("it"),
     activetags=document.getElementById("activetags"),
+    tagselect=document.querySelectorAll('div[id="tagselect"] input'),
     alldlc=document.getElementsByClassName('dlc'),
-    tagselect=document.querySelectorAll('div[id="tagselect"] input');
-var curtinput=[];
+    defaultinput=["dlc0"];
+var curtinput=["dlc0"],
     itags=[];
 for(i=0;i<allit.length;i++){
     itags.push([]);
@@ -1188,88 +1360,17 @@ for(i=0;i<allit.length;i++){
     itags[itags.length-1].push(txtList);
     if(!allit[i].getElementsByTagName("details")[0].open==true){allit[i].style.display='none'}
 }
-function getcard(id){const cd=document.getElementById(id);cd.style.display="";cd.getElementsByTagName("details")[0].open=true;cd.scrollIntoView()}
-function addChildToParent(parent,el,msg,state){
-    const node=document.createElement(el);
-    node.id="tag_"+msg.replace(/\s/g,'')
-    node.value="#"+msg
-    node.type='button'
-    node.setAttribute('onclick','AddTagSelector(this.value)')
-    node.classList.add(state)
-    parent.appendChild(node)
-}
-function ResetTagSelector(){
-    curtinput=[]
-    activetags.innerHTML="";
-    for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
-    for(i=0;i<allit.length;i++){allit[i].style.display="none";allit[i].getElementsByTagName("details")[0].open=false}
-}
-function AddTagSelector(tag){
-    tag=tag.split('#')[1]
-    if(curtinput.includes(tag+"0")){            // RETURN TO NEUTRAL
-        let index=curtinput.indexOf(tag+"0");
-        curtinput.splice(index,1);
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.remove("exclude");
-        activetags.removeChild(Array.from(activetags.childNodes).find((v)=>v.value=='#'+tag));
-    }
-    else if(curtinput.includes(tag+"1")){       // TURN GREEN TAG INTO RED TAG
-        let index=curtinput.indexOf(tag+"1");
-        curtinput.splice(index,1);
-        curtinput.push(tag+"0");
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.remove("include");
-        document.getElementById("tag_"+tag.replace(/\s/g,'')).classList.remove("include");
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.add("exclude");
-        document.getElementById("tag_"+tag.replace(/\s/g,'')).classList.add("exclude");
-    }
-    else{                                       // ACTIVATE GREEN TAG
-        curtinput.push(tag+"1");
-        addChildToParent(activetags,"input",tag,"include");
-        document.getElementById("btn_"+tag.replace(/\s/g,'')).classList.add("include");
-        document.getElementById("tag_"+tag.replace(/\s/g,'')).classList.add("include");
-    }
-}
-function FilterItems(){
-    var findli=allit.length;
-    for(i=0;i<itags.length;i++){
-        allit[i].style.display='none';
-        var checks=true;
-        for(tag=0;tag<curtinput.length;tag++){
-            if(curtinput[tag].slice(-1)=='0'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))!=-1){checks=false}
-            if(curtinput[tag].slice(-1)=='1'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))==-1){checks=false}
-        }
-        if(checks){
-            allit[i].style.display=""
-            if(allit[i].getElementsByTagName("t")[0].innerHTML.includes("#general data")){allit[i].getElementsByTagName("details")[0].open=true}
-        }
-        else{findli-=1}
-    }
-    if(findli==0){nofind.style.display="block"}
-    else{nofind.style.display="none"}
-}
-function FindTag(){
-    var taginput=document.getElementById('findtaginput').value.toLowerCase().replaceAll("'",'’').split(' ');
-    for(i=0;i<tagselect.length;i++){
-        check=true
-        for(t=0;t<taginput.length;t++){if(tagselect[i].value.includes(taginput[t])&&check){check=true}else{check=false}}
-        if(check || tagselect[i].classList.contains("include") || tagselect[i].classList.contains("exclude")){tagselect[i].style.display=""}
-        else{tagselect[i].style.display="none"}
-    }
-}
-function ToggleDLC(){
-    document.activeElement.classList.toggle('no')
-    if(document.activeElement.classList.contains('no')){curtinput.push("dlc0");for(d=0;d<alldlc.length;d++){alldlc[d].style.display='none'}}
-    else{curtinput.splice(curtinput.indexOf('dlc0'),1);for(d=0;d<alldlc.length;d++){alldlc[d].style.display=''}}
-}
 for(d=0;d<alldlc.length;d++){alldlc[d].style.display='none'}
 for(i=0;i<tagselect.length;i++){tagselect[i].id="btn_"+tagselect[i].value.replace(/\s/g,'').slice(1)}
 for(documentedtags=[],i=0;i<tagselect.length;i++) documentedtags.push(tagselect[i].value.split("#")[1]);
-const allts = document.querySelectorAll('div[id="filterlist"] t');
+const allts=document.querySelectorAll('div[id="filterlist"] t');
 for(allusedtags = [], i = 0; i < allts.length; i++) allusedtags += allts[i].textContent.split("#");
 for(uniq = [], usedtagslist = allusedtags.split(","), i = 0; i < usedtagslist.length; i++) uniq.includes(usedtagslist[i].trim()) || "" == usedtagslist[i] || uniq.push(usedtagslist[i].trim());
-var missingtags = "";
+var missingtags="";
 for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (missingtags += "\n・" + uniq[tag]);
 "" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
 <!-- <p><dlgprt></dlgprt> <a href="javascript:getcard('ID_OF_A_LORECARD')">REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</a></p> -->
+<!-- <a href="javascript:getcard('ID_OF_A_LORECARD')"><h2><dlgprt></dlgprt> REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</h2></a> -->
 <!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to get some progress done on checking the multiple version changes & translations. -->
