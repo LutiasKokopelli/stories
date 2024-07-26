@@ -42,6 +42,7 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:1fr 1fr;border:5px solid rgb(var(--redd))'>
 <div class=tagcategory><h2>Astral Bodies</h2>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
@@ -49,14 +50,14 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#giant’s deep'style='background:url(../img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#interloper'style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#white hole'style='background:url(../img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#deep space satellite'type=button onclick=AddTagSelector(this)>
+    <input value='#quantum moon'style='background:url(../img/astr_qmoon.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
 </div>
 <div class=tagcategory><h2>Sub-Locations</h2>
 <p style=text-indent:0>
@@ -93,6 +94,25 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
 //     "GameTime":,"Tags":["brittle hollow","location accessibility"],"Image":"<img src=../img/astr_brittlehollow.png>"
 // }
 
+// When is the Interloper’s core accessible?
+// Attlerock eclipses: from *where* on TH are they visible? Unhide them after you’ve changed their names & given this indication.
+
+// MUST CHECK THOSE TIMINGS! (Ash Twin HT towers)
+// 3*60+11 ET Tower starts peeking out
+// 4*60+16 ET Last floor becomes accessible (ground visible, scroll can be picked up)
+// 5*60+24 Broken alignment glass ceiling of AT tower & alignment glass ceiling of ET tower + Base of ET tower’s gravity beam + bridge between the two towers start to peek out
+// 7*60+3 ET & AT warp platforms become accessible.
+
+// 7*60+53  	Start of ATP Warp Window
+// 10*60+18 	Start of ATP Warp Window
+// 12*60+44 	Start of ATP Warp Window
+// 15*60+10 	Start of ATP Warp Window
+// 17*60+35 	Start of ATP Warp Window
+// 20*60+1   	Start of ATP Warp Window
+
+    // "":{
+    //     "GameTime":,"Tags":[],"Color":"","Image":""
+    // },
 
     "113 Crickets Eclipse":{
         "GameTime":46.1,"Attlerock/Sun angle":[310.777,310.760],"Tags":["hide","timber hearth","hearthian clock"]
@@ -100,14 +120,17 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "First Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":1*60+43,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
-    "Hourglass Twins column of sand starts forming":{
-        "GameTime":2*60,"Tags":["hourglass twins"]
+    "Sand starts draining off Ash Twin and flowing to Ember Twin":{
+        "GameTime":2*60,"Tags":["hourglass twins","ash twin","ember twin"]
     },
     "Deep Space Satellite Angle = 40°":{
         "GameTime":3*60+21,"Tags":["deep space satellite","stranger"]
     },
     "114 Midday Eclipse":{
         "GameTime":3*60+41.9,"Attlerock/Sun angle":[102.816,102.894],"Tags":["hide","timber hearth","hearthian clock"]
+    },
+    "The Interloper is at its Perihelion (closest to the sun)<span style=display:none>#1</span>":{
+        "GameTime":3*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "First Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":5*60+7,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
@@ -130,6 +153,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Sun Station Warp Window":{
         "GameTime":7*60+10,"Tags":["sun station","warp window","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_sunstation.png>"
     },
+    "The Interloper is at its Aphelion (furthest away from the sun)<span style=display:none>#1</span>":{
+        "GameTime":7*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
+    },
     "Second Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":8*60+39,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
@@ -141,6 +167,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     },
     "The Sun Station is engulfed by the sun":{
         "GameTime":11*60+30,"Tags":["sun station","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+    },
+    "The Interloper is at its Perihelion (closest to the sun)<span style=display:none>#2</span>":{
+        "GameTime":11*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "Second Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":12*60+3,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
@@ -160,11 +189,17 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Hidden Gorge walkways are destroyed":{
         "GameTime":13*60+40,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
     },
+    "The Quantum Moon stops appearing around the Hourglass Twins":{
+        "GameTime":15*60,"Tags":["quantum moon","location accessibility"],"Image":"<img src=../img/astr_qmoon.png>"
+    },
     "115 Sunrise Eclipse":{
         "GameTime":15*60+25.3,"Attlerock/Sun angle":[351.553,351.606],"Tags":["hide","timber hearth","hearthian clock"]
     },
     "Third Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":15*60+35,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
+    },
+    "The Interloper is at its Aphelion (furthest away from the sun)<span style=display:none>#2</span>":{
+        "GameTime":15*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "116 Undern Eclipse":{
         "GameTime":18*60+21.2,"Attlerock/Sun angle":[143.883,143.827],"Tags":["hide","timber hearth","hearthian clock"]
@@ -173,7 +208,10 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
         "GameTime":18*60+59,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
     },
     "The Interloper is engulfed by the sun":{
-        "GameTime":20*60,"Tags":["interloper","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_interloper.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+        "GameTime":19*60+48,"Tags":["interloper","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_interloper.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+    },
+    "Sand stops flowing between Ash Twin and Ember Twin":{
+        "GameTime":20*60+20,"Tags":["hourglass twins","ash twin","ember twin"]
     },
     "The Cinder Isles tower completely falls":{
         "GameTime":20*60+30,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
@@ -279,9 +317,12 @@ table=document.getElementById('calendar')
 var prevtime=0
 function load_calendar(){
     for(const[k,v]of Object.entries(cdta)){
+        // console.log("NEW EVENT:\nName: "+k+"\nTime: "+v["GameTime"])
+        if(prevtime>v["GameTime"]){
+            window.alert("Some events seem to be out of order! (Or two different events have the same name, thus resulting in this error.)\n\nThe following event should be moved up in the chronology:\n"+k+"\n\nIts provided timing is: "+v["GameTime"]+"\n\nThe problematic timing (from the event right before) is: "+prevtime+"\n")
+        }
         newtr=document.createElement('tr');newtr.setAttribute('id',k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));table.appendChild(newtr)
         newtd1=document.createElement('td');newtd2=document.createElement('td');newtd3=document.createElement('td');newtd5=document.createElement('td')
-        if(prevtime>v["GameTime"]){window.alert("The following event should be moved up in the chronology:\n"+k)}
         if("Image"in v){newtd1.innerHTML=v["Image"]+k}else{newtd1.innerHTML=k}
         newtd2.innerHTML=GMtime(v["GameTime"])
         newtd3.innerHTML=(Math.round(10*v["GameTime"]/(cdta['End of Loop']['GameTime'])*1000)/100).toFixed(2)
@@ -312,5 +353,3 @@ function AddTagSelector(btn){
     if(allactive.length===0){for(const[k,v]of Object.entries(cdta)){if(!v["Tags"].includes('hide')){ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));ctr.style.display=''}}}
 }</script></div></body></html>
 <!-- @EFOLD -->
-<!-- <script>window.alert(THtime2GMtime("06d04s 14:20"))</script> -->
-<!-- <script>window.alert(GMtime2THtime("05:57"))</script> -->

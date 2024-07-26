@@ -41,9 +41,10 @@ hr{margin:12px -12px!important;width:calc(100% + 24px);background:rgb(var(--fore
 table div:has(.infob):before{content:'*';color:orange;position:absolute;left:1%;top:calc(50% - .7em);border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em}
 td>div>p:not(.infob),td>p:not(.infob){padding-left:2em!important}
 details>p{margin:12px 0}
+table p{margin:0}
 .infob{font-size:1.2em;left:0;top:calc(100% + 5px);border:7px double rgb(var(--emph));outline:3px solid rgb(var(--white))}
 .infob img{height:revert}
-p.infob{padding:7px;margin:0}
+p.infob{padding:7px;margin:0;font-size:1em}
 .infob > *:last-child{margin-bottom:0}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
 @media only screen and (max-aspect-ratio:3/4){
@@ -104,6 +105,7 @@ table+p,summary+p{margin-top:12px}
 .lorecard{border:3px solid rgb(var(--fore));background:rgba(var(--midd),.2);padding:7px;border-radius:7px;display:inline-block;margin:7px}
 .lorecard h3{color:rgb(var(--midd));margin:-7px -7px 17px -7px;border-bottom:2px solid rgb(var(--fore));padding-left:10px;background:rgba(var(--fore),.7);padding-bottom:3px}
 .lorecard p{margin:0}
+it h3{color:rgb(var(--white));background:rgba(var(--midd),.7);margin:0 auto;padding:.5em;font-size:1.2em}
 #sidenav{background:rgb(var(--black))}
 details>ul>li{font-size:.85em;list-style:square}
 b{font-weight:800}
@@ -320,6 +322,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <a href=calendar_timeloop.html class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> All Time Loop Scripted Events <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #timeline #time loop event #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
 <a href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> Solar System Data <span class=source style=color:initial;opacity:.5>(Spreadsheet by Trifid)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
+<a href=https://www.desmos.com/calculator/ksdzclpzsy class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe #time loop event</t></it></a>
 <!-- @EFOLD -->
 <!-- @SFOLD — GENERAL DATA LORE CARDS -->
 <!-- @SFOLD    @WIP@    DATA Sun -->
@@ -367,7 +370,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
 <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches the Vessel</td></tr>
 <tr><td>22:40</td><td style=color:rgb(var(--redl))>Supernova radius at the end of the loop: ??&#8239;km</td></tr>
-</table><p><b>Of note:</b> The time loop ends before the supernova has time to reach its full size. As such, it can be avoided within the confines of the time loop by staying as close to about <span class=t style=color:rgb(var(--redl))>??&#8239;km</span> or more from the sun: for example, <b>staying in orbit alongside the deep space satellite will not result in a death by supernova</b> unless the advanced warp core has been removed from the Ash Twin Project.</p><h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project was disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p><b>Of note:</b> Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg&nbsp;Boing</a>)</span>.</p></details><t>#sun #supernova #general data #astronomy #in-game observations</t></it>
+</table><p><b>Of note:</b> The time loop ends before the supernova has time to reach its full size. As such, it can be avoided within the confines of the time loop by staying as close to about <span class=t style=color:rgb(var(--redl))>??&#8239;km</span> or more from the sun: for example, <b>staying in orbit alongside the deep space satellite will not result in a death by supernova</b> unless the advanced warp core has been removed from the Ash Twin Project.</p><h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project was disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p><b>Of note:</b> Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg&nbsp;Boing</a>)</span>.</p></details><t>#sun #supernova #general data #astronomy #in-game observations #time loop event</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Sun Station -->
 <it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary><h2>Main Properties</h2><table>
@@ -618,7 +621,7 @@ To see every single lore card in existence, click “Search” with an empty tag
         84&#8239;&times;&#8239;30&#8239;&times;&#8239;81&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Structure)</smol><br>
         22&#8239;&times;&#8239;16&#8239;&times;&#8239;33&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Interior)</smol>
     </td></tr>
-    <tr><th>Mass</th><td>100 + 100</sup></td></tr>
+    <tr><th>Mass</th><td>100 <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ice & Rails)</smol><br>100 <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Station)</smol></sup></td></tr>
     <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>22538.19&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Sun)</smol><br>461.815&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(White Hole)</smol></td></tr>
     <tr><th>Sidereal Day</th><td>41.89&#8239;s</td></tr>
@@ -642,7 +645,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Gravitational Radius</th><td>110&#8239;m</td></tr>
     <tr><th>Mass</th><td>5.50&#8239;&times;&#8239;10<sup>5</sup></td></tr>
     <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
-    <tr><th>Orbit Radius</th><td><b>Apoapsis:</b>&emsp;24100&#8239;m<br><b>Periapsis:</b>&emsp;2392.613&#8239;m<br><b>Eccentricity:</b>&emsp;0.819</td></tr>
+    <tr><th>Orbit Radius</th><td><b>Apoapsis:</b>&emsp;24100&#8239;m<br><b>Periapsis:</b>&emsp;~&#8239;2400&#8239;m<br><b>Eccentricity:</b>&emsp;0.819</td></tr>
     <tr><th>Orbit Period</th><td>478.95&#8239;s</td></tr>
 </table>
 <p>The Interloper is tidally locked to the sun. When it reaches its aphelion or perihelion, the Interloper’s center of mass is aligned with those of the sun and the White Hole. The Interloper accelerates as it orbits closer to the sun, and decelerates as it leaves the perihelion.</p>
@@ -816,7 +819,11 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><td>15:10.0</td><td></td><td></td></tr>
 <tr><td>17:35.6</td><td></td><td></td></tr>
 <tr><td>20:01.1</td><td></td><td></td></tr>
-</table></details><t>#general data #ash twin #ember twin #hourglass twins #warp tower #ember twin warp tower #ash twin warp tower</t></it>
+</table>
+
+<!-- Warp window every 145.6s -->
+
+</details><t>#general data #ash twin #ember twin #hourglass twins #warp tower #ember twin warp tower #ash twin warp tower</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    Warp Tower Alignments: Timber Hearth -->
 <it class=tl><details><summary>Warp Tower Alignments: Timber Hearth</summary>
@@ -884,17 +891,19 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#hearthians #hearthian culture</t></it>
 <!-- HAS_ONGOING_DATAMINING (Hornfels) -->
 <!-- @EFOLD -->
-<!-- @EFOLD -->
-
 <!-- @SFOLD    @WIP@    Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds. -->
-<!-- <it class=ret><details open><summary>Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds.</summary>
-<h2>Text Adventure Introduction Notes<span>File: SomeContextForTheThingYouJustDownloaded.txt</span></h2><blockquote>“I still think Dark Bramble being a carnivorous plant is a fun idea, even if the final version definitely works better overall.” — Alex Beachum</blockquote><p>This clearly shows that Dark Bramble is not carnivorous in the final version of the game (regardless of whether it could be shown or not in gameplay).</p>
-</details><t>#retconned #dark bramble</t></it> -->
+<it class=ret><details><summary>Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds.</summary>
+<h2>Text Adventure Introduction Notes<span>File: SomeContextForTheThingYouJustDownloaded.txt</span></h2><blockquote>“I still think Dark Bramble being a carnivorous plant is a fun idea, even if the final version definitely works better overall.” — Alex Beachum</blockquote><p>This implies that Dark Bramble’s metabolism does not rely on carnivorous behavior in the final version of the game (regardless of whether it could have been shown or not in gameplay).</p>
+</details><t>#retconned #dark bramble</t></it>
+<!-- @EFOLD -->
 <!-- @EFOLD -->
 
 <!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
-<!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681 -->
-<!--
+<!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681
+
+Try to launch probe out of QM while standing on QM?
+
+Ghost matter is "an exotic form of matter" and may not be an actual gas? Hmm. (speculation by a reddit comment)
 
 Trifid’s spreadsheet:       https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20
 Eriksonn:                   https://www.desmos.com/calculator/5rqhgrui0i
@@ -1008,7 +1017,7 @@ Sun tower offline as of XX minutes XX seconds ago. All other towers online.
 ASH TWIN PROJECT:
 
 XX MINUTES, XX SECONDS AGO: Received data from previous cycles.
-[...] x 1
+[…] x 1
 XX MINUTES UNTIL END-OF-CYCLE TRANSMISSION
 
 Hearthians are aware that ghost matter is nullified by water (Riebeck being told about the Interloper: “It’s lucky we hadn’t evolved to live on land yet.”)
@@ -1018,7 +1027,7 @@ Removing the warp core and staying inside the Ash Twin Project will result in a 
 > Can you recall your scout right before breaking spacetime Like recall it before it goes through either portal??
 > You get the error message for having duplicate scouts if you recall in the couple seconds before spacetime breaks. And you can't recall it
 
-"Bird sounds in the plains" does TH have birds???? Files OW_TH_AmbienceInCanyons (and maybe AmbienceHighAltitude... they are very faint and I'm not sure they are birds) you could probably also just hear it ingame, the location just being anywhere not in a crater, and at day i think
+"Bird sounds in the plains" does TH have birds???? Files OW_TH_AmbienceInCanyons (and maybe AmbienceHighAltitude… they are very faint and I'm not sure they are birds) you could probably also just hear it ingame, the location just being anywhere not in a crater, and at day i think
 
 32km away from the sun = further than white hole and "Ol Spacey" = far enough to not get taken by the supernova
 
@@ -1066,7 +1075,7 @@ Going to space with the Zero-G cave suit:
 * cannot access map
 * no scout
 
-<a href=https://www.mobiusdigitalgames.com/news/outerwilds-venture-is-recruiting>This blog article from Mobius Digital</a> confirms that ghost matter is completely unrelated from quantum effects (I mean, it's not worth creating a lore card just for this, since the Interloper comes from elsewhere and was deadly before it could have been close enough to the Eye to get quantum... Right?)
+<a href=https://www.mobiusdigitalgames.com/news/outerwilds-venture-is-recruiting>This blog article from Mobius Digital</a> confirms that ghost matter is completely unrelated from quantum effects (I mean, it’s not worth creating a lore card just for this, since the Interloper comes from elsewhere and was deadly before it could have been close enough to the Eye to get quantum… Right?)
 
 REDDIT AMA      https://www.reddit.com/r/PS4/comments/diafuh/official_ama_with_outer_wilds_developers_mobius/
 
@@ -1189,6 +1198,40 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <!-- @EFOLD -->
 
 <!-- @SFOLD Finished Lore Cards -->
+<!-- @SFOLD Spacesuit helmets The visors protect from sun exposure. -->
+<it class=dub><details><summary>Each spacesuit’s helmet is custom-made to fit its wearer. Their visors provide protection from direct sun exposure.</summary><h2>Museum (Both Alpha Versions)</h2><table><tr><th><smol>File: xmls/museumplaques/HelmetPlaque</smol></th></tr><tr><td>Helmets like these are our explorers’ windows on the Universe. Each helmet is custom-made to fit its wearer, with a stylish gold visor that provides protection from direct sun exposure.</td></tr></table></details><t>#outer wilds ventures #hearthian technology #unused/concept art #protagonist’s ship #chert’s ship #gabbro’s ship #riebeck’s ship #feldspar’s ship</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD In the Alpha, the protagonist was already awake before the start of each loop. -->
+<it class=ret><details><summary>In the Alpha versions of Outer Wilds, the protagonist was already awake before the start of each loop.</summary>
+<h2>Rocket Scientist (Second Loop)<span>File: spaceprogram/rocketscientist/2ndLoop</span></h2>
+<table>
+    <tr><th>Rocket Scientist</th></tr>
+    <tr><td>Whoa, hold it! How do you know the launch codes?</td></tr>
+</table>
+<h3>Dialogue branch 1:</h3>
+<table>
+    <tr><th>The Protagonist</th></tr>
+    <tr><td><dlgprt></dlgprt> From the observatory, remember?</td></tr>
+    <tr><th>Rocket Scientist</th></tr>
+    <tr><td><p>Really? Oh, I didn’t see you leave… must have dozed off.</p></td></tr>
+    <tr><td><div class=infoa><p>Er, I mean I must have been busy calibrating the starboard thrusters! Yessiree, all systems check out.</p><p class=infob>The 2013 Alpha version used “Yessir” instead of “Yessiree.”</p></div></td></tr>
+</table>
+<h3>Dialogue branch 2:</h3>
+<table>
+    <tr><th>The Protagonist</th></tr>
+    <tr><td><dlgprt></dlgprt> How… how did I get back here?</td></tr>
+    <tr><th>Rocket Scientist</th></tr>
+    <tr><td><p>Back where? Didn’t you just walk up here from the village?</p></td></tr>
+    <tr><td><div class=infoa><p>Don’t go crazy on me, this ship needs 110% of your attention (the extra 10% is to keep the autopilot from flying into the Sun).</p><p class=infob>The 2013 Alpha version wrote “%110” and “%10” instead of “110%” and “10%.”</p></div></td></tr>
+</table>
+<h3>End:</h3>
+<table>
+    <tr><th>Rocket Scientist</th></tr>
+    <tr><td>Anyway, I guess you’re ready to launch! Take good care of her for me.</td></tr>
+</table>
+<p><b>Of note:</b> The 2013 Alpha version of the game did not use neutral pronouns for Hearthians.</p>
+</details><t>#retconned #slate #protagonist #time loop event</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
 <it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary><h2>Control Module (Core of Giant’s Deep)</h2><table><tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr><tr><td>
 <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
@@ -1371,6 +1414,39 @@ for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (mi
 "" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
-<!-- <p><dlgprt></dlgprt> <a href="javascript:getcard('ID_OF_A_LORECARD')">REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</a></p> -->
 <!-- <a href="javascript:getcard('ID_OF_A_LORECARD')"><h2><dlgprt></dlgprt> REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</h2></a> -->
 <!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to get some progress done on checking the multiple version changes & translations. -->
+
+<!--
+For adding to complete XML:
+
+<Translations>
+    <CHN>
+    </CHN>
+    <ENG>
+    </ENG>
+    <FRE>
+    </FRE>
+    <GER>
+    </GER>
+    <ITA>
+    </ITA>
+    <JPN>
+    </JPN>
+    <KRN>
+    </KRN>
+    <POL>
+    </POL>
+    <POR>
+    </POR>
+    <RUS>
+    </RUS>
+    <SPA>
+    </SPA>
+    <TRK>
+    </TRK>
+</Translations>
+
+FOR CHECKING FOR DIFFERENCES:
+for f in `find . -type f` ; do diff -q "$f" "../../AllExtractedTextAssets_Remove_Files_As_You_Add_To_Loremap/$f" ; done
+-->
