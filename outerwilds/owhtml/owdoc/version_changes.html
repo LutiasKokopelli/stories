@@ -53,28 +53,14 @@ Found text assets in:
 
 No text to be found in any of the subfolders.
 
-
-
+n="" ; for f in `find . -name "${n}*"` ; do diff -q "$f" "Patch-1.1.15_SteamCurrent/${n}" ; done ; vi "Patch-1.1.15_SteamCurrent/${n}"
+for f in `find . -name "${n}*"` ; do rm "$f" ; done
 
 for f in Translation\ #2490* ; do echo $f ; head -n 7 "$f" | tail -n 1 ; echo ; done
 
 Como o Olho pode ser mais antigo que o próprio universo?        Portuguese
 Come può L'Occhio essere più antico dell'universo stesso?       Italian
 Jak Oko może być starsze od wszechświata?                       Polish
-
-Translation_eng
-Translation_fre
-Translation_ger
-Translation_ita
-Translation_jpn
-Translation_krn
-Translation_pol
-Translation_por
-Translation_rus
-Translation_spa
-Translation_zho
-
-
 
 ——————————————————————————————————————————
 Patch 1.0.3 is out!

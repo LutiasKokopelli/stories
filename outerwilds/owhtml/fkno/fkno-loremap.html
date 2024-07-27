@@ -80,7 +80,7 @@ p+.source{margin-top:-12px}
 .source a{color:rgb(var(--white))}
 summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:10px 10px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 details[open] summary{margin-bottom:0}
-details[open]+t{margin-top:12px}
+details[open]:not(.noexp)+t{margin-top:12px}
 details table{border-collapse:collapse;font-size:inherit}
 details table td{padding:7px;border:2px solid rgb(var(--midd))}
 details table:not(.spmono) td{width:50%}
@@ -103,6 +103,9 @@ td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
 .nomai .infob,.nomai + .infob{font-size:.85em}
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
+.noexp summary::-webkit-details-marker{display:none}
+.noexp summary{list-style:none;text-indent:0;padding-left:10px;cursor:auto}
+.noexp+t{margin-top:-3px}
 </style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
 <input id=findtaginput onkeyup=FindTag() placeholder='Quick tag search:'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
@@ -242,6 +245,14 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 </div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <a href=../owdoc/loremap.html class=reg><h2 style=margin-top:0><dlgprt></dlgprt> Separate Web Page: Outer Wilds Lore Map</h2></a><a href=../owdoc/calendar_timeloop.html class=reg><h2><dlgprt></dlgprt> Separate Web Page: Time Loop Calendar</h2></a>
 <!-- @EFOLD -->
+<!-- @SFOLD Non-expanding Lore Cards -->
+<it class=fkno><details class=noexp><summary>Feldspar has been missing for almost 6 years.</summary></details><t>#feldspar #outer wilds ventures</t></it>
+<it class=fkno><details class=noexp><summary>Feldspar was too eager to visit Dark Bramble to contact ground control after coming out of the core of Giant’s Deep.</summary></details><t>#feldspar #outer wilds ventures</t></it>
+<it class=fkno><details class=noexp><summary>Feldspar’s ship was already in need of minor repairs when they came for Dark Bramble. Their radio was destroyed when they crashed into the vine.</summary></details><t>#feldspar #outer wilds ventures #dark bramble</t></it>
+<it class=fkno><details class=noexp><summary>Chert had their launch day ten years ago.</summary></details><t>#chert #outer wilds ventures</t></it>
+<it class=fkno><details class=noexp><summary>Gabbro had their launch day nine years ago.</summary></details><t>#gabbro #outer wilds ventures</t></it>
+<it class=fkno><details class=noexp><summary>Riebeck had their launch day three years ago.</summary></details><t>#riebeck #outer wilds ventures</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 <!-- @SFOLD Hearthian calendar -->
 <it class=fkno><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
@@ -313,10 +324,10 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon. -->
 <it class=fkno><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
-<p>Feldspar left for Dark Bramble right after getting out of the core of Giant’s Deep, despite their ship being in need of minor repairs, and was too excited to contact Timber Hearth. As such, when they never came back, the searches were concentrated around Giant’s Deep, and made difficult due to the cyclones and drifting islands constantly changing the planet’s layout.</p><hr>
+<p>Feldspar did not contact Timber Hearth before leaving for Dark Bramble. When they never came back, the searches were thus concentrated around Giant’s Deep instead, and made difficult due to the cyclones and drifting islands constantly changing the planet’s layout.</p><hr>
 <p>Outer Wilds Ventures knew that Feldspar tried many times to land on the Quantum Moon, without ever succeeding. Due to Hearthians’ lack of knowledge about the Quantum Moon and macroscopic quantum mechanics in general, and with the searches on Giant’s Deep being fruitless, some started to hypothesize that Feldspar found once again the Quantum Moon on their way back, tried one more time to land on it, and actually succeeded for once; only for the Quantum Moon to disappear as it always does.</p>
 <p>Regardless of whether they assume Feldspar to have died on the spot due to the ‘teleportation’ effect being possibly lethal, to have died while stranded in space because the moon’s disappearance left them behind and too far away to make it to their ship before running out of fuel or oxygen, or to have somehow disappeared entirely and never reappeared along with the moon in its new location, Outer Wilds Ventures slowly put more and more credence in this theory and started mourning without searching any further.</p>
-<hr><p>At the time of FKNO’s first chapter, Feldspar has been gone for almost a whole year (302 Hearthian days). No Hearthian ever tried to land on the Quantum Moon after this, assuming that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
+<hr><p>At the time of FKNO’s first chapter, Feldspar has been gone for almost six years. No Hearthian ever tried to land on the Quantum Moon after this, assuming that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
 </details><t>#feldspar #outer wilds ventures #quantum moon #quantum mechanics #hearthians</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Pre-Time Loop Timeline -->
@@ -362,12 +373,14 @@ it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
     <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
     <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
     <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
-    <!-- <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr>
-    <tr><td>06d04s 21:04</td><td>04:09</td><td>Hornfels, Gossan and Hal (+ Gabbro through Hornfels’ portable radio) go down to the statue room.</td></tr> -->
-    <!-- <tr><td></td><td>:</td><td></td></tr> -->
+    <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr>
+    <tr><td>06d04s 21:04</td><td>04:09</td><td>Hornfels, Gossan and Hal (+ Gabbro through Hornfels’ portable radio) go down to the statue room.</td></tr>
+    <tr><td>06d04s 24:31</td><td>04:33</td><td>Gossan leaves to meet Hornfels in the quantum shard room.</td></tr>
 
-<!-- <script>window.alert(THtime2GMtime("06d04s 21:04"))</script> -->
-<!-- <script>window.alert(GMtime2THtime("05:57"))</script> -->
+    <!-- <tr><td>06d04s [+5min minimum]</td><td>:</td><td>Gossan goes back to find Hal and Gabbro in the statue room.</td></tr> -->
+    <!-- This takes at *minimum* 5 Hearthian minutes, but whether it takes more or not depends on how long Hal and Gabbro’s conversation will be. -->
+<!-- <script>window.alert(THtime2GMtime("HEARTHIAN_TIME"))</script> -->
+<!-- <script>window.alert(GMtime2THtime("IN-GAME_TIME"))</script> -->
 
 </table></details><t>#time loop event</t></it>
 <!-- @EFOLD -->
@@ -411,6 +424,16 @@ Caretakers' cabin:	Rutile	Gneiss	Tektite	Spinel
 	Chert	Gabbro	Porphy
 	Gossan	Esker	Tuff	Riebeck
 -->
+<!-- WHS was built first, then the shuttles with more advanced tech that no longer required astral body alignments, and *then* the Ash Twin towers were built but the Nomai thought they'd use the WHS tech instead of the shuttles tech? And Slate based their tech on the Nomai shuttles instead of the warp pads.
+
+Gonna summarize my hypothesis regarding Nomai warping technology:
+1. The Vessel uses an advanced warp core as initially built by Annona, allowing warp travel with no limitations and across large distances.
+2. That technology was lost with the crash, leaving the Nomai stranded with the advanced warp core unusable and (presumably) impossible to repair or use to create a duplicate, or even to use as a model for other non-advanced warp cores. Annona eventually died before they could recreate anything, due to a lack of resources. *[Note: Please let me know if there is a canon knowledge of whether Annona died before or after the first functional non-advanced warp core was created]*
+3. Brittle Hollow gave access to a black hole, they created the black hole forge, this made them able to recreate warp technology from the ground up. Due to the lack of Annona / the tools the Nomai would usually use for this, recreating non-advanced warp cores already took a while, and those started rudimentary.
+4. The first warp cores were used in the White Hole station. Due to this technology's limitations, warps can only occur when an alignment between the black hole core and a massive astral body close to the white hole core happens; they did however manage to make it so that after a black hole &rarr; white hole warp occurs, the white hole core is charged and allows a return trip without alignment limitations thanks to the energy gained by the previous warp.
+5. The shuttles were built, and with those a second generation of warp cores which managed to get past the alignment restriction were developed. These warp cores are also used in the HEL (...? Guess we don't know what second-generation warp cores look like but the fact that the HEL's warp cores look identical to the first-generation ones bugs me a little bit because of the next point:).
+6. When the Ash Twin Project came and the idea for the towers arose, the Nomai decided to base the towers' warps from the *White Hole Station* warp pads instead of the second generation ones. Probably because or resource limitations, perhaps because of "that way we don't have to adjust the entire warp pad system for a different kind of warp cores" (assuming that even if first and second generation warp cores look the same at first glance, they may have something like different energy requirements or wiring needs/safety precautions and such) coupled with "it's not like warp windows don't occur often enough to make it *that* big of an inconvenience" laziness.
+7. The *advanced* warp core was finally remade and used only for the Ash Twin Project, most likely because of a lack of resources + lack of need. (save for the plan to rebuild(?)/return(?) to the Vessel, but that plan was for after the ATP anyway and there's evidently the option to use the same advanced warp core for the vessel later anyway) -->
 <!-- @EFOLD -->
 
 <!-- @SFOLD Javascript -->

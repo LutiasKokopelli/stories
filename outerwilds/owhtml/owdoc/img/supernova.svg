@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?><svg viewBox='-80 -20 1020 1070' width="auto" height="800px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>*{--midd:128,84,52;--white:207,207,209;--orng:255,125,36}text{text-anchor:end}</style>
+<rect width="300" height="1000" x="600" y="0" fill="rgba(56,138,93,.3)" /><path d="M600 0 600 1000" fill="none" stroke="rgb(56,138,93)" stroke-width="5" />
+<path d="M0 0 0 1000 900 1000 900 0 Z" fill="none" stroke="rgb(var(--midd))" stroke-width="10" />
+<path d="M0 200 900 200M0 400 900 400M0 600 900 600M0 800 900 800M200 0 200 1000M400 0 400 1000M800 0 800 1000M100 0 100 1000M300 0 300 1000M500 0 500 1000M700 0 700 1000M900 0 900 1000M0 100 900 100M0 300 900 300M0 500 900 500M0 700 900 700M0 900 900 900" fill="none" stroke="rgb(var(--midd))" stroke-width="5" />
+<path d="M0 20 900 20M0 40 900 40M0 60 900 60M0 80 900 80M0 120 900 120M0 140 900 140M0 160 900 160M0 180 900 180M0 220 900 220M0 240 900 240M0 260 900 260M0 280 900 280M0 320 900 320M0 340 900 340M0 360 900 360M0 380 900 380M0 420 900 420M0 440 900 440M0 460 900 460M0 480 900 480M0 520 900 520M0 540 900 540M0 560 900 560M0 580 900 580M0 620 900 620M0 640 900 640M0 660 900 660M0 680 900 680M0 720 900 720M0 740 900 740M0 760 900 760M0 780 900 780M0 820 900 820M0 840 900 840M0 860 900 860M0 880 900 880M0 920 900 920M0 940 900 940M0 960 900 960M0 980 900 980M20 0 20 1000M40 0 40 1000M60 0 60 1000M80 0 80 1000M120 0 120 1000M140 0 140 1000M160 0 160 1000M180 0 180 1000M220 0 220 1000M240 0 240 1000M260 0 260 1000M280 0 280 1000M320 0 320 1000M340 0 340 1000M360 0 360 1000M380 0 380 1000M420 0 420 1000M440 0 440 1000M460 0 460 1000M480 0 480 1000M520 0 520 1000M540 0 540 1000M560 0 560 1000M580 0 580 1000M620 0 620 1000M640 0 640 1000M660 0 660 1000M680 0 680 1000M720 0 720 1000M740 0 740 1000M760 0 760 1000M780 0 780 1000M820 0 820 1000M840 0 840 1000M860 0 860 1000M880 0 880 1000" fill="none" stroke="rgb(var(--midd))" stroke-width="1" />
+<path d="M0,996 C245,996 510,702 900,0" fill="none" stroke="rgb(var(--orng))" stroke-width="3" />
+<circle cx="247" cy="900" r="5" fill="rgb(var(--orng))" />
+<text x="247" y="900" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">Hourglass Twins</text>
+<circle cx="330" cy="828.14" r="5" fill="rgb(var(--orng))" />
+<text x="330" y="828.14" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">Timber Hearth</text>
+<circle cx="390" cy="766.182" r="5" fill="rgb(var(--orng))" />
+<text x="390" y="766.182" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">Brittle Hollow</text>
+<circle cx="471" cy="670.848" r="5" fill="rgb(var(--orng))" />
+<text x="471" y="670" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">Giant’s Deep</text>
+<circle cx="525" cy="600" r="5" fill="rgb(var(--orng))" />
+<text x="525" y="600" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">Dark Bramble</text>
+<circle cx="568" cy="540" r="5" fill="rgb(var(--orng))" />
+<text x="568" y="540" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">White Hole</text>
+<circle cx="611" cy="480" r="5" fill="rgb(var(--orng))" />
+<text x="611" y="480" dx="-8" dy="-5" font-family="Space Mono" font-size="20" fill="rgb(var(--white))">Deep Space Satellite</text>
+<text x="0"   y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:10</text>
+<text x="100" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:15</text>
+<text x="200" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:20</text>
+<text x="300" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:25</text>
+<text x="400" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:30</text>
+<text x="500" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:35</text>
+<text x="600" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:40</text>
+<text x="700" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:45</text>
+<text x="800" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:50</text>
+<text x="900" y="1040" dx="34" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">22:55</text>
+<text x="-15" y="1000" dy="4" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">0</text>
+<text x="-15" y="900" dy="4" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">5&#8239;km</text>
+<text x="-15" y="800" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">10&#8239;km</text>
+<text x="-15" y="700" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">15&#8239;km</text>
+<text x="-15" y="600" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">20&#8239;km</text>
+<text x="-15" y="500" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">25&#8239;km</text>
+<text x="-15" y="400" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">30&#8239;km</text>
+<text x="-15" y="300" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">35&#8239;km</text>
+<text x="-15" y="200" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">40&#8239;km</text>
+<text x="-15" y="100" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">45&#8239;km</text>
+<text x="-15" y="0" dy="7" font-family="Space Mono" font-size="24px" fill="rgb(var(--white))">50&#8239;km</text>
+</svg>

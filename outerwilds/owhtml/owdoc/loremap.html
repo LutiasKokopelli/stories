@@ -345,17 +345,18 @@ To see every single lore card in existence, click “Search” with an empty tag
 <p>The sun’s color gradually changes from the very start of the loop, and its radius progressively grows starting from a certain point in the loop.</p>
 <p>The visual observation of a recording of the map locked on to the sun spanning over a full loop showed that the sun’s size <b><i>seems</i></b> static until 10:30, then starts growing in size linearly at a rate of about 3.3&#8239;m/s, and reaches its final size at 20:35, just as the track “End Times” starts playing.</p><p>However, datamining will give a more nuanced evolution of the sun: instead of being fully linear, the sun’s expansion uses a <a href=https://en.m.wikipedia.org/wiki/Smoothstep>Smoothstep function</a> which makes it so that the sun’s radius actually starts expanding at <b>10:00</b> at a very slow rate (slow enough to almost not be visually detectable), and to stop expanding at <b>21:00</b> after the expansion rate slowed down drastically.</p>
 <h2>Collapse</h2>
-<p style=color:rgb(var(--redl))><i>TBA: The sun collapses in the span of 10&#8239;s. Does it go linearly from 4000&#8239;m to 0&#8239;m at a constant speed of 400&#8239;m/s? Or (more likely) does the pre-supernova singularity have a non-zero minimal radius?</i></p>
+<p>The sun collapses in the span of 10&#8239;s, seeing its radius decrease from 4000&#8239;m to 200&#8239;m.</p>
+<p style=color:rgb(var(--redl))><i>TBA: Does the sun collapse linearly at a constant speed of 380&#8239;m/s?</i></p>
 <a href="javascript:getcard('datasupernova')"><h2><dlgprt></dlgprt> General Data: Supernova</h2></a></details><t>#time loop event #astronomy #in-game observations #sun #general data</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD    @WIP@    DATA Supernova -->
+<!-- @SFOLD DATA Supernova -->
 <it class=tl id=datasupernova style=position:relative><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em><img src=../img/Steam_Lv5_Supernova.png style=height:60px;position:absolute;left:0;top:0>General Data: <b>Supernova</b></summary>
 <a href="javascript:getcard('datasun')"><h2><dlgprt></dlgprt> General Data: The Sun</h2></a>
-<i><ol style=color:rgb(var(--redl))><li>TBA: Determine the speed and full range of the supernova. Is it 50&#8239;km? The supernova’s hitbox stops expanding at about 50&#8239;km according to <a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg Boing’s video</a>.</li><li>TBA: At the end of the time loop, what is the supernova’s radius? The White Hole (23&#8239;km away from the sun) is reached near the end of the time loop and the deep space satellite (26&#8239;km away from the sun) is spared, meaning that the supernova does not have time to finish expanding to its full size before the Ash Twin Project recalls the protagonist’s memories.</li></ol></i>
+<p><b>Of note:</b> The time loop ends before the supernova can reach its full size. As&nbsp;such, death can be avoided within the confines of the time loop by staying as close to about <b>25.4&#8239;km</b> or more from the sun: for example, <b>staying in orbit alongside the deep space satellite will not result in a death by supernova</b> unless the advanced warp core has been removed from the Ash Twin Project.</p>
 <h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
 <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
 <tr><td>22:10</td><td><img style=height:2em;margin:-.5em src=../img/Steam_Lv5_Supernova.png> The Supernova occurs.</td></tr>
-<tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_ashtwin.png> The Supernova reaches Ash Twin <smol>(North pole)</smol></td></tr>
+<tr><td>22:22</td><td><img style=height:2em;margin:-.5em src=../img/astr_ashtwin.png> The Supernova reaches Ash Twin <smol>(North pole)</smol></td></tr>
 <tr><td>22:23</td><td><img style=height:2em;margin:-.5em src=../img/astr_embertwin.png> The Supernova reaches Ember Twin <smol>(Chert’s camp)</smol></td></tr>
 <tr><td>22:27</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(Spawn point)</smol></td></tr>
 <tr><td>22:28</td><td><img style=height:2em;margin:-.5em src=../img/astr_timberhearth.png> The Supernova reaches Timber Hearth <smol>(North pole)</smol></td></tr>
@@ -365,12 +366,19 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><td>22:33</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black);height:2em;margin:-.5em'> The Supernova reaches the Probe Tracking Module<br><smol>(Core of Giant’s Deep)</smol></td></tr>
 <tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_giantsdeep.png> The Supernova reaches Giant’s Deep<br><smol>(Quantum Tower at North pole)</smol></td></tr>
 <tr><td>22:35</td><td><img style=height:2em;margin:-.5em src=../img/astr_opc.png> The Supernova reaches the Orbital Probe Cannon</td></tr>
-<tr><td>22:37</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches Dark Bramble <smol>(Outside)</smol></td></tr>
+<tr><td>22:36</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches Dark Bramble <smol>(Outside)</smol></td></tr>
+<tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
 <tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whitehole.png> The Supernova reaches the White Hole</td></tr>
-<tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
 <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches the Vessel</td></tr>
-<tr><td>22:40</td><td style=color:rgb(var(--redl))>Supernova radius at the end of the loop: ??&#8239;km</td></tr>
-</table><p><b>Of note:</b> The time loop ends before the supernova has time to reach its full size. As such, it can be avoided within the confines of the time loop by staying as close to about <span class=t style=color:rgb(var(--redl))>??&#8239;km</span> or more from the sun: for example, <b>staying in orbit alongside the deep space satellite will not result in a death by supernova</b> unless the advanced warp core has been removed from the Ash Twin Project.</p><h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project was disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p><b>Of note:</b> Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg&nbsp;Boing</a>)</span>.</p></details><t>#sun #supernova #general data #astronomy #in-game observations #time loop event</t></it>
+<tr><td>22:40</td><td>Supernova radius at the end of the loop: ~&#8239;25.4&#8239;km</td></tr>
+<tr style=background:rgb(var(--midd));opacity:.5><td>22:40</td><td>End of the time loop</td></tr>
+<tr><td>22:40</td><td>The Supernova reaches the deep space satellite</td></tr>
+<tr><td>22:41</td><td>The Ash Twin Project is destroyed by the supernova</td></tr>
+</table>
+<h2>Supernova Expansion</h2>
+<p>The supernova expands following a cubic Bézier curve. It starts at a radius of <b>200&#8239;m</b> at <b>22:10</b> and ends at a radius of <b>50&#8239;km</b> at <b>22:55</b>. The following graph represents the supernova’s radius through time, and gives the approximate timings of the supernova reaching the <i>orbit radius</i> of some astral bodies (meaning that the exact timings may be slightly different from those provided in the table above).</p><img src=img/supernova.svg>
+<h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project is disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p>Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg&nbsp;Boing</a>)</span>.</p>
+</details><t>#sun #supernova #general data #astronomy #in-game observations #time loop event</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Sun Station -->
 <it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary><h2>Main Properties</h2><table>
@@ -674,35 +682,32 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 <!-- @SFOLD DATA Deep Space Satellite -->
 <it class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Deep Space Satellite</b></summary><h2>Main Properties</h2><table>
-    <tr><th style=width:22%>Size</th><td>6.5&#8239;&times;&#8239;4.4&#8239;&times;&#8239;2.9&#8239;m</td></tr>
-    <tr><th>Mass</th><td>0.5</td></tr>
-    <tr><th>Orbit Radius</th><td>26000&#8239;m</td></tr>
-    <tr><th>Orbit Period</th><td>1317.08&#8239;s</td></tr>
-    <tr><th>Revolution Velocity</th><td>124.0&#8239;m/s</td></tr>
-</table>
-<h2>Scripted Events</h2>
-<p>The satellite reaches an angle of 40° at <b>03:21</b> into the loop. During the same loop, the following angles were recorded:</p>
+<tr><th style=width:22%>Size</th><td>6.5&#8239;&times;&#8239;4.4&#8239;&times;&#8239;2.9&#8239;m</td></tr>
+<tr><th>Mass</th><td>0.5</td></tr>
+<tr><th>Orbit Radius</th><td>26000&#8239;m</td></tr>
+<tr><th>Orbit Period</th><td>1317.08&#8239;s</td></tr>
+<tr><th>Revolution Velocity</th><td>124.0&#8239;m/s</td></tr>
+</table><h2>Scripted Events</h2><p>The satellite reaches an angle of 40° at <b>03:21</b> into the loop. During the same loop, the following angles were recorded:</p>
 <table class=spmono><tr><th>Time</th><th>Angle</th></tr>
-    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <tr><td>02:45</td><td>30°</td></tr>
-    <tr><td>03:03</td><td>35°</td></tr>
-    <tr style=background:rgba(var(--greend),.5);color:rgb(var(--greenl))><td>03:21</td><td>40°</td></tr>
-    <tr><td>03:40</td><td>45°</td></tr>
-    <tr><td>03:58</td><td>50°</td></tr>
-    <tr><td>04:35</td><td>60°</td></tr>
-    <tr><td>05:12</td><td>70°</td></tr>
-    <tr><td>05:48</td><td>80°</td></tr>
-    <tr><td>07:56</td><td>115°</td></tr>
-    <tr><td>08:14</td><td>120°</td></tr>
-    <tr><td>08:51</td><td>130°</td></tr>
-    <tr><td>09:28</td><td>140°</td></tr>
-    <tr><td>10:04</td><td>150°</td></tr>
-    <tr><td>10:41</td><td>160°</td></tr>
-    <tr><td>11:17</td><td>170°</td></tr>
-    <tr><td>11:54</td><td>180°</td></tr>
-    <tr><td>12:30</td><td>190°</td></tr>
-    <tr><td>13:07</td><td>200°</td></tr>
-</table>
+<tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
+<tr><td>02:45</td><td>30°</td></tr>
+<tr><td>03:03</td><td>35°</td></tr>
+<tr style=background:rgba(var(--greend),.5);color:rgb(var(--greenl))><td>03:21</td><td>40°</td></tr>
+<tr><td>03:40</td><td>45°</td></tr>
+<tr><td>03:58</td><td>50°</td></tr>
+<tr><td>04:35</td><td>60°</td></tr>
+<tr><td>05:12</td><td>70°</td></tr>
+<tr><td>05:48</td><td>80°</td></tr>
+<tr><td>07:56</td><td>115°</td></tr>
+<tr><td>08:14</td><td>120°</td></tr>
+<tr><td>08:51</td><td>130°</td></tr>
+<tr><td>09:28</td><td>140°</td></tr>
+<tr><td>10:04</td><td>150°</td></tr>
+<tr><td>10:41</td><td>160°</td></tr>
+<tr><td>11:17</td><td>170°</td></tr>
+<tr><td>11:54</td><td>180°</td></tr>
+<tr><td>12:30</td><td>190°</td></tr>
+<tr><td>13:07</td><td>200°</td></tr></table>
 <p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733&#8239;°/s</b>, or about <b>0.005&#8239;rad/s</b><!-- 0.2733 * π/180 = 0.004769985 -->, and that the initial angle at the start of the loop is <b>–15.086°</b>. It can be calculated that the satellite’s velocity is <b>124&#8239;m/s</b><!-- 26000 * 0.2733 * π/180 = 124.01961 -->.</p>
 <img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x – 15.086&Tab;|&Tab;R² = 1</p>
 </details><t>#dlc #deep space satellite #time loop event #in-game observations #the stranger #astronomy</t></it>

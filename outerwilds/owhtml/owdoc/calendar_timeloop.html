@@ -43,8 +43,8 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
 <div class=tagcategory><h2>Astral Bodies</h2>
     <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+    <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#attlerock'style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
     <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
@@ -81,14 +81,13 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     <input value='#launch module' type=button onclick=AddTagSelector(this)>
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this)>
 </p>
-</div></div><table id=calendar><tr><th>Event</th><th>Game Time</th><th>% of Loop</th><th>FKNO Hearthian Time</th></tr></table>
+</div></div><table id=calendar><tr><th>Event</th><th width=110px>Game Time</th><th width=100px>% of Loop</th><th width=200px>FKNO Hearthian Time</th></tr></table>
 <!-- @EFOLD -->
 <!-- @SFOLD JSON -->
 <script>const cdta={
     "Wake Up":{
         "GameTime":0,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
     },
-
 
 // "The Tower of Quantum Knowledge Falls":{
 //     "GameTime":,"Tags":["brittle hollow","location accessibility"],"Image":"<img src=../img/astr_brittlehollow.png>"
@@ -97,18 +96,40 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
 // When is the Interloper’s core accessible?
 // Attlerock eclipses: from *where* on TH are they visible? Unhide them after you’ve changed their names & given this indication.
 
-// MUST CHECK THOSE TIMINGS! (Ash Twin HT towers)
-// 3*60+11 ET Tower starts peeking out
-// 4*60+16 ET Last floor becomes accessible (ground visible, scroll can be picked up)
-// 5*60+24 Broken alignment glass ceiling of AT tower & alignment glass ceiling of ET tower + Base of ET tower’s gravity beam + bridge between the two towers start to peek out
-// 7*60+3 ET & AT warp platforms become accessible.
-
-// 7*60+53  	Start of ATP Warp Window
-// 10*60+18 	Start of ATP Warp Window
-// 12*60+44 	Start of ATP Warp Window
-// 15*60+10 	Start of ATP Warp Window
-// 17*60+35 	Start of ATP Warp Window
-// 20*60+1   	Start of ATP Warp Window
+// Sun station WARP WINDOWS:
+// 05:30.7
+// 06:20.0
+// 07:09.3
+// 07:59.6
+// 08:48.8
+// 09:38.2
+// 10:28.6
+// 11:17.7
+//
+// Timber Hearth WARP WINDOWS:
+// 10:13.8		This warp is almost functional. The black hole opens, but the sand is still too high to let you enter it.
+// 11:23.1
+// 12:33.1
+// 13:32.4
+// 14:38.3
+// 15:51.6		Caution: The column of sand passes overhead around the same time.
+// 16:50.7
+// 17:55.6
+// 19:10.0
+// 20:08.8
+// 21:14.4
+//
+// Brittle Hollow WARP WINDOWS:
+// 10:52.1
+// 12:12.8
+// 13:19.4
+// 14:37.7
+// 15:46.8
+// 17:00.5
+// 18:14.2
+// 19.23.6
+// 20:41.6
+// 21:48.7
 
     // "":{
     //     "GameTime":,"Tags":[],"Color":"","Image":""
@@ -121,16 +142,22 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
         "GameTime":1*60+43,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
     "Sand starts draining off Ash Twin and flowing to Ember Twin":{
-        "GameTime":2*60,"Tags":["hourglass twins","ash twin","ember twin"]
+        "GameTime":2*60,"Tags":["hourglass twins","ash twin","ember twin"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
+    },
+    "The top of the Ember Twin warp tower starts peeking out of the sand":{
+        "GameTime":3*60+11,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
     "Deep Space Satellite Angle = 40°":{
-        "GameTime":3*60+21,"Tags":["deep space satellite","stranger"]
+        "GameTime":3*60+21,"Tags":["deep space satellite","stranger","location accessibility"]
     },
     "114 Midday Eclipse":{
         "GameTime":3*60+41.9,"Attlerock/Sun angle":[102.816,102.894],"Tags":["hide","timber hearth","hearthian clock"]
     },
-    "The Interloper is at its Perihelion (closest to the sun)<span style=display:none>#1</span>":{
+    "The Interloper is at its Perihelion (closest to the sun)<b style=display:none>1</b>":{
         "GameTime":3*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
+    },
+    "The second floor of the Ember Twin warp tower becomes accessible":{
+        "GameTime":4*60+16,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
     "First Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":5*60+7,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
@@ -141,6 +168,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Sun warp tower’s inner door is uncovered enough to pass through (warp platform becomes accessible)":{
         "GameTime":5*60+20,"Tags":["ash twin","sun station","warp tower","location accessibility"],"Image":"<img src=../img/astr_sunstation.png>"
     },
+    "The glass ceilings of the Ash & Ember Twin warp towers, the bottom of the Ember Twin tower’s gravity beam, and the bridge linking the two towers, start peeking out of the sand":{
+        "GameTime":5*60+24,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
+    },
     "114 Midnight Eclipse":{
         "GameTime":6*60+37.8,"Attlerock/Sun angle":[255.146,255.115],"Tags":["hide","timber hearth","hearthian clock"]
     },
@@ -150,10 +180,16 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Stranger’s solar sails are completely open":{
         "GameTime":7*60,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
     },
-    "Sun Station Warp Window":{
-        "GameTime":7*60+10,"Tags":["sun station","warp window","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_sunstation.png>"
+    "The Ash & Ember Twin towers’ warp platforms become accessible":{
+        "GameTime":7*60+5,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
-    "The Interloper is at its Aphelion (furthest away from the sun)<span style=display:none>#1</span>":{
+    "Sun Station Warp Window<b style=display:none>1</b>":{
+        "GameTime":7*60+10,"Tags":["sun station","warp window","location accessibility","warp tower"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_sunstation.png>"
+    },
+    "Hourglass Twins Warp Window<b style=display:none>1</b>":{
+        "GameTime":7*60+53.2,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
+    },
+    "The Interloper is at its Aphelion (furthest away from the sun)<b style=display:none>1</b>":{
         "GameTime":7*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "Second Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
@@ -165,10 +201,13 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Sun starts to expand":{
         "GameTime":10*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv2_SubGiant.png>"
     },
+    "Hourglass Twins Warp Window<b style=display:none>2</b>":{
+        "GameTime":10*60+18.7,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
+    },
     "The Sun Station is engulfed by the sun":{
         "GameTime":11*60+30,"Tags":["sun station","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
     },
-    "The Interloper is at its Perihelion (closest to the sun)<span style=display:none>#2</span>":{
+    "The Interloper is at its Perihelion (closest to the sun)<b style=display:none>2</b>":{
         "GameTime":11*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "Second Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
@@ -177,8 +216,11 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "115 Dusk Eclipse":{
         "GameTime":12*60+29.5,"Attlerock/Sun angle":[199.515,199.471],"Tags":["hide","timber hearth","hearthian clock"]
     },
+    "Hourglass Twins Warp Window<b style=display:none>3</b>":{
+        "GameTime":12*60+44.3,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
+    },
     "The Stranger’s dam bursts":{
-        "GameTime":13*60,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
+        "GameTime":13*60,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
     },
     "The River Lowlands are flooded":{
         "GameTime":13*60+10,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
@@ -189,8 +231,11 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Hidden Gorge walkways are destroyed":{
         "GameTime":13*60+40,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
     },
-    "The Quantum Moon stops appearing around the Hourglass Twins":{
-        "GameTime":15*60,"Tags":["quantum moon","location accessibility"],"Image":"<img src=../img/astr_qmoon.png>"
+    "The Quantum Moon stops orbiting around Ember Twins":{
+        "GameTime":15*60,"Tags":["quantum moon","hourglass twins","ember twin","location accessibility"],"Image":"<img src=../img/astr_qmoon.png>"
+    },
+    "Hourglass Twins Warp Window<b style=display:none>4</b>":{
+        "GameTime":15*60+10.0,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
     "115 Sunrise Eclipse":{
         "GameTime":15*60+25.3,"Attlerock/Sun angle":[351.553,351.606],"Tags":["hide","timber hearth","hearthian clock"]
@@ -198,8 +243,11 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Third Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":15*60+35,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
-    "The Interloper is at its Aphelion (furthest away from the sun)<span style=display:none>#2</span>":{
+    "The Interloper is at its Aphelion (furthest away from the sun)<b style=display:none>2</b>":{
         "GameTime":15*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
+    },
+    "Hourglass Twins Warp Window<b style=display:none>5</b>":{
+        "GameTime":17*60+35.6,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
     "116 Undern Eclipse":{
         "GameTime":18*60+21.2,"Attlerock/Sun angle":[143.883,143.827],"Tags":["hide","timber hearth","hearthian clock"]
@@ -210,8 +258,11 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Interloper is engulfed by the sun":{
         "GameTime":19*60+48,"Tags":["interloper","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_interloper.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
     },
+    "Hourglass Twins Warp Window<b style=display:none>6</b>":{
+        "GameTime":20*60+1.1,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
+    },
     "Sand stops flowing between Ash Twin and Ember Twin":{
-        "GameTime":20*60+20,"Tags":["hourglass twins","ash twin","ember twin"]
+        "GameTime":20*60+20,"Tags":["hourglass twins","ash twin","ember twin"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
     "The Cinder Isles tower completely falls":{
         "GameTime":20*60+30,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
@@ -265,7 +316,7 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
         "GameTime":22*60+31,"Tags":["hide","timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
     "Supernova reaches the Probe Tracking Module <smol>(Core of Giant’s Deep)</smol>":{
-        "GameTime":22*60+33,"Tags":["probe tracking module","giant’s deep","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+        "GameTime":22*60+33,"Tags":["probe tracking module","orbital probe cannon","giant’s deep","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
     },
     "Supernova reaches Giant’s Deep <smol>(Quantum Tower at North pole)</smol>":{
         "GameTime":22*60+34.5,"Tags":["giant’s deep","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_giantsdeep.png>"
@@ -274,16 +325,16 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
         "GameTime":22*60+35,"Tags":["orbital probe cannon","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_opc.png>"
     },
     "Supernova reaches Dark Bramble <smol>(Outside)</smol>":{
-        "GameTime":22*60+37.3,"Tags":["dark bramble","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_darkbramble.png>"
+        "GameTime":22*60+36.2,"Tags":["dark bramble","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_darkbramble.png>"
     },
     "The Ash Twin Project’s black hole starts to vanish":{
         "GameTime":22*60+38.1,"Tags":["ash twin project"],"Color":"rgba(var(--goldl),.3)"
     },
+    "Supernova reaches the White Hole Station":{
+        "GameTime":22*60+38.1,"Tags":["white hole","white hole station","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_whiteholestation.png>"
+    },
     "Supernova reaches the White Hole":{
         "GameTime":22*60+38.4,"Tags":["white hole","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_whitehole.png>"
-    },
-    "Supernova reaches the White Hole Station":{
-        "GameTime":22*60+38.6,"Tags":["white hole","white hole station","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_whiteholestation.png>"
     },
     "Supernova reaches the Vessel":{
         "GameTime":22*60+39,"Tags":["dark bramble","the vessel","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_darkbramble.png>"
