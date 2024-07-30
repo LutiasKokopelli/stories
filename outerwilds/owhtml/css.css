@@ -78,7 +78,7 @@ td{height:100%}
     background: linear-gradient(30deg, rgba(var(--indigod), 1), rgba(var(--indigod), 0));
     outline: 2px solid rgb(var(--white));
 }
-
+input:focus-within{outline:none}
 .infoa{cursor:help;position:relative}
 .infoa:hover>.infob,.infob:hover{display:revert}
 .infob {
@@ -374,7 +374,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
-.grey{opacity:.5}
+.grey{color:grey}
 blue,.blue{color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
 .lblue{color:lightblue}

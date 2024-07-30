@@ -21,12 +21,10 @@ function addChildToParent(parent,el,msg,state){
     parent.appendChild(node)
 }
 function ResetTagSelector(){
-    console.log("defaultinput: "+defaultinput)
     curtinput=defaultinput.slice()
     activetags.innerHTML=""
     for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
     for(i=0;i<allit.length;i++){allit[i].style.display="none";allit[i].getElementsByTagName("details")[0].open=false}
-    console.log("curtinput: "+curtinput)
 }
 function AddTagSelector(tag){
     tag=tag.split('#')[1]
@@ -65,7 +63,6 @@ function ToggleDLC(){
     document.activeElement.classList.toggle('no')
     if(document.activeElement.classList.contains('no')){curtinput.push("dlc0");for(d=0;d<alldlc.length;d++){alldlc[d].style.display='none'}}
     else{if(curtinput.includes("dlc0")){curtinput.splice(curtinput.indexOf('dlc0'),1)}for(d=0;d<alldlc.length;d++){alldlc[d].style.display=''}}
-    console.log(curtinput)
 }
 function FilterItems(){
     var findli=allit.length;
@@ -138,4 +135,15 @@ function HMtime2THcircadianrhythm(time){
     else{humanseconds=v[0]*3600+v[1]*60;tout=v[0]+':'+v[1]}
     hearthianseconds=humanseconds*11/12
     return("<tr><th colspan=2 style=border:none;background:none><h2 style=color:white;margin:.5em;font-size:1.5em>Circadian Rhythm Equivalence:<br>Human &rarr; Hearthian</h2></th></tr><tr><th>Input Human Time</th><td style=opacity:.7>"+tout+"</td></tr><tr><th>Hearthian Time Equivalent</th><td style=background:rgba(var(--midd),.5)>"+THS2TH(hearthianseconds)+"</td></tr><tr>")
+}
+function timestamp2num(t){
+    v=t.match(/(\d[\d\.]*)/g)
+    if(v.length>2){return v[0]*3600+v[1]*60+v[2]*1}
+    else{return(v[0]*60+v[1]*1)}
+}
+function fillcalcoutput(id,out){
+    document.getElementById('calcout_'+id).innerHTML=out.toString()
+}
+function conditionaloutput(cond,condT,condF){
+    return cond?condT:condF
 }
