@@ -1,12 +1,12 @@
 <!-- @SFOLD Header -->
 <!DOCTYPE html>
-<html><head><title>Outer Wilds Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
+<html><head><title>Outer Wilds Info Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'>
 <meta name=viewport content='width=device-width,initial-scale=.5,interactive-widget=overlays-content'>
 <meta property=og:type content=article>
 <meta name=theme-color content=#1D4A94>
 <meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
-<meta property=og:title content="Outer Wilds Lore Map">
+<meta property=og:title content="Outer Wilds Info Map">
 <meta property=og:description content="A thorough and interactive compilation of (eventually) most knowledge which can be acquired relative to the Outer Wilds game and its fictive world.">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png>
 <style>
@@ -22,7 +22,7 @@ dlgprt{width:1em;display:inline-block;height:.7em;background:url("data:image/svg
 .tagcategory img{height:32px;display:inline-block;vertical-align:middle}
 .tagcategory .infob{position:fixed;top:5%;left:unset;right:5%}
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
-input:not(#resetsearch,#startsearch,#findtaginput,#toggledlc):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
+input:not(#resetsearch,#startsearch,#findtaginput,#toggledlc):not(.include,.exclude):not([type=text]):not([value='Calculate']){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 .include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
 .exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
@@ -92,7 +92,7 @@ summary span{font-size:.7em}
 details th span:not([class]),details td span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
 .source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
 p+.source{margin-top:-12px}
-summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:10px 10px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
+summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:15px 15px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 details[open] summary{margin-bottom:0}
 details[open]+t{margin-top:12px}
 details table{border-collapse:collapse;font-size:inherit}
@@ -116,17 +116,19 @@ td div:has(.nomai){margin:0!important}
 td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
 .nomai .infob,.nomai + .infob{font-size:.85em}
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
-</style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
+input[type=text]{margin:auto;margin-right:7px;width:80%;font-family:Space Mono;cursor:auto;background:rgba(var(--midd),.8);color:white;border-color:rgb(var(--midd))}
+input[value='Calculate']{width:17%;margin:auto;background:rgb(var(--fore));border:none;color:white;line-height:1.6em}
+</style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Info Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
 <h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order for activating tags:</h2>
 <p align=center><span class=spanintro>neutral</span> &rarr; <span class='spanintro include'>include&nbsp;in&nbsp;the&nbsp;search</span> &rarr; <span class='spanintro exclude'>exclude&nbsp;from&nbsp;the&nbsp;search</span> &rarr; <span class=spanintro>neutral</span></p><p style='text-align:center;padding:0 5%;font-size:1em;margin:0'>
-Click on “Search!” to find all lore cards which contain <b>all</b> green tags and <b>none</b> of the red tags.<br>
+Click on “Search!” to find all info cards which contain <b>all</b> green tags and <b>none</b> of the red tags.<br>
 Toggle the blue button next to Search to access or conceal Echoes of the Eye (DLC) spoilers.<br>
-Click on the bottom left button for an explanation of lore card colors (eg. red = retconned).<br>
+Click on the bottom left button for an explanation of info card colors (eg. red = retconned).<br>
 </p><h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>A few more fun tips:</h2><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
 For quicker access, you can also click on any tag already present in the search bar, red or green.<br>
 If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span><br>
-Some lore cards can refer to another; you can access the latter via text preceded by this symbol: <dlgprt></dlgprt><br>
-To see every single lore card in existence, click “Search” with an empty tag selection!<br>
+Some info cards can refer to another; you can access the latter via text preceded by this symbol: <dlgprt></dlgprt><br>
+To see every single info card in existence, click “Search” with an empty tag selection!<br>
 </p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag!'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <!-- @EFOLD -->
@@ -308,8 +310,8 @@ To see every single lore card in existence, click “Search” with an empty tag
     <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)>
 </p></div>
 <!-- @EFOLD -->
-<!-- @SFOLD Lore Card Types -->
-<div class=tagcategory id=tagend><h2>Lore Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
+<!-- @SFOLD Info Card Types -->
+<div class=tagcategory id=tagend><h2>Info Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
     <input value='#in-game observations'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#alternate sources'style='outline:3px solid rgb(var(--indigod))'type=button onclick=AddTagSelector(this.value)>
     <input value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'type=button onclick=AddTagSelector(this.value)>
@@ -330,8 +332,9 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th style=width:22%>Surface Radius</th><td>2000&#8239;m <smol style=font-size:.6em;opacity:.7>(Default)</smol><br>4000&#8239;m <smol style=font-size:.6em;opacity:.7>(End Times)</smol></td></tr>
     <tr><th>Atmosphere Radius</th><td>3000&#8239;m <smol style=font-size:.6em;opacity:.7>(Default)</smol><br>6000&#8239;m <smol style=font-size:.6em;opacity:.7>(End Times)</smol></td></tr>
     <tr><th>Mass</th><td style=position:relative>4.00 &times; 10<sup>11</sup></td></tr>
-    <tr><th>Surface Gravity</th><td><b>Absolute:</b> <smol>(Hypothetical for 2&#8239;km radius)</smol><br>100&#8239;m/s²&emsp;8.3&#8239;x</td></tr>
-</table><p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r², while all other astral bodies’ are measured with a factor of 1/r instead.</p>
+    <tr><th>Surface Gravity</th><td><b>Absolute:</b> <smol>(Hypothetical for 2&#8239;km radius)</smol><br>100&#8239;m/s<sup>2</sup>&emsp;8.3&#8239;x</td></tr>
+</table><p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r<sup>2</sup>, while all other astral bodies’ are measured with a factor of 1/r instead.</p>
+<p style=color:rgb(var(--redl))>TBA: Add a sun radius calculator? (input a given time within the time loop, get the sun’s radius at that time) I’ll do it if someone can give me the exact equation.</p>
 <h2>Scripted Events</h2>
 <table class=spmono><tr><th>Time</th><th>Event</th></tr>
     <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
@@ -352,7 +355,10 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @SFOLD DATA Supernova -->
 <it class=tl id=datasupernova style=position:relative><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em><img src=../img/Steam_Lv5_Supernova.png style=height:60px;position:absolute;left:0;top:0>General Data: <b>Supernova</b></summary>
 <a href="javascript:getcard('datasun')"><h2><dlgprt></dlgprt> General Data: The Sun</h2></a>
-<p><b>Of note:</b> The time loop ends before the supernova can reach its full size. As&nbsp;such, death can be avoided within the confines of the time loop by staying as close to about <b>25.4&#8239;km</b> or more from the sun: for example, <b>staying in orbit alongside the deep space satellite will not result in a death by supernova</b> unless the advanced warp core has been removed from the Ash Twin Project.</p>
+<p><b>Of note:</b> The time loop ends before the supernova can reach its full size. As&nbsp;such, death can be avoided within the confines of the time loop by staying as close to about 25.3&#8239;km or more from the sun: for example, staying in orbit alongside the deep space satellite will not result in a death by supernova unless the advanced warp core has been removed from the Ash Twin Project.</p><h2>Supernova Radius calculator</h2><p align=center style=font-size:1em>
+<input id=calcinp_supernova type=text placeholder="Timestamp within or after time loop (--:--)">
+<input type=button value=Calculate onclick='fillcalcoutput("supernova","At&ensp;<code><b>"+document.getElementById("calcinp_supernova").value+"</b></code>&ensp;after the start of the time loop, "+conditionaloutput(timestamp2num(document.getElementById("calcinp_supernova").value)<1375,conditionaloutput(timestamp2num(document.getElementById("calcinp_supernova").value)>=1330,"the supernova’s radius is&ensp;<code><b>"+(Math.floor((0.2+(69.8-20*(timestamp2num(document.getElementById("calcinp_supernova").value)-1330)/45)*Math.pow((timestamp2num(document.getElementById("calcinp_supernova").value)-1330)/45,2))*1000000)/1000).toString()+"&#8239;m</b></code>.","the supernova has not happened yet."),"the supernova has reached its final radius of 50000&#8239;m."))'>
+</p><p id=calcout_supernova>At&ensp;<code><b>00:00</b></code>&ensp;after the start of the time loop, the supernova has not happened yet.</p>
 <h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
 <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
 <tr><td>22:10</td><td><img style=height:2em;margin:-.5em src=../img/Steam_Lv5_Supernova.png> The Supernova occurs.</td></tr>
@@ -370,12 +376,11 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whiteholestation.png> The Supernova reaches the White Hole Station</td></tr>
 <tr><td>22:38</td><td><img style=height:2em;margin:-.5em src=../img/astr_whitehole.png> The Supernova reaches the White Hole</td></tr>
 <tr><td>22:39</td><td><img style=height:2em;margin:-.5em src=../img/astr_darkbramble.png> The Supernova reaches the Vessel</td></tr>
-<tr><td>22:40</td><td>Supernova radius at the end of the loop: ~&#8239;25.4&#8239;km</td></tr>
+<tr><td>22:40</td><td>Supernova radius at the end of the loop: ~&#8239;25.296&#8239;km</td></tr>
 <tr style=background:rgb(var(--midd));opacity:.5><td>22:40</td><td>End of the time loop</td></tr>
 <tr><td>22:40</td><td>The Supernova reaches the deep space satellite</td></tr>
 <tr><td>22:41</td><td>The Ash Twin Project is destroyed by the supernova</td></tr>
-</table>
-<h2>Supernova Expansion</h2>
+</table><h2>Supernova Expansion</h2>
 <p>The supernova expands following a cubic Bézier curve. It starts at a radius of <b>200&#8239;m</b> at <b>22:10</b> and ends at a radius of <b>50&#8239;km</b> at <b>22:55</b>. The following graph represents the supernova’s radius through time, and gives the approximate timings of the supernova reaching the <i>orbit radius</i> of some astral bodies (meaning that the exact timings may be slightly different from those provided in the table above).</p><img src=img/supernova.svg>
 <h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project is disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p>Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'>Greg&nbsp;Boing</a>)</span>.</p>
 </details><t>#sun #supernova #general data #astronomy #in-game observations #time loop event</t></it>
@@ -383,7 +388,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @SFOLD    @WIP@    DATA Sun Station -->
 <it class=tl style=position:relative><img src=../img/astr_sunstation.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:25%>Mass</th><td style=position:relative>3.00 &times; 10<sup>5</sup></td></tr>
-    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s²&emsp;0.417&#8239;x<br><b>Perceived:</b><br>0.2–0.4&#8239;x&emsp;<smol>(parallel to the sun)</smol><br>0.7–0.8&#8239;x&emsp;<smol>(perpendicular to the sun)</smol></td></tr>
+    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x<br><b>Perceived:</b><br>0.2–0.4&#8239;x&emsp;<smol>(parallel to the sun)</smol><br>0.7–0.8&#8239;x&emsp;<smol>(perpendicular to the sun)</smol></td></tr>
     <tr><th>Orbit Radius</th><td>2296&#8239;m <smol>(Center of mass)</smol></td></tr>
     <tr><th>Orbit Period</th><td>34.6&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>417.4&#8239;m/s</td></tr>
@@ -408,7 +413,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>250&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>200&#8239;m</td></tr>
     <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>8&#8239;m/s²&emsp;0.6–0.7&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>8&#8239;m/s<sup>2</sup>&emsp;0.6–0.7&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>5000&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
     <tr><th>Orbit Period</th><td>111.07&#8239;s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol></td></tr>
     <tr><th>Revolution Velocity</th><td>282.8&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>284.3&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
@@ -433,7 +438,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>250&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>200&#8239;m</td></tr>
     <tr><th>Mass</th><td>1.60 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>8&#8239;m/s²&emsp;0.6–0.7&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>8&#8239;m/s<sup>2</sup>&emsp;0.6–0.7&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>5000&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>250&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ash&nbsp;Twin – Barycenter)</smol></td></tr>
     <tr><th>Orbit Period</th><td>111.07&#8239;s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol></td></tr>
     <tr><th>Revolution Velocity</th><td>282.8&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Barycenter – Sun)</smol><br>284.3&#8239;m/s&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ember&nbsp;Twin – Barycenter)</smol></td></tr>
@@ -461,7 +466,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>380&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>250&#8239;m</td></tr>
     <tr><th>Mass</th><td>3.00 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>12&#8239;m/s²&emsp;1.0&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>12&#8239;m/s<sup>2</sup>&emsp;1.0&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>8593&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td>250.25&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>215.8&#8239;m/s</td></tr>
@@ -481,14 +486,14 @@ To see every single lore card in existence, click “Search” with an empty tag
     </td></tr>
     <tr><th>Gravitational Radius</th><td>100&#8239;m</td></tr>
     <tr><th>Mass</th><td>5.00 &times; 10<sup>7</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>900&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td>103.29 &plusmn; 0.07&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>222.6&#8239;m/s</td></tr>
     <tr><th>Angular Velocity</th><td style=color:rgb(var(--redl))>16.44 (From old spreadsheet. Unit?)</td></tr>
     <tr><th>Day Length</th><td>103.29 &plusmn; 0.07&#8239;s</td></tr>
 </table>
-<p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r², while all other astral bodies’ are measured with a factor of 1/r instead. This explains why the Attlerock’s mass is actually higher than most other astral bodies’, including Timber Hearth’s.</p>
+<p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r<sup>2</sup>, while all other astral bodies’ are measured with a factor of 1/r instead. This explains why the Attlerock’s mass is actually higher than most other astral bodies’, including Timber Hearth’s.</p>
 <p>The Attlerock is tidally locked and in synchronous rotation around Timber Hearth. It passes overhead at the same position in the Hearthian sky every <b>123.6&#8239;s</b>.</p>
 <h2>Timber Hearth Solar Eclipses</h2>
 <p>The Attlerock passes exactly between the sun and Timber Hearth every <b>176&nbsp;&plusmn;&nbsp;1.3&#8239;s</b>, thus causing a solar eclipse somewhere on Timber Hearth. There are eight eclipses during the time loop:</p>
@@ -527,7 +532,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>500&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>300&#8239;m</td></tr>
     <tr><th>Mass</th><td>3.00 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>10&#8239;m/s²&emsp;0.833&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>10&#8239;m/s<sup>2</sup>&emsp;0.833&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>11690.9&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td>397.12&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>185.0&#8239;m/s</td></tr>
@@ -550,7 +555,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>150&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>130&#8239;m</td></tr>
     <tr><th>Mass</th><td>909999.9</td></tr>
-    <tr><th>Surface Gravity</th><td>7&#8239;m/s²&emsp;0.583&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>7&#8239;m/s<sup>2</sup>&emsp;0.583&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>1000&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>239.7&#8239;m/s</td></tr>
@@ -573,7 +578,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>950–850&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Clouds)</smol></td></tr>
     <tr><th>Gravitational Radius</th><td>900&#8239;m</td></tr>
     <tr><th>Mass</th><td>2.178&#8239;&times;&#8239;10<sup>7</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>24.2&#8239;m/s²&emsp;2.017&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>24.2&#8239;m/s<sup>2</sup>&emsp;2.017&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>16457.6&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td>663.28&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>155.9&#8239;m/s</td></tr>
@@ -589,7 +594,7 @@ To see every single lore card in existence, click “Search” with an empty tag
         40&#8239;&times;&#8239;35&#8239;&times;&#8239;35&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Probe)</smol>
     </td></tr>
     <tr><th>Mass</th><td>300000 each</td></tr>
-    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s²&emsp;0.417&#8239;x<br><span class=d style=color:rgb(var(--redl))><b>Perceived:</b><br>??&#8239;m/s²&emsp;??&#8239;x</span></td></tr>
+    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x<br><span class=d style=color:rgb(var(--redl))><b>Perceived:</b><br>??&#8239;m/s<sup>2</sup>&emsp;??&#8239;x</span></td></tr>
     <tr><th>Orbit Radius</th><td>1200&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td style=color:rgb(var(--redl))>??</td></tr>
     <tr><th>Revolution Velocity</th><td>280.4&#8239;m/s</td></tr>
@@ -605,7 +610,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     </td></tr>
     <tr><th>Gravitational Radius</th><td>650&#8239;m</td></tr>
     <tr><th>Mass</th><td>3.25 &times; 10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>20000&#8239;m</td></tr>
     <tr><th>Orbit Period</th><td>888.58&#8239;s</td></tr>
     <tr><th>Revolution Velocity</th><td>141.4&#8239;m/s</td></tr>
@@ -616,7 +621,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <it class=tl style=position:relative><img src=../img/astr_whitehole.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:22%>Surface Radius</th><td>40&#8239;m</td></tr>
     <tr><th>Mass</th><td>999.9999</sup></td></tr>
-    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??&#8239;m/s²&emsp;??&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td style=color:rgb(var(--redl))>??&#8239;m/s<sup>2</sup>&emsp;??&#8239;x</td></tr>
     <tr><th>Distance to the Sun</th><td>23000&#8239;m</td></tr>
 </table><p>The White Hole is static, located at a distance of 23&#8239;km away from the sun.</p>
 </details><t>#time loop event #in-game observations #white hole #general data #astronomy</t></it>
@@ -630,7 +635,7 @@ To see every single lore card in existence, click “Search” with an empty tag
         22&#8239;&times;&#8239;16&#8239;&times;&#8239;33&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Interior)</smol>
     </td></tr>
     <tr><th>Mass</th><td>100 <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Ice & Rails)</smol><br>100 <smol style=font-size:.6em;opacity:.7;line-height:.6em>(Station)</smol></sup></td></tr>
-    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Surface Gravity<br><smol style=opacity:.7>(gravity panels)</smol></th><td>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>22538.19&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(Sun)</smol><br>461.815&#8239;m&emsp;<smol style=font-size:.6em;opacity:.7;line-height:.6em>(White Hole)</smol></td></tr>
     <tr><th>Sidereal Day</th><td>41.89&#8239;s</td></tr>
     <tr><th>Rotation Velocity</th><td>0.18&#8239;rad/s</td></tr>
@@ -652,7 +657,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     </td></tr>
     <tr><th>Gravitational Radius</th><td>110&#8239;m</td></tr>
     <tr><th>Mass</th><td>5.50&#8239;&times;&#8239;10<sup>5</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td><b>Apoapsis:</b>&emsp;24100&#8239;m<br><b>Periapsis:</b>&emsp;~&#8239;2400&#8239;m<br><b>Eccentricity:</b>&emsp;0.819</td></tr>
     <tr><th>Orbit Period</th><td>478.95&#8239;s</td></tr>
 </table>
@@ -687,7 +692,10 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><th>Orbit Radius</th><td>26000&#8239;m</td></tr>
 <tr><th>Orbit Period</th><td>1317.08&#8239;s</td></tr>
 <tr><th>Revolution Velocity</th><td>124.0&#8239;m/s</td></tr>
-</table><h2>Scripted Events</h2><p>The satellite reaches an angle of 40° at <b>03:21</b> into the loop. During the same loop, the following angles were recorded:</p>
+<tr><th>Initial Angle</th><td>345°</td></tr>
+</table><h2>Position calculator</h2><p align=center style=font-size:1em><input id=calcinp_olspacey type=text placeholder="Timestamp within or after time loop (--:--)"><input type=button value=Calculate onclick='fillcalcoutput("olspacey","At&ensp;<code><b>"+document.getElementById("calcinp_olspacey").value+"</b></code>&ensp;into the time loop, the satellite’s angle is&ensp;<code><b>"+(Math.floor(((timestamp2num(document.getElementById("calcinp_olspacey").value)*124/26000*180/Math.PI+345)%360)*1000)/1000).toString()+"°</b></code>.")'></p>
+<p id=calcout_olspacey>At&ensp;<code><b>00:00</b></code>&ensp;into the time loop, the satellite’s angle is&ensp;<code><b>345°</b></code>.</p>
+<h2>Scripted Events</h2><p>The satellite reaches an angle of 40° at <b>03:21.279</b> into the loop. During the same loop, the following angles were recorded on Switch:</p>
 <table class=spmono><tr><th>Time</th><th>Angle</th></tr>
 <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
 <tr><td>02:45</td><td>30°</td></tr>
@@ -708,8 +716,8 @@ To see every single lore card in existence, click “Search” with an empty tag
 <tr><td>11:54</td><td>180°</td></tr>
 <tr><td>12:30</td><td>190°</td></tr>
 <tr><td>13:07</td><td>200°</td></tr></table>
-<p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733&#8239;°/s</b>, or about <b>0.005&#8239;rad/s</b><!-- 0.2733 * π/180 = 0.004769985 -->, and that the initial angle at the start of the loop is <b>–15.086°</b>. It can be calculated that the satellite’s velocity is <b>124&#8239;m/s</b><!-- 26000 * 0.2733 * π/180 = 124.01961 -->.</p>
-<img src=img/olspacey.svg><p style='font-style:italic;opacity:.7;font-family:Space Mono;font-size:.7em;text-align:center'>y = 0.2733 x – 15.086&Tab;|&Tab;R² = 1</p>
+<p>From the data above, a linear regression shows that the satellite’s angular speed is <b>0.2733&#8239;°/s</b>, or about <b>0.005&#8239;rad/s</b>, and that the initial angle at the start of the loop is <b>345°</b> (or –15°). Considering the fact that the satellite’s orbit has a radius of <b>26&#8239;km</b>, it can be calculated that the satellite’s velocity is <b>124&#8239;m/s</b>.</p>
+<img src=img/olspacey.svg><p style=margin-top:0;text-align:center;font-size:.7em;opacity:.7><code>&theta; = 0.2733 &times; t –15.086&Tab;|&Tab;R<sup>2</sup> = 1</code></p><p>More accurate values were found by Trifid through datamining considering the initial position and velocity of the satellite. These are the values used in the interactive calculator and shared in the table above.</p>
 </details><t>#dlc #deep space satellite #time loop event #in-game observations #the stranger #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD    @WIP@    DATA Stranger -->
@@ -717,12 +725,17 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th style=width:27%>Size</th><td style=color:rgb(var(--redl))>??&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>330–200&#8239;m</td></tr>
     <tr><th>Mass</th><td>300000</td></tr>
-    <tr><th>Surface Gravity</th><td>15&#8239;m/s²&emsp;1.25&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>15&#8239;m/s<sup>2</sup>&emsp;1.25&#8239;x</td></tr>
     <tr><th>Distance to the Sun</th><td>~&#8239;11900&#8239;m</td></tr>
     <tr><th>Sidereal Day</th><td>125.66&#8239;s</td></tr>
     <tr><th>Rotation Velocity</th><td>–0.05&#8239;rad/s</td></tr>
-    <tr><th>Solar Sails Acceleration</th><td>0.2&#8239;m/s²</td></tr>
-</table><h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
+    <tr><th>Solar Sails Acceleration</th><td>0.2&#8239;m/s<sup>2</sup></td></tr>
+</table><h2>Position & Velocity calculator</h2>
+<p align=center style=font-size:1em>
+    <input id=calcinp_stranger type=text placeholder="Timestamp within or after time loop (--:--)">
+    <input type=button value=Calculate onclick='fillcalcoutput("stranger","At&ensp;<code><b>"+document.getElementById("calcinp_stranger").value+"</b></code>&ensp;into the time loop, the Stranger is located at a distance of&ensp;<code><b>"+conditionaloutput(timestamp2num(document.getElementById("calcinp_stranger").value)>=405,(Math.floor((11894.5368659+0.1*(timestamp2num(document.getElementById("calcinp_stranger").value)-405)**2)*1000)/1000).toString(),"11894.537")+"&#8239;m</b></code>&ensp;from the sun, and is moving away at a velocity of&ensp;<code><b>"+conditionaloutput(timestamp2num(document.getElementById("calcinp_stranger").value)>=405,(Math.floor((0.2*(timestamp2num(document.getElementById("calcinp_stranger").value)-405))*1000)/1000).toString(),"0")+"&#8239;m/s</b></code>.")'>
+</p><p id=calcout_stranger>At&ensp;<code><b>00:00</b></code>&ensp;into the time loop, the Stranger is located at a distance of&ensp;<code><b>11894.537&#8239;m</b></code>&ensp;from the sun, and is moving away at a velocity of&ensp;<code><b>0&#8239;m/s</b></code>.</p>
+<h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
     <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
     <tr><td>06:48</td><td>The solar sails start deploying (sound cue)</td></tr>
     <tr><td>07:00</td><td>The solar sails are completely open</td></tr>
@@ -732,9 +745,9 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><td>13:40</td><td>The Hidden Gorge walkways are destroyed</td></tr>
     <tr><td>20:30</td><td>The Cinder Isles tower completely falls</td></tr>
 </table><h2>Supernova Escape</h2>
-<p>In order to flee the supernova, the Stranger starts to leave its initial position at <b>06:45</b> into the loop and moves with a constant acceleration of <b>0.2&#8239;m/s²</b> along its 40°-above-the-ecliptic radial axis. This means that its velocity increases linearly by <b>1&#8239;m/s every 5&#8239;s</b>.</p><img src=img/stranger.svg>
-<p style=margin-top:0>If <code>x</code> (in meters) is the Stranger’s distance from the sun and <code>v</code> its velocity at a given time <code>t</code> (in seconds), provided <code>t</code> is superior to 405&#8239;s (06:45):</p>
-<pre>x(t) = 11894.5368659 + 0.1&#8239;&times;&#8239;(t-405)<sup>2</sup><br>v(t) = 0.2&#8239;&times;&#8239;(t-405)</pre>
+<p>In order to flee the supernova, the Stranger starts to leave its initial position at <b>06:45</b> into the loop and moves with a constant acceleration of <b>0.2&#8239;m/s<sup>2</sup></b> along its 40°-above-the-ecliptic radial axis. This means that its velocity increases linearly by <b>1&#8239;m/s every 5&#8239;s</b>.</p><img src=img/stranger.svg>
+<p style=margin-top:0>If&ensp;<code>x</code>&ensp;(in meters) is the Stranger’s distance from the sun and&ensp;<code>v</code>&ensp;its velocity at a given time&ensp;<code>t</code>&ensp;(in seconds), provided&ensp;<code>t</code>&ensp;is superior to 405&#8239;s (06:45):</p>
+<pre>x(t) = 11894.5368659 + 0.1 &times; (t-405)<sup>2</sup><br>v(t) = 0.2 &times; (t-405)</pre>
 </details><t>#dlc #time loop event #in-game observations #the stranger #general data #astronomy</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD DATA Quantum Moon -->
@@ -743,7 +756,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th>Atmosphere Radius</th><td>100–110&#8239;m</td></tr>
     <tr><th>Gravitational Radius</th><td>110&#8239;m</td></tr>
     <tr><th>Mass</th><td>5.50 &times; 10<sup>5</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>5&#8239;m/s²&emsp;0.417&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>5&#8239;m/s<sup>2</sup>&emsp;0.417&#8239;x</td></tr>
     <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_embertwin.png><smol>&ensp;<sup>1</sup></smol></th><td>1700&#8239;m</td></tr>
     <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_timberhearth.png></th><td>1100&#8239;m</td></tr>
     <tr><th>Orbit Radius <img style=height:2em;margin:-.5em;margin-left:0 src=../img/astr_brittlehollow.png></th><td>1400&#8239;m</td></tr>
@@ -771,7 +784,7 @@ To see every single lore card in existence, click “Search” with an empty tag
     <tr><th style=width:22%>Surface Radius</th><td>201 &plusmn; 10&#8239;m <span class=source><a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/>(Source)</a></span></td></tr>
     <tr><th>Gravitational Radius</th><td>300&#8239;m</td></tr>
     <tr><th>Mass</th><td>9&#8239;&times;&#8239;10<sup>6</sup></td></tr>
-    <tr><th>Surface Gravity</th><td>30&#8239;m/s²&emsp;2.5&#8239;x</td></tr>
+    <tr><th>Surface Gravity</th><td>30&#8239;m/s<sup>2</sup>&emsp;2.5&#8239;x</td></tr>
     <tr><th>Orbit Radius</th><td>353593&#8239;m <span class=source>(by Trifid & Name)</span><br>Between 500 and 1000&#8239;km <smol>(Nomai estimation)</smol></td></tr>
     <!-- Trifid, 2024/07/18: according to the sun object in the eye scene, the distance is exactly 1283160 m. which gives a period of 5 days, if its an orbit -->
     <tr><th>Orbit Period</th><td>18&#8239;h 20&#8239;min 55&#8239;s<smol>(Hypothetically)</smol></td></tr>
@@ -906,7 +919,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 <!-- @EFOLD -->
 
-<!-- @SFOLD   @ WIP @   Various Notes for later lore cards -->
+<!-- @SFOLD   @ WIP @   Various Notes for later info cards -->
 <!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681
 
 Try to launch probe out of QM while standing on QM?
@@ -1080,7 +1093,7 @@ Going to space with the Zero-G cave suit:
 * cannot access map
 * no scout
 
-<a href=https://www.mobiusdigitalgames.com/news/outerwilds-venture-is-recruiting>This blog article from Mobius Digital</a> confirms that ghost matter is completely unrelated from quantum effects (I mean, it’s not worth creating a lore card just for this, since the Interloper comes from elsewhere and was deadly before it could have been close enough to the Eye to get quantum… Right?)
+<a href=https://www.mobiusdigitalgames.com/news/outerwilds-venture-is-recruiting>This blog article from Mobius Digital</a> confirms that ghost matter is completely unrelated from quantum effects (I mean, it’s not worth creating a info card just for this, since the Interloper comes from elsewhere and was deadly before it could have been close enough to the Eye to get quantum… Right?)
 
 REDDIT AMA      https://www.reddit.com/r/PS4/comments/diafuh/official_ama_with_outer_wilds_developers_mobius/
 
@@ -1202,7 +1215,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 -->
 <!-- @EFOLD -->
 
-<!-- @SFOLD Finished Lore Cards -->
+<!-- @SFOLD Finished Info Cards -->
 <!-- @SFOLD Spacesuit helmets The visors protect from sun exposure. -->
 <it class=dub><details><summary>Each spacesuit’s helmet is custom-made to fit its wearer. Their visors provide protection from direct sun exposure.</summary><h2>Museum (Both Alpha Versions)</h2><table><tr><th><smol>File: xmls/museumplaques/HelmetPlaque</smol></th></tr><tr><td>Helmets like these are our explorers’ windows on the Universe. Each helmet is custom-made to fit its wearer, with a stylish gold visor that provides protection from direct sun exposure.</td></tr></table></details><t>#outer wilds ventures #hearthian technology #unused/concept art #protagonist’s ship #chert’s ship #gabbro’s ship #riebeck’s ship #feldspar’s ship</t></it>
 <!-- @EFOLD -->
@@ -1248,7 +1261,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
 <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the Universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, and its trajectory during the first loop of a new expedition is just as random as any other.</p>
 <h2>Updates from previous patches</h2>
-<p>The third line of file <code class='smol orng'>OPC_Sunken_AllLaunchesData</code> has been modified twice:</p><table>
+<p>The third line of file <code class='smol orng'>OPC_Sunken_AllLaunchesData</code>&ensp;has been modified twice:</p><table>
 <tr class=ret><th><code>Before Patch 1.0.7</code></th></tr>
 <tr class=ret><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9354.</td></tr>
 <tr><th><code>Modified between Patches 1.0.4 and 1.0.7</code></th></tr>
@@ -1362,25 +1375,25 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div>
 <h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
 <div id=sidenav><div id=midxbtn><a href=javascript:void(0) onclick=closeNav() id=closbtn style=color:#fff><h1>Close<span>&times;</span></h1></a></div><div id=navctn>
-<h2 style=color:rgb(var(--white));margin-top:revert>Lore Card Color Chart:</h2>
-<div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3>Regular Lore Card</h3>
-    <p>This lore card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p>
+<h2 style=color:rgb(var(--white));margin-top:revert>Info Card Color Chart:</h2>
+<div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3>Regular Info Card</h3>
+    <p>This info card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p>
 </div>
 <div class=lorecard style=--fore:var(--goldd);--midd:var(--goldl)><h3>Time Loop Scripted Events &&nbsp;Gameplay Observations</h3>
-    <p>This lore card color, as well as the associated tag <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p>
+    <p>This info card color, as well as the associated tag <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p>
 </div>
 <div class=lorecard style=--fore:var(--indigod);--midd:var(--indigol)><h3>Alternate Official Sources</h3>
-    <p>This lore card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p>
-    <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#alternate sources</code>.</p>
+    <p>This info card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p>
+    <p>All info cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#alternate sources</code>.</p>
 </div>
 <div class=lorecard style=--fore:var(--greyd);--midd:var(--greyl)><h3>Unused & Concept Art</h3>
-    <p>This lore card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the Alpha or previous patches of the game).</p>
-    <p>Due to the fact that this content is either absent or was deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the lore card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p>
-    <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#unused/concept art</code>.</p>
+    <p>This info card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the Alpha or previous patches of the game).</p>
+    <p>Due to the fact that this content is either absent or was deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the info card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p>
+    <p>All info cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#unused/concept art</code>.</p>
 </div>
 <div class=lorecard style=--fore:var(--redd);--midd:var(--redl)><h3>Retconned</h3>
-    <p>This lore card color is for information which was present in either concept art or previous versions of the game (including the Alpha) and which can no longer be considered accurate in regards to new in-game information.</p>
-    <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p>
+    <p>This info card color is for information which was present in either concept art or previous versions of the game (including the Alpha) and which can no longer be considered accurate in regards to new in-game information.</p>
+    <p>All info cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p>
 </div>
 <p align=center style='padding:0 2em'><i>This web page was created and is maintained by Lutias Kokopelli.</i></p>
 </div></div><button id=openbtn onclick=openNav()>&#9776; Guide & Info</button></div>
@@ -1416,12 +1429,28 @@ for(allusedtags = [], i = 0; i < allts.length; i++) allusedtags += allts[i].text
 for(uniq = [], usedtagslist = allusedtags.split(","), i = 0; i < usedtagslist.length; i++) uniq.includes(usedtagslist[i].trim()) || "" == usedtagslist[i] || uniq.push(usedtagslist[i].trim());
 var missingtags="";
 for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (missingtags += "\n・" + uniq[tag]);
-"" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
+"" != missingtags && window.alert("The following tags are used by some info cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
 <!-- <a href="javascript:getcard('ID_OF_A_LORECARD')"><h2><dlgprt></dlgprt> REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</h2></a> -->
 <!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to get some progress done on checking the multiple version changes & translations. -->
+<!--
+<h2>Position calculator</h2>
+<p align=center style=font-size:1em>
+    <input id=calcinp_XXX type=text placeholder="Timestamp within or after time loop (--:--)">
+    <input type=button value=Calculate onclick='fillcalcoutput("XXX","At&ensp;<code><b>"+document.getElementById("calcinp_XXX").value+"</b></code>&ensp;into the time loop, the XXX is&ensp;<code><b>"+(Math.floor((
 
+            timestamp2num(document.getElementById("calcinp_XXX").value)
+
+    )*1000)/1000).toString()+"°</b></code>.")'>
+
+
+    <input type=button value=Calculate onclick='fillcalcoutput("XXX","At&ensp;<code><b>"+document.getElementById("calcinp_XXX").value+"</b></code>&ensp;into the time loop, the XXX is&ensp;<code><b>"+conditionaloutput(timestamp2num(document.getElementById("calcinp_stranger").value)>=405,(Math.floor((11894.5368659+0.1*(timestamp2num(document.getElementById("calcinp_stranger").value)-405)**2)*1000)/1000).toString(),"11894.537")+"&#8239;m</b></code>&ensp;from the sun, and is moving away at a velocity of&ensp;<code><b>"+conditionaloutput(timestamp2num(document.getElementById("calcinp_stranger").value)>=405,(Math.floor((0.2*(timestamp2num(document.getElementById("calcinp_stranger").value)-405))*1000)/1000).toString(),"0")+"&#8239;m/s</b></code>.")'>
+
+
+</p>
+<p id=calcout_XXX>At&ensp;<code><b>00:00</b></code>&ensp;into the time loop, the XXX is&ensp;<code><b>XXX</b></code>.</p>
+-->
 <!--
 For adding to complete XML:
 
