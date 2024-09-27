@@ -173,6 +173,7 @@ To see every single info card in existence, click “Search” with an empty tag
     <input value='#youngbark crater'type=button onclick=AddTagSelector(this.value)>
     <input value='#quantum grove'type=button onclick=AddTagSelector(this.value)>
     <input value='#geyser mountains'type=button onclick=AddTagSelector(this.value)>
+    <input value='#nomai ruins crater'type=button onclick=AddTagSelector(this.value)>
     <input value='#timber hearth warp receiver'type=button onclick=AddTagSelector(this.value)>
 <br>
     <input value=#attlerock style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
@@ -919,14 +920,28 @@ To see every single info card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 <!-- @EFOLD -->
 
+
 <!-- @SFOLD   @ WIP @   Various Notes for later info cards -->
 <!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681
+
+Do Strangers sleep upright?
+
+The Cinder Isles tower falls near the end of each loop, and if this is the fire where you sleep and are still alive, you will lose your balance from inside the simulation (with gravity seemingly shifting to pull you sideways instead of downwards). However, there is no sense of falling/tilting if you have died to enter the simulation.
+Happosai: "I can recall in a recent stream that I watched when player noticed while playing that:
+they didn't get the tilt while they were dead
+they didn't hear the dam break while they were dead
+they did hear the ember birds shriek but with no dam break sound to accompany it, thus streamer theorized that the areas must be connected well enough within the simulation to allow sound to propagate
+(they were at endless canyon via the tower at that time IIRC)"
+
+Stranger’s ritual rooms: If you listen very very closely there is the sound of the gas that’s lighting the fire!! There’s that airy hissing sound.
 
 Try to launch probe out of QM while standing on QM?
 
 Ghost matter is "an exotic form of matter" and may not be an actual gas? Hmm. (speculation by a reddit comment)
 
 Datamining: “TLE” may refer to the High Energy Lab? (time loop experiment)
+
+There’s the occasional berry bush found around the crater. They’re red. There’s also small colored bits in the stew that definitely aren’t fish but also aren’t strictly identifiable. We could guess that they’re herbs and vegetables (the bits are green, orange, and tan-white respectively), but technically no confirmation on that or mushrooms. Those are more intuitions based on their climate.
 
 Prisoner sights:    https://www.youtube.com/watch?v=h93GaqXhezo
 QM from the Eye is intangible, but cool sight of the Eye itself!    https://www.youtube.com/watch?v=_MzK5bDQ1DI
@@ -1216,6 +1231,9 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <!-- @EFOLD -->
 
 <!-- @SFOLD Finished Info Cards -->
+<!-- @SFOLD On Timber Hearth, the sun rises on the West and sets on the East. -->
+<it class=tl><details><summary>On Timber Hearth, the sun rises on the West and sets on the East.</summary><p>This can be most easily observed from inside the Nomai ruins crater: the sun will rise in-between the arches, which are facing West.</p></details><t>#timber hearth #nomai ruins crater #in-game observations #sun #astronomy #hearthian culture</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Spacesuit helmets The visors protect from sun exposure. -->
 <it class=dub><details><summary>Each spacesuit’s helmet is custom-made to fit its wearer. Their visors provide protection from direct sun exposure.</summary><h2>Museum (Both Alpha Versions)</h2><table><tr><th><smol>File: xmls/museumplaques/HelmetPlaque</smol></th></tr><tr><td>Helmets like these are our explorers’ windows on the Universe. Each helmet is custom-made to fit its wearer, with a stylish gold visor that provides protection from direct sun exposure.</td></tr></table></details><t>#outer wilds ventures #hearthian technology #unused/concept art #protagonist’s ship #chert’s ship #gabbro’s ship #riebeck’s ship #feldspar’s ship</t></it>
 <!-- @EFOLD -->
@@ -1251,7 +1269,7 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 </details><t>#retconned #slate #protagonist #time loop event</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Paired with statue on same loop as launch of probe 9,318,054 -->
-<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary><h2>Control Module (Core of Giant’s Deep)</h2><table><tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr><tr><td>
+<it><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the Universe.</summary><h2>Probe Tracking Module (Core of Giant’s Deep)</h2><table><tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr><tr><td>
 <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
 <div class=infoa><p class=nomai>Total number of probes launched: &lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X1</smol>:</p><p class=shiplog>The Orbital Probe Cannon has launched millions of probes.</p><p>(This fact would mention “thousands” of probes before Patch 1.0.7)</p></div></div>
 <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X2</smol>:</p><p class=shiplog>The 9,318,054th probe located a deep space anomaly matching all known criteria for the Eye of the universe.</p><p>(This fact would mention the “9,354th” probe before Patch 1.0.7)</p></div></div>
@@ -1432,55 +1450,3 @@ for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (mi
 "" != missingtags && window.alert("The following tags are used by some info cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
-<!-- <a href="javascript:getcard('ID_OF_A_LORECARD')"><h2><dlgprt></dlgprt> REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</h2></a> -->
-<!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to get some progress done on checking the multiple version changes & translations. -->
-<!--
-<h2>Position calculator</h2>
-<p align=center style=font-size:1em>
-    <input id=calcinp_XXX type=text placeholder="Timestamp within or after time loop (--:--)">
-    <input type=button value=Calculate onclick='fillcalcoutput("XXX","At&ensp;<code><b>"+document.getElementById("calcinp_XXX").value+"</b></code>&ensp;into the time loop, the XXX is&ensp;<code><b>"+(Math.floor((
-
-            timestamp2num(document.getElementById("calcinp_XXX").value)
-
-    )*1000)/1000).toString()+"°</b></code>.")'>
-
-
-    <input type=button value=Calculate onclick='fillcalcoutput("XXX","At&ensp;<code><b>"+document.getElementById("calcinp_XXX").value+"</b></code>&ensp;into the time loop, the XXX is&ensp;<code><b>"+conditionaloutput(timestamp2num(document.getElementById("calcinp_stranger").value)>=405,(Math.floor((11894.5368659+0.1*(timestamp2num(document.getElementById("calcinp_stranger").value)-405)**2)*1000)/1000).toString(),"11894.537")+"&#8239;m</b></code>&ensp;from the sun, and is moving away at a velocity of&ensp;<code><b>"+conditionaloutput(timestamp2num(document.getElementById("calcinp_stranger").value)>=405,(Math.floor((0.2*(timestamp2num(document.getElementById("calcinp_stranger").value)-405))*1000)/1000).toString(),"0")+"&#8239;m/s</b></code>.")'>
-
-
-</p>
-<p id=calcout_XXX>At&ensp;<code><b>00:00</b></code>&ensp;into the time loop, the XXX is&ensp;<code><b>XXX</b></code>.</p>
--->
-<!--
-For adding to complete XML:
-
-<Translations>
-    <CHN>
-    </CHN>
-    <ENG>
-    </ENG>
-    <FRE>
-    </FRE>
-    <GER>
-    </GER>
-    <ITA>
-    </ITA>
-    <JPN>
-    </JPN>
-    <KRN>
-    </KRN>
-    <POL>
-    </POL>
-    <POR>
-    </POR>
-    <RUS>
-    </RUS>
-    <SPA>
-    </SPA>
-    <TRK>
-    </TRK>
-</Translations>
-
-FOR CHECKING FOR DIFFERENCES:
-for f in `find . -type f` ; do diff -q "$f" "../../AllExtractedTextAssets_Remove_Files_As_You_Add_To_Loremap/$f" ; done
--->
