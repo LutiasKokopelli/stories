@@ -1,12 +1,12 @@
 <!-- @SFOLD Header -->
 <!DOCTYPE html>
-<html><head><title>Outer Wilds Info Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
+<html><head><title>Outer Wilds Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'>
 <meta name=viewport content='width=device-width,initial-scale=.5,interactive-widget=overlays-content'>
 <meta property=og:type content=article>
 <meta name=theme-color content=#1D4A94>
 <meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
-<meta property=og:title content="Outer Wilds Info Map">
+<meta property=og:title content="Outer Wilds Lore Map">
 <meta property=og:description content="A thorough and interactive compilation of (eventually) most knowledge which can be acquired relative to the Outer Wilds game and its fictive world.">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png>
 <style>
@@ -47,22 +47,12 @@ table p{margin:0}
 p.infob{padding:7px;margin:0;font-size:1em}
 .infob > *:last-child{margin-bottom:0}
 #filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
-@media only screen and (max-aspect-ratio:3/4){
-    *{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}
-    #filterlist{column-width:var(--colwid)}
-    #taglocs{height:540px}
-    #tagend{height:220px}
-}
-@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){
-    *{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}
-    #filterlist{column-width:var(--colwid)}
-    #taglocs{grid-row:1/5;height:1080px}
-}
-@media only screen and (min-aspect-ratio:4/3){
-    *{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}
-    #filterlist{column-width:var(--colwid)}
-    #taglocs{grid-row:1/3;height:540px}
-}
+@media only screen and (max-aspect-ratio:3/4){*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}
+#filterlist{column-width:var(--colwid)}#taglocs{height:540px}#tagend{height:220px}}
+@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}
+#filterlist{column-width:var(--colwid)}#taglocs{grid-row:1/5;height:1080px}}
+@media only screen and (min-aspect-ratio:4/3){*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}
+#filterlist{column-width:var(--colwid)}#taglocs{grid-row:1/3;height:540px}}
 it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
 .ret,.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd)}
 .misc,.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod)}
@@ -84,7 +74,6 @@ th,td{vertical-align:middle;font-size:.85em}
 td:has(p){font-size:1em}
 th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
 a{color:rgb(var(--fore));filter:brightness(150%)}
-.cardext{filter:none}.cardext *{--fore:var(--blue);--midd:var(--black2)}.cardext:hover{filter:contrast(150%)brightness(200%)}
 a:hover{border-bottom:2px dashed rgb(var(--fore))}
 a h2{filter:brightness(75%)}
 span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
@@ -94,7 +83,7 @@ details th span:not([class]),details td span:not([class]){position:absolute;text
 p+.source{margin-top:-12px}
 summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:15px 15px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 details[open] summary{margin-bottom:0}
-details[open]+t{margin-top:12px}
+details[open]:not(.noexp)+t{margin-top:12px}
 details table{border-collapse:collapse;font-size:inherit}
 details table td{padding:7px;border:2px solid rgb(var(--midd))}
 details table:not(.spmono) td{width:50%}
@@ -118,17 +107,28 @@ td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!importan
 it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
 input[type=text]{margin:auto;margin-right:7px;width:80%;font-family:Space Mono;cursor:auto;background:rgba(var(--midd),.8);color:white;border-color:rgb(var(--midd))}
 input[value='Calculate']{width:17%;margin:auto;background:rgb(var(--fore));border:none;color:white;line-height:1.6em}
-</style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Info Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
+.noexp summary::-webkit-details-marker{display:none}
+.noexp summary{list-style:none;text-indent:0;padding-left:10px;cursor:auto}
+.noexp+t{margin-top:-3px}
+.cardext{filter:none}.cardext *{--fore:var(--blue);--midd:var(--black2)}.cardext:hover{filter:contrast(150%)brightness(200%)}
+.cardext .noexp{pointer-events:none}.cardext summary{font-size:30px;font-weight:600}
+.cardext .noexp+t{display:none}.cardext .noexp summary{border:none;border-radius:10px}
+.cardext it:has(.noexp){padding-bottom:0}
+.abtn{padding:0 .3em;border-radius:1em;border:2px solid rgb(var(--midd));background:rgba(var(--midd),.8);margin-top:3px;display:inline-block}
+.abtn:hover{border:2px solid rgb(var(--fore));background:rgba(var(--fore),.8);color:#fff;filter:brightness(120%)}
+.abtn img{height:1em;margin-bottom:-.2em}
+it blockquote{user-select:none;-webkit-user-select:none}
+</style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1>
 <h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order for activating tags:</h2>
 <p align=center><span class=spanintro>neutral</span> &rarr; <span class='spanintro include'>include&nbsp;in&nbsp;the&nbsp;search</span> &rarr; <span class='spanintro exclude'>exclude&nbsp;from&nbsp;the&nbsp;search</span> &rarr; <span class=spanintro>neutral</span></p><p style='text-align:center;padding:0 5%;font-size:1em;margin:0'>
-Click on “Search!” to find all info cards which contain <b>all</b> green tags and <b>none</b> of the red tags.<br>
+Click on “Search!” to find all lore cards which contain <b>all</b> green tags and <b>none</b> of the red tags.<br>
 Toggle the blue button next to Search to access or conceal Echoes of the Eye (DLC) spoilers.<br>
-Click on the bottom left button for an explanation of info card colors (eg. red = retconned).<br>
+Click on the bottom left button for an explanation of lore card colors (eg. red = retconned).<br>
 </p><h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>A few more fun tips:</h2><p style='text-align:center;padding:0 5%;font-size:1em;margin-top:0'>
 For quicker access, you can also click on any tag already present in the search bar, red or green.<br>
 If you see a <span class=infoa style="display:inline-block;color:orange;border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em">*<span class=infob style=font-size:1em>Yup, just like this!</span></span> during your search, then try to hover/click on it! <span class=orng>There’s more to explore here.</span><br>
-Some info cards can refer to another; you can access the latter via text preceded by this symbol: <dlgprt></dlgprt><br>
-To see every single info card in existence, click “Search” with an empty tag selection!<br>
+Some lore cards can refer to another; you can access the latter via text preceded by this symbol: <dlgprt></dlgprt><br>
+To see every single lore card in existence, click “Search” with an empty tag selection!<br>
 </p><input id=findtaginput onkeyup=FindTag() placeholder='Type here to quickly find a specific tag!'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <!-- @EFOLD -->
@@ -311,8 +311,8 @@ To see every single info card in existence, click “Search” with an empty tag
     <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)>
 </p></div>
 <!-- @EFOLD -->
-<!-- @SFOLD Info Card Types -->
-<div class=tagcategory id=tagend><h2>Info Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
+<!-- @SFOLD Lore Card Types -->
+<div class=tagcategory id=tagend><h2>Lore Card Types:</h2><p style=text-align:center;line-height:2.2em;text-indent:0;padding:0;margin:0>
     <input value='#in-game observations'style='outline:3px solid rgb(var(--goldd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#alternate sources'style='outline:3px solid rgb(var(--indigod))'type=button onclick=AddTagSelector(this.value)>
     <input value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'type=button onclick=AddTagSelector(this.value)>
@@ -323,11 +323,14 @@ To see every single info card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 </div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2>
 <div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
-<a href=calendar_timeloop.html class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> All Time Loop Scripted Events <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #timeline #time loop event #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
-<a href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> Solar System Data <span class=source style=color:initial;opacity:.5>(Spreadsheet by Trifid)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
-<a href=https://www.desmos.com/calculator/cx2vcrh8sf class=cardext><it><details style=pointer-events:none><summary style=font-size:30px;font-weight:600><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary><br></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe #time loop event</t></it></a>
 <!-- @EFOLD -->
-<!-- @SFOLD — GENERAL DATA LORE CARDS -->
+<!-- @SFOLD Open on Load -->
+<a href=calendar_timeloop.html class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> All Time Loop Scripted Events <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#in-game observations #timeline #time loop event #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
+<a href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Data <span class=source style=color:initial;opacity:.5>(Spreadsheet by Trifid)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
+<a href=https://www.desmos.com/calculator/cx2vcrh8sf class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe #time loop event</t></it></a>
+<a href=https://hushbugger.github.io/outerwilds/text class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Text Dump (Patch 1.1.13) <span class=source style=color:initial;opacity:.5>(by HushBugger)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
+<!-- @EFOLD -->
+<!-- @SFOLD — GENERAL DATA LORE CARDS — Some are still WIPs to go back to (e.g. more info/sources can be added to them) -->
 <!-- @SFOLD    @WIP@    DATA Sun -->
 <it class=tl id=datasun style=position:relative><img src=../img/astr_sun.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Sun</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:22%>Surface Radius</th><td>2000&#8239;m <smol style=font-size:.6em;opacity:.7>(Default)</smol><br>4000&#8239;m <smol style=font-size:.6em;opacity:.7>(End Times)</smol></td></tr>
@@ -920,317 +923,18 @@ To see every single info card in existence, click “Search” with an empty tag
 <!-- @EFOLD -->
 <!-- @EFOLD -->
 
-
-<!-- @SFOLD   @ WIP @   Various Notes for later info cards -->
-<!-- https://open.spotify.com/episode/73X48JkMeF29KVLxBtdTHy?si=1082b9ea280b4681
-
-Do Strangers sleep upright?
-
-The Cinder Isles tower falls near the end of each loop, and if this is the fire where you sleep and are still alive, you will lose your balance from inside the simulation (with gravity seemingly shifting to pull you sideways instead of downwards). However, there is no sense of falling/tilting if you have died to enter the simulation.
-Happosai: "I can recall in a recent stream that I watched when player noticed while playing that:
-they didn't get the tilt while they were dead
-they didn't hear the dam break while they were dead
-they did hear the ember birds shriek but with no dam break sound to accompany it, thus streamer theorized that the areas must be connected well enough within the simulation to allow sound to propagate
-(they were at endless canyon via the tower at that time IIRC)"
-
-Stranger’s ritual rooms: If you listen very very closely there is the sound of the gas that’s lighting the fire!! There’s that airy hissing sound.
-
-Try to launch probe out of QM while standing on QM?
-
-Ghost matter is "an exotic form of matter" and may not be an actual gas? Hmm. (speculation by a reddit comment)
-
-Datamining: “TLE” may refer to the High Energy Lab? (time loop experiment)
-
-There’s the occasional berry bush found around the crater. They’re red. There’s also small colored bits in the stew that definitely aren’t fish but also aren’t strictly identifiable. We could guess that they’re herbs and vegetables (the bits are green, orange, and tan-white respectively), but technically no confirmation on that or mushrooms. Those are more intuitions based on their climate.
-
-Prisoner sights:    https://www.youtube.com/watch?v=h93GaqXhezo
-QM from the Eye is intangible, but cool sight of the Eye itself!    https://www.youtube.com/watch?v=_MzK5bDQ1DI
-Duplicating scout with time paradoxes shenanigans (read comments for ideas):    https://www.youtube.com/watch?v=epWKYwQBwyQ
-
-3:00 is the last chance you have to enter the Lakebed cave, with about 30 seconds more before you need to reach the sandfall
-The High Energy Lab trailhead at the bottom of the Sunless city is inaccessible at 6:08 (when the doorway crushed me),
-
-Rule of quantum entanglement works with ANY quantum object, not just the shards & Quantum Moon!
-
-The Black Hole Forge’s door automatically closes as it starts descending closer to the black hole (https://www.youtube.com/watch?v=isEhZLDBdKc).
-
-Staying ON the edge of the Supernova?	https://www.youtube.com/watch?v=rss6yp2UaXM
-Going THROUGH the Sun?			https://www.youtube.com/watch?v=wWhQRRa_RRY
-Freezing the STRANGER in time?		https://www.youtube.com/watch?v=_6mZIzGbjjI
-
-Exploring the Simulation with the SECOND ARTIFACT PROTOTYPE	https://www.youtube.com/watch?v=n-BkKJpg52I
-Exploring Dark Bramble WITHOUT FOG				https://www.youtube.com/watch?v=o-k3kQ7WIB0
-EotE - Easter Eggs And Views Out Of Bounds: The Prisoner	https://www.youtube.com/watch?v=h93GaqXhezo
-
-https://www.reddit.com/r/outerwilds/comments/zsq743/outer_wilds_echoes_of_the_eye_concept_art_or/
-
-<a href=https://www.youtube.com/watch?v=vLSK3xXjjZ0>Close look to the Orbital Probe Cannon’s start of loop explosion</a>
-
-By AWanderingMuse:      https://docs.google.com/spreadsheets/d/1pHxYK2YRUOmTbwuRXi9SVzUz1X0c8F_NmQrFyrwsWRk
-
-—————————— HEL Experiment (Name):
-5 minutes, 55 seconds: Sand covers cacti leading to HEL.
-Letting t = 0 be the Scout Launch in High Energy Lab time machine:
-t = 0:00 : Launch
-t = 0:01.49 - Duplicate Signal Begins
-t = 0:02.39 - Duplicate Signal Ends
-t = 0:02.39 - Landing
-Note that the timing for beginning signal w.r.t. launch differs by angle.
-————————————————————
-
-
-
-The QM clouds on the Sixth Location repels us so we can't get past it unless it's the north pole vortex??
-"on the giants deep variant of the moon when you go to the tornado part, and throw your Scout into it taking photos it usually gets above you and takes a photo of you and shows a second you only while in the air"
-
-Ghost matter becomes inert when in contact with water. This can be seen in The Stranger and on Giant's Deep.
-The Nomai were killed by ghost matter originating from the Interloper's core. The core was densely packed with ghost matter and ruptured when the comet came close to the sun.
-Dialogue with Arkose: ghost matter evaporates very slowly over time
-Ghost matter "burns the heck out of you"
-Tektite lost their foot as a result of ghost matter.
-
-The Japanese translation of “Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe X.” calls the deep space anomaly a <i>singularity</i> (特異点)
-
-Air is breathable on ALL of Gabbro’s island, not just the tiny spot around the campfire. It is not safe to swim around though, you drown fast.
-The signalscope works perfectly from inside the ATP. It is hard to aim though, as the travelers’ signals come from the path parallel to the walkable ground.
-
-The launch module has:
--[x] A working gravity floor on ONE side. The other side does not work.
--[x] The tracks, records and pool which would involve moving a vision ball are broken.
--[x] There are Nomai trees but no oxygen.
--[x] The airlock leading to the hub is open and broken; the path is blocked within the corridor. There is no way to close the airlock.
--[x] Projection stone: Control Module                                      (Floating amongst the debris)
--[x] Projection stone: Probe Tracking Module                               (Sitting on a bench next to the wall)
--[x] A wall for Nomai writing for Launch Module x {insert stone}           >> 2 possible texts, involving Mallow (Launch Module), Avens (Control Module) and Privet (Probe Tracking Module)
--[x] A projection pool for Launch Module x {insert stone}
-
-Pairwise alignment for Hearthian phylogenic tree:
-https://github.com/aziele/pairwise-sequence-alignment
-https://johnlekberg.com/blog/2020-10-25-seq-align.html  (also saved in documentation/Websites just in case, looks promising at first glance)
-
-# QUANTUM SHENANIGANS:
-## In-game observations on the Quantum Moon:
-- If you leave your scout outside the shrine, then change locations, then the scout is teleported to the new version’s south pole.
-- Changing locations will leave your ship behind, stranded in space, as the QM seemingly moves away from its previous location.
-- The signalscope does not return any signal other than the Quantum Moon’s. Checking other channels such as Outer Wilds Ventures returns a completely flat line and no signal at all.
-## Extrapolation
-- What if there was a desync if nobody is observing the quantum object, then both observe it again at *exactly* the same time? (notably in the QM shrine)
-
-The gravity crystal inside the ship adds about 0.8g on top of the normal gravity; so when entering the ship from its initial position on the launch pad, the gravity there is 1.8g.
-
-Distance to GD core from standing on statue island: 509m. Thrown up to 1540m
-
-High energy lab: You can’t retrieve the scout while it is duplicated.
-
-If you light up a Stranger’s eyes, they remain lit even after you point it away.
-
-If some Nomai road signs written on piled up stones are knocked over, the stones will eventually levitate back in place and restore the sign’s original shape.
-
-Nomai staffes can “imbue information” into stone? Is that how the statues work without having any noticeable wiring in them? These staffes are how projection stones can be created out of regular(?) walls in such way that they can then be removed and inserted back in place effortlessly, and the staffes can also levitate rocks in order to create piles similar to the road signs mentioned above, or places to insert projection stones into.
-
-Nomai had artificial gravity in the Vessel without use of gravity crystals (since they are native to this solar system)
-
-Some in-game text giving timings:
-
-SUN STATION:
-
-Star has reached end of natural life cycle. Now approaching red giant stage. WARNING: Evacuate Sun Station.
-Approximate time until Sun Station is destroyed by expanding star: XX MINUTES, XX SECONDS
-Approximate time until star’s death: XX MINUTES, XX SECONDS
-
-281,042 YEARS AGO: No user commands received for 10 minutes. All systems entering sleep.
-XX MINUTES, XX SECONDS AGO: Increased solar activity detected. Sun Station hull integrity approaching critical levels. Closing emergency doors.
-
-ASH TWIN:
-
-Ash Twin warp network status: All towers online.
-Ash Twin warp network status: Sun tower offline as of XX minutes XX seconds ago. All other towers online.
-Sun tower offline as of XX minutes XX seconds ago. All other towers online.
-
-ASH TWIN PROJECT:
-
-XX MINUTES, XX SECONDS AGO: Received data from previous cycles.
-[…] x 1
-XX MINUTES UNTIL END-OF-CYCLE TRANSMISSION
-
-Hearthians are aware that ghost matter is nullified by water (Riebeck being told about the Interloper: “It’s lucky we hadn’t evolved to live on land yet.”)
-
-Removing the warp core and staying inside the Ash Twin Project will result in a "YOU ARE DEAD" ending at 22:41/22:42, as the supernova burns through the protective shell and destroys Ash Twin.
-
-> Can you recall your scout right before breaking spacetime Like recall it before it goes through either portal??
-> You get the error message for having duplicate scouts if you recall in the couple seconds before spacetime breaks. And you can't recall it
-
-"Bird sounds in the plains" does TH have birds???? Files OW_TH_AmbienceInCanyons (and maybe AmbienceHighAltitude… they are very faint and I'm not sure they are birds) you could probably also just hear it ingame, the location just being anywhere not in a crater, and at day i think
-
-32km away from the sun = further than white hole and "Ol Spacey" = far enough to not get taken by the supernova
-
-Use this timeline’s screenshots as a way to locate each Nomai text displayed here: https://drive.google.com/drive/folders/1bCZee26a5oM1YiTmJYItxdKVKpqqDT0Q
-
-Moraine is referred to as “KidSignalscope” in the game files
-"ORBITAL_PROBE_CANNON_X1" is unlocked by teleporting inside Probe cannon main hub.
-
-21:30           “Warp Platforms Inactive”…?
-
-MEASURED ON SWITCH BUT THIS NEEDS CHECKING ON PC:
-~03:00: very top of sun tower starts poking out of the sand at *around* 3:00
-~03:30: top of ash twin tower (or ember twin?) appears?
-~05:00: sun tower bottom door's top starts to become visible, soon after the column of sand passed over the tower.
-~05:20: sun tower bottom door can be entered
-
-03:40 - The interloper becomes accessible
-04:20 - The interloper becomes inaccessible
-11:40 - The Interloper becomes accessible
-12:20 - The Interloper becomes inaccessible.
-20:00 - The Interloper crashes into the Sun.
-
-11:00           Chert Becomes Nervous
-17:00           Chert Panics
-20:30           Chert Becomes Catatonic
-
-A full Reddit essay on how in-game gravity works:
-https://www.reddit.com/r/outerwilds/comments/188mkxf/gravity_in_the_outer_wilds_universe/
-
-FIG BACKER SATELLITE
-The following text is displayed on its screen in repeated intervals:
-    MDG 001: Fig Backer Orbital
-    Fig Backer Satellite
-    Successfully Launched:
-    28/12/2799
-    T+9:00:00 a.m. PDT
-
-Going to space with the Zero-G cave suit:
-* works in space (no suffocating)
-* doesn’t show the map (north/south poles, path along the planet since landing site)
-* does check health, but it shows in black so very hard to see
-* does show gyroscope and directions in which the thrusters are activated
-* does display gravity, O2 and fuel levels accurately
-* comes with a green signalscope, regular flashlight
-* cannot access map
-* no scout
-
-<a href=https://www.mobiusdigitalgames.com/news/outerwilds-venture-is-recruiting>This blog article from Mobius Digital</a> confirms that ghost matter is completely unrelated from quantum effects (I mean, it’s not worth creating a info card just for this, since the Interloper comes from elsewhere and was deadly before it could have been close enough to the Eye to get quantum… Right?)
-
-REDDIT AMA      https://www.reddit.com/r/PS4/comments/diafuh/official_ama_with_outer_wilds_developers_mobius/
-
-List of web pages that haven't been checked out yet: (list made on 2024/07/06)
-https://www.mobiusdigitalgames.com/news/searching-for-beacon-88
-https://www.mobiusdigitalgames.com/news/roots-and-beginnings
-https://www.mobiusdigitalgames.com/news/evolvingdevolving
-https://www.mobiusdigitalgames.com/news/the-newest-addition-to-the-beacon-38-universe
-https://www.mobiusdigitalgames.com/news/fuel-flower-power
-https://www.mobiusdigitalgames.com/news/all-systems-go
-https://www.mobiusdigitalgames.com/news/masi-oka-discusses-producing-igf-winner-outer-wilds
-https://www.mobiusdigitalgames.com/news/to-observe-is-to-influence
-https://www.mobiusdigitalgames.com/news/breaking-the-laws-of-physics
-https://www.mobiusdigitalgames.com/news/a-very-narrative-update
-https://www.mobiusdigitalgames.com/news/the-music-of-outer-wilds-episode-1
-https://www.mobiusdigitalgames.com/news/mobius-ventures-how-our-past-work-ties-into-outer-wilds
-https://www.mobiusdigitalgames.com/news/demaking-outer-wilds
-https://www.mobiusdigitalgames.com/news/changing-the-outer-wilds-art-style
-https://www.mobiusdigitalgames.com/news/outer-wilds-launches-new-crowdfunding-platform-fig
-https://www.mobiusdigitalgames.com/news/beacon-38-now-available
-https://www.mobiusdigitalgames.com/news/the-atmosphere-awakens
-https://www.mobiusdigitalgames.com/news/updating-the-probe-launcher
-https://www.mobiusdigitalgames.com/news/concepting-dark-bramble
-https://www.mobiusdigitalgames.com/news/doubling-down-at-the-day-of-the-devs
-https://www.mobiusdigitalgames.com/news/ice-ice-baby
-https://www.mobiusdigitalgames.com/news/meet-the-team-welsey-martin
-https://www.mobiusdigitalgames.com/news/from-design-to-art-with-love
-https://www.mobiusdigitalgames.com/news/happy-new-years-from-outer-wilds-ventures
-https://www.mobiusdigitalgames.com/news/the-creepy-hearthians
-https://www.mobiusdigitalgames.com/news/meet-the-team-jeffrey-yu
-https://www.mobiusdigitalgames.com/news/crystal-clear
-https://www.mobiusdigitalgames.com/news/concepting-ui
-https://www.mobiusdigitalgames.com/news/alex-the-nomai
-https://www.mobiusdigitalgames.com/news/april-playtests-april-concept-art
-https://www.mobiusdigitalgames.com/news/filling-out-the-toolbox
-https://www.mobiusdigitalgames.com/news/taking-off
-https://www.mobiusdigitalgames.com/news/the-intentionality-of-wandering
-https://www.mobiusdigitalgames.com/news/separating-the-signal-from-the-noise
-https://www.mobiusdigitalgames.com/news/making-an-ocean
-https://www.mobiusdigitalgames.com/news/a-timber-hearth-soundscape
-https://www.mobiusdigitalgames.com/news/outer-wilds-ventures-to-earth
-https://www.mobiusdigitalgames.com/news/meet-kelsey
-https://www.mobiusdigitalgames.com/news/giants-deep-is-done
-https://www.mobiusdigitalgames.com/news/the-team-is-complete
-https://www.mobiusdigitalgames.com/news/lets-talk-concept-art
-https://www.mobiusdigitalgames.com/news/an-eclipse
-https://www.mobiusdigitalgames.com/news/development-update
-https://www.mobiusdigitalgames.com/news/ship-damage-and-more
-https://www.mobiusdigitalgames.com/news/october-recap
-https://www.mobiusdigitalgames.com/news/more-playtest-review
-https://www.mobiusdigitalgames.com/news/whats-that-sound
-https://www.mobiusdigitalgames.com/news/whos-that-hearthian
-https://www.mobiusdigitalgames.com/news/planet-progress
-https://www.mobiusdigitalgames.com/news/its-a-new-year
-https://www.mobiusdigitalgames.com/news/a-look-into-playtests
-https://www.mobiusdigitalgames.com/news/another-brief-update
-https://www.mobiusdigitalgames.com/news/a-look-at-new-ui-and-proxies
-https://www.mobiusdigitalgames.com/news/weve-announced
-https://www.mobiusdigitalgames.com/news/our-new-style
-https://www.mobiusdigitalgames.com/news/then-and-now
-https://www.mobiusdigitalgames.com/news/taking-on-timber-hearth
-https://www.mobiusdigitalgames.com/news/assembling-the-hourglass-twins
-https://www.mobiusdigitalgames.com/news/diving-into-giants-deep
-https://www.mobiusdigitalgames.com/news/xbox-release-announcement
-https://www.mobiusdigitalgames.com/news/giants-deep-visual-effects-vfx
-https://www.mobiusdigitalgames.com/news/descending-into-dark-bramble
-https://www.mobiusdigitalgames.com/news/skating-on-the-interloper
-https://www.mobiusdigitalgames.com/news/brittle-hollow-rocks
-https://www.mobiusdigitalgames.com/news/brittle-hollow-visual-effects-vfx
-https://www.mobiusdigitalgames.com/news/the-erupting-volcanic-moon
-https://www.mobiusdigitalgames.com/news/hearthian-introduction
-https://www.mobiusdigitalgames.com/news/quality-assurance
-https://www.mobiusdigitalgames.com/news/happy-halloween
-https://www.mobiusdigitalgames.com/news/localization
-https://www.mobiusdigitalgames.com/news/optimizing-for-different-platforms
-https://www.mobiusdigitalgames.com/news/the-final-stretch
-https://www.mobiusdigitalgames.com/news/general-synopsis
-https://www.mobiusdigitalgames.com/news/physical-backer-rewards
-https://www.mobiusdigitalgames.com/news/a-wild-fan-content-policy-appears
-
-<it><details open><summary>Solanum, Laevi, Ilex, Lami and Taget would play near the anglerfish fossil on Ember Twin as children.</summary>
-<h2>SOURCE<span>File: CT_City_KidDirectionToFossil_1</span></h2>
-<table class=tmp>
-<tr><th>Laevi</th></tr>
-<tr><td>We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:</td></tr>
-<tr><td>You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.</td></tr>
-<tr><th>Taget</th></tr>
-<tr><td>I tried to get to the fossil fish through <orng>Stepping Stone Cave</orng>, but I couldn’t find the entrance. Where is it?</td></tr>
-<tr><th>Ilex</th></tr>
-<tr><td>Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlook</orng> and throw a light into his mouth, he’ll show you the way.</td></tr>
-<tr><th>Lami</th></tr>
-<tr><td>Taget can’t fit through the <orng>Anglerfish Overlook</orng> hole anymore because he grew bigger! He’s taller than Laevi now.</td></tr>
-<tr><th>Laevi</th></tr>
-<tr><td>Who cares? Ilex is still tallest.</td></tr>
-</table>
-<h2>SOURCE<span>File: CT_City_KidDirectionToFossil_2</span></h2>
-<table class=tmp>
-<tr><th>Taget</th></tr>
-<tr><td>Are we playing the fossil fish game tonight?</td></tr>
-<tr><th>Solanum</th></tr>
-<tr><td>I fed the fossil fish a new lantern. If you go to <orng>Stepping Stone Cave</orng>, the entrance to the <orng>Fossil Fish Cave</orng> is easy to see now.</td></tr>
-<tr><th>Laevi</th></tr>
-<tr><td>Gratitude, Solanum! It’s good you’re small enough to climb in through the hole at the <orng>Anglerfish Overlook</orng>.</td></tr>
-<tr><th>Lami</th></tr>
-<tr><td>I’m still small enough!</td></tr>
-<tr><th>Laevi</th></tr>
-<tr><td>You won’t be for long. Mom and Dad are tall, so you and I will be tall, too.</td></tr>
-</table>
-</details><t>#nomai #solanum #laevi #ilex #lami #taget #anglerfish overlook district #anglerfish fossil</t></it>
-We’re meeting in the <orng>Fossil Fish Cave</orng> to play the game! If you’re too big to climb through the <orng>Anglerfish Overlook</orng> hole:
-You’ll have to go the long way, but it isn’t far. Go to <orng>Stepping Stone Cave</orng>, and then up and into the <orng>Fossil Fish Cave</orng>.
->> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R3”:
-Fossil Fish Cave
-Nomai children used to play a game in Fossil Fish Cave. There is a way to enter Fossil Fish Cave from Stepping Stone Cave.
-Remember to feed the fossil fish first! If you go to the <orng>Anglerfish Overlook</orng> and throw a light into his mouth, he’ll show you the way.
->> Reveals ship log entry “CT_ANGLERFISH_FOSSIL_R4”:
-Fossil Fish Cave
-The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fed a light first.
--->
+<!-- @SFOLD Finished Lore Cards -->
+<!-- @SFOLD Order in which each member of Outer Wilds Ventures joined -->
+<it class=misc><details><summary>Order in which each member of Outer Wilds Ventures joined:</summary>
+<h2>The Lore Explorer:<br>Outer Wilds Lore Interview With Alex Beachum!</h2>
+<p class=source> Watch the full interview: <a class=abtn href=https://youtu.be/Q2CeYsLjBEA><img src=https://www.youtube.com/s/desktop/da327083/img/favicon_32x32.png> Youtube</a></p>
+<p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?si=_dYG7qso6Kotz1_f&t=437'>7:17</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p>
+<blockquote>
+<p><b>The Lore Explorer:</b> What order did the Outer Wilds Venturers join? I have guesses based off ship design but Im really Interested!</p>
+<p><b>Alex Beachum:</b> (via Kelsey our writer) Slate, Feldspar, Gossan, Esker, Hornfels → Chert → Riebeck → Gabbro</p>
+</blockquote>
+</details><t>#alternate sources #timeline #outer wilds ventures #hearthians #slate #feldspar #gossan #esker #hornfels #chert #riebeck #gabbro</t></it>
 <!-- @EFOLD -->
-
-<!-- @SFOLD Finished Info Cards -->
 <!-- @SFOLD On Timber Hearth, the sun rises on the West and sets on the East. -->
 <it class=tl><details><summary>On Timber Hearth, the sun rises on the West and sets on the East.</summary><p>This can be most easily observed from inside the Nomai ruins crater: the sun will rise in-between the arches, which are facing West.</p></details><t>#timber hearth #nomai ruins crater #in-game observations #sun #astronomy #hearthian culture</t></it>
 <!-- @EFOLD -->
@@ -1393,25 +1097,25 @@ The entrance from Stepping Stone Cave is hard to see unless the anglerfish is fe
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div>
 <h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
 <div id=sidenav><div id=midxbtn><a href=javascript:void(0) onclick=closeNav() id=closbtn style=color:#fff><h1>Close<span>&times;</span></h1></a></div><div id=navctn>
-<h2 style=color:rgb(var(--white));margin-top:revert>Info Card Color Chart:</h2>
-<div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3>Regular Info Card</h3>
-    <p>This info card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p>
+<h2 style=color:rgb(var(--white));margin-top:revert>Lore Card Color Chart:</h2>
+<div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3>Regular Lore Card</h3>
+    <p>This lore card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p>
 </div>
 <div class=lorecard style=--fore:var(--goldd);--midd:var(--goldl)><h3>Time Loop Scripted Events &&nbsp;Gameplay Observations</h3>
-    <p>This info card color, as well as the associated tag <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p>
+    <p>This lore card color, as well as the associated tag <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p>
 </div>
 <div class=lorecard style=--fore:var(--indigod);--midd:var(--indigol)><h3>Alternate Official Sources</h3>
-    <p>This info card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p>
-    <p>All info cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#alternate sources</code>.</p>
+    <p>This lore card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p>
+    <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#alternate sources</code>.</p>
 </div>
 <div class=lorecard style=--fore:var(--greyd);--midd:var(--greyl)><h3>Unused & Concept Art</h3>
-    <p>This info card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the Alpha or previous patches of the game).</p>
-    <p>Due to the fact that this content is either absent or was deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the info card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p>
-    <p>All info cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#unused/concept art</code>.</p>
+    <p>This lore card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the Alpha or previous patches of the game).</p>
+    <p>Due to the fact that this content is either absent or was deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the lore card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p>
+    <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#unused/concept art</code>.</p>
 </div>
 <div class=lorecard style=--fore:var(--redd);--midd:var(--redl)><h3>Retconned</h3>
-    <p>This info card color is for information which was present in either concept art or previous versions of the game (including the Alpha) and which can no longer be considered accurate in regards to new in-game information.</p>
-    <p>All info cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p>
+    <p>This lore card color is for information which was present in either concept art or previous versions of the game (including the Alpha) and which can no longer be considered accurate in regards to new in-game information.</p>
+    <p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p>
 </div>
 <p align=center style='padding:0 2em'><i>This web page was created and is maintained by Lutias Kokopelli.</i></p>
 </div></div><button id=openbtn onclick=openNav()>&#9776; Guide & Info</button></div>
@@ -1443,10 +1147,12 @@ for(d=0;d<alldlc.length;d++){alldlc[d].style.display='none'}
 for(i=0;i<tagselect.length;i++){tagselect[i].id="btn_"+tagselect[i].value.replace(/\s/g,'').slice(1)}
 for(documentedtags=[],i=0;i<tagselect.length;i++) documentedtags.push(tagselect[i].value.split("#")[1]);
 const allts=document.querySelectorAll('div[id="filterlist"] t');
-for(allusedtags = [], i = 0; i < allts.length; i++) allusedtags += allts[i].textContent.split("#");
-for(uniq = [], usedtagslist = allusedtags.split(","), i = 0; i < usedtagslist.length; i++) uniq.includes(usedtagslist[i].trim()) || "" == usedtagslist[i] || uniq.push(usedtagslist[i].trim());
+for(allusedtags=[],i=0;i<allts.length;i++)allusedtags+=allts[i].textContent.split("#");
+for(uniq=[],usedtagslist=allusedtags.split(","),i=0;i<usedtagslist.length;i++)uniq.includes(usedtagslist[i].trim()) || "" == usedtagslist[i] || uniq.push(usedtagslist[i].trim());
 var missingtags="";
 for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (missingtags += "\n・" + uniq[tag]);
-"" != missingtags && window.alert("The following tags are used by some info cards, but are absent from the list of selectable tags!\n\n" + missingtags);
+"" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
+
+<!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to recheck the version changes & translations in already made lore cards. -->
