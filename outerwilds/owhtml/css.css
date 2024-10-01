@@ -28,15 +28,7 @@ ul{
     padding-left:17px;
 }
 li{margin:7px 0}
-blockquote {
-    border:2px solid rgb(var(--fore));
-    border-top:none;
-    border-left:none;
-    border-radius:1em 1% 1em 1%;
-    padding: .2em 1em;
-    margin: 1em 0 1em .5em;
-    background:rgba(var(--fore),.2)
-}
+blockquote{border:2px solid rgb(var(--fore));border-top:none;border-left:none;border-radius:1em 1% 1em 1%;padding:1em 1em .2em 1em;margin:1em 0 1em .5em;background:rgba(var(--fore),.2)}
 
 h1,h2{text-align:center;margin-top:0;
     position: relative;
@@ -523,6 +515,9 @@ b{font-weight:500}
 .shiplog .hudgrey ul{border:2px solid grey;box-shadow:-1px 1px 1px grey}
 .shiplog .hudgrey li:before{color:grey}
 .shiplog .grey{color:grey}
+
+
+
 
 .shiplog li:has(+ul){border-bottom:2px solid grey;display:inline-block}
 
