@@ -1,130 +1,15 @@
 <!-- @SFOLD Header -->
 <!DOCTYPE html>
-<html><head><title>FKNO Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
+<html><head><title>FKNO Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><link rel=stylesheet href=fkno-loremap.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'>
 <meta name=viewport content='width=device-width,initial-scale=.5,interactive-widget=overlays-content'>
 <meta property=og:type content=article>
 <meta name=theme-color content=#1D4A94>
 <meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
 <meta property=og:title content="FKNO Lore Map">
-<meta property=og:description content="A thorough and interactive compilation of (eventually) most knowledge which can be acquired relative to the Outer Wilds game and its fictive world.">
+<meta property=og:description content="An interactive compilation of sorts for the main FKNO headcanons and whatnot. Mainly used as Lutias’ own notes whenever she wants to double check something tbh">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png>
-<style>
-@media only screen and (max-aspect-ratio:3/4){
-    *{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}
-    #filterlist{column-width:var(--colwid)}
-}
-@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){
-    *{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}
-    #filterlist{column-width:var(--colwid)}
-}
-@media only screen and (min-aspect-ratio:4/3){
-    *{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}
-    #filterlist{column-width:var(--colwid)}
-}
-dlgprt{width:1em;display:inline-block;height:.7em;background:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='0 0 30 22'%3E%3Cpath fill='rgb(249,130,50)' d='M0 0 18 0 30 11 18 22 0 22 11 11Z' /%3E%3C/svg%3E%0A")center no-repeat}
-@media only screen and (orientation:landscape){body{font-size:22px}}
-@media only screen and (orientation:portrait){body{font-size:4vw}#sidenav{width:64%}}
-.spanintro{padding:0 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.8);box-decoration-break:clone;-webkit-box-decoration-break:clone}
-#findtaginput{display:block;width:90%;margin:17px auto}
-.all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%;padding-bottom:50vh}
-.tagcategory{padding:17px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
-.tagcategory h2{font-size:1.4em;opacity:.9}
-.tagcategory hr{margin:17px -17px;height:3px;width:calc(100% + 34px)}
-.tagcategory img{height:32px;display:inline-block;vertical-align:middle}
-.tagcategory p{text-indent:-36px;padding-left:36px}
-.tagcategory .infob{position:fixed;top:5%;left:unset;right:5%}
-input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
-input:not(#resetsearch,#startsearch,#findtaginput):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
-input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
-.include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
-.exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
-#resetsearch,#startsearch{position:absolute;bottom:0;top:-3px;width:150px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
-#resetsearch{right:150px;border-radius:0;background:rgb(var(--redd))}
-#resetsearch:hover{background:rgb(var(--redl));color:#fff}
-#startsearch{right:0;border-radius:0 20px 20px 0;background:rgb(var(--greend))}
-#startsearch:hover{background:rgb(var(--greenl));color:#fff}
-#activetags{padding:20px;min-height:50px;width:calc(100% - 300px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
-#activetags p{font-family:Calibri;font-size:14px;display:inline-block;padding:5px 12px;color:#fff;font-weight:800;border-radius:20px;margin:2px;border:2px solid}
-#activetags .include{background:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
-#activetags .exclude{background:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
-hr{margin:12px -12px!important;width:calc(100% + 24px);background:rgb(var(--fore))}
-table div:has(.infob):before{content:'*';color:orange;position:absolute;left:1%;top:calc(50% - .7em);border-radius:50%;font-family:Consolas;border:2px solid orange;height:1em;width:1em;line-height:1.12em;text-align:center;font-weight:600;font-size:.95em}
-td>div>p:not(.infob),td>p:not(.infob){padding-left:2em!important}
-details>p{margin:12px 0}
-.infob{font-size:1.2em;left:0;top:calc(100% + 5px);border:7px double rgb(var(--emph));outline:3px solid rgb(var(--white))}
-.infob img{height:revert}
-p.infob{padding:7px;margin:0}
-.infob > *:last-child{margin-bottom:0}
-#filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto}
-@media only screen and (max-aspect-ratio:3/4)                           {*{--colwid:calc(max(85vw,500px));--taggrid:1fr;--h2pad:5%}#filterlist{column-width:var(--colwid)}}
-@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:4/3){*{--colwid:calc(max(42vw,500px));--taggrid:1fr 1fr;--h2pad:10%}#filterlist{column-width:var(--colwid)}}
-@media only screen and (min-aspect-ratio:4/3)                           {*{--colwid:calc(max(25vw,500px));--taggrid:1fr 1fr 1fr;--h2pad:29%}#filterlist{column-width:var(--colwid)}}
-it,it *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
-.fkno,.fkno *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled)}
-.ret,.ret *{--emph:var(--orng);--fore:var(--redl);--midd:var(--redd)}
-.misc,.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod)}
-.dub,.dub *{--emph:var(--blue);--fore:150,152,145;--midd:var(--greyd)}
-.tl,.tl *{--emph:var(--orng);--fore:var(--goldd);--midd:128,84,52}
-.reg,.reg *{--emph:var(--blue);--fore:69,170,115;--midd:42,104,70}
-it{break-inside:avoid;display:block;width:100%;height:fit-content;border-radius:17px;padding:10px;text-align:left;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.1);margin-bottom:17px}
-it *{margin-top:0}
-it *:not(rt,table,li,img,span,p,t,br)+*:not(rt,table,li,img,span,p,t,br){margin-top:12px}
-details > *:last-child{margin-bottom:0}
-it h1{font-size:1.5em;margin-bottom:17px;border-bottom:3px solid rgb(var(--emph));color:rgb(var(--white))}
-it details>h2,it details>a>h2,#filterlist>a>h2{font-size:1.2em;border-radius:10px;margin:12px auto;padding:5px 17px 5px 17px;background:rgba(var(--fore),.9);color:rgb(var(--white))}
-a>h2{text-shadow:0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black,0 0 .1em black}
-a>h2>dlgprt{filter:drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)}
-t{font-family:Calibri;font-size:.7em;display:block;width:calc(100% + 20px);padding:7px 0 10px 10px;margin:17px 0 -10px -10px;border-radius:0 0 12px 12px;white-space:nowrap;overflow:auto;scrollbar-width:none;border-top:3px solid rgb(var(--midd));background:rgba(var(--midd),.5);color:rgba(var(--white),.7)}
-t:after{content:'';width:7px;display:inline-block}
-th,td{vertical-align:middle;font-size:.85em}
-td:has(p){font-size:1em}
-table.fkno td p:not(.infob){padding-left:0!important}
-th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
-a{color:rgb(var(--fore));filter:brightness(150%)}
-a:hover{border-bottom:2px dashed rgb(var(--fore))}
-a h2{filter:brightness(75%)}
-span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,Courrier;font-weight:100;opacity:.7}
-summary span{font-size:.7em}
-details th span:not([class]),details td span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
-.source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white))}
-p+.source{margin-top:-12px}
-.source a{color:rgb(var(--white))}
-summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:10px 10px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
-details[open] summary{margin-bottom:0}
-details[open]:not(.noexp)+t{margin-top:12px}
-details table{border-collapse:collapse;font-size:inherit}
-details table td{padding:7px;border:2px solid rgb(var(--midd))}
-details table:not(.spmono) td{width:50%}
-details p{font-size:.85em}
-table.spmono{margin-top:12px;font-family:Space Mono;font-size:.7em}
-table.spmono th:first-child,table.spmono td:first-child{width:17%;text-align:center}
-table.spmono.fkno th:first-child,table.spmono.fkno td:first-child{width:22%;text-align:center}
-table.spmono.fkno th:nth-child(2):not(:last-child),table.spmono.fkno td:nth-child(2):not(:last-child){width:17%;text-align:center}
-table+p,summary+p{margin-top:12px}
-.lorecard{border:3px solid rgb(var(--fore));background:rgba(var(--midd),.2);padding:7px;border-radius:7px;display:inline-block;margin:7px}
-.lorecard h3{color:rgb(var(--midd));margin:-7px -7px 17px -7px;border-bottom:2px solid rgb(var(--fore));padding-left:10px;background:rgba(var(--fore),.7);padding-bottom:3px}
-.lorecard p{margin:0}
-#sidenav{background:rgb(var(--black))}
-details>ul>li{font-size:.85em;list-style:square}
-b{font-weight:800}
-smol,.smol{font-size:.7em}
-pre{font-size:.7em;font-family:Space Mono;padding-left:1em;color:rgb(var(--white))}
-td:has(.nomai){padding:0}
-td div:has(.nomai){margin:0!important}
-td .nomai{margin:0!important;width:100%;box-shadow:none;border-radius:0!important}
-.nomai .infob,.nomai + .infob{font-size:.85em}
-it details .shiplog{box-shadow:none;width:100%;margin:.5em auto;font-size:.8em}
-.noexp summary::-webkit-details-marker{display:none}
-.noexp summary{list-style:none;text-indent:0;padding-left:10px;cursor:auto}
-.noexp+t{margin-top:-3px}
-.cardext{filter:none}.cardext *{--fore:var(--blue);--midd:var(--black2)}.cardext:hover{filter:contrast(150%)brightness(200%)}
-.cardext .noexp{pointer-events:none}.cardext summary{font-size:30px;font-weight:600}
-.cardext .noexp+t{display:none}.cardext .noexp summary{border:none;border-radius:10px}
-.cardext it:has(.noexp){padding-bottom:0}
-#convout td{font-family:Space Mono}
-t:empty{height:0}
-</style><script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
+<script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
 <input id=findtaginput onkeyup=FindTag() placeholder='Quick tag search:'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
@@ -138,15 +23,12 @@ t:empty{height:0}
     <span class=infoa><input value=#esker type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_esker.png></span></span>
     <span class=infoa><input value=#feldspar type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_feldspar.png></span></span>
     <span class=infoa><input value=#firn type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_firn.png></span></span>
-    <!-- <input value=#firn src=../img/chr_hea_firn.png type=image onclick=AddTagSelector(this.value) style=width:30%> -->
     <span class=infoa><input value=#gabbro type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_gabbro.png></span></span>
     <span class=infoa><input value=#galena type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_galena.png></span></span>
     <span class=infoa><input value=#gneiss type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_gneiss.png></span></span>
     <span class=infoa><input value=#gossan type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_gossan.png></span></span>
     <span class=infoa><input value=#hal type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_hal.png></span></span>
     <span class=infoa><input value=#hornfels type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_hornfels.png></span></span>
-    <!-- <input value=#hal src=../img/chr_hea_hal.png type=image onclick=AddTagSelector(this.value) style=width:30%>
-    <input value=#hornfels src=../img/chr_hea_hornfels.png type=image onclick=AddTagSelector(this.value) style=width:30%> -->
     <span class=infoa><input value=#marl type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_marl.png></span></span>
     <span class=infoa><input value=#mica type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_mica.png></span></span>
     <span class=infoa><input value=#moraine type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_moraine.png></span></span>
@@ -158,8 +40,16 @@ t:empty{height:0}
     <span class=infoa><input value=#tektite type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_tektite.png></span></span>
     <span class=infoa><input value=#tephra type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_tephra.png></span></span>
     <span class=infoa><input value=#tuff type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_tuff.png></span></span>
+    <br>
+    <span class=infoa><input value=#apatite type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_apatite.png></span></span>
+    <span class=infoa><input value=#growan type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_growan.png></span></span>
+    <span class=infoa><input value=#peat type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_peat.png></span></span>
+    <span class=infoa><input value=#larimar type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_larimar.png></span></span>
+    <span class=infoa><input value=#syenite type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_syenite.png></span></span>
+    <span class=infoa><input value=#mohs type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_mohs.png></span></span>
+    <!-- Neflil’s Nepheline & (??? used to be Euclase but renamed) -->
 </div><div class=tagcategory><h2>Astral Bodies, Satellites, Ships</h2>
-    <!-- <input value='#firn’s ship'type=button onclick=AddTagSelector(this.value)>
+    <input value='#firn’s ship'type=button onclick=AddTagSelector(this.value)>
     <input value='#feldspar’s ship'type=button onclick=AddTagSelector(this.value)>
     <input value='#chert’s ship'type=button onclick=AddTagSelector(this.value)>
     <input value='#gabbro’s ship'type=button onclick=AddTagSelector(this.value)>
@@ -168,136 +58,149 @@ t:empty{height:0}
     <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#hourglass twins' type=button onclick=AddTagSelector(this.value)>
     <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value=#attlerock style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
+    <input value=#attlerock style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#giant’s deep'style='background:url(../img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value='#nomai vessel' type=button onclick=AddTagSelector(this.value)>
+    <input value='#nomai vessel' type=button onclick=AddTagSelector(this.value)>
     <input value=#interloper style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#white hole'style='background:url(../img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#deep space satellite'type=button onclick=AddTagSelector(this.value)>
-    <input value='#the stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#the stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
     <input value='#quantum moon'style='background:url(../img/astr_qmoon.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value='#nomai shuttle'type=button onclick=AddTagSelector(this.value)> -->
-    <!-- <input value='#eye of the universe'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#nomai shuttle'type=button onclick=AddTagSelector(this.value)>
+    <input value='#eye of the universe'type=button onclick=AddTagSelector(this.value)>
 </div>
 <div class=tagcategory><h2>Sub-Locations</h2>
-<!-- <p><img src=../img/astr_ashtwin.png>
+<p><img src=../img/astr_ashtwin.png>
     <input value='#ash twin project'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_embertwin.png>
     <input value='#sunless city'type=button onclick=AddTagSelector(this.value)>
-    <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#anglerfish overlook'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_timberhearth.png>
-    <!-- <input value='#the village'type=button onclick=AddTagSelector(this.value)>
+    <input value='#the village'type=button onclick=AddTagSelector(this.value)>
     <input value='#radio tower'type=button onclick=AddTagSelector(this.value)>
-    <input value='#youngbark crater'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#youngbark crater'type=button onclick=AddTagSelector(this.value)>
     <input value='#quantum grove'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value='#geyser mountains'type=button onclick=AddTagSelector(this.value)>
+    <input value='#geyser mountains'type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_brittlehollow.png>
     <input value='#hanging city'type=button onclick=AddTagSelector(this.value)>
     <input value='#tower of quantum knowledge'type=button onclick=AddTagSelector(this.value)>
--->
 </p><p><img src=../img/astr_giantsdeep.png>
     <input value='#tower of quantum trials'type=button onclick=AddTagSelector(this.value)>
     <input value='#bramble island' type=button onclick=AddTagSelector(this.value)>
-    <!--
+    <input value='#gabbro’s island' type=button onclick=AddTagSelector(this.value)>
     <input value='#core of giant’s deep' type=button onclick=AddTagSelector(this.value)>
     <input value='#statue island' type=button onclick=AddTagSelector(this.value)>
-    <input value='#gabbro’s island' type=button onclick=AddTagSelector(this.value)>
 </p><p><img src=../img/astr_opc.png>
     <input value='#control module' type=button onclick=AddTagSelector(this.value)>
     <input value='#launch module' type=button onclick=AddTagSelector(this.value)>
-    <input value='#probe tracking module' type=button onclick=AddTagSelector(this.value)> -->
-<!-- </p><p><img src=../img/astr_darkbramble.png> -->
+    <input value='#probe tracking module' type=button onclick=AddTagSelector(this.value)>
+</p><p><img src=../img/astr_darkbramble.png>
 </p>
 </div>
-<div class=tagcategory><h2>Worldbuilding</h2>
+<div class=tagcategory>
+    <h2>Universes</h2>
+    <input style='outline:3px solid rgb(var(--purplel));margin:4px'value='#vanilla fkno'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'class=mau value='#hal’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#firn’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'class=ahau value='#gabbro’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#gossan’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#feldspar’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#slate’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#hornfels’ post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#esker’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#chert’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+    <input style='outline:3px solid rgb(var(--fore));margin:4px'value='#riebeck’s post-eye universe'type=button onclick=AddTagSelector(this.value)>
+
+    <h2>Worldbuilding</h2>
     <input value='#hearthian culture'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value='#nomai culture'type=button onclick=AddTagSelector(this.value)> -->
-    <!-- <input value='#strangers’ culture'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#nomai culture'type=button onclick=AddTagSelector(this.value)>
+    <input value='#strangers’ culture'type=button onclick=AddTagSelector(this.value)>
     <input value='#time loop event'type=button onclick=AddTagSelector(this.value)>
     <input value=#timeline type=button onclick=AddTagSelector(this.value)>
     <input value=#biology type=button onclick=AddTagSelector(this.value)>
-    <!--
     <input value=#archeology type=button onclick=AddTagSelector(this.value)>
     <input value=#physics type=button onclick=AddTagSelector(this.value)>
     <input value=#supernova type=button onclick=AddTagSelector(this.value)>
-    -->
     <input value='#quantum mechanics' type=button onclick=AddTagSelector(this.value)>
     <input value='#ghost matter' type=button onclick=AddTagSelector(this.value)>
     <input value='#timber hearth geysers'type=button onclick=AddTagSelector(this.value)>
-    <!--
     <input value='#gravity crystal'type=button onclick=AddTagSelector(this.value)>
-    <input value='#hourglass twins sand column'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#hourglass twins sand column'type=button onclick=AddTagSelector(this.value)>
 </div>
 <div class=tagcategory><h2>Objects of interest</h2>
     <p style=padding-left:0;text-indent:0><input value='#hearthian technology'style='outline:3px solid rgb(var(--indigol))'type=button onclick=AddTagSelector(this.value)>
-    <!--
     <input value=#signalscope type=button onclick=AddTagSelector(this.value)>
-    <input value='#nomai translator' type=button onclick=AddTagSelector(this.value)> -->
-<!-- </p><p style=padding-left:0;text-indent:0>
+    <input value='#nomai translator' type=button onclick=AddTagSelector(this.value)>
+    <input value='#area 22'type=button onclick=AddTagSelector(this.value)>
+</p><p style=padding-left:0;text-indent:0>
     <input value='#nomai technology'style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
     <input value='#nomai statue'type=button onclick=AddTagSelector(this.value)>
     <input value='#gravity cannon'type=button onclick=AddTagSelector(this.value)>
-    <input value='#warp core'type=button onclick=AddTagSelector(this.value)> -->
-<!-- </p><p style=padding-left:0;text-indent:0>
+    <input value='#warp core'type=button onclick=AddTagSelector(this.value)>
+</p><p style=padding-left:0;text-indent:0>
     <input value='#stranger technology'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)>
     <input value='#vision torch'type=button onclick=AddTagSelector(this.value)>
-    <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)> -->
+    <input value='#signal blocker'type=button onclick=AddTagSelector(this.value)>
 </p></div>
 <div class=tagcategory><h2>Nomai</h2><input value=#nomai style='outline:3px solid rgb(var(--redd))'type=button onclick=AddTagSelector(this.value)>
-    <!-- <input value=#ilex type=button onclick=AddTagSelector(this.value)>
+    <input value=#ilex type=button onclick=AddTagSelector(this.value)>
     <input value=#laevi type=button onclick=AddTagSelector(this.value)>
     <input value=#lami type=button onclick=AddTagSelector(this.value)>
     <input value=#solanum type=button onclick=AddTagSelector(this.value)>
-    <input value=#taget type=button onclick=AddTagSelector(this.value)> -->
-    <!-- <h2 style=margin-top:1em>Stranger</h2>
+    <input value=#taget type=button onclick=AddTagSelector(this.value)>
+    <h2 style=margin-top:1em>Stranger</h2>
     <input value='#stranger’s inhabitants'style='outline:3px solid rgb(var(--greend))'type=button onclick=AddTagSelector(this.value)>
-    <input value=#prisoner type=button onclick=AddTagSelector(this.value)> -->
+    <input value=#prisoner type=button onclick=AddTagSelector(this.value)>
 </div>
 <input value='#general data'type=button onclick=AddTagSelector(this.value) style=display:none>
 <!-- <input value=# type=button onclick=AddTagSelector(this.value)> -->
-</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div>
+<input id=openclosesh type=button value='Open/Close All'onclick=opencloseall()><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD Open on Load -->
 <a href=../owdoc/loremap.html class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Outer Wilds Canon Lore Map <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
 <a href=../owdoc/calendar_timeloop.html class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> All Time Loop Scripted Events <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
 <a href=https://www.desmos.com/calculator/cx2vcrh8sf class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
+<a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
 <it class=misc><details open style=text-align:center><summary style=font-size:30px;font-weight:600;text-align:left>Hearthian Time vs Human Time Converter</summary>
-    <input id=convTH type=text placeholder="Hearthian time (--d--s --:--)"style='width:100%;font-family:Space Mono;margin-bottom:3px;cursor:auto'>
+    <input id=convTH type=text placeholder="Hearthian time (--d--s --:--)"style='margin-bottom:3px'>
     <input type=button value="Hearthian time &rarr; In-game time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2GMtime(convTH.value),0)>
     <input type=button value="Human Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2HMcircadianrhythm(convTH.value),2)>
-    <input id=convHM type=text placeholder="Human time (--:-- or --:--:--)"style='width:100%;font-family:Space Mono;margin-top:3px;margin-top:1.2em;cursor:auto'>
+    <input id=convHM type=text placeholder="Human time (--:-- or --:--:--)"style='margin-top:3px;margin-top:1.2em'>
     <input type=button value="In-game time &rarr; Hearthian time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(GMtime2THtime(convHM.value),1)>
     <input type=button value="Hearthian Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(HMtime2THcircadianrhythm(convHM.value),3)>
     <div id=convout style=display:none><hr style=margin-bottom:0!important><table></table><table></table><table></table><table></table></div>
     <!-- Get from calendar_week: Also add the possibility to convert human years into Hearthian years and vice-versa? -->
-    <details style=margin-top:1em;background:rgba(var(--midd),.3);padding:10px;padding-bottom:0;margin-left:-10px;margin-right:-10px><summary style=border-radius:0;background:rgba(var(--midd),1);color:rgb(var(--white));font-weight:600>Valid Inputs Guide:</summary>
+    <details style='margin:1em -10px -15px -10px;background:rgba(var(--midd),.3);padding:10px 10px 0 10px'><summary style=border-radius:0;background:rgba(var(--midd),1);color:rgb(var(--white));font-weight:600>Valid Inputs Guide:</summary>
     <h2>Hearthian Time &rarr; Human Time</h2>
     <p align=left>Hearthian time is conventionally written as <code class='spanintro smol'>--d--s --:--</code> where the four empty slots indicate from left to right the day number in the week, the sunrise number in the day, the number of minutes, and finally the number of seconds. If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian time &rarr; In-game time</span>, then all four values are required.</p>
     <p align=left>The time loop occurs between <code class='spanintro smol'>06d03s 45:09</code> (in-game equivalent being 00:00) and <code class='spanintro smol'>06d07s 01:18</code> (in-game equivalent being 22:40). No error will be raised if you input a timestamp that does not fall between those boundaries, but the output result may be incorrect (specifically if you provide a timestamp earlier than the start of the loop).</p>
     <p align=left>If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Human Circadian Rhythm Equivalent</span>, then the day number may be omitted (submitting <code class='spanintro smol'>--s --:--</code> or <code class='spanintro smol'>--:--:--</code> or even <code class='spanintro smol'>-- -- --</code> is just as valid as submitting <code class='spanintro smol'>--d--s --:--</code>).</p>
     <h2>Human Time &rarr; Hearthian Time</h2>
-    <p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p></details>
-</details><t style=margin-top:-3px></t></it>
+    <p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p>
+    </details>
+</details><t></t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Non-expanding Lore Cards -->
-<it class=fkno><details class=noexp><summary>Feldspar has been missing for almost 6 years.</summary></details><t>#feldspar #outer wilds ventures</t></it>
-<it class=fkno><details class=noexp><summary>Feldspar was too eager to visit Dark Bramble to contact ground control after coming out of the core of Giant’s Deep.</summary></details><t>#feldspar #outer wilds ventures</t></it>
-<it class=fkno><details class=noexp><summary>Feldspar’s ship was already in need of minor repairs when they came for Dark Bramble. Their radio was destroyed when they crashed into the vine.</summary></details><t>#feldspar #outer wilds ventures #dark bramble</t></it>
-<it class=fkno><details class=noexp><summary>Chert had their launch day ten years ago.</summary></details><t>#chert #outer wilds ventures</t></it>
-<it class=fkno><details class=noexp><summary>Gabbro had their launch day nine years ago.</summary></details><t>#gabbro #outer wilds ventures</t></it>
-<it class=fkno><details class=noexp><summary>Riebeck had their launch day three years ago.</summary></details><t>#riebeck #outer wilds ventures</t></it>
-<it class=fkno><details class=noexp><summary>Gabbro doesn’t know that Bramble Island or the Tower of Quantum Trials exist.</summary></details><t>#gabbro #giant’s deep #bramble island #tower of quantum trials #outer wilds ventures</t></it>
+<it><details class=noexp><summary>Feldspar has been missing for almost nine years.</summary></details><t>#feldspar #outer wilds ventures #vanilla fkno</t></it>
+<it><details class=noexp><summary>Feldspar was too eager to visit Dark Bramble to contact ground control after coming out of the core of Giant’s Deep.</summary></details><t>#feldspar #outer wilds ventures #vanilla fkno</t></it>
+<it><details class=noexp><summary>Feldspar’s ship was already in need of minor repairs when they came for Dark Bramble. Their radio was destroyed when they crashed into the vine.</summary></details><t>#feldspar #outer wilds ventures #dark bramble #vanilla fkno</t></it>
+<it><details class=noexp><summary>Chert had their launch day ten years ago.</summary></details><t>#chert #outer wilds ventures #vanilla fkno</t></it>
+<it><details class=noexp><summary>Gabbro had their launch day nine years ago.</summary></details><t>#gabbro #outer wilds ventures #vanilla fkno</t></it>
+<it><details class=noexp><summary>Riebeck had their launch day three years ago.</summary></details><t>#riebeck #outer wilds ventures #vanilla fkno</t></it>
+<it><details class=noexp><summary>Gabbro doesn’t know that Bramble Island or the Tower of Quantum Trials exist.</summary></details><t>#gabbro #giant’s deep #bramble island #tower of quantum trials #outer wilds ventures #vanilla fkno</t></it>
+<it class=mau><details class=noexp><summary>Syen is into astrology.</summary></details><t>#hal’s post-eye universe #syenite</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 <!-- @SFOLD Hearthian calendar -->
-<it class=fkno><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
+<it><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
     <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
     <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b>, with the notable detail that the OPC actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the OPC firing and people “waking up” with their new memories don’t happen <i>exactly</i> at the start of the loop).</li>
     <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
@@ -310,13 +213,13 @@ t:empty{height:0}
     <li>A <b class=indigol>Hearthian week</b> starts with an <b>eclipse sunrise</b>. A week contains <b class=orng>309 sunrises</b> split into <b class=orng>14 days with one extra sunrise</b> at the end.</li>
     <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
     <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
-</ul></div></details><t>#hearthian culture #general data</t></it>
+</ul></div></details><t>#hearthian culture #general data #vanilla fkno #hearthians</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthians age ranges at the start of the time loop -->
-<it class=fkno><details><summary>Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#hearthians #firn #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data</t></it>
+<it><details><summary>Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#hearthians #firn #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthian reproduction system -->
-<it class=fkno><details><summary>Hearthians’ reproduction system is weird and alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
+<it><details><summary>Hearthians’ reproduction system is weird and alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
 <p><i>(Look I know how this sounds without context but please hear me out)</i></p>
 <p>Long story short: Hearthians have no clue what a <i>sexual</i> relationship is (though they do know romance), and have no clear concept of a “parent” in the biological sense or even of genealogy as a whole, because what reproduction entails is just “go to The Pond&trade; instead of the bathroom once a year” and a few months later they just see eggs floating in the water and some Hearthians come with their nets to pick them up. You may think of coral reproduction as an example.</p>
 <hr><p>For the quick rundown into the microscopic scale:</p><ul>
@@ -330,20 +233,20 @@ t:empty{height:0}
 <p>Once born, hatchlings still have a very thin skin which is sensitive to both humidity and general touch (pretty much like real world frogs, with the common “Don’t touch them, they breathe through their skin” saying). For the first few weeks, newly born hatchlings are cared for with constant warm baths (recreating the conditions from underground geothermal ponds) until their skins progressively thicken and adapt to being exposed to air with a scarce atmosphere, instead of water. Hearthians don’t grow scales, but they do have thicker skin than humans — to the extent that a Hearthian forgetting their spacesuit will die of oxygen deprivation faster than they will because of their body’s exposure to the void.</p>
 <hr><p>All that being said, though… With the current population at the time of present FKNO being 22 individuals, the genetic diversity has become too scarce for any egg to make it to the macroscopic scale, let alone to the point of hatching. Some are still hoping for a miracle, but more and more Hearthians are slowly coming to the realization that, even without yet another catastrophy such as a supernova or a Dark Bramble seed, their species is already doomed.</p>
 <p>…They have yet to tell the hatchlings, though. Most of them don’t even know how much bigger the Hearthian population used to be even just a few decades ago.</p>
-</details><t>#hearthians #biology #hearthian culture</t></it>
+</details><t>#hearthians #biology #hearthian culture #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Timber Hearth’s intense geological activity causes new geysers to erupt regularly. -->
-<it class=fkno><details><summary>Timber Hearth’s intense geological activity causes new geysers to erupt regularly.</summary><p>Timber Hearth has a very high geological activity, demonstrated by its geysers being powerful enough to send objects into orbit. As such, old geysers being slowly closed off and new geysers erupting instead are a common occurrence on a geological scale. Seismic activity is being monitored, but Hearthians were never capable of truly predicting when and where new geysers would erupt.</p></details><t>#timber hearth #timber hearth geysers</t></it>
+<it><details><summary>Timber Hearth’s intense geological activity causes new geysers to erupt regularly.</summary><p>Timber Hearth has a very high geological activity, demonstrated by its geysers being powerful enough to send objects into orbit. As such, old geysers being slowly closed off and new geysers erupting instead are a common occurrence on a geological scale. Seismic activity is being monitored, but Hearthians were never capable of truly predicting when and where new geysers would erupt.</p></details><t>#timber hearth #timber hearth geysers #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Timber Hearth’s underground waters are filled with ghost matter. -->
-<it class=fkno><details><summary>Timber Hearth’s underground waters are filled with ghost matter.</summary>
+<it><details><summary>Timber Hearth’s underground waters are filled with ghost matter.</summary>
 <p>Ever since the Interloper’s core ruptured, Timber Hearth has maintained large amounts of ghost matter within its underwater currents: the water’s nullifying effect on ghost matter and the fact that said water is also for the most part sealed off slows down to a significant degree the rate at which ghost matter evaporates, and the only way for it to successfully leave the water is for it to reach the surface first, notably (but not exclusively) through geysers.</p>
 <p style=opacity:.8>In comparison, though Giant’s Deep is filled with water as well, its ocean’s open exposure to open air and even to outer space through its cyclones has on the contrary heavily accelerated the rate at which its ghost matter evaporated, leaving only a few small patches clinging to a few islands.</p>
 <hr><p>The fact that ghost matter is present in the water depths is known, but Hearthians are unable to detect ghost matter while it is in its underwater nullified state. As such, despite being aware of the danger, they are powerless to stop it or efficiently prepare themselves for it, and they are unable to tell just how much ghost matter truly is hiding dormant at the core of their planet. Ironically, staying close to bodies of water remains the safest way to deal with a ghost matter crisis.</p>
-</details><t>#timber hearth #ghost matter #hearthians #timber hearth geysers</t></it>
+</details><t>#timber hearth #ghost matter #hearthians #timber hearth geysers #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD New geyser + ghost matter accident from ~30 years ago -->
-<it class=fkno id=fkno30yrsincident><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
+<it id=fkno30yrsincident><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
 <p>This event is based on Arkose’s reports about the patch of ghost matter they play around, which used to be bigger when Gossan was a hatchling.</p>
 <p>The proximity of this patch of ghost matter to the village is due to the fact that it appeared more recently than the village itself, along with the small geyser erupting nearby.</p>
 <hr><p>The geyser causing the newest patch of ghost matter to appear erupted very close to what was at the time the hatchlings’ cabin, among many others. After the incident, the hatchlings were relocated to live close to the waterfall (it is the cabin whose porch Tephra and Galena are seen sitting on in-game), with the caretakers’ cabin being the one next to it and closest to the water.</p>
@@ -351,141 +254,87 @@ t:empty{height:0}
 <hr><p>This kind of event already happened multiple times in the past, each time killing off significant parts of both the wildlife and the Hearthian population, as well as rendering various areas uninhabitable for a few decades. This also contributed to forcing Hearthians to remain hunter-gatherers for the longest time, and to adopt a way of life which makes it relatively easy to relocate through disassembling and reassembling cabins.</p>
 <p>With the years, as became usual for Hearthians, building materials and objects located within the patch of ghost matter were carefully retrieved: the bodies were buried, while objects of use were left in specific places away from the village and in open air so that the lingering ghost matter would evaporate faster and eventually make those objects usable once more.</p>
 <hr><p>Though each ghost matter incident took a huge toll on the Hearthian civilization’s progress and on the Hearthian population in general, the latest ones, and this one in particular, clearly pushed the Hearthian race closer and closer to extinction because of the dwindling genetic diversity. On the day when the sun goes supernova, the Hearthian population only counts 22 individuals in total, and it has been almost a decade since they last were able to find even a single egg.</p>
-</details><t>#hearthians #ghost matter #timber hearth geysers #timber hearth #timeline</t></it>
+</details><t>#hearthians #ghost matter #timber hearth geysers #timber hearth #timeline #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Tektite lost their foot when they saved Gabbro during the ghost matter incident from ~30 years ago. -->
-<it class=fkno><details><summary>Tektite lost their foot when they saved a five-year-old Gabbro during the ghost matter incident from ~30 years ago.</summary>
+<it><details><summary>Tektite lost their foot when they saved a five-year-old Gabbro during the ghost matter incident from ~30 years ago.</summary>
 <p>While Chert and Porphy were old enough to run to safety on their own, Gabbro was still young and standing indoors while the geyser erupted and the ghost matter started expanding. Tektite was barely able to carry them out while Gabbro was already starting to inhale some diluted fumes, and Tektite lost their foot in the process.</p>
 <p><dlgprt></dlgprt> <a href="javascript:getcard('fkno30yrsincident')">More details about the event in general can be found here.</a></p>
 <hr><p>Gabbro’s remembrance of the event contributes to their overall attitude once adult, as they feel like they already defied death once; it is part of the origin behind their own daredevil way of consuming or inhaling various substances out of curiosity.</p><p>The incident and its devastating effects on the dwindling Hearthian population is also the main reason behind Gabbro’s nihilistic behavior, as they believe that even prior to the supernova, they were already doomed.</p>
-</details><t>#tektite #gabbro #ghost matter #timeline</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD Firn proved that Gabbro’s theory about quantum objects was correct. -->
-<it class=fkno><details><summary>About five years ago, Firn came up with an experiment which proved Gabbro’s theory about quantum objects.</summary><p>I’d like to write a small one-shot or comic about it at some point, so I won’t give too many details… But this ties in with exactly <i>how</i> Gabbro came to conclude that a quantum object “exists in all possible states until it is observed” in the first place. To give a hint: Gabbro often hangs out in the Quantum Grove. Sometimes, right after a rainy day.</p></details><t>#firn #hal #gabbro #hornfels #quantum mechanics #quantum grove</t></it>
-<!-- Firn proved that the museum shard is indeed standing in all three locations simultaneously while nobody is watching. -->
+</details><t>#tektite #gabbro #ghost matter #timeline #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon. -->
-<it class=fkno><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
+<it><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
 <p>Feldspar did not contact Timber Hearth before leaving for Dark Bramble. When they never came back, the searches were thus concentrated around Giant’s Deep instead, and made difficult due to the cyclones and drifting islands constantly changing the planet’s layout.</p><hr>
 <p>Outer Wilds Ventures knew that Feldspar tried many times to land on the Quantum Moon, without ever succeeding. Due to Hearthians’ lack of knowledge about the Quantum Moon and macroscopic quantum mechanics in general, and with the searches on Giant’s Deep being fruitless, some started to hypothesize that Feldspar found once again the Quantum Moon on their way back, tried one more time to land on it, and actually succeeded for once; only for the Quantum Moon to disappear as it always does.</p>
 <p>Regardless of whether they assume Feldspar to have died on the spot due to the ‘teleportation’ effect being possibly lethal, to have died while stranded in space because the moon’s disappearance left them behind and too far away to make it to their ship before running out of fuel or oxygen, or to have somehow disappeared entirely and never reappeared along with the moon in its new location, Outer Wilds Ventures slowly put more and more credence in this theory and started mourning without searching any further.</p>
-<hr><p>At the time of FKNO’s first chapter, Feldspar has been gone for almost six years. No Hearthian ever tried to land on the Quantum Moon after this, assuming that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
-</details><t>#feldspar #outer wilds ventures #quantum moon #quantum mechanics #hearthians</t></it>
+<hr><p>At the time of FKNO’s first chapter, Feldspar has been gone for almost nine years. No Hearthian ever tried to land on the Quantum Moon after this, assuming that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
+</details><t>#feldspar #outer wilds ventures #quantum moon #quantum mechanics #hearthians #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Pre-Time Loop Timeline -->
-<it class=fkno><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
-    <tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
-    <tr><td>06d03s 24:12</td><td>Hornfels finishes prepping the statue. They are satisfied with their work but disappointed that they couldn’t get the statue’s eyes to open, and start wondering if Gabbro chipping it could be the cause.</td></tr>
-    <tr><td>06d03s 36:02</td><td>Hornfels decides to radio Gabbro to ask them if they could find another statue, since they’re back on Giant’s Deep and it has been a while since they last did any field work.<br>Gabbro is embarrassed by the fact that their ship was taken by a cyclone during the night, but keeps silent about it as they are not very willing to break down the news just yet.</td></tr>
-    <tr><td>06d03s 38:24</td><td>Gossan shows up to say hi in the middle of Hornfels and Gabbro’s conversation, prompting it to end. Gossan asks Hornfels to stay focused and make sure that Firn’s launch day goes smoothly.</td></tr>
-    <tr><td>06d03s 41:51</td><td>Before Gossan leaves, Hornfels asks them to find Hal and tell them that the statue is ready for display.</td></tr>
-    <tr style=background:rgba(var(--fore),.5)><td>06d03s 45:09</td><td>Start of the time loop.</td></tr>
-</table></details><t>#time loop event</t></it>
+<it><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
+<tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
+<tr><td>06d03s 24:12</td><td>Hornfels finishes prepping the statue. They are satisfied with their work but disappointed that they couldn’t get the statue’s eyes to open, and start wondering if Gabbro chipping it could be the cause.</td></tr>
+<tr><td>06d03s 36:02</td><td>Hornfels decides to radio Gabbro to ask them if they could find another statue, since they’re back on Giant’s Deep and it has been a while since they last did any field work.<br>Gabbro is embarrassed by the fact that their ship was taken by a cyclone during the night, but keeps silent about it as they are not very willing to break down the news just yet.</td></tr>
+<tr><td>06d03s 38:24</td><td>Gossan shows up to say hi in the middle of Hornfels and Gabbro’s conversation, prompting it to end. Gossan asks Hornfels to stay focused and make sure that Firn’s launch day goes smoothly.</td></tr>
+<tr><td>06d03s 41:51</td><td>Before Gossan leaves, Hornfels asks them to find Hal and tell them that the statue is ready for display.</td></tr>
+<tr style=background:rgba(var(--fore),.5)><td>06d03s 45:09</td><td>Start of the time loop.</td></tr>
+</table></details><t>#time loop event #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Loop 1 Timeline -->
-<it class=fkno><details><summary>FKNO Loop 1 Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
-    <tr><td>06d03s 45:22</td><td>00:02</td><td>Gabbro radioes Hornfels to discuss their request to look for another statue (Chapter 2²). This prompts Hornfels to go to the statue room.</td></tr>
-    <tr style=background:rgba(var(--midd),.5)><td>06d03s 46:43</td><td>00:11</td><td>The OPC fires while Hal and Gossan talk.</td></tr>
-    <tr><td>06d04s 24:59</td><td>04:36</td><td>Hal is paired with the museum’s statue.</td></tr>
-    <tr><td>06d04s 36:38</td><td>05:57</td><td>Gabbro finishes hanging up their hammock, pondering what they should do since they lost their ship.</td></tr>
-    <tr><td>06d04s 46:03</td><td>07:02</td><td>Statue Island drifts by their beach, Gabbro takes the opportunity to cross the gap for a quick investigation after checking that no cyclone is headed their way.</td></tr>
-    <tr><td>06d04s 50:24</td><td>07:32</td><td>Gabbro is paired with their statue.</td></tr>
-    <tr><td>06d04s 55:53</td><td>08:10</td><td>Gabbro goes back to their hammock to recover.</td></tr>
-    <tr><td>06d04s 57:09</td><td>08:19</td><td>Firn lands on Gabbro’s Island.</td></tr>
-    <tr><td>06d05s 15:42</td><td>10:28</td><td>Firn and Gabbro land on Statue Island.</td></tr>
-    <tr><td>06d05s 25:06</td><td>11:33</td><td>Firn and Gabbro end up in orbit.</td></tr>
-    <tr><td>06d06s 00:34</td><td>15:39</td><td>Riebeck arrives on the OPC.</td></tr>
-    <tr><td>06d06s 02:12</td><td>15:50</td><td>Firn wakes up after Riebeck and Gabbro refueled their tank.</td></tr>
-    <tr><td>06d06s 59:25</td><td>22:27</td><td>The supernova reaches the observatory.</td></tr>
-    <tr><td>06d07s 00:17</td><td>22:35</td><td>The supernova reaches the OPC.</td></tr>
-</table><p>Firn’s ship log interlude (<a href=https://archiveofourown.org/works/55228189/chapters/142276075>AO3</a>) gives more details regarding the timing of Firn’s actions after their departure from Timber Hearth.</p></details><t>#time loop event</t></it>
+<it><details><summary>FKNO Loop 1 Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+<tr><td>06d03s 45:22</td><td>00:02</td><td>Gabbro radioes Hornfels to discuss their request to look for another statue (Chapter 2²). This prompts Hornfels to go to the statue room.</td></tr>
+<tr style=background:rgba(var(--midd),.5)><td>06d03s 46:43</td><td>00:11</td><td>The OPC fires while Hal and Gossan talk.</td></tr>
+<tr><td>06d04s 24:59</td><td>04:36</td><td>Hal is paired with the museum’s statue.</td></tr>
+<tr><td>06d04s 36:38</td><td>05:57</td><td>Gabbro finishes hanging up their hammock, pondering what they should do since they lost their ship.</td></tr>
+<tr><td>06d04s 46:03</td><td>07:02</td><td>Statue Island drifts by their beach, Gabbro takes the opportunity to cross the gap for a quick investigation after checking that no cyclone is headed their way.</td></tr>
+<tr><td>06d04s 50:24</td><td>07:32</td><td>Gabbro is paired with their statue.</td></tr>
+<tr><td>06d04s 55:53</td><td>08:10</td><td>Gabbro goes back to their hammock to recover.</td></tr>
+<tr><td>06d04s 57:09</td><td>08:19</td><td>Firn lands on Gabbro’s Island.</td></tr>
+<tr><td>06d05s 15:42</td><td>10:28</td><td>Firn and Gabbro land on Statue Island.</td></tr>
+<tr><td>06d05s 25:06</td><td>11:33</td><td>Firn and Gabbro end up in orbit.</td></tr>
+<tr><td>06d06s 00:34</td><td>15:39</td><td>Riebeck arrives on the OPC.</td></tr>
+<tr><td>06d06s 02:12</td><td>15:50</td><td>Firn wakes up after Riebeck and Gabbro refueled their tank.</td></tr>
+<tr><td>06d06s 59:25</td><td>22:27</td><td>The supernova reaches the observatory.</td></tr>
+<tr><td>06d07s 00:17</td><td>22:35</td><td>The supernova reaches the OPC.</td></tr>
+</table><p>Firn’s ship log interlude (<a href=https://archiveofourown.org/works/55228189/chapters/142276075>AO3</a>) gives more details regarding the timing of Firn’s actions after their departure from Timber Hearth.</p></details><t>#time loop event #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @EFOLD -->
 
-<!-- @SFOLD    @WIP@    Loop 2 Timeline -->
-<it class=fkno><details><summary>FKNO Loop 2 Timeline</summary>
-<table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
-    <tr style=background:rgba(var(--midd),.5)><td>06d03s 45:21</td><td>00:01</td><td>Hal and Gabbro freeze in place as the ATP sends their memories back.</td></tr>
-    <tr style=background:rgba(var(--midd),.5)><td>06d03s 47:02</td><td>00:13</td><td>The OPC fires, Hal and Gabbro “wake up.”</td></tr>
-    <tr><td>06d03s 52:17</td><td>00:49</td><td>Hal & Gossan go to the observatory.</td></tr>
-    <tr><td>06d03s 55:04</td><td>01:09</td><td>Hal & Gossan arrive at the statue room.</td></tr>
-    <tr><td>06d03s 56:51</td><td>01:21</td><td>Gabbro walks down to the beach and notices that their hammock is gone.</td></tr>
-    <tr><td>06d04s 00:19</td><td>01:45</td><td>Marl and Rutile arrive.</td></tr>
-    <tr><td>06d04s 00:42</td><td>01:48</td><td>Gabbro’s hammock is set up.</td></tr>
-    <tr><td>06d04s 01:03</td><td>01:50</td><td>Rutile leaves.</td></tr>
-    <tr><td>06d04s 02:11</td><td>01:58</td><td>Hal leaves to see Hornfels.</td></tr>
-    <tr><td>06d04s 07:35</td><td>02:36</td><td>“Hey Hal! Hornfels,” Firn saluted with a cheerful wave and a polite nod. “Don’t mind me, I’m just here for the launch codes.”</td></tr>
-    <tr><td>06d04s 14:20</td><td>03:22</td><td>Firn and Marl leave the observatory.</td></tr>
-    <tr><td>06d04s 21:04</td><td>04:09</td><td>Hornfels, Gossan and Hal (+ Gabbro through Hornfels’ portable radio) go down to the statue room.</td></tr>
-    <tr><td>06d04s 24:31</td><td>04:33</td><td>Gossan leaves to meet Hornfels in the quantum shard room.</td></tr>
+<!-- TRELLO: Only check in column “Post-Eye FKNO.” Everything else has been sorted. After that: move contents of Google Doc worldbuilding lore into the FKNO lore map. -->
 
-    <!-- <tr><td>06d04s [+5min minimum]</td><td>:</td><td>Gossan goes back to find Hal and Gabbro in the statue room.</td></tr> -->
-    <!-- This takes at *minimum* 5 Hearthian minutes, but whether it takes more or not depends on how long Hal and Gabbro’s conversation will be. -->
-
-</table></details><t>#time loop event</t></it>
+<!-- @SFOLD General Data Lore Cards that can still be updated -->
+<!-- @SFOLD MAU: Hearthian Full Names -->
+<it class=mau><details><summary>Modern AU: Characters’ Full Names</summary><table style=margin-top:.5em class=freet>
+<tr><th>First Name</th><th>Middle Name</th><th>Last Name</th></tr>
+<tr><td>Rutile</td><td></td><td rowspan=3>Gallium</td></tr>
+<tr><td>Gossan</td><td></td></tr>
+<tr><td>Firn</td><td>Zircon</td></tr>
+<tr><td>Hornfels</td><td></td><td rowspan=2>Copper</td></tr>
+<tr><td>Hal(ite)</td><td>Halide</td></tr>
+<tr><td>Slate</td><td></td><td rowspan=3>Nitrogen</td></tr>
+<tr><td>Feldspar</td><td></td></tr>
+<tr><td>Mica</td><td></td></tr>
+<tr><td>Porphy</td><td></td><td rowspan=2>Argon</td></tr>
+<tr><td>Marl</td><td></td></tr>
+<tr><td>Spinel</td><td></td><td rowspan=2>Astatine</td></tr>
+<tr><td>Gabbro</td><td></td></tr>
+<tr><td>Tektite</td><td></td><td rowspan=3>Selenium</td></tr>
+<tr><td>Esker</td><td></td></tr>
+<tr><td>Tuff</td><td></td></tr>
+<tr><td>Larimar</td><td></td><td rowspan=2>Tungsten</td></tr>
+<tr><td>Moraine</td><td></td></tr>
+<tr><td>Chert</td><td></td><td>Cesium</td></tr>
+<tr><td>Riebeck</td><td></td><td>Gold</td></tr>
+<tr><td>Gneiss</td><td></td><td>Silver</td></tr>
+<tr><td>Syen</td><td></td><td>Nickel</td></tr>
+<tr><td>Arkose</td><td></td><td></td></tr>
+<tr><td>Tephra</td><td></td><td></td></tr>
+<tr><td>Galena</td><td></td><td></td></tr>
+<tr><td>Apatite</td><td>Chlorapa</td><td>Tin</td></tr>
+</table></details><t>#hal’s post-eye universe #hearthians #firn #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #syenite #larimar #mohs #apatite #growan #peat #general data</t></it>
 <!-- @EFOLD -->
-
-<!-- @SFOLD NOTES FOR LATER -->
-<!--
-
-Tag with #time loop event   a few events specific to FKNO such as the ATP mask falling off
-
-Tag with #hearthian technology & #little scout      the fact that the scout’s recall function was based off a broken Nomai shuttle found on Timber Hearth near the Nomai ruins
-
-Tag with #nomai technology      The fact that Nomai had 3 generations of warp cores
-
-Bramble Island was picked up by the anticlockwise cyclone and thrown below the current some time between Feldspar left for Dark Bramble and the OWV search party for them began. As such, nobody but Feldspar knows that this island exists.
-Additionally, there are a few other islands that sank as well throughout the years.
-
-Hearthian bugs have evolved to:
-- Lay eggs on *land* instead of water (no predators)
-- Lay tiny batches of eggs every here and there instead of all in one spot, aiming for tiny nooks and crannies (even if ghost matter shows up, not all eggs will die)
-- Be able to see ghost matter so as to easily avoid it
-
-
-Why are some lanterns purple? Do you go with something simple (https://www.scientificamerican.com/article/streetlights-are-mysteriously-turning-purple-heres-why/) or with “Nomaian information in liquid-ish form” technology?
-
-
-Hearthian trees are radiotrophic: they do not require air as they do not breathe, and instead use radiation from the sun as the source of energy for their metabolism (radiosynthesis) on top of photosynthesis. They reject dioxygen as waste, therefore creating atmosphere on a local area surrounding them rich in oxygen and somewhat cleansed of radiation.
-
-Quantum Moon: The locations of the ground and obstacles on unobserved locations and versions of the Moon are constantly shifting, and purposefully avoiding the observer's body. This is helped in huge part by the observer taking note of the *absence* of such obstacles in their path in the one version of the Moon they are standing on. Basically all versions of the observer are walking and moving in sync on all six versions, and the main version observing one state of the moon causes the other versions of the moon to create the same type of landscape. Similarly, the shrine is constrained to be present in the same location on all versions of the Moon no matter what.
-
-The ship log glows purple with information, invisible to Hearthians. Untranslated Nomai text glows, then fades to a more natural color after being read.
-Gravity beams are visible to Hearthians. The ship’s is maintained by a ring attached to the ceiling right above the hatch. Gravity beams, like gravity crystals, are native to BH, not to Nomai homeworld technology.
-Firn’s helmet can only retrieve text files from the ship log, not images or audio. For reading or editing the latter (+ also text files in a cozier setting) you *have* to be sitting in front of the computer. It allows Firn to do some quiet checkups + editing whenever they have a minute or two alone during the loops, but it also doesn't make it *too* OP
-Musa: a Nomai who was basically Okabe from Steins;Gate, hiding scrolls in inconspicuous places and leaving notes as they are convinced that everyone working on the Ash Twin Project is evil and that they are about to destroy the fabric of space-time? And the only reason Hal is capable of finding their scrolls while we would not in-game is that use of a staff is needed in order to access places where those scrolls are hidden? (e.g. someone’s home)
-
-Timber Hearth has a lot more ghost matter than previously assumed; it’s just that 99% of it is underwater… and being regurgitated by the geysers every now and then at random. That would be a massive “regularly wipes out a ton of people” hazard, which can’t even be predicted that well since ghost matter is undetectable when it’s underwater. It is of note that the patch of ghost matter inside the village is close to a few small geysers: if fully formed geysers are powerful enough to send people into space, it wouldn’t be so surprising that new ones could simply show up randomly. Tektite losing their leg may have been due to the small geysers near the patch of ghost matter just erupting out of nowhere one day, spouting out some ghost matter in a certain part of the village, and… having a body count + giving Tektite a leg injury. It would be both tragic and interesting if part of the reason why OVW was created may have been for a “What if we could find a geyser/ghost matter free planet to relocate” reason (on top of just Feldspar wanting to see space and Slate wanting to build exploding contraptions). Due to geysers usually throwing water as well when they also happen to throw ghost matter, it is common knowledge that “If you get ghost matter in your arm, put it in the water first” // The latest ghost matter incident occurred around 30 years ago, while Gabbro was around 6 maximum
-Riebeck has been hoping to discover within the Nomai some kind of beacon of hope – a means to travel beyond the solar system, knowledge on how to populate a new exotic planet, a cure against ghost matter.
-Tektite lost their foot saving Gabbro, who had been dangerously close to being stuck in a patch and breathed some fumes as a hatchling. ...and this may have led them to their tendency to defy fate again with inhaling more weird substances.
-The hatchlings' cabin had to be relocated, and they chose a spot closest to the waterfall – that way, even if it happens again, there will be tons of water to shield them.
-Despite the elders not wanting them to know, Firn 100% has overheard them talk about the hatchling crisis at least once, and maybe about the ghost matter issue as well.
-Feldspar tried and failed to land on the Quantum Moon many, many times. When they disappeared and the preliminary search parties did not turn up anything, everyone started thinking that they had either died, or that they had finally managed to land on the Quantum Moon… and then vanished along with it, spirited away.
-As a safety mechanism because biology is a wonderful machine, inbreeding defects will *always* lead to death prior to hatching (with in 99% of cases leading to "the egg doesn’t even reach the stage of growing into macroscopic eggs that can be visible to the naked eye and picked up by a caretaker to begin with")
-
-Hornfels’ cabin also is Feldspar’s (and Slate’s); but they have been sleeping more and more often at the observatory ever since Feldspar disappeared so as to avoid remembering that Feldspar is no longer sleeping in there. Slate doesn’t resent Hornfels for leaving them alone at night, but they do feel the strain.
-Gossan lives in a different cabin, which they share with Tuff (and used to share with Esker and Riebeck).
-
-Hatchlings' cabin:	Arkose	Tephra	Galena	Moraine	Mica
-Caretakers' cabin:	Rutile	Gneiss	Tektite	Spinel
-
-	Hal	Firn	Marl
-	Hrnfels	Slate	Feldspar
-	Chert	Gabbro	Porphy
-	Gossan	Esker	Tuff	Riebeck
--->
-<!-- WHS was built first, then the shuttles with more advanced tech that no longer required astral body alignments, and *then* the Ash Twin towers were built but the Nomai thought they'd use the WHS tech instead of the shuttles tech? And Slate based their tech on the Nomai shuttles instead of the warp pads.
-
-Gonna summarize my hypothesis regarding Nomai warping technology:
-1. The Vessel uses an advanced warp core as initially built by Annona, allowing warp travel with no limitations and across large distances.
-2. That technology was lost with the crash, leaving the Nomai stranded with the advanced warp core unusable and (presumably) impossible to repair or use to create a duplicate, or even to use as a model for other non-advanced warp cores. Annona eventually died before they could recreate anything, due to a lack of resources. *[Note: Please let me know if there is a canon knowledge of whether Annona died before or after the first functional non-advanced warp core was created]*
-3. Brittle Hollow gave access to a black hole, they created the black hole forge, this made them able to recreate warp technology from the ground up. Due to the lack of Annona / the tools the Nomai would usually use for this, recreating non-advanced warp cores already took a while, and those started rudimentary.
-4. The first warp cores were used in the White Hole station. Due to this technology's limitations, warps can only occur when an alignment between the black hole core and a massive astral body close to the white hole core happens; they did however manage to make it so that after a black hole &rarr; white hole warp occurs, the white hole core is charged and allows a return trip without alignment limitations thanks to the energy gained by the previous warp.
-5. The shuttles were built, and with those a second generation of warp cores which managed to get past the alignment restriction were developed. These warp cores are also used in the HEL (...? Guess we don't know what second-generation warp cores look like but the fact that the HEL's warp cores look identical to the first-generation ones bugs me a little bit because of the next point:).
-6. When the Ash Twin Project came and the idea for the towers arose, the Nomai decided to base the towers' warps from the *White Hole Station* warp pads instead of the second generation ones. Probably because or resource limitations, perhaps because of "that way we don't have to adjust the entire warp pad system for a different kind of warp cores" (assuming that even if first and second generation warp cores look the same at first glance, they may have something like different energy requirements or wiring needs/safety precautions and such) coupled with "it's not like warp windows don't occur often enough to make it *that* big of an inconvenience" laziness.
-7. The *advanced* warp core was finally remade and used only for the Ash Twin Project, most likely because of a lack of resources + lack of need. (save for the plan to rebuild(?)/return(?) to the Vessel, but that plan was for after the ATP anyway and there's evidently the option to use the same advanced warp core for the vessel later anyway) -->
 <!-- @EFOLD -->
-
 <!-- @SFOLD Javascript -->
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div></div><script>
 const nofind=document.getElementById("nofind"),
@@ -520,4 +369,3 @@ convTH=document.getElementById("convTH");convHM=document.getElementById("convHM"
 function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
 </script></div></body></html>
 <!-- @EFOLD -->
-<!-- <p><dlgprt></dlgprt> <a href="javascript:getcard('ID_OF_A_LORECARD')">REPEAT_TITLE_OF_LORECARD_BEING_REFERENCED</a></p> -->

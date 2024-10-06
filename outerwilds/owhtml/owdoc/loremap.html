@@ -22,11 +22,13 @@ dlgprt{width:1em;display:inline-block;height:.7em;background:url("data:image/svg
 .tagcategory img{height:32px;display:inline-block;vertical-align:middle}
 .tagcategory .infob{position:fixed;top:5%;left:unset;right:5%}
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
-input:not(#resetsearch,#startsearch,#findtaginput,#toggledlc):not(.include,.exclude):not([type=text]):not([value='Calculate']){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
+input:not(#resetsearch,#startsearch,#findtaginput,#openclosesh,#toggledlc):not(.include,.exclude):not([type=text]):not([value='Calculate']){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 .include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
 .exclude{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
-#resetsearch,#toggledlc,#startsearch{position:absolute;bottom:0;top:-3px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
+#resetsearch,#toggledlc,#startsearch,#openclosesh{position:absolute;bottom:0;top:-3px;height:100%;font-size:20px;padding:10px 17px;font-weight:600;color:rgb(var(--white));border:none}
+#openclosesh{right:350px;border-radius:0;background:rgb(var(--goldd))}
+#openclosesh:hover{background:rgb(var(--goldl));color:#fff}
 #resetsearch{right:250px;border-radius:0;background:rgb(var(--redd));width:100px}
 #resetsearch:hover{background:rgb(var(--redl));color:#fff}
 #toggledlc{right:110px;border-radius:0;background-color:rgb(var(--indigod));background-image:url(../img/EotE-show.png);background-size:100% auto;background-position:center;background-repeat:no-repeat;width:140px}
@@ -323,14 +325,19 @@ To see every single lore card in existence, click “Search” with an empty tag
 </p></div>
 <!-- @EFOLD -->
 </div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2>
-<div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
+<div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div>
+
+<input id=openclosesh type=button value='Open/Close All'onclick=opencloseall()>
+
+<input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=toggledlc class=no type=button onclick=ToggleDLC()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD Open on Load -->
+<a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov class=cardext><it><details class=noexp open><summary><p style=margin:0;font-size:inherit><dlgprt></dlgprt> Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></p><p class=source style=margin:0;padding:0>Caution: Contains DLC spoilers!</p></summary></details><t></t></it></a>
 <a href=calendar_timeloop.html class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> All Time Loop Scripted Events <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#in-game observations #timeline #time loop event #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
 <a href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Data <span class=source style=color:initial;opacity:.5>(Spreadsheet by Trifid)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe</t></it></a>
 <a href=https://www.desmos.com/calculator/cx2vcrh8sf class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#in-game observations #astronomy #general data #sun #sun station #hourglass twins #ember twin #ash twin #timber hearth #attlerock #sky shutter #brittle hollow #hollow’s lantern #giant’s deep #orbital probe cannon #dark bramble #white hole #white hole station #interloper #deep space satellite #the stranger #quantum moon #eye of the universe #time loop event</t></it></a>
-<a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
 <a href=https://drive.google.com/drive/folders/1Y_8NoX1v6O-tMMlqOxG9SP-4LUj0aGH9 class=cardext><it><details class=noexp><summary><dlgprt></dlgprt> Slide Reels Texture Dump <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#dlc #the stranger #slide reel</t></it></a>
+<a href=https://docs.google.com/spreadsheets/d/1iBLKrftHZrF9t2RSK__QUZ4WGu-TPw4piGmwzatd9BQ class=cardext><it><details class=noexp><summary><dlgprt></dlgprt> Ghostbird Tracker Doc <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#dlc #stranger’s inhabitants</t></it></a>
 <a href=https://hushbugger.github.io/outerwilds/text class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Text Dump (Patch 1.1.13) <span class=source style=color:initial;opacity:.5>(by HushBugger)</span> <img src=https://www.svgrepo.com/show/510970/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
 <!-- @EFOLD -->
 <!-- @SFOLD — GENERAL DATA LORE CARDS — Some are still WIPs to go back to (e.g. more info/sources can be added to them) -->
@@ -925,6 +932,7 @@ To see every single lore card in existence, click “Search” with an empty tag
 </details><t>#retconned #dark bramble</t></it>
 <!-- @EFOLD -->
 <!-- @EFOLD -->
+
 <!-- @SFOLD Finished Lore Cards -->
 <!-- @SFOLD Order in which each member of Outer Wilds Ventures joined -->
 <it class=misc><details><summary>Order in which each member of Outer Wilds Ventures joined:</summary>
@@ -1168,3 +1176,5 @@ for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (mi
 "" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 </script></div></body></html>
 <!-- @EFOLD -->
+
+<!-- Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to recheck the version changes & translations in already made lore cards. -->

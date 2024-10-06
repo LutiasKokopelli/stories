@@ -147,3 +147,7 @@ function fillcalcoutput(id,out){
 function conditionaloutput(cond,condT,condF){
     return cond?condT:condF
 }
+function opencloseall(){
+    if(!allit[0].getElementsByTagName("details")[0].open==true){for(i=0;i<allit.length;i++){allit[i].getElementsByTagName("details")[0].open=true}}
+    else{for(i=0;i<allit.length;i++){allit[i].getElementsByTagName("details")[0].open=false}}
+}
