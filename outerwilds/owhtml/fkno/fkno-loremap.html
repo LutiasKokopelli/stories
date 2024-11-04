@@ -9,6 +9,10 @@
 <meta property=og:title content="FKNO Lore Map">
 <meta property=og:description content="An interactive compilation of sorts for the main FKNO headcanons and whatnot. Mainly used as Lutias’ own notes whenever she wants to double check something tbh">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png>
+<style>
+.rating{border-radius:50px;width:100px;display:inline-block;background:rgba(var(--midd),.5)}
+.rating input{padding:0;background-image:linear-gradient(to left,#e5405e 0%,#ffdb3a 65%,#3fffa2 100%);background-size:100px 100%;text-shadow:var(--txtshw);text-align:center}
+</style>
 <script src=../js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
 <input id=findtaginput onkeyup=FindTag() placeholder='Quick tag search:'>
 <h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2>
@@ -46,6 +50,7 @@
     <span class=infoa><input value=#peat type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_peat.png></span></span>
     <span class=infoa><input value=#larimar type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_larimar.png></span></span>
     <span class=infoa><input value=#syenite type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_syenite.png></span></span>
+    <span class=infoa><input value=#stein type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_stein.png></span></span>
     <span class=infoa><input value=#mohs type=button onclick=AddTagSelector(this.value)><span class=infob><img src=../img/chr_hea_mohs.png></span></span>
     <!-- Neflil’s Nepheline & (??? used to be Euclase but renamed) -->
 </div><div class=tagcategory><h2>Astral Bodies, Satellites, Ships</h2>
@@ -197,10 +202,11 @@
 <it><details class=noexp><summary>Riebeck had their launch day three years ago.</summary></details><t>#riebeck #outer wilds ventures #vanilla fkno</t></it>
 <it><details class=noexp><summary>Gabbro doesn’t know that Bramble Island or the Tower of Quantum Trials exist.</summary></details><t>#gabbro #giant’s deep #bramble island #tower of quantum trials #outer wilds ventures #vanilla fkno</t></it>
 <it class=mau><details class=noexp><summary>Syen is into astrology.</summary></details><t>#hal’s post-eye universe #syenite</t></it>
+<it class=mau><details><summary>Stein owns a Triumph Bonneville.</summary><img src=https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/central%20marketing%20team/brand%20story/bonneville/06%20speedmaster%20hero-1410x793.jpg><img src=../img/WIP/Stein_motorbike_ref.jpg></details><t>#stein #hal’s post-eye universe</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Finished Lore Cards -->
 <!-- @SFOLD Hearthian calendar -->
-<it><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
+<it><details><summary>Vanilla FKNO: Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
     <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
     <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b>, with the notable detail that the OPC actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the OPC firing and people “waking up” with their new memories don’t happen <i>exactly</i> at the start of the loop).</li>
     <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
@@ -214,9 +220,6 @@
     <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
     <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
 </ul></div></details><t>#hearthian culture #general data #vanilla fkno #hearthians</t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD Hearthians age ranges at the start of the time loop -->
-<it><details><summary>Hearthians age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#hearthians #firn #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data #vanilla fkno</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthian reproduction system -->
 <it><details><summary>Hearthians’ reproduction system is weird and alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
@@ -235,6 +238,37 @@
 <p>…They have yet to tell the hatchlings, though. Most of them don’t even know how much bigger the Hearthian population used to be even just a few decades ago.</p>
 </details><t>#hearthians #biology #hearthian culture #vanilla fkno</t></it>
 <!-- @EFOLD -->
+<!-- @SFOLD Hearthians age ranges at the start of the time loop -->
+<it><details><summary>Vanilla FKNO: Hearthians’ age ranges at the start of the time loop</summary><p>Ages given in Hearthian years, with one Hearthian year being equivalent to 327.31 human days. From oldest to youngest:</p><ul style='columns:3;font-size:.8em;font-family:Space Mono;list-style:none'><li>Tektite: 72</li><li>Spinel: 68</li><li>Gneiss: 67</li><li>Rutile: 59</li><li>Esker: 48</li><li>Gossan: 44</li><li>Feldspar: 43</li><li>Slate: 43</li><li>Hornfels: 42</li><li>Porphy: 40</li><li>Chert: 39</li><li>Gabbro: 36</li><li>Riebeck: 27</li><li>Tuff: 26</li><li>Marl: 24</li><li>Firn: 19</li><li>Hal: 19</li><li>Arkose: 13</li><li>Moraine: 12</li><li>Mica: 11</li><li>Galena: 9</li><li>Tephra: 9</li></ul></details><t>#hearthians #firn #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data #vanilla fkno</t></it>
+<!-- @EFOLD -->
+<!-- @SFOLD Firn’s little-shit-o’-meter -->
+<it><details><summary>Vanilla FKNO: Firn’s little-shit-o’-meter</summary>
+<p>The scale ranges from “0: Would never ever prank this person no matter the circumstances” to “10: Would need to be physically incapacitated in order to stop pranking them”:</p>
+<table class=freet>
+<tr><td>Feldspar</td><td><div class=rating><input value=0% style=visibility:hidden></div></td><td><i class=spmono>No data available</i></td></tr>
+<tr><td>Gabbro</td><td><div class=rating><input value=5%></div></td><td>Nothing gets under their skin, they’re just not fun to prank. They just have to be an element to the setup instead of the actual target… When they’re even in the village, that is. Still,&nbsp;at least they do have a sense of humor.</td></tr>
+<tr><td>Esker</td><td><div class=rating><input value=10%></div></td><td>The pranks are literally meant to cheer them up instead.</td></tr>
+<tr><td>Galena</td><td><div class=rating><input value=15%></div></td><td>The goal is to get the hatchling to open up, not make them even more introverted.</td></tr>
+<tr><td>Mica</td><td><div class=rating><input value=20%></div></td><td>Real rating should actually be much lower. The peaks at 100% corresponding to the few sunrises each day spent away from Slate’s workshop are a statistical anomaly and should not have been counted.</td></tr>
+<tr><td>Hal</td><td><div class=rating><input value=30%></div></td><td>Most mean-spirited pranks are solely in order not to lose face. Thankfully Hal knows this and doesn’t take it <i>too</i> hard. Usually.</td></tr>
+<tr><td>Arkose</td><td><div class=rating><input value=35%></div></td><td>The rating would be a lot higher if the hatchling weren’t gravitating so close to ghost matter all the time. Chances are Arkose sticks around that area specifically for that reason (nah, probably not).</td></tr>
+<tr><td>Chert</td><td><div class=rating><input value=35%></div></td><td>The rating would be a lot higher if only they were on planet more often. The temptation to reorder their charts in reverse-alphabetical order the moment they’re not looking is so, <i>so</i> strong.</td></tr>
+<tr><td>Riebeck</td><td><div class=rating><input value=40%></div></td><td>They take the jokes well, really! They’re so tense all the time, jumpscares should literally be a medical prescription to scare the pressure out of them at least twice a day.</td></tr>
+<tr><td>Slate</td><td><div class=rating><input value=45%></div></td><td>Huh. That’s a surprisingly low rating for an adult full of sass who can defend themself just fine. Wonder what’s up with that.</td></tr>
+<tr><td>Porphy</td><td><div class=rating><input value=50%></div></td><td>Beware: messing with the cook/apothecary too little too often has a tendency to make sap wine-related digestive challenges magically spawn inside your dinner plate. Keep it perfectly balanced, as all things should be.</td></tr>
+<tr><td>Tephra</td><td><div class=rating><input value=50%></div></td><td>Hey, they take the pranks well! They’re a fast learner, too, Firn can’t wait for the time when they will have to actually watch their back around them.</td></tr>
+<tr><td>Tuff</td><td><div class=rating><input value=55%></div></td><td>It’s… a guilty pleasure. Firn does feel a little bad that Tuff is ranking so high. The location of their workplace is literally making them <i>beg</i> for it, though!</td></tr>
+<tr><td>Tektite</td><td><div class=rating><input value=65%></div></td><td>Firn will mostly hold back because of the injured leg and the fact that Tektite is often around dangerous terrain.</td></tr>
+<tr><td>Gneiss</td><td><div class=rating><input value=70%></div></td><td>The stuff they work with is too fragile to prank around… but make for <i>such</i> perfect settings for tiny tools playing hide-and-seek.</td></tr>
+<tr><td>Moraine</td><td><div class=rating><input value=70%></div></td><td>Hatchling wants to be a grown-up. They get the grown-up average rating.</td></tr>
+<tr><td>Marl</td><td><div class=rating><input value=75%></div></td><td>Firn will more often team up with them for double the hijinks, instead of targeting them specifically. That being said, turning off friendly fire was never an option.</td></tr>
+<tr><td>Spinel</td><td><div class=rating><input value=90%></div></td><td>The ten percents of peace are the rare cases when they got a catch and need to focus.</td></tr>
+<tr><td>Gossan</td><td><div class=rating><input value=95%></div></td><td>Firn loves them, really, but… It’s also kind of personal. Firn doesn’t want to think about it.</td></tr>
+<tr><td>Hornfels</td><td><div class=rating><input value=100%></div></td><td>Their angry face as they are trying to hold it together is just <i>so</i> funny. How can you resist?</td></tr>
+<tr><td>Rutile</td><td><div class=rating><input value=100%></div></td><td>Nothing personal, they just happen to be the mayor 😔 Collateral damage.</td></tr>
+</table>
+</details><t>#vanilla fkno #hearthians #firn #arkose #chert #esker #feldspar #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff</t></it>
+<!-- @EFOLD -->
 <!-- @SFOLD Timber Hearth’s intense geological activity causes new geysers to erupt regularly. -->
 <it><details><summary>Timber Hearth’s intense geological activity causes new geysers to erupt regularly.</summary><p>Timber Hearth has a very high geological activity, demonstrated by its geysers being powerful enough to send objects into orbit. As such, old geysers being slowly closed off and new geysers erupting instead are a common occurrence on a geological scale. Seismic activity is being monitored, but Hearthians were never capable of truly predicting when and where new geysers would erupt.</p></details><t>#timber hearth #timber hearth geysers #vanilla fkno</t></it>
 <!-- @EFOLD -->
@@ -243,7 +277,7 @@
 <p>Ever since the Interloper’s core ruptured, Timber Hearth has maintained large amounts of ghost matter within its underwater currents: the water’s nullifying effect on ghost matter and the fact that said water is also for the most part sealed off slows down to a significant degree the rate at which ghost matter evaporates, and the only way for it to successfully leave the water is for it to reach the surface first, notably (but not exclusively) through geysers.</p>
 <p style=opacity:.8>In comparison, though Giant’s Deep is filled with water as well, its ocean’s open exposure to open air and even to outer space through its cyclones has on the contrary heavily accelerated the rate at which its ghost matter evaporated, leaving only a few small patches clinging to a few islands.</p>
 <hr><p>The fact that ghost matter is present in the water depths is known, but Hearthians are unable to detect ghost matter while it is in its underwater nullified state. As such, despite being aware of the danger, they are powerless to stop it or efficiently prepare themselves for it, and they are unable to tell just how much ghost matter truly is hiding dormant at the core of their planet. Ironically, staying close to bodies of water remains the safest way to deal with a ghost matter crisis.</p>
-</details><t>#timber hearth #ghost matter #hearthians #timber hearth geysers #vanilla fkno</t></it>
+</details><t>#timber hearth #ghost matter #hearthians #timber hearth geysers #vanilla fkno #the village</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD New geyser + ghost matter accident from ~30 years ago -->
 <it id=fkno30yrsincident><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
@@ -254,7 +288,7 @@
 <hr><p>This kind of event already happened multiple times in the past, each time killing off significant parts of both the wildlife and the Hearthian population, as well as rendering various areas uninhabitable for a few decades. This also contributed to forcing Hearthians to remain hunter-gatherers for the longest time, and to adopt a way of life which makes it relatively easy to relocate through disassembling and reassembling cabins.</p>
 <p>With the years, as became usual for Hearthians, building materials and objects located within the patch of ghost matter were carefully retrieved: the bodies were buried, while objects of use were left in specific places away from the village and in open air so that the lingering ghost matter would evaporate faster and eventually make those objects usable once more.</p>
 <hr><p>Though each ghost matter incident took a huge toll on the Hearthian civilization’s progress and on the Hearthian population in general, the latest ones, and this one in particular, clearly pushed the Hearthian race closer and closer to extinction because of the dwindling genetic diversity. On the day when the sun goes supernova, the Hearthian population only counts 22 individuals in total, and it has been almost a decade since they last were able to find even a single egg.</p>
-</details><t>#hearthians #ghost matter #timber hearth geysers #timber hearth #timeline #vanilla fkno</t></it>
+</details><t>#vanilla fkno #hearthians #ghost matter #timber hearth geysers #timber hearth #timeline #chert #esker #feldspar #gabbro #gneiss #gossan #hornfels #porphy #rutile #slate #spinel #tektite</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Tektite lost their foot when they saved Gabbro during the ghost matter incident from ~30 years ago. -->
 <it><details><summary>Tektite lost their foot when they saved a five-year-old Gabbro during the ghost matter incident from ~30 years ago.</summary>
@@ -269,7 +303,7 @@
 <p>Outer Wilds Ventures knew that Feldspar tried many times to land on the Quantum Moon, without ever succeeding. Due to Hearthians’ lack of knowledge about the Quantum Moon and macroscopic quantum mechanics in general, and with the searches on Giant’s Deep being fruitless, some started to hypothesize that Feldspar found once again the Quantum Moon on their way back, tried one more time to land on it, and actually succeeded for once; only for the Quantum Moon to disappear as it always does.</p>
 <p>Regardless of whether they assume Feldspar to have died on the spot due to the ‘teleportation’ effect being possibly lethal, to have died while stranded in space because the moon’s disappearance left them behind and too far away to make it to their ship before running out of fuel or oxygen, or to have somehow disappeared entirely and never reappeared along with the moon in its new location, Outer Wilds Ventures slowly put more and more credence in this theory and started mourning without searching any further.</p>
 <hr><p>At the time of FKNO’s first chapter, Feldspar has been gone for almost nine years. No Hearthian ever tried to land on the Quantum Moon after this, assuming that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
-</details><t>#feldspar #outer wilds ventures #quantum moon #quantum mechanics #hearthians #vanilla fkno</t></it>
+</details><t>#vanilla fkno #feldspar #outer wilds ventures #quantum moon #quantum mechanics #hearthians #firn #arkose #chert #esker #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Pre-Time Loop Timeline -->
 <it><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
@@ -367,5 +401,6 @@ for(tag = 0; tag < uniq.length; tag++) documentedtags.includes(uniq[tag]) || (mi
 "" != missingtags && window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n" + missingtags);
 convTH=document.getElementById("convTH");convHM=document.getElementById("convHM");convout=document.getElementById("convout")
 function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
+const allrates=document.querySelectorAll('div[class="rating"] input');for(i=0;i<allrates.length;i++){allrates[i].style.width=allrates[i].value}
 </script></div></body></html>
 <!-- @EFOLD -->

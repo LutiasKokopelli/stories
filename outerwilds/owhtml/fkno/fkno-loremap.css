@@ -53,11 +53,9 @@ p.infob{padding:7px;margin:0}
 it,it *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled)}
 .misc,.misc *{--emph:var(--orng);--fore:var(--indigol);--midd:var(--indigod)}
 
-.mau,.mau *{--emph:var(--orng);--fore:219,112,147;--midd:199,21,133}
-.mau summary:before{content:'';display:inline-block;width:2em;height:1em;background:url('../img/chr_hea_hal.png');background-size:contain}
-
-.ahau,.ahau *{--emph:var(--orng);--fore:255,127,80;--midd:219,122,50}
-.ahau summary:before{content:'';display:inline-block;width:2em;height:1em;background:url('../img/chr_hea_gabbro.png');background-size:contain}
+*:not(.cardext)>it:not(.misc)>details>summary:before{content:'';display:inline-block;width:2em;height:2em;margin-bottom:-.5em;margin-right:.2em;background:url('../img/chr_eye.png');background-size:contain}
+.mau,.mau *{--emph:var(--orng);--fore:219,112,147;--midd:199,21,133}.mau>details>summary:before{background-image:url('../img/chr_hea_hal.png')!important}
+.ahau,.ahau *{--emph:var(--orng);--fore:255,127,80;--midd:219,122,50}.ahau>details>summary:before{background-image:url('../img/chr_hea_gabbro.png')!important}
 
 it{break-inside:avoid;display:block;width:100%;height:fit-content;border-radius:17px;padding:10px;text-align:left;border:3px solid rgb(var(--fore));background:rgba(var(--midd),.1);margin-bottom:17px}
 it *{margin-top:0}
