@@ -22,7 +22,7 @@
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <div class=tagcategory><h1>Universes</h1>
     <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline fkno'style=background-image:url(../img/chr_eye.png) value='#vanilla fkno'>
-    <a class='fkno smol' href="RevealTagCategory('fkno')">» Open/Close all tag categories</a><br>
+    <a class='fkno smol' href="javascript:RevealTagCategory('fkno')">» Open/Close all tag categories</a><br>
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#chert’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#esker’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#feldspar’s universe'> -->
@@ -30,7 +30,7 @@
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline ahau'style=background-image:url(../img/chr_hea_gabbro.png) value='#gabbro’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#gossan’s universe'> -->
     <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline mau'style=background-image:url(../img/chr_hea_hal.png) value='#hal’s universe'>
-    <a class='mau smol' href="RevealTagCategory('mau')">» Open/Close all tag categories</a><br>
+    <a class='mau smol' href="javascript:RevealTagCategory('mau')">» Open/Close all tag categories</a><br>
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_hornfels.png) value='#hornfels’ universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#riebeck’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#slate’s universe'> -->
@@ -243,34 +243,11 @@
 </div>
 <!-- @EFOLD -->
 <input type=button onclick=AddTagSelector(this.value) value='#general data'style=display:none>
+<input type=button onclick=AddTagSelector(this.value) value='#keep'style=display:none>
 </div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div>
 <input id=openclosesh type=button value='Open/Close All'onclick=opencloseall()><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
-<!-- @SFOLD Open on Load -->
-<a href=../owdoc/loremap.html target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Outer Wilds Canon Lore Map <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
-<a href=../owdoc/calendar_timeloop.html target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> All Time Loop Scripted Events <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
-<a href=https://www.desmos.com/calculator/cx2vcrh8sf target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
-<a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t></t></it></a>
-<it class=misc><details open style=text-align:center><summary style=font-size:30px;font-weight:600;text-align:left>Hearthian Time vs Human Time Converter</summary>
-    <input id=convTH type=text placeholder="Hearthian time (--d--s --:--)"style='margin-bottom:3px'>
-    <input type=button value="Hearthian time &rarr; In-game time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2GMtime(convTH.value),0)>
-    <input type=button value="Human Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2HMcircadianrhythm(convTH.value),2)>
-    <input id=convHM type=text placeholder="Human time (--:-- or --:--:--)"style='margin-top:3px;margin-top:1.2em'>
-    <input type=button value="In-game time &rarr; Hearthian time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(GMtime2THtime(convHM.value),1)>
-    <input type=button value="Hearthian Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(HMtime2THcircadianrhythm(convHM.value),3)>
-    <div id=convout style=display:none><hr style=margin-bottom:0!important><table></table><table></table><table></table><table></table></div>
-    <!-- Get from calendar_week: Also add the possibility to convert human years into Hearthian years and vice-versa? -->
-    <details style='margin:1em -10px -15px -10px;background:rgba(var(--midd),.3);padding:10px 10px 0 10px'><summary style=border-radius:0;background:rgba(var(--midd),1);color:rgb(var(--white));font-weight:600>Valid Inputs Guide:</summary>
-    <h2>Hearthian Time &rarr; Human Time</h2>
-    <p align=left>Hearthian time is conventionally written as <code class='spanintro smol'>--d--s --:--</code> where the four empty slots indicate from left to right the day number in the week, the sunrise number in the day, the number of minutes, and finally the number of seconds. If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian time &rarr; In-game time</span>, then all four values are required.</p>
-    <p align=left>The time loop occurs between <code class='spanintro smol'>06d03s 45:09</code> (in-game equivalent being 00:00) and <code class='spanintro smol'>06d07s 01:18</code> (in-game equivalent being 22:40). No error will be raised if you input a timestamp that does not fall between those boundaries, but the output result may be incorrect (specifically if you provide a timestamp earlier than the start of the loop).</p>
-    <p align=left>If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Human Circadian Rhythm Equivalent</span>, then the day number may be omitted (submitting <code class='spanintro smol'>--s --:--</code> or <code class='spanintro smol'>--:--:--</code> or even <code class='spanintro smol'>-- -- --</code> is just as valid as submitting <code class='spanintro smol'>--d--s --:--</code>).</p>
-    <h2>Human Time &rarr; Hearthian Time</h2>
-    <p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p>
-    </details>
-</details><t></t></it>
-<!-- @EFOLD -->
-<!-- @SFOLD Non-expanding Lore Cards -->
+<!-- @SFOLD [WIP] Non-expanding Lore Cards -->
 <it><details class=noexp><summary>Feldspar has been missing for almost nine years.</summary></details><t>#feldspar (vanilla) #outer wilds ventures (vanilla) #vanilla fkno</t></it>
 <it><details class=noexp><summary>Feldspar was too eager to visit Dark Bramble to contact ground control after coming out of the core of Giant’s Deep.</summary></details><t>#feldspar (vanilla) #outer wilds ventures (vanilla) #vanilla fkno</t></it>
 <it><details class=noexp><summary>Feldspar’s ship was already in need of minor repairs when they came for Dark Bramble. Their radio was destroyed when they crashed into the vine.</summary></details><t>#feldspar (vanilla) #outer wilds ventures (vanilla) #dark bramble (vanilla) #vanilla fkno</t></it>
@@ -289,7 +266,7 @@
 <it class=mau><details class=noexp><summary>Gossan’s eggs are infertile and they are denied access to daycare donation centers, to their own despair.</summary></details><t>#hal’s universe #gossan gallium</t></it>
 <it class=mau><details class=noexp><summary>Stein’s eggs are infertile and they are denied access to daycare donation centers, to their own despair.</summary></details><t>#hal’s universe #stein (LAST NAME MISSING)</t></it>
 <!-- @EFOLD -->
-<!-- @SFOLD Finished Lore Cards -->
+<!-- @SFOLD [WIP] Finished Lore Cards -->
 <!-- @SFOLD Hearthian calendar -->
 <it><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
     <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
@@ -423,7 +400,7 @@
 
 <!-- REDO THE TAGS JUST TO BE SAFE: search <t> -->
 
-<!-- @SFOLD General Data Lore Cards that can still be updated -->
+<!-- @SFOLD [WIP] General Data Lore Cards that can still be updated -->
 <!-- @SFOLD MAU: Hearthian Full Names -->
 <it class=mau><details><summary>Modern AU: Characters’ Full Names</summary><table style=margin-top:.5em class=freet>
 <tr><th>First Name</th><th>Middle Name</th><th>Last Name</th></tr>
@@ -464,6 +441,30 @@
 #growan (LAST NAME MISSING)
 </t></it>
 <!-- @EFOLD -->
+<!-- @EFOLD -->
+<!-- @SFOLD Open on Load -->
+<a href=../owdoc/loremap.html target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Outer Wilds Canon Lore Map <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#keep</t></it></a>
+<a href=../owdoc/calendar_timeloop.html target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> All Time Loop Scripted Events <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#keep</t></it></a>
+<a href=https://www.desmos.com/calculator/cx2vcrh8sf target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span> <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#keep</t></it></a>
+<a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov target=_blank class=cardext><it><details class=noexp open><summary><dlgprt></dlgprt> Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span> <img src=../img/external-link.svg style=height:1em;margin-bottom:-.2em></summary></details><t>#keep</t></it></a>
+<it class=misc><details open style=text-align:center><summary style=font-size:30px;font-weight:600;text-align:left>Hearthian Time vs Human Time Converter</summary>
+    <input id=convTH type=text placeholder="Hearthian time (--d--s --:--)"style='margin-bottom:3px'>
+    <input type=button value="Hearthian time &rarr; In-game time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2GMtime(convTH.value),0)>
+    <input type=button value="Human Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2HMcircadianrhythm(convTH.value),2)>
+    <input id=convHM type=text placeholder="Human time (--:-- or --:--:--)"style='margin-top:3px;margin-top:1.2em'>
+    <input type=button value="In-game time &rarr; Hearthian time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(GMtime2THtime(convHM.value),1)>
+    <input type=button value="Hearthian Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(HMtime2THcircadianrhythm(convHM.value),3)>
+    <div id=convout style=display:none><hr style=margin-bottom:0!important><table></table><table></table><table></table><table></table></div>
+    <!-- Get from calendar_week: Also add the possibility to convert human years into Hearthian years and vice-versa? -->
+    <details style='margin:1em -10px -15px -10px;background:rgba(var(--midd),.3);padding:10px 10px 0 10px'><summary style=border-radius:0;background:rgba(var(--midd),1);color:rgb(var(--white));font-weight:600>Valid Inputs Guide:</summary>
+    <h2>Hearthian Time &rarr; Human Time</h2>
+    <p align=left>Hearthian time is conventionally written as <code class='spanintro smol'>--d--s --:--</code> where the four empty slots indicate from left to right the day number in the week, the sunrise number in the day, the number of minutes, and finally the number of seconds. If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian time &rarr; In-game time</span>, then all four values are required.</p>
+    <p align=left>The time loop occurs between <code class='spanintro smol'>06d03s 45:09</code> (in-game equivalent being 00:00) and <code class='spanintro smol'>06d07s 01:18</code> (in-game equivalent being 22:40). No error will be raised if you input a timestamp that does not fall between those boundaries, but the output result may be incorrect (specifically if you provide a timestamp earlier than the start of the loop).</p>
+    <p align=left>If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Human Circadian Rhythm Equivalent</span>, then the day number may be omitted (submitting <code class='spanintro smol'>--s --:--</code> or <code class='spanintro smol'>--:--:--</code> or even <code class='spanintro smol'>-- -- --</code> is just as valid as submitting <code class='spanintro smol'>--d--s --:--</code>).</p>
+    <h2>Human Time &rarr; Hearthian Time</h2>
+    <p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p>
+    </details>
+</details><t style=font-size:0>#keep</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Javascript -->
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div></div><script>
