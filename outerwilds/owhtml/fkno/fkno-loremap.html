@@ -22,23 +22,24 @@
 <div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:var(--taggrid);border:5px solid rgb(var(--redd));font-size:inherit'>
 <div class=tagcategory><h1>Universes</h1>
     <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline fkno'style=background-image:url(../img/chr_eye.png) value='#vanilla fkno'>
-    <a class='fkno smol' href="javascript:RevealTagCategory('fkno')">» Open/Close all tag categories</a><br>
+    <a class='fkno smol' href="javascript:RevealTagCategory('fkno')">» Vanilla FKNO: Open/Close all tag categories</a><br>
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#chert’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#esker’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#feldspar’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline scau'style=background-image:url(../img/chr_hea_firn.png) value='#firn’s universe'> -->
+    <!-- <a class='scau smol' href="javascript:RevealTagCategory('scau')">» Firn’s Universe: Open/Close all tag categories</a><br> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline ahau'style=background-image:url(../img/chr_hea_gabbro.png) value='#gabbro’s universe'> -->
+    <!-- <a class='ahau smol' href="javascript:RevealTagCategory('ahau')">» Gabbro’s Universe: Open/Close all tag categories</a><br> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#gossan’s universe'> -->
     <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline mau'style=background-image:url(../img/chr_hea_hal.png) value='#hal’s universe'>
-    <a class='mau smol' href="javascript:RevealTagCategory('mau')">» Open/Close all tag categories</a><br>
+    <a class='mau smol' href="javascript:RevealTagCategory('mau')">» Hal’s Universe: Open/Close all tag categories</a><br>
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_hornfels.png) value='#hornfels’ universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#riebeck’s universe'> -->
     <!-- <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline   au'style=background-image:url(../img/chr_hea_.png) value='#slate’s universe'> -->
 </div>
 <!-- @EFOLD -->
 <!-- @SFOLD — Tags List: Characters & Organizations -->
-<div class=tagcategory><h1>Characters & Organizations</h1>
-    <h2>Hearthians</h2>
+<div class=tagcategory><h1>Characters &<br>Organizations</h1>
     <details class=fkno><summary>Vanilla FKNO</summary><div>
         <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline misc'style=background-image:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png) value='#hearthians (vanilla)'>
         <input type=button onclick=AddTagSelector(this.value) value='#outer wilds ventures (vanilla)'>
@@ -64,6 +65,8 @@
         <span class=infoa><input type=button onclick=AddTagSelector(this.value) value='#tektite (vanilla)'><span class=infob><img src=../img/chr_hea_tektite.png></span></span>
         <span class=infoa><input type=button onclick=AddTagSelector(this.value) value='#tephra (vanilla)'><span class=infob><img src=../img/chr_hea_tephra.png></span></span>
         <span class=infoa><input type=button onclick=AddTagSelector(this.value) value='#tuff (vanilla)'><span class=infob><img src=../img/chr_hea_tuff.png></span></span>
+        <!-- <hr><input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline'style=--fore:var(--redd);background-image:url(../img/NOM.png) value='#nomai (vanilla)'> -->
+        <!-- <hr><input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline'style=--fore:var(--greend);background-image:url(../img/STG.png) value='#owlks (vanilla)'> -->
     </div></details>
     <details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
         <input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline misc'style=background-image:url(../img/Steam_Emoticon_Big_Hearthian_Wink.png) value='#hearthians (hal’s universe)'>
@@ -242,9 +245,10 @@
 -->
 </div>
 <!-- @EFOLD -->
-<input type=button onclick=AddTagSelector(this.value) value='#general data'style=display:none>
-<input type=button onclick=AddTagSelector(this.value) value='#keep'style=display:none>
-</div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div>
+<div style=display:none>
+    <input type=button onclick=AddTagSelector(this.value) value='#general data'>
+    <input type=button onclick=AddTagSelector(this.value) value='#keep'>
+</div></div><h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div style='position:relative;width:90%;margin:17px auto'><div id=activetags></div>
 <input id=openclosesh type=button value='Open/Close All'onclick=opencloseall()><input id=resetsearch type=button value=Reset onclick=ResetTagSelector()><input id=startsearch type=button value=Search! onclick=FilterItems()></div><div id=filterlist>
 <!-- @EFOLD -->
 <!-- @SFOLD [WIP] Non-expanding Lore Cards -->
