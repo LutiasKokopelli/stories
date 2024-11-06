@@ -67,7 +67,7 @@ function ToggleDLC(){
 function FilterItems(){
     var findli=allit.length;
     for(i=0;i<itags.length;i++){
-        allit[i].style.display='none';
+        if(!allit[i].getElementsByTagName("t")[0].innerHTML.includes("#keep")){allit[i].style.display='none'}
         var checks=true;
         for(tag=0;tag<curtinput.length;tag++){
             if(curtinput[tag].slice(-1)=='0'&& Object.values(itags[i])[0].indexOf(curtinput[tag].slice(0,-1))!=-1){checks=false}
