@@ -304,6 +304,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog p:not(.time){padding:0 1.7em}
 .shiplog p.time{border-bottom:3px solid currentcolor;padding-bottom:.5em;color:rgb(var(--blue));font-size:1.2em;font-weight:600}
 .shiplog h2{font-size:1.7em}
+.shiplog h3{padding:0 17%;line-height:1.7em;color:rgb(var(--greyl))}
 
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
