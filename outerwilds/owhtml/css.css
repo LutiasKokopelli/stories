@@ -350,7 +350,7 @@ scaps,.scaps{font-variant:petite-caps;font-weight:500}
 .nomai:has(+:not(.nomai)),.nomai:last-child{margin-bottom:17px;border-radius:0 0 17px 17px}
 
 p>svg{display:inline-block;height:1.1em;background:currentcolor;vertical-align:middle;margin-top:-3px}
-span.isnomai{font-style:italic;font-family:Space Mono;font-size:.7em}
+span.wrongnomai{font-style:italic;font-family:Space Mono;font-size:.8em}
 
 
 
