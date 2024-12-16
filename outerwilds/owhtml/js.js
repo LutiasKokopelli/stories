@@ -151,3 +151,13 @@ function opencloseall(){
     if(!allit[0].getElementsByTagName("details")[0].open==true){for(i=0;i<allit.length;i++){allit[i].getElementsByTagName("details")[0].open=true}}
     else{for(i=0;i<allit.length;i++){allit[i].getElementsByTagName("details")[0].open=false}}
 }
+function changechp(ch){
+    for(i=0;i<chlist.length;i++){
+        if(chlist[i]===ch){
+            $('#'+chlist[i]).show()
+            if(i<2){$('#prevnext').html('<a href=#'+chlist[i+1]+' onclick="javascript:changechp(\''+chlist[i+1]+'\')">Next &rarr;</a>')}
+            else if(i===chlist.length-1){$('#prevnext').html('<a href=#'+chlist[i-1]+' onclick="javascript:changechp(\''+chlist[i-1]+'\')">&larr; Previous</a>')}
+            else{$('#prevnext').html('<a href=#'+chlist[i-1]+' onclick="javascript:changechp(\''+chlist[i-1]+'\')">&larr; Previous</a> &emsp; <a href=#'+chlist[i+1]+' onclick="javascript:changechp(\''+chlist[i+1]+'\')">Next &rarr;</a>')}
+        }else{$('#'+chlist[i]).hide()}
+    }
+}

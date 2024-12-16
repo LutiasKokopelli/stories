@@ -206,7 +206,7 @@ a:active button{background:rgb(var(--indigod))}
 h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-right:12px}
 
 #navctn{padding:12px;overflow:auto}
-
+#prevnext{text-align:center;font-size:3em;text-shadow:var(--txtshw);font-weight:800}
 
 
 /* OUTER WILDS STUFF */
