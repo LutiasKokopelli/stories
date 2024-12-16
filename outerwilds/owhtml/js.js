@@ -155,9 +155,9 @@ function changechp(ch){
     for(i=0;i<chlist.length;i++){
         if(chlist[i]===ch){
             $('#'+chlist[i]).show()
-            if(i<2){$('#prevnext').html('<a href=#'+chlist[i+1]+' onclick="javascript:changechp(\''+chlist[i+1]+'\')">Next &rarr;</a>')}
-            else if(i===chlist.length-1){$('#prevnext').html('<a href=#'+chlist[i-1]+' onclick="javascript:changechp(\''+chlist[i-1]+'\')">&larr; Previous</a>')}
-            else{$('#prevnext').html('<a href=#'+chlist[i-1]+' onclick="javascript:changechp(\''+chlist[i-1]+'\')">&larr; Previous</a> &emsp; <a href=#'+chlist[i+1]+' onclick="javascript:changechp(\''+chlist[i+1]+'\')">Next &rarr;</a>')}
+            if(i<2){$('#prevnext').html('<a href=#'+chlist[i+1]+' onclick="javascript:changechp(\''+chlist[i+1]+'\')">Next&nbsp;&rarr;</a>')}
+            else if(i===chlist.length-1){$('#prevnext').html('<a href=#'+chlist[i-1]+' onclick="javascript:changechp(\''+chlist[i-1]+'\')">&larr;&nbsp;Previous</a>')}
+            else{$('#prevnext').html('<a href=#'+chlist[i-1]+' onclick="javascript:changechp(\''+chlist[i-1]+'\')">&larr;&nbsp;Previous</a> &emsp; <a href=#'+chlist[i+1]+' onclick="javascript:changechp(\''+chlist[i+1]+'\')">Next&nbsp;&rarr;</a>')}
         }else{$('#'+chlist[i]).hide()}
     }
 }
