@@ -350,7 +350,7 @@ scaps,.scaps{font-variant:petite-caps;font-weight:500}
 .nomai:has(+:not(.nomai)),.nomai:last-child{margin-bottom:17px;border-radius:0 0 17px 17px}
 
 p>svg{display:inline-block;height:1.1em;background:currentcolor;vertical-align:middle;margin-top:-3px}
-span.wrongnomai{font-style:italic;font-family:Space Mono;font-size:.8em}
+span.wrongnomai{font-family:Space Mono;font-size:.8em;background:radial-gradient(rgb(42,110,100),transparent 80%);color:rgb(177,252,252);border-radius:.5em;padding:0 .5em;margin:0 -.5em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 
 
 
