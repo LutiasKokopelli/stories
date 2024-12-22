@@ -1,12 +1,17 @@
 <!-- @SFOLD HTML -->
-<!DOCTYPE html><head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><link rel=stylesheet href=loremap.css>
+<!DOCTYPE html><head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'><meta name=viewport content='width=device-width,initial-scale=1'>
 <meta property=og:type content=article><meta name=theme-color content=#1D4A94>
 <meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff"><meta property=og:title content="Outer Wilds Time Loop Events">
 <meta property=og:description content="A summary of all the scripted events which occur at fixed times during the time loop.">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png><style>
-body{padding-bottom:80vh}table{border-spacing:0;margin:1em auto;max-width:95%}
-table img{display:inline-block;max-height:42px;vertical-align:middle;margin-left:-42px}
+.all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%;padding-bottom:80vh}
+.tagcategory{padding:17px;height:270px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
+.tagcategory h2{font-size:1.7em;opacity:.9}
+.tagcategory img{height:32px;display:inline-block}
+.tagcategory>p> * {vertical-align:middle}
+table{border-spacing:0;margin:1em auto;max-width:95%}
+table img{display:inline-block;max-height:2.2em;margin-left:-2.2em}
 td{padding:0 12px}th{padding:12px}tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
 #calendar th{background:rgba(0,0,0,.8)}
 #calendar th:first-child{border-radius:17px 0 0 17px}
@@ -22,14 +27,17 @@ td{padding:0 12px}th{padding:12px}tr:has(th){position:sticky;top:0;z-index:50;cu
 #calendar tr:last-child td:last-child{border-bottom-right-radius:17px}
 #calendar td:nth-child(n+2){text-align:center;font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
 #calendar td:nth-child(3){text-align:right!important;width:100px}
-input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod))}
-input:not(#resetsearch,#startsearch,#findtaginput):not(.active){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
-input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
+#calendar td>*{vertical-align:middle}
+#calendar p{display:inline-block;padding:0;margin:0;margin-left:.2em}
+a{color:rgb(var(--white))}a:hover{color:#fff}
+input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));font-size:1rem}
+input:not(.active){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
+input.active{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
 #tagselect{width:90%;margin:auto;display:grid;border:5px solid rgb(var(--redd))}
-h1,#disclaimer{;color:rgba(var(--white),.9);text-align:center}
-@media only screen and (orientation:landscape){#tagselect{grid-template-columns:1fr 1fr}h1,#disclaimer{margin:5rem 20vw 2rem 20vw}}
+h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
+@media only screen and (orientation:landscape){#tagselect{grid-template-columns:1fr 1fr}h1,#disclaimer{margin:5rem 20vw 2rem 20vw}p{font-size:22px}}
 @media only screen and (orientation:portrait){#tagselect{grid-template-columns:1fr}h1,#disclaimer{margin:5rem 0 2rem 0}}
-</style><script src=../js.js></script></head><div class=all><h1 style=font-size:72px>Time Loop Calendar</h1><p id=disclaimer></p><div id=tagselect>
+</style><script src=../js.js></script></head><div class=all><h1 style=font-size:4em>Time Loop Calendar</h1><p id=disclaimer></p><div id=tagselect>
 <div class=tagcategory><h2>Astral Bodies</h2>
 <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
 <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
@@ -349,8 +357,7 @@ h1,#disclaimer{;color:rgba(var(--white),.9);text-align:center}
 }</script>
 <!-- @EFOLD -->
 <!-- @SFOLD JAVASCRIPT -->
-</div><script>
-table=document.getElementById('calendar');prevtime=0;isfkno=window.location.href.split('#')[1]=='fkno'
+</div><script>table=document.getElementById('calendar');prevtime=0;isfkno=window.location.href.split('#')[1]=='fkno'
 if(isfkno){document.title+=" (with FKNO additions)";document.getElementById('disclaimer').innerHTML='<b>Warning: You are viewing a version of this page which contains additional, non-canon entries.</b><br><a href=calendar_timeloop.html>Click <b>here</b> to access the version which addresses the events occurring at a scripted time only in the videogame itself.</a>'}
 if(!isfkno){a=document.getElementsByClassName('fknotime');for(i=0;i<a.length;i++){a[i].style.display='none'}}
 function load_calendar(){for(const[k,v]of Object.entries(cdta)){
@@ -358,7 +365,7 @@ function load_calendar(){for(const[k,v]of Object.entries(cdta)){
     if(v["Tags"][0]=='fkno' && !isfkno){continue}
     newtr=document.createElement('tr');newtr.setAttribute('id',k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));table.appendChild(newtr)
     newtd1=document.createElement('td');newtd2=document.createElement('td');newtd3=document.createElement('td')
-    if("Image"in v){newtd1.innerHTML=v["Image"]+k}else{newtd1.innerHTML=k}
+    if("Image"in v){newtd1.innerHTML=v["Image"]+"<p>"+k+"</p>"}else{newtd1.innerHTML="<p>"+k+"</p>"}
     newtd2.innerHTML=GMtime(v["GameTime"])
     newtd3.innerHTML=(Math.round(10*v["GameTime"]/(cdta['End of Loop']['GameTime'])*1000)/100).toFixed(2)
     if("Color"in v){newtd1.style.background=v['Color'];newtd2.style.background=v['Color'];newtd3.style.background=v['Color']}
@@ -367,12 +374,10 @@ function load_calendar(){for(const[k,v]of Object.entries(cdta)){
     prevtime=v["GameTime"]
 }}window.onLoad=load_calendar()
 var allactive=[];function AddTagSelector(btn){
-    if(btn.classList.contains('active')){allactive.splice(allactive.indexOf(btn.value),1);btn.classList.remove('active')}
-    else{allactive.push(btn.value);btn.classList.add('active')}
-    for(const[k,v]of Object.entries(cdta)){
-        ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));flag=true
-        for(i=0;i<allactive.length;i++){if(!(v["Tags"].includes(allactive[i].replace('#','')))){flag=false}}
-        if(v["Tags"].includes('keep')){flag=true}if(flag){ctr.style.display=''}else{ctr.style.display='none'}
-    }
-}</script>
+if(btn.classList.contains('active')){allactive.splice(allactive.indexOf(btn.value),1);btn.classList.remove('active')}else{allactive.push(btn.value);btn.classList.add('active')}
+for(const[k,v]of Object.entries(cdta)){
+    ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));flag=true
+    for(i=0;i<allactive.length;i++){if(!(v["Tags"].includes(allactive[i].replace('#','')))){flag=false}}
+    if(v["Tags"].includes('keep')){flag=true}if(flag){ctr.style.display=''}else{ctr.style.display='none'}
+}}</script>
 <!-- @EFOLD -->
