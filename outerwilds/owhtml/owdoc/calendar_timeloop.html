@@ -1,21 +1,13 @@
 <!-- @SFOLD HTML -->
-<!DOCTYPE html>
-<html><head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css>
-<meta http-equiv=content-type content='text/html;charset=utf-8'>
-<meta name=viewport content='width=device-width,initial-scale=1'>
-<meta property=og:type content=article>
-<meta name=theme-color content=#1D4A94>
-<meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
-<meta property=og:title content="Outer Wilds Time Loop Events">
+<!DOCTYPE html><head><title>Time Loop Calendar</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><link rel=stylesheet href=loremap.css>
+<meta http-equiv=content-type content='text/html;charset=utf-8'><meta name=viewport content='width=device-width,initial-scale=1'>
+<meta property=og:type content=article><meta name=theme-color content=#1D4A94>
+<meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff"><meta property=og:title content="Outer Wilds Time Loop Events">
 <meta property=og:description content="A summary of all the scripted events which occur at fixed times during the time loop.">
-<meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png>
-<style>
-body{padding-bottom:1200px}
-.chp{max-width:unset;width:90%}
-td{padding:0 12px}th{padding:12px}
-table{border-spacing:0;margin:17px auto}
+<meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/img/Decal_HEA_OWVentures_d.png><style>
+body{padding-bottom:80vh}table{border-spacing:0;margin:1em auto;max-width:95%}
 table img{display:inline-block;max-height:42px;vertical-align:middle;margin-left:-42px}
-tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
+td{padding:0 12px}th{padding:12px}tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
 #calendar th{background:rgba(0,0,0,.8)}
 #calendar th:first-child{border-radius:17px 0 0 17px}
 #calendar th:last-child{border-radius:0 17px 17px 0}
@@ -30,43 +22,38 @@ tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
 #calendar tr:last-child td:last-child{border-bottom-right-radius:17px}
 #calendar td:nth-child(n+2){text-align:center;font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
 #calendar td:nth-child(3){text-align:right!important;width:100px}
-.tagcategory{padding:17px;max-height:320px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
-.tagcategory h2{font-size:24px;opacity:.9}
-.tagcategory hr{margin:17px -17px;height:3px;width:calc(100% + 34px)}
-.tagcategory img{height:32px;display:inline-block;border:none;vertical-align:middle}
-.tagcategory p{text-indent:-36px;padding-left:36px}
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod))}
 input:not(#resetsearch,#startsearch,#findtaginput):not(.active){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color:rgb(var(--redd))}
-</style><script src=../js.js></script></head><div class=chp><h1>Time Loop Calendar</h1>
-<div id=tagselect style='width:90%;margin:auto;display:grid;grid-template-columns:1fr 1fr;border:5px solid rgb(var(--redd))'>
+#tagselect{width:90%;margin:auto;display:grid;border:5px solid rgb(var(--redd))}
+h1,#disclaimer{;color:rgba(var(--white),.9);text-align:center}
+@media only screen and (orientation:landscape){#tagselect{grid-template-columns:1fr 1fr}h1,#disclaimer{margin:5rem 20vw 2rem 20vw}}
+@media only screen and (orientation:portrait){#tagselect{grid-template-columns:1fr}h1,#disclaimer{margin:5rem 0 2rem 0}}
+</style><script src=../js.js></script></head><div class=all><h1 style=font-size:72px>Time Loop Calendar</h1><p id=disclaimer></p><div id=tagselect>
 <div class=tagcategory><h2>Astral Bodies</h2>
-    <input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#attlerock'style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#giant’s deep'style='background:url(../img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#interloper'style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#white hole'style='background:url(../img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-    <input value='#deep space satellite'type=button onclick=AddTagSelector(this)>
-    <input value='#quantum moon'style='background:url(../img/astr_qmoon.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
-</div>
-<div class=tagcategory><h2>Sub-Locations</h2>
-<p style=text-indent:0>
+<input value=#sun style='background:url(../img/astr_sun.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#sun station'style='background:url(../img/astr_sunstation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#ash twin'style='background:url(../img/astr_ashtwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#ember twin'style='background:url(../img/astr_embertwin.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#timber hearth'style='background:url(../img/astr_timberhearth.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#attlerock'style='background:url(../img/astr_attlerock.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#brittle hollow'style='background:url(../img/astr_brittlehollow.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#hollow’s lantern'style='background:url(../img/astr_hollowlantern.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#giant’s deep'style='background:url(../img/astr_giantsdeep.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#orbital probe cannon'style='background:url(../img/astr_opc.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#dark bramble'style='background:url(../img/astr_darkbramble.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#interloper'style='background:url(../img/astr_interloper.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#white hole'style='background:url(../img/astr_whitehole.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#white hole station'style='background:url(../img/astr_whiteholestation.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#stranger'style='background:url(../img/astr_stranger.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+<input value='#deep space satellite'type=button onclick=AddTagSelector(this)>
+<input value='#quantum moon'style='background:url(../img/astr_qmoon.png)no-repeat left center;background-size:24px 24px;padding-left:24px'type=button onclick=AddTagSelector(this)>
+</div><div class=tagcategory><h2>Sub-Locations</h2><p style=text-indent:0>
     <input value='#location accessibility'type=button onclick=AddTagSelector(this)>
     <input value='#warp tower'type=button onclick=AddTagSelector(this)>
     <input value='#warp window'type=button onclick=AddTagSelector(this)>
-    <input value='#hearthian clock'type=button onclick=AddTagSelector(this)>
-</p>
-<p><img src=../img/astr_ashtwin.png>
+    <input value='#hearthian clock'type=button onclick=AddTagSelector(this) class=fknotime>
+</p><p><img src=../img/astr_ashtwin.png>
     <input value='#ash twin project'type=button onclick=AddTagSelector(this)>
 </p><p><img src=../img/astr_embertwin.png>
     <input value='#sunless city'type=button onclick=AddTagSelector(this)>
@@ -80,8 +67,7 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     <input value='#control module' type=button onclick=AddTagSelector(this)>
     <input value='#launch module' type=button onclick=AddTagSelector(this)>
     <input value='#probe tracking module' type=button onclick=AddTagSelector(this)>
-</p>
-</div></div><table id=calendar><tr><th>Event</th><th width=110px>Game Time</th><th width=100px>% of Loop</th><th width=200px>FKNO Hearthian Time</th></tr></table>
+</p></div></div><table id=calendar><tr><th>Event</th><th width=110px>Game Time</th><th width=100px>% of Loop</th><th width=200px class=fknotime>FKNO Hearthian Time</th></tr></table>
 <!-- @EFOLD -->
 <!-- @SFOLD JSON -->
 <script>const cdta={
@@ -93,8 +79,10 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
 //     "GameTime":,"Tags":["brittle hollow","location accessibility"],"Image":"<img src=../img/astr_brittlehollow.png>"
 // }
 
+// FKNO ONLY: Time at which the 8th mask falls off the ATP? About 10s in-game after the earliest warp window?
+
 // When is the Interloper’s core accessible?
-// Attlerock eclipses: from *where* on TH are they visible? Unhide them after you’ve changed their names & given this indication.
+// Attlerock eclipses: from *where* on TH are they visible? Show them after you’ve changed their names & given this indication.
 
 // Sun station WARP WINDOWS:
 // 05:30.7
@@ -135,9 +123,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     //     "GameTime":,"Tags":[],"Color":"","Image":""
     // },
 
-    "113 Crickets Eclipse":{
-        "GameTime":46.1,"Attlerock/Sun angle":[310.777,310.760],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "113 Crickets Eclipse":{
+    //     "GameTime":46.1,"Attlerock/Sun angle":[310.777,310.760],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "First Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":1*60+43,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
@@ -150,9 +138,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Deep Space Satellite Angle = 40°":{
         "GameTime":3*60+21,"Tags":["deep space satellite","stranger","location accessibility"]
     },
-    "114 Midday Eclipse":{
-        "GameTime":3*60+41.9,"Attlerock/Sun angle":[102.816,102.894],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "114 Midday Eclipse":{
+    //     "GameTime":3*60+41.9,"Attlerock/Sun angle":[102.816,102.894],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "The Interloper is at its Perihelion (closest to the sun)<b style=display:none>1</b>":{
         "GameTime":3*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
@@ -171,9 +159,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The glass ceilings of the Ash & Ember Twin warp towers, the bottom of the Ember Twin tower’s gravity beam, and the bridge linking the two towers, start peeking out of the sand":{
         "GameTime":5*60+24,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
-    "114 Midnight Eclipse":{
-        "GameTime":6*60+37.8,"Attlerock/Sun angle":[255.146,255.115],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "114 Midnight Eclipse":{
+    //     "GameTime":6*60+37.8,"Attlerock/Sun angle":[255.146,255.115],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "The Stranger’s solar sails start deploying (sound cue)":{
         "GameTime":6*60+48,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
     },
@@ -195,9 +183,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Second Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":8*60+39,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
-    "115 Forenoon Eclipse":{
-        "GameTime":9*60+33.6,"Attlerock/Sun angle":[47.184,47.250],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "115 Forenoon Eclipse":{
+    //     "GameTime":9*60+33.6,"Attlerock/Sun angle":[47.184,47.250],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "The Sun starts to expand":{
         "GameTime":10*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv2_SubGiant.png>"
     },
@@ -213,9 +201,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Second Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":12*60+3,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
     },
-    "115 Dusk Eclipse":{
-        "GameTime":12*60+29.5,"Attlerock/Sun angle":[199.515,199.471],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "115 Dusk Eclipse":{
+    //     "GameTime":12*60+29.5,"Attlerock/Sun angle":[199.515,199.471],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "Hourglass Twins Warp Window<b style=display:none>3</b>":{
         "GameTime":12*60+44.3,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
@@ -237,9 +225,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Hourglass Twins Warp Window<b style=display:none>4</b>":{
         "GameTime":15*60+10.0,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
-    "115 Sunrise Eclipse":{
-        "GameTime":15*60+25.3,"Attlerock/Sun angle":[351.553,351.606],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "115 Sunrise Eclipse":{
+    //     "GameTime":15*60+25.3,"Attlerock/Sun angle":[351.553,351.606],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "Third Sunrise of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":15*60+35,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
@@ -249,9 +237,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "Hourglass Twins Warp Window<b style=display:none>5</b>":{
         "GameTime":17*60+35.6,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:0>"
     },
-    "116 Undern Eclipse":{
-        "GameTime":18*60+21.2,"Attlerock/Sun angle":[143.883,143.827],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "116 Undern Eclipse":{
+    //     "GameTime":18*60+21.2,"Attlerock/Sun angle":[143.883,143.827],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "Third Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":18*60+59,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
     },
@@ -276,9 +264,9 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     "The Red Giant reaches its maximal size":{
         "GameTime":21*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png>"
     },
-    "116 Crickets Eclipse":{
-        "GameTime":21*60+17,"Attlerock/Sun angle":[295.922,295.962],"Tags":["hide","timber hearth","hearthian clock"]
-    },
+    // "116 Crickets Eclipse":{
+    //     "GameTime":21*60+17,"Attlerock/Sun angle":[295.922,295.962],"Tags":["fkno","timber hearth","hearthian clock"]
+    // },
     "The Sun starts to collapse":{
         "GameTime":22*60,"Tags":["sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv4_Star_Collapse.png>"
     },
@@ -313,7 +301,7 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
         "GameTime":22*60+30,"Tags":["brittle hollow","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_brittlehollow.png>"
     },
     "<i>Fourth Sunrise of the Loop</i> (from Timber Hearth’s Spawn Point, after Timber Hearth was destroyed)":{
-        "GameTime":22*60+31,"Tags":["hide","timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
+        "GameTime":22*60+31,"Tags":["fkno","timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
     "Supernova reaches the Probe Tracking Module <smol>(Core of Giant’s Deep)</smol>":{
         "GameTime":22*60+33,"Tags":["probe tracking module","orbital probe cannon","giant’s deep","sun"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_giantsdeep.png><img src=../img/astr_opc.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
@@ -348,59 +336,43 @@ input.active{background-color:rgb(var(--redd))!important;color:#fff;border-color
     // "":{
     //     "GameTime":,"Tags":[],"Color":"","Image":""
     // },
-    "End of Loop":{
-        "GameTime":22*60+40,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
-    },
+
     "End of Loop: Purple lines cutscene starts":{
         "GameTime":22*60+40,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
     },
     "End of Loop: Purple lines cutscene stops, fade to black":{
         "GameTime":22*60+43,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
     },
-    // "End of Loop":{
-    //     "GameTime":22*60+43.314,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
-    // },
+    "End of Loop":{
+        "GameTime":22*60+43.314,"Tags":["keep"],"Color":"rgba(var(--greenl),.42)"
+    },
 }</script>
 <!-- @EFOLD -->
 <!-- @SFOLD JAVASCRIPT -->
-<script>
-table=document.getElementById('calendar')
-var prevtime=0
-function load_calendar(){
-    for(const[k,v]of Object.entries(cdta)){
-        // console.log("NEW EVENT:\nName: "+k+"\nTime: "+v["GameTime"])
-        if(prevtime>v["GameTime"]){
-            window.alert("Some events seem to be out of order! (Or two different events have the same name, thus resulting in this error.)\n\nThe following event should be moved up in the chronology:\n"+k+"\n\nIts provided timing is: "+v["GameTime"]+"\n\nThe problematic timing (from the event right before) is: "+prevtime+"\n")
-        }
-        newtr=document.createElement('tr');newtr.setAttribute('id',k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));table.appendChild(newtr)
-        newtd1=document.createElement('td');newtd2=document.createElement('td');newtd3=document.createElement('td');newtd5=document.createElement('td')
-        if("Image"in v){newtd1.innerHTML=v["Image"]+k}else{newtd1.innerHTML=k}
-        newtd2.innerHTML=GMtime(v["GameTime"])
-        newtd3.innerHTML=(Math.round(10*v["GameTime"]/(cdta['End of Loop']['GameTime'])*1000)/100).toFixed(2)
-        newtd5.innerHTML=HMsecs2THtime(v["GameTime"])
-        if("Color"in v){newtd1.style.background=v['Color'];newtd2.style.background=v['Color'];newtd3.style.background=v['Color'];newtd5.style.background=v['Color']}
-        newtr.appendChild(newtd1);newtr.appendChild(newtd2);newtr.appendChild(newtd3);newtr.appendChild(newtd5)
-        if(v["Tags"][0]=='hide'){newtr.style.display='none'}
-        prevtime=v["GameTime"]
-    }
-}
-window.onLoad=load_calendar()
-var allactive=[]
-function AddTagSelector(btn){
-    if(btn.classList.contains('active')){
-        allactive.splice(allactive.indexOf(btn.value),1)
-        btn.classList.remove('active')
-    }else{
-        allactive.push(btn.value)
-        btn.classList.add('active')
-    }
+</div><script>
+table=document.getElementById('calendar');prevtime=0;isfkno=window.location.href.split('#')[1]=='fkno'
+if(isfkno){document.title+=" (with FKNO additions)";document.getElementById('disclaimer').innerHTML='<b>Warning: You are viewing the FKNO-related version of this page.</b><br><a href=calendar_timeloop.html>Click here to access the version which addresses the events occurring at a scripted time only in the videogame itself.</a>'}
+if(!isfkno){a=document.getElementsByClassName('fknotime');for(i=0;i<a.length;i++){a[i].style.display='none'}}
+function load_calendar(){for(const[k,v]of Object.entries(cdta)){
+    if(prevtime>v["GameTime"]){window.alert("Some events seem to be out of order! (Or two different events have the same name, thus resulting in this error.)\n\nThe following event should be moved up in the chronology:\n"+k+"\n\nIts provided timing is: "+v["GameTime"]+"\n\nThe problematic timing (from the event right before) is: "+prevtime+"\n")}
+    if(v["Tags"][0]=='fkno' && !isfkno){continue}
+    newtr=document.createElement('tr');newtr.setAttribute('id',k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));table.appendChild(newtr)
+    newtd1=document.createElement('td');newtd2=document.createElement('td');newtd3=document.createElement('td')
+    if("Image"in v){newtd1.innerHTML=v["Image"]+k}else{newtd1.innerHTML=k}
+    newtd2.innerHTML=GMtime(v["GameTime"])
+    newtd3.innerHTML=(Math.round(10*v["GameTime"]/(cdta['End of Loop']['GameTime'])*1000)/100).toFixed(2)
+    if("Color"in v){newtd1.style.background=v['Color'];newtd2.style.background=v['Color'];newtd3.style.background=v['Color']}
+    newtr.appendChild(newtd1);newtr.appendChild(newtd2);newtr.appendChild(newtd3)
+    if(isfkno){newtd5=document.createElement('td');newtd5.innerHTML=HMsecs2THtime(v["GameTime"]);if("Color"in v){newtd5.style.background=v['Color']};newtr.appendChild(newtd5)}
+    prevtime=v["GameTime"]
+}}window.onLoad=load_calendar()
+var allactive=[];function AddTagSelector(btn){
+    if(btn.classList.contains('active')){allactive.splice(allactive.indexOf(btn.value),1);btn.classList.remove('active')}
+    else{allactive.push(btn.value);btn.classList.add('active')}
     for(const[k,v]of Object.entries(cdta)){
         ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));flag=true
         for(i=0;i<allactive.length;i++){if(!(v["Tags"].includes(allactive[i].replace('#','')))){flag=false}}
-        if(v["Tags"].includes('keep')){flag=true}
-        if(v["Tags"].includes('hide')){flag=false}
-        if(flag){ctr.style.display=''}else{ctr.style.display='none'}
+        if(v["Tags"].includes('keep')){flag=true}if(flag){ctr.style.display=''}else{ctr.style.display='none'}
     }
-    if(allactive.length===0){for(const[k,v]of Object.entries(cdta)){if(!v["Tags"].includes('hide')){ctr=document.getElementById(k.replace(/[^\x00-\x7F]/g,'').replace(/ /g,''));ctr.style.display=''}}}
-}</script></div></body></html>
+}</script>
 <!-- @EFOLD -->
