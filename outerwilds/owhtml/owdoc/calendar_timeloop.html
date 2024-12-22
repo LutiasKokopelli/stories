@@ -351,7 +351,7 @@ h1,#disclaimer{;color:rgba(var(--white),.9);text-align:center}
 <!-- @SFOLD JAVASCRIPT -->
 </div><script>
 table=document.getElementById('calendar');prevtime=0;isfkno=window.location.href.split('#')[1]=='fkno'
-if(isfkno){document.title+=" (with FKNO additions)";document.getElementById('disclaimer').innerHTML='<b>Warning: You are viewing the FKNO-related version of this page.</b><br><a href=calendar_timeloop.html>Click here to access the version which addresses the events occurring at a scripted time only in the videogame itself.</a>'}
+if(isfkno){document.title+=" (with FKNO additions)";document.getElementById('disclaimer').innerHTML='<b>Warning: You are viewing a version of this page which contains additional, non-canon entries.</b><br><a href=calendar_timeloop.html>Click <b>here</b> to access the version which addresses the events occurring at a scripted time only in the videogame itself.</a>'}
 if(!isfkno){a=document.getElementsByClassName('fknotime');for(i=0;i<a.length;i++){a[i].style.display='none'}}
 function load_calendar(){for(const[k,v]of Object.entries(cdta)){
     if(prevtime>v["GameTime"]){window.alert("Some events seem to be out of order! (Or two different events have the same name, thus resulting in this error.)\n\nThe following event should be moved up in the chronology:\n"+k+"\n\nIts provided timing is: "+v["GameTime"]+"\n\nThe problematic timing (from the event right before) is: "+prevtime+"\n")}
