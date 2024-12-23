@@ -18,13 +18,14 @@ td{padding:0 12px}th{padding:12px}tr:has(th){position:sticky;top:0;z-index:50;cu
 #calendar th:last-child{border-radius:0 17px 17px 0}
 #calendar td:first-child{border-left:3px solid rgb(var(--white));padding-left:42px}
 #calendar td:last-child{border-right:3px solid rgb(var(--white))}
-#calendar tr:hover{background:rgba(var(--blue),.42)}
+#calendar tr:hover:not(:first-child,:nth-child(2),:last-child){background:rgba(var(--blue),.42)}
 #calendar tr:nth-child(2) td{border-top:3px solid rgb(var(--white))}
 #calendar tr:nth-child(2) td:first-child{border-top-left-radius:17px}
 #calendar tr:nth-child(2) td:last-child{border-top-right-radius:17px}
 #calendar tr:last-child td{border-bottom:3px solid rgb(var(--white))}
 #calendar tr:last-child td:first-child{border-bottom-left-radius:17px}
 #calendar tr:last-child td:last-child{border-bottom-right-radius:17px}
+#calendar td:first-child{text-align:left}
 #calendar td:nth-child(n+2){text-align:center;font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
 #calendar td:nth-child(3){text-align:right!important;width:100px}
 #calendar td>*{vertical-align:middle}
@@ -139,10 +140,10 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":1*60+43,"Tags":["timber hearth","hearthian clock"],"Color":"rgba(var(--goldd),.2)","Image":"<img src=../img/astr_timberhearth.png>"
     },
     "Sand starts draining off Ash Twin and flowing to Ember Twin":{
-        "GameTime":2*60,"Tags":["hourglass twins","ember twin","ash twin"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":2*60,"Tags":["hourglass twins","ember twin","ash twin"],"Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "The top of the Ember Twin warp tower starts peeking out of the sand":{
-        "GameTime":3*60+11,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":3*60+11,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "Deep Space Satellite Angle = 40°":{
         "GameTime":3*60+21,"Tags":["deep space satellite","stranger","location accessibility"]
@@ -154,7 +155,7 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":3*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "The second floor of the Ember Twin warp tower becomes accessible":{
-        "GameTime":4*60+16,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":4*60+16,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "First Sunset of the Loop <smol>(from Timber Hearth’s Spawn Point)</smol>":{
         "GameTime":5*60+7,"Tags":["timber hearth","hearthian clock"],"Image":"<img src=../img/astr_timberhearth.png>"
@@ -166,7 +167,7 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":5*60+20,"Tags":["ash twin","sun station","warp tower","location accessibility"],"Image":"<img src=../img/astr_sunstation.png>"
     },
     "The glass ceilings of the Ash & Ember Twin warp towers, the bottom of the Ember Twin tower’s gravity beam, and the bridge linking the two towers, start peeking out of the sand":{
-        "GameTime":5*60+24,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":5*60+24,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     // "114 Midnight Eclipse":{
     //     "GameTime":6*60+37.8,"Attlerock/Sun angle":[255.146,255.115],"Tags":["fkno","timber hearth","hearthian clock"]
@@ -178,13 +179,13 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":7*60,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
     },
     "The Ash & Ember Twin towers’ warp platforms become accessible":{
-        "GameTime":7*60+5,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":7*60+5,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "Sun Station Warp Window<b style=display:none>1</b>":{
         "GameTime":7*60+10,"Tags":["sun station","warp window","location accessibility","warp tower"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_sunstation.png>"
     },
     "Hourglass Twins Warp Window<b style=display:none>1</b>":{
-        "GameTime":7*60+53.2,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":7*60+53.2,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "The Interloper is at its Aphelion (furthest away from the sun)<b style=display:none>1</b>":{
         "GameTime":7*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
@@ -199,10 +200,10 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":10*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../img/Steam_Lv2_Subgiant.png>"
     },
     "Hourglass Twins Warp Window<b style=display:none>2</b>":{
-        "GameTime":10*60+18.7,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":10*60+18.7,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "The Sun Station is engulfed by the sun":{
-        "GameTime":11*60+30,"Tags":["sun station","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 10px 0 -33px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
+        "GameTime":11*60+30,"Tags":["sun station","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<span style=padding-top:32px><img src=../img/Steam_Lv3_Red_Giant.png><img src=../img/astr_sunstation.png style='height:24px;margin:0 0 8px -32px;filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'></span>"
     },
     "The Interloper is at its Perihelion (closest to the sun)<b style=display:none>2</b>":{
         "GameTime":11*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
@@ -214,7 +215,7 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
     //     "GameTime":12*60+29.5,"Attlerock/Sun angle":[199.515,199.471],"Tags":["fkno","timber hearth","hearthian clock"]
     // },
     "Hourglass Twins Warp Window<b style=display:none>3</b>":{
-        "GameTime":12*60+44.3,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":12*60+44.3,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "The Stranger’s dam bursts":{
         "GameTime":13*60,"Tags":["stranger"],"Image":"<img src=../img/astr_stranger.png>"
@@ -232,7 +233,7 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":15*60,"Tags":["quantum moon","hourglass twins","ember twin","location accessibility"],"Image":"<img src=../img/astr_qmoon.png>"
     },
     "Hourglass Twins Warp Window<b style=display:none>4</b>":{
-        "GameTime":15*60+10.0,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":15*60+10.0,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     // "115 Sunrise Eclipse":{
     //     "GameTime":15*60+25.3,"Attlerock/Sun angle":[351.553,351.606],"Tags":["fkno","timber hearth","hearthian clock"]
@@ -244,7 +245,7 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":15*60+58,"Tags":["interloper"],"Image":"<img src=../img/astr_interloper.png>"
     },
     "Hourglass Twins Warp Window<b style=display:none>5</b>":{
-        "GameTime":17*60+35.6,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":17*60+35.6,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     // "116 Undern Eclipse":{
     //     "GameTime":18*60+21.2,"Attlerock/Sun angle":[143.883,143.827],"Tags":["fkno","timber hearth","hearthian clock"]
@@ -256,10 +257,10 @@ h1,#disclaimer{color:rgba(var(--white),.9);text-align:center}b{font-weight:800}
         "GameTime":19*60+48,"Tags":["interloper","sun","location accessibility"],"Color":"rgba(var(--indigol),.34)","Image":"<img src=../img/astr_interloper.png style='filter:drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)drop-shadow(0 0 .5px black)'>"
     },
     "Hourglass Twins Warp Window<b style=display:none>6</b>":{
-        "GameTime":20*60+1.1,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":20*60+1.1,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "Sand stops flowing between Ash Twin and Ember Twin":{
-        "GameTime":20*60+20,"Tags":["hourglass twins","ember twin","ash twin"],"Image":"<img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-2px>"
+        "GameTime":20*60+20,"Tags":["hourglass twins","ember twin","ash twin"],"Image":"<span><img src=../img/astr_embertwin.png style=height:21px><img src=../img/astr_ashtwin.png style=height:21px;margin-left:-5px></span>"
     },
     "The Cinder Isles tower completely falls":{
         "GameTime":20*60+30,"Tags":["stranger","location accessibility"],"Image":"<img src=../img/astr_stranger.png>"
