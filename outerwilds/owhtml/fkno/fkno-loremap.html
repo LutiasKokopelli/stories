@@ -1,6 +1,5 @@
 <!-- @SFOLD Header -->
-<!DOCTYPE html>
-<html><head><title>FKNO Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><link rel=stylesheet href=fkno-loremap.css>
+<!DOCTYPE html><html><head><title>FKNO Lore Map</title><link rel=icon href=../img/favicon.ico><link rel=stylesheet href=../css.css><link rel=stylesheet href=fkno-loremap.css>
 <meta http-equiv=content-type content='text/html;charset=utf-8'>
 <meta name=viewport content='width=device-width,initial-scale=.5,interactive-widget=overlays-content'>
 <meta property=og:type content=article>
@@ -275,7 +274,7 @@
 <!-- @EFOLD -->
 <!-- @SFOLD [WIP] Finished Lore Cards -->
 <!-- @SFOLD Hearthian calendar -->
-<it><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
+<it id=vanheacalendar><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
     <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
     <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b>, with the notable detail that the OPC actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the OPC firing and people “waking up” with their new memories don’t happen <i>exactly</i> at the start of the loop).</li>
     <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
@@ -287,7 +286,7 @@
     <li>A <b class=indigol>Hearthian day</b> (our equivalent to a 24h ‘day’) is made of 52 eclipses and <b class=orng>22 day/night cycles</b>, of which the first 11 are considered “daytime” and the other 11 considered “nighttime.” Hatchlings sleep the most, while adults will tend to be active for longer in order to help the community. In human units, a Hearthian day lasts <b class=greenl>25h 22min 44s</b>.</li>
     <li>A <b class=indigol>Hearthian week</b> starts with an <b>eclipse sunrise</b>. A week contains <b class=orng>309 sunrises</b> split into <b class=orng>14 days with one extra sunrise</b> at the end.</li>
     <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
-    <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9:45AM” and end at roughly “1PM.”</li>
+    <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the week, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate that into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9am” and end at roughly “12:30pm.”</li>
 </ul></div></details><t>#hearthian culture (vanilla) #general data #vanilla fkno #hearthians (vanilla)</t></it>
 <!-- @EFOLD -->
 <!-- @SFOLD Hearthian reproduction system -->
@@ -494,6 +493,7 @@
 <!-- @EFOLD -->
 <!-- @SFOLD Javascript -->
 <i id=nofind style=display:none;text-align:center;column-span:all>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i></div></div><script>
+curtid=window.location.href.split('#')[1];if(curtid){getcard(curtid)}
 const nofind=document.getElementById("nofind"),
 filterlist=document.getElementById("filterlist"),
 allit=filterlist.getElementsByTagName("it"),
