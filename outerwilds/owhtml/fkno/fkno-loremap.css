@@ -19,6 +19,7 @@ dlgprt{width:1em;display:inline-block;height:.7em;background:url("data:image/svg
 .tagcategory img{height:32px;display:inline-block;vertical-align:middle}
 .tagcategory .infob{max-width:5vh}
 input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle}
+input:hover{filter:brightness(150%)}
 input:not(#resetsearch,#startsearch,#findtaginput,#openclosesh):not(.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
 input:not(#resetsearch,#startsearch,#findtaginput){font-size:.7em}
 .include{background-color:rgb(var(--greend))!important;color:#fff;border-color:rgb(var(--greend))}
