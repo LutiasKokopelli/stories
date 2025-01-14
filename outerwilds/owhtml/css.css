@@ -308,7 +308,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 
 orng,.red{color:rgb(var(--orng))}
 .orng{color:rgb(var(--orng2))}
-.grey{color:grey}
+.grey{opacity:.8}
 blue,.blue{color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
 .lblue{color:lightblue}
@@ -330,13 +330,20 @@ code{font-family:Space Mono}
 .smol{font-size:.8em}
 scaps,.scaps{font-variant:petite-caps;font-weight:500}
 .radio{
-    color:transparent;
-    mix-blend-mode:plus-lighter;
-    background-clip:text;-webkit-background-clip:text;
-    filter:contrast(1000%);
     font-weight:500;
+    color:transparent;
+    background:rgb(50,50,50);
+    background-clip:text;-webkit-background-clip:text;
+    filter:brightness(150%)contrast(120%);
     animation:.5s 0s glitch infinite
 }
+/* .radio {
+  filter: contrast(500%);
+  text-shadow: 0 0 0 currentColor;
+} */
+
+
+
 @keyframes glitch {
     0% {background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.5' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3Crect width='100%25' height='100%25' fill='white' opacity='.2'/%3E%3C/svg%3E")}
     25%{background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 50 50' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.4' numOctaves='1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3Crect width='100%25' height='100%25' fill='white' opacity='.2'/%3E%3C/svg%3E")}
@@ -348,9 +355,10 @@ scaps,.scaps{font-variant:petite-caps;font-weight:500}
 .nomai{padding:17px;text-align:center;width:87%;font-family:Space Mono,Monospace;background:radial-gradient(rgb(42,110,100),black 80%);margin:0 auto;text-shadow:0 0 1.2em currentcolor;text-indent:0!important;color:rgb(177,252,252);box-shadow:0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8),0 0 17px rgba(0,0,0,.8)}
 :not(.nomai)+.nomai,.nomai:first-child{margin-top:17px;border-radius:17px 17px 0 0}
 .nomai:has(+:not(.nomai)),.nomai:last-child{margin-bottom:17px;border-radius:0 0 17px 17px}
+:not(.nomai)+.nomai:has(+:not(.nomai)){border-radius:17px}
 
 p>svg{display:inline-block;height:1.1em;background:currentcolor;vertical-align:middle;margin-top:-3px}
-span.wrongnomai{font-family:Space Mono;font-size:.8em;background:radial-gradient(rgb(42,110,100),transparent 80%);color:rgb(177,252,252);border-radius:.5em;padding:0 .5em;margin:0 -.5em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+span.wrongnomai{font-family:Space Mono;font-size:.8em;text-shadow:0 0 .2em currentcolor;filter:invert(5%)sepia(8%)saturate(1863%)hue-rotate(147deg)brightness(103%)contrast(98%)}
 
 
 
@@ -445,6 +453,8 @@ b{font-weight:500}
 .shiplog .hudgrey ul{border:2px solid grey;box-shadow:-1px 1px 1px grey}
 .shiplog .hudgrey li:before{color:grey}
 .shiplog .grey{color:grey}
+
+
 
 .shiplog li:has(+ul){border-bottom:2px solid grey;display:inline-block}
 
