@@ -1,0 +1,538 @@
+<!--@SFOLD-->
+<!DOCTYPE html><html><head><title>FKNO Lore Map</title><link rel=icon href=../ast/ico/OWV.png>
+<link rel=stylesheet href=../src/css.css>
+<link rel=stylesheet href=../src/cs-loremap_main.css>
+<link rel=stylesheet href=../src-fkno/cs-loremap.css>
+<meta http-equiv=content-type content='text/html;charset=utf-8'>
+<meta name=viewport content='width=device-width,initial-scale=.5,interactive-widget=overlays-content'>
+<meta property=og:type content=article>
+<meta name=theme-color content=#1D4A94>
+<meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
+<meta property=og:title content="FKNO Lore Map">
+<meta property=og:description content="An interactive compilation of sorts for the main FKNO headcanons and whatnot. Mainly used as Lutias’ own notes whenever she wants to double check something tbh">
+<meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/ast/ico/OWV.png>
+<script src=../src/js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
+<input id=findtaginput onkeyup=FindTag() placeholder='Quick tag search:'>
+<!--@EFOLD-->
+<!--@SFOLD☑️Select Tags-->
+<!--@SFOLD✔️Tags: Universes-->
+<h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2><div id=tagselect><div class=tagcategory><h1>Universes</h1>
+<h3 onclick="javascript:l=this.parentNode.querySelectorAll('input.hasimg.hasoutline');for(u=0;u<l.length;u++){RevealTagCategory(l[u].className.replace('hasimg hasoutline ','').replace('maclude',''))}"style=color:rgb(var(--purplel));font-weight:600;font-size:1.1em>» Toggle all universes’ tag categories</h3>
+<input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline fkno'style=background-image:url(../ast-fkno/ico/chr_eye.png) value='#vanilla fkno'>
+<a class='fkno smol'href="javascript:RevealTagCategory('fkno')">» Vanilla FKNO: Open/Close all tag categories</a><br>
+<input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline mau'style=background-image:url(../ast-fkno/ico/chr_hea_hal.png) value='#hal’s universe'>
+<a class='mau smol'href="javascript:RevealTagCategory('mau')">» Hal’s Universe: Open/Close all tag categories</a><br>
+<input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline scau'style=background-image:url(../ast-fkno/ico/chr_hea_firn.png) value='#firn’s universe'>
+<a class='scau smol'href="javascript:RevealTagCategory('scau')">» Firn’s Universe: Open/Close all tag categories</a><br>
+<input type=button onclick=AddTagSelector(this.value) class='hasimg hasoutline ahau'style=background-image:url(../ast-fkno/ico/chr_hea_gabbro.png) value='#gabbro’s universe'>
+<a class='ahau smol'href="javascript:RevealTagCategory('ahau')">» Gabbro’s Universe: Open/Close all tag categories</a><br>
+</div>
+<!--@EFOLD-->
+<!--@SFOLD☑️Tags: Characters & Groups-->
+<div class=tagcategory><h1>Characters & Groups</h1><h2>Toggle all counterparts:</h2><p>
+<button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value=#hearthians></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#arkose></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#chert></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#esker></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#feldspar></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#firn></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#gabbro></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#galena></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#gneiss></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#gossan></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#hal></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#hornfels></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#marl></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#mica></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#moraine></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#porphy></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#riebeck></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#rutile></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#slate></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#spinel></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#tektite></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#tephra></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!hearthians value=#tuff></button>
+</p><p>
+<button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) value=#nomai></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!nomai value=#solanum></button>
+</p><p>
+<button><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value=#strangers></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=!strangers value='#the prisoner'></button>
+</p>
+<details class=fkno><summary>Vanilla FKNO</summary><div>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) n='hearthians#hearthian culture (vanilla)#hearthian biology (vanilla)'value='#hearthians (vanilla)'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#outer wilds ventures (vanilla)'></button>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#arkose'value='#arkose (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#chert#outer wilds ventures (vanilla)'value='#chert (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#esker#outer wilds ventures (vanilla)'value='#esker (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#feldspar#outer wilds ventures (vanilla)'value='#feldspar (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#firn#outer wilds ventures (vanilla)'value='#firn (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#gabbro#outer wilds ventures (vanilla)'value='#gabbro (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#galena'value='#galena (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#gneiss'value='#gneiss (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#gossan#outer wilds ventures (vanilla)'value='#gossan (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#hal'value='#hal (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#hornfels#outer wilds ventures (vanilla)'value='#hornfels (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#marl'value='#marl (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#mica'value='#mica (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#moraine'value='#moraine (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#porphy'value='#porphy (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#outer wilds ventures (vanilla)#riebeck'value='#riebeck (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#rutile'value='#rutile (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#outer wilds ventures (vanilla)#slate'value='#slate (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#spinel'value='#spinel (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#tektite'value='#tektite (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#tephra'value='#tephra (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (vanilla)#tuff'value='#tuff (vanilla)'>
+</div></details>
+<details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) n=hearthians value='#hearthians (hal’s universe)'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#verdantians></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#lochians></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#jimanese></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#area 22'></button>
+    <hr style=height:1px>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#arkose'value='#arkose (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#chert#area 22'value='#chert cesium'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#esker'value='#esker selenium'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#feldspar'value='#feldspar nitrogen'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#firn'value='#firn gallium'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#gabbro'value='#gabbro astatine'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#galena'value='#galena (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#gneiss'value='#gneiss silver'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#gossan'value='#gossan gallium'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#hornfels'value='#hornfels copper'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#marl'value='#marl (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#mica'value='#mica nitrogen'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#moraine'value='#moraine tungsten'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#porphy'value='#porphy argon'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#riebeck'value='#riebeck gold'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#rutile'value='#rutile (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#slate'value='#slate nitrogen'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#spinel'value='#spinel (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#tektite'value='#tektite (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#tephra'value='#tephra (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians#tuff'value='#tuff (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians'value='#larimar tungsten'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians'value='#syenite nickel'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians'value='#stein wolfram'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#verdantians'value='#mohs (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#lochians'value='#caldera (LAST NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#jimanese#area 22'value='#peat namari'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)'value='#apatite tin'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)'value='#grouan azote'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)'value='#porphy’s tutor (NAME MISSING)'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#lochians'value='#(FIRST NAME MISSING) benzyl'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)'value='#(FIRST NAME MISSING) oxan'>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (hal’s universe)#hal (firn’s universe)'value='#scoria wolfram'>
+</div></details>
+<details class=scau><summary>Firn’s Universe (Star Cruise)</summary><div>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) n=hearthians value='#hearthians (firn’s universe)'></button>
+    <input type=button onclick=AddTagSelector(this.value) n='!hearthians#hearthians (firn’s universe)#scoria wolfram#hal#hearthians (hal’s universe)'value='#hal (firn’s universe)'>
+    <hr>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) n=nomai value='#nomai (firn’s universe)'></button>
+</div></details>
+<details class=ahau><summary>Gabbro’s Universe (Almost Home)</summary><div>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) n=hearthians value='#hearthians (gabbro’s universe)'></button>
+    <hr>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) n=nomai value='#nomai (gabbro’s universe)'></button>
+    <hr>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) n=strangers value='#strangers (gabbro’s universe)'></button>
+</div></details>
+</div>
+<!--@EFOLD-->
+<!--@SFOLD☑️Tags List: Astral Bodies, Satellites, Ships-->
+<div class=tagcategory><h1>Astral Bodies,<br>Satellites, Ships</h1>
+<input type=button onclick=AddTagSelector(this.value) class=hasimg value='#quantum moon'style=background-image:url(../ast/ico/astr_QM.png)>
+<hr style=--fore:var(--redd)>
+<h2>Toggle all iterations of an astral body:<br><span style=font-size:2em;line-height:1em;opacity:1><img onclick="AddTagGroup('#TT')"src=../ast/ico/astr_TT.png><img onclick="AddTagGroup('#CT')"src=../ast/ico/astr_CT.png><img onclick="AddTagGroup('#TH')"src=../ast/ico/astr_TH.png><img onclick="AddTagGroup('#BH')"src=../ast/ico/astr_BH.png><img onclick="AddTagGroup('#GD')"src=../ast/ico/astr_GD.png><img onclick="AddTagGroup('#DB')"src=../ast/ico/astr_DB.png></span></h2>
+<details class=fkno><summary>Vanilla FKNO</summary><div>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=TH value='#timber hearth (vanilla)'style=background-image:url(../ast/ico/astr_TH.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=GD value='#giant’s deep (vanilla)'style=background-image:url(../ast/ico/astr_GD.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=DB value='#dark bramble (vanilla)'style=background-image:url(../ast/ico/astr_DB.png)>
+</div></details>
+<details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=TH value='#timber hearth (hal’s universe)'style=background-image:url(../ast/ico/astr_TH.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=DB value='#distant brine (hal’s universe)'style=background-image:url(../ast/ico/astr_DB.png)>
+</div></details>
+</div>
+<!--@EFOLD-->
+<!--@SFOLD☑️Tags List: Sub-Locations-->
+<div class=tagcategory><h1>Sub-Locations</h1>
+<details class=fkno><summary>Vanilla FKNO</summary><div>
+    <div class=t>
+        <div class=tr><div class=td><img src=../ast/ico/astr_TH.png></div><div class=td>
+            <input value='#the village'type=button onclick=AddTagSelector(this.value)>
+        </div></div>
+    </div><hr><div class=t>
+        <div class=tr><div class=td><img src=../ast/ico/astr_GD.png></div><div class=td>
+            <input value='#tower of quantum trials'type=button onclick=AddTagSelector(this.value)>
+            <input value='#bramble island'type=button onclick=AddTagSelector(this.value)>
+        </div></div>
+    </div>
+</div></details>
+<details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
+    <div class=t>
+        <div class=tr><div class=td><img src=../ast/ico/astr_TH.png></div><div class=td>
+            <input type=button onclick=AddTagSelector(this.value) value='#newt yolk'>
+    </div></div></div>
+</div></details>
+</div>
+<!--@EFOLD-->
+<!--@SFOLD☑️Tags List: Technology & Culture-->
+<div class=tagcategory><h1>Technology & Culture</h1><p>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian technology'></button>
+</p><p>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#nomai technology'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#warp technology'></button>
+    <input type=button onclick=AddTagSelector(this.value) n='nomai technology#warp technology'value='#warp core'>
+    <input type=button onclick=AddTagSelector(this.value) n='nomai technology#warp technology'value='#warp pad/receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='nomai technology'value='#nomai statue'>
+</p>
+
+<details class=fkno><summary>Vanilla FKNO</summary><div>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian culture (vanilla)'></button>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian technology (vanilla)'></button>
+    <input type=button onclick=AddTagSelector(this.value) value='#backstory (vanilla)'n=timeline>
+    <input type=button onclick=AddTagSelector(this.value) n='backstory (vanilla)'value='#gossan’s eye incident (vanilla)'>
+</div></details>
+
+<details class=scau><summary>Firn’s Universe (Star Cruise)</summary><div>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian culture (firn’s universe)'></button>
+    <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian technology (firn’s universe)'></button>
+</div></details>
+
+
+</div>
+<!--@EFOLD-->
+<!--@SFOLD☑️Tags List: Worldbuilding-->
+<div class=tagcategory><h1>Worldbuilding</h1>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value=#physics></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value=#biology></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value=#timeline></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#eye of the universe'></button>
+<input type=button onclick=AddTagSelector(this.value) value='#quantum mechanics'n=physics>
+<input type=button onclick=AddTagSelector(this.value) value='#hearthian biology'n=biology>
+<input type=button onclick=AddTagSelector(this.value) n='warp technology'value='#black/white hole'>
+<input type=button onclick=AddTagSelector(this.value) value='#original observers'>
+<input type=button onclick=AddTagSelector(this.value) n='eye of the universe'value='#eye of the universe (planet)'>
+<input type=button onclick=AddTagSelector(this.value) n='eye of the universe'value='#eye of the universe (entity)'>
+<input type=button onclick=AddTagSelector(this.value) n='eye of the universe'value='#eye of the universe signal'>
+<details class=fkno><summary>Vanilla FKNO</summary><div>
+    <input type=button onclick=AddTagSelector(this.value) value='#hearthian biology (vanilla)'n='hearthian biology'>
+    <input type=button onclick=AddTagSelector(this.value) value='#time loop event'n=timeline>
+    <input type=button onclick=AddTagSelector(this.value) value='#ghost matter'>
+    <input type=button onclick=AddTagSelector(this.value) value='#timber hearth geysers'>
+    <input type=button onclick=AddTagSelector(this.value) value='#giant’s deep cyclones'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep cyclones'value='#anticlockwise cyclones'>
+</div></details>
+<details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
+    <input type=button onclick=AddTagSelector(this.value) value='#backstory (hal’s universe)'n=timeline>
+    <input type=button onclick=AddTagSelector(this.value) value='#timeline (hal’s universe)'n=timeline>
+    <input type=button onclick=AddTagSelector(this.value) value='#hearthian biology (hal’s universe)'n='hearthian biology'>
+    <input type=button onclick=AddTagSelector(this.value) value='#hearthian culture (hal’s universe)'>
+</div></details>
+
+
+</div>
+<!--@EFOLD-->
+<!--@SFOLD✔️Search Bar-->
+<div style=display:none><input type=button onclick=AddTagSelector(this.value) value='#general data'><input type=button onclick=AddTagSelector(this.value) value=#keep></div></div>
+<h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div><div id=activetags></div>
+<input id=srch_opcls type=button value='Open/Close All'onclick=opencloseall()>
+<input id=srch_reset type=button value=Reset onclick=ResetTagSelector()>
+<input id=srch_mode type=button onclick=FocusMode()>
+<input id=srch_start type=button onclick=SwapLogic()>
+</div><div id=savepoint><p>
+<input type=button onclick=CopySearchState() value="Copy current tag list">
+<input id=pastebin type=text placeholder="Paste tag list">
+<input type=button onclick="LoadSearchState(document.getElementById('pastebin').value)"value="Submit new tag list">
+</p><div id=copybin></div></div><div id=filterlist>
+<!--@EFOLD-->
+<!--@EFOLD-->
+<!--@SFOLD✔️Non-expanding Lore Cards-->
+<it id=OGFeldsparDidntContactTHafterCoreOfGD><details class=n><summary>Feldspar was too eager to visit Dark Bramble to contact ground control after coming out of the core of Giant’s Deep.</summary></details><t>#feldspar (vanilla) #dark bramble (vanilla) #outer wilds ventures (vanilla) #backstory (vanilla) #vanilla fkno</t></it>
+<it id=OGFeldsparShipAlreadyDamagedBeforeDBCrash><details class=n><summary>Feldspar’s ship was already in need of minor repairs when they came for Dark Bramble. Their radio was destroyed when they crashed into the vine.</summary></details><t>#feldspar (vanilla) #dark bramble (vanilla) #backstory (vanilla) #vanilla fkno</t></it>
+<it id=OGHeaUnchartedGD_MissingBrambleToQT><details class=n><summary>Before the time loop, Outer Wilds Ventures don’t know that <a href="javascript:getcard('BrambleIslandSankBeneathCurrent')">Bramble Island</a> or the Tower of Quantum Trials exist.</summary></details><t>#giant’s deep (vanilla) #bramble island #tower of quantum trials #outer wilds ventures (vanilla) #vanilla fkno</t></it>
+<it id=SyenAstrology class=mau><details class=n><summary>Syen is into astrology.</summary></details><t>#hal’s universe #syenite nickel</t></it>
+<it id=SyenFrogShirt class=mau><details class=n><summary>Syen wears frog-themed T-shirts.</summary></details><t>#hal’s universe #syenite nickel</t></it>
+<it id=MAUHalVsMoney class=mau><details class=n><summary>Hal will struggle at first to remember up to the word “money,” and will struggle for even longer to grasp the concept.</summary></details><t>#hal’s universe #hal (vanilla) #timeline (hal’s universe)</t></it>
+<it id=MAUGossanJob class=mau><details class=n><summary>Gossan is a miner supervisor working near Newt Yolk.</summary></details><t>#hal’s universe #gossan gallium</t></it>
+<it id=MAUFirnSaxophone class=mau><details class=n><summary>Firn plays the saxophone.</summary></details><t>#hal’s universe #firn gallium</t></it>
+<it id=MAUGossanNoEggs class=mau><details class=n><summary>Gossan’s eggs are infertile and they are denied access to daycare donation centers, to their own despair.</summary></details><t>#hal’s universe #gossan gallium</t></it>
+<it id=SteinNoEggs class=mau><details class=n><summary>Stein’s eggs are infertile and they are denied access to daycare donation centers, to their own despair.</summary></details><t>#hal’s universe #stein wolfram</t></it>
+<it id=OGHeaVsLiveWarp><details class=n><summary>Hearthians have theorized that black hole/white hole warping should be safe, but they never had the opportunity to test it on any living being bigger than a firebee.</summary></details><t>#hearthian technology (vanilla) #outer wilds ventures (vanilla) #warp technology #vanilla fkno</t></it>
+<it id=OGFirnKazoo><details class=n><summary>Firn’s instrument of choice is a kazoo that Hal whittled with Gneiss’ assistance when they were hatchlings, and everybody hates it. Their intended instrument (specifically planned to not be a wind instrument) was never finished due to Firn’s constant disruptions.</summary></details><t>#firn (vanilla) #hal (vanilla) #gneiss (vanilla) #backstory (vanilla) #vanilla fkno</t></it>
+<it id=FirnLeft class=misc><details class=n><summary>Firn is left-handed.</summary></details><t>#firn</t></it>
+<it id=GabbroLeft class=misc><details class=n><summary>Gabbro is left-handed.</summary></details><t>#gabbro</t></it>
+<it id=SyenLeft class=mau><details class=n><summary>Syen is right-handed.</summary></details><t>#hal’s universe #syenite nickel</t></it>
+<it id=LariRight class=mau><details class=n><summary>Lari is left-handed.</summary></details><t>#hal’s universe #larimar tungsten</t></it>
+<it id=PorphyTutorIsJumMarshCEO class=mau><details class=n><summary>Porphy’s tutor is the CEO of Jumbo Marshmallows.</summary></details><t>#hal’s universe #porphy’s tutor (NAME MISSING)</t></it>
+<it id=EyesignalEternal class=misc><details class=n><summary>The Eye is timeless and unchanging. Its signal does not depend on the universe or Original Observer.</summary></details><t>#eye of the universe signal</t></it>
+<it id=BrambleIslandSankBeneathCurrent><details class=n><summary>Bramble Island was picked up by an anticlockwise cyclone and thrown below the current some time between Feldspar left for Dark Bramble and the search party for them began. As such, nobody but Feldspar knows that this island exists.</summary></details><t>#bramble island #outer wilds ventures (vanilla) #vanilla fkno #backstory (vanilla)</t></it>
+<it id=GDIslandsBelowCurrent><details class=n><summary>Multiple of Giant’s Deep’s islands sank below the current throughout the years.</summary></details><t>#giant’s deep (vanilla) #anticlockwise cyclones #vanilla fkno</t></it>
+<it id=SyenBadCook class=mau><details class=n><summary>Syen is a horrible cook.</summary></details><t>#syenite nickel #hal’s universe</t></it>
+<it id=CapeHammock><details class=n><summary>Gabbro may occasionally wear their hammock like a cape. For fun, and because it’s a way to have it on hand in case of need.</summary></details><t>#gabbro (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Finished Lore Cards-->
+<!--@SFOLD✔️OGHEAcalendar-->
+<it id=OGHeaCalendar><details><summary>Hearthian calendar</summary><div class=shiplog><h2>In-Game Observations</h2><ul>
+    <li>All durations and distances are <b class=redl>multiplied by 10</b> compared to their in-game values (…while pretending that the rocket science still makes sense).</li>
+    <li>In human units, the <b class=indigol>time loop</b> lasts <b class=greenl>3h 48min 10s</b>, with the notable detail that the OPC actually takes on average a minute and a half to reorient itself into a different position before it fires, and that people who are paired with statues need some time to process the memories being sent to them before they can wake up (meaning that the OPC firing and people “waking up” with their new memories don’t happen <i>exactly</i> at the start of the loop).</li>
+    <li>Any location on Timber Hearth sees a <b class=indigol>sunrise</b> every <b class=greenl>1h 9min 20s</b>. Additionally, a full rotation of Timber Hearth around the sun (what we would normally call a ‘year’) lasts only <b class=greenl>41min 43s</b>. Since both durations are so short, Hearthians will not associate the words ‘year’ or ‘day’ and ‘night’ to these natural phenomena, but to more artificial constructs.</li>
+</ul></div><div class=shiplog><h2>Extrapolations</h2><ul>
+    <li>The periodicity of the Hearthian calendar is based not only on the position of the sun in the Hearthian sky, but also of the Attlerock’s. Indeed, a <b class=indigol>solar eclipse</b> occurs every <b class=greenl>29min 18s</b> on average, and the time at which the eclipse occurs relative to the village’s sky can be used as a reference.</li>
+    <li>The longest cycle which can be constructed directly from this is the time between two <b class=indigol>perfect eclipse sunrises</b> (during which the Attlerock and sun rise in the sky at the same time as an eclipse), which occurs every <b class=greenl>14days 21h 4min</b> in human units.</li>
+    <li>A natural day/night cycle is called a <b class=indigol>Hearthian sunrise</b>, and would be the human equivalent to an ‘hour.’ <b class=indigol>Hearthian minutes</b> and <b class=indigol>seconds</b> are respectively a 60th and 3600th of a sunrise: a <b class=indigol>Hearthian second</b> is thus a little longer than its human counterpart, and lasts about <b class=greenl>1.16s</b> in human units.</li>
+</ul></div><div class=shiplog><h2>Headcanons</h2><ul>
+    <li>A <b class=indigol>Hearthian day</b> (our equivalent to a 24h ‘day’) is made of 52 eclipses and <b class=orng>22 day/night cycles</b>, of which the first 11 are considered “daytime” and the other 11 considered “nighttime.” Hatchlings sleep the most, while adults will tend to be active for longer in order to help the community. In human units, a Hearthian day lasts <b class=greenl>25h 22min 44s</b>.</li>
+    <li>A <b class=indigol>Hearthian week</b> contains <b class=orng>308 sunrises</b> split into <b class=orng>14 days</b>, with the first week of the year starting with an <b>eclipse sunrise</b>. Every week would start with an eclipse sunrise if they lasted 309 sunrises instead of 308; but for the sake of convenience, the last sunrise of each week is skipped and saved for the end of the year.</li>
+    <li>A <b class=indigol>Hearthian year</b> is comprised of <b class=orng>22 weeks</b>, which allows for each week’s extra sunrise to make for the duration of a full Hearthian day: it thus lasts <b class=orng>309 Hearthian days</b>, or <b class=greenl>about 327 human days</b>.</li>
+    <li>The last day of the year is called the <b class=indigol>Interday</b> and does not belong to any week. This day is reserved for celebrating the end of the year.</li>
+    <li>The <b class=redl>time loop</b> occurs between the 113th and 117th sunrises of the first week of the year, which are the 3rd and 7th sunrises of the 6th day (written respectively as 06d03s and 06d07s). If we were to roughly translate this into some sort of human calendar by squishing the timing into a 24h clock, the loop would start around “9am” and end at about “12:30pm.”</li>
+</ul></div></details><t>#hearthian culture (vanilla) #hearthian culture (firn’s universe) #general data #vanilla fkno</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Hearthian reproduction system-->
+<it id=HeaReproductionBiology class=misc><details><summary>Hearthians’ reproduction system is weird and alien and can be roughly summarized to “Eggs magically appear in a pond.”</summary>
+<p align=center><i>(Look I know how this sounds without context but please hear me out)</i></p>
+<p><b>Note:</b> This lore card specifically details the concept in the case of the vanilla FKNO universe (prior to Hearthians entering the Eye of the universe). Hearthians from other universes will have differences regarding the exact anatomy of both hatchlings and adults due to the different laws of physics and environments, but the general logic behind the reproduction itself remains the same.</p>
+<hr>
+<p>Long story short: Hearthians have no clue what a <i>sexual</i> relationship is (though they do know romance), and have no clear concept of a “parent” in the biological sense or even of genealogy as a whole, because what reproduction entails is just “go to The Pond&trade; instead of the bathroom once a year” and a few months later they just see eggs floating in the water and some Hearthians come with their nets to pick them up. You may think of coral reproduction as an example.</p>
+<hr><p>For the quick rundown into the microscopic scale:</p><ul>
+<li>Hearthian eggs can have <i>way</i> more than only two parents genetically speaking. While submerged in water, multiple proto-eggs will meet each other and occasionally merge, trade and mix around their genetic information, then discard the surplus until there is one complete genome. This genome is made out of random fractions coming from all proto-eggs involved.</li>
+<li>To prevent accidental inbreeding, proto-eggs use among other things an antigen/antibody recognition system which repels and stops proto-eggs from merging if they are too similar to each other. The more different the genomes, the higher the chance of the two proto-eggs to merge and lead to a viable egg.</li>
+<li>Since this merging process involves cutting multiple genomes in pieces of varying sizes and then stitching it all back together (it wouldn’t be <i>completely</i> random but rather done like “cut this/these gene(s) from these two genomes and then swap them around,” except done a thousand times with more than just two genomes), this leads to vastly increased odds for point mutations; mutations are also commonly caused by the sun’s radiation, as Timber Hearth’s atmosphere is much thinner than that of our real world Earth (&larr; except in the case of Hal’s universe).</li>
+<li>Mutations are both a powerful tool to create genetic diversity and lead to a fast evolution of the species… <i>and</i> a very effective way to kill off millions of unborn proto-eggs at the earliest stages. <smol>(Don’t cry too hard, think rather of the dozens to hundreds of millions of spermatozoids who could have been you but were denied entry after only one made it)</smol></li>
+<li>As such, while hundreds of millions of proto-eggs are released each year in the same body of water, only a tiny fraction will ever make it to the stage of creating actual eggs with viable and truly novel genomes, which can start cellular mitosis and eventually grow big enough to become visible to the naked eye.</li></ul>
+<p>This results in an alien and rather awkward mixture between “Nobody knows who is related to who” and “But biology prevents inbreeding all by itself so it’s fine” sprinkled in with “Mutations happen so often anyway that it is a significant factor to the genetic diversity all on its own.” At least from what I was told (I asked a friend who asked geneticians and apparently the geneticians said that it <i>wouldn’t</i> instantly devolve into an inbreeding disaster), this could <i>theoretically</i> work on paper for a fictional genderless alien species.</p>
+<hr><p>Viable eggs look pretty much like real world frog eggs; their transparent, gelatinous shells can expand as the embryo grows and develops. Due to Hearthians’ humanoid anatomy and predator-less environment as they evolved into a civilized society, they evolved to no longer have a tadpole stage (as the connection between the skull and the spine would make them terrible swimmers if they lacked limbs to steady themselves). Therefore, hatchlings are fully formed humanoids upon hatching, and their mental capabilities are from the get-go slightly more advanced than those of a human newborn (the soft shell means that their brains have enough space to be able to develop fully before birth, unlike human babies).</p>
+<p>Once born, hatchlings still have a very thin skin which is sensitive to both humidity and general touch (pretty much like real world frogs, with the common “Don’t touch them, they breathe through their skin” saying). For the first few weeks, newly born hatchlings are cared for with constant warm baths (recreating the conditions from underground geothermal ponds) until their skins progressively thicken and adapt to being exposed to air with a scarce atmosphere, instead of water. Hearthians don’t grow scales, but they do have thicker skin than humans — to the extent that a Hearthian forgetting their spacesuit will die of oxygen deprivation faster than they will because of their body’s exposure to the void.</p>
+<p>The latter point does not apply to Hearthians from Hal’s universe: since the atmosphere is much denser and more humid in general, adult Hearthians do not grow to have thicker skin, and are barely more resistant to changes in humidity, temperature or air pressure than real world frogs.</p>
+<hr><p>All that being said, though… With the current population at the time of present FKNO being 22 individuals, the genetic diversity has become too scarce for any egg to make it to the macroscopic scale, let alone to the point of hatching. Some are still hoping for a miracle, but more and more Hearthians are slowly coming to the realization that, even without yet another catastrophy such as a supernova or a Dark Bramble seed, their species is already doomed.</p>
+<p>…They have yet to tell the hatchlings, though. Most of them don’t even know how much bigger the Hearthian population used to be even just a few decades ago.</p>
+</details><t>#hearthian biology #hearthian culture (vanilla) #vanilla fkno</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Firn’s little-shit-o’-meter-->
+<it id=OGFirnLilShitoMeter><details><summary>Firn’s little-shit-o’-meter</summary>
+<p>The scale ranges from “0%: Would never ever prank this person no matter the circumstances” to “100%: Would need to be physically incapacitated in order to stop pranking them”:</p>
+<table class=freet>
+<tr><td>Feldspar</td><td><div class=rating><input value=0% style=visibility:hidden></div></td><td><i class=spmono>No data available</i></td></tr>
+<tr><td>Gabbro</td><td><div class=rating><input value=5%></div></td><td>Nothing gets under their skin, they’re just not fun to prank. At least they can still be an element to the setup instead of the actual target… when they’re in the village, that is. Still,&nbsp;at least they do have a sense of humor.</td></tr>
+<tr><td>Esker</td><td><div class=rating><input value=10%></div></td><td>The pranks are literally meant to cheer them up instead.</td></tr>
+<tr><td>Galena</td><td><div class=rating><input value=15%></div></td><td>The goal is to get the hatchling to open up, not make them even more introverted.</td></tr>
+<tr><td>Mica</td><td><div class=rating><input value=20%></div></td><td>Real rating should actually be much lower. The peaks at 100% corresponding to the few sunrises each day spent away from Slate’s workshop are a statistical anomaly and should not have been counted.</td></tr>
+<tr><td>Hal</td><td><div class=rating><input value=30%></div></td><td>Most mean-spirited pranks are solely in order not to lose face. Thankfully Hal knows this and doesn’t take it <i>too</i> hard. Usually.</td></tr>
+<tr><td>Arkose</td><td><div class=rating><input value=35%></div></td><td>The rating would be a lot higher if the hatchling weren’t gravitating so close to ghost matter all the time. Chances are Arkose sticks around that area specifically for that reason (nah, probably not).</td></tr>
+<tr><td>Chert</td><td><div class=rating><input value=35%></div></td><td>The rating would be a lot higher if only they were on planet more often. The temptation to reorder their charts in reverse-alphabetical order the moment they’re not looking is so, <i>so</i> strong.</td></tr>
+<tr><td>Riebeck</td><td><div class=rating><input value=40%></div></td><td>They take the jokes well, really! They’re so tense all the time, jumpscares should literally be a medical prescription to scare the pressure out of them at least twice a day.</td></tr>
+<tr><td>Slate</td><td><div class=rating><input value=45%></div></td><td>Huh. That’s a surprisingly low rating for an adult full of sass who can defend themself just fine. Wonder what’s up with that.</td></tr>
+<tr><td>Porphy</td><td><div class=rating><input value=50%></div></td><td>Beware: messing with the cook/apothecary too little too often has a tendency to make sap wine-related digestive challenges magically spawn inside your dinner plate. Keep it perfectly balanced, as all things should be.</td></tr>
+<tr><td>Tephra</td><td><div class=rating><input value=50%></div></td><td>Hey, they take the pranks well! They’re a fast learner, too, Firn can’t wait for the time when they will have to actually watch their back around them.</td></tr>
+<tr><td>Tuff</td><td><div class=rating><input value=55%></div></td><td>It’s… a guilty pleasure. Firn does feel a little bad that Tuff is ranking so high. The location of their workplace is literally making them <i>beg</i> for it, though!</td></tr>
+<tr><td>Tektite</td><td><div class=rating><input value=65%></div></td><td>Firn will mostly hold back because of the injured leg and the fact that Tektite is often around dangerous terrain.</td></tr>
+<tr><td>Gneiss</td><td><div class=rating><input value=70%></div></td><td>The stuff they work with is too fragile to prank around… but make for <i>such</i> perfect settings for tiny tools playing hide-and-seek.</td></tr>
+<tr><td>Moraine</td><td><div class=rating><input value=70%></div></td><td>Hatchling wants to be a grown-up. They get the grown-up average rating.</td></tr>
+<tr><td>Marl</td><td><div class=rating><input value=75%></div></td><td>Firn will more often team up with them for double the hijinks, instead of targeting them specifically. That being said, turning off friendly fire was never an option.</td></tr>
+<tr><td>Spinel</td><td><div class=rating><input value=90%></div></td><td>The ten percents of peace are the rare cases when they got a catch and need to focus.</td></tr>
+<tr><td>Gossan</td><td><div class=rating><input value=95%></div></td><td>Firn loves them, really, but… It’s also kind of personal. Firn doesn’t want to think about it.</td></tr>
+<tr><td>Hornfels</td><td><div class=rating><input value=100%></div></td><td>Their angry face as they are trying to hold it together is just <i>so</i> funny. How can you resist?</td></tr>
+<tr><td>Rutile</td><td><div class=rating><input value=100%></div></td><td>Nothing personal, they just happen to be the mayor 😔 Collateral damage.</td></tr>
+</table>
+</details><t>#vanilla fkno #hearthians (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️TH geological activity causes new geysers to erupt-->
+<it id=OGTHNewGeysers><details><summary>Timber Hearth’s intense geological activity causes new geysers to erupt regularly.</summary><p>Timber Hearth has a very high geological activity, demonstrated by its geysers being powerful enough to send objects into orbit. As such, old geysers being slowly closed off and new geysers erupting instead are a common occurrence on a geological scale. Seismic activity is being monitored, but Hearthians were never capable of truly predicting when and where new geysers would erupt.</p></details><t>#timber hearth (vanilla) #timber hearth geysers #vanilla fkno</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️TH underground waters filled with GM-->
+<it id=OGTHunderwaterGM><details><summary>Timber Hearth’s underground waters are filled with ghost matter.</summary>
+<p>Ever since the Interloper’s core ruptured, Timber Hearth has maintained large amounts of ghost matter within its underwater currents: the water’s nullifying effect on ghost matter and the fact that said water is also for the most part sealed off slows down to a significant degree the rate at which ghost matter evaporates, and the only way for it to successfully leave the water is for it to reach the surface first, notably (but not exclusively) through geysers.</p>
+<p style=opacity:.8>In comparison, though Giant’s Deep is filled with water as well, its ocean’s exposure to open air and even to outer space through its cyclones has on the contrary heavily accelerated the rate at which its ghost matter evaporated, leaving only a few small patches clinging to a few islands.</p>
+<hr><p>The fact that ghost matter is present in the water depths of Timber Hearth is known, but Hearthians are unable to detect ghost matter while it is in its underwater nullified state. As such, despite being aware of the danger, they are powerless to stop it or efficiently prepare themselves for it, and they are unable to tell just how much ghost matter truly is hiding dormant at the core of their planet. Ironically, staying close to bodies of water remains the safest way to deal with a ghost matter crisis.</p>
+</details><t>#timber hearth (vanilla) #ghost matter #timber hearth geysers #vanilla fkno #the village #giant’s deep (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️GM incident from ~30 years ago-->
+<it id=30yroGMincident><details><summary>About 30 years ago, a new geyser erupting in a corner of the village let out large amounts of ghost matter, decimating a significant part of the village’s remaining population.</summary>
+<p>This event is based on Arkose’s reports about the patch of ghost matter they play around, which used to be bigger when Gossan was a hatchling.</p>
+<p>The proximity of this patch of ghost matter to the village is due to the fact that it appeared more recently than the village itself, along with the small geyser erupting nearby.</p>
+<hr><p>The geyser causing the newest patch of ghost matter to appear erupted very close to what was at the time the hatchlings’ cabin, among many others. After the incident, the hatchlings were relocated to live close to the waterfall (it is the cabin whose porch Tephra and Galena are seen sitting on in-game), with the caretakers’ cabin being the one next to it and closest to the water.</p>
+<p>The former cabins were already close to the river at the top of the crater, but not close enough to prevent almost all hatchlings from dying within minutes. Hornfels, Slate, Feldspar, Gossan and Esker (who were about 12 to 18 at the time) were away on a camping trip; otherwise, the only hatchlings who survived were Porphy, Chert and Gabbro.</p>
+<hr><p>This kind of event already happened multiple times in the past, each time killing off significant parts of both the wildlife and the Hearthian population, as well as rendering various areas uninhabitable for a few decades. This also contributed to forcing Hearthians to remain hunter-gatherers for the longest time, and to adopt a way of life which makes it relatively easy to relocate through disassembling and reassembling cabins.</p>
+<p>With the years, as became usual for Hearthians, building materials and objects located within the patch of ghost matter were carefully retrieved: the bodies were buried, while objects of use were left in specific places away from the village and in open air so that the lingering ghost matter would evaporate faster and eventually make those objects usable once more.</p>
+<hr><p>Though each ghost matter incident took a huge toll on the Hearthian civilization’s progress and on the Hearthian population in general, the latest ones, and this one in particular, clearly pushed the Hearthian race closer and closer to extinction because of the dwindling genetic diversity. On the day when the sun goes supernova, the Hearthian population only counts 22 individuals in total, and it has been almost a decade since they last were able to find even a single egg.</p>
+</details><t>#vanilla fkno #ghost matter #timber hearth geysers #timber hearth (vanilla) #backstory (vanilla) #chert (vanilla) #esker (vanilla) #feldspar (vanilla) #gabbro (vanilla) #gneiss (vanilla) #gossan (vanilla) #hornfels (vanilla) #porphy (vanilla) #rutile (vanilla) #slate (vanilla) #spinel (vanilla) #tektite (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Tektite lost their foot when they saved Gabbro during the GM incident-->
+<it id=OGTektiteLostFoot><details><summary>Tektite lost their foot when they saved a six-year-old Gabbro during the ghost matter incident from ~30 years ago.</summary>
+<p>While Chert and Porphy were old enough to run to safety on their own, Gabbro soon ended up trapped indoors while the geyser erupted and the ghost matter started expanding. Tektite was barely able to carry them out while Gabbro was already starting to inhale some diluted fumes, and Tektite lost their foot in the process.</p>
+<p><a href="javascript:getcard('30yroGMincident')">More details about the event in general can be found here.</a></p>
+<hr><p>Gabbro’s remembrance of the event contributes to their overall attitude once adult, as they feel like they already defied death once; it is part of the origin behind their own daredevil way of consuming or inhaling various substances out of curiosity, and of tempting fate by deliberately interacting with quantum objects (notably by regularly visiting the Quantum Grove).</p><p>The incident and its devastating effects on the dwindling Hearthian population is also the main reason behind Gabbro’s nihilistic behavior, as they believe that they were already doomed even prior to the supernova, and that Outer Wilds Ventures came too late.</p>
+</details><t>#tektite (vanilla) #gabbro (vanilla) #ghost matter #backstory (vanilla) #vanilla fkno</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon.-->
+<it id=OGHeaThinkFeldsDiedOnQM><details><summary>Hearthians assume that Feldspar disappeared because they successfully landed on the Quantum Moon, and either died or vanished entirely when it changed locations.</summary>
+<p>Feldspar did not contact Timber Hearth before leaving for Dark Bramble. When they never came back, the searches were thus concentrated around Giant’s Deep instead, and made difficult due to the cyclones and drifting islands constantly changing the planet’s layout.</p><hr>
+<p>Outer Wilds Ventures knew that Feldspar tried many times to land on the Quantum Moon, without ever succeeding. Due to Hearthians’ lack of knowledge about the Quantum Moon and macroscopic quantum mechanics in general, and with the searches on Giant’s Deep being fruitless, some started to hypothesize that Feldspar found once again the Quantum Moon on their way back, tried one more time to land on it, and actually succeeded for once; only for the Quantum Moon to disappear as it always does.</p>
+<p>Regardless of whether they assume Feldspar to have died on the spot due to the ‘teleportation’ effect being possibly lethal, to have died while stranded in space because the moon’s disappearance left them behind and too far away to make it to their ship before running out of fuel or oxygen, or to have somehow disappeared entirely and never reappeared along with the moon in its new location, Outer Wilds Ventures slowly put more and more credence in this theory and started mourning without searching any further.</p>
+<hr><p>No Hearthian ever tried to land on the Quantum Moon after this, as most assume that its tendency to appear and disappear randomly would be a death sentence in one way or another to any who would be standing on it.</p>
+</details><t>#vanilla fkno #outer wilds ventures (vanilla) #quantum moon #quantum mechanics #hearthians (vanilla) #backstory (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Gossan’s spot pattern is actually circles, not stripes.-->
+<it id=OGGossanEyeIncident><details><summary>Gossan’s spot pattern is actually meant to be circles, not stripes.</summary>
+<p>Gossan’s spot pattern used to be circles, just as shown in the museum’s photograph of the founders. However, this changed after they lost their eye.</p>
+<p>As a result from the injury, their face sufferred from an infection just two days later; and though they recovered from it, their body’s enhanced immune response locally overexpressed their freckles gene as a defense mechanism. This overexpression led to their spot pattern changing from circles to stripes on their face and ears. Gossan considers this as one more scar to have appeared on their face as a consequence from the incident.</p>
+<p>The rest of their body still follows their old circled pattern instead of stripes; but since they rarely ever wear clothes or uniform that show other parts of their body, other Hearthians have grown so accustomed to seeing their stripes that some start to forget that they used to not be there, and most hatchlings were not old enough to have any memory of the times before their incident.</p>
+</details><t>#biology #gossan (vanilla) #gossan’s eye incident (vanilla) #vanilla fkno #backstory (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Pre-Time Loop Timeline-->
+<it id=FKNOTLCh1BeforeLoop><details><summary>FKNO Pre-Time Loop Launch Day Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Event</th></tr>
+<tr><td>06d03s 00:00</td><td>Hal wakes up with the sunrise.</td></tr>
+<tr><td>06d03s 24:12</td><td>Hornfels finishes prepping the statue. They are satisfied with their work but disappointed that they couldn’t get the statue’s eyes to open, and start wondering if Gabbro chipping it could be the cause.</td></tr>
+<tr><td>06d03s 36:02</td><td>Hornfels decides to radio Gabbro to ask them if they could find another statue, since they’re back on Giant’s Deep and it has been a while since they last did any field work.<br>Gabbro is embarrassed by the fact that their ship was taken by a cyclone during the night, but keeps silent about it as they are not very willing to break down the news just yet.</td></tr>
+<tr><td>06d03s 38:24</td><td>Gossan shows up to say hi in the middle of Hornfels and Gabbro’s conversation, prompting it to end. Gossan asks Hornfels to stay focused and make sure that Firn’s launch day goes smoothly.</td></tr>
+<tr><td>06d03s 41:51</td><td>Before Gossan leaves, Hornfels asks them to find Hal and tell them that the statue is ready for display.</td></tr>
+<tr style=background:rgba(var(--fore),.5)><td>06d03s 45:09</td><td>Start of the time loop.</td></tr>
+</table></details><t>#time loop event #vanilla fkno #backstory (vanilla)</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Loop 1 Timeline-->
+<it id=FKNOTL1><details><summary>FKNO Loop 1 Timeline</summary><table class='spmono fkno'><tr><th>Hearthian Time</th><th>Game Time</th><th>Event</th></tr>
+<tr><td>06d03s 45:22</td><td>00:02</td><td>Gabbro radioes Hornfels to discuss their request to look for another statue (Chapter 2²). This prompts Hornfels to go to the statue room.</td></tr>
+<tr style=background:rgba(var(--midd),.5)><td>06d03s 46:43</td><td>00:11</td><td>The OPC fires while Hal and Gossan talk.</td></tr>
+<tr><td>06d04s 24:59</td><td>04:36</td><td>Hal is paired with the museum’s statue.</td></tr>
+<tr><td>06d04s 36:38</td><td>05:57</td><td>Gabbro finishes hanging up their hammock, pondering what they should do since they lost their ship.</td></tr>
+<tr><td>06d04s 46:03</td><td>07:02</td><td>Statue Island drifts by their beach, Gabbro takes the opportunity to cross the gap for a quick investigation after checking that no cyclone is headed their way.</td></tr>
+<tr><td>06d04s 50:24</td><td>07:32</td><td>Gabbro is paired with their statue.</td></tr>
+<tr><td>06d04s 55:53</td><td>08:10</td><td>Gabbro goes back to their hammock to recover.</td></tr>
+<tr><td>06d04s 57:09</td><td>08:19</td><td>Firn lands on Gabbro’s Island.</td></tr>
+<tr><td>06d05s 15:42</td><td>10:28</td><td>Firn and Gabbro land on Statue Island.</td></tr>
+<tr><td>06d05s 25:06</td><td>11:33</td><td>Firn and Gabbro end up in orbit.</td></tr>
+<tr><td>06d06s 00:34</td><td>15:39</td><td>Riebeck arrives on the OPC.</td></tr>
+<tr><td>06d06s 02:12</td><td>15:50</td><td>Firn wakes up after Riebeck and Gabbro refueled their tank.</td></tr>
+<tr><td>06d06s 59:25</td><td>22:27</td><td>The supernova reaches the observatory.</td></tr>
+<tr><td>06d07s 00:17</td><td>22:35</td><td>The supernova reaches the OPC.</td></tr>
+</table><p>Firn’s ship log interlude (<a href=https://archiveofourown.org/works/55228189/chapters/142276075 target=_blank class=purplel>AO3</a>) gives more details regarding the timing of Firn’s actions after their departure from Timber Hearth.</p></details><t>#time loop event #vanilla fkno</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️Apatite’s special therapy program-->
+<it id=ApatiteTherapyProgram class=mau><details><summary>Apatite made a special new therapy program dedicated to the aftermath of supernatural events caused by Hal’s powers.</summary><p>For the record, it pays well; mostly because if the client is unlucky enough to reveal that they are personally acquainted with Hal, then the price tag will increase tremendously.</p></details><t>#apatite tin #hal’s universe</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️OO rules are tied to the body, not the mind.-->
+<it id=OORuleBodyNotMind class=misc><details><summary>When an Original Observer’s rule affects a specific individual, the rule is tied to their body, not their consciousness.</summary><p>This means that, for example, if an affected individual A were to swap bodies with another individual B who isn’t affected, then the rule would not take into account the body swapping: A’s mind in B’s body would no longer be affected by this rule, while B’s mind in A’s body would.</p></details><t>#quantum mechanics #eye of the universe #original observers</t></it>
+<!--@EFOLD-->
+<!--@SFOLD✔️GabbroAU: Stranger & Nomai found the HEA solar system via quantum rocks.-->
+<it id=AHAliensFollowedShardSignal class=ahau><details><summary>The Stranger and Nomai were not following the signal of the real Eye: instead, what caught their attention was an unusually high concentration of quantum rocks in the Hearthian solar system which mimicked the Eye’s signal.</summary><p>Gabbro’s love of quantum rocks caused them to be far more common in the Hearthian solar system, and be the source of the signal that both alien civilizations tried to follow. These quantum rocks, however, are just good at mimicking the previous universe’s Eye signal, instead of sending out the real one currently dormant inside Gabbro’s chest.</p></details><t>#gabbro’s universe #quantum mechanics #nomai (gabbro’s universe) #strangers (gabbro’s universe)</t></it>
+<!--@EFOLD-->
+<!--@EFOLD-->
+<!--@SFOLD❌Will be updated in the future-->
+<it id=SteinBike class=mau><details><summary>Stein owns a Triumph Bonneville.</summary><img src=https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/central%20marketing%20team/brand%20story/bonneville/06%20speedmaster%20hero-1410x793.jpg><img src=../../ast-TMP-for-owhtml/@WIP/Stein_motorbike_ref.jpg></details><t>#stein wolfram #hal’s universe</t></it>
+<it id=EyeNature class=misc><details class=n><summary>The Eye of the universe is a singularity originally tucked away inside the Original Observer’s body, and released after they have returned to slumber.</summary></details><t>#eye of the universe</t></it>
+<!--@SFOLD❌Hearthians age ranges at the start of the time loop-->
+<it id=OGHeaAges class=misc><details><summary>Character ages at the start of FKNO (OGs) or the MAU comic (post-Eye Hearthians)</summary>
+<p>From oldest to youngest:</p>
+<table>
+<tr><th>Name</th><th>Vanilla<sup>1</sup></th><th>Hal’s universe<sup>2</sup></th></tr>
+<tr><td>Tektite</td><td>72</td><td></td></tr>
+<tr><td>Spinel</td><td>68</td><td></td></tr>
+<tr><td>Gneiss</td><td>67</td><td></td></tr>
+<tr><td>Rutile</td><td>59</td><td></td></tr>
+<tr><td>Esker</td><td>48</td><td></td></tr>
+<tr><td>Gossan</td><td>44</td><td></td></tr>
+<tr><td>Feldspar</td><td>43(…?)</td><td></td></tr>
+<tr><td>Slate</td><td>43</td><td></td></tr>
+<tr><td>Hornfels</td><td>42</td><td></td></tr>
+<tr><td>Porphy</td><td>40</td><td></td></tr>
+<tr><td>Chert</td><td>39</td><td></td></tr>
+<tr><td>Gabbro</td><td>36</td><td></td></tr>
+<tr><td>Riebeck</td><td>27</td><td></td></tr>
+<tr><td>Tuff</td><td>26</td><td></td></tr>
+<tr><td>Marl</td><td>24</td><td></td></tr>
+<tr><td>Hal</td><td>19</td><td></td></tr>
+<tr><td>Firn</td><td>19</td><td></td></tr>
+<tr><td>Arkose</td><td>13</td><td></td></tr>
+<tr><td>Moraine</td><td>12</td><td></td></tr>
+<tr><td>Mica</td><td>11</td><td></td></tr>
+<tr><td>Galena</td><td>9</td><td></td></tr>
+<tr><td>Tephra</td><td>9</td><td></td></tr>
+</table>
+<p><sup>1</sup>: 1 Hearthian year (309 days) is equivalent to 327.31 human days.</p>
+<p><sup>2</sup>: 1 Hearthian year (365.25 days) is equivalent to 423.69 human days.</p>
+<p>All counterparts from other universes have the same age as shown in this list at the time when the Original Observers wake up.</p></details><t>#hearthians #general data</t>
+<!-- <t>#vanilla fkno #hearthians (vanilla) #arkose #chert #esker #feldspar #firn #gabbro #galena #gneiss #gossan #hal #hornfels #marl #mica #moraine #porphy #riebeck #rutile #slate #spinel #tektite #tephra #tuff #general data</t> -->
+</it>
+<!--@EFOLD-->
+<!--@SFOLD❌MAU: Hearthian Full Names-->
+<it id=MAUFullNames class=mau><details><summary>Modern AU: Characters’ Full Names</summary><table style=margin-top:.5em class=freet>
+<tr><th>First Name</th><th>Middle Name</th><th>Last Name</th></tr>
+<tr><td>Gossan</td><td style=background:rgba(var(--fore),.3)>TBA</td><td rowspan=2>Gallium</td></tr><tr><td>Firn</td><td>Zircon</td></tr>
+<tr><td>Hornfels</td><td style=background:rgba(var(--fore),.3)>TBA</td><td rowspan=2>Copper</td></tr><tr><td>Hal(ite)</td><td>Halide</td></tr>
+<tr><td>Slate</td><td style=background:rgba(var(--fore),.3)>TBA</td><td rowspan=3>Nitrogen</td></tr><tr><td>Feldspar</td><td style=background:rgba(var(--fore),.3)>TBA</td></tr><tr><td>Mica</td><td style=background:rgba(var(--fore),.3)>TBA</td></tr>
+<tr><td>Larimar</td><td style=background:rgba(var(--fore),.3)>TBA</td><td rowspan=2>Tungsten</td></tr><tr><td>Moraine</td><td style=background:rgba(var(--fore),.3)>TBA</td></tr>
+<tr><td>Gabbro</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Astatine</td></tr>
+<tr><td>Porphy</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Argon</td></tr>
+<tr><td>Esker</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Selenium</td></tr>
+<tr><td>Chert</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Cesium</td></tr>
+<tr><td>Riebeck</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Gold</td></tr>
+<tr><td>Gneiss</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Silver</td></tr>
+<tr><td>Syenite</td><td style=background:rgba(var(--fore),.3)>TBA</td><td>Nickel</td></tr>
+<tr><td>Apatite</td><td>Chlorapa</td><td>Tin</td></tr>
+<tr><td>Grouan</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>Azote</td></tr>
+<tr><td>Peat</td><td style=background:rgba(var(--fore),.3);opacity:.5><i>(None)</i></td><td>Namari (鉛)</td></tr>
+<tr><td>Stein</td><td style=background:rgba(var(--fore),.3)>TBA</td><td rowspan=2>Wolfram</td></tr><tr><td>Scoria</td><td style=background:rgba(var(--fore),.3)>TBA</td></tr>
+<tr><td>Marl</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Rutile</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Tuff</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Tektite</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Spinel</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Arkose</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Tephra</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Galena</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>Mohs</td><td style=background:rgba(var(--fore),.3)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<!--
+<tr><td>OC_NAME</td><td style=background:rgba(var(--fore),.5)>TBA</td><td style=background:rgba(var(--fore),.5)>TBA</td></tr>
+<tr><td>KIDNAME</td><td style=background:rgba(var(--fore),.3);opacity:.5;text-align:center colspan=2><i>(Not yet adopted)</i></td></tr>
+-->
+</table></details><t>#general data #hal’s universe #hearthians (hal’s universe)
+#hal (vanilla)
+</t></it>
+
+<!-- #gossan gallium #firn gallium #hornfels copper #slate nitrogen #feldspar nitrogen #mica nitrogen #gabbro astatine #porphy argon #esker selenium #chert cesium #riebeck gold #gneiss silver #larimar tungsten #moraine tungsten #syenite nickel #apatite tin #peat namari #stein wolfram #scoria wolfram #grouan azote
+
+#marl (LAST NAME MISSING)
+#rutile (LAST NAME MISSING)
+#tuff (LAST NAME MISSING)
+#tektite (LAST NAME MISSING)
+#spinel (LAST NAME MISSING)
+#arkose (LAST NAME MISSING)
+#tephra (LAST NAME MISSING)
+#galena (LAST NAME MISSING)
+#mohs (LAST NAME MISSING)
+#porphy’s tutor (NAME MISSING) -->
+<!--@EFOLD-->
+<!--@EFOLD-->
+<!--@SFOLD-->
+<i id=nofind>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i>
+<a href=../owdoc/loremap.html target=_blank class=cardext><it><details class=n open><summary>Outer Wilds Canon Lore Map</summary></details><t>#keep</t></it></a>
+<a href=../owdoc/calendar_timeloop.html target=_blank class=cardext><it><details class=n open><summary>All Time Loop Scripted Events</summary></details><t>#keep</t></it></a>
+<a href=https://www.desmos.com/calculator/cx2vcrh8sf target=_blank class=cardext><it><details class=n open><summary>Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span></summary></details><t>#keep</t></it></a>
+<a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov target=_blank class=cardext><it><details class=n open><summary>Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span></summary></details><t>#keep</t></it></a>
+<it class=misc><details open style=text-align:center><summary style=font-size:30px;font-weight:600;text-align:left>Hearthian Time vs Human Time Converter</summary>
+<input id=convTH type=text placeholder="Hearthian time (--d--s --:--)"style='margin:1rem auto 3px auto;width:100%'>
+<input type=button value="Hearthian time &rarr; In-game time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2GMtime(convTH.value),0)>
+<input type=button value="Human Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2HMcircadianrhythm(convTH.value),2)>
+<input id=convHM type=text placeholder="Human time (--:-- or --:--:--)"style='margin:1rem auto 3px auto;width:100%'>
+<input type=button value="In-game time &rarr; Hearthian time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(GMtime2THtime(convHM.value),1)>
+<input type=button value="Hearthian Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(HMtime2THcircadianrhythm(convHM.value),3)>
+<div id=convout style=display:none><hr style=margin-bottom:0><table></table><table></table><table></table><table></table></div>
+<details style='margin:1rem -10px -15px -10px;background:rgba(var(--midd),.3);padding:10px 10px 0 10px'><summary style=border-radius:0;background:rgba(var(--midd),1);color:rgb(var(--white));font-weight:600>Valid Inputs Guide:</summary>
+<h2>Hearthian Time &rarr; Human Time</h2>
+<p align=left>Hearthian time is conventionally written as <code class='spanintro smol'>--d--s --:--</code> where the four empty slots indicate from left to right the day number in the week, the sunrise number in the day, the number of minutes, and finally the number of seconds. If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian time &rarr; In-game time</span>, then all four values are required.</p>
+<p align=left>The time loop occurs between <code class='spanintro smol'>06d03s 45:09</code> (in-game equivalent being 00:00) and <code class='spanintro smol'>06d07s 01:18</code> (in-game equivalent being 22:40). No error will be raised if you input a timestamp that does not fall between those boundaries, but the output result may be incorrect (specifically if you provide a timestamp earlier than the start of the loop).</p>
+<p align=left>If you click on <span class=spanintro style=filter:hue-rotate(70deg)>Human Circadian Rhythm Equivalent</span>, then the day number may be omitted (submitting <code class='spanintro smol'>--s --:--</code> or <code class='spanintro smol'>--:--:--</code> or even <code class='spanintro smol'>-- -- --</code> is just as valid as submitting <code class='spanintro smol'>--d--s --:--</code>).</p>
+<h2>Human Time &rarr; Hearthian Time</h2>
+<p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p>
+</details></details><t>#keep</t></it>
+</div></div><script src=../src/js-loremap.js></script><script>
+convTH=document.getElementById("convTH");convHM=document.getElementById("convHM");convout=document.getElementById("convout")
+function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
+function RevealTagCategory(universe){sele=document.querySelectorAll('#tagselect details.'+universe);if(!sele[0].open==true){for(i=0;i<sele.length;i++){sele[i].open=true}}else{for(i=0;i<sele.length;i++){sele[i].open=false}}}
+</script><script src=../src/js-debug.js></script></div></body></html>
+<!--@EFOLD-->

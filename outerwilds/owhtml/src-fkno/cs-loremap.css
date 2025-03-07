@@ -1,0 +1,29 @@
+/* Default FKNO */
+*:not(.cardext)>it:not(.misc)>details>summary:before{content:'';display:inline-block;width:2em;height:2em;margin-bottom:-.5em;margin-right:.2em;background-size:contain}
+*:not(.cardext)>it:not([class$=au])>details>summary:before{background-image:url(../ast-fkno/ico/chr_eye.png)}
+it,it *,.fkno,.fkno *{--emph:var(--orng);--fore:var(--purplel);--midd:var(--purpled)}
+/* AU Specific */
+.mau, .mau  *{--emph:var(--orng);--fore:219,112,147;--midd:199,21,133}
+.scau,.scau *{--emph:var(--purplel);--fore:50,120,200;--midd:var(--indigod)}
+.ahau,.ahau *{--emph:var(--orng);--fore:255,127,80;--midd:219,122,50}
+.mau >details>summary:before{background-image:url(../ast-fkno/ico/chr_hea_hal.png)}
+.scau>details>summary:before{background-image:url(../ast-fkno/ico/chr_hea_firn.png)}
+.ahau>details>summary:before{background-image:url(../ast-fkno/ico/chr_hea_gabbro.png)}
+/* Fixes */
+#srch_opcls{right:260px}
+#srch_reset{right:160px}
+#activetags{width:calc(100% - 420px)}
+.all{padding-bottom:2vh}
+.tagcategory{height:unset;max-height:unset}
+table.fkno td p:not(.infob){padding-left:0!important}
+table.spmono.fkno tr>*:first-child{width:22%;text-align:center}
+table.spmono.fkno tr>*:nth-child(2):not(:last-child){width:17%;text-align:center}
+
+/* .tagcategory .infob{position:fixed;top:5%;left:unset;right:5%;max-width:5vh} */
+.tagcategory .infob{right:0;min-width:unset}
+
+/* Unique to 1 lore card */
+#convout td{font-family:Space Mono}
+
+.rating{border-radius:50px;width:100px;display:inline-block;background:rgba(var(--midd),.5)}
+.rating input{padding:0;background-image:linear-gradient(to left,#e5405e 0%,#ffdb3a 65%,#3fffa2 100%);background-size:100px 100%;text-shadow:var(--txtshw);text-align:center}
