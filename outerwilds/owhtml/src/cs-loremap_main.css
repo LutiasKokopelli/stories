@@ -216,10 +216,11 @@ it blockquote{user-select:none;-webkit-user-select:none}
 
 
 button{background:none;position:relative;padding:0;margin:0}
-button>m{cursor:pointer;position:absolute;top:calc(50% - .9em);left:.3em;width:1.8em;height:1.8em;display:block;z-index:1;border-radius:50%;background:no-repeat center;background-image:url(../ast/svg/hud_m2e.svg);background-size:100%;outline:1px solid rgb(var(--black));background-color:rgb(var(--black))}
+button>m{cursor:pointer;position:absolute;top:calc(50% - .9em);z-index:1;left:.3em;width:1.8em;height:1.8em;display:block;border-radius:50%;background:no-repeat center;background-image:url(../ast/svg/hud_m2e.svg);background-size:100%;outline:1px solid rgb(var(--black));background-color:rgb(var(--black))}
 button>m.hasimg{border:2px solid rgb(var(--orng));background-size:80%;background-position:center}
 button>m:hover{filter:sepia(1)hue-rotate(90deg)saturate(600%)}
 button>m+input{padding-left:2.2em}
 button>m.hasimg+input{padding-left:2.3em}
+@media(hover:none){button>m{z-index:unset}button>m:hover{z-index:1}}
 
 img[onclick^=AddTagGroup]{filter:drop-shadow(2px 0px 0 rgb(var(--indigol)))drop-shadow(0px 2px 0 rgb(var(--indigol)))drop-shadow(-2px -0px 0 rgb(var(--indigol)))drop-shadow(-0px -2px 0 rgb(var(--indigol)))}
