@@ -67,15 +67,29 @@ onecol=!onecol
 
 
 
-// Create substitutes to input::after if you are on mobile devices
+// Create substitutes to input::after if you are on touchscreen devices
 if("ontouchstart"in document.documentElement){
     for(i=0;i<tagselect.length;i++){
+        m=tagselect[i].previousSibling
+        if(m){if(m.tagName=='M'){
+            m.classList.add('infoa')
+            infom=document.createElement('span')
+            infom.classList.add('infob')
+            infom.innerHTML=m.title.replace(/\n/g,'<br>')
+            m.appendChild(infom)
+        }}
         if(tagselect[i].title){
-            console.log(tagselect[i].title)
-            console.log(tagselect[i].title.replace('•','<br>•'))
+            if(m){if(m.tagName!='M'){
+                var p=tagselect[i].parentNode
+                w=document.createElement('span')
+                w.classList.add('x')
+                w.style.position='relative'
+                p.replaceChild(w,tagselect[i]);
+                w.appendChild(tagselect[i])
+            }}
             infob=document.createElement('span')
             infob.classList.add('infob')
-            infob.innerHTML=tagselect[i].title.replace('•','<br>•')//.replace('\n','<br>')
+            infob.innerHTML=tagselect[i].title.replace(/\n/g,'<br>')
             tagselect[i].parentNode.insertBefore(infob,tagselect[i].nextSibling)
         }
     }

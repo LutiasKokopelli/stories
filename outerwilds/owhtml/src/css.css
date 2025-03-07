@@ -101,7 +101,7 @@ td{height:100%}
     background:linear-gradient(30deg, rgba(var(--indigod), 1), rgba(var(--indigod), 0));
     outline:2px solid rgb(var(--white));
 }
-.infoa{cursor:help;position:relative}
+.infoa:not(m){cursor:help;position:relative}
 input:hover+.infob{display:block}
 .infoa:hover>.infob,.infob:hover{display:revert}
 .infob{
@@ -119,17 +119,19 @@ input:hover+.infob{display:block}
     max-height:500px;
     overflow:auto
 }
-.infoa .infob{
+:not(m).infoa .infob{
     font-size:revert;
     position:absolute;
     top:2.3rem;
     left:-1rem;
 }
-input+.infob{
-    font-size:.5em;font-family:Space Mono;
+.tagcategory p{position:relative}
+input+.infob,m .infob{
+    font-size:10px;font-family:Space Mono;width:fit-content;
+    position:absolute
 }
 input+.infob:hover{
-    display:block
+    display:block;
 }
 .infob p{
     padding-left:1%!important;
