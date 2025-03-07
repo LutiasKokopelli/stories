@@ -39,8 +39,8 @@ function getcard(id){
     else if(specialids.includes(url[1])){window.location.href=url[0]+'#'+id+'#'+url[1]}
     else{window.location.href=url[0]+'#'+id}
     cd.getElementsByTagName("details")[0].open=true;
-    cd.scrollIntoView();window.scrollBy(0,-100)
     cd.classList.add('targetblink');setTimeout(function(){cd.classList.remove('targetblink')},5000)
+    cd.scrollIntoView();window.scrollBy(0,-270)
 }
 // Save/Load List of Active Tags
 function CopySearchState(){
@@ -63,7 +63,7 @@ function LoadSearchState(ss){
     if(l[l.length-3]!=modbtn.value){FocusMode()}
     if(l[l.length-2]!=lgcbtn.value){SwapLogic()}
     else{FilterItems()}
-    if(l[l.length-1]){document.getElementById(l[l.length-1].substring(1)).scrollIntoView();window.scrollBy(0,-100);document.getElementById(l[l.length-1].substring(1)).getElementsByTagName('details')[0].open=true}
+    if(l[l.length-1]){document.getElementById(l[l.length-1].substring(1)).scrollIntoView();window.scrollBy(0,-270);document.getElementById(l[l.length-1].substring(1)).getElementsByTagName('details')[0].open=true}
 }
 // Reset Tag Selection
 function ResetTagSelector(){
@@ -72,6 +72,7 @@ function ResetTagSelector(){
     else if(window.location.href.split('#')[1]&&!specialids.includes(window.location.href.split('#')[1])){window.location.href=window.location.href.split('#')[0]}
     for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
     for(i=0;i<allit.length;i++){if(!allit[i].getElementsByTagName("t")[0].innerHTML.includes("#keep")){allit[i].getElementsByTagName("details")[0].open=false;allit[i].style.display="none"}}
+    document.getElementById('findtaginput').scrollIntoView()
 }
 function AddTagSelector(tag){
     tag=tag.split('#')[1];tagid=tag.replace(/^[^a-z]+|[^\w:.-]+/gi,"")

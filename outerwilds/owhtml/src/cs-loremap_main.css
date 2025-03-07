@@ -2,8 +2,8 @@ a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before,a[target=_blank
 a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before,a[target=_blank].cardext .n summary:before,.prtg:before{width:1em;height:.7em;display:inline-block;background:url(../ast/svg/hud_dlg.svg)center no-repeat}
 a[href*=getcard] h2:before{filter:drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)}
 a[target=_blank].cardext .n summary:after{content:'';background:url(../ast/svg/external-link.svg)center no-repeat;background-size:cover;display:inline-block;height:1em;width:1em;margin-bottom:-.2em;margin-left:.3em}
-@media only screen and (orientation:landscape){body{font-size:22px}}
-@media only screen and (orientation:portrait){body{font-size:4vw}#sidenav{width:64%}}
+@media only screen and (orientation:landscape){body{font-size:22px}#tuto,#searchbar>div:has(#activetags){max-width:90%}}
+@media only screen and (orientation:portrait){body{font-size:4vw}#sidenav{width:64%}#tuto,#searchbar>div:has(#activetags){width:100%}div:has(#activetags)>input,#savepoint>*{font-size:.5em}}
 .spanintro{padding:0 12px;color:white;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.8);box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%}
 input{padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle;background-repeat:no-repeat;background-position:left center}
@@ -44,7 +44,7 @@ input:not([id^=srch]):hover{filter:brightness(150%)}
 #tagselect .include,#tuto .include{background-color:rgba(var(--greend),.8);border-color:rgb(var(--greend))}
 #tagselect .exclude,#tuto .exclude{background-color:rgba(var(--redd),.8);border-color:rgb(var(--redd))}
 
-#srch_opcls{right:400px;border-radius:0;background:rgb(var(--goldd));font-size:.75em}
+#srch_opcls{right:400px;border-radius:0;background:rgb(var(--goldd));font-size:.75em;width:160px}
 #srch_opcls:hover{background:rgb(var(--goldl));color:white}
 #srch_reset{right:300px;border-radius:0;background:rgb(var(--redd));width:100px}
 #srch_reset:hover{background:rgba(var(--redl),.9);color:white}
@@ -56,19 +56,19 @@ input:not([id^=srch]):hover{filter:brightness(150%)}
 #srch_start{right:0;border-radius:0 20px 20px 0;background:rgb(var(--greend));background-repeat:no-repeat;background-size:60px;background-position:5px center;font-size:.7em;width:70px}
 #srch_start:hover{background-color:rgba(var(--greenl),.7);color:white}
 
-#activetags{padding:20px;min-height:50px;width:calc(100% - 560px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
+#activetags{line-height:0;padding:20px;min-height:50px;max-height:120px;overflow:auto;scrollbar-color:rgb(var(--goldl))transparent;width:calc(100% - 560px);background:rgba(var(--goldl),.3);border:3px solid rgb(var(--goldd));border-right:none;border-radius:20px 0 0 20px}
 #activetags input{margin:3px}
 
 input[onclick*=SearchState]{margin:.5em}
 
-h2+div:has(#activetags){position:relative;width:90%;margin:17px auto}
+#searchbar>div:has(#activetags){position:relative;margin:17px auto}
 
-#savepoint{position:sticky;top:0;z-index:99;padding:1em;filter:drop-shadow(0 0 22px #000)}
+#searchbar{position:sticky;top:0;z-index:99;padding:1em 0;filter:drop-shadow(0 0 22px #000)}
 #savepoint p{margin:auto;text-align:center}
-#savepoint input{font-size:.8em;max-width:800px;border-radius:.7em}
-#savepoint input[type=button]{background:rgb(var(--goldd))!important;border:3px solid rgb(var(--goldl));padding:7px 9px;font-weight:600}
+#savepoint input{font-size:.8em;max-width:calc(min(800px,50%));border-radius:.7em}
+#savepoint input[type=button]{background:rgb(var(--goldd))!important;border:3px solid rgb(var(--goldl));padding:7px 9px;font-weight:600;max-width:20%}
 #pastebin{outline:3px solid rgb(var(--white));margin:0}
-#copybin{max-width:800px;margin:auto;position:relative;filter:drop-shadow(0 0 22px #000)}
+#copybin{max-width:calc(min(800px,90%));margin:auto;position:relative;filter:drop-shadow(0 0 22px #000)}
 #copybin pre{padding:1em;background:rgba(var(--goldd),.7);text-align:left;filter:drop-shadow(0 0 22px #000);white-space:pre-wrap;overflow-wrap:anywhere}
 #copybin clp{top:.3em;right:.1em}
 #copybin msg{width:64px;margin-left:-32px}
@@ -197,13 +197,15 @@ input[value=Calculate]{width:17%;margin:auto;background:rgb(var(--fore));border:
 it blockquote{user-select:none;-webkit-user-select:none}
 
 #tuto,#tuto *:not(it,it *){--midd:var(--indigod);--fore:var(--indigol)}
-#tuto{max-width:90%;margin:auto;border:5px solid rgb(var(--blue));border-radius:2.2em;background:rgba(var(--blue),.2);padding:0}
+#tuto{margin:auto;border:5px solid rgb(var(--blue));border-radius:2.2em;background:rgba(var(--blue),.2);padding:0}
 #tuto>summary,#tuto details:not(.reg)>summary{list-style:none;background:none;border-color:transparent;width:100%;margin:0;padding:.1em}
 #tuto>summary>*::after,#tuto details:not(.reg)>summary>*::after{content:' ►'}#tuto[open]>summary>*:after,#tuto details[open] summary>*:after{content:" ▼"}
 #tuto summary>h1{margin-bottom:.7em}#tuto h2{color:rgb(var(--white));margin:0}
-#tuto p,#tuto h4,#tuto blockquote,#tuto div:not(.lorecard),#tuto ul,#tuto ol{max-width:1200px;margin:.5em auto}
+#tuto p,#tuto h4,#tuto blockquote,#tuto div:not(.lorecard),#tuto ul,#tuto ol,#tuto it{max-width:calc(min(1200px,95%));margin:.5em auto}
 #tuto .reg+t{margin-top:-3px}
 #tuto hr{max-width:420px;margin:1em auto;background:rgb(var(--blue))}
+
+
 
 #tuto[open]>summary{border-radius:2.2em 2.2em 0 0;border:none}
 #tuto[open]>summary,#tuto details[open]:not(.reg)>summary{border-color:rgb(var(--blue));background:rgba(var(--blue),.2)}
@@ -222,8 +224,17 @@ button>m.hasimg+input{padding-left:2.3em}
 
 img[onclick^=AddTagGroup]{filter:drop-shadow(2px 0px 0 rgb(var(--indigol)))drop-shadow(0px 2px 0 rgb(var(--indigol)))drop-shadow(-2px -0px 0 rgb(var(--indigol)))drop-shadow(-0px -2px 0 rgb(var(--indigol)))}
 
-
-
-
-
-@media (hover:none){input:focus:after{content:attr(title)}}
+@media (pointer:coarse),(hover:none){
+    *[title]:focus:after,*[title]:hover:after{
+        content:attr(title);
+        display:block;
+        border:7px double rgb(var(--emph));outline:3px solid rgb(var(--white));
+        background:rgb(var(--black));
+        width:fit-content;
+        color:rgb(var(--white));
+        opacity:.9;
+        position:absolute;
+        font-size:.8em;
+        top:2.2em
+    }
+}

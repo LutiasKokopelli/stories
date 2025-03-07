@@ -158,7 +158,7 @@ const cdta={"Wake Up":{"GameTime":0,"Tags":["k"],"Color":"rgba(var(--greenl),.42
     "GameTime":5*60+24,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../ast/ico/astr_CT.png style=height:20px><img src=../ast/ico/astr_TT.png style=height:20px;margin-left:-34px>"
 },
 "The Ash & Ember Twin towers’ warp platforms become accessible":{
-    "GameTime":7*60+5,"Tags":["ember twin","ash twin","warp tower","location accessibility"],"Image":"<img src=../ast/ico/astr_CT.png style=height:20px><img src=../ast/ico/astr_TT.png style=height:20px;margin-left:-34px>"
+    "GameTime":7*60+5,"Tags":["ember twin","ash twin","warp tower","ash twin project","location accessibility"],"Image":"<img src=../ast/ico/astr_CT.png style=height:20px><img src=../ast/ico/astr_TT.png style=height:20px;margin-left:-34px>"
 },
 "Hourglass Twins Warp Window<s>1</s>":{
     "GameTime":7*60+53.2,"Tags":["hourglass twins","ember twin","ash twin","ash twin project","warp window","warp tower","location accessibility"],"Color":"rgba(var(--redd),.4)","Image":"<img src=../ast/ico/astr_CT.png style=height:20px><img src=../ast/ico/astr_TT.png style=height:20px;margin-left:-34px>"
