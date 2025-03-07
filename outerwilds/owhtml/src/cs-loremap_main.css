@@ -221,3 +221,9 @@ button>m+input{padding-left:2.2em}
 button>m.hasimg+input{padding-left:2.3em}
 
 img[onclick^=AddTagGroup]{filter:drop-shadow(2px 0px 0 rgb(var(--indigol)))drop-shadow(0px 2px 0 rgb(var(--indigol)))drop-shadow(-2px -0px 0 rgb(var(--indigol)))drop-shadow(-0px -2px 0 rgb(var(--indigol)))}
+
+
+
+
+
+@media (hover:none){input:focus:after{content:attr(title)}}

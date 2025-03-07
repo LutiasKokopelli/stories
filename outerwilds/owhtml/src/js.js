@@ -233,8 +233,8 @@ function opencloseall(){if(!allit[0].getElementsByTagName("details")[0].open==tr
 function changechp(ch){
     [...document.querySelectorAll('*[id^=prevnext]')].map(n=>n&&n.remove())
     for(i=0;i<chlist.length;i++){
-        if(chlist[i]==ch){document.getElementById(chlist[i]).style.display='';if(i<1){lnks=['',chlist[i+1]]}else if(i===chlist.length-1){lnks=[chlist[i-1],'']}else{lnks=[chlist[i-1],chlist[i+1]]}}
-        else{document.getElementById(chlist[i]).style.display='none'}
+        if(chlist[i]==ch){document.getElementById(chlist[i].slice(1)).style.display='';if(i<1){lnks=['',chlist[i+1]]}else if(i===chlist.length-1){lnks=[chlist[i-1],'']}else{lnks=[chlist[i-1],chlist[i+1]]}}
+        else{document.getElementById(chlist[i].slice(1)).style.display='none'}
     }prevnextnode=document.createElement('div');prevnextnode.id='prevnext';inh='<a href=#'
     if(lnks[0]){inh+=lnks[0]+' onclick="javascript:changechp(\''+lnks[0]+'\')">&larr;&nbsp;Previous</a>'}
     if(lnks[0]&&lnks[1]){inh+=' &emsp; <a href=#'}
