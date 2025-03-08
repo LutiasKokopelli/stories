@@ -38,10 +38,11 @@ All good temporarily  	☑️
 <p><b>What this means in practice:</b><ul>
 <li>If a lore card is about a very specific topic (for example, “Esker has pink eyes”), then it will come with equally specific tags (such as “#esker”).</li>
 <li>If a lore card encompasses multiple entities at once (for example, “Hearthians have four eyes”), then it will come with a broader tag (“#hearthians”) but <i>not</i> with the whole list of more specific tags (The tag “#esker” and all other 21 Hearthian character tags will not be listed).</li>
-<li>And yet, Esker is a Hearthian: therefore, what you will observe if you decide to activate the tag “#esker” is that the lore card “Hearthians have four eyes” will also appear – even if the tag “#hearthians” is absent from your list of active tags.<ul><li><b>Tip:</b> If you hover your mouse* over a tag like <input type=button value='#this'title='Related tags (will appear in orange):
+<li>And yet, Esker is a Hearthian: therefore, what you will observe if you decide to activate the tag “#esker” is that the lore card “Hearthians have four eyes” will also appear – even if the tag “#hearthians” is absent from your list of active tags.<ul>
+<li><b>Tip:</b> If you hover your mouse (or for touch screen devices, long press – this example will not work but real tags should) on a tag like <input type=button value='#this'title='Related tags (will appear in orange):
   • #tag A is related
   • #also tag B'style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque;padding:0 .3em;margin-top:-.3em'>, a list of all the related tags which will be added in this “passive” way will be displayed. If no such list appears, then the tag has no documented relations.</li>
-<li class=smol>*I have bad news for mobile users (and probably users of any device with a touch screen and no mouse), but this may not work for you. I have been pulling my hair out over this, but the fact that 1. <code class=smol>title</code> attributes simply don’t show up on these devices, and 2. <code class=smol>&lt;input&gt;</code> blocks cannot contain <code class=smol>:before</code> or <code class=smol>:after</code> pseudo-elements, would ask for a complete overhaul of how I coded it 😭 Please contact me if you are a web developer and have ideas for a better fix.</li></ul></li>
+<!-- <li class=smol>*I have bad news for mobile users (and probably users of any device with a touch screen and no mouse), but this may not work for you. I have been pulling my hair out over this, but the fact that 1. <code class=smol>title</code> attributes simply don’t show up on these devices, and 2. <code class=smol>&lt;input&gt;</code> blocks cannot contain <code class=smol>:before</code> or <code class=smol>:after</code> pseudo-elements, would ask for a complete overhaul of how I coded it 😭 Please contact me if you are a web developer and have ideas for a better fix.</li></ul></li> -->
 <li>If you are not interested in the kind of lore that regards all Hearthians indiscriminately, you can look at the tags of a lore card that isn’t relevant to Esker specifically: the tag “#hearthians” will be <orng>orange</orng> instead of white or light green. In order to get rid of lore cards that appeared because of an unwanted orange tag, one option is to click on this orange tag twice (first to turn it green, then to turn it red and thus exclude it from the search).</li>
 <li><b>Of note:</b> Changing the <a href="javascript:document.querySelector('#loremapsmode').closest('details').open=true;document.getElementById('loremapsmode').scrollIntoView()">search mode</a> to “FOCUS” will disregard <i>all</i> orange tags. If you are however interested in keeping at least one or two orange tags (for example, while “#hearthians” is too vague, seeing results for “#lunar outpost” still interests you), you have two options: keep the search mode as BROAD and turn all the unwanted tags red, or (provided the <a href="javascript:document.querySelector('#loremaplogic').closest('details').open=true;document.getElementById('loremaplogic').scrollIntoView()">search logic</a> is ANY instead of ALL) turn all the tags of interest green and change the search mode to FOCUS.</li>
 </ul></p>
@@ -60,7 +61,7 @@ All good temporarily  	☑️
 <!--@SFOLD✔️Search Bar-->
 <details><summary><h2>Search Bar: Manage your results</h2></summary>
 <p>Below the table listing all tags available stands the search bar: it will provide you with a quick access to your active tags and multiple features which will help refine your search. From left to right, the search bar is composed of the following elements:</p><ul>
-<li>The list and state of all currently active tags. Each tag shown in this space is a button of its own, which functions the exact same way as the original tags (including the possibility to show you the list of orange tags it may be connected to if you hover them).</li>
+<li>The list and state of all currently active tags. Each tag shown in this space is a button of its own, which functions the exact same way as the original tags (including the possibility to show you the list of orange tags it may be connected to if you hover them – provided you are not using a touch screen device, that part hasn’t been figured out yet).</li>
 <li><span class style='background:rgb(var(--goldd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Open/Close All</span> lets you expand or collapse all lore cards at once.</li>
 <li><span class style='background:rgb(var(--redd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Reset</span> erases the search bar’s contents and the state of all tags. The show/conceal state of Echoes of the Eye spoilers and the search mode & logic will not be reset.</li>
 <li><span class style='background:rgb(var(--indigod));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Echoes of the Eye</span> spoilers can be toggled on or off. When DLC spoilers are toggled off, concealed lore cards will still be displayed in a heavily blurred state: this is meant to notify you of their existence, without them actually being readable unless you allow DLC spoilers.</li>
@@ -439,7 +440,8 @@ All good temporarily  	☑️
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD✔️Search Bar-->
-</div><h2 style=margin-bottom:0;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div id=searchbar><div><div id=activetags></div>
+</div><h2 style=margin-bottom:0;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div>
+<div id=searchbar><div><div id=activetags></div>
 <input id=srch_opcls type=button value='Open/Close All'onclick=opencloseall()>
 <input id=srch_reset type=button value=Reset onclick=ResetTagSelector()>
 <input id=srch_dlc type=button onclick=srch_dlc()>
@@ -1225,11 +1227,111 @@ All good temporarily  	☑️
 <a target=_blank href=https://www.desmos.com/calculator/cx2vcrh8sf class='cardext dlc'><it><details class=n open><summary>Solar System Simulation <span class=source>(by Eriksonn)</span></summary></details><t>#keep</t></it></a>
 <a target=_blank href=https://drive.google.com/drive/u/0/folders/1N5TNFRCTCpYuQfhapRg2QkA00asJ581E class='cardext dlc'><it><details class=n open><summary>Text Dump (Alphas & All Patches)</summary></details><t>#keep</t></it></a>
 <a target=_blank href=https://hushbugger.github.io/outerwilds/text class='cardext dlc'><it><details class=n open><summary>Text Dump (Patch 1.1.13) <span class=source>(by HushBugger)</span></summary></details><t>#keep</t></it></a>
-</div><h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2></div>
+</div>
+</div><h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
 <script>function partreload(){url=window.location.href.split('#')
 if(url[2]=='nodlc'||url[1]=='nodlc'){srch_dlc();document.title+=' (no DLC)';document.getElementById('disclaimer').innerHTML=''}
-else{document.getElementById('disclaimer').innerHTML='<b>Warning:</b> DLC spoilers can be toggled on and off at will, but the version of this page you are viewing is <b>opt-out</b> (DLC spoilers are visible by default).<br><b>You can access the opt-in version of this page <a href=loremap.html#nodlc style=--fore:var(--redl) onClick=javascript:partreload()>here</a>.</b> If you share this page with a friend who hasn’t played the DLC, please share the opt-in version instead of this one!'}}partreload()</script>
-<script src=../src/js-loremap.js></script>
-</div></body></html><script src=../src/js-debug.js></script>
+else{document.getElementById('disclaimer').innerHTML='<b>Warning:</b> DLC spoilers can be toggled on and off at will, but the version of this page you are viewing is <b>opt-out</b> (DLC spoilers are visible by default).<br><b>You can access the opt-in version of this page <a href=loremap.html#nodlc style=--fore:var(--redl) onClick=javascript:partreload()>here</a>.</b> If you share this page with a friend who hasn’t played the DLC, please share the opt-in version instead of this one!'}}partreload()</script><script src=../src/js-loremap.js></script>
 <!--@EFOLD-->
 <!--Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to recheck the version changes & translations in already made lore cards.-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style=padding-bottom:5em><details open id=tutotags><summary><h2>Tag Relationships Map</h2></summary><canvas style=width:99%;height:80vh></canvas></details></div>
+
+<script type=module>
+import D3CanvasNetworkgraph from "https://w99910.github.io/d3canvas-networkgraph/dist/d3canvas-networkgraph.es.js"
+var tags=[],rels=[]
+for(i=0;i<tagselect.length;i++){
+    const name=tagselect[i].value.split("#")[1]
+    var r=10,b='white',ls=1,c=[29,74,148]
+    // What other tags this tag’s ASTERISK toggles:
+    if(tagselect[i].previousSibling){if(tagselect[i].previousSibling.tagName=='M'){
+        b='orange'
+        inputs=document.querySelectorAll('input[n*="'+name+'"]')
+        for(n=0;n<inputs.length;n++){
+            r+=.1
+            ls+=1
+            c=[c[0]+5,c[1]+2,c[2]+1]
+            if((inputs[n].getAttribute('n').split('#').filter((m)=>m)).includes(name)){
+                rels.push({
+                    source:name,
+                    target:inputs[n].value.split('#')[1],
+                    color:'royalblue',
+                    width:10
+                })
+            }
+        }
+    }}
+    // What other tags selecting this tag will PASSIVELY show (orange):
+    if(tagselect[i].hasAttribute('n')){
+        const ntgs=tagselect[i].getAttribute('n').replace('!','').split('#').filter((m)=>m)
+        for(n=0;n<ntgs.length;n++){
+            rels.push({
+                source: name,
+                target: ntgs[n],
+                color: "orange",
+                width:1
+            })
+        }
+    }
+    tags.push({
+        id:name,
+        tooltip:name,
+        label:true,
+        labelFontSize:ls,
+        color:'rgb('+c[0].toString()+','+c[1].toString()+','+c[2].toString()+')',
+        radius:r,
+        border:b
+    })
+}
+let networkgraph=D3CanvasNetworkgraph(document.querySelector('canvas'),{nodes:tags,links:rels},{
+    sticky:false,
+    drag:true,
+    simulation:null,
+    zoom:true,
+    events:{
+        onZoom:null,
+        onResize:null,
+    },
+    node:{
+        // color:null,
+        // border:true,
+        // radius:10,
+        borderWidth:1,
+        label:null,
+        // labelFontSize:100,
+        labelColor:"#fff",
+        // tooltip:null,
+        // tooltipFontSize:20,
+        // onClick:null,
+        // onHover:null,
+        // onDrag:null,
+    },
+    link:{
+        color:"#fff",
+        // width:1,
+    }
+})
+
+
+
+
+// document.querySelector('canvas').getContext("2d").font="10px BrandonGrotesque"
+// console.log(document.querySelector('canvas').getContext("2d").font)
+
+</script>
+</div></body></html><script src=../src/js-debug.js></script>

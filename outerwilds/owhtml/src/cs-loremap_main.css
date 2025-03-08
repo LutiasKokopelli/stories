@@ -2,8 +2,8 @@ a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before,a[target=_blank
 a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before,a[target=_blank].cardext .n summary:before,.prtg:before{width:1em;height:.7em;display:inline-block;background:url(../ast/svg/hud_dlg.svg)center no-repeat}
 a[href*=getcard] h2:before{filter:drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)}
 a[target=_blank].cardext .n summary:after{content:'';background:url(../ast/svg/external-link.svg)center no-repeat;background-size:cover;display:inline-block;height:1em;width:1em;margin-bottom:-.2em;margin-left:.3em}
-@media only screen and (orientation:landscape){body{font-size:22px}#tuto,#searchbar>div:has(#activetags){max-width:90%}}
-@media only screen and (orientation:portrait){body{font-size:4vw}#sidenav{width:64%}#tuto,#searchbar>div:has(#activetags){width:100%}div:has(#activetags)>input,#savepoint>*{font-size:.5em}}
+@media only screen and (orientation:landscape){body{font-size:22px}[id^=tuto],#searchbar>div:has(#activetags){max-width:90%}}
+@media only screen and (orientation:portrait){body{font-size:4vw}#sidenav{width:64%}[id^=tuto],#searchbar>div:has(#activetags){width:100%}div:has(#activetags)>input,#savepoint>*{font-size:.5em}}
 .spanintro{padding:0 12px;color:white;font-weight:800;border-radius:20px;margin:2px;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.8);box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .all{background:rgb(var(--black),.8);margin-top:-50px;padding-top:50px;width:100%}
 input{padding:4px 7px;border-radius:12px;border:2px solid rgb(var(--indigod));vertical-align:middle;background-repeat:no-repeat;background-position:left center}
@@ -196,10 +196,10 @@ input[value=Calculate]{width:17%;margin:auto;background:rgb(var(--fore));border:
 .abtn img{height:1em;margin-bottom:-.2em}
 it blockquote{user-select:none;-webkit-user-select:none}
 
-#tuto,#tuto *:not(it,it *){--midd:var(--indigod);--fore:var(--indigol)}
-#tuto{margin:auto;border:5px solid rgb(var(--blue));border-radius:2.2em;background:rgba(var(--blue),.2);padding:0}
-#tuto>summary,#tuto details:not(.reg)>summary{list-style:none;background:none;border-color:transparent;width:100%;margin:0;padding:.1em}
-#tuto>summary>*::after,#tuto details:not(.reg)>summary>*::after{content:' ►'}#tuto[open]>summary>*:after,#tuto details[open] summary>*:after{content:" ▼"}
+[id^=tuto],[id^=tuto] *:not(it,it *){--midd:var(--indigod);--fore:var(--indigol)}
+[id^=tuto]{margin:auto;border:5px solid rgb(var(--blue));border-radius:2.2em;background:rgba(var(--blue),.2);padding:0}
+[id^=tuto]>summary,[id^=tuto] details:not(.reg)>summary{list-style:none;background:none;border-color:transparent;width:100%;margin:0;padding:.1em}
+[id^=tuto]>summary>*::after,#tuto details:not(.reg)>summary>*::after{content:' ►'}[id^=tuto][open]>summary>*:after,#tuto details[open] summary>*:after{content:" ▼"}
 #tuto summary>h1{margin-bottom:.7em}#tuto h2{color:rgb(var(--white));margin:0}
 #tuto p,#tuto h4,#tuto blockquote,#tuto div:not(.lorecard),#tuto ul,#tuto ol,#tuto it{max-width:calc(min(1200px,95%));margin:.5em auto}
 #tuto .reg+t{margin-top:-3px}
