@@ -2783,7 +2783,7 @@ function wu(t, e, n = {
             let O = R.label ?? ((k = n.node) == null ? void 0 : k.label);
             if (O) {
                 let K = ((A = n == null ? void 0 : n.node) == null ? void 0 : A.labelFontSize) ?? 14;
-                c.font = `${K}px Consolas`, c.fontVariantCaps="small-caps", c.fillStyle = "rgba(29,74,148,.8)", c.fillText(typeof O == "function" ? O(R, C) : typeof O == "boolean" ? R.id : O, R.x - w / 2, R.y + w / 2);
+                c.font = `${K}px Consolas`, c.fontVariantCaps="small-caps", c.strokeStyle ="black", c.lineWidth = 8, c.strokeText(typeof O == "function" ? O(R, C) : typeof O == "boolean" ? R.id : O, R.x - w / 2, R.y + w / 2), c.fillStyle = "white", c.fillText(typeof O == "function" ? O(R, C) : typeof O == "boolean" ? R.id : O, R.x - w / 2, R.y + w / 2);
             }
         }
         if (v.rect && (c.fillStyle = "white", c.strokeStyle = "black", c.lineWidth = 1 / u.k, c.beginPath(), c.rect(v.rect.x, v.rect.y, v.rect.width, v.rect.height), c.fill(), c.stroke(), c.closePath()), v.arrow && (c.lineWidth = 1 / u.k, c.fillStyle = "white", c.beginPath(), c.moveTo(v.arrow.x[0], v.arrow.x[1]), c.lineTo(v.arrow.y[0], v.arrow.y[1]), c.lineTo(v.arrow.z[0], v.arrow.z[1]), c.fill(), c.closePath(), c.beginPath(), c.moveTo(v.arrow.z[0], v.arrow.z[1]), c.lineTo(v.arrow.x[0], v.arrow.x[1]), c.moveTo(v.arrow.z[0], v.arrow.z[1]), c.lineTo(v.arrow.y[0], v.arrow.y[1]), c.stroke(), c.closePath()), v.text) {
