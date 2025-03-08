@@ -33,12 +33,17 @@ for(t=0;t<allmtags.length;t++){
     allmtags[t].setAttribute('onclick','AddTagGroup(this.nextSibling.value)')
     n=allmtags[t].nextSibling.value.split('#')[1];chiltags="This will also toggle the following tags:"
     inputs=Array.from(document.querySelectorAll('input[n*="'+n+'"]')).sort(SortByValue)
-    for(i=0;i<inputs.length;i++){if((inputs[i].getAttribute('n').split('#').filter((m)=>m)).includes(n)){chiltags+="\n  • "+inputs[i].value}}
+    for(i=0;i<inputs.length;i++){if(
+        (inputs[i].getAttribute('n').replace('@','').split('#').filter((m)=>m)).includes(n)
+    ){chiltags+="\n  • "+inputs[i].value}}
     allmtags[t].setAttribute('title',chiltags)
 }
 // Show Master Tags
 const allntags=document.querySelectorAll('input[n]')
-for(t=0;t<allntags.length;t++){ns=allntags[t].getAttribute('n').replace('!','').split('#').filter((m)=>m);chiltags='Related tags (will appear in orange):\n  • #'+ns.sort().join("\n  • #");allntags[t].setAttribute('title',chiltags)}
+for(t=0;t<allntags.length;t++){
+    ns=allntags[t].getAttribute('n').replace('!','').split('#').filter((m)=>m).filter(s=>/^[^@]/i.test(s))
+    allntags[t].setAttribute('title','Related tags (will appear in orange):\n  • #'+ns.sort().join("\n  • #"))
+}
 // Mark Unused Tags
 utags=filterlist.querySelectorAll('t>*');uniq=[]
 for(i=0;i<utags.length;i++){if(!uniq.includes(utags[i].value)){uniq.push(utags[i].value)}}
@@ -50,22 +55,6 @@ mtg='';for(tag=0;tag<uniq.length;tag++)altgs.includes(uniq[tag].split('#')[1])||
 
 // Make text box Enter key friendly
 document.getElementById("pastebin").addEventListener('keydown',function(e){if(e.key=='Enter'){LoadSearchState(this.value)}})
-
-
-
-// Put all in one column automatically
-onecol=true
-if(onecol){filterlist.style.maxWidth="800px"}else{filterlist.style.maxWidth=""}
-onecol=!onecol
-
-
-
-
-
-
-
-
-
 
 // Create substitutes to input::after if you are on touchscreen devices
 if("ontouchstart"in document.documentElement){
@@ -94,3 +83,18 @@ if("ontouchstart"in document.documentElement){
         }
     }
 }
+
+// Put all in one column automatically
+onecol=true
+if(onecol){filterlist.style.maxWidth="800px"}else{filterlist.style.maxWidth=""}
+onecol=!onecol
+
+
+
+
+
+
+
+
+
+

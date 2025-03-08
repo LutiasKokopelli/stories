@@ -146,15 +146,25 @@
 <div class=tagcategory><h1>Astral Bodies,<br>Satellites, Ships</h1>
 <input type=button onclick=AddTagSelector(this.value) class=hasimg value='#quantum moon'style=background-image:url(../ast/ico/astr_QM.png)>
 <hr style=--fore:var(--redd)>
-<h2>Toggle all iterations of an astral body:<br><span style=font-size:2em;line-height:1em;opacity:1><img onclick="AddTagGroup('#TT')"src=../ast/ico/astr_TT.png><img onclick="AddTagGroup('#CT')"src=../ast/ico/astr_CT.png><img onclick="AddTagGroup('#TH')"src=../ast/ico/astr_TH.png><img onclick="AddTagGroup('#BH')"src=../ast/ico/astr_BH.png><img onclick="AddTagGroup('#GD')"src=../ast/ico/astr_GD.png><img onclick="AddTagGroup('#DB')"src=../ast/ico/astr_DB.png></span></h2>
+<h2>Toggle all iterations of an astral body:<br><span style=font-size:2em;line-height:1em;opacity:1><img onclick="AddTagGroup('#ash twin')"src=../ast/ico/astr_TT.png><img onclick="AddTagGroup('#ember twin')"src=../ast/ico/astr_CT.png><img onclick="AddTagGroup('#timber hearth')"src=../ast/ico/astr_TH.png><img onclick="AddTagGroup('#brittle hollow')"src=../ast/ico/astr_BH.png><img onclick="AddTagGroup('#giant’s deep')"src=../ast/ico/astr_GD.png><img onclick="AddTagGroup('#dark bramble')"src=../ast/ico/astr_DB.png></span></h2>
+
+<div style=display:none>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#ash twin'></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#ember twin'></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#timber hearth'></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#brittle hollow'></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#giant’s deep'></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#dark bramble'></button>
+</div>
+
 <details class=fkno><summary>Vanilla FKNO</summary><div>
-    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=TH value='#timber hearth (vanilla)'style=background-image:url(../ast/ico/astr_TH.png)>
-    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=GD value='#giant’s deep (vanilla)'style=background-image:url(../ast/ico/astr_GD.png)>
-    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=DB value='#dark bramble (vanilla)'style=background-image:url(../ast/ico/astr_DB.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n='timber hearth' value='#timber hearth (vanilla)'style=background-image:url(../ast/ico/astr_TH.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n='giant’s deep' value='#giant’s deep (vanilla)'style=background-image:url(../ast/ico/astr_GD.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n='dark bramble' value='#dark bramble (vanilla)'style=background-image:url(../ast/ico/astr_DB.png)>
 </div></details>
 <details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
-    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=TH value='#timber hearth (hal’s universe)'style=background-image:url(../ast/ico/astr_TH.png)>
-    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=DB value='#distant brine (hal’s universe)'style=background-image:url(../ast/ico/astr_DB.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n='timber hearth' value='#timber hearth (hal’s universe)'style=background-image:url(../ast/ico/astr_TH.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n='dark bramble' value='#distant brine (hal’s universe)'style=background-image:url(../ast/ico/astr_DB.png)>
 </div></details>
 </div>
 <!--@EFOLD-->
@@ -239,22 +249,25 @@
 <!--@EFOLD-->
 <!--@SFOLD✔️Search Bar-->
 <div style=display:none><input type=button onclick=AddTagSelector(this.value) value='#general data'><input type=button onclick=AddTagSelector(this.value) value=#keep></div></div>
-<h2 style=margin-top:17px;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div><div id=activetags></div>
+
+<h2 style=margin-bottom:0;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div>
+<div id=searchbar><div><div id=activetags></div>
 <input id=srch_opcls type=button value='Open/Close All'onclick=opencloseall()>
 <input id=srch_reset type=button value=Reset onclick=ResetTagSelector()>
+<input id=srch_dlc type=button onclick=srch_dlc()>
 <input id=srch_mode type=button onclick=FocusMode()>
 <input id=srch_start type=button onclick=SwapLogic()>
 </div><div id=savepoint><p>
 <input type=button onclick=CopySearchState() value="Copy current tag list">
 <input id=pastebin type=text placeholder="Paste tag list">
 <input type=button onclick="LoadSearchState(document.getElementById('pastebin').value)"value="Submit new tag list">
-</p><div id=copybin></div></div><div id=filterlist>
+</p><div id=copybin></div></div></div><div id=filterlist>
 <!--@EFOLD-->
 <!--@EFOLD-->
 <!--@SFOLD✔️Non-expanding Lore Cards-->
 <it id=OGFeldsparDidntContactTHafterCoreOfGD><details class=n><summary>Feldspar was too eager to visit Dark Bramble to contact ground control after coming out of the core of Giant’s Deep.</summary></details><t>#feldspar (vanilla) #dark bramble (vanilla) #outer wilds ventures (vanilla) #backstory (vanilla) #vanilla fkno</t></it>
 <it id=OGFeldsparShipAlreadyDamagedBeforeDBCrash><details class=n><summary>Feldspar’s ship was already in need of minor repairs when they came for Dark Bramble. Their radio was destroyed when they crashed into the vine.</summary></details><t>#feldspar (vanilla) #dark bramble (vanilla) #backstory (vanilla) #vanilla fkno</t></it>
-<it id=OGHeaUnchartedGD_MissingBrambleToQT><details class=n><summary>Before the time loop, Outer Wilds Ventures don’t know that <a href="javascript:getcard('BrambleIslandSankBeneathCurrent')">Bramble Island</a> or the Tower of Quantum Trials exist.</summary></details><t>#giant’s deep (vanilla) #bramble island #tower of quantum trials #outer wilds ventures (vanilla) #vanilla fkno</t></it>
+<it id=OGHeaUnchartedGD_MissingBrambleToQT><details class=n><summary>Before the time loop, Outer Wilds Ventures didn’t know that <a href="javascript:getcard('BrambleIslandSankBeneathCurrent')">Bramble Island</a> or the Tower of Quantum Trials exist.</summary></details><t>#giant’s deep (vanilla) #bramble island #tower of quantum trials #outer wilds ventures (vanilla) #vanilla fkno</t></it>
 <it id=SyenAstrology class=mau><details class=n><summary>Syen is into astrology.</summary></details><t>#hal’s universe #syenite nickel</t></it>
 <it id=SyenFrogShirt class=mau><details class=n><summary>Syen wears frog-themed T-shirts.</summary></details><t>#hal’s universe #syenite nickel</t></it>
 <it id=MAUHalVsMoney class=mau><details class=n><summary>Hal will struggle at first to remember up to the word “money,” and will struggle for even longer to grasp the concept.</summary></details><t>#hal’s universe #hal (vanilla) #timeline (hal’s universe)</t></it>
@@ -515,7 +528,7 @@
 <a href=../owdoc/calendar_timeloop.html target=_blank class=cardext><it><details class=n open><summary>All Time Loop Scripted Events</summary></details><t>#keep</t></it></a>
 <a href=https://www.desmos.com/calculator/cx2vcrh8sf target=_blank class=cardext><it><details class=n open><summary>Solar System Simulation <span class=source style=color:initial;opacity:.5>(by Eriksonn)</span></summary></details><t>#keep</t></it></a>
 <a href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov target=_blank class=cardext><it><details class=n open><summary>Artist References <span class=source style=color:initial;opacity:.5>(by Repcon)</span></summary></details><t>#keep</t></it></a>
-<it class=misc><details open style=text-align:center><summary style=font-size:30px;font-weight:600;text-align:left>Hearthian Time vs Human Time Converter</summary>
+<it id=HeaTimeConverter class=misc><details open style=text-align:center><summary style=font-size:30px;font-weight:600;text-align:left>Hearthian Time vs Human Time Converter</summary>
 <input id=convTH type=text placeholder="Hearthian time (--d--s --:--)"style='margin:1rem auto 3px auto;width:100%'>
 <input type=button value="Hearthian time &rarr; In-game time"style=width:46%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2GMtime(convTH.value),0)>
 <input type=button value="Human Circadian Rhythm Equivalent"style=width:51.6%;margin-top:3px;filter:hue-rotate(70deg) onclick=fillconvout(THtime2HMcircadianrhythm(convTH.value),2)>
@@ -531,9 +544,126 @@
 <h2>Human Time &rarr; Hearthian Time</h2>
 <p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p>
 </details></details><t>#keep</t></it>
-</div></div><script src=../src/js-loremap.js></script><script>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+<div style=padding-bottom:5em><details open id=tutotags><summary><h2>Tag Relationships Map</h2></summary><canvas style=width:99%;height:80vh></canvas><p class=source style=padding-right:2em;padding-bottom:1em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div>
+
+
+
+
+
+
+
+
+
+<script>
 convTH=document.getElementById("convTH");convHM=document.getElementById("convHM");convout=document.getElementById("convout")
 function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
 function RevealTagCategory(universe){sele=document.querySelectorAll('#tagselect details.'+universe);if(!sele[0].open==true){for(i=0;i<sele.length;i++){sele[i].open=true}}else{for(i=0;i<sele.length;i++){sele[i].open=false}}}
-</script><script src=../src/js-debug.js></script></div></body></html>
+</script>
+<script src=../src/js-loremap.js></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type=module>
+import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
+var tags=[],rels=[]
+for(i=0;i<tagselect.length;i++){
+    const name=tagselect[i].value.split("#")[1]
+    var r=5,b='royalblue',ls=1,c=[29,74,148]
+    // What other tags this tag’s ASTERISK toggles:
+    if(tagselect[i].previousSibling){if(tagselect[i].previousSibling.tagName=='M'){
+        b='orange'
+        inputs=document.querySelectorAll('input[n*="'+name+'"]')
+        for(n=0;n<inputs.length;n++){
+            r+=.2
+            ls+=1
+            c=[c[0]+3,c[1]+1,c[2]-2]
+            if((inputs[n].getAttribute('n').split('#').filter((m)=>m)).includes(name)){
+                rels.push({
+                    source:name,
+                    target:inputs[n].value.split('#')[1],
+                    color:'royalblue',
+                    width:10
+                })
+            }
+        }
+    }}
+    // What other tags selecting this tag will PASSIVELY show (orange):
+    if(tagselect[i].hasAttribute('n')){
+        const ntgs=tagselect[i].getAttribute('n').replace('!','').replace('@','').split('#').filter((m)=>m)
+        for(n=0;n<ntgs.length;n++){
+            rels.push({
+                source: name,
+                target: ntgs[n],
+                color: "orange",
+                width:1
+            })
+        }
+    }
+    tags.push({
+        id:name,
+        tooltip:name,
+        label:true,
+        labelFontSize:ls,
+        color:'rgb('+c[0].toString()+','+c[1].toString()+','+c[2].toString()+')',
+        radius:r,
+        border:b
+    })
+}
+let networkgraph=D3CanvasNetworkgraph(document.querySelector('canvas'),{nodes:tags,links:rels},{
+    sticky:false,
+    drag:true,
+    simulation:null,
+    zoom:true,
+    events:{
+        onZoom:null,
+        onResize:null,
+    },
+    node:{
+        // color:null,
+        // border:true,
+        // radius:10,
+        borderWidth:1,
+        label:null,
+        labelFontSize:5,
+        labelColor:"#fff",
+        labelFontFamily:"Consolas",
+        // tooltip:null,
+        // tooltipFontSize:20,
+        // onClick:null,
+        // onHover:null,
+        // onDrag:null,
+    },link:{color:"#fff"}
+})</script>
+
+
+
+
+
+
+
+
+
+</div></body></html>
+<script src=../src/js-debug.js></script>
 <!--@EFOLD-->
