@@ -2785,7 +2785,7 @@ function wu(t, e, n = {
                 let K = ((A = n == null ? void 0 : n.node) == null ? void 0 : A.labelFontSize) ?? 14;
                 c.font = `${K}px Consolas`, c.fontVariantCaps="small-caps",
 
-                c.strokeStyle ="black", c.lineWidth = 1, c.lineCap="round", c.strokeText(typeof O == "function" ? O(R, C) : typeof O == "boolean" ? R.id : O, R.x - w / 2, R.y + w / 2),
+                c.strokeStyle ="black", c.lineWidth = 1, c.lineCap="round",c.lineJoin="round", c.strokeText(typeof O == "function" ? O(R, C) : typeof O == "boolean" ? R.id : O, R.x - w / 2, R.y + w / 2),
 
                 c.fillStyle = "white", c.fillText(typeof O == "function" ? O(R, C) : typeof O == "boolean" ? R.id : O, R.x - w / 2, R.y + w / 2);
             }
