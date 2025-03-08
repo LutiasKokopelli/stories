@@ -1,5 +1,4 @@
 // from: https://w99910.github.io/d3canvas-networkgraph/dist/d3canvas-networkgraph.es.js
-
 class le extends Map {
   constructor(e, n = gn) {
     if (super(), Object.defineProperties(this, { _intern: { value: /* @__PURE__ */ new Map() }, _key: { value: n } }), e != null)
@@ -2705,7 +2704,7 @@ function wu(t, e, n = {
     if (typeof T == "function" && (T = T(S)), typeof T != "string")
       throw new TypeError("tooltip should be string");
     let h = ((R = n.node) == null ? void 0 : R.tooltipFontSize) ?? 20;
-    c.font = `${h / u.k}px serif`;
+    // c.font = `${h / u.k}px serif`;
     let _ = c.measureText(T), x = 10 / u.k, b = {
       top: 10 / u.k,
       left: 10 / u.k,
