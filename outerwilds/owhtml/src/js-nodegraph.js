@@ -2710,7 +2710,7 @@ function wu(t, e, n = {
             left: 10 / u.k,
             right: 10 / u.k,
             bottom: 10 / u.k
-        }, k = b.left + _.width + b.right, A = b.top + _.actualBoundingBoxAscent + _.actualBoundingBoxDescent + b.bottom, M = S.x - k / 2, $ = S.y - x - A - w, C = 1;
+        }, k = b.left + _.width, A = b.top + _.actualBoundingBoxAscent + _.actualBoundingBoxDescent + b.bottom, M = S.x - k / 2, $ = S.y - x - A - w, C = 1;
         M + k > E.width && (M = E.width - k), M < 0 && (M = 0), $ < 0 && ($ = S.y + x + w, C = 0), v.rect = {
             x: M,
             y: $,
