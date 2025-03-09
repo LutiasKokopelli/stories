@@ -10,9 +10,7 @@
 <meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
 <meta property=og:title content="FKNO Lore Map">
 <meta property=og:description content="An interactive compilation of sorts for the main FKNO headcanons and whatnot. Mainly used as Lutias’ own notes whenever she wants to double check something tbh">
-<meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/ast/ico/OWV.png>
-<script src=../src/js.js></script></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
-<input id=findtaginput onkeyup=FindTag() placeholder='Quick tag search:'>
+<meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/ast/ico/OWV.png></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1><input id=findtaginput onkeyup=FindTag() placeholder='Quick tag search:'>
 <!--@EFOLD-->
 <!--@SFOLD☑️Select Tags-->
 <!--@SFOLD✔️Tags: Universes-->
@@ -249,8 +247,8 @@
 <!--@EFOLD-->
 <!--@SFOLD✔️Search Bar-->
 <div style=display:none><input type=button onclick=AddTagSelector(this.value) value='#general data'><input type=button onclick=AddTagSelector(this.value) value=#keep></div></div>
-
-<h2 style=margin-bottom:0;color:rgb(var(--goldl))>Your search includes the following tags:</h2><div>
+<div style=margin-top:1em><details open id=tutoactivetags style='border:5px solid rgb(var(--goldd));background:rgba(var(--goldd),.2)'><summary><h2 style=color:rgb(var(--goldl))>Your search includes the following tags:</h2></summary>
+<canvas id=cvs_active style=width:99%;height:42vh;background:url(../ast/img/shiplog_bg.png)center;border-radius:2em;display:block;margin:auto></canvas><p class=source style=padding-right:2em;padding-bottom:1em;margin-top:-2em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div><div>
 <div id=searchbar><div><div id=activetags></div>
 <input id=srch_opcls type=button value='Open/Close All'onclick=opencloseall()>
 <input id=srch_reset type=button value=Reset onclick=ResetTagSelector()>
@@ -544,126 +542,43 @@
 <h2>Human Time &rarr; Hearthian Time</h2>
 <p align=left style=padding-bottom:20px>The recommended input format is either <code class='spanintro smol'>--:--:--</code> (hours, minutes, seconds) or <code class='spanintro smol'>--:--</code>. In the latter case, the two numbers will be interpreted either as minutes and seconds (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>In-game time &rarr; Hearthian time</span>, which expects a number within or soon after the confines of the time loop) or as hours and minutes (if you click on <span class=spanintro style=filter:hue-rotate(70deg)>Hearthian Circadian Rhythm Equivalent</span>). Human times used here expect a <b>24-hour clock format</b> rather than a 12-hour format.</p>
 </details></details><t>#keep</t></it>
-</div></div>
-
-
-
-
-
-
-
-
-
-
-
-<div style=padding-bottom:5em><details open id=tutotags><summary><h2>Tag Relationships Map</h2></summary><canvas style=width:99%;height:80vh></canvas><p class=source style=padding-right:2em;padding-bottom:1em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div>
-
-
-
-
-
-
-
-
-
-<script>
-convTH=document.getElementById("convTH");convHM=document.getElementById("convHM");convout=document.getElementById("convout")
-function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
-function RevealTagCategory(universe){sele=document.querySelectorAll('#tagselect details.'+universe);if(!sele[0].open==true){for(i=0;i<sele.length;i++){sele[i].open=true}}else{for(i=0;i<sele.length;i++){sele[i].open=false}}}
-</script>
-<script src=../src/js-loremap.js></script>
-
-
-
-
-
-
-
-
-
-
-
-
+</div></div><div style=padding-bottom:5em><details open id=tutotags><summary><h2>Tag Relationships Map</h2></summary><canvas id=cvs_alltags style=width:99%;height:80vh></canvas><p class=source style=padding-right:2em;padding-bottom:1em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div>
 <script type=module>
 import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
-var tags=[],rels=[]
+var tags=[],rels=[],acttags=[],actrels=[]
 for(i=0;i<tagselect.length;i++){
     const name=tagselect[i].value.split("#")[1]
     var r=5,b='royalblue',ls=1,c=[29,74,148]
-    // What other tags this tag’s ASTERISK toggles:
     if(tagselect[i].previousSibling){if(tagselect[i].previousSibling.tagName=='M'){
-        b='orange'
-        inputs=document.querySelectorAll('input[n*="'+name+'"]')
-        for(n=0;n<inputs.length;n++){
-            r+=.2
-            ls+=1
-            c=[c[0]+3,c[1]+1,c[2]-2]
-            if((inputs[n].getAttribute('n').split('#').filter((m)=>m)).includes(name)){
-                rels.push({
-                    source:name,
-                    target:inputs[n].value.split('#')[1],
-                    color:'royalblue',
-                    width:10
-                })
-            }
+        b='orange';inputs=document.querySelectorAll('input[n*="'+name+'"]')
+        for(n=0;n<inputs.length;n++){if((inputs[n].getAttribute('n').split('#').filter((m)=>m)).includes(name)){
+            r+=.3;ls+=1;c=[c[0]+3,c[1]+1,c[2]-2];rels.push({source:name,target:inputs[n].value.split('#')[1],color:'royalblue',width:10})
+        }}
+    }}if(tagselect[i].hasAttribute('n')){
+        const ntgs=tagselect[i].getAttribute('n').replace('!','').split('#').filter((m)=>m);for(n=0;n<ntgs.length;n++){if(!ntgs[n].startsWith('@')){rels.push({source:name,target:ntgs[n],color:"orange",width:1})}}
+    }tags.push({id:name,tooltip:name,label:true,labelFontSize:ls,color:'rgb('+c[0].toString()+','+c[1].toString()+','+c[2].toString()+')',radius:r,border:b})
+}let networkgraph=D3CanvasNetworkgraph(document.getElementById('cvs_alltags'),{nodes:tags,links:rels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:5}})
+// Active tags canvas
+window.addEventListener("click",function(){
+    var acttags=[],actrels=[],actlist=[],red=curtinput.filter(d=>d.slice(-1)=='0'),grn=curtinput.filter(d=>d.slice(-1)=='1')
+    for(var tag=0;tag<red.length;tag++){acttags.push({id:red[tag].slice(0,-1),tooltip:red[tag].slice(0,-1),label:true,color:'indianred',border:'lightcoral'});actlist.push(red[tag].slice(0,-1))}
+    for(var tag=0;tag<grn.length;tag++){
+        if(!actlist.includes(grn[tag].slice(0,-1))){acttags.push({id:grn[tag].slice(0,-1),tooltip:grn[tag].slice(0,-1),label:true,color:'rgb(56,138,93)',border:'lightgreen'});actlist.push(grn[tag].slice(0,-1))}
+        else{
+            Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(grn[tag].slice(0,-1))],"color",{value:'rgb(56,138,93)'})
+            Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(grn[tag].slice(0,-1))],"border",{value:'lightgreen'})
         }
-    }}
-    // What other tags selecting this tag will PASSIVELY show (orange):
-    if(tagselect[i].hasAttribute('n')){
-        const ntgs=tagselect[i].getAttribute('n').replace('!','').replace('@','').split('#').filter((m)=>m)
-        for(n=0;n<ntgs.length;n++){
-            rels.push({
-                source: name,
-                target: ntgs[n],
-                color: "orange",
-                width:1
-            })
+        var syn=[];const listn=document.querySelectorAll('#btn_'+grn[tag].replace(/^[^a-z]+|[^\w:.-]+/gi,"").slice(0,-1))
+        if(useorng&&listn[0].hasAttribute('n')){syn=listn[0].getAttribute('n').replace('!','').split('#').filter((m)=>m)}
+        for(var m=0;m<syn.length;m++){
+            if(!actlist.includes(syn[m])){acttags.push({id:syn[m],tooltip:syn[m],label:true,color:'rgba(255,125,36,.3)',border:'rgba(255,125,36,.5)'});actlist.push(syn[m])}
+            actrels.push({source:grn[tag].slice(0,-1),target:syn[m],color:"rgb(255,125,36)",width:1})
         }
-    }
-    tags.push({
-        id:name,
-        tooltip:name,
-        label:true,
-        labelFontSize:ls,
-        color:'rgb('+c[0].toString()+','+c[1].toString()+','+c[2].toString()+')',
-        radius:r,
-        border:b
-    })
-}
-let networkgraph=D3CanvasNetworkgraph(document.querySelector('canvas'),{nodes:tags,links:rels},{
-    sticky:false,
-    drag:true,
-    simulation:null,
-    zoom:true,
-    events:{
-        onZoom:null,
-        onResize:null,
-    },
-    node:{
-        // color:null,
-        // border:true,
-        // radius:10,
-        borderWidth:1,
-        label:null,
-        labelFontSize:5,
-        labelColor:"#fff",
-        labelFontFamily:"Consolas",
-        // tooltip:null,
-        // tooltipFontSize:20,
-        // onClick:null,
-        // onHover:null,
-        // onDrag:null,
-    },link:{color:"#fff"}
-})</script>
-
-
-
-
-
-
-
-
-
-</div></body></html>
-<script src=../src/js-debug.js></script>
+    }let networkgraph2=D3CanvasNetworkgraph(document.getElementById('cvs_active'),{nodes:acttags,links:actrels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:7}})
+})</script><script src=../src/js.js></script><script>
+convTH=document.getElementById("convTH");convHM=document.getElementById("convHM");convout=document.getElementById("convout")
+function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
+function RevealTagCategory(universe){sele=document.querySelectorAll('#tagselect details.'+universe);if(!sele[0].open==true){for(i=0;i<sele.length;i++){sele[i].open=true}}else{for(i=0;i<sele.length;i++){sele[i].open=false}}}
+</script><script src=../src/js-loremap.js></script>
+</div></body></html><script src=../src/js-debug.js></script>
 <!--@EFOLD-->

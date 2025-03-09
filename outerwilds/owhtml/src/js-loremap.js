@@ -88,13 +88,3 @@ if("ontouchstart"in document.documentElement){
 onecol=true
 if(onecol){filterlist.style.maxWidth="800px"}else{filterlist.style.maxWidth=""}
 onecol=!onecol
-
-
-
-
-
-
-
-
-
-
