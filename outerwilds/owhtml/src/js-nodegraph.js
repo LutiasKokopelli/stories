@@ -2820,3 +2820,23 @@ function wu(t, e, n = {
 export {
     wu as default
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export function updateTagMap(){
+    let networkgraph2=D3CanvasNetworkgraph(document.getElementById('cvs_active'),{nodes:acttags,links:actrels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:5}})
+}
