@@ -2820,24 +2820,3 @@ function wu(t, e, n = {
 export {
     wu as default
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-window.updateTagMap = function() {
-// export function updateTagMap(){
-    import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
-    let networkgraph2=D3CanvasNetworkgraph(document.getElementById('cvs_active'),{nodes:acttags,links:actrels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:5}})
-}
