@@ -1,8 +1,12 @@
 <!--
-Not checked yet       	❌
-Not community approved	⚠️
-All good temporarily  	☑️
-100% complete         	✔️
+Not checked yet         ❌
+Not community approved  ⚠️
+All good temporarily    ☑️
+100% complete           ✔️
+——————————————————————————
+TAGS:  | Will appear as orange tags | Will be toggled by (*)
+n=!tag |            ✔️             |             ❌
+n=@tag |            ❌             |             ✔️
 -->
 <!--@SFOLD✔️Header-->
 <!DOCTYPE html><html><head><title>Outer Wilds Lore Map</title><link rel=icon href=../ast/ico/OWV.png>
@@ -42,6 +46,7 @@ All good temporarily  	☑️
 <li><b>Tip:</b> If you hover your mouse (or for touch screen devices, long press – this example will not work but real tags should) on a tag like <input type=button value='#this'title='Related tags (will appear in orange):
   • #tag A is related
   • #also tag B'style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque;padding:0 .3em;margin-top:-.3em'>, a list of all the related tags which will be added in this “passive” way will be displayed. If no such list appears, then the tag has no documented relations.</li>
+<li>Be warned that DLC spoilers will be listed in those lists! The way these lists are made cannot follow (at least not currently) with the DLC filter being toggled on or off.</li>
 <!-- <li class=smol>*I have bad news for mobile users (and probably users of any device with a touch screen and no mouse), but this may not work for you. I have been pulling my hair out over this, but the fact that 1. <code class=smol>title</code> attributes simply don’t show up on these devices, and 2. <code class=smol>&lt;input&gt;</code> blocks cannot contain <code class=smol>:before</code> or <code class=smol>:after</code> pseudo-elements, would ask for a complete overhaul of how I coded it 😭 Please contact me if you are a web developer and have ideas for a better fix.</li></ul></li> -->
 <li>If you are not interested in the kind of lore that regards all Hearthians indiscriminately, you can look at the tags of a lore card that isn’t relevant to Esker specifically: the tag “#hearthians” will be <orng>orange</orng> instead of white or light green. In order to get rid of lore cards that appeared because of an unwanted orange tag, one option is to click on this orange tag twice (first to turn it green, then to turn it red and thus exclude it from the search).</li>
 <li><b>Of note:</b> Changing the <a href="javascript:document.querySelector('#loremapsmode').closest('details').open=true;document.getElementById('loremapsmode').scrollIntoView()">search mode</a> to “FOCUS” will disregard <i>all</i> orange tags. If you are however interested in keeping at least one or two orange tags (for example, while “#hearthians” is too vague, seeing results for “#lunar outpost” still interests you), you have two options: keep the search mode as BROAD and turn all the unwanted tags red, or (provided the <a href="javascript:document.querySelector('#loremaplogic').closest('details').open=true;document.getElementById('loremaplogic').scrollIntoView()">search logic</a> is ANY instead of ALL) turn all the tags of interest green and change the search mode to FOCUS.</li>
@@ -124,8 +129,8 @@ All good temporarily  	☑️
 <p>All lore cards of this color come with the following tag: <code style=font-size:.7em;color:rgb(var(--orng))>#alternate&nbsp;sources</code>.</p>
 </div>
 <div class=lorecard style=--fore:var(--greyd);--midd:var(--greyl)><h3 style=--fore:var(--greyd);--midd:var(--greyl)>Unused & Concept Art</h3>
-<p>This lore card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the Alpha or previous patches of the game).</p>
-<p>Due to the fact that this content is either absent or was deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the lore card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p>
+<p>This lore card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the alphas or previous patches of the game).</p>
+<p>Due to the fact that this content is either absent or deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the lore card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p>
 <p>All lore cards of this color come with the following tag: <code style=font-size:.7em;color:rgb(var(--orng))>#unused/concept&nbsp;art</code>.</p>
 </div>
 <div class=lorecard style=--fore:var(--redd);--midd:var(--redl)><h3 style=--fore:var(--redd);--midd:var(--redl)>Retconned</h3>
@@ -139,7 +144,7 @@ All good temporarily  	☑️
 <p style=font-size:1.1em;font-weight:600>You’re trying to learn everything there is to know about the Nomai from Brittle Hollow.</p><ol>
 <li>You are here to read, and you probably want as many results as possible – or at least, you want to avoid taking the risk of hiding lore cards you would like to see. Make sure that you are using the ANY search logic.</li>
 <li>If you want to read even more, also check whether you are using the BROAD search mode, which will return more results (albeit perhaps less relevant) than the FOCUS mode.</li>
-<li>Fortunately for you, there are tags named “#nomai (brittle hollow)” and “#nomai (escape pod 1)” (if you remember your lore, this is the escape pod which crashed on Brittle Hollow). Even better, this tag comes with a circle-shaped button too: if you hover it, you will see a list of the names of all the Nomai who boarded it.</li>
+<li>Fortunately for you, there are tags named “#nomai (brittle hollow)” and “#nomai (escape pod 1)” (if you remember your lore, this is the escape pod which crashed on Brittle Hollow). Even better, these tags come with a circle-shaped button too: if you hover the latter, you will see a list of the names of all the Nomai who boarded it.</li>
 <li>If you want to include the Nomai who were born after the crash, then “#nomai (escape pod 1)” may actually not be the most useful to you, compared to the alternative. However, some of the Nomai listed in “#nomai (brittle hollow)” actually grew up on Ember Twin (which includes Solanum, for example)! They are only part of the list because they went to school there.</li>
 <li>Not to worry: there is also a “#nomai (ember twin)” tag, after all, and it comes with its own circle-shaped button. If you click on this circle twice, you will have effectively either turned red or removed entirely the names of the Nomai you don’t want to read about.</li>
 </ol>
@@ -159,7 +164,7 @@ All good temporarily  	☑️
 </details>
 <!--@EFOLD-->
 <!--@SFOLD✔️Contact-->
-<i id=i>This web page was created and is maintained by Lutias Kokopelli.<br>If you have any questions:<br>
+<i id=i>This web page was created and is maintained&nbsp;by Lutias&nbsp;Kokopelli.<br>If you have any questions:<br>
 <a class=in target=_blank href=mailto:lutias.kokopelli@gmail.com><img src=https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg style=height:1.5em></a>
 <a class=in target=_blank href=https://bsky.app/profile/lutiaskokopelli.bsky.social><img src=https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg></a>
 <a class=in target=_blank href=https://www.reddit.com/user/Lutias_Kokopelli/><img src=https://www.logo.wine/a/logo/Reddit/Reddit-Social-Icon-Variant-Logo.wine.svg style='height:2.4em;margin:-.4em -.9em'></a>
@@ -177,72 +182,72 @@ All good temporarily  	☑️
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#space stations/satellites'></button>
 </p><p>
     <input type=button onclick=AddTagSelector(this.value) class=hasimg value=#sun style=background-image:url(../ast/ico/astr_S.png)>
-    <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites'class=hasimg value='#sun station'style=background-image:url(../ast/ico/astr_SS.png)>
-    <input type=button onclick=AddTagSelector(this.value) n='warp receiver#sun station'value='#sun station warp receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites#@nomai technology'class=hasimg value='#sun station'style=background-image:url(../ast/ico/astr_SS.png)>
+    <input type=button onclick=AddTagSelector(this.value) n='warp receivers#sun station'value='#sun station warp receiver'>
 </p><p>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) n='ash twin#ember twin'value='#hourglass twins'></button>
     <input type=button onclick=AddTagSelector(this.value) n='hourglass twins#planets'class=hasimg value='#ash twin'style=background-image:url(../ast/ico/astr_TT.png)>
-    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='nomai technology'value='#ash twin project'></button>
-    <input type=button onclick=AddTagSelector(this.value) n='warp receiver#ash twin project'value='#ash twin project warp receiver'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp tower#ash twin#sun station'value='#sun station warp tower'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp tower#ash twin#ash twin project'value='#ash twin warp tower'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp tower#ash twin#ember twin'value='#ember twin warp tower'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp tower#ash twin#timber hearth'value='#timber hearth warp tower'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp tower#ash twin#brittle hollow'value='#brittle hollow warp tower'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp tower#ash twin#giant’s deep'value='#giant’s deep warp tower'>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='@nomai technology'value='#ash twin project'></button>
+    <input type=button onclick=AddTagSelector(this.value) n='warp receivers#ash twin project'value='#ash twin project warp receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='warp towers#ash twin#sun station'value='#sun station warp tower'>
+    <input type=button onclick=AddTagSelector(this.value) n='warp towers#ash twin#ash twin project'value='#ash twin warp tower'>
+    <input type=button onclick=AddTagSelector(this.value) n='warp towers#ash twin#ember twin'value='#ember twin warp tower'>
+    <input type=button onclick=AddTagSelector(this.value) n='warp towers#ash twin#timber hearth'value='#timber hearth warp tower'>
+    <input type=button onclick=AddTagSelector(this.value) n='warp towers#ash twin#brittle hollow'value='#brittle hollow warp tower'>
+    <input type=button onclick=AddTagSelector(this.value) n='warp towers#ash twin#giant’s deep'value='#giant’s deep warp tower'>
     <br>
     <input type=button onclick=AddTagSelector(this.value) n='hourglass twins#planets'class=hasimg value='#ember twin'style=background-image:url(../ast/ico/astr_CT.png)>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#chert’s camp'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#sunless city'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#anglerfish overlook district'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#anglerfish fossil'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#stepping stone district'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#eye shrine district'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#chert'value='#chert’s camp'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#sunless city'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#anglerfish overlook district'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#anglerfish'value='#anglerfish fossil'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#stepping stone district'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#eye shrine district'>
     <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#high energy lab trailhead'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#high energy lab'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#escape pod 2'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#ember twin gravity cannon'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)#nomai technology#time travel#black/white hole physics'value='#high energy lab'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#escape pod 2'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#ember twin gravity cannon'>
     <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#quantum caves'>
     <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#lakebed cave'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#quantum moon locator'>
-    <input type=button onclick=AddTagSelector(this.value) n='ember twin'value='#ember twin warp receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#nomai (ember twin)'value='#quantum moon locator'>
+    <input type=button onclick=AddTagSelector(this.value) n='ember twin#warp receivers'value='#ember twin warp receiver'>
 </p><p>
     <input type=button onclick=AddTagSelector(this.value) class=hasimg n=planets value='#timber hearth'style='background-image:url(../ast/ico/astr_TH.png)'>
-    <input type=button onclick=AddTagSelector(this.value) value=#village>
-    <input type=button onclick=AddTagSelector(this.value) value='#zero-g cave'>
-    <input type=button onclick=AddTagSelector(this.value) value=#museum>
-    <input type=button onclick=AddTagSelector(this.value) value=#observatory>
-    <input type=button onclick=AddTagSelector(this.value) value='#radio tower'>
-    <input type=button onclick=AddTagSelector(this.value) value='#youngbark crater'>
-    <input type=button onclick=AddTagSelector(this.value) value='#quantum grove'>
-    <input type=button onclick=AddTagSelector(this.value) value='#geyser mountains'>
-    <input type=button onclick=AddTagSelector(this.value) value='#nomai ruins crater'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp receiver'value='#timber hearth warp receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value=#village>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#zero-g cave'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value=#museum>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value=#observatory>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#radio tower'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#youngbark crater'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#quantum grove'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#geyser mountains'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#nomai ruins crater'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth#warp receivers'value='#timber hearth warp receiver'>
     <br>
     <input type=button onclick=AddTagSelector(this.value) n=moons class=hasimg value=#attlerock style=background-image:url(../ast/ico/astr_THM.png)>
     <input type=button onclick=AddTagSelector(this.value) value='#lunar outpost'>
     <input type=button onclick=AddTagSelector(this.value) value='#south pole locator'>
 </p><p>
     <input type=button onclick=AddTagSelector(this.value) n=planets class=hasimg value='#brittle hollow'style=background-image:url(../ast/ico/astr_BH.png)>
-    <input type=button onclick=AddTagSelector(this.value) value='#riebeck’s camp'>
-    <input type=button onclick=AddTagSelector(this.value) value='#black hole forge'>
-    <input type=button onclick=AddTagSelector(this.value) value='#hanging city'>
-    <input type=button onclick=AddTagSelector(this.value) value='#tower of quantum knowledge'>
-    <input type=button onclick=AddTagSelector(this.value) value='#escape pod 1'>
-    <input type=button onclick=AddTagSelector(this.value) value='#brittle hollow gravity cannon'>
-    <input type=button onclick=AddTagSelector(this.value) value='#brittle hollow warp receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow#riebeck'value='#riebeck’s camp'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#black hole forge'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#hanging city'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#tower of quantum knowledge'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#escape pod 1'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#brittle hollow gravity cannon'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow#warp receivers'value='#brittle hollow warp receiver'>
     <br>
     <input type=button onclick=AddTagSelector(this.value) n=moons class=hasimg value='#hollow’s lantern'style=background-image:url(../ast/ico/astr_BHM.png)>
 </p><p>
     <input type=button onclick=AddTagSelector(this.value) n=planets class=hasimg value='#giant’s deep'style=background-image:url(../ast/ico/astr_GD.png)>
-    <input type=button onclick=AddTagSelector(this.value) value='#bramble island'>
-    <input type=button onclick=AddTagSelector(this.value) value='#construction yard'>
-    <input type=button onclick=AddTagSelector(this.value) value='#gabbro’s island'>
-    <input type=button onclick=AddTagSelector(this.value) value='#statue island'>
-    <input type=button onclick=AddTagSelector(this.value) value='#statue workshop'>
-    <input type=button onclick=AddTagSelector(this.value) value='#tower of quantum trials'>
-    <input type=button onclick=AddTagSelector(this.value) value='#core of giant’s deep'>
-    <input type=button onclick=AddTagSelector(this.value) n='warp receiver'value='#giant’s deep warp receiver'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#bramble island'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#construction yard'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#gabbro’s island'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#statue island'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#statue workshop'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#tower of quantum trials'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep'value='#core of giant’s deep'>
+    <input type=button onclick=AddTagSelector(this.value) n='giant’s deep#warp receivers'value='#giant’s deep warp receiver'>
 </p><p>
     <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites'class=hasimg value='#orbital probe cannon'style=background-image:url(../ast/ico/astr_OPC.png)>
     <input type=button onclick=AddTagSelector(this.value) value='#control module'>
@@ -261,7 +266,7 @@ All good temporarily  	☑️
     <input type=button onclick=AddTagSelector(this.value) n=planets value='#eye of the universe'>
     <input type=button onclick=AddTagSelector(this.value) n=moons class=hasimg value='#quantum moon'style=background-image:url(../ast/ico/astr_QM.png)>
 </p><p class=dlc>
-    <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites#spaceships'class=hasimg value='#the stranger'style=background-image:url(../ast/ico/astr_IP.png)>
+    <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites#spaceships'value='#the stranger'class=hasimg style=background-image:url(../ast/ico/astr_IP.png)>
     <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#river lowlands'>
     <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#cinder isles'>
     <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#island tower'>
@@ -378,9 +383,9 @@ All good temporarily  	☑️
     <input type=button onclick=AddTagSelector(this.value) n='hearthian culture'value='#sap wine'>
 </p><p>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#nomai technology'></button>
-    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='nomai technology#black/white hole physics'value='#warp tower'></button>
-    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='nomai technology#black/white hole physics'value='#warp receiver'></button>
-    <input type=button onclick=AddTagSelector(this.value) n='nomai technology#black/white hole physics'value='#warp core'>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='nomai technology#black/white hole physics'value='#warp towers'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='nomai technology#black/white hole physics'value='#warp receivers'></button>
+    <input type=button onclick=AddTagSelector(this.value) n='nomai technology#black/white hole physics'value='#warp cores'>
     <input type=button onclick=AddTagSelector(this.value) n='nomai technology#spaceships'value='#nomai shuttle'>
     <input type=button onclick=AddTagSelector(this.value) n='nomai technology'value='#nomai statue'>
     <input type=button onclick=AddTagSelector(this.value) n='nomai technology'value='#gravity cannon'>
@@ -425,22 +430,22 @@ All good temporarily  	☑️
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD⚠️Lore Card Types & Sources-->
-<div class=tagcategory id=tagend><h2>Lore Card Types & Sources</h2><p align=center style=line-height:2.2em>
-    <input type=button onclick=AddTagSelector(this.value) value='#in-game observations'style='outline:3px solid rgb(var(--goldd))'>
-    <input type=button onclick=AddTagSelector(this.value) value='#alternate sources'style='outline:3px solid rgb(var(--indigod))'>
-    <input type=button onclick=AddTagSelector(this.value) value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'>
+<div class=tagcategory id=tagend style=text-align:center><h2>Lore Card Types & Sources</h2><p style=line-height:2.2em>
+    <input type=button onclick=AddTagSelector(this.value) value='#in-game observations'style='outline:3px solid rgb(var(--goldd));margin-right:3px'>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#alternate sources'style='outline:3px solid rgb(var(--indigod));margin-right:3px'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#unused/concept art'style='outline:3px solid rgb(var(--greyd))'></button>
     <input type=button onclick=AddTagSelector(this.value) value='#retconned'style='outline:3px solid rgb(var(--redd))'>
     <input type=button onclick=AddTagSelector(this.value) value='#general data'>
-    <div style=display:none><input type=button onclick=AddTagSelector(this.value) value=#keep></div>
-</p><p align=center>Alternate sources:<br>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#interviews'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#mobius digital website'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#the art of outer wilds'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#lost in cult design works'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#the lore explorer videos'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#concept art'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#alpha'>
-    <input type=button onclick=AddTagSelector(this.value) n='alternate sources'value='#text adventure'>
+</p><p>
+    <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value='#concept art'>
+    <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value='#text adventure'>
+    <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value='#alpha'>
+    <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#mobius digital website'>
+    <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#interviews'>
+    <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#the lore explorer videos'>
+    <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#the art of outer wilds'>
+    <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#boss fight books 36'>
+    <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#lost in cult design works'>
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD✔️Search Bar-->
@@ -1016,7 +1021,7 @@ All good temporarily  	☑️
 <p>It is only possible to <i>activate</i> the warp platform starting from the moment when <b>the warp platform aligns with the center of the astral body</b>, and up to the moment when <b>the angle reaches 5°</b>. This margin of error results in an <b>inconsistent warp window duration</b> for any astral body other than the sun or the Hourglass Twins (in which case the circular orbit gives periodicity in both the timing and duration of the warp windows), as the window duration depends on the distance between the warp platform and the astral body.</p>
 <h2 class=tl>Obstructing the Warp Platform</h2>
 <p><b>Of note:</b> If the warp window is activated but there is an obstruction to prevent the object from actually warping (such as the sand level being too high), then the black hole will remain open for four seconds in total before vanishing, thus remaining open much longer than for the duration of a normal warp window.</p><p>This last observation has been observed multiple times with multiple warp windows in the sun, Brittle Hollow and Giant’s Deep towers, by manually adjusting the sand level so as to obstruct their warp platforms. In every warp window documented, the warp window behaves exactly the same way: <b>The&nbsp;black hole opens in 1&#8239;s, remains open for 2&#8239;s, then takes 1&#8239;s to close</b>.</p>
-</details><t>#warp core #warp tower #in-game observations #black hole forge</t></it>
+</details><t>#warp cores #warp towers #in-game observations #black hole forge</t></it>
 <!--HAS_ONGOING_DATAMINING (BrittleHollow)-->
 <!--@EFOLD-->
 <!--@SFOLD    @WIP@    ➖📈Hearthians use ‘nights’ and ‘weeks’ as common units of time.   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY!-->
@@ -1233,23 +1238,7 @@ All good temporarily  	☑️
 <a target=_blank href=https://drive.google.com/drive/u/0/folders/1N5TNFRCTCpYuQfhapRg2QkA00asJ581E class='cardext dlc'><it><details class=n open><summary>Text Dump (Alphas & All Patches)</summary></details><t>#keep</t></it></a>
 <a target=_blank href=https://hushbugger.github.io/outerwilds/text class='cardext dlc'><it><details class=n open><summary>Text Dump (Patch 1.1.13) <span class=source>(by HushBugger)</span></summary></details><t>#keep</t></it></a>
 </div></div><h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
-<div style=padding-bottom:5em><details open id=tutotags><summary><h2>Tag Relationships Map</h2></summary><canvas id=cvs_alltags style=width:99%;height:80vh></canvas><p class=source style=padding-right:2em;padding-bottom:1em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div>
-<script type=module>
-import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
-var tags=[],rels=[],acttags=[],actrels=[]
-for(i=0;i<tagselect.length;i++){
-    const name=tagselect[i].value.split("#")[1]
-    var r=5,b='royalblue',ls=1,c=[29,74,148]
-    if(tagselect[i].previousSibling){if(tagselect[i].previousSibling.tagName=='M'){
-        b='orange';inputs=document.querySelectorAll('input[n*="'+name+'"]')
-        for(n=0;n<inputs.length;n++){if((inputs[n].getAttribute('n').split('#').filter((m)=>m)).includes(name)){
-            r+=.3;ls+=1;c=[c[0]+3,c[1]+1,c[2]-2];rels.push({source:name,target:inputs[n].value.split('#')[1],color:'royalblue',width:10})
-        }}
-    }}if(tagselect[i].hasAttribute('n')){
-        const ntgs=tagselect[i].getAttribute('n').replace('!','').split('#').filter((m)=>m);for(n=0;n<ntgs.length;n++){if(!ntgs[n].startsWith('@')){rels.push({source:name,target:ntgs[n],color:"orange",width:1})}}
-    }tags.push({id:name,tooltip:name,label:true,labelFontSize:ls,color:'rgb('+c[0].toString()+','+c[1].toString()+','+c[2].toString()+')',radius:r,border:b})
-}let networkgraph=D3CanvasNetworkgraph(document.getElementById('cvs_alltags'),{nodes:tags,links:rels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:5}})
-// Active tags canvas
+<script type=module>import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
 window.addEventListener("click",function(){
     var acttags=[],actrels=[],actlist=[],red=curtinput.filter(d=>d.slice(-1)=='0'),grn=curtinput.filter(d=>d.slice(-1)=='1')
     for(var tag=0;tag<red.length;tag++){acttags.push({id:red[tag].slice(0,-1),tooltip:red[tag].slice(0,-1),label:true,color:'indianred',border:'lightcoral'});actlist.push(red[tag].slice(0,-1))}
@@ -1258,17 +1247,14 @@ window.addEventListener("click",function(){
         else{
             Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(grn[tag].slice(0,-1))],"color",{value:'rgb(56,138,93)'})
             Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(grn[tag].slice(0,-1))],"border",{value:'lightgreen'})
-        }
-        var syn=[];const listn=document.querySelectorAll('#btn_'+grn[tag].replace(/^[^a-z]+|[^\w:.-]+/gi,"").slice(0,-1))
+        }var syn=[];const listn=document.querySelectorAll('#btn_'+grn[tag].replace(/^[^a-z]+|[^\w:.-]+/gi,"").slice(0,-1))
         if(useorng&&listn[0].hasAttribute('n')){syn=listn[0].getAttribute('n').replace('!','').split('#').filter((m)=>m)}
-        for(var m=0;m<syn.length;m++){
+        for(var m=0;m<syn.length;m++){if(!syn[m].startsWith('@')){
             if(!actlist.includes(syn[m])){acttags.push({id:syn[m],tooltip:syn[m],label:true,color:'rgba(255,125,36,.3)',border:'rgba(255,125,36,.5)'});actlist.push(syn[m])}
             actrels.push({source:grn[tag].slice(0,-1),target:syn[m],color:"rgb(255,125,36)",width:1})
-        }
-    }let networkgraph2=D3CanvasNetworkgraph(document.getElementById('cvs_active'),{nodes:acttags,links:actrels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:7}})
-})</script>
-<script src=../src/js.js></script>
-<script>function partreload(){url=window.location.href.split('#')
+        }}
+    }let networkgraph2=D3CanvasNetworkgraph(document.querySelector('canvas'),{nodes:acttags,links:actrels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:7}})
+})</script><script src=../src/js.js></script><script>function partreload(){url=window.location.href.split('#')
 if(url[2]=='nodlc'||url[1]=='nodlc'){srch_dlc();document.title+=' (no DLC)';document.getElementById('disclaimer').innerHTML=''}
 else{document.getElementById('disclaimer').innerHTML='<b>Warning:</b> DLC spoilers can be toggled on and off at will, but the version of this page you are viewing is <b>opt-out</b> (DLC spoilers are visible by default).<br><b>You can access the opt-in version of this page <a href=loremap.html#nodlc style=--fore:var(--redl) onClick=javascript:partreload()>here</a>.</b> If you share this page with a friend who hasn’t played the DLC, please share the opt-in version instead of this one!'}}partreload()</script><script src=../src/js-loremap.js></script>
 </div></body></html><script src=../src/js-debug.js></script>

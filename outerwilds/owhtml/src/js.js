@@ -76,30 +76,31 @@ function ResetTagSelector(){
 }
 function AddTagSelector(tag){
     tag=tag.split('#')[1];tagid=tag.replace(/^[^a-z]+|[^\w:.-]+/gi,"")
-    // STANDARD: RED --> NONE
-    if(curtinput.includes(tag+'0')){
-        curtinput.splice(curtinput.indexOf(tag+'0'),1)
-        document.getElementById("btn_"+tagid).classList.remove("exclude")
-        activetags.removeChild(Array.from(activetags.childNodes).find((v)=>v.value=='#'+tag))
-    }// STANDARD: GREEN --> RED
-    else if(curtinput.includes(tag+'1')){
-        curtinput.splice(curtinput.indexOf(tag+'1'),1)
-        curtinput.push(tag+'0')
-        document.getElementById("btn_"+tagid).classList.remove("include")
-        document.getElementById("tag_"+tagid).classList.remove("include")
-        document.getElementById("btn_"+tagid).classList.add("exclude")
-        document.getElementById("tag_"+tagid).classList.add("exclude")
-    }// ACTIVATE NEW TAG:
-    else{
-        document.getElementById("btn_"+tagid).classList.add("include")
-        node=document.getElementById("btn_"+tagid).cloneNode(true);node.id="tag_"+tagid;activetags.appendChild(node)
-        curtinput.push(tag+'1')
-    }FilterItems();if(curtinput.length==0){ResetTagSelector()}
+    if(!document.getElementById('srch_dlc').classList.contains('no')||document.getElementById('srch_dlc').classList.contains('no')&&!document.getElementById("btn_"+tagid).closest('.dlc')){
+        // STANDARD: RED --> NONE
+        if(curtinput.includes(tag+'0')){
+            curtinput.splice(curtinput.indexOf(tag+'0'),1)
+            document.getElementById("btn_"+tagid).classList.remove("exclude")
+            activetags.removeChild(Array.from(activetags.childNodes).find((v)=>v.value=='#'+tag))
+        }// STANDARD: GREEN --> RED
+        else if(curtinput.includes(tag+'1')){
+            curtinput.splice(curtinput.indexOf(tag+'1'),1)
+            curtinput.push(tag+'0')
+            document.getElementById("btn_"+tagid).classList.remove("include")
+            document.getElementById("tag_"+tagid).classList.remove("include")
+            document.getElementById("btn_"+tagid).classList.add("exclude")
+            document.getElementById("tag_"+tagid).classList.add("exclude")
+        }// ACTIVATE NEW TAG:
+        else{
+            document.getElementById("btn_"+tagid).classList.add("include")
+            node=document.getElementById("btn_"+tagid).cloneNode(true);node.id="tag_"+tagid;activetags.appendChild(node)
+            curtinput.push(tag+'1')
+        }FilterItems();if(curtinput.length==0){ResetTagSelector()}
+    }
 }
 function AddTagGroup(n){
-    if(document.getElementById("btn_"+n.split('#')[1].replace(/^[^a-z]+|[^\w:.-]+/gi,""))){AddTagSelector(n)}
-    inputs=document.querySelectorAll('input[id^="btn"][n*="'+n.split('#')[1]+'"]');stags=[]
-    for(i=0;i<inputs.length;i++){if((inputs[i].getAttribute('n').split('#').filter((m)=>m)).includes(n.split('#')[1])){stags.push(inputs[i].value)}}
+    AddTagSelector(n);inputs=document.querySelectorAll('input[id^="btn"][n*="'+n.split('#')[1]+'"]');stags=[]
+    for(i=0;i<inputs.length;i++){if((inputs[i].getAttribute('n').replace('@','').split('#').filter((m)=>m)).includes(n.split('#')[1])){stags.push(inputs[i].value)}}
     for(s=0;s<stags.length;s++){AddTagSelector(stags[s])}
     if(curtinput.length!=0){FilterItems()}
 }

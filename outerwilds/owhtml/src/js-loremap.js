@@ -42,11 +42,11 @@ for(t=0;t<allmtags.length;t++){
 const allntags=document.querySelectorAll('input[n]')
 for(t=0;t<allntags.length;t++){
     ns=allntags[t].getAttribute('n').replace('!','').split('#').filter((m)=>m).filter(s=>/^[^@]/i.test(s))
-    allntags[t].setAttribute('title','Related tags (will appear in orange):\n  • #'+ns.sort().join("\n  • #"))
+    if(ns.length){allntags[t].setAttribute('title','Related tags (will appear in orange):\n  • #'+ns.sort().join("\n  • #"))}
 }
 // Mark Unused Tags
 utags=filterlist.querySelectorAll('t>*');uniq=[]
-for(i=0;i<utags.length;i++){if(!uniq.includes(utags[i].value)){uniq.push(utags[i].value)}}
+for(i=0;i<utags.length;i++){if(!uniq.includes(utags[i].value)){uniq.push(utags[i].value)}}uniq=uniq.filter((m)=>m!='#keep')
 for(tag=0;tag<altgs.length;tag++){if(uniq.indexOf('#'+altgs[tag])==-1){tagselect[tag].classList.add('maclude')}}
 
 // Alert Unlisted Tags (Lore maps & calendars)
