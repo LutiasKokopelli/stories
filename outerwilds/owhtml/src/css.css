@@ -48,7 +48,7 @@
 scrollbar-color:rgb(var(--indigod))rgb(var(--black));scrollbar-width:auto;transition:all 0.3s ease-in-out;overflow-anchor:none}
 *,*:after,*:before{box-sizing:border-box}
 *:target{scroll-margin-top:180px}
-body{position:relative;margin:0;padding:0;width:100%;background:no-repeat url(../ast/img/2462x1386.jpg)bottom fixed;background-color:rgb(var(--black));background-size:cover;color:white;font-family:BrandonGrotesque,Cabin;text-align:justify}
+body{position:relative;margin:0;padding:0;width:100%;background:no-repeat url(../ast/img/2462x1386.jpg)bottom fixed;background-color:rgb(var(--black));background-size:cover;color:white;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;text-align:justify}
 blockquote{border:2px solid rgb(var(--fore));border-top:none;border-left:none;border-radius:1em 1% 1em 1%;padding:1em 1em .2em 1em;margin:1em 0 1em .5em;background:rgba(var(--fore),.2)}
 
 
@@ -115,7 +115,7 @@ input:hover+.infob{display:block}
 .infob{
     font-weight:initial;
     font-style:initial;
-    font-family:BrandonGrotesque,Cabin;
+    font-family:BrandonGrotesque,Brandon Grotesque,Cabin;
     display:none;
     z-index:99;
     background:rgba(var(--black),0.95);
