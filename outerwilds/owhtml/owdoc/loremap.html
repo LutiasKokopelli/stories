@@ -1,13 +1,3 @@
-<!--
-Not checked yet         ❌
-Not community approved  ⚠️
-All good temporarily    ☑️
-100% complete           ✔️
-——————————————————————————
-TAGS:  | Will appear as orange tags | Will be toggled by (*)
-n=!tag |            ✔️             |             ❌
-n=@tag |            ❌             |             ✔️
--->
 <!--@SFOLD✔️Header-->
 <!DOCTYPE html><html><head><title>Outer Wilds Lore Map</title><link rel=icon href=../ast/ico/OWV.png>
 <link rel=stylesheet href=../src/css.css><link rel=stylesheet href=../src/cs-loremap_main.css>
@@ -43,13 +33,12 @@ n=@tag |            ❌             |             ✔️
 <li>If a lore card is about a very specific topic (for example, “Esker has pink eyes”), then it will come with equally specific tags (such as “#esker”).</li>
 <li>If a lore card encompasses multiple entities at once (for example, “Hearthians have four eyes”), then it will come with a broader tag (“#hearthians”) but <i>not</i> with the whole list of more specific tags (The tag “#esker” and all other 21 Hearthian character tags will not be listed).</li>
 <li>And yet, Esker is a Hearthian: therefore, what you will observe if you decide to activate the tag “#esker” is that the lore card “Hearthians have four eyes” will also appear – even if the tag “#hearthians” is absent from your list of active tags.<ul>
-<li><b>Tip:</b> If you hover your mouse (or for touch screen devices, long press – this example will not work but real tags should) on a tag like <input type=button value='#this'title='Related tags (will appear in orange):
+<li><b>Tip:</b> If you hover your mouse (or for touch screen devices, long press – this example and active tags within the search bar will not work, but real tags should) on a tag like <input type=button value='#this'title='Related tags (will appear in orange):
   • #tag A is related
   • #also tag B'style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque;padding:0 .3em;margin-top:-.3em'>, a list of all the related tags which will be added in this “passive” way will be displayed. If no such list appears, then the tag has no documented relations.</li>
-<li>Be warned that DLC spoilers will be listed in those lists! The way these lists are made cannot follow (at least not currently) with the DLC filter being toggled on or off.</li>
-<!-- <li class=smol>*I have bad news for mobile users (and probably users of any device with a touch screen and no mouse), but this may not work for you. I have been pulling my hair out over this, but the fact that 1. <code class=smol>title</code> attributes simply don’t show up on these devices, and 2. <code class=smol>&lt;input&gt;</code> blocks cannot contain <code class=smol>:before</code> or <code class=smol>:after</code> pseudo-elements, would ask for a complete overhaul of how I coded it 😭 Please contact me if you are a web developer and have ideas for a better fix.</li></ul></li> -->
+<li>Be warned that DLC spoilers will be listed regardless of your preferences! The way these lists are made cannot follow (at least not currently) with the DLC filter being toggled on or off. That’s on my todo list.</li></ul>
 <li>If you are not interested in the kind of lore that regards all Hearthians indiscriminately, you can look at the tags of a lore card that isn’t relevant to Esker specifically: the tag “#hearthians” will be <orng>orange</orng> instead of white or light green. In order to get rid of lore cards that appeared because of an unwanted orange tag, one option is to click on this orange tag twice (first to turn it green, then to turn it red and thus exclude it from the search).</li>
-<li><b>Of note:</b> Changing the <a href="javascript:document.querySelector('#loremapsmode').closest('details').open=true;document.getElementById('loremapsmode').scrollIntoView()">search mode</a> to “FOCUS” will disregard <i>all</i> orange tags. If you are however interested in keeping at least one or two orange tags (for example, while “#hearthians” is too vague, seeing results for “#lunar outpost” still interests you), you have two options: keep the search mode as BROAD and turn all the unwanted tags red, or (provided the <a href="javascript:document.querySelector('#loremaplogic').closest('details').open=true;document.getElementById('loremaplogic').scrollIntoView()">search logic</a> is ANY instead of ALL) turn all the tags of interest green and change the search mode to FOCUS.</li>
+<li><b>Of note:</b> Changing the <a href="javascript:document.querySelector('#loremapsmode').closest('details').open=true;document.getElementById('loremapsmode').scrollIntoView()">search mode</a> to <span class=scaps>focus</span> will disregard <i>all</i> orange tags. If you are however interested in keeping at least one or two orange tags (for example, while “#hearthians” is too vague, seeing results for “#lunar outpost” still interests you), you have two options: keep the search mode as <span class=scaps>broad</span> and turn all the unwanted tags red, or (provided the <a href="javascript:document.querySelector('#loremaplogic').closest('details').open=true;document.getElementById('loremaplogic').scrollIntoView()">search logic</a> is <span class=scaps>any</span> instead of <span class=scaps>all</span>) turn all the tags of interest green and change the search mode to <span class=scaps>focus</span>.</li>
 </ul></p>
 <hr>
 <p>A rather vague tag (e.g. “#hearthians”) may be preceded by a circular button like in <button style=vertical-align:top><m title='This will also toggle the following tags:
@@ -60,7 +49,7 @@ n=@tag |            ❌             |             ✔️
   • #or maybe tag B'style='border-radius:20px;font-size:1.3em;font-weight:500;font-family:BrandonGrotesque;padding:0 .3em;padding-left:1.7em'></button>.</p>
 <p>The tag itself will behave as normal, but the circular button has an action of its own: clicking on it will not only activate the tag it is attached to, but also actively toggle (turn green/red or remove from the list) multiple other tags which are thematically related to the topic mentioned by the tag itself. In the case of the generic tag “#hearthians”, clicking on its associated circular button will activate the tag “#hearthians” <i>as well as</i> all 22 tags corresponding to all 22 Hearthian characters.</p>
 <p>Similarly to normal tags, hovering over a tag’s circular button will display the list of tags that it controls (aside from the tag it is linked to, which is implied to be part of the list by default).</p>
-<p>Needless to say, this circular button only has its uses when you wish to explore the lore at large (and are using “ANY” as your search logic; setting “ALL” instead will return no results).</p>
+<p>Needless to say, this circular button only has its uses when you wish to explore the lore at large (and are using <span class=scaps>any</span> as your search logic; setting <span class=scaps>all</span> instead will return no results).</p>
 </details>
 <!--@EFOLD-->
 <!--@SFOLD✔️Search Bar-->
@@ -70,17 +59,17 @@ n=@tag |            ❌             |             ✔️
 <li><span class style='background:rgb(var(--goldd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Open/Close All</span> lets you expand or collapse all lore cards at once.</li>
 <li><span class style='background:rgb(var(--redd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Reset</span> erases the search bar’s contents and the state of all tags. The show/conceal state of Echoes of the Eye spoilers and the search mode & logic will not be reset.</li>
 <li><span class style='background:rgb(var(--indigod));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Echoes of the Eye</span> spoilers can be toggled on or off. When DLC spoilers are toggled off, concealed lore cards will still be displayed in a heavily blurred state: this is meant to notify you of their existence, without them actually being readable unless you allow DLC spoilers.</li>
-<li id=loremapsmode><span class style='background:#bd652a;padding:3px 7px;font-weight:800;color:rgb(var(--white))'>BROAD | FOCUS</span> defines the <b>search mode</b>: “BROAD” will allow the appearance of additional lore cards which contain none of the green tags, but do contain at least one related tag (appearing in orange). “FOCUS” will prevent those extra lore cards from being shown.</li>
-<li id=loremaplogic><span class style='background:rgb(var(--greend));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>ANY | ALL</span> defines the <b>search logic</b>: the lore map’s results will return cards which are marked with “ANY” (at least one) or “ALL” of the green tags (and NONE of the red tags).</li>
+<li id=loremapsmode><span class style='background:#bd652a;padding:3px 7px;font-weight:800;color:rgb(var(--white))'><span class=scaps>broad</span> | <span class=scaps>focus</span></span> defines the <b>search mode</b>: <span class=scaps>broad</span> will allow the appearance of additional lore cards which contain none of the green tags, but do contain at least one related tag (appearing in orange). <span class=scaps>focus</span> will prevent those extra lore cards from being shown.</li>
+<li id=loremaplogic><span class style='background:rgb(var(--greend));padding:3px 7px;font-weight:800;color:rgb(var(--white))'><span class=scaps>any</span> | <span class=scaps>all</span></span> defines the <b>search logic</b>: the lore map’s results will return cards which are marked with <span class=scaps>any</span> (at least one) or <span class=scaps>all</span> of the green tags (and NONE of the red tags).</li>
 </ul>
-<p><b>Tip:</b> If you want to see every single lore card available, you can simply toggle either the orange BROAD/FOCUS button or the green ANY/ALL button while the tag selection is empty.</p></details>
+<p><b>Tip:</b> If you want to see every single lore card available, you can simply toggle either the orange <span class=scaps>broad</span>/<span class=scaps>focus</span> button or the green <span class=scaps>any</span>/<span class=scaps>all</span> button while the tag selection is empty.</p></details>
 <!--@EFOLD-->
 <!--@SFOLD✔️Save/Load-->
 <details><summary><h2>Save/Load your search state</h2></summary>
 <p>I have bad news – unlike your ship’s computer, this web page is not connected to the Ash Twin Project. If it is reloaded, it will forget <b>everything</b>. This means that if you have spent a long time perfecting your tags and search mode/logic before finally finding the list of lore cards you would like to keep under your watch for later use, you had better memorize every option you picked and prepare yourself mentally to later painstakingly find and toggle every tag and option <i>again</i>…</p>
 <p>…or not! Thankfully, right below the search bar lay two buttons with a black text box in the middle: clicking on the leftmost button while you have multiple tags active will display a string of text that you can copy and paste in your own notes for safekeeping. Again, the web page itself will not save anything – you have to copy the text it gives you (the icon in the top right corner lets you add it to your clipboard in one click) and save it in your own files.</p>
 <div style=max-width:800px;margin:auto;position:relative><pre style=padding:1em;white-space:pre-wrap;background:rgba(var(--goldd),.7);text-align:left>supernova1,high energy lab1,sunless city0,FOCUS,ANY,</pre><clp style=top:.3em;right:.1em><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg style=width:64px;margin-left:-32px>Copy</msg></btn></clp></div>
-<p>What you have above is an example of what you could call a “save point” for the lore map. The tags “#supernova” and “#high energy lab” will be added and turned green (because of the “1” at the end), the tag “#sunless city” will be added in red (because of the final “0”), and the search will be set to use the FOCUS mode and ANY logic.</p>
+<p>What you have above is an example of what you could call a “save point” for the lore map. The tags “#supernova” and “#high energy lab” will be added and turned green (because of the “1” at the end), the tag “#sunless city” will be added in red (because of the final “0”), and the search will be set to use the <span class=scaps>focus</span> mode and <span class=scaps>any</span> logic.</p>
 <p>If you reload this web page, the list of active tags will be empty and all your options will be reset: but if you paste the text you saved into the black box and then click on the rightmost button, all your progress will be loaded back in. Scrolling aside, it will be as if you had never left!</p>
 <hr>
 <p>…What do you <i>mean</i>, “scrolling aside”? Scrolling is tedious and annoying! What if you were looking through the ENTIRE map with an empty tag selection and hundreds of lore cards displayed? That doesn’t solve anything!</p>
@@ -142,25 +131,26 @@ n=@tag |            ❌             |             ✔️
 <details><summary><h2>Cool, cool. So how do I use it?</h2></summary>
 <p style=font-size:1em>Let’s take two diametrically opposed examples:</p>
 <p style=font-size:1.1em;font-weight:600>You’re trying to learn everything there is to know about the Nomai from Brittle Hollow.</p><ol>
-<li>You are here to read, and you probably want as many results as possible – or at least, you want to avoid taking the risk of hiding lore cards you would like to see. Make sure that you are using the ANY search logic.</li>
-<li>If you want to read even more, also check whether you are using the BROAD search mode, which will return more results (albeit perhaps less relevant) than the FOCUS mode.</li>
+<li>You are here to read, and you probably want as many results as possible – or at least, you want to avoid taking the risk of hiding lore cards you would like to see. Make sure that you are using the <span class=scaps>any</span> search logic.</li>
+<li>If you want to read even more, also check whether you are using the <span class=scaps>broad</span> search mode, which will return more results (albeit perhaps less relevant) than the <span class=scaps>focus</span> mode.</li>
 <li>Fortunately for you, there are tags named “#nomai (brittle hollow)” and “#nomai (escape pod 1)” (if you remember your lore, this is the escape pod which crashed on Brittle Hollow). Even better, these tags come with a circle-shaped button too: if you hover the latter, you will see a list of the names of all the Nomai who boarded it.</li>
 <li>If you want to include the Nomai who were born after the crash, then “#nomai (escape pod 1)” may actually not be the most useful to you, compared to the alternative. However, some of the Nomai listed in “#nomai (brittle hollow)” actually grew up on Ember Twin (which includes Solanum, for example)! They are only part of the list because they went to school there.</li>
 <li>Not to worry: there is also a “#nomai (ember twin)” tag, after all, and it comes with its own circle-shaped button. If you click on this circle twice, you will have effectively either turned red or removed entirely the names of the Nomai you don’t want to read about.</li>
 </ol>
 <p style=font-size:1.1em;font-weight:600>You heard that Chert is supposed to know something about Ash Twin, but you have no idea what it is.</p><ol>
 <li>The first step would be to turn the tags “#chert” and “#ash&nbsp;twin” green. This, however, returns a lot of irrelevant results.</li>
-<li>You are sure that Chert specifically, knows something about Ash Twin specifically. The kind of lore card you are looking for has to have both tags: so you select the ALL search logic.</li>
-<li>That’s better, but you are still seeing some irrelevant lore cards about Hearthians and the Hourglass Twins. The reason they appear is because of the BROAD search mode: but considering your goal, the orange tags are completely useless. Select the FOCUS search mode to make them go away.</li>
+<li>You are sure that Chert specifically, knows something about Ash Twin specifically. The kind of lore card you are looking for has to have both tags: so you select the <span class=scaps>all</span> search logic.</li>
+<li>That’s better, but you are still seeing some irrelevant lore cards about Hearthians and the Hourglass Twins. The reason they appear is because of the <span class=scaps>broad</span> search mode: but considering your goal, the orange tags are completely useless. Select the <span class=scaps>focus</span> search mode to make them go away.</li>
 </ol></details>
 <!--@EFOLD-->
 <!--@SFOLD☑️FAQ-->
 <details><summary><h2>Frequently Asked Questions</h2></summary>
-<!-- <blockquote style=padding:1em>“My search returns completely irrelevant results!”</blockquote>
-<p>This is part of the cons of trying to be as exhaustive as possible: it is better to show too many results than not enough, and take the risk of not showing you the kind of information you would like to see… But this also means that with one tag being connected to another, itself connected to another, and on and on, search results may pile up fast and diverge from your initial topic. In a sense, this lore map is the equivalent of the Wikipedia rabbit hole, except condensed in one single page.</p>
-<p>To remedy this, one thing you can do is <b>take a look at your undesired lore cards’ tags</b>. Green and orange tags are the reason the lore card appeared, and more often than not, <b>an <span class=orng>orange</span> tag will be your culprit</b>. To get rid of this and similar lore cards, you can pick any tag in its list and click on it twice, until the lore card disappears! When you find orange or white tags that have nothing to do with what you are looking for, turning them red is the best way to get rid of cards you aren’t interested in without having to impact your actual search.</p> -->
+<blockquote style=padding:1em>“My search returns completely irrelevant results!”</blockquote>
+<p>If you are already using the <span class=scaps>broad</span> mode and AND logic but are still unsatisfied, then perhaps certain lore cards were tagged incorrectly (or tagging them in such way made sense in my/other people’s heads, but your specific case scenario was not accounted for). If you disagree with the way some tags are connected (or not), the way some lore cards are tagged or even written – please let me know! I left all my socials below, and again, this project has its own <a href=https://discord.gg/knBDpGAjNF target=_blank class=blue>Discord server</a> if you want more people other than me to see your opinion and join the debate.</p>
 <blockquote style=padding:1em>“This web page layout looks… broken.”</blockquote>
 <p>I’m sorry if it does! I am 100% self-taught on HTML/CSS/JS and have only tested my web pages on my computer and phone, which both use Firefox. If you are using a different browser, this may be the cause. If you are or know a web developer who would be willing to help look into and possibly even fix this kind of issue, don’t hesitate to contact me! Just… be nice and don’t insult me too hard for the spaghetti code. I’m doing my best 😅</p>
+<blockquote style=padding:1em>“I’d like to make a lore map like this for my own fandom and/or personal project, can I use this page as a template?”</blockquote>
+<p>Yes, of course! Please let me know that you do, and credit where it is due would be greatly appreciated – that is all I ask.</p><p>I strongly advise you against cloning my whole repository, however: I use the same Github Pages website for a lot of other more personal projects that have nothing to do with this one, so cloning the repository would drown you with hundreds of completely useless files. If you contact me before starting your project, I can give you a quick rundown of how this page works and how you can easily make your own – image/fonts and other aesthetics-related assets aside, you really only need ~6-7 files in total to get the entirety of this page’s layout and interactiveness working.</p>
 </details>
 <!--@EFOLD-->
 <!--@SFOLD✔️Contact-->
@@ -181,7 +171,7 @@ n=@tag |            ❌             |             ✔️
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#moons></button>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#space stations/satellites'></button>
 </p><p>
-    <input type=button onclick=AddTagSelector(this.value) class=hasimg value=#sun style=background-image:url(../ast/ico/astr_S.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=hasimg n=supernova value=#sun style=background-image:url(../ast/ico/astr_S.png)>
     <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites#@nomai technology'class=hasimg value='#sun station'style=background-image:url(../ast/ico/astr_SS.png)>
     <input type=button onclick=AddTagSelector(this.value) n='warp receivers#sun station'value='#sun station warp receiver'>
 </p><p>
@@ -279,15 +269,17 @@ n=@tag |            ❌             |             ✔️
 <!--@EFOLD-->
 <!--@SFOLD⚠️Characters-->
 <div class=tagcategory><h2>Characters</h2><p>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value=travelers></button>
+</p><p>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value=#hearthians></button>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#outer wilds ventures'></button>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#astronauts></button>
     <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#protagonist’s ship'value=#protagonist>
     <input type=button onclick=AddTagSelector(this.value) n=hearthians value=#arkose>
-    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#chert’s ship#chert’s camp'value=#chert>
-    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#lunar outpost'value=#esker>
-    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#feldspar’s ship#feldspar’s camp'value=#feldspar>
-    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#gabbro’s ship#gabbro’s island'value=#gabbro>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#chert’s ship#chert’s camp#travelers'value=#chert>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#lunar outpost#travelers'value=#esker>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#feldspar’s ship#feldspar’s camp#travelers'value=#feldspar>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#gabbro’s ship#gabbro’s island#travelers'value=#gabbro>
     <input type=button onclick=AddTagSelector(this.value) n=hearthians value=#galena>
     <input type=button onclick=AddTagSelector(this.value) n=hearthians value=#gneiss>
     <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#zero-g cave'value=#gossan>
@@ -297,7 +289,7 @@ n=@tag |            ❌             |             ✔️
     <input type=button onclick=AddTagSelector(this.value) n=hearthians value=#mica>
     <input type=button onclick=AddTagSelector(this.value) n=hearthians value=#moraine>
     <input type=button onclick=AddTagSelector(this.value) n='hearthians#sap wine'value=#porphy>
-    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#riebeck’s ship'value=#riebeck>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures#astronauts#riebeck’s ship#travelers'value=#riebeck>
     <input type=button onclick=AddTagSelector(this.value) n='hearthians#village'value=#rutile>
     <input type=button onclick=AddTagSelector(this.value) n='hearthians#outer wilds ventures'value=#slate>
     <input type=button onclick=AddTagSelector(this.value) n=hearthians value=#spinel>
@@ -350,14 +342,14 @@ n=@tag |            ❌             |             ✔️
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#rhus>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#root>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#secca>
-    <input type=button onclick=AddTagSelector(this.value) n='nomai#quantum moon'value=#solanum>
+    <input type=button onclick=AddTagSelector(this.value) n='nomai#quantum moon#travelers'value=#solanum>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#spire>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#taget>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#thatch>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#yarrow>
 </p><p class=dlc>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#stranger’s inhabitants'></button>
-    <input type=button onclick=AddTagSelector(this.value) n='stranger’s inhabitants'value=#prisoner>
+    <input type=button onclick=AddTagSelector(this.value) n='stranger’s inhabitants#travelers'value=#prisoner>
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD⚠️Technology & Culture-->
@@ -413,13 +405,15 @@ n=@tag |            ❌             |             ✔️
     <input type=button onclick=AddTagSelector(this.value) value=#archeology>
 </p><p>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#astronomy></button>
-    <input type=button onclick=AddTagSelector(this.value) n='astronomy#natural phenomena'value=#supernova>
+    <input type=button onclick=AddTagSelector(this.value) n='astronomy#natural phenomena#sun'value=#supernova>
+    <input type=button onclick=AddTagSelector(this.value) n=astronomy#sun value=#stars>
+    <input type=button onclick=AddTagSelector(this.value) n=astronomy value=#galaxies>
 </p><p>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#natural phenomena'></button>
-    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena'value='#ghost matter'>
-    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#gravity manipulation'value='#gravity crystal'>
-    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena'value='#timber hearth geysers'>
-    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena'value='#hourglass twins sand column'>
+    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#interloper'value='#ghost matter'>
+    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#gravity manipulation#brittle hollow'value='#gravity crystal'>
+    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#timber hearth'value='#timber hearth geysers'>
+    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#hourglass twins'value='#hourglass twins sand column'>
 </p><p>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#biology></button>
     <input type=button onclick=AddTagSelector(this.value) n=biology value='#hearthian biology'>
@@ -429,7 +423,7 @@ n=@tag |            ❌             |             ✔️
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#flora></button>
 </p></div>
 <!--@EFOLD-->
-<!--@SFOLD⚠️Lore Card Types & Sources-->
+<!--@SFOLD☑️Lore Card Types & Sources-->
 <div class=tagcategory id=tagend style=text-align:center><h2>Lore Card Types & Sources</h2><p style=line-height:2.2em>
     <input type=button onclick=AddTagSelector(this.value) value='#in-game observations'style='outline:3px solid rgb(var(--goldd));margin-right:3px'>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#alternate sources'style='outline:3px solid rgb(var(--indigod));margin-right:3px'></button>
@@ -1259,4 +1253,3 @@ if(url[2]=='nodlc'||url[1]=='nodlc'){srch_dlc();document.title+=' (no DLC)';docu
 else{document.getElementById('disclaimer').innerHTML='<b>Warning:</b> DLC spoilers can be toggled on and off at will, but the version of this page you are viewing is <b>opt-out</b> (DLC spoilers are visible by default).<br><b>You can access the opt-in version of this page <a href=loremap.html#nodlc style=--fore:var(--redl) onClick=javascript:partreload()>here</a>.</b> If you share this page with a friend who hasn’t played the DLC, please share the opt-in version instead of this one!'}}partreload()</script><script src=../src/js-loremap.js></script>
 </div></body></html><script src=../src/js-debug.js></script>
 <!--@EFOLD-->
-<!--Ctrl+F on “HAS_ONGOING_DATAMINING” for when you want to recheck the version changes & translations in already made lore cards.-->
