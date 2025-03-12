@@ -38,20 +38,24 @@ for(t=0;t<allmtags.length;t++){
     ){chiltags+="\n  • "+inputs[i].value}}
     allmtags[t].setAttribute('title',chiltags)
 }
-// Show Master Tags
+// Show Master Tags + Alert Unlisted Tags
+mtg=''
 const allntags=document.querySelectorAll('input[n]')
 for(t=0;t<allntags.length;t++){
     ns=allntags[t].getAttribute('n').replace('!','').split('#').filter((m)=>m).filter(s=>/^[^@]/i.test(s))
-    if(ns.length){allntags[t].setAttribute('title','Related tags (will appear in orange):\n  • #'+ns.sort().join("\n  • #"))}
+    if(ns.length){
+        for(n=0;n<ns.length;n++){if(!altgs.includes(ns[n])){mtg+="\n\u30FB"+ns[n]}}
+        allntags[t].setAttribute('title','Related tags (will appear in orange):\n  • #'+ns.sort().join("\n  • #"))
+    }
 }
 // Mark Unused Tags
 utags=filterlist.querySelectorAll('t>*');uniq=[]
 for(i=0;i<utags.length;i++){if(!uniq.includes(utags[i].value)){uniq.push(utags[i].value)}}uniq=uniq.filter((m)=>m!='#keep')
 for(tag=0;tag<altgs.length;tag++){if(uniq.indexOf('#'+altgs[tag])==-1){tagselect[tag].classList.add('maclude')}}
 
-// Alert Unlisted Tags (Lore maps & calendars)
-mtg='';for(tag=0;tag<uniq.length;tag++)altgs.includes(uniq[tag].split('#')[1])||(mtg+='\n・'+uniq[tag])
-''!=mtg&&window.alert('The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n'+mtg)
+// Alert Unlisted Tags
+for(tag=0;tag<uniq.length;tag++){if(!altgs.includes(uniq[tag].split("#")[1])){mtg+="\n\u30FB"+uniq[tag]}}
+if(mtg!=""){window.alert("The following tags are used by some lore cards, but are absent from the list of selectable tags!\n\n"+mtg)}
 
 // Make text box Enter key friendly
 document.getElementById("pastebin").addEventListener('keydown',function(e){if(e.key=='Enter'){LoadSearchState(this.value)}})
