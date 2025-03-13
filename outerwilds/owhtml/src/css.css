@@ -392,8 +392,7 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog h2{font-size:1.7em}
 .shiplog h3{padding:0 12%;line-height:1.7em;color:rgb(var(--greyl))}
 
-orng,.red{color:rgb(var(--orng))}
-.orng{color:rgb(var(--orng2))}
+.orng,orng,.red{color:rgb(var(--orng))}
 .grey{opacity:.8}
 .blue:not(a){color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
@@ -417,12 +416,11 @@ orng,.red{color:rgb(var(--orng))}
 .green:after{filter:invert(61%)sepia(21%)saturate(1153%)hue-rotate(94deg)brightness(94%)contrast(87%)}
 .purplel:after{filter:invert(51%)sepia(48%)saturate(5427%)hue-rotate(230deg)brightness(100%)contrast(104%)}
 .blue:after{filter:invert(33%)sepia(94%)saturate(654%)hue-rotate(194deg)brightness(102%)contrast(101%)}
-.orng2:after{filter:invert(60%)sepia(30%)saturate(4545%)hue-rotate(344deg)brightness(103%)contrast(101%)}
+.orng:after{filter:invert(60%)sepia(30%)saturate(4545%)hue-rotate(344deg)brightness(103%)contrast(101%)}
 .black.green:after{filter:invert(61%)sepia(21%)saturate(1153%)hue-rotate(94deg)brightness(94%)contrast(87%)drop-shadow(0 0 5px currentcolor)}
 .black.purplel:after{filter:invert(51%)sepia(48%)saturate(5427%)hue-rotate(230deg)brightness(100%)contrast(104%)drop-shadow(0 0 5px currentcolor)}
 .black.blue:after{filter:invert(33%)sepia(94%)saturate(654%)hue-rotate(194deg)brightness(102%)contrast(101%)drop-shadow(0 0 5px currentcolor)}
-.black.orng2:after{filter:invert(60%)sepia(30%)saturate(4545%)hue-rotate(344deg)brightness(103%)contrast(101%)drop-shadow(0 0 5px currentcolor)}
-
+.black.orng:after{filter:invert(60%)sepia(30%)saturate(4545%)hue-rotate(344deg)brightness(103%)contrast(101%)drop-shadow(0 0 5px currentcolor)}
 
 
 
