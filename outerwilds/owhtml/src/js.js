@@ -32,7 +32,7 @@ function getcard(id){
     if(url.length>2){window.location.href=url[0]+'#'+id+'#'+url[2]}
     else if(specialids.includes(url[1])){window.location.href=url[0]+'#'+id+'#'+url[1]}
     else{window.location.href=url[0]+'#'+id}
-    cd.getElementsByTagName("details")[0].open=true;cd.scrollIntoView()
+    cd.getElementsByTagName("details")[0].open=true
     cd.classList.add('targetblink');setTimeout(function(){cd.classList.remove('targetblink')},5000)
 }
 // Save/Load List of Active Tags
