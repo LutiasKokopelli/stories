@@ -19,13 +19,7 @@ function CopyCodeToClipboard(b){
     navigator.clipboard.writeText(b.parentNode.parentNode.getElementsByTagName('pre')[0].innerHTML)
     b.getElementsByTagName('msg')[0].innerHTML='Copied!'
 }function ResetCopyCode(b){setTimeout(function(){b.getElementsByTagName('msg')[0].innerHTML='Copy'},300)}
-//    ██       ██████  ██████  ███████     ███    ███  █████  ██████
-//    ██      ██    ██ ██   ██ ██          ████  ████ ██   ██ ██   ██
-//    ██      ██    ██ ██████  █████       ██ ████ ██ ███████ ██████
-//    ██      ██    ██ ██   ██ ██          ██  ██  ██ ██   ██ ██
-//    ███████  ██████  ██   ██ ███████     ██      ██ ██   ██ ██
-//
-// Copy Card URL to Clipboard
+// Copy Lore Card URL to Clipboard
 function CopyLinkToClipboard(b){
     navigator.clipboard.writeText(window.location.href.split('#')[0]+'#'+b.parentNode.parentNode.id+'#nodlc')
     b.getElementsByTagName('msg')[0].innerHTML='URL Copied!'
@@ -38,9 +32,8 @@ function getcard(id){
     if(url.length>2){window.location.href=url[0]+'#'+id+'#'+url[2]}
     else if(specialids.includes(url[1])){window.location.href=url[0]+'#'+id+'#'+url[1]}
     else{window.location.href=url[0]+'#'+id}
-    cd.getElementsByTagName("details")[0].open=true;
+    cd.getElementsByTagName("details")[0].open=true;cd.scrollIntoView()
     cd.classList.add('targetblink');setTimeout(function(){cd.classList.remove('targetblink')},5000)
-    cd.scrollIntoView();window.scrollBy(0,-270)
 }
 // Save/Load List of Active Tags
 function CopySearchState(){
