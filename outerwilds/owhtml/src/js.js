@@ -221,12 +221,17 @@ function opencloseall(){if(!allit[0].getElementsByTagName("details")[0].open==tr
 function changechp(ch){
     [...document.querySelectorAll('*[id^=prevnext]')].map(n=>n&&n.remove())
     for(i=0;i<chlist.length;i++){
-        if(chlist[i]==ch){document.getElementById(chlist[i].slice(1)).style.display='';if(i<1){lnks=['',chlist[i+1]]}else if(i===chlist.length-1){lnks=[chlist[i-1],'']}else{lnks=[chlist[i-1],chlist[i+1]]}}
-        else{document.getElementById(chlist[i].slice(1)).style.display='none'}
+        if(chlist[i]==ch){
+            document.getElementById(chlist[i].split('#')[1]).style.display='';
+            if(i<1){lnks=['',chlist[i+1]]}
+            else if(i===chlist.length-1){lnks=[chlist[i-1],'']}
+            else{lnks=[chlist[i-1],chlist[i+1]]}
+        }
+        else{document.getElementById(chlist[i].split('#')[1]).style.display='none'}
     }prevnextnode=document.createElement('div');prevnextnode.id='prevnext';inh='<a href=#'
-    if(lnks[0]){inh+=lnks[0]+' onclick="javascript:changechp(\''+lnks[0]+'\')">&larr;&nbsp;Previous</a>'}
+    if(lnks[0]){inh+=lnks[0].split('#')[1]+' onclick="javascript:changechp(this.href)">&larr;&nbsp;Previous</a>'}
     if(lnks[0]&&lnks[1]){inh+=' &emsp; <a href=#'}
-    if(lnks[1]){inh+=lnks[1]+' onclick="javascript:changechp(\''+lnks[1]+'\')">Next&nbsp;&rarr;</a>'}
+    if(lnks[1]){inh+=lnks[1].split('#')[1]+' onclick="javascript:changechp(this.href)">Next&nbsp;&rarr;</a>'}
     prevnextnode.innerHTML=inh;document.body.insertBefore(prevnextnode,document.body.firstChild)
     node=document.getElementById('prevnext').cloneNode(true);node.id='prevnext2';document.body.appendChild(node)
 }
