@@ -150,7 +150,7 @@ span:not([class]){display:block;font-size:.5em;font-family:Space Mono,Consolas,C
 summary span{font-size:.7em}
 details tr>* span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
 .source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white));margin-top:-1em}
-h2+.source{margin-top:-.5em}
+h2+.source,p+.source{margin-top:-.5em}
 summary .source{color:initial;opacity:.5}
 summary{width:calc(100% + 20px);margin:-12px 0 -20px -10px;padding:10px;padding-left:27px;border-radius:15px 15px 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 details[open] summary{margin-bottom:0}

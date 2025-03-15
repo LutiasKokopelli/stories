@@ -286,12 +286,12 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 .shiplog h2{font-size:1.7em}
 .shiplog h3{padding:0 12%;line-height:1.7em;color:rgb(var(--greyl))}
 
-.orng,orng,.red{color:rgb(var(--orng))}
+.orng,orng{color:rgb(var(--orng))}
 .grey{opacity:.8}
 .blue:not(a){color:rgb(var(--blue))}
 .green{color:rgb(var(--greenl))}
 .lblue{color:lightblue}
-.redl{color:rgb(var(--redl))}
+.redl,.red{color:rgb(var(--redl))}
 .redd{color:rgb(var(--redd))}
 .greend{color:rgb(var(--greend))}
 .greenl{color:rgb(var(--greenl))}
@@ -470,6 +470,9 @@ img[onclick]:hover{
 #i{padding:2em;text-align:center;display:block;border-top:3px solid rgb(var(--blue))}
 #i a:hover{border:none;filter:contrast(0)sepia(1)hue-rotate(90deg)}
 #i img{display:inline-block;height:1.7em;vertical-align:middle}
+
+
+
 
 clp{position:absolute;z-index:1;bottom:.35em;right:.15em}
 btn[onclick='CopyLinkToClipboard(this)']{background-image:url(../ast/svg/copy-url.svg)}
