@@ -131,8 +131,8 @@ const cdta={"Wake Up":{"GameTime":0,"Tags":["k"],"Color":"rgba(var(--greenl),.42
 "Will automatically wake up from “Doze off” & Cannot go back to sleep":{
     "GameTime":20*60+32,"Tags":[]
 },
-"End Times starts playing":{
-    "GameTime":20*60+35,"Tags":[],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../ast/ico/Steam_Lv3_Red_Giant.png>"
+"The track “End Times” starts playing":{
+    "GameTime":20*60+35,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../ast/ico/Steam_Lv3_Red_Giant.png>"
 },
 "The Red Giant reaches its maximal size":{
     "GameTime":21*60,"Tags":["sun"],"Color":"rgba(var(--indigod),.34)","Image":"<img src=../ast/ico/Steam_Lv3_Red_Giant.png>"
