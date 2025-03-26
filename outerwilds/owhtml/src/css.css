@@ -504,3 +504,5 @@ msg:after{
 
 input.hasimg{background-repeat:no-repeat;background-position:left center;background-size:24px 24px;padding-left:27px}
 .hasoutline{outline:3px solid rgb(var(--fore));margin:4px}
+
+.stdln{box-shadow:var(--txtshw);display:block;margin:auto;width:100%}
