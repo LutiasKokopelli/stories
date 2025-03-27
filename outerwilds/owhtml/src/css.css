@@ -122,6 +122,10 @@ input:hover+.infob{display:block}
     overflow:auto
 }
 :not(m).infoa .infob{font-size:revert;position:absolute;bottom:100%;height:fit-content}
+
+span.infoa{border-bottom:2px dashed rgb(var(--fore))}
+span.infoa:after{content:'';background:url(../ast/svg/hud_m2e.svg)center no-repeat;background-size:cover;height:.6em;width:.6em;display:inline-block;margin-bottom:.2em;margin-left:.1em}
+
 .tagcategory p{position:relative}
 input+.infob,m .infob{font-size:10px;font-family:Space Mono;width:fit-content;position:absolute}
 input+.infob:hover{display:block}
@@ -137,7 +141,6 @@ a{text-decoration:none;color:rgb(var(--orng))}
 a:hover,*[onclick]:not(a,input,btn):hover{filter:brightness(120%)contrast(150%)}
 a:active button{background:rgb(var(--indigod))}
 a[target=_blank]:not(:has(it),.in):after{content:'';background-image:url(../ast/svg/external-link.svg);background-size:1em;height:1em;width:1em;display:inline-block;margin:-.15em .3em;margin-right:.1em}
-
 
 #midxbtn{background:rgba(var(--grey),.9);border-bottom:3px solid rgb(var(--indigol));transition:.5s}
 #midxbtn h1{background:rgb(var(--indigod));padding:17px;font-size:3vh;margin:0 auto;color:rgb(var(--back))}
