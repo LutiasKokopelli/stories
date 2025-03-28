@@ -104,8 +104,7 @@ td{height:100%}
     outline:2px solid rgb(var(--white))
 }
 .infoa:not(m){cursor:help;position:relative}
-input:hover+.infob{display:block}
-.infoa:hover>.infob,.infob:hover{display:revert}
+.infoa:hover>.infob,.infoa:hover+.infob,.infob:hover{display:revert}
 .infob{
     font-weight:initial;
     font-style:initial;
@@ -127,8 +126,8 @@ span.infoa{border-bottom:2px dashed rgb(var(--fore))}
 span.infoa:after{content:'';background:url(../ast/svg/hud_m2e.svg)center no-repeat;background-size:cover;height:.6em;width:.6em;display:inline-block;margin-bottom:.2em;margin-left:.1em}
 
 .tagcategory p{position:relative}
-input+.infob,m .infob{font-size:10px;font-family:Space Mono;width:fit-content;position:absolute}
-input+.infob:hover{display:block}
+input+.infob,.infoa+.infob,m .infob{font-size:10px;font-family:Space Mono;width:fit-content;position:absolute}
+input:hover+.infob,input+.infob:hover{display:block}
 .infob p{padding-left:1%!important;font-size:1em}
 .infob h2{padding:0 0 3px 0;margin:0 0 17px 0;text-align:left;font-size:1.4em;border-bottom:2px solid rgb(var(--midd));color:rgb(var(--fore))}
 .infob h2:not(:first-child){margin-top:17px}

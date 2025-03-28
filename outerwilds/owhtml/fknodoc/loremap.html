@@ -1,3 +1,14 @@
+<!--
+TAGS:  | Will appear as orange tags | Will be toggled by (*)
+n=!tag |            ✔️             |             ❌
+n=@tag |            ❌             |             ✔️
+FKNO Lore map tag categories: Reorganize tags using the canon lore map as guide.
+- (OK) Universes
+- (OK) Characters & Groups
+-      LOCATIONS & Sub-locations
+-      Technology & Culture
+-      Worldbuilding = natural stuff + fundamental science
+-->
 <!--@SFOLD-->
 <!DOCTYPE html><html><head><title>FKNO Lore Map</title><link rel=icon href=../ast/ico/OWV.png>
 <link rel=stylesheet href=../src/css.css>
@@ -202,7 +213,8 @@
 <details class=fkno><summary>Vanilla FKNO</summary><div>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian culture (vanilla)'></button>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_HEA.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#hearthian technology (vanilla)'></button>
-    <input type=button onclick=AddTagSelector(this.value) value='#backstory (vanilla)'n=timeline>
+    <input type=button onclick=AddTagSelector(this.value) n=timeline value='#backstory (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthian technology (vanilla)#flora (vanilla)'value='#emergency seeds (vanilla)'>
     <input type=button onclick=AddTagSelector(this.value) n='backstory (vanilla)'value='#gossan’s eye incident (vanilla)'>
 </div></details>
 
@@ -217,10 +229,14 @@
 <!--@SFOLD☑️Tags List: Worldbuilding-->
 <div class=tagcategory><h1>Worldbuilding</h1>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#physics></button>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) value='#archeology/paleontology'></button>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#biology></button>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#timeline></button>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#eye of the universe'></button>
-<input type=button onclick=AddTagSelector(this.value) value='#quantum mechanics'n=physics>
+<button><m></m><input type=button onclick=AddTagSelector(this.value) n=physics value='#quantum mechanics'></button>
+<input type=button onclick=AddTagSelector(this.value) n='quantum mechanics'value='#quantum entanglement'>
+<input type=button onclick=AddTagSelector(this.value) n='quantum mechanics'value='#quantum imaging'>
+<input type=button onclick=AddTagSelector(this.value) n='quantum mechanics'value='#rule of the sixth location'>
 <input type=button onclick=AddTagSelector(this.value) value='#hearthian biology'n=biology>
 <input type=button onclick=AddTagSelector(this.value) n='warp technology'value='#black/white hole'>
 <input type=button onclick=AddTagSelector(this.value) value='#original observers'>
@@ -234,6 +250,16 @@
     <input type=button onclick=AddTagSelector(this.value) value='#timber hearth geysers'>
     <input type=button onclick=AddTagSelector(this.value) value='#giant’s deep cyclones'>
     <input type=button onclick=AddTagSelector(this.value) n='giant’s deep cyclones'value='#anticlockwise cyclones'>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#fauna (vanilla)'></button>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)'value='#anglerfish (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)'value='#crickets (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)'value='#silkmoths (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)'value='#butterflies (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)#butterflies (vanilla)'value='#yarnflies (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)#butterflies (vanilla)'value='#velvetflies (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)'value='#firebees (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) n='#fauna (vanilla)'value='#jellyfish (vanilla)'>
+    <input type=button onclick=AddTagSelector(this.value) value='#flora (vanilla)'>
 </div></details>
 <details class=mau><summary>Hal’s Universe (Modern AU)</summary><div>
     <input type=button onclick=AddTagSelector(this.value) value='#backstory (hal’s universe)'n=timeline>
@@ -284,6 +310,20 @@
 <it id=SyenBadCook class=mau><details class=n><summary>Syen is a horrible cook.</summary></details><t>#syenite nickel #hal’s universe</t></it>
 <it id=CapeHammock><details class=n><summary>Gabbro may occasionally wear their hammock like a cape. For fun, and because it’s a way to have it on hand in case of need.</summary></details><t>#gabbro (vanilla)</t></it>
 <it id=MAUGneissJob class=mau><details class=n><summary>Gneiss has no hatchling of their own but they work at a daycare center.</summary></details><t>#gneiss silver #hal’s universe</t></it>
+<it id=EyeNature class=misc><details class=n><summary>The Eye of the universe is a singularity originally tucked away inside the Original Observer’s body, and released after they have returned to slumber.</summary></details><t>#eye of the universe</t></it>
+<it id=CaveHEA><details class=n><summary>While they were developing a more advanced intellect, Hearthians’ ancestors were still amphibious and living inside caves, thus having their sleep cycle unbothered by sunlight.</summary></details><t>#hearthians (vanilla)</t></it>
+<it id=LeftCaveHEA><details class=n><summary>Hearthians’ ancestors left the cave systems and started living in craters on the surface because ghost matter outbreaks are easier to deal with outside (there is more space to escape and ghost matter dissipates faster).</summary></details><t>#hearthians (vanilla)</t></it>
+<it id=RadiotrophicTrees><details class=n><summary>Tree metabolism doen’t rely on respiration. Instead, photosynthesis and radiosynthesis provide energy: trees thrive when the atmosphere is thin enough to let the sun radiation go through. Trees thus release large amounts of dioxygen as waste and cleanse their surroundings from radiation.</summary></details><t>#flora (vanilla)</t></it>
+<it id=EmergencyTreeSelection><details class=n><summary>Emergency seeds contain the breeds of pine trees which grow the fastest and release the most dioxygen, on top of providing edible fruits.</summary></details><t>#outer wilds ventures (vanilla) #emergency seeds (vanilla)</t></it>
+<it id=FeldsFish><details class=n><summary>Feldspar keeps a jellyfish for company and for warding off anglerfish when they venture outside their camp for scavenging.</summary></details><t>#feldspar (vanilla) #jellyfish (vanilla)</t></it>
+<it id=OGGossanGuitar><details class=n><summary>Gossan’s instrument is a guitar.</summary></details><t>#vanilla fkno #gossan (vanilla)</t></it>
+<it id=MAUGossanBass class=mau><details class=n><summary>Gossan plays the bass guitar.</summary></details><t>#hal’s universe #gossan gallium</t></it>
+<it id=GeysersNoFossils><details class=n><summary>Most traces of fossils on Timber Hearth were destroyed by the geysers’ progressively stronger and more chaotic pressure.</summary></details><t>#timber hearth geysers #archeology/paleontology</t></it>
+<it id=ArkoseEyesight class=misc><details class=n><summary>Arkose has bad eyesight.</summary></details><t>#arkose</t></it>
+<it id=MAUArkoseGlasses class=mau><details class=n><summary>Arkose wears glasses.</summary></details><t>#arkose (LAST NAME MISSING) #hal’s universe</t></it>
+<it id=SteinNoFancy class=mau><details class=n><summary>Stein does <i>not</i> dress fancy. If asked to dress more formally, they would put on a slightly less patchy coat and call it a day.</summary></details><t>#stein wolfram #hal’s universe</t></it>
+<it id=MAUPorphyNoChildhood class=mau><details class=n><summary>Porphy was raised as a homeschooled child actor and could only imagine the experience of growing up with friends through movies and novels. As a result, they are rather socially stunted, and though they are aware of it, they largely underestimate to what extent.</summary></details><t>#porphy argon #hal’s universe</t></it>
+<it id=MAUPorphyEmpathy class=mau><details class=n><summary>Porphy craves the normal life away from stardom, as they expect most people to be different from the ones they have to interact with in the celebrity sphere – notably in terms of valuing honesty and empathy.</summary></details><t>#porphy argon #hal’s universe</t></it>
 <!--@EFOLD-->
 <!--@SFOLD✔️Finished Lore Cards-->
 <!--@SFOLD✔️OGHEAcalendar-->
@@ -432,9 +472,25 @@
 <it id=AHAliensFollowedShardSignal class=ahau><details><summary>The Stranger and Nomai were not following the signal of the real Eye: instead, what caught their attention was an unusually high concentration of quantum rocks in the Hearthian solar system which mimicked the Eye’s signal.</summary><p>Gabbro’s love of quantum rocks caused them to be far more common in the Hearthian solar system, and be the source of the signal that both alien civilizations tried to follow. These quantum rocks, however, are just good at mimicking the previous universe’s Eye signal, instead of sending out the real one currently dormant inside Gabbro’s chest.</p></details><t>#gabbro’s universe #quantum mechanics #nomai (gabbro’s universe) #strangers (gabbro’s universe)</t></it>
 <!--@EFOLD-->
 <!--@EFOLD-->
+
+
+
+
+
+<!--@SFOLD❌Matter that isn’t directly connected to conscious observers cannot follow the rule of quantum entanglement.-->
+<it id=UnconsciousNoEntangle class=misc><details open><summary>Matter that isn’t directly connected to conscious observers cannot follow the rule of quantum entanglement.</summary>
+<p>Just like the spaceship being left behind in space after landing on the Quantum Moon, matter that is neither quantum nor in direct contact with a conscious observer (in the sense that the observer is consciously aware of this matter staying with them) will not interact with unobserved quantum objects, and may instead get clipped into them if an observer collapses the possibilities in such way that their locations would overlap.</p>
+<!-- Is non-quantum non-observed matter still accessible while clipped into an uncollapsed quantum object? Think of the Nomai’s proto-Hearthian experiment. The object should be inaccessible or at least harder to pull out until the possibilities are collapsed and the quantum object has fully gone elsewhere. -->
+</details><t>#quantum entanglement</t></it>
+<!--@EFOLD-->
+
+<!--@SFOLD❌QM emulates fake life-->
+<it id=QMFakeLife><details open><summary>The Quantum Moon can emulate life in a glitchy manner.</summary>
+</details><t>#quantum moon</t></it>
+<!--@EFOLD-->
+
 <!--@SFOLD❌Will be updated in the future-->
 <it id=SteinBike class=mau><details><summary>Stein owns a Triumph Bonneville.</summary><img src=https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/central%20marketing%20team/brand%20story/bonneville/06%20speedmaster%20hero-1410x793.jpg><img src=../../ast-TMP-for-owhtml/@WIP/Stein_motorbike_ref.jpg></details><t>#stein wolfram #hal’s universe</t></it>
-<it id=EyeNature class=misc><details class=n><summary>The Eye of the universe is a singularity originally tucked away inside the Original Observer’s body, and released after they have returned to slumber.</summary></details><t>#eye of the universe</t></it>
 <!--@SFOLD❌Hearthians age ranges at the start of the time loop-->
 <it id=OGHeaAges class=misc><details><summary>Character ages at the start of FKNO (OGs) or the MAU comic (post-Eye Hearthians)</summary>
 <p>From oldest to youngest:</p>
@@ -561,4 +617,5 @@ convTH=document.getElementById("convTH");convHM=document.getElementById("convHM"
 function fillconvout(input,n){convout.style.display="";convout.getElementsByTagName("table")[n].innerHTML=input}
 function RevealTagCategory(universe){sele=document.querySelectorAll('#tagselect details.'+universe);if(!sele[0].open==true){for(i=0;i<sele.length;i++){sele[i].open=true}}else{for(i=0;i<sele.length;i++){sele[i].open=false}}}
 </script><script src=../src/js-loremap.js></script></div></body></html><script src=../src/js-debug.js></script>
+<link rel=stylesheet href=../../local/cs-datafonts.css>
 <!--@EFOLD-->

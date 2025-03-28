@@ -35,7 +35,136 @@ const cdta={
 // "Tephra’s birth":  {"Date":[tlday[0]-10,02,04],"Tags":"#tephra   #birthday"},
 
 
-"Hal wakes up":{"Date":[2019,00,00],"Tags":"#"},
+"Hal wakes up":{"Date":[2019,07,14],"Tags":"#"},
+"Hal’s first day (Take Two)":{"Date":[2019,07,14],"Tags":"#"},
 
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+State of GD Script folders:
+
+✔️	 [Gabbro’s AU]
+❌	[Hal] S1E01 - Day 1 (Before Time Travel)
+❌	[Hal] S1E02 - Day 1² (After Time Travel)
+❌	[Hal] S1E03 - Day 2: Shopping & Silky
+❌	[Hal] S1E04 - Day 3: Hal meets Lari & Syen, Hornfels meets Chert
+❌	[Hal] S1E09 - Porphy Meets Hal
+✔️	 [Hal] S1E12 - Adopting Mica
+❌	[Hal] S1E15 - Blinking Spots Arc
+❌	[Hal] S1E17 - Peat on the move
+❌	[Hal] S2E01 - Return of the OGs
+❌	[Hal] S3E-- - Scoria stuff
+✔️	 [Hornfels’ AU]
+
+
+
+
+
+
+Day 1
+Day 1²
+.......Hal meets Stein
+Day 2
+.......Shopping
+.......Tuff
+.......Silky
+Day 3
+.......Hal meets Lari & Syen
+.......Hornfels finds Chert at OWV
+.......Slate & Feldspar learn Hal’s secret
+|
+|
+|
+|
+|
+.......Feldspar & Mylo apply for job with Porphy’s newest film
+
+
+
+.......Slate & Feldspar adopt Mica (after Feldspar’s job is confirmed and they move there to explore? Or does Feldspar crash their ship nearby?)
+
+.......Feldspar & Hal, then Gossan meet Porphy
+
+.......Blinking Spots Arc (starts because Lari showed Firn and Hal the photo taken of Hal’s spots blinking on the day they met Porphy)
+
+.......(BSA) Feldspar Turned into a Child
+
+.......(BSA) Lari is told Hal’s secret (after they show too many conspiracy posts)
+
+.......(BSA) Syen accidentally learns Hal’s secret (~1 day after Lari)
+
+.......Ouija Board Pizza Party
+
+
+.......Peat on the Move
+
+
+
+
+
+
+.......Return of the OGs
+
+
+
+.......Musa’s Plan
+.......Scoria in Firn’s Body
+.......Scoria meets Stein
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Make a separate JSON object also for the comic multiverse timeline? This is a bad idea. JSON doesn’t seem adapted for linear multiverse horizontal timelines, it’s probably best to keep it at 100% HTML with lots of SFOLD sections.
+// List of events in any order. List which characters are involved + description (or find a way to have description + list of characters with that description).
+const cdta_mau_current={
+// Only for MAU, include the events before time travel (including the 9 days with Area 22):
+// Post-Time travel:
+[{
+    "Titl":"Hal wakes up",
+    "Type":"Short",
+    "Date":"2019/07/14 14:22",
+    "Loc":"MAU!OWV_outside_riverbank",
+    "Char":[
+        "OG!Hal":"<html_description_here?>",
+        "Hal!Firn":"<html_description_here?>",
+        "Hal!Hornfels":"<html_description_here?>",
+    ],
+}],
+// 2019,07,23,11,01	Time travel message
+// -9 days:
+// 2019,07,14,
 }
