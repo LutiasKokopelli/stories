@@ -4,6 +4,12 @@ genopen=false // Open details of #general data by default
 
 const allrates=document.querySelectorAll('div[class="rating"] input');for(i=0;i<allrates.length;i++){allrates[i].style.width=allrates[i].value}
 
+function decodeHtml(html){
+    var txt=document.createElement("textarea")
+    txt.innerHTML=html
+    return txt.value.replaceAll("& lt;","&lt;")
+}
+
 //@SFOLD Open/Close Sidebar Pane
 function openNav(){
     if(document.getElementById('sidenav')){document.getElementById("sidenav").style.left="0"}
@@ -67,7 +73,6 @@ function CopySearchState(){
     pinl=[];pins=document.querySelectorAll("it[keep~=keeppin]");for(p=0;p<pins.length;p++){pinl.push(pins[p].id)};if(pinl.length){savepoint["Pins"]=pinl}
     if(window.location.href.includes("/owdoc/")){if(document.getElementById('srch_dlc').classList.contains('no')){savepoint["DLC"]="Hide"}else{savepoint["DLC"]="Show"}}
     document.getElementById('copybin').innerHTML="<pre>"+JSON.stringify(savepoint)+"</pre><clp><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg>Copy</msg></btn></clp>"
-    // document.getElementById('copybin').innerHTML="<pre>"+JSON.stringify(savepoint)+"</pre><clp><btn style=background-image:url(../ast/svg/hud_pin.svg) onclick=\"javascript:console.log()\"><msg>Save JSON</msg></btn><btn style=background-image:url(../ast/svg/ico_HEA.svg) onclick=\"javascript:this.addEventListener('submit',function(){let reader=new FileReader();reader.readAsText(file.files[0]);reader.onload=function(){LoadSearchState(JSON.parse(event.target.result))}});\"><msg>Import JSON</msg></btn><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg>Copy</msg></btn></clp>"
     navigator.clipboard.writeText(JSON.stringify(savepoint))
 }
 // Load List of Active Tags
@@ -104,12 +109,8 @@ function ResetTagSelector(){
         allit[i].setAttribute("hide","")
         if(allit[i].hasAttribute("keep")){
             if(allit[i].getAttribute("keep")!="keep"){
-                if(allit[i].getAttribute("keep").includes("keeppin")){
-                    allit[i].setAttribute("keep"," keeppin")
-                }else{
-                    allit[i].setAttribute("keep","")
-                    allit[i].getElementsByTagName("details")[0].open=false
-                }
+                if(allit[i].getAttribute("keep").includes("keeppin")){allit[i].setAttribute("keep"," keeppin")}
+                else{allit[i].setAttribute("keep","");allit[i].getElementsByTagName("details")[0].open=false}
             }
         }
     }
@@ -167,6 +168,7 @@ function FindTag(){
 }
 function FindEle(id,query,specs=false,includeinput=true){
     var taginput=document.getElementById(id).value.toLowerCase().replaceAll("'",'’').split(',').filter(n=>n),sel=document.querySelectorAll(query)
+
     for(tagi=0;tagi<taginput.length;tagi++){
         taginput[tagi]=taginput[tagi].split(' ').filter(n=>n)
         for(t=0;t<taginput[tagi].length;t++){taginput[tagi][t]=taginput[tagi][t].replaceAll("_"," ").replaceAll("."," ")}
@@ -181,26 +183,38 @@ function FindEle(id,query,specs=false,includeinput=true){
         if(specs){
             inhtml="";tmp=sel[i].querySelectorAll(specs)
             for(j=0;j<tmp.length;j++){
-                inhtml+=tmp[j].innerHTML.replace(/<clp>.*?<\/clp>/,'').replace(/<.*?>/g,"\n").toLowerCase()
+                inhtml+=decodeHtml(tmp[j].innerHTML.replace(/<clp>.*?<\/clp>/,'').replace(/<.*?>/g,"\n").toLowerCase())
             }
-        }else{inhtml=sel[i].innerHTML.replace(/<clp>.*?<\/clp>/,'').replace(/<.*?>/g,"\n").toLowerCase()}
+        }else{inhtml=decodeHtml(sel[i].innerHTML.replace(/<clp>.*?<\/clp>/,'').replace(/<.*?>/g,"\n").toLowerCase())}
         for(tagi=0;tagi<taginput.length;tagi++){
             check=true
             for(t=0;t<taginput[tagi].length;t++){
-                if(inhtml.includes(taginput[tagi][t])&&check){
-                    check=true;regEx=new RegExp("("+taginput[tagi][t]+")(?!([^<]+)?>)","gi")
-                    if(specs){for(j=0;j<tmp.length;j++){tmp[j].innerHTML=tmp[j].innerHTML.replaceAll(regEx,`<highlt>$&</highlt>`,tmp[j].innerHTML)}}
-                    else{sel[i].innerHTML=sel[i].innerHTML.replaceAll(regEx,`<highlt>$&</highlt>`,sel[i].innerHTML)}
+                if(taginput[tagi][t].length>2){
+                    if(includeinput){
+                        inps=sel[i].querySelectorAll('t input')
+                        for(ip=0;ip<inps.length;ip++){if(inps[ip].value.includes(taginput[tagi][t])){
+                            check=true
+                            wrap=document.createElement('highlt')
+                            inps[ip].parentNode.replaceChild(wrap,inps[ip])
+                            wrap.appendChild(inps[ip])
+                        }}
+                    }
+                    if(inhtml.includes(taginput[tagi][t])&&check){
+                        check=true;regEx=new RegExp("("+taginput[tagi][t]+")(?!([^<]+)?>)","gi")
+                        if(specs){
+                            for(j=0;j<tmp.length;j++){
+                                tmp[j].innerHTML=decodeHtml(tmp[j].innerHTML).replaceAll(regEx,`<highlt>$&</highlt>`,tmp[j].innerHTML)
+                                fix=tmp[j].querySelectorAll(".calc")
+                                if(fix){for(f=0;f<fix.length;f++){fix[f].innerHTML=fix[f].innerHTML.replaceAll("<highlt>","").replaceAll("</highlt>","")}}
+                            }
+                        }
+                        else{
+                            sel[i].innerHTML=decodeHtml(sel[i].innerHTML).replaceAll(regEx,`<highlt>$&</highlt>`,sel[i].innerHTML)
+                            fix=sel[i].querySelectorAll(".calc")
+                            if(fix){for(f=0;f<fix.length;f++){fix[f].innerHTML=fix[f].innerHTML.replaceAll("<highlt>","").replaceAll("</highlt>","")}}
+                        }
+                    }else{check=false}
                 }else{check=false}
-                if(includeinput){
-                    inps=sel[i].querySelectorAll('t input')
-                    for(ip=0;ip<inps.length;ip++){if(inps[ip].value.includes(taginput[tagi][t])){
-                        check=true
-                        wrap=document.createElement('highlt')
-                        inps[ip].parentNode.replaceChild(wrap,inps[ip])
-                        wrap.appendChild(inps[ip])
-                    }}
-                }
             }
             checks.push(check)
         }

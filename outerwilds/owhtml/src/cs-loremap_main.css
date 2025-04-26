@@ -252,6 +252,7 @@ it blockquote{user-select:none;-webkit-user-select:none}
 #tuto details[open]:not(.reg)>summary{margin-bottom:1em}
 #tuto details[open]:not(.reg){padding-bottom:1em}
 
+p.calc{text-align:center;font-size:1em}
 
 button{background:none;position:relative;padding:0;margin:0}
 button>m{cursor:pointer;position:absolute;top:calc(50% - .9em);z-index:1;left:.3em;width:1.8em;height:1.8em;display:block;border-radius:50%;background:no-repeat center;background-image:url(../ast/svg/hud_thm.svg);background-size:100%;outline:1px solid rgb(var(--black));background-color:rgb(var(--black))}
