@@ -30,7 +30,7 @@ function CopyLinkToClipboard(b){
     bookmark=it.id
     for(i=0;i<allit.length;i++){allit[i].setAttribute("keep",(allit[i].getAttribute("keep")||"").replaceAll(" keepget",""))}
     it.setAttribute("keep",(it.getAttribute("keep")||"")+" keepget")
-    nc=window.location.href.split('#')[0]+it.id
+    nc=window.location.href.split('#')[0]+"#"+it.id
     if(document.getElementById('srch_dlc').classList.contains('no')){nc+='#nodlc'}
     navigator.clipboard.writeText(nc)
 }
