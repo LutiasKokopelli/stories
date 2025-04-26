@@ -1,4 +1,4 @@
-// @SFOLD — NOTES & INITIALIZATION
+//@SFOLD — NOTES & INITIALIZATION
 // 1 day	= 22 sunrises				(55px for large scale)
 // 1 week	= 309 sunrises = 14 days + 1 sunrise
 // 1 year	= 22 weeks = 309 days
@@ -11,8 +11,8 @@
 // =CONCATENER(A1,",",A2,"]")
 const tlday=[2001,01,06] // Year number / Week number / Day number of the week (Interday = YYYY/00/00)
 const cdta={
-// @EFOLD
-// @SFOLD — Birthdays
+//@EFOLD
+//@SFOLD — Birthdays
 "Tektite’s birth": {"Date":[tlday[0]-73,22,05],"Tags":"#tektite  #birthday"},
 "Spinel’s birth":  {"Date":[tlday[0]-69,07,01],"Tags":"#spinel   #birthday"},
 "Gneiss’ birth":   {"Date":[tlday[0]-68,05,02],"Tags":"#gneiss   #birthday"},
@@ -35,7 +35,7 @@ const cdta={
 "Mica’s birth":    {"Date":[tlday[0]-12,07,14],"Tags":"#mica     #birthday"},
 "Galena’s birth":  {"Date":[tlday[0]-10,05,08],"Tags":"#galena   #birthday"},
 "Tephra’s birth":  {"Date":[tlday[0]-10,02,04],"Tags":"#tephra   #birthday"},
-// @EFOLD
+//@EFOLD
 
 // "TITLE":{"Date":[tlday[0],0,0],"Tags":"#"},
 // Required:
@@ -82,6 +82,11 @@ const cdta={
 "Feldspar’s 4th(?) trip to Giant’s Deep":{"Date":[tlday[0]-10,19,14],"Tags":"#feldspar #outer wilds ventures #giant’s deep #launch"},
 "Chert brings back a Nomai cactus stew cookbook from Ember Twin":{"Date":[tlday[0]-9,19,12],"Tags":"#chert #outer wilds ventures #launch"},
 "Feldspar Declared Missing":{"Date":[tlday[0]-9,7,3],"Tags":"#feldspar #outer wilds ventures"},
+
+
+"Feldspar meets their future jellyfish pet":{"Date":[tlday[0]-9,8,2],"Tags":"#feldspar"},
+
+
 
 "Silky’s Death":{"Date":[tlday[0]-5,16,8],"Tags":"#firn #hal #marl #silkmoth"},
 

@@ -5,7 +5,7 @@
 <meta property=og:type content=article><meta name=theme-color content=#1D4A94><meta property=og:site_name content="Lutias Kokopelli’s Outer Wilds Stuff">
 <meta property=og:title content="Outer Wilds Lore Map"><meta property=og:description content="A thorough and interactive compilation of (eventually) most knowledge which can be acquired relative to the Outer Wilds game and its fictive world.">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/ast/ico/OWV.png>
-</head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style=color:white>Warning: Base game and DLC spoilers!</span></h1><p id=disclaimer style=color:rgb(var(--redd)) align=center></p>
+</head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style='display:block;font-size:.5em;font-family:Space Mono;font-weight:100;opacity:.7;color:#fff'>Warning: Base game and DLC spoilers!</span></h1><p id=disclaimer style=color:rgb(var(--redd)) align=center></p>
 <!--@EFOLD-->
 <!--@SFOLD☑️Tutorial-->
 <!--@SFOLD✔️Lore Map-->
@@ -161,8 +161,9 @@
 <!--@EFOLD-->
 <!--@EFOLD-->
 <!--@SFOLD⚠️Select Tags-->
+<input id=findtaginput onkeyup=FindTag() placeholder='Type here to find a tag!'><div id=findtaglist></div>
+<details style='width:90%;margin:1em auto;border:3px solid rgb(var(--black));outline:3px solid rgb(var(--white));padding:0'><summary style=background:rgb(var(--redd));border-radius:0;width:100%;margin:auto;padding:.3em;color:rgba(255,255,255,.8);font-size:2em;font-weight:700;text-align:center;border:none>Toggle tags:</summary><div id=tagselect style=width:100%>
 <!--@SFOLD⚠️Astral Bodies & Locations-->
-<input id=findtaginput onkeyup=FindTag() placeholder='Type here to find a tag!'><h2 style=background:rgb(var(--redd));color:rgba(255,255,255,.8);width:90%;margin:auto;padding:7px>Toggle tags:</h2><div id=tagselect>
 <div class=tagcategory id=taglocs><h2>Astral Bodies & Locations</h2><p>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#planets></button>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#moons></button>
@@ -447,8 +448,8 @@
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD✔️Search Bar-->
-</div><div style=margin-top:1em><details open id=tutoactivetags style='border:5px solid rgb(var(--goldd));background:rgba(var(--goldd),.2)'><summary><h2 style=color:rgb(var(--goldl))>Your search includes the following tags:</h2></summary>
-<canvas id=cvs_active style=width:99%;height:42vh;background:url(../ast/img/shiplog_bg.png)center;border-radius:2em;display:block;margin:auto></canvas><p class=source style=padding-right:2em;padding-bottom:1em;margin-top:-2em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div><div>
+</div></details><div style=margin-top:1em><details open id=tutoactivetags style='border:5px solid rgb(var(--goldd));background:rgba(var(--goldd),.2)'><summary><h2 style=color:rgb(var(--goldl))>Your search includes the following tags:</h2></summary>
+<canvas id=cvs_active style=width:99%;height:42vh;background:url(../ast/img/shiplog_bg.png)center;border-radius:2em;display:block;margin:auto></canvas><p class=source style=padding-right:2em;padding-bottom:1em;margin-top:-2em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div>
 <div id=searchbar><div><div id=activetags></div>
 <input id=srch_opcls type=button value='Open/Close All'onclick=opencloseall()>
 <input id=srch_reset type=button value=Reset onclick=ResetTagSelector()>
@@ -459,7 +460,18 @@
 <input type=button onclick=CopySearchState() value="Copy current tag list">
 <input id=pastebin type=text placeholder="Paste tag list">
 <input type=button onclick="LoadSearchState(document.getElementById('pastebin').value)"value="Submit new tag list">
-</p><div id=copybin></div></div></div><div id=filterlist>
+</p><div id=copybin></div></div></div>
+<div align=center style=margin:auto;position:relative>
+    <input id=findsumrinput onkeyup="FindEle(this.id,'it','summary')"placeholder='Search Lore Cards (Summary & Tags)'style=width:44%;min-width:500px;display:inline-block;margin-right:5px>
+    <input id=findcardinput onkeyup="FindEle(this.id,'it')"placeholder='Search Lore Cards (Whole content)'style=width:44%;min-width:500px;display:inline-block;margin-left:5px>
+    <div class=infoa style=display:inline-block;margin-left:.2em><img src=../ast/svg/hud_m2e.svg style=height:1em>
+        <div class=infob style=right:0;left:unset>
+            <p style=margin-top:0>Here is a concrete example. The following request will return all cards which mention by name the&emsp;<smol class=goldd>Ash Twin Project</smol>&emsp;<b class=greenl>OR</b>&emsp; <span class=indigol>simultaneously&emsp;<smol>Ember Twin</smol>&emsp;<b>AND</b>&emsp;the&emsp;<smol>supernova</smol></span>:</p>
+            <pre><span class=goldd>ash.twin.project</span><span class=greenl>,</span><span class=indigol>ember.twin supernova</span></pre>
+            <p>The search is case insensitive. For multi-word fragments, you can either use periods (.) or underscores (_).</p>
+        </div>
+    </div>
+</div><div id=filterlist>
 <!--@EFOLD-->
 <!--@EFOLD-->
 <!--@SFOLD❌GENERAL DATA LORE CARDS — Some are still WIPs to go back to (e.g. more info/sources can be added to them)-->
@@ -1212,19 +1224,19 @@ HEASuitHelmets
 
 
 <!--@SFOLD✔️Link Cards-->
-<a target=_blank href=https://www.reddit.com/r/outerwilds/comments/188mkxf/gravity_in_the_outer_wilds_universe/ class=cardext><it><details class=n><summary>Study of the in-game gravity <span class=source>(by u/tw33dl3dee)</span></summary></details><t>#physics #in-game observations</t></it></a>
-<a target=_blank href=https://drive.google.com/drive/folders/1Y_8NoX1v6O-tMMlqOxG9SP-4LUj0aGH9 class='cardext dlc'><it><details class=n><summary>Slide Reels Texture Dump <span class=source>(by Repcon)</span></summary></details><t>#slide reel</t></it></a>
-<a target=_blank href=https://docs.google.com/spreadsheets/d/1iBLKrftHZrF9t2RSK__QUZ4WGu-TPw4piGmwzatd9BQ class='cardext dlc'><it><details class=n><summary>Ghostbird Tracker Doc <span class=source>(by Repcon)</span></summary></details><t>#stranger’s inhabitants</t></it></a>
+<a target=_blank href=https://www.reddit.com/r/outerwilds/comments/188mkxf/gravity_in_the_outer_wilds_universe/ class=cardext><it><details><summary>Study of the in-game gravity <span class=source>(by u/tw33dl3dee)</span></summary></details><t>#physics #in-game observations</t></it></a>
+<a target=_blank href=https://drive.google.com/drive/folders/1Y_8NoX1v6O-tMMlqOxG9SP-4LUj0aGH9 class='cardext dlc'><it><details><summary>Slide Reels Texture Dump <span class=source>(by Repcon)</span></summary></details><t>#slide reel</t></it></a>
+<a target=_blank href=https://docs.google.com/spreadsheets/d/1iBLKrftHZrF9t2RSK__QUZ4WGu-TPw4piGmwzatd9BQ class='cardext dlc'><it><details><summary>Ghostbird Tracker Doc <span class=source>(by Repcon)</span></summary></details><t>#stranger’s inhabitants</t></it></a>
 <!--@EFOLD-->
 <!--@SFOLD✔️Bottom & JS-->
 <i id=nofind>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i>
-<a target=_blank href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov class='cardext dlc'><it><details class=n open><summary>Artist References <span class=source>(by Repcon)</span></summary></details><t>#keep</t></it></a>
-<a target=_blank href=calendar_timeloop.html class='cardext dlc'><it><details class=n open><summary>All Time Loop Scripted Events</summary></details><t>#keep</t></it></a>
-<a target=_blank href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class='cardext dlc'><it><details class=n open><summary>Solar System Data <span class=source>(Spreadsheet by Trifid)</span></summary></details><t>#keep</t></it></a>
-<a target=_blank href=https://www.desmos.com/calculator/cx2vcrh8sf class='cardext dlc'><it><details class=n open><summary>Solar System Simulation <span class=source>(by Eriksonn)</span></summary></details><t>#keep</t></it></a>
-<a target=_blank href=https://drive.google.com/drive/u/0/folders/1N5TNFRCTCpYuQfhapRg2QkA00asJ581E class='cardext dlc'><it><details class=n open><summary>Text Dump (Alphas & All Patches)</summary></details><t>#keep</t></it></a>
-<a target=_blank href=https://hushbugger.github.io/outerwilds/text class='cardext dlc'><it><details class=n open><summary>Text Dump (Patch 1.1.13) <span class=source>(by HushBugger)</span></summary></details><t>#keep</t></it></a>
-</div></div><h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
+<a target=_blank href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov class='cardext dlc'><it keep=keep><details><summary>Artist References <span class=source>(by Repcon)</span></summary></details><t></t></it></a>
+<a target=_blank href=calendar_timeloop.html class='cardext dlc'><it keep=keep><details><summary>All Time Loop Scripted Events</summary></details><t></t></it></a>
+<a target=_blank href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class='cardext dlc'><it keep=keep><details><summary>Solar System Data <span class=source>(Spreadsheet by Trifid)</span></summary></details><t></t></it></a>
+<a target=_blank href=https://www.desmos.com/calculator/cx2vcrh8sf class='cardext dlc'><it keep=keep><details><summary>Solar System Simulation <span class=source>(by Eriksonn)</span></summary></details><t></t></it></a>
+<a target=_blank href=https://drive.google.com/drive/u/0/folders/1N5TNFRCTCpYuQfhapRg2QkA00asJ581E class='cardext dlc'><it keep=keep><details><summary>Text Dump (Alphas & All Patches)</summary></details><t></t></it></a>
+<a target=_blank href=https://hushbugger.github.io/outerwilds/text class='cardext dlc'><it keep=keep><details><summary>Text Dump (Patch 1.1.13) <span class=source>(by HushBugger)</span></summary></details><t></t></it></a>
+</div><h2 style='margin:auto;width:90%;color:rgba(var(--indigol),.7);padding:0 var(--h2pad);padding-bottom:120px'>By default, only the English version is provided. Quotes from other languages will only be added if they provide new or diverging information.</h2>
 <script type=module>import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
 window.addEventListener("click",function(){
     var acttags=[],actrels=[],actlist=[],red=curtinput.filter(d=>d.slice(-1)=='0'),grn=curtinput.filter(d=>d.slice(-1)=='1')

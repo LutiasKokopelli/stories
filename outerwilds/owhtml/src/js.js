@@ -4,30 +4,49 @@ genopen=false // Open details of #general data by default
 
 const allrates=document.querySelectorAll('div[class="rating"] input');for(i=0;i<allrates.length;i++){allrates[i].style.width=allrates[i].value}
 
-// Open/Close Sidebar Pane
+//@SFOLD Open/Close Sidebar Pane
 function openNav(){
     if(document.getElementById('sidenav')){document.getElementById("sidenav").style.left="0"}
     else{document.getElementById("bottnav").style.bottom="0"}
     document.getElementById("openbtn").style.left="-100%"
-}function closeNav(){
+}
+function closeNav(){
     if(document.getElementById('sidenav')){document.getElementById("sidenav").style.left="-100%"}
     else{document.getElementById("bottnav").style.bottom="-100%"}
     document.getElementById("openbtn").style.left="1vh"
 }
+//@EFOLD
+//@SFOLD Clipboard
 // Copy to Clipboard (general)
 function CopyCodeToClipboard(b){
     navigator.clipboard.writeText(b.parentNode.parentNode.getElementsByTagName('pre')[0].innerHTML)
     b.getElementsByTagName('msg')[0].innerHTML='Copied!'
-}function ResetCopyCode(b){setTimeout(function(){b.getElementsByTagName('msg')[0].innerHTML='Copy'},300)}
+}
+function ResetCopyCode(b){setTimeout(function(){b.getElementsByTagName('msg')[0].innerHTML='Copy'},300)}
 // Copy Lore Card URL to Clipboard
 function CopyLinkToClipboard(b){
-    navigator.clipboard.writeText(window.location.href.split('#')[0]+'#'+b.parentNode.parentNode.id+'#nodlc')
+    it=b.parentNode.parentNode
     b.getElementsByTagName('msg')[0].innerHTML='URL Copied!'
-    bookmark='#'+b.parentNode.parentNode.id
-}function ResetCopyLink(b){setTimeout(function(){b.getElementsByTagName('msg')[0].innerHTML='Copy Card URL'},300)}
-// Find Lore Card
+    bookmark=it.id
+    for(i=0;i<allit.length;i++){allit[i].setAttribute("keep",(allit[i].getAttribute("keep")||"").replaceAll(" keepget",""))}
+    it.setAttribute("keep",(it.getAttribute("keep")||"")+" keepget")
+    nc=window.location.href.split('#')[0]+it.id
+    if(document.getElementById('srch_dlc').classList.contains('no')){nc+='#nodlc'}
+    navigator.clipboard.writeText(nc)
+}
+function ResetCopyLink(b){setTimeout(function(){b.getElementsByTagName('msg')[0].innerHTML='Copy Card URL'},300)}
+//@EFOLD
+// Pin Lore Card
+function PinCard(b){
+    it=b.parentNode.parentNode
+    if(it.getAttribute("keep").includes(" keeppin")){it.setAttribute("keep",it.getAttribute("keep").replaceAll(" keeppin",""))}
+    else{it.setAttribute("keep",it.getAttribute("keep")+" keeppin")}
+}
+// Find Lore Card By ID
 function getcard(id){
-    cd=document.getElementById(id);cd.style.display="";cd.style.opacity=1
+    cd=document.getElementById(id);cd.style.opacity=1
+    kst=cd.getAttribute("keep")||""
+    cd.setAttribute('keep',kst+' keepget')
     url=window.location.href.split('#')
     if(url.length>2){window.location.href=url[0]+'#'+id+'#'+url[2]}
     else if(specialids.includes(url[1])){window.location.href=url[0]+'#'+id+'#'+url[1]}
@@ -35,28 +54,45 @@ function getcard(id){
     cd.getElementsByTagName("details")[0].open=true
     cd.classList.add('targetblink');setTimeout(function(){cd.classList.remove('targetblink')},5000)
 }
-// Save/Load List of Active Tags
+// Save List of Active Tags
 function CopySearchState(){
-    out=curtinput+','
-    if(useorng){out+='BROAD,'}else{out+='FOCUS,'}
-    if(logic){out+='ANY,'}else{out+='ALL,'}
-    if(typeof bookmark!=='undefined'){out+=bookmark}
-    document.getElementById('copybin').innerHTML="<pre>"+out+"</pre><clp><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg>Copy</msg></btn></clp>"
-    navigator.clipboard.writeText(out)
+    savepoint={}
+    if(curtinput.length>0){
+        savepoint["Tags"]=curtinput
+        if(useorng){savepoint["Mode"]='BROAD'}else{savepoint["Mode"]='FOCUS'}
+        if(logic){savepoint["Logic"]='ANY'}else{savepoint["Logic"]='ALL'}
+    }
+    if(typeof bookmark!=='undefined'){savepoint["Bookmark"]=bookmark}
+    if(document.getElementById("findsumrinput").value||document.getElementById("findcardinput").value){savepoint["Search"]=[document.getElementById("findsumrinput").value,document.getElementById("findcardinput").value]}
+    pinl=[];pins=document.querySelectorAll("it[keep~=keeppin]");for(p=0;p<pins.length;p++){pinl.push(pins[p].id)};if(pinl.length){savepoint["Pins"]=pinl}
+    if(window.location.href.includes("/owdoc/")){if(document.getElementById('srch_dlc').classList.contains('no')){savepoint["DLC"]="Hide"}else{savepoint["DLC"]="Show"}}
+    document.getElementById('copybin').innerHTML="<pre>"+JSON.stringify(savepoint)+"</pre><clp><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg>Copy</msg></btn></clp>"
+    // document.getElementById('copybin').innerHTML="<pre>"+JSON.stringify(savepoint)+"</pre><clp><btn style=background-image:url(../ast/svg/hud_pin.svg) onclick=\"javascript:console.log()\"><msg>Save JSON</msg></btn><btn style=background-image:url(../ast/svg/ico_HEA.svg) onclick=\"javascript:this.addEventListener('submit',function(){let reader=new FileReader();reader.readAsText(file.files[0]);reader.onload=function(){LoadSearchState(JSON.parse(event.target.result))}});\"><msg>Import JSON</msg></btn><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg>Copy</msg></btn></clp>"
+    navigator.clipboard.writeText(JSON.stringify(savepoint))
 }
+// Load List of Active Tags
 function LoadSearchState(ss){
-    ResetTagSelector();l=ss.trim().split(',')
-    if(l[0]){for(t=0;t<l.length-3;t++){
-        tagid=l[t].slice(0,-1).replace(/^[^a-z]+|[^\w:.-]+/gi,"");curtinput.push(l[t])
+    ResetTagSelector();l=JSON.parse(ss)
+    if(l["Pins"]){for(c=0;c<l["Pins"].length;c++){document.getElementById(l["Pins"][c]).setAttribute("keep",document.getElementById(l["Pins"][c]).getAttribute("keep")+" keeppin")}}
+    if(l["Mode"]&&l["Mode"]!=modbtn.value){FocusMode()}
+    if(l["Logic"]&&l["Logic"]!=lgcbtn.value){SwapLogic()}
+    if(l["Search"]){document.getElementById("findsumrinput").value=l["Search"][0];FindEle("findsumrinput",'it','summary');document.getElementById("findcardinput").value=l["Search"][1];FindEle("findcardinput",'it')}
+    if(l["Tags"]){for(t=0;t<l["Tags"].length;t++){
+        tagid=l["Tags"][t].slice(0,-1).replace(/^[^a-z]+|[^\w:.-]+/gi,"")
+        curtinput.push(l["Tags"][t])
         node=document.getElementById("btn_"+tagid).cloneNode(true);node.id="tag_"+tagid;activetags.appendChild(node)
-        s=parseInt(l[t].slice(-1))
+        s=parseInt(l["Tags"][t].slice(-1))
         if(s==1){document.getElementById("btn_"+tagid).classList.add("include");document.getElementById("tag_"+tagid).classList.add("include")}
         else{document.getElementById("btn_"+tagid).classList.add("exclude");document.getElementById("tag_"+tagid).classList.add("exclude")}
-    }}document.getElementById('pastebin').value=''
-    if(l[l.length-3]!=modbtn.value){FocusMode()}
-    if(l[l.length-2]!=lgcbtn.value){SwapLogic()}
-    else{FilterItems()}
-    if(l[l.length-1]){document.getElementById(l[l.length-1].substring(1)).scrollIntoView();window.scrollBy(0,-270);document.getElementById(l[l.length-1].substring(1)).getElementsByTagName('details')[0].open=true}
+    }FilterItems()}
+    if(l["DLC"]){if((l["DLC"]=="Show"&&document.getElementById('srch_dlc').classList.contains('no'))||(l["DLC"]=="Hide"&&!document.getElementById('srch_dlc').classList.contains('no'))){srch_dlc()}}
+    if(Object.keys(l).toString()=="Bookmark"){SwapLogic();SwapLogic()}
+    if(l["Bookmark"]){
+        getcard(l["Bookmark"]);bookmark=l["Bookmark"]
+        document.getElementById(l["Bookmark"]).scrollIntoView();window.scrollBy(0,-270)
+        document.getElementById(l["Bookmark"]).getElementsByTagName('details')[0].open=true
+    }
+    document.getElementById('pastebin').value=''
 }
 // Reset Tag Selection
 function ResetTagSelector(){
@@ -64,8 +100,19 @@ function ResetTagSelector(){
     if(window.location.href.split('#')[2]){window.location.href=window.location.href.split('#')[0]+'#'+window.location.href.split('#')[2]}
     else if(window.location.href.split('#')[1]&&!specialids.includes(window.location.href.split('#')[1])){window.location.href=window.location.href.split('#')[0]}
     for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
-    for(i=0;i<allit.length;i++){if(!allit[i].getElementsByTagName("t")[0].innerHTML.includes("#keep")){allit[i].getElementsByTagName("details")[0].open=false;allit[i].style.display="none"}}
-    document.getElementById('findtaginput').scrollIntoView()
+    for(i=0;i<allit.length;i++){
+        allit[i].setAttribute("hide","")
+        if(allit[i].hasAttribute("keep")){
+            if(allit[i].getAttribute("keep")!="keep"){
+                if(allit[i].getAttribute("keep").includes("keeppin")){
+                    allit[i].setAttribute("keep"," keeppin")
+                }else{
+                    allit[i].setAttribute("keep","")
+                    allit[i].getElementsByTagName("details")[0].open=false
+                }
+            }
+        }
+    }
 }
 function AddTagSelector(tag){
     tag=tag.split('#')[1];tagid=tag.replace(/^[^a-z]+|[^\w:.-]+/gi,"")
@@ -74,6 +121,7 @@ function AddTagSelector(tag){
         if(curtinput.includes(tag+'0')){
             curtinput.splice(curtinput.indexOf(tag+'0'),1)
             document.getElementById("btn_"+tagid).classList.remove("exclude")
+            if(document.getElementById("btn_"+tagid+"2")){document.getElementById("btn_"+tagid+"2").classList.remove("exclude")}
             activetags.removeChild(Array.from(activetags.childNodes).find((v)=>v.value=='#'+tag))
         }// STANDARD: GREEN --> RED
         else if(curtinput.includes(tag+'1')){
@@ -83,32 +131,90 @@ function AddTagSelector(tag){
             document.getElementById("tag_"+tagid).classList.remove("include")
             document.getElementById("btn_"+tagid).classList.add("exclude")
             document.getElementById("tag_"+tagid).classList.add("exclude")
+            if(document.getElementById("btn_"+tagid+"2")){
+                document.getElementById("btn_"+tagid+"2").classList.remove("include")
+                document.getElementById("btn_"+tagid+"2").classList.add("exclude")
+            }
         }// ACTIVATE NEW TAG:
         else{
             document.getElementById("btn_"+tagid).classList.add("include")
+            if(document.getElementById("btn_"+tagid+"2")){document.getElementById("btn_"+tagid+"2").classList.add("include")}
             node=document.getElementById("btn_"+tagid).cloneNode(true);node.id="tag_"+tagid;activetags.appendChild(node)
             curtinput.push(tag+'1')
-        }FilterItems();if(curtinput.length==0){ResetTagSelector()}
+        }FilterItems();if(curtinput.length==0&&document.querySelectorAll('[keep~=keepkey]').length==0){ResetTagSelector()}
     }
 }
 function AddTagGroup(n){
-    AddTagSelector(n);inputs=document.querySelectorAll('input[id^="btn"][n*="'+n.split('#')[1]+'"]');stags=[]
+    AddTagSelector(n);inputs=document.querySelectorAll('#tagselect input[id^="btn"][n*="'+n.split('#')[1]+'"]');stags=[]
     for(i=0;i<inputs.length;i++){if((inputs[i].getAttribute('n').replace('@','').split('#').filter((m)=>m)).includes(n.split('#')[1])){stags.push(inputs[i].value)}}
     for(s=0;s<stags.length;s++){AddTagSelector(stags[s])}
     if(curtinput.length!=0){FilterItems()}
 }
 function FindTag(){
-    var taginput=document.getElementById('findtaginput').value.toLowerCase().replaceAll("'",'’').split(' ')
-    for(i=0;i<tagselect.length;i++){check=true
-        for(t=0;t<taginput.length;t++){if(tagselect[i].value.includes(taginput[t])&&check){check=true}else{check=false}}
-        if(check || tagselect[i].classList.contains("include") || tagselect[i].classList.contains("exclude")){tagselect[i].style.display='';if(tagselect[i].parentNode.tagName=='BUTTON'){tagselect[i].parentNode.style.display=''}}
-        else{tagselect[i].style.display="none";if(tagselect[i].parentNode.tagName=='BUTTON'){tagselect[i].parentNode.style.display="none"}}
+    var taginput=document.getElementById('findtaginput').value.toLowerCase().replaceAll("'",'’').split(' ').filter(n=>n)
+    document.getElementById('findtaglist').innerHTML=""
+    if(taginput.length!=0){
+        for(t=0;t<taginput.length;t++){taginput[t]=taginput[t].replaceAll("_"," ")}
+        for(i=0;i<tagselect.length;i++){check=true
+            for(t=0;t<taginput.length;t++){if(tagselect[i].value.includes(taginput[t])&&check){check=true}else{check=false}}
+            if(check){
+                if(tagselect[i].parentNode.tagName=='BUTTON'){document.getElementById('findtaglist').appendChild(tagselect[i].parentNode.cloneNode(true))}
+                else{document.getElementById('findtaglist').appendChild(tagselect[i].cloneNode(true))}
+                document.getElementById(tagselect[i].id).id=tagselect[i].id+"2"
+            }
+        }
+    }
+}
+function FindEle(id,query,specs=false,includeinput=true){
+    var taginput=document.getElementById(id).value.toLowerCase().replaceAll("'",'’').split(',').filter(n=>n),sel=document.querySelectorAll(query)
+    for(tagi=0;tagi<taginput.length;tagi++){
+        taginput[tagi]=taginput[tagi].split(' ').filter(n=>n)
+        for(t=0;t<taginput[tagi].length;t++){taginput[tagi][t]=taginput[tagi][t].replaceAll("_"," ").replaceAll("."," ")}
+    }
+    for(i=0;i<sel.length;i++){
+
+        sel[i].innerHTML=sel[i].innerHTML.replaceAll("<highlt>","").replaceAll("</highlt>","")
+
+        checks=[];kst=sel[i].getAttribute("keep")||""
+        if(curtinput.filter(d=>d.slice(-1)=='1').length==0){sel[i].setAttribute("keep",kst.replaceAll(' keeptag',""))}
+        sel[i].setAttribute("keep",kst.replaceAll(' keepkey',""))
+        if(specs){
+            inhtml="";tmp=sel[i].querySelectorAll(specs)
+            for(j=0;j<tmp.length;j++){
+                inhtml+=tmp[j].innerHTML.replace(/<clp>.*?<\/clp>/,'').replace(/<.*?>/g,"\n").toLowerCase()
+            }
+        }else{inhtml=sel[i].innerHTML.replace(/<clp>.*?<\/clp>/,'').replace(/<.*?>/g,"\n").toLowerCase()}
+        for(tagi=0;tagi<taginput.length;tagi++){
+            check=true
+            for(t=0;t<taginput[tagi].length;t++){
+                if(inhtml.includes(taginput[tagi][t])&&check){
+                    check=true;regEx=new RegExp("("+taginput[tagi][t]+")(?!([^<]+)?>)","gi")
+                    if(specs){for(j=0;j<tmp.length;j++){tmp[j].innerHTML=tmp[j].innerHTML.replaceAll(regEx,`<highlt>$&</highlt>`,tmp[j].innerHTML)}}
+                    else{sel[i].innerHTML=sel[i].innerHTML.replaceAll(regEx,`<highlt>$&</highlt>`,sel[i].innerHTML)}
+                }else{check=false}
+                if(includeinput){
+                    inps=sel[i].querySelectorAll('t input')
+                    for(ip=0;ip<inps.length;ip++){if(inps[ip].value.includes(taginput[tagi][t])){
+                        check=true
+                        wrap=document.createElement('highlt')
+                        inps[ip].parentNode.replaceChild(wrap,inps[ip])
+                        wrap.appendChild(inps[ip])
+                    }}
+                }
+            }
+            checks.push(check)
+        }
+        if(checks.includes(true)){sel[i].setAttribute("keep",kst+' keepkey')}else{sel[i].setAttribute("keep",kst.replaceAll(' keepkey',""))}
     }
 }
 function FilterItems(){
     findli=allit.length;red=curtinput.filter(d=>d.slice(-1)=='0');grn=curtinput.filter(d=>d.slice(-1)=='1')
     for(i=0;i<itags.length;i++){
-        if(!allit[i].getElementsByTagName("t")[0].innerHTML.includes("#keep")){allit[i].style.display='none'}
+        if(allit[i].getAttribute("keep")=="keep"){continue}
+        hst=allit[i].getAttribute("hide")||""
+        kst=allit[i].getAttribute("keep")||""
+        allit[i].setAttribute("keep",kst.replaceAll(" keepget",""))
+        allit[i].getElementsByTagName("details")[0].open=false
         var checks=true,gentag=[]
         for(tag=0;tag<grn.length;tag++){
             listn=document.querySelectorAll('#btn_'+grn[tag].replace(/^[^a-z]+|[^\w:.-]+/gi,"").slice(0,-1))
@@ -129,9 +235,11 @@ function FilterItems(){
             checks=false
             for(m=0;m<gentag[tag].length;m++){if(gentag[tag][m][0]&&itags[i].indexOf(gentag[tag][m][1])!=-1){checks=true}}
         }}}
-        for(tag=0;tag<red.length;tag++){if(itags[i].indexOf(red[tag].slice(0,-1))!=-1){checks=false}}
+        for(tag=0;tag<red.length;tag++){if(itags[i].indexOf(red[tag].slice(0,-1))!=-1){checks=false;allit[i].setAttribute('hide',hst+'FilterItems ')}}
         if(checks){
-            allit[i].style.display="";if(genopen&&allit[i].getElementsByTagName("t")[0].innerHTML.includes("#general data")){allit[i].getElementsByTagName("details")[0].open=true}
+            allit[i].setAttribute('hide',hst.replaceAll("FilterItems ",""))
+            allit[i].setAttribute("keep",kst+' keeptag')
+            if(genopen&&allit[i].getElementsByTagName("t")[0].innerHTML.includes("#general data")){allit[i].getElementsByTagName("details")[0].open=true}
             alinp=allit[i].querySelectorAll("t input")
             for(inp=0;inp<alinp.length;inp++){
                 alinp[inp].style.color=''
@@ -141,7 +249,7 @@ function FilterItems(){
                 }
             }
         }
-        else{findli-=1}
+        else{findli-=1;allit[i].setAttribute("keep",kst.replaceAll(" keeptag",""))}
     }if(findli==0){nofind.style.display="block"}else{nofind.style.display="none"}
 }
 function SwapLogic(){if(logic){lgcbtn.value="ALL";logic=0}else{lgcbtn.value="ANY";logic=1}FilterItems()}
@@ -155,6 +263,20 @@ function srch_dlc(){
         spoilers[d].style.opacity=1;spoilers[d].style.filter=""
         images=spoilers[d].getElementsByTagName("img");for(i=0;i<images.length;i++){images[i].style.filter=""}
     }}
+}
+function SelectAll(e){
+    allcheck=e.closest("[id]").querySelectorAll("input[type=checkbox]")
+    for(u=0;u<allcheck.length;u++){if(e.innerHTML=="Select All"){allcheck[u].checked=false;allcheck[u].click()}else{allcheck[u].checked=true;allcheck[u].click()}}
+}
+function AddSelector(e){
+    ac=[...e.parentElement.closest("[id]").querySelectorAll("input[type=checkbox]")].filter(n=>n.checked)
+    for(i=0;i<allit.length;i++){
+        hst=allit[i].getAttribute("hide")||""
+        var cls=Array.from(allit[i].classList),any=ac.length
+        if(allit[i].getAttribute("keep")!="keep"){allit[i].setAttribute("hide",hst+e.parentElement.closest("[id]").id+" ")}
+        for(c=0;c<ac.length;c++){if(cls.indexOf(ac[c].id)==-1){any-=1}}
+        if(any>0){allit[i].setAttribute("hide",hst.replaceAll(e.parentElement.closest("[id]").id+" ",""))}
+    }
 }
 function HMsecs2THtime(t){
     HMseconds=t+weekoffset
