@@ -115,8 +115,8 @@ table p{margin:0}
 .infob{font-size:1.2em;left:0;top:calc(100% + 5px);border:7px double rgb(var(--emph));outline:3px solid rgb(var(--white))}
 .infob img{height:revert}
 p.infob{padding:7px;margin:0;font-size:1em}
-.infob > *:last-child{margin-bottom:0}
-#filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto;max-width:800px}
+.infob>*:last-child{margin-bottom:0}
+#filterlist{column-count:auto;column-gap:17px;width:92%;margin:42px auto;max-width:min(800px,calc(100% - 100px))}
 @media only screen and (max-aspect-ratio:3/4){
     *{
         --colwid:calc(max(85vw,500px));
@@ -266,7 +266,8 @@ img[onclick^=AddTagGroup]{filter:drop-shadow(2px 0px 0 rgb(var(--indigol)))drop-
 
 it:not([keep]),it[keep=""],it[hide]:not([hide=""]){display:none}
 
-it>n{position:absolute;top:0;right:calc(100% + .3em);text-align:right;width:5em}
+it>n{position:absolute;top:0;right:calc(100% + .3em);text-align:right}
+
 it>n>img{display:none;height:1em;margin:3px}
 it>n>img[keep=keepget]{opacity:.7}
 it>n>img[keep=keeppin]{filter:invert(47%)sepia(44%)saturate(3001%)hue-rotate(328deg)brightness(98%)contrast(111%)}
@@ -282,3 +283,12 @@ it[keep~=keeppin] btn[onclick='PinCard(this)']{background-image:url(../ast/svg/p
 img[onclick='PinCard(this)']:hover{filter:drop-shadow(0 0 1px currentcolor)drop-shadow(0 0 1px currentcolor)drop-shadow(0 0 1px currentcolor)}
 
 it[wip]{display:block}it[wip]:before{content:'';background:url(../ast/svg/hud_m2e.svg);background-size:contain;display:block;width:1em;height:1em;position:absolute;left:-1.5em;top:0}
+
+@media only screen and (min-width:1200px){
+    it>n{width:3em}
+}
+@media only screen and (max-width:1200px){
+    #filterlist{margin-left:50px}
+    it>n{width:3em;text-align:center;font-size:.7em}
+    *{--h2pad:0}
+}
