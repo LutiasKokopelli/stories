@@ -1,14 +1,14 @@
-//@SFOLD Variables
+//@S FOLD Variables
 curtid=window.location.href.split('#')[1]
 if(curtid&&!curtid.startsWith("loremap")&&!specialids.includes(curtid)){getcard(curtid)}
-const nofind=document.getElementById("nofind"),
-filterlist=document.getElementById("filterlist"),
-lgcbtn=document.getElementById('srch_start'),
+const filterlist=document.getElementById("filterlist"),
+lgcbtn=document.getElementById('srch_logc'),
 modbtn=document.getElementById('srch_mode'),
 allit=filterlist.getElementsByTagName("it"),
 activetags=document.getElementById("activetags"),
 tagselect=document.querySelectorAll('#tagselect input'),
-allntags=document.querySelectorAll('input[n]')
+allntags=document.querySelectorAll('input[n]'),
+findcardinput=document.getElementById("findcardinput")
 var curtinput=[],itags=[]
 lgcbtn.value="ANY";logic=1
 modbtn.value="BROAD";useorng=1
@@ -20,13 +20,15 @@ for(i=0;i<allit.length;i++){
         itags[itags.length-1].push(t[j].trim())
         o+="<input type=button onclick=AddTagSelector(this.value) value='#"+t[j].trim()+"'> "
     }allit[i].getElementsByTagName("t")[0].innerHTML=o
+    icos="<img src=../ast/svg/keyword-search.svg keep=keepkey><img src=../ast/svg/hashtag.svg keep=keeptag>"
     if(allit[i].id){
         clpn=document.createElement('clp')
         clpn.innerHTML='<btn onclick=PinCard(this)><msg>Pin/Unpin Card</msg></btn><btn onclick=CopyLinkToClipboard(this) onmouseleave=ResetCopyLink(this)><msg>Copy Card URL</msg></btn>'
         allit[i].appendChild(clpn)
+        icos="<d keep=keeppin onclick=PinCard(this)></d><d src=../ast/svg/hud_pin.svg keep=keepget onclick=CopyLinkToClipboard(this)></d>"+icos
     }
     n2=document.createElement("n")
-    n2.innerHTML="<img src=../ast/svg/keyword-search.svg keep=keepkey><img src=../ast/svg/hashtag.svg keep=keeptag><img src=../ast/svg/pinned.svg keep=keeppin onclick=PinCard(this)><img src=../ast/svg/hud_pin.svg keep=keepget>"
+    n2.innerHTML=icos
     allit[i].appendChild(n2)
 }
 // List Tags + Button IDs
@@ -92,3 +94,19 @@ if("ontouchstart"in document.documentElement){
         }
     }
 }
+// Define Keyword searches
+function GetKeyMode(){
+    keymode=document.getElementById('keymode').value
+    textbox=document.getElementById('findcardinput')
+    if(keymode=="Title only"){textbox.addEventListener('keyup',function(e){clearTimeout(timeout);timeout=setTimeout(function(){FindEle(textbox.id,'it','summary',false)},300)})}
+    else if(keymode=="Title & Tags"){textbox.addEventListener('keyup',function(e){clearTimeout(timeout);timeout=setTimeout(function(){FindEle(textbox.id,'it','summary')},300)})}
+    else if(keymode=="Details only (Title & Tags excluded)"){textbox.addEventListener('keyup',function(e){clearTimeout(timeout);timeout=setTimeout(function(){FindEle(textbox.id,'it','summary~*',false)},300)})}
+    else if(keymode=="Whole lore card (Tags included)"){textbox.addEventListener('keyup',function(e){clearTimeout(timeout);timeout=setTimeout(function(){FindEle(textbox.id,'it')},300)})}
+    else if(keymode=="Whole lore card (Tags excluded)"){textbox.addEventListener('keyup',function(e){clearTimeout(timeout);timeout=setTimeout(function(){FindEle(textbox.id,'it',false,false)},300)})}
+    textbox.dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))
+}
+// Function to show all lore cards
+function ShowAll(){for(it of document.querySelectorAll('#filterlist it')){
+    if(it.hasAttribute('keep')){kst=it.getAttribute('keep')}else{kst=''}
+    if(kst!='keep'){if(kst.includes(' keepall')){it.setAttribute('keep',kst.replace(' keepall',''))}else{it.setAttribute('keep',kst+' keepall')}}
+}}

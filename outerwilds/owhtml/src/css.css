@@ -43,7 +43,7 @@ scrollbar-color:rgb(var(--indigod))rgb(var(--black));scrollbar-width:auto;transi
 *,*:after,*:before{box-sizing:border-box}
 *:target{scroll-margin-top:180px}
 body{position:relative;margin:0;padding:0;width:100%;background:no-repeat url(../ast/img/2462x1386.jpg)bottom fixed;background-color:rgb(var(--black));background-size:cover;color:white;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;text-align:justify}
-blockquote{border:2px solid rgb(var(--fore));border-top:none;border-left:none;border-radius:1em 1% 1em 1%;padding:1em 1em .2em 1em;margin:1em 0 1em .5em;background:rgba(var(--fore),.2)}
+blockquote{border:2px solid rgb(var(--fore));border-top:none;border-left:none;border-radius:1rem 1% 1rem 1%;padding:1em 1em .2em 1em;margin:.7rem 0 .7rem .5rem;background:rgba(var(--fore),.2)}
 
 
 
@@ -64,7 +64,7 @@ blockquote{border:2px solid rgb(var(--fore));border-top:none;border-left:none;bo
 
 
 
-
+[id^=tab_]{padding:1rem}
 
 ul{margin:17px 0;list-style:disclosure-closed;padding-left:17px}
 li{margin:7px 0}
@@ -232,7 +232,7 @@ h3 svg{width:50px;height:50px;display:inline-block;vertical-align:middle;margin-
 h1{margin-bottom:3%}
 h2+hr{margin-top:5%}
 
-.shiplog td:first-child{white-space:nowrap}
+.shiplog td:first-child:not(:last-child){white-space:nowrap}
 
 @media only screen and (orientation:landscape){
     .chp {
@@ -318,6 +318,8 @@ wip{background:rgba(var(--orng),.3);display:block;padding:17px;border-radius:17p
 
 smol{font-size:.7rem;font-family:Space Mono,Consolas,Courier}
 code{font-family:Space Mono,Consolas,Courier}
+code.inline{font-size:.8em;background:rgba(var(--black),.5);border-radius:.7em;padding:.2em .5em}
+code.darkmode{filter:invert();font-size:.7em;display:inline-block}
 .smol{font-size:.8em}
 scaps,.scaps{font-variant:petite-caps;font-weight:500}
 .radio{

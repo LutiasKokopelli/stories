@@ -7,40 +7,89 @@
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/ast/ico/OWV.png>
 </head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>Outer Wilds Lore Map<span style='display:block;font-size:.5em;font-family:Space Mono;font-weight:100;opacity:.7;color:#fff'>Warning: Base game and DLC spoilers!</span></h1><p id=disclaimer style=color:rgb(var(--redd)) align=center></p>
 <!--@EFOLD-->
-<!--@SFOLD☑️Tutorial-->
-<!--@SFOLD✔️Lore Map-->
+<!--@SFOLD Tutorial-->
 <details id=tuto><summary><h1>Tutorial & Tips:</h1></summary>
+<!--@SFOLD Map-->
 <details><summary><h2>So what is a “lore map” exactly?</h2></summary>
-<p>The short answer – This is what happens when you’re investigating Pepe Silvia but don’t own a corkboard.</p>
-<p>The long answer is that it aims to be a mine of information and lore (in the case of this web page specifically, all revolving around the fictional world described in Outer Wilds), organized in such way that there is no particular order to the information you are given, but that you can filter in and out specific topics until all that remains is only what you are looking for.</p>
-<p>This project has some similarities with a wiki, but is fundamentally different in how it functions: where a wiki will create articles, the lore map will create multiple independent lore cards, each stating one or two facts at most. Depending on the user, what may make the use of lore cards somewhat more useful than one lengthy, varied and detailed article per general topic (e.g. character or location) is that the tag system makes it easier to truly narrow your search down to exactly what you want to read about – while a wiki article makes it far easier to get distracted because of equally fascinating but ultimately unrelated tangents, lose track of time, and maybe even forget what you were looking for in the first place.</p>
-<p>I cannot guarantee that the lore map will not end up being a rabbit hole of its own, but I do hope that it will at the very least end up being a <i>different</i> kind of rabbit hole. At the very least, what I can promise is that this rabbit hole should not end up creating hundreds of new tabs on your browser (unless you manually copy and paste every lore card’s specific URL in a series of new tabs).</p>
-<p>Another goal of this lore map is to reunite conciseness and thoroughness, as paradoxical as it sounds. A lore card’s title will be a summary which should be enough all on its own to convey the main piece of information; once opened, the rest of the lore card may then provide additional details, clarifications, and most importantly, the exact source(s): instructions on how to find it in the game (including current patch, older patches, alphas…), or which interview said it (with timestamp), or which book, et c&aelig;tera. Where a wiki will usually keep all sources for the very end of the article and limit digressions in order to remain readable, the lore map is designed to dynamically allow or prevent every digression relevant to a very specific topic in its own specific space. In particular, since each fact is given its own lore card, this ensures that everything is given a precise source.</p>
-<p class=orng><b>The principle in short:</b> Select a few tags, a couple lore cards will appear. Refine your search by adding or excluding more tags, look at what remains, rinse and repeat until you find a list of lore cards providing all the answers you seek.</p>
-<p>Of note: I (Lutias Kokopelli) am the only person who can edit this web page, which is an obvious caveat compared to community-built wikis. However, I care about the quality of this project, and I encourage people willing to help make it more complete and reliable to contact me for even the tiniest complaint. The lore map has its own <a href=https://discord.gg/knBDpGAjNF target=_blank class=blue>Discord server</a> in which I introduce every lore card I am about to implement to the web page, and let everyone interested debate everything about it — its wording, its tags (or whether tags in general need an overhaul of some kind), whether or not parts of it are too confusing or too speculative, and so on.</p></details>
+<p>The short answer: this is what happens when you’re investigating Pepe Silvia but don’t own a corkboard.<br>Joke aside and longer answer: this web page has the same general goal as a wiki (to gather data and make any piece of information easy to find for any user who seeks it), but a different execution.</p><hr>
+<p>Where a wiki creates articles, the lore map contains <b>“lore cards”</b> – inspired from flashcards. Each lore card is its own entity on this page and could be seen as an equivalent to a single paragraph, or even a single sentence out of a wiki article.</p><p>Each lore card has three specific goals:</p><ol>
+<li>to be as concise but exhaustive as necessary,</li>
+<li>about the most specific fact possible,</li>
+<li>all the while being as easy to find as can be, no matter the user or context.</li></ol>
+<p>Also I lied, there’s a fourth one: A lore card aims to be <i>reliable</i>. Everything that it says requires a source (including a source telling you how to find it yourself in the game).</p><hr>
+<p>So in a way, the lore map is a collection of all sentences you would expect to find in a wiki… put in no particular order on a single web page, like tons of aquariums dumped into the ocean.</p>
+<p>…This sucks, right? Sure, <i>everything</i> is in here, but how useful is that when the lore you wanted to look up is drowned in all that other stuff? Reading through an entire wiki article can be tedious enough, and it’s the same issue but with an already reduced amount of stuff to check!</p>
+<p>Except the lore map provides as many different kinds of fishing rods as we could craft in order to make sure you can find the one you enjoy using and find the most reliable for your own needs. Think about your old reliable <scaps>“ctrl+f”</scaps> (for those who use it to try and find the relevant paragraphs on Wikipedia faster), but with more features!</p>
+</details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Tags-->
-<details><summary><h2>Tags: How to find and use them</h2></summary>
-<p>Tags are the crux of the lore map’s true power: thanks to them, this project works not as a static wiki page, but instead as an interactable database that you can update anytime as you read. Each lore card is given a list of tags, and will be either shown or hidden depending on the tags (and <a href="javascript:document.querySelector('#loremapsmode').closest('details').open=true;document.getElementById('loremapsmode').scrollIntoView()">search mode & logic</a>) you selected.</p>
-<p>Considering the sheer number of tags available, the blue text box on top of the list of tags (the first element you will see below this tutorial) can be used in order to type a tag’s contents and automatically hide any that does not fit your request. You don’t have to type entire words, let alone guess a tag’s exact wording – the page will show you all tags which <i>contain</i> the fragments you type. You can even type multiple fragments separated by spaces: somehow, typing “rt he” will show you the tags “#chert” and “#timber hearth” (among others). This will not save you from typos, but it comes as close to it as it can get.</p>
-<hr>
-<p>A tag will typically look like <input type=button value=#this style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'>. If you see an orange tag like <input type=button value=#this class=maclude style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'> instead, then this specific tag has yet to be associated with any lore card – though, depending on the circumstances, this does not quite mean that it is entirely useless.</p>
-<p>In order to modulate a tag’s effect on your search, simply click on it.</p>
-<h2 style='color:rgb(var(--white));padding:0 5%;margin:0 auto'>Order of activation:</h2>
-<p align=center style=margin-bottom:2em><input type=button value=neutral style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .5em;margin-top:-.3em'> &rarr; <input type=button class=include value='include in the search'style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .5em;margin-top:-.3em'> &rarr; <input type=button class=exclude value='exclude from the search'style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .5em;margin-top:-.3em'> &rarr; <input type=button value=neutral style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .5em;margin-top:-.3em'></p>
+<!--@SFOLD Cards-->
+<details><summary><h2><img src=../ast/svg/hud_nopin.svg style=height:1em;vertical-align:middle;margin-top:-.2em;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%);opacity:.5> Lore cards: Facts and Sources</h2></summary>
+<p>Lore cards can present their information in various ways (text, tables, graphs, images, videos…), but they all follow the same global structure:</p>
+<it id=TutoCard keep=keep style='margin:1em auto;max-width:800px'><details class=reg><summary>This text provides a summary of what the lore card aims to teach/remind you. Click&#160;on&#160;this&#160;header&#160;to&#160;see&#160;or hide what’s inside!</summary>
+<p>This section is normally hidden by default, and only revealed when you click on the lore card’s title: this method lets you open and close it at will. Alternatively, the <span class style='background:rgb(var(--goldd));padding:3px 7px;font-weight:800;color:rgb(var(--white));border-radius:.7rem'>Open/Close All</span> button located at the bottom of your screen will let you toggle the open/closed state of all lore cards at once.</p>
+<p>This section’s purpose is to reveal supplementary information in regards to the fact the lore card’s summary provides: notably the exact source and quotes from the game, or images, or even tables with numbers and some math when relevant.</p>
+<p>The lore card’s title states a fact in as concise and straightforward a way as possible, while the content hidden within justifies this fact by providing the proof supporting it (whether in-game dialogue or observations, interviews, previous patches of the game, or other sources).</p>
+</details><t style=margin-top:3px>#Here are some tags! #These ones aren’t functional #but a real lore card’s tags can be interacted with.</t>
+<clp><btn onclick=PinCard(this)><msg>Pin/Unpin Card</msg></btn><btn onclick=CopyLinkToClipboard(this) onmouseleave=ResetCopyLink(this)><msg>Copy Card URL</msg></btn></clp>
+<n><d keep=keeppin onclick=PinCard(this)></d><d src=../ast/svg/hud_pin.svg keep=keepget></d></n></it>
+<p>The purpose of a lore card is to be all at once succinct (by reading its title alone), exhaustive (by providing as many details as necessary under the cut), easy to find (by tagging it accordingly), and reliable (by ensuring that every piece of information it provides must have a verifiable source).</p><hr>
+<p>Lore cards will often give obvious information that is sometimes outright stated in the game: this is part of its exact purpose, to be a reminder of both the obvious and the less obvious. Notably, the lore map aims to remain as impartial and purely factual as possible. Speculation is intended to be kept to the bare minimum, if present at all; and any piece of speculation that may slip in must make it obvious that it is based on a combination of various other facts, rather than an officially confirmed statement.</p>
+<p>Some lore cards (notably the “General Data: X” cards) may become quite long and packed with information; but in most cases, it is preferable for the sake of keeping a more accurate tagging system to keep them as concise as possible, and sometimes to split various details of a piece of information into multiple separate lore cards referencing each other. The inspiration behind lore cards was flashcards, after all! There is not much ‘flash’ left to it if it takes a dozen minutes to read just one, let alone if only a small fraction of its contents is related to what you are looking for.</p>
+</details>
+<!--@EFOLD-->
+<!--@SFOLD Cards: Color-->
+<details><summary><h2><img src=../ast/svg/hud_nopin.svg style=height:1em;vertical-align:middle;margin-top:-.2em;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%);opacity:.5> Lore card types: Color Chart</h2></summary>
+<p>Lore cards come in one of five different colors, each meant to hint at some hierarchy in terms of the reliability/canonicity of the information they provide. From most reliable to entirely retconned:</p><div style='column-count:auto;column-gap:1em;column-width:540px;padding:0 1em'>
+<div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3 style=--fore:var(--greend);--midd:var(--greenl)>Regular Lore Card</h3><p>This lore card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p></div>
+<div class=lorecard style=--fore:var(--indigod);--midd:var(--indigol)><h3 style=--fore:var(--indigod);--midd:var(--indigol)>Alternate Official Sources</h3><p>This lore card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p><p>All lore cards of this color come with the following tag: <code style=font-size:.7em;color:rgb(var(--orng))>#alternate&#160;sources</code>.</p></div>
+<div class=lorecard style=--fore:var(--goldd);--midd:var(--goldl)><h3 style=--fore:var(--goldd);--midd:var(--goldl)>Datamined Content &&#160;Gameplay Observations</h3><p>This lore card color, as well as the associated tag <code style=font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p></div>
+<div class=lorecard style=--fore:var(--greyd);--midd:var(--greyl)><h3 style=--fore:var(--greyd);--midd:var(--greyl)>Unused & Concept Art</h3><p>This lore card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the alphas or previous patches of the game).</p><p>Due to the fact that this content is either absent or deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the lore card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p><p>All lore cards of this color come with the following tag: <code style=font-size:.7em;color:rgb(var(--orng))>#unused/concept&#160;art</code>.</p></div>
+<div class=lorecard style=--fore:var(--redd);--midd:var(--redl)><h3 style=--fore:var(--redd);--midd:var(--redl)>Retconned</h3><p>This lore card color is for information which was present in either concept art or previous versions of the game (including the alphas) and which can no longer be considered accurate in regards to new in-game information.</p><p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p></div></div></details>
+<!--@EFOLD-->
+<!--@SFOLD Lore cards Bonus Features-->
+<details><summary><h2><img src=../ast/svg/hud_nopin.svg style=height:1em;vertical-align:middle;margin-top:-.2em;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%);opacity:.5> Lore cards’ Bonus Features</h2></summary><ul>
+<li><b>Pins & Bookmark:</b> Every lore card comes with the outline of two icons on its top left side. These outlines can be clicked to toggle on and off the following features:</li><ul>
+<li><b><span style=margin-bottom:-.1em;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%)><img src=../ast/svg/hud_nopin.svg style=height:1em><img src=../ast/svg/hud_pin.svg style=height:1em></span> Bookmark a single lore card</b> to either share its link with others, or reload the page later and continue reading from that point onwards. Just like the ship’s “Mark location on <scaps>hud</scaps>” feature, only one lore card can be bookmarked at any time.</li>
+<li style=list-style:none>You can also click on this icon <img src=../ast/svg/copy-url.svg style='filter:invert(1);height:1.2em;margin:-.2em 0'> on the bottom right corner of the lore card, on the same row as the list of tags. On top of creating a bookmark, this will instantly copy the lore card’s personalized URL to your clipboard for quick sharing.</li>
+<li style=list-style:none>Clicking on a lore card’s personalized link will load this exact page, except the lore card of interest will already be visible, open, and even highlighted for a short instant.</li>
+<li><b><span style=margin-bottom:-.1em;filter:invert(47%)sepia(44%)saturate(3001%)hue-rotate(328deg)brightness(98%)contrast(111%)><img src=../ast/svg/unpinned.svg style=height:1em><img src=../ast/svg/pinned.svg style=height:1em></span> Pin multiple cards individually</b> to make sure they will remain visible regardless of other changes you may make in your search: even the <span style='background:rgb(var(--redd));padding:3px 7px;font-weight:800;color:rgb(var(--white));border-radius:.5em'>Reset</span> button will hide all cards found via other means, but not pinned ones. You can pin as many lore cards as you want, and your list of pinned cards will be added in your save point so that you can find it again later.</li>
+<li style=list-style:none>Just like the bookmark feature, there is a pin/unpin button on both the top left of the lore card, and on its bottom right corner on the same row as its tags.</li>
+</ul>
+<li><b>Cross references:</b> Sometimes, a lore card will refer to another. If you see this symbol <img src=../ast/svg/hud_dlg.svg style=height:1em;margin-bottom:-.1em> then clicking on it or the colored text next to it will let you access the lore card in question. Note that this will also mark (<img src=../ast/svg/hud_pin.svg style=height:1em;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%)>) the accessed lore card until you either unmark it or mark a different lore card.</li>
+<li><b>Hidden details:</b> Some lore cards may contain even more information than you would suspect at first glance. If this information is not so easily visible, then it normally would only be redundant or minor details that most people would consider insignificant – for example, ship log entries which are unlocked by reading a given Nomai dialogue, but which are simply repeating word for word said Nomai dialogue.</li>
+<li style=list-style:none>Still, what one considers useless information, another may judge noteworthy; and as such, the lore map yearns to remain as exhaustive as possible… without being too cluttered for the sake of the majority who wants to get to the point. If you see this symbol <span style=position:relative class><img src=../ast/svg/hud_m2e.svg style=height:1.2em;margin-bottom:-.2em class=infoa><span class=infob style=font-size:.8em>Yep, just like this!</span></span> during your search, then try to hover or click on it! <span class=orng>There’s more to explore here.</span></li>
+</ul></details>
+<!--@EFOLD-->
+<!--@SFOLD Tags-->
+<details><summary><h2 style=padding-bottom:.3rem><span style='background:rgb(var(--goldl));padding:.2rem .5rem;border-radius:50%'><img src=../ast/svg/hashtag.svg style=height:1em;margin-bottom:-.1em></span> Filtering Lore Cards by Tags</h2></summary>
+<p>A tag is <input type=button value=#blue style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'> by default (or <input type=button value=#orange class=maclude style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'> if no lore card is yet tagged with it). Click on any tag to turn it <input type=button class=include value=#green style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'> (show lore cards tagged with it), then <input type=button class=exclude value=#red style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'> (hide lore cards tagged with it, even those which are also tagged with a green tag), then back to its neutral color.</p>
+<p>Every lore card is tagged depending on the topics it addresses. When you make a query using tags, lore cards which fit your request will appear with the <img src=../ast/svg/hashtag.svg style=height:1em;margin-bottom:-.1em;filter:invert(89%)sepia(17%)saturate(4429%)hue-rotate(312deg)brightness(102%)contrast(102%)> icon by their side, and its tags will be shown in green (tag which is explicitly part of your query), orange (in <scaps>broad</scaps> mode, tag which is thematically related to one of the tags you selected), or white (neutral).</p>
+<p>Just below this tutorial, you can find a collapsed red section named “List of tags.” From character names to locations to physics concepts, every general topic addressed by the lore cards is listed there. That being said, perhaps you will instead find the features contained within the bottom screen’s <span style='background:rgb(var(--goldl));padding:.2rem .5rem;border-radius:50%'><img src=../ast/svg/hashtag.svg style=height:1em;margin-bottom:-.1em></span> tab more practical:</p><ul>
+<li>The blue text box will let you type anything you want; as you type, existing tags which match your query will appear just below it. You don’t have to type entire words, let alone guess a tag’s exact wording – the page will show you all tags which <i>contain</i> the fragments you type. You can even type multiple fragments separated by spaces: somehow, typing “rt he” will show you the tags “#chert” and “#timber hearth” (among others). This will not save you from typos, but it comes as close to it as it can get.</li>
+<li>Tags you have activated (either red or green) will be listed inside the orange box. </li>
+<li>Some tags are thematically connected. If your search is in <scaps style='background:#d1783b;color:rgb(var(--white));padding:0 7px;'><b>broad</b></scaps> mode, then thematically connected tags will also be passively activated to show more results; in <scaps style='background:#d1783b;color:rgb(var(--white));padding:0 7px;'><b>focus</b></scaps> mode, these extra related tags will not intervene.</li>
+<li>You can choose to show lore cards tagged with either <scaps style='background:rgb(var(--greend));color:rgb(var(--white));padding:0 7px;'><b>all</b></scaps> green tags, or <scaps style='background:rgb(var(--greend));color:rgb(var(--white));padding:0 7px;'><b>any</b></scaps> green tag (at least one).</li>
+<li>The shiplog-like canvas at the bottom of this tab starts empty, but will be filled up as you toggle tags. Every time you update your selection, this canvas will show not only the tags you activated, but if you are in <scaps>broad</scaps> mode, then it will also show the orange tags which are passively toggled, and how they connect to the tags you selected. Each sphere representing a tag can be dragged around at your leisure in order to facilitate readability and better understand why the lore map returns the results it does.</li>
+</ul><p>Aside from the spheres shown on the canvas, every tag you see on this page is interactable, including the tags listed at the bottom of each lore card. You can add them to your search, turn them red, or remove them, simply by clicking on them.</p>
+</details>
+<!--@EFOLD-->
+<!--@SFOLD Tags: Broad Mode-->
+<details><summary><h2 style=padding-bottom:.3rem><span style='background:rgb(var(--goldl));padding:.2rem .5rem;border-radius:50%'><img src=../ast/svg/hashtag.svg style=height:1em;margin-bottom:-.1em></span> More about the <scaps style='font-weight:800;background:#d1783b;padding:0 7px'>broad</scaps> Mode</h2></summary>
 <p>Some tags are more specific than others (e.g. “#ash twin” vs “#hourglass twins”), and sometimes, the topics of two or more tags overlap. The way lore cards and tags are designed tries to account for this by making it so that tags are less a list of unrelated strings of text, and rather a network of sorts. Tags with a precise topic (e.g.&#160;“#chert”) may also link to other tags which are related, but also more vague (e.g. “#hearthians” or “#astronauts”).</p>
 <p><b>What this means in practice:</b><ul>
 <li>If a lore card is about a very specific topic (for example, “Esker has pink eyes”), then it will come with equally specific tags (such as “#esker”).</li>
 <li>If a lore card encompasses multiple entities at once (for example, “Hearthians have four eyes”), then it will come with a broader tag (“#hearthians”) but <i>not</i> with the whole list of more specific tags (The tag “#esker” and all other 21 Hearthian character tags will not be listed).</li>
-<li>And yet, Esker is a Hearthian: therefore, what you will observe if you decide to activate the tag “#esker” is that the lore card “Hearthians have four eyes” will also appear – even if the tag “#hearthians” is absent from your list of active tags.<ul>
+<li>And yet, Esker is a Hearthian: therefore, what you will observe if you decide to activate the tag “#esker” while in <scaps>broad</scaps> mode is that the lore card “Hearthians have four eyes” will also appear – even if the tag “#hearthians” is absent from your list of active tags.<ul>
 <li><b>Tip:</b> If you hover your mouse (or for touchscreen devices, long press – this example and active tags within the search bar will not work, but real tags should) on a tag like <input type=button value='#this'title='Related tags (will appear in orange):
   • #tag A is related
   • #also tag B'style='border-radius:20px;font-size:1em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;margin-top:-.3em'>, a list of all the related tags which will be added in this “passive” way will be displayed. If no such list appears, then the tag has no documented relations.</li>
-<li>Be warned that DLC spoilers will be listed regardless of your preferences! The way these lists are made cannot follow (at least not currently) with the DLC filter being toggled on or off. That’s on my todo list.</li></ul>
-<li>If you are not interested in the kind of lore that regards all Hearthians indiscriminately, you can look at the tags of a lore card that isn’t relevant to Esker specifically: the tag “#hearthians” will be <orng>orange</orng> instead of white or light green. In order to get rid of lore cards that appeared because of an unwanted orange tag, one option is to click on this orange tag twice (first to turn it green, then to turn it red and thus exclude it from the search).</li>
-<li><b>Of note:</b> Changing the <a href="javascript:document.querySelector('#loremapsmode').closest('details').open=true;document.getElementById('loremapsmode').scrollIntoView()">search mode</a> to <span class=scaps>focus</span> will disregard <i>all</i> orange tags. If you are however interested in keeping at least one or two orange tags (for example, while “#hearthians” is too vague, seeing results for “#lunar outpost” still interests you), you have two options: keep the search mode as <span class=scaps>broad</span> and turn all the unwanted tags red, or (provided the <a href="javascript:document.querySelector('#loremaplogic').closest('details').open=true;document.getElementById('loremaplogic').scrollIntoView()">search logic</a> is <span class=scaps>any</span> instead of <span class=scaps>all</span>) turn all the tags of interest green and change the search mode to <span class=scaps>focus</span>.</li>
-</ul></p>
-<hr>
+<li>Be warned that in this very specific case, DLC spoilers will be listed regardless of your preferences! These DLC tags will not actually activate if the DLC filter is on, but the way these lists are made cannot follow (at least not currently) with the DLC filter being toggled on or off.</li></ul>
+<li>If you are not interested in the kind of lore that involves all Hearthians indiscriminately, you can look at the tags of a lore card that isn’t relevant to Esker specifically: the tag “#hearthians” will be <orng>orange</orng> instead of white or light green. In order to get rid of lore cards that appeared because of an unwanted orange tag, one option is to click on this orange tag twice (first to turn it green, then to turn it red and thus exclude it from the search).</li>
+<li><b>Of note:</b> Changing the search mode from <scaps>broad</scaps> to <scaps>focus</scaps> will disregard <i>all</i> orange tags. If you still want to keep at least one or two orange tags (for example, while “#hearthians” is too vague, seeing results for “#lunar outpost” still interests you), you have two options: keep the search mode as <scaps>broad</scaps> and turn all the unwanted tags red, or (provided the search logic is <scaps>any</scaps> instead of <scaps>all</scaps>) turn all the tags of interest green then change the search mode to <scaps>focus</scaps>.</li>
+</ul></p></details>
+<!--@EFOLD-->
+<!--@SFOLD Tags: Master Tags-->
+<details><summary><h2 style=padding-bottom:.3rem><span style='background:rgb(var(--goldl));padding:.2rem .5rem;border-radius:50%'><img src=../ast/svg/hashtag.svg style=height:1em;margin-bottom:-.1em></span> About <button style=vertical-align:top;margin-top:.1em;vertical-align:top;font-size:.7em><m></m><input type=button value='#master tags'style='border-radius:20px;font-size:1.3em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;padding-left:1.7em'></button></h2></summary>
 <p>A rather vague tag (e.g. “#hearthians”) may be preceded by a circular button like in <button style=vertical-align:top><m title='This will also toggle the following tags:
   • #this tag
   • #that one
@@ -49,120 +98,133 @@
   • #or maybe tag B'style='border-radius:20px;font-size:1.3em;font-weight:500;font-family:BrandonGrotesque,Brandon Grotesque,Cabin;padding:0 .3em;padding-left:1.7em'></button>.</p>
 <p>The tag itself will behave as normal, but the circular button has an action of its own: clicking on it will not only activate the tag it is attached to, but also actively toggle (turn green/red or remove from the list) multiple other tags which are thematically related to the topic mentioned by the tag itself. In the case of the generic tag “#hearthians”, clicking on its associated circular button will activate the tag “#hearthians” <i>as well as</i> all 22 tags corresponding to all 22 Hearthian characters.</p>
 <p>Similarly to normal tags, hovering over a tag’s circular button will display the list of tags that it controls (aside from the tag it is linked to, which is implied to be part of the list by default).</p>
-<p>Needless to say, this circular button only has its uses when you wish to explore the lore at large (and are using <span class=scaps>any</span> as your search logic; setting <span class=scaps>all</span> instead will return no results).</p>
-</details>
+<p>Needless to say, this circular button only has its uses when you wish to explore the lore at large (and are using <scaps>any</scaps> as your search logic; setting <scaps>all</scaps> instead will return no results).</p></details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Search Bar-->
-<details><summary><h2>Search Bar: Manage your results</h2></summary>
-<p>Below the table listing all tags available stands the search bar: it will provide you with a quick access to your active tags and multiple features which will help refine your search. On top of it, you will first find a ship log-like canvas which starts empty, but will be filled up as you toggle tags. Every time you update your selection, this canvas will show not only the tags you activated, but if you are in <span class=scaps>broad</span> mode, then it will also show the orange tags which are passively toggled, and how they connect to the tags you selected. Each sphere representing a tag can be dragged around at your leisure in order to facilitate readability and better understand why the lore map returns the results it does.</li>
-<p>Then, from left to right, the search bar is composed of the following elements:</p><ul>
-<li>The list and state of all currently active tags. Each tag shown in this space is a button of its own, which functions the exact same way as the original tags (including the possibility to show you the list of orange tags it may be connected to if you hover them – provided you are not using a touchscreen device, that part hasn’t been figured out yet). Contrary to the canvas above it, passively activated orange tags will not be displayed here.</li>
-<li><span class style='background:rgb(var(--goldd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Open/Close All</span> lets you expand or collapse all lore cards at once.</li>
-<li><span class style='background:rgb(var(--redd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Reset</span> erases the search bar’s contents and the state of all tags. The show/conceal state of Echoes of the Eye spoilers and the search mode & logic will not be reset.</li>
-<li><span class style='background:rgb(var(--indigod));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Echoes of the Eye</span> spoilers can be toggled on or off. When DLC spoilers are toggled off, concealed lore cards will still be displayed in a heavily blurred state: this is meant to notify you of their existence, without them actually being readable unless you allow DLC spoilers.</li>
-<li id=loremapsmode><span class style='background:#bd652a;padding:3px 7px;font-weight:800;color:rgb(var(--white))'><span class=scaps>broad</span> | <span class=scaps>focus</span></span> defines the <b>search mode</b>: <span class=scaps>broad</span> will allow the appearance of additional lore cards which contain none of the green tags, but do contain at least one related tag (appearing in orange). <span class=scaps>focus</span> will prevent those extra lore cards from being shown.</li>
-<li id=loremaplogic><span class style='background:rgb(var(--greend));padding:3px 7px;font-weight:800;color:rgb(var(--white))'><span class=scaps>any</span> | <span class=scaps>all</span></span> defines the <b>search logic</b>: the lore map’s results will return cards which are marked with <span class=scaps>any</span> (at least one) or <span class=scaps>all</span> of the green tags (and none of the red tags).</li>
-</ul>
-<p><b>Tip:</b> If you want to see every single lore card available, you can simply toggle either the orange <span class=scaps>broad</span>/<span class=scaps>focus</span> button or the green <span class=scaps>any</span>/<span class=scaps>all</span> button while the tag selection is empty.</p></details>
+<!--@SFOLD Keywords-->
+<details><summary><h2 style=padding-bottom:.3rem><span style='background:rgb(var(--indigol));padding:.2rem .5rem;border-radius:50%'><img src=../ast/svg/keyword-search.svg style=height:1em;margin-bottom:-.1em></span> Filtering Lore Cards by Keywords</h2></summary>
+<p>The search by keywords is similar to <scaps>ctrl+f</scaps>, for those who use it – down to the “Highlight All,” “Match Case” and “Whole Words” options. On top of this, it also allows for multiple searches simultaneously thanks to an <scaps>and/or/not</scaps> logic system:</p>
+<p>For example, you can type <code class=inline>ash twin <span style=color:rgb(var(--greenl))>&</span> <span class=red>!</span>ember twin <span style=color:rgb(var(--indigol))>;</span> brittle hollow</code> to search for all lore cards which mention Ash Twin <i style=color:rgb(var(--greenl))>and</i> <i class=red>not</i> Ember Twin, <i style=color:rgb(var(--indigol))>or</i> which mention Brittle Hollow.</p>
+<p>Every lore card containing the keywords in your query will appear with the <img src=../ast/svg/keyword-search.svg style=height:1em;margin-bottom:-.1em;filter:invert(41%)sepia(91%)saturate(3292%)hue-rotate(207deg)brightness(105%)contrast(101%)> icon by their side. Additionally, the matched text will be circled in blue if you choose to check the option “Highlight All.”</p>
+<p>The second tab at the bottom of the screen contains:</p><ul>
+<li>A golden input box letting you choose which parts of each lore card you want to look up your keywords in. You can choose to only count occurrences of your search that appear in a lore card’s title, or only in its hidden content, or both, all the while also counting or excluding matches within the lore card’s tags;</li>
+<li>A blue text box allowing you to type your queries;</li>
+<li>A summary of what the search syntax can or cannot do (by clicking or hovering the <img style=height:1em src=../ast/svg/hud_m2e.svg> icon at the right);</li>
+<li>Checkbox buttons to toggle extra features: <b>“Highlight All”</b> (choose whether to emphasize or not the matched text), <b>“Match Case”</b> (choose whether lowercase or uppercase matters; do note that tags will always be lowercase), <b>“Whole Words”</b> (for example, this can define whether the query “space” will exclusively match for the word “space,” or also match for words such as “spacesuit” and “spaceship”).</li></ul></details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Save/Load-->
-<details><summary><h2>Save/Load your search state</h2></summary>
-<p>I have bad news – unlike your ship’s computer, this web page is not connected to the Ash Twin Project. If it is reloaded, it will forget <b>everything</b>. This means that if you have spent a long time perfecting your tags and search mode/logic before finally finding the list of lore cards you would like to keep under your watch for later use, you had better memorize every option you picked and prepare yourself mentally to later painstakingly find and toggle every tag and option <i>again</i>…</p>
-<p>…or not! Thankfully, right below the search bar lay two buttons with a black text box in the middle: clicking on the leftmost button while you have multiple tags active will display a string of text that you can copy and paste in your own notes for safekeeping. Again, the web page itself will not save anything – you have to copy the text it gives you (the icon in the top right corner lets you add it to your clipboard in one click) and save it in your own files.</p>
-<div style=max-width:800px;margin:auto;position:relative><pre style=padding:1em;white-space:pre-wrap;background:rgba(var(--goldd),.7);text-align:left>supernova1,high energy lab1,sunless city0,FOCUS,ANY,</pre><clp style=top:.3em;right:.1em><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg style=width:64px;margin-left:-32px>Copy</msg></btn></clp></div>
-<p>What you have above is an example of what you could call a “save point” for the lore map. The tags “#supernova” and “#high energy lab” will be added and turned green (because of the “1” at the end), the tag “#sunless city” will be added in red (because of the final “0”), and the search will be set to use the <span class=scaps>focus</span> mode and <span class=scaps>any</span> logic.</p>
-<p>If you reload this web page, the list of active tags will be empty and all your options will be reset: but if you paste the text you saved into the black box and then click on the rightmost button, all your progress will be loaded back in. Scrolling aside, it will be as if you had never left!</p>
-<hr>
-<p>…What do you <i>mean</i>, “scrolling aside”? Scrolling is tedious and annoying! What if you were looking through the ENTIRE map with an empty tag selection and hundreds of lore cards displayed? That doesn’t solve anything!</p>
-<p>I got you good, didn’t I? Well, fortunately, there is a trick the earlier example conveniently forgot to mention. See how it ends with a comma? Why would it end with a comma with nothing coming after? …Well, because there is an optional element that can be added to your “save point.”</p>
-<p>Every lore card has its own identifier, which you can copy by clicking on this icon <img src=../ast/svg/copy-url.svg style='filter:invert(1);height:1.2em;margin:-.2em 0'> (you will find it at the bottom right corner of the lore card, on the same level as its list of tags). If you first click on this icon in order to get a lore card’s ID (ideally the one you were in the midst of reading), then click on “Copy current tag list,” then the save point will be updated to contain this lore card’s ID – and submitting this save point will then have the page automatically scroll down to that lore card’s location. Here is a “save point” which uses a specific lore card’s ID as a bookmark of sorts:</p>
-<div style=max-width:800px;margin:auto;position:relative><pre style=padding:1em;white-space:pre-wrap;background:rgba(var(--goldd),.7);text-align:left>supernova1,high energy lab1,sunless city0,FOCUS,ANY,#datasupernova</pre><clp style=top:.3em;right:.1em><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg style=width:64px;margin-left:-32px>Copy</msg></btn></clp></div>
-<p>You can only keep one lore card’s ID as your bookmark (the page cannot scroll to multiple places simultaneously). You can click on as many IDs as you want without causing any issue, but know that only the last ID you interacted with will be kept in memory.</p>
-</details>
+<!--@SFOLD Save-->
+<details><summary><h2 style=padding-bottom:.3rem><span style='background:rgb(var(--greyd));padding:.2rem .5rem;border-radius:50%'><img src=../ast/svg/save.svg style=height:1em;margin-bottom:-.1em></span> Saving and Loading your Progress</h2></summary>
+<p><b>This web page does not automatically save your progress.</b> I you reload it, everything will be reset to the same blank slate every time.</p>
+<p>Thankfully, this tab still allows you to create and load save points by copying and pasting the text it gives you. You do need to keep it in your own text files somewhere, but this also means that you can have as many save points as you want! You can create your own selection of lore cards for a given topic, another for a different topic, and go back to any of them anytime, simply by copying and pasting the text related to the save point of interest.</p><hr>
+<p>This tab contains three elements: from left to right, the “Copy current save point” button, the black text box letting you type or paste a pre-existing save point, and the “Submit new save point” button meant to load the save point you just pasted in the text box (though pressing the Enter key should also work).</p>
+<p>Clicking on “Copy current save point” will automatically add the lore map’s current state to your clipboard; it will also display the same save point in a brown rectangular box like this:</p>
+<div style=max-width:800px;margin:auto;position:relative><pre style=padding:1em;white-space:pre-wrap;background:rgba(var(--goldd),.7);text-align:left>{
+    "Tags":["ash twin project1","ash twin0","ash twin warp tower0"],
+    "Mode":"FOCUS",
+    "Logic":"ANY",
+    "Search":["Title & Tags","ember twin & !brittle hollow",false,false,true],
+    "Pins":["QMEarlyDemise","Loop9million"],
+    "Bookmark":"dataCT",
+    "DLC":"Hide"
+}</pre><clp style=top:0;right:.3em><btn onclick=CopyCodeToClipboard(this) onmouseleave=ResetCopyCode(this)><msg style=width:64px;margin-left:-32px>Copy</msg></btn></clp></div>
+<p>Again, the web page itself will not save anything – you have to copy this save point and keep it in your own notes somewhere. If your clipboard was overwritten with something else in the meantime, the <img src=../ast/svg/copy.svg style=height:1em;filter:invert()> icon in the top right corner will copy it again in one click.</p>
+<p>If you paste the example above into the black text box and submit it, you will notice that:</p><ul>
+<li>Three tags will be automatically turned on, the first green (because their name ends with “1”) and the other two red (because their name ends with “0”);</li>
+<li>The tag search will be switched to <scaps>focus</scaps> mode and <scaps>any</scaps> logic;</li>
+<li>The keyword search will be switched to “Title & Tags,” the search will be launched with the query “ember twin & !brittle hollow,” and respectively: the “Highlight All” and “Match Case” options will be unchecked, “Whole Words” will be active;</li>
+<li>The lore cards “QMEarlyDemise” and “Loop9million” will be automatically pinned;</li>
+<li>You will be scrolled down to the bookmarked lore card “dataCT,” which will be opened and marked with <img src=../ast/svg/hud_pin.svg style=height:1em;margin-bottom:-.1em;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%)>;</li>
+<li>DLC spoilers will be blurred.</li>
+</ul></details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Lore cards-->
-<details><summary><h2>Lore cards: Facts and Sources</h2></summary>
-<p>Lore cards are what your selection of tags will fish out of the depths of this web page. As their name suggests, they are somewhat shaped like flashcards, and more importantly, they contain the lore you seek. Some lore cards may have their own quirks in terms of the way the information they contain is presented, but they all follow the same global structure:</p>
-<it id=LoreCardExample style='margin:1em auto'><details class=reg><summary>This title provides a summary of what the lore card aims to teach/remind you. Click&#160;to&#160;see&#160;what’s&#160;inside!</summary>
-<p>This section is normally hidden by default, and only revealed when you click on the lore card’s title: this method lets you open and close it at will. Alternatively, the <span class style='background:rgb(var(--goldd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Open/Close All</span> button located next to the active tags selection bar will let you toggle the open/closed state of all lore cards at once.</p>
-<p>This section’s purpose is to reveal supplementary information in regards to the fact the lore card’s summary provides: notably the exact source and quotes from the game, or images, or even tables with numbers and some math when relevant.</p>
-<p>Usually, the lore card’s title is stating a fact, while the content hidden within justifies this fact by providing the proof supporting it (whether in-game dialogue or observations, interviews, previous patches of the game, or other sources).</p>
-</details><t><input type=button value='#Here are some tags!'> <input type=button value='#These ones aren’t functional'style=color:rgb(var(--orng))> <input type=button value='#but a real lore card’s tags can be interacted with.'></t>
-<clp><btn onclick=CopyLinkToClipboard(this) onmouseleave=ResetCopyLink(this)><msg>Copy Card URL</msg></btn></clp></it>
-<p>The purpose of a lore card is to be all at once succinct (by reading its title alone), exhaustive (by providing as many details, screenshots, external links, graphs etc as necessary under the cut), and reliable in the sense that every piece of information it provides must have a verifiable source.</p>
-<p>Lore cards will often give obvious information that is sometimes outright stated in the game: this is part of its exact purpose, to be a reminder of both the obvious and the less obvious. Notably, the lore map aims to remain as impartial and purely factual as possible. Speculation is intended to be kept to the bare minimum, if present at all; and any piece of speculation that may slip in must make it obvious that it is based on a combination of various other facts, rather than an officially confirmed statement.</p>
-<p>Some lore cards (notably the “General Data: X” cards) may become quite long and packed with information; but in most cases, it is preferable for the sake of keeping a more accurate tagging system to keep them as succinct as possible, and sometimes to split various details of a piece of information into multiple separate lore cards referencing each other. The inspiration behind lore cards was flashcards, after all! There is not much ‘flash’ left to it if it takes a dozen minutes to read just one, let alone if only a small fraction of its contents is related to what you are looking for.</p></details>
+<!--@SFOLD Other Buttons-->
+<details><summary><h2><img src=../ast/svg/unpinned.svg style=height:1em;vertical-align:middle;margin-top:-.2em;filter:invert(47%)sepia(44%)saturate(3001%)hue-rotate(328deg)brightness(98%)contrast(111%)> Other Navigation Buttons</h2></summary>
+<p>After the more complex features’ tabs, some simpler buttons stand still at the bottom of your screen:</p><ul>
+<li><span style='background:rgb(var(--redd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Reset</span> erases the search bar’s contents and the state of all tags. The show/conceal state of Echoes of the Eye spoilers and the search mode & logic will not be reset.</li>
+<li><span style='background:rgb(var(--greend));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Show all</span> will show every lore card in existence without modifying your current search parameters.</li>
+<li><span style='background:rgb(var(--goldd));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Open/Close All</span> lets you expand or collapse all lore cards at once.</li>
+<li><span style='background:rgb(var(--indigod));padding:3px 7px;font-weight:800;color:rgb(var(--white))'>Echoes of the Eye</span> spoilers can be toggled on or off. When DLC spoilers are toggled off, concealed lore cards will still be displayed in a heavily blurred state: this is meant to notify you of their existence, without them actually being readable unless you allow DLC spoilers.</li>
+</ul></details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Lore cards Bonus Features-->
-<details><summary><h2>Lore cards’ Bonus Features</h2></summary>
-<h4>Cross references</h4>
-<p>Sometimes, a lore card will refer to another. If you see this symbol <img src=../ast/svg/hud_dlg.svg style=height:1em;margin-bottom:-.1em>, then clicking on it or the text preceding it will let you access the lore card in question.</p>
-<h4>Hidden details</h4>
-<p>Some lore cards may contain even more information than you would suspect at first glance. If this information is not so easily visible, then it normally would only be redundant or minor details that most people would consider insignificant – for example, ship log entries which are unlocked by reading a given Nomai dialogue, but which are simply repeating word for word said Nomai dialogue.</p>
-<p>Still, what one considers useless information, another may judge noteworthy; and as such, the lore map yearns to remain as exhaustive as possible… without being too cluttered for the sake of the majority who wants to get to the point. If you see this symbol <span style=position:relative class><img src=../ast/svg/hud_m2e.svg style=height:1.2em;margin-bottom:-.2em class=infoa><span class=infob style=font-size:.8em>Yep, just like this!</span></span> during your search, then try to hover or click on it! <span class=orng>There’s more to explore here.</span></p>
-<h4>Quick share</h4>
-<p>If you wish to share a certain lore card’s contents with a friend (or bookmark it when paired with the “save point” feature), you <i>could</i> send them a screenshot… or, an arguably faster and handier version, you can simply click on this icon <img src=../ast/svg/copy-url.svg style='filter:invert(1);height:1.2em;margin:-.2em 0'> then instantly copy the lore card’s personalized URL to your clipboard! Every lore card possesses this icon in their bottom right corner, on the same row as the list of tags.</p>
-<p>Clicking on a lore card’s personalized link will load this exact page, except the lore card of interest will already be visible, open, and even highlighted for a short instant.</p>
-</details>
-<!--@EFOLD-->
-<!--@SFOLD✔️Lore card types-->
-<details><summary><h2>Lore card types: Color Chart</h2></summary>
-<p>Lore cards come in one of five different colors, each meant to hint at some hierarchy in terms of the reliability/canonicity of the information they provide. From most reliable to entirely retconned:</p><div style='column-count:auto;column-gap:1em;column-width:540px;padding:0 1em'>
-<div class=lorecard style=--fore:var(--greend);--midd:var(--greenl)><h3 style=--fore:var(--greend);--midd:var(--greenl)>Regular Lore Card</h3><p>This lore card color is for information revealed through normal gameplay, notably through the in-game dialogue.</p></div>
-<div class=lorecard style=--fore:var(--indigod);--midd:var(--indigol)><h3 style=--fore:var(--indigod);--midd:var(--indigol)>Alternate Official Sources</h3><p>This lore card color is for information revealed through official sources such as merchandise or interviews post game release, provided the information being revealed is meant by the developers to still be canon, and provided it has not been retconned by later sources.</p><p>All lore cards of this color come with the following tag: <code style=font-size:.7em;color:rgb(var(--orng))>#alternate&#160;sources</code>.</p></div>
-<div class=lorecard style=--fore:var(--goldd);--midd:var(--goldl)><h3 style=--fore:var(--goldd);--midd:var(--goldl)>Datamined Content &&#160;Gameplay Observations</h3><p>This lore card color, as well as the associated tag <code style=font-size:.7em;color:rgb(var(--orng))>#in-game observations</code>, is for information which is not stated explicitly, but can be observed in-game. This includes the measured timing of scripted events, size of and distances between objects, etc. Any time stamp provided considers time 0 as the moment when the “Wake up” button is pressed at the start of a loop.</p></div>
-<div class=lorecard style=--fore:var(--greyd);--midd:var(--greyl)><h3 style=--fore:var(--greyd);--midd:var(--greyl)>Unused & Concept Art</h3><p>This lore card color is for information revealed exclusively through concept art or content which did not make it into the final game (e.g. information exclusive to the alphas or previous patches of the game).</p><p>Due to the fact that this content is either absent or deliberately removed from the game, information provided through those means is therefore of debatable, or even dubious canonicity; however, if the lore card is of this color instead of red, then no blatant contradiction has been found with confirmed canon elements.</p><p>All lore cards of this color come with the following tag: <code style=font-size:.7em;color:rgb(var(--orng))>#unused/concept&#160;art</code>.</p></div>
-<div class=lorecard style=--fore:var(--redd);--midd:var(--redl)><h3 style=--fore:var(--redd);--midd:var(--redl)>Retconned</h3><p>This lore card color is for information which was present in either concept art or previous versions of the game (including the alphas) and which can no longer be considered accurate in regards to new in-game information.</p><p>All lore cards of this color come with the following tag: <code style=display:inline-block;font-size:.7em;color:rgb(var(--orng))>#retconned</code>.</p></div></div></details>
-<!--@EFOLD-->
-<!--@SFOLD☑️Example-->
-<details><summary><h2>Cool, cool. So how do I use it?</h2></summary>
-<p style=font-size:1em>Let’s take two diametrically opposed examples:</p>
-<p style=font-size:1.1em;font-weight:600>You’re trying to learn everything there is to know about the Nomai from Brittle Hollow.</p><ol>
-<li>You are here to read, and you probably want as many results as possible – or at least, you want to avoid taking the risk of hiding lore cards you would like to see. Make sure that you are using the <span class=scaps>any</span> search logic.</li>
-<li>If you want to read even more, also check whether you are using the <span class=scaps>broad</span> search mode, which will return more results (albeit perhaps less relevant) than the <span class=scaps>focus</span> mode.</li>
-<li>Fortunately for you, there are tags named “#nomai (brittle hollow)” and “#nomai (escape pod 1)” (if you remember your lore, this is the escape pod which crashed on Brittle Hollow). Even better, these tags come with a circle-shaped button too: if you hover the latter, you will see a list of the names of all the Nomai who boarded it.</li>
-<li>If you want to include the Nomai who were born after the crash, then “#nomai (escape pod 1)” may actually not be the most useful to you, compared to the alternative. However, some of the Nomai listed in “#nomai (brittle hollow)” actually grew up on Ember Twin (which includes Solanum, for example)! They are only part of the list because they went to school there.</li>
-<li>Not to worry: there is also a “#nomai (ember twin)” tag, after all, and it comes with its own circle-shaped button. If you click on this circle twice, you will have effectively either turned red or removed entirely the names of the Nomai you don’t want to read about.</li>
-</ol>
-<p style=font-size:1.1em;font-weight:600>You heard that Chert is supposed to know something about Ash Twin, but you have no idea what it is.</p><ol>
-<li>The first step would be to turn the tags “#chert” and “#ash&#160;twin” green. This, however, returns a lot of irrelevant results.</li>
-<li>You are sure that Chert specifically, knows something about Ash Twin specifically. The kind of lore card you are looking for has to have both tags: so you select the <span class=scaps>all</span> search logic.</li>
-<li>That’s better, but you are still seeing some irrelevant lore cards about Hearthians and the Hourglass Twins. The reason they appear is because of the <span class=scaps>broad</span> search mode: but considering your goal, the orange tags are completely useless. Select the <span class=scaps>focus</span> search mode to make them go away.</li>
-</ol></details>
-<!--@EFOLD-->
-<!--@SFOLD☑️FAQ-->
+<!--@SFOLD FAQ-->
 <details><summary><h2>Frequently Asked Questions</h2></summary>
 <blockquote style=padding:1em>“My search returns completely irrelevant results!”</blockquote>
-<p>If you are already using the <span class=scaps>broad</span> mode and <span class=scaps>and</span> logic but are still unsatisfied, then perhaps certain lore cards were tagged incorrectly (or tagging them in such way made sense in my/other people’s heads, but your specific case scenario was not accounted for). If you disagree with the way some tags are connected (or not connected), the way some lore cards are tagged or even written – please let me know! I left all my socials below, and again, this project has its own <a href=https://discord.gg/knBDpGAjNF target=_blank class=blue>Discord server</a> if you want more people other than me to see your opinion and join the debate.</p>
+<p>I will assume this happens because you are relying on the tag system. In this case, if you are already using the <scaps>broad</scaps> mode and <scaps>and</scaps> logic but are still unsatisfied, then perhaps certain lore cards were tagged incorrectly (or tagging them in such way made sense in my/other people’s heads, but your specific case scenario was not accounted for). If you disagree with the way some tags are connected (or not connected), the way some lore cards are tagged or even written – please let me know! I left all my socials below, and this project has its own <a href=https://discord.gg/knBDpGAjNF target=_blank class=blue>Discord server</a> if you want more people other than me to see your opinion and join the debate.</p>
 <blockquote style=padding:1em>“This web page layout looks… broken.”</blockquote>
 <p>I’m sorry if it does! I am 100% self-taught on HTML/CSS/JS and have only tested my web pages on my computer and phone, which both use Firefox. If you are using a different browser, this may be the cause. If you are or know a web developer who would be willing to help look into and possibly even fix this kind of issue, don’t hesitate to contact me! Just… be nice and don’t insult me too hard for the spaghetti code. I’m doing my best 😅</p>
 <blockquote style=padding:1em>“I’d like to make a lore map like this for my own fandom and/or personal project, can I use this page as a template?”</blockquote>
 <p>Yes, of course! Please let me know that you do, and credit where it is due would be greatly appreciated – that is all I ask.</p><p>I strongly advise you against cloning my whole repository, however: I use the same Github Pages website for a lot of other more personal projects that have nothing to do with this one, so cloning the repository would drown you with hundreds of completely useless files. If you contact me before starting your project, I can give you a quick rundown of how this page works and how you can easily make your own – image/fonts and other aesthetics-related assets aside, you really only need ~6-7 files in total to get the entirety of this page’s layout and interactiveness working.</p>
 </details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Credits-->
+<!--@SFOLD Credits-->
 <details><summary><h2>Credits</h2></summary><ul>
 <li>This web page uses two Google Fonts: <a href=https://fonts.google.com/specimen/Cabin target=_blank class=blue>Cabin</a> (meant to imitate <a href=https://befonts.com/brandon-grotesque-font-family.html target=_blank class=orng>Brandon Grotesque</a>, Outer Wilds’ main dialogue font) and <a href=https://fonts.google.com/specimen/Space+Mono target=_blank class=blue>Space Mono</a> (used in-game notably for the ship’s computer). Brandon Grotesque should be prioritized over Cabin if it is installed on your device.</li>
 <li>Most images found on this web page are either in-game assets or official artwork for Outer Wilds. Some SVG icons were obtained by tracing the corresponding in-game assets, which I vectorized for the sake of convenience (smaller file size for higher quality, easier to transform/recolor depending on uses). I consider that the credit goes to Mobius Digital as well.<ul><li>These assets have been reuploaded on this website’s Github repository for the sake of convenience and easier access; however, let me know if they should be taken down for any reason (whether it be for reuploading them in a “safer” place, or for finding replacements altogether).</li></ul></li>
-<li>Other SVG icons used in this project (e.g. <img src=../ast/svg/copy-url.svg style=height:1em;filter:invert(1)><img src=../ast/svg/copy.svg style=height:1em;filter:invert(1)><img src=../ast/svg/external-link.svg style=height:1em;filter:invert(1)>) were downloaded from <a href=https://www.svgrepo.com target=_blank class=blue>SVG Repo</a>.</li>
+<li>Other SVG icons used in this project (e.g. <img src=../ast/svg/copy-url.svg style=height:1em;filter:invert(1)><img src=../ast/svg/copy.svg style=height:1em;filter:invert(1)><img src=../ast/svg/pinned.svg style=height:1em;filter:invert(1)>) were downloaded from <a href=https://www.svgrepo.com target=_blank class=blue>SVG Repo</a>.</li>
 <li>Other assets used within lore cards should either mention or link to their respective authors. If no credit is given, the asset <i>normally</i> should have been made by myself – but mistakes may happen, so if you have doubts due to (for example) Google Images’ reverse search, do let me know so I can correct it ASAP.<ul>
 <li>Assets whose URL starts with <smol class=lblue>https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/<b>ast-owdoc/</b></smol> were all made by me. The last part of the URL is the most important here – if the URL instead contains <smol class=lblue>/ast/</smol>, then the asset falls into one of the previous two categories: it is either an official/official-inspired Outer Wilds asset, or an SVG icon downloaded from SVG Repo.</li><li>Imgur images and albums should give explicit credit at the very least on their corresponding Imgur page; other sources should be given explicit credit directly inside the lore card.</li></ul></li>
 <li>This fan project was made for educational purposes and merely aims to serve the Outer Wilds community. Any potential inaccuracy, or failure to give proper credit, or misstep which may somehow result in accidentally offending or disrespecting someone, is a genuine mistake. Just let me know what I did wrong so I can fix it as fast as possible to the best of my ability: every way you can easily contact me is listed below.</li>
 </ul></details>
 <!--@EFOLD-->
-<!--@SFOLD✔️Contact-->
+<!--@SFOLD Contact-->
 <i id=i>This web page was created and is maintained&#160;by&#160;Lutias&#160;Kokopelli.<br>If you have any questions:<br>
 <a class=in target=_blank href=mailto:lutias.kokopelli@gmail.com><img src=https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg style=height:1.5em></a>
 <a class=in target=_blank href=https://bsky.app/profile/lutiaskokopelli.bsky.social><img src=https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg></a>
 <a class=in target=_blank href=https://www.reddit.com/user/Lutias_Kokopelli/><img src=https://www.logo.wine/a/logo/Reddit/Reddit-Social-Icon-Variant-Logo.wine.svg style='height:2.4em;margin:-.4em -.9em'></a>
 <a class=in target=_blank href=https://lutiaskokopelli.tumblr.com><img src=https://static.cdnlogo.com/logos/t/65/tumblr-icon.svg style=filter:grayscale(1)brightness(300%);margin-top:-.2em;width:1.7em></a>
 <a class=in target=_blank href=https://discordapp.com/users/269152807305609218><img src=https://upload.wikimedia.org/wikipedia/fr/4/4f/Discord_Logo_sans_texte.svg style=height:2.4em;margin-top:.1em></a>
-</i></details>
+<br>This project also has a <a href=https://discord.gg/knBDpGAjNF target=_blank class='blue in'>Discord server</a>!</i></details>
 <!--@EFOLD-->
 <!--@EFOLD-->
+<!--@SFOLD Search Bar-->
+<div id=searchbar style=padding:0><p style=margin:0 align=center>
+    <button onclick="toggleTag(this,'tab_tags')"style=background:rgb(var(--goldl))><img src=../ast/svg/hashtag.svg></button>
+    <button onclick="toggleTag(this,'tab_keys')"style=background:rgb(var(--indigol))><img src=../ast/svg/keyword-search.svg></button>
+    <button onclick="toggleTag(this,'tab_save')"style=background:rgb(var(--greyd))><img src=../ast/svg/save.svg></button>
+    <span>&ensp;</span>
+    <button id=show_rst onclick=ResetState()>Reset</button>
+    <button id=show_all onclick=ShowAll()>Show all</button>
+    <button id=show_oac onclick=OpenClose()>Open/Close all</button>
+    <button id=show_dlc onclick=SearchDLC()>&ensp;</button>
+</p>
+<div id=tab_tags style=display:none>
+    <input id=findtaginput onkeyup=FindTag() placeholder='Type here to find a tag!'><div id=findtaglist></div>
+    <div><div id=activetags></div><input id=srch_mode type=button onclick=FocusMode()><input id=srch_logc type=button onclick=SwapLogic()></div>
+    <details open id=tutoactivetags style='border:5px solid rgb(var(--goldd));background:rgba(var(--goldd),.2);margin-top:1em'>
+        <summary><h2 style=color:rgb(var(--goldl));margin:auto>Your search includes the following tags:</h2></summary>
+        <canvas id=cvs_active style=width:99%;height:22vh;background:url(../ast/img/shiplog_bg.png)center;border-radius:2em;display:block;margin:auto></canvas>
+        <p class=source style=padding-right:2em;padding-bottom:1em;margin-top:-2em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p>
+    </details>
+</div>
+<div id=tab_keys align=center style=margin:auto;position:relative;display:none;background:rgba(0,0,0,.8)>
+    <select id=keymode name=Search…>
+        <option onclick="GetKeyMode();document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))">Title only</option>
+        <option onclick="GetKeyMode();document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))">Title & Tags</option>
+        <option onclick="GetKeyMode();document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))">Details only (Title & Tags excluded)</option>
+        <option onclick="GetKeyMode();document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))" selected>Whole lore card (Tags included)</option>
+        <option onclick="GetKeyMode();document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))">Whole lore card (Tags excluded)</option>
+    </select><input id=findcardinput placeholder='Search Lore Cards'style=display:inline-block;margin-left:5px;width:70% onclick=GetKeyMode()>
+    <div class=infoa style=display:inline-block;margin-left:.2em><img src=../ast/svg/hud_m2e.svg style=height:1em><div class=infob style=right:0;left:unset;width:64vw;top:unset;bottom:2rem>
+        <h2 style='--fore:var(--white);text-align:center;border-bottom:2px solid rgb(var(--white))'>Search by keywords: Example usage</h2>
+        <p>The following request will return all lore cards which mention by name the Ash Twin Project <scaps style=color:rgb(var(--indigol))>– or –</scaps> <span class=red><scaps>not</scaps>&nbsp;Ember Twin</span> <scaps style=color:rgb(var(--greenl))>and</scaps> the supernova.</p>
+        <pre style=padding:0;text-align:center>ash twin project <b style=color:rgb(var(--indigol))>;</b> <span class=red><b>!</b>ember twin</span> <b style=color:rgb(var(--greenl))>&</b> supernova</pre>
+        <p style='margin:.5em 0'>Your search will always be parsed in the following order:</p><ol style='margin:0 1em'>
+            <li style=margin:0><scaps style=color:rgb(var(--indigol))>or:</scaps> Colon (,) Semicolon (;) Vertical bar (|)<br><span style=font-size:.9em>First, your search is split into groups of keywords and interpreted as “Query-1 <scaps>or</scaps> Query-2 <scaps>or</scaps> …” Lore cards which appear in response to a given search have correctly responded to <i>all</i> requirements of <i>at least</i> one of those Queries.</span></li>
+            <li><scaps style=color:rgb(var(--greenl))>and:</scaps> Ampersand (&amp;) Plus sign (+)<br><span style=font-size:.9em>Each “Query” obtained at the end of the previous step is then split into individual keywords. Your search becomes “(Keyword-1a <scaps>and</scaps> Keyword-1b <scaps>and</scaps> Keyword-1c <scaps>and</scaps> ...) <scaps>or</scaps> (Keyword-2a <scaps>and</scaps> Keyword-2b <scaps>and</scaps> ...) <scaps>or</scaps> (...)”</span></li>
+            <li><scaps style=color:rgb(var(--redl))>not:</scaps> Exclamation mark (!) at the beginning of the keyword<br><span style=font-size:.9em>The <scaps class=red>not</scaps> operator only applies to a single keyword, and cannot be used to exclude a group of keywords at once. <code class='inline darkmode'>!A & !B</code> is equivalent to <code class='inline darkmode'>!(A & B)</code>, but there is no straightforward equivalent to <code class='inline darkmode'>!(A | B)</code> and variations.</span></li>
+        </ol><p>Your search is always parsed in this order. This means that for now at least, you cannot use parentheses to alter the logic priority order. For example, parentheses in <code class='inline darkmode'>!(A & B) & (C | D)</code> will be ignored, and this input will instead be interpreted as <code class='inline darkmode'>( (!A) & B  &  C ) | D</code>.</p>
+        <p>You can put as many space characters as you want between separators, but keywords need to be properly spelled, including the number of spaces between multi-word keywords (for example, if your search is related to Brittle Hollow, make sure there is only one space character between “Brittle” and “Hollow”).</p>
+    </div></div>
+    <p style=margin:auto><input type=checkbox id=chkey_highlight style=display:revert;width:1.5rem;height:1.5rem;vertical-align:bottom onclick="document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))"> Highlight All&emsp;<input type=checkbox id=chkey_matchcase style=display:revert;width:1.5rem;height:1.5rem;vertical-align:bottom onclick="document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))"> Match Case&emsp;<input type=checkbox id=chkey_wholeword style=display:revert;width:1.5rem;height:1.5rem;vertical-align:bottom onclick="document.getElementById('findcardinput').dispatchEvent(new KeyboardEvent('keyup',{'key':'Enter'}))"> Whole Words</p>
+</div>
+<div id=tab_save style=display:none><div id=savepoint><p>
+    <input type=button onclick=CopySearchState() value="Copy current save point">
+    <input id=pastebin type=text placeholder="Paste save point">
+    <input type=button onclick="LoadSearchState(document.getElementById('pastebin').value)"value="Submit new save point">
+</p><div id=copybin></div></div></div></div>
+<!--@EFOLD-->
+
 <!--@SFOLD⚠️Select Tags-->
-<input id=findtaginput onkeyup=FindTag() placeholder='Type here to find a tag!'><div id=findtaglist></div>
-<details style='width:90%;margin:1em auto;border:3px solid rgb(var(--black));outline:3px solid rgb(var(--white));padding:0'><summary style=background:rgb(var(--redd));border-radius:0;width:100%;margin:auto;padding:.3em;color:rgba(255,255,255,.8);font-size:2em;font-weight:700;text-align:center;border:none>Toggle tags:</summary><div id=tagselect style=width:100%>
+<details style='width:90%;margin:1em auto;border:3px solid rgb(var(--black));outline:3px solid rgb(var(--white));padding:0'><summary style=background:rgb(var(--redd));border-radius:0;width:100%;margin:auto;padding:.3em;color:rgba(255,255,255,.8);font-size:2em;font-weight:700;text-align:center;border:none>List of tags:</summary><div id=tagselect style=width:100%>
 <!--@SFOLD⚠️Astral Bodies & Locations-->
 <div class=tagcategory id=taglocs><h2>Astral Bodies & Locations</h2><p>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#planets></button>
@@ -222,6 +284,7 @@
     <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#hanging city'>
     <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#tower of quantum knowledge'>
     <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#escape pod 1'>
+    <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#brittle hollow old settlement'>
     <input type=button onclick=AddTagSelector(this.value) n='brittle hollow'value='#brittle hollow gravity cannon'>
     <input type=button onclick=AddTagSelector(this.value) n='brittle hollow#warp receivers'value='#brittle hollow warp receiver'>
     <br>
@@ -253,16 +316,17 @@
 </p><p>
     <input type=button onclick=AddTagSelector(this.value) n=planets value='#eye of the universe'>
     <input type=button onclick=AddTagSelector(this.value) n=moons class=hasimg value='#quantum moon'style=background-image:url(../ast/ico/astr_QM.png)>
-</p><p class=dlc>
-    <input type=button onclick=AddTagSelector(this.value) n='space stations/satellites#spaceships'value='#the stranger'class=hasimg style=background-image:url(../ast/ico/astr_IP.png)>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#river lowlands'>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#cinder isles'>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#island tower'>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#hidden gorge'>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#abandoned temple'>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value=#reservoir>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value='#submerged structure'>
-    <input type=button onclick=AddTagSelector(this.value) n='the stranger'value=#simulation>
+</p><p>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='space stations/satellites#spaceships'value='#the stranger'class=hasimg style=background-image:url(../ast/ico/astr_IP.png)>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#river lowlands'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#cinder isles'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#island tower'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#hidden gorge'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#abandoned temple'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value=#reservoir>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#the stranger’s dam'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value='#submerged structure'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='the stranger'value=#simulation>
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD⚠️Characters-->
@@ -345,9 +409,9 @@
     <input type=button onclick=AddTagSelector(this.value) n='nomai#nomai (ember twin)'value=#taget>
     <input type=button onclick=AddTagSelector(this.value) n='nomai#nomai (escape pod 1)#nomai (brittle hollow)'value=#thatch>
     <input type=button onclick=AddTagSelector(this.value) n='nomai'value=#yarrow>
-</p><p class=dlc>
-    <button><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#stranger’s inhabitants'></button>
-    <input type=button onclick=AddTagSelector(this.value) n='stranger’s inhabitants#travelers'value=#prisoner>
+</p><p>
+    <button class=dlc><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#stranger’s inhabitants'></button>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='stranger’s inhabitants#travelers'value=#prisoner>
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD⚠️Technology & Culture-->
@@ -382,14 +446,14 @@
     <input type=button onclick=AddTagSelector(this.value) n='nomai technology'value='#gravity cannon'>
     <br>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#nomai culture'></button>
-</p><p class=dlc>
-    <button><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#stranger technology'></button>
-    <input type=button onclick=AddTagSelector(this.value) n='stranger technology'value='#vision torch'>
-    <input type=button onclick=AddTagSelector(this.value) n='stranger technology#space stations/satellites'value='#signal blocker'>
-    <input type=button onclick=AddTagSelector(this.value) n='stranger technology#strangers’ culture'value='#slide reel'>
-    <input type=button onclick=AddTagSelector(this.value) n='stranger technology'value='#solar sails'>
+</p><p>
+    <button class=dlc><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#stranger technology'></button>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='stranger technology'value='#vision torch'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='stranger technology#space stations/satellites'value='#signal blocker'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='stranger technology#strangers’ culture'value='#slide reel'>
+    <input type=button onclick=AddTagSelector(this.value) class=dlc n='stranger technology'value='#solar sails'>
     <br>
-    <button><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#strangers’ culture'></button>
+    <button class=dlc><m class=hasimg style=background-image:url(../ast/svg/ico_STG.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#strangers’ culture'></button>
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD⚠️Worldbuilding-->
@@ -399,6 +463,9 @@
 </p><p>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#physics></button>
     <input type=button onclick=AddTagSelector(this.value) n=physics value='#quantum mechanics'>
+    <input type=button onclick=AddTagSelector(this.value) n='quantum mechanics'value='#rule of quantum entanglement'>
+    <input type=button onclick=AddTagSelector(this.value) n='quantum mechanics'value='#rule of quantum imaging'>
+    <input type=button onclick=AddTagSelector(this.value) n='quantum mechanics'value='#rule of the sixth location'>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) n=physics value='#black/white hole physics'></button>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) n=physics value='#gravity manipulation'></button>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) n=physics value='#time travel'></button>
@@ -412,6 +479,7 @@
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#natural phenomena'></button>
     <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#interloper'value='#ghost matter'>
     <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#gravity manipulation#brittle hollow'value='#gravity crystal'>
+    <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#gravity manipulation#brittle hollow'value='#brittle hollow’s black hole'>
     <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#timber hearth'value='#timber hearth geysers'>
     <input type=button onclick=AddTagSelector(this.value) n='natural phenomena#hourglass twins'value='#hourglass twins sand column'>
 </p><p>
@@ -425,6 +493,7 @@
     <button><m></m><input type=button onclick=AddTagSelector(this.value) n=wildlife value='#wildlife (dark bramble)'></button>
     <input type=button onclick=AddTagSelector(this.value) n='wildlife (dark bramble)'value=#anglerfish>
     <input type=button onclick=AddTagSelector(this.value) n='wildlife (dark bramble)#wildlife (giant’s deep)'value=#jellyfish>
+    <input type=button onclick=AddTagSelector(this.value) n='wildlife (dark bramble)'value='#dark bramble (plant)'>
 </p></div>
 <!--@EFOLD-->
 <!--@SFOLD☑️Lore Card Types & Sources-->
@@ -435,6 +504,7 @@
     <input type=button onclick=AddTagSelector(this.value) value=#retconned style='outline:3px solid rgb(var(--redd))'>
     <input type=button onclick=AddTagSelector(this.value) value='#general data'>
 </p><p>
+    <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value=#datamined>
     <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value='#concept art'>
     <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value='#text adventure'>
     <input type=button onclick=AddTagSelector(this.value) n='@unused/concept art#@alternate sources'value=#alpha>
@@ -447,35 +517,10 @@
     <input type=button onclick=AddTagSelector(this.value) n='@alternate sources'value='#lost in cult design works'>
 </p></div>
 <!--@EFOLD-->
-<!--@SFOLD✔️Search Bar-->
-</div></details><div style=margin-top:1em><details open id=tutoactivetags style='border:5px solid rgb(var(--goldd));background:rgba(var(--goldd),.2)'><summary><h2 style=color:rgb(var(--goldl))>Your search includes the following tags:</h2></summary>
-<canvas id=cvs_active style=width:99%;height:42vh;background:url(../ast/img/shiplog_bg.png)center;border-radius:2em;display:block;margin:auto></canvas><p class=source style=padding-right:2em;padding-bottom:1em;margin-top:-2em><a href=https://github.com/w99910/d3canvas-networkgraph/tree/master target=_blank class=blue>Adapted from w99910’s project</a></p></details></div>
-<div id=searchbar><div><div id=activetags></div>
-<input id=srch_opcls type=button value='Open/Close All'onclick=opencloseall()>
-<input id=srch_reset type=button value=Reset onclick=ResetTagSelector()>
-<input id=srch_dlc type=button onclick=srch_dlc()>
-<input id=srch_mode type=button onclick=FocusMode()>
-<input id=srch_start type=button onclick=SwapLogic()>
-</div><div id=savepoint><p>
-<input type=button onclick=CopySearchState() value="Copy current tag list">
-<input id=pastebin type=text placeholder="Paste tag list">
-<input type=button onclick="LoadSearchState(document.getElementById('pastebin').value)"value="Submit new tag list">
-</p><div id=copybin></div></div></div>
-<div align=center style=margin:auto;position:relative>
-    <input id=findsumrinput onkeyup="FindEle(this.id,'it','summary')"placeholder='Search Lore Cards (Summary & Tags)'style=width:44%;min-width:500px;display:inline-block;margin-right:5px>
-    <input id=findcardinput onkeyup="FindEle(this.id,'it')"placeholder='Search Lore Cards (Whole content)'style=width:44%;min-width:500px;display:inline-block;margin-left:5px>
-    <div class=infoa style=display:inline-block;margin-left:.2em><img src=../ast/svg/hud_m2e.svg style=height:1em>
-        <div class=infob style=right:0;left:unset>
-            <p style=margin-top:0>Here is a concrete example. The following request will return all cards which mention by name the&#8195;<smol class=goldd>Ash Twin Project</smol>&#8195;<b class=greenl>OR</b>&#8195; <span class=indigol>simultaneously&#8195;<smol>Ember Twin</smol>&#8195;<b>AND</b>&#8195;the&#8195;<smol>supernova</smol></span>:</p>
-            <pre><span class=goldd>ash.twin.project</span><span class=greenl>,</span><span class=indigol>ember.twin supernova</span></pre>
-            <p>The search is case insensitive. For multi-word fragments, you can either use periods (.) or underscores (_).</p>
-        </div>
-    </div>
-</div><div id=filterlist>
+</div></details><div id=filterlist>
 <!--@EFOLD-->
-<!--@EFOLD-->
-<!--@SFOLD❌GENERAL DATA LORE CARDS — Some are still WIPs to go back to (e.g. more info/sources can be added to them)-->
-<!--@SFOLD⚠️📈Sun-->
+<!--@SFOLD❌LORE: GENERAL DATA LORE CARDS-->
+<!--@SFOLD⚠️📈Sun (DATAMINING VARIABLE NAMES?)-->
 <it id=datasun class=tl style=position:relative><img src=../ast/ico/astr_S.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Sun</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:22%>Surface Radius</th><td>2000&#8239;m <smol>(Default)</smol><br>4000&#8239;m <smol>(End Times)</smol></td></tr>
     <tr><th>Atmosphere Radius</th><td>3000&#8239;m <smol>(Default)</smol><br>6000&#8239;m <smol>(End Times)</smol></td></tr>
@@ -483,23 +528,14 @@
     <tr><th>Surface Gravity</th><td><b>Absolute:</b> <smol>(Hypothetical for 2&#8239;km radius)</smol><br>100&#8239;m/s<sup>2</sup>&#8195;8.3&#8239;x</td></tr>
 </table><p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r<sup>2</sup>, while all other astral bodies’ are measured with a factor of 1/r instead.</p>
 <p style=color:rgb(var(--redl))>TBA: Add a sun radius calculator? (input a given time within the time loop, get the sun’s radius at that time; similar form to the <a href="javascript:getcard('datasupernova')">supernova radius calculator</a>) I’ll do it if someone can give me the exact equation.</p>
-<!-- <h2>Scripted Events</h2>
-<table class=spmono><tr><th>Time</th><th>Event</th></tr>
-    <tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-    <tr><td>10:00</td><td>The sun starts to expand.</td></tr>
-    <tr><td>20:35</td><td>The track “End Times” starts playing.</td></tr>
-    <tr><td>21:00</td><td>The sun stops expanding.</td></tr>
-    <tr><td>22:00</td><td>The sun starts collapsing on itself.</td></tr>
-    <tr><td>22:10</td><td>The sun starts to explode.</td></tr>
-</table> -->
 <h2>Expansion to Red Giant</h2>
 <p>The sun’s color gradually changes from the very start of the loop, and its radius progressively grows starting from a certain point in the loop.</p>
-<p>The visual observation of a recording of the map locked on to the sun spanning over a full loop showed that the sun’s size <b><i>seems</i></b> static until 10:30, then starts growing in size linearly at a rate of about 3.3&#8239;m/s, and reaches its final size at 20:35, just as the track “End Times” starts playing.</p><p>However, datamining will give a more nuanced evolution of the sun: instead of being fully linear, the sun’s expansion uses a <a href=https://en.m.wikipedia.org/wiki/Smoothstep>Smoothstep function</a> which makes it so that the sun’s radius actually starts expanding at <b>10:00</b> at a very slow rate (slow enough to almost not be visually detectable), and to stop expanding at <b>21:00</b> after the expansion rate slowed down drastically.</p>
+<p>The visual observation of a recording of the map locked on to the sun spanning over a full loop showed that the sun’s size <b><i>seems</i></b> static until 10:30, then starts growing in size linearly at a rate of about 3.3&#8239;m/s, and reaches its final size at 20:35, just as the track “End Times” starts playing.</p><p>However, datamining will give a more nuanced evolution of the sun: instead of being fully linear, the sun’s expansion uses a <a href=https://en.m.wikipedia.org/wiki/Smoothstep target=_blank class=orng>Smoothstep function</a> which makes it so that the sun’s radius actually starts expanding at <b>10:00</b> at a very slow rate (slow enough to almost not be visually detectable), and to stop expanding at <b>21:00</b> after the expansion rate slowed down drastically.</p>
 <h2>Collapse</h2><p>The sun collapses in the span of 10&#8239;s, seeing its radius decrease from 4000&#8239;m to 200&#8239;m.</p>
 <p style=color:rgb(var(--redl))><i>TBA: Does the sun collapse linearly at a constant speed of 380&#8239;m/s?</i></p>
 <a href="javascript:getcard('datasupernova')"><h2>General Data: Supernova</h2></a></details><t>#sun #in-game observations #general data #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️📈Supernova-->
+<!--@SFOLD☑️📈Supernova (DATAMINING VARIABLE NAMES?)-->
 <it id=datasupernova class=tl style=position:relative><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em><img src=../ast/ico/Steam_Lv5_Supernova.png style=height:60px;position:absolute;left:0;top:0>General Data: <b>Supernova</b></summary>
 <a href="javascript:getcard('datasun')"><h2>General Data: The Sun</h2></a>
 <p><b>Of note:</b> The time loop ends before the supernova can reach its full size. As&#160;such, death can be avoided within the confines of the time loop by staying as close to about 25.3&#8239;km or more from the sun: for example, staying in orbit alongside the deep space satellite will not result in a death by supernova unless the advanced warp core has been removed from the Ash Twin Project.</p><h2>Supernova Radius calculator</h2><p class=calc>
@@ -535,7 +571,7 @@
 <h2>After the Supernova</h2><p>The supernova’s aftermath can only be witnessed if the Ash Twin Project is disabled, as the end of its expansion and its eventual extinction only occur past the limits of the time loop.</p><p>Even if the supernova seemingly disappears after a while, going back towards the solar system is still lethal, as the supernova’s hitbox remains active in a radius around the solar system of up to <b>50&#8239;km</b> <span class=source>(<a href='https://www.youtube.com/watch?v=rss6yp2UaXM'target=_blank class=orng>Greg&#160;Boing</a>)</span>.</p>
 </details><t>#supernova #sun #in-game observations #general data #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️📈Sun Station-->
+<!--@SFOLD☑️📈Sun Station (DATAMINING VARIABLE NAMES?)-->
 <it id=dataSS class=tl style=position:relative><img src=../ast/ico/astr_SS.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Sun Station</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:25%>Mass</th><td style=position:relative>3.00&#8239;×&#8239;10<sup>5</sup></td></tr>
     <tr><th>Surface Gravity<br><smol>(gravity panels)</smol></th><td><b>Absolute:</b><br>5&#8239;m/s<sup>2</sup>&#8195;0.417&#8239;x<br><b>Perceived:</b><br>0.2–0.4&#8239;x&#8195;<smol>(parallel to the sun)</smol><br>0.7–0.8&#8239;x&#8195;<smol>(perpendicular to the sun)</smol></td></tr>
@@ -557,7 +593,7 @@
 <p><b>Of note:</b> The warp windows actually open when the warp tower aligns with the <i>sun</i>, rather than with the station (Video evidence by Name showed not only that the warp window did not open when the sun station was aligned with the tower, but that it did instead a second later when the tower aligned with the center of the sun).</p>
 </details><t>#sun station #in-game observations #general data #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Ember Twin-->
+<!--@SFOLD⚠️📈Ember Twin (DATAMINING VARIABLE NAMES?)-->
 <it id=dataCT class=tl style=position:relative><img src=../ast/ico/astr_CT.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ember Twin</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:22%>Surface Radius</th><td>15 &rarr; 155&#8239;m&#8195;<smol style=line-height:.6em>(Sand)</smol><br>220&#8239;m&#8195;<smol style=line-height:.6em>(Highest Structure)</smol><br>199&#8239;m&#8195;<smol style=line-height:.6em>(Highest Terrain)</smol><br>~&#8239;150&#8239;m&#8195;<smol style=line-height:.6em>(Average Terrain)</smol><br>23&#8239;m&#8195;<smol style=line-height:.6em>(Lowest Cave)</smol></td></tr>
     <tr><th>Atmosphere Radius</th><td>250&#8239;m</td></tr>
@@ -573,7 +609,7 @@
     <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
 </table></details><t>#ember twin #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Ash Twin-->
+<!--@SFOLD⚠️📈Ash Twin (DATAMINING VARIABLE NAMES?)-->
 <it id=dataTT class=tl style=position:relative><img src=../ast/ico/astr_TT.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Ash Twin</b></summary><h2>Main Properties</h2><table>
     <tr><th style=width:22%>Surface Radius</th><td>165 &rarr; 38&#8239;m&#8195;<smol style=line-height:.6em>(Sand)</smol><br>
     172&#8239;m&#8195;<smol style=line-height:.6em>(Solar Tower Peak)</smol><br>
@@ -593,7 +629,7 @@
     <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
 </table></details><t>#ash twin #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Timber Hearth-->
+<!--@SFOLD⚠️📈Timber Hearth (DATAMINING VARIABLE NAMES?)-->
 <it id=dataTH class=tl style=position:relative><img src=../ast/ico/astr_TH.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Timber Hearth</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
 335&#8239;m&#8195;<smol style=line-height:.6em>(Highest Mountain)</smol><br>
@@ -615,7 +651,7 @@
 </table><a href="javascript:getcard('dataTHDayNight')"><h2>Timber Hearth Day/Night Cycle</h2></a>
 </details><t>#timber hearth #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Attlerock (NEED TO SPLIT)-->
+<!--@SFOLD⚠️📈Attlerock (DATAMINING VARIABLE NAMES?)-->
 <it id=dataTHM class=tl style=position:relative><img src=../ast/ico/astr_THM.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: The <b>Attlerock</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
     85&#8239;m&#8195;<smol style=line-height:.6em>(Highest Ridge)</smol><br>
@@ -633,21 +669,10 @@
 </table>
 <p><b>Of note:</b> The sun’s and Attlerock’s gravities decay realistically with a distance factor of 1/r<sup>2</sup>, while all other astral bodies’ are measured with a factor of 1/r instead. This explains why the Attlerock’s mass is actually higher than most other astral bodies’, including Timber Hearth’s.</p>
 <p>The Attlerock is tidally locked and in synchronous rotation around Timber Hearth. It passes overhead at the same position in the Hearthian sky every <b>123.6&#8239;s</b>.</p>
-<h2>Timber Hearth Solar Eclipses</h2>
-<p>The Attlerock passes exactly between the sun and Timber Hearth every <b>176&#160;&plusmn;&#160;1.3&#8239;s</b>, thus causing a solar eclipse somewhere on Timber Hearth. There are eight eclipses during the time loop:</p>
-<table class=spmono>
-<tr><th>Time</th><th>Position of the sun relative to the village’s sky<br>(0° = midnight, 180° = noon)</th></tr>
-<tr><td>00:43</td><td>~40°</td></tr>
-<tr><td>03:41</td><td>~190°</td></tr>
-<tr><td>06:36</td><td>~345°</td></tr>
-<tr><td>09:29</td><td>~135°</td></tr>
-<tr><td>12:26</td><td>~290°</td></tr>
-<tr><td>15:22</td><td>~80°</td></tr>
-<tr><td>18:17</td><td>~230°</td></tr>
-<tr><td>21:13</td><td>~25°</td></tr>
-</table></details><t>#attlerock #in-game observations #general data #time loop event</t></it>
+<a href="javascript:getcard('THeclipses')"><h2>Timber Hearth Solar Eclipses</h2></a>
+</table></details><t>#attlerock #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Sky Shutter-->
+<!--@SFOLD⚠️📈Sky Shutter (DATAMINING VARIABLE NAMES?)-->
 <it id=dataTHS class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Sky Shutter</b></summary>
 <p>Sky Shutter is the Hearthian satellite linked to the exhibit “Postcards From Orbit.” It passes overhead in the Hearthian sky every <b>42.9&#8239;&plusmn;&#8239;0.036&#8239;s</b>.</p>
 <h2>Main Properties</h2><table>
@@ -658,7 +683,7 @@
 <tr><th>Revolution Velocity</th><td>222.6&#8239;m/s</td></tr>
 </table></details><t>#sky shutter #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Brittle Hollow-->
+<!--@SFOLD⚠️📈Brittle Hollow (DATAMINING VARIABLE NAMES?)-->
 <it id=dataBH class=tl style=position:relative><img src=../ast/ico/astr_BH.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Brittle Hollow</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
     350–256&#8239;m&#8195;<smol style=line-height:.6em>(Surface Terrain)</smol><br>
@@ -679,7 +704,7 @@
 <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
 </table></details><t>#brittle hollow #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Hollow’s Lantern-->
+<!--@SFOLD⚠️📈Hollow’s Lantern (DATAMINING VARIABLE NAMES?)-->
 <it id=dataBHM class=tl style=position:relative><img src=../ast/ico/astr_BHM.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Hollow’s Lantern</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
     100.62 &rarr; 85.31&#8239;m&#8195;<smol style=line-height:.6em>(Lava)</smol><br>
@@ -700,7 +725,7 @@
 <tr><th>Day Length</th><td style=color:rgb(var(--redl))>??&#8239;s</td></tr>
 </table></details><t>#hollow’s lantern #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️📈Giant’s Deep-->
+<!--@SFOLD☑️📈Giant’s Deep (DATAMINING VARIABLE NAMES?)-->
 <it id=dataGD class=tl style=position:relative><img src=../ast/ico/astr_GD.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Giant’s Deep</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
     760&#8239;m&#8195;<smol style=line-height:.6em>(Tower Peak)</smol><br>
@@ -720,7 +745,7 @@
 </table><p>Giant’s Deep does not rotate.</p>
 </details><t>#giant’s deep #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Orbital Probe Cannon-->
+<!--@SFOLD⚠️📈Orbital Probe Cannon (DATAMINING VARIABLE NAMES?)-->
 <it id=dataOPC class=tl style=position:relative><img src=../ast/ico/astr_OPC.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Orbital Probe Cannon</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Size</th><td>
     270&#8239;×&#8239;240&#8239;×&#8239;394&#8239;m&#8195;<smol style=line-height:.6em>(Full Size)</smol><br>
@@ -735,7 +760,7 @@
 <tr><th>Revolution Velocity</th><td>280.4&#8239;m/s</td></tr>
 </table></details><t>#orbital probe cannon #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️📈Dark Bramble-->
+<!--@SFOLD☑️📈Dark Bramble (DATAMINING VARIABLE NAMES?)-->
 <it id=dataDB class=tl style=position:relative><img src=../ast/ico/astr_DB.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Dark Bramble</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
     955–480&#8239;m&#8195;<smol style=line-height:.6em>(Ice Surfaces)</smol><br>
@@ -752,7 +777,7 @@
 </table><p>Dark Bramble does not rotate.</p>
 </details><t>#dark bramble #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈White Hole-->
+<!--@SFOLD⚠️📈White Hole (DATAMINING VARIABLE NAMES?)-->
 <it id=dataWH class=tl style=position:relative><img src=../ast/ico/astr_WH.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>40&#8239;m</td></tr>
 <tr><th>Mass</th><td>999.9999</sup></td></tr>
@@ -761,7 +786,7 @@
 </table><p>The White Hole is static, located at a distance of 23&#8239;km away from the sun.</p>
 </details><t>#white hole #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️📈White Hole Station-->
+<!--@SFOLD☑️📈White Hole Station (DATAMINING VARIABLE NAMES?)-->
 <it id=dataWHS class=tl style=position:relative><img src=../ast/ico/astr_WHS.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>White Hole Station</b></summary><h2>Main Properties</h2><table><tr><th style=width:22%>Surface Radius</th><td>
     53&#8239;m&#8195;<smol style=line-height:.6em>(Ice Radius)</smol><br>
     39&#8239;m&#8195;<smol style=line-height:.6em>(Ring Radius)</smol><br>
@@ -774,7 +799,7 @@
 <tr><th>Rotation Velocity</th><td>0.18&#8239;rad/s</td></tr>
 </table><p>The White Hole Station is static, aligned between the White Hole and the sun at a distance of about <b>22.5&#8239;km</b> from the sun and about <b>462&#8239;m</b> away from the white hole.</p></details><t>#white hole station #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Interloper (NEED TO SPLIT)-->
+<!--@SFOLD❌📈Interloper (NEED TO SPLIT) (DATAMINING VARIABLE NAMES?)-->
 <it id=dataC class=tl style=position:relative><img src=../ast/ico/astr_C.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>The Interloper</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>
     218&#8239;m&#8195;<smol style=line-height:.6em>(Highest Tail Spike)</smol><br>
@@ -793,14 +818,7 @@
 <tr><th>Orbit Period</th><td>478.95&#8239;s</td></tr>
 </table>
 <p>The Interloper is tidally locked to the sun. When it reaches its aphelion or perihelion, the Interloper’s center of mass is aligned with those of the sun and the White Hole. The Interloper accelerates as it orbits closer to the sun, and decelerates as it leaves the perihelion.</p>
-<h2>Scripted Events</h2><table class=spmono><tr><th>Time</th><th>Event</th></tr>
-<tr style=background:rgb(var(--midd));opacity:.5><td>00:00</td><td>Pressing the button “Wake Up”</td></tr>
-<tr><td>03:58</td><td>Perihelion</td></tr>
-<tr><td>07:58</td><td>Aphelion</td></tr>
-<tr><td>11:58</td><td>Perihelion</td></tr>
-<tr><td>15:58</td><td>Aphelion</td></tr>
-<tr><td>19:48</td><td>The Interloper is engulfed by the sun.</td></tr>
-</table><p>The Interloper has an <b>orbital period of 8&#8239;min</b> and an <b>eccentricity of 0.82</b>:</p>
+<h2>Orbit Details</h2><p>The Interloper has an <b>orbital period of 8&#8239;min</b> and an <b>eccentricity of 0.82</b>:</p>
 <pre>Eccentricity: e
 Perihelion: P = a(1 - e)
 Aphelion: A = a(1 + e)
@@ -815,8 +833,8 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <p>During the first loop of a new expedition, the sun does not expand and there is no time limit until the statue pairing occurs. In order to avoid a collision between the Interloper and Timber Hearth, it is hardcoded for the Interloper to automatically disappear at the <b>20:00</b> mark.</p>
 </details><t>#interloper #in-game observations #general data #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️🦉📈Deep Space Satellite-->
-<it id=dataDSS class='tl dlc'><details><summary style=font-size:30px;font-weight:600>General Data: <b>Deep Space Satellite</b></summary><h2>Main Properties</h2><table>
+<!--@SFOLD☑️📈Deep Space Satellite (DATAMINING VARIABLE NAMES?)-->
+<it id=dataDSS class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Deep Space Satellite</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Size</th><td>6.5&#8239;×&#8239;4.4&#8239;×&#8239;2.9&#8239;m</td></tr>
 <tr><th>Mass</th><td>0.5</td></tr>
 <tr><th>Orbit Radius</th><td>26000&#8239;m</td></tr>
@@ -850,7 +868,7 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <img src=../ast-owdoc/svg/olspacey.svg><p style=margin-top:0;text-align:center;font-size:.7em;opacity:.7><code>&theta; = 0.2733&#8239;×&#8239;t –15.086&Tab;|&Tab;R<sup>2</sup> = 1</code></p><p>More accurate values were found by Trifid through datamining considering the initial position and velocity of the satellite. These are the values used in the interactive calculator and shared in the table above.</p>
 </details><t>#deep space satellite #in-game observations #general data #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️🦉📈Stranger (NEED TO SPLIT)-->
+<!--@SFOLD⚠️📈🦉Stranger (DATAMINING VARIABLE NAMES?)-->
 <it id=dataIP class='tl dlc'style=position:relative><img src=../ast/ico/astr_IP.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>The Stranger</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:27%>Size</th><td style=color:rgb(var(--redl))>??&#8239;m</td></tr>
 <tr><th>Gravitational Radius</th><td>330–200&#8239;m</td></tr>
@@ -867,11 +885,11 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 </p><p id=calcout_stranger>At&#8194;<code><b>00:00</b></code>&#8194;into the time loop, the Stranger is located at a distance of&#8194;<code><b>11894.537&#8239;m</b></code>&#8194;from the sun, and is moving away at a velocity of&#8194;<code><b>0&#8239;m/s</b></code>.</p>
 <h2>Supernova Escape</h2>
 <p>In order to flee the supernova, the Stranger starts to leave its initial position at <b>06:45</b> into the loop and moves with a constant acceleration of <b>0.2&#8239;m/s<sup>2</sup></b> along its 40°-above-the-ecliptic radial axis. This means that its velocity increases linearly by <b>1&#8239;m/s every 5&#8239;s</b>.</p><img src=../ast-owdoc/svg/stranger.svg>
-<p style=margin-top:0>If&#8194;<code>x</code>&#8194;(in meters) is the Stranger’s distance from the sun and&#8194;<code>v</code>&#8194;its velocity at a given time&#8194;<code>t</code>&#8194;(in seconds), provided&#8194;<code>t</code>&#8194;is superior to 405&#8239;s (06:45):</p>
+<p>If&#8194;<code>x</code>&#8194;(in meters) is the Stranger’s distance from the sun and&#8194;<code>v</code>&#8194;its velocity at a given time&#8194;<code>t</code>&#8194;(in seconds), provided&#8194;<code>t</code>&#8194;is superior to 405&#8239;s (06:45):</p>
 <pre>x(t) = 11894.5368659 + 0.1&#8239;×&#8239;(t-405)<sup>2</sup><br>v(t) = 0.2&#8239;×&#8239;(t-405)</pre>
 </details><t>#the stranger #time loop event #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Quantum Moon (NEED TO SPLIT)-->
+<!--@SFOLD⚠️📈Quantum Moon (DATAMINING VARIABLE NAMES?)-->
 <it id=dataQM class=tl style=position:relative><img src=../ast/ico/astr_QM.png style=height:60px;position:absolute;left:0;top:0><details><summary style=font-size:30px;font-weight:600;text-indent:1.2em>General Data: <b>Quantum Moon</b></summary><h2>Main Properties</h2>
 <table><tr><th style=width:22%>Surface Radius</th><td>70&#8239;m</td></tr>
 <tr><th>Atmosphere Radius</th><td>100–110&#8239;m</td></tr>
@@ -888,32 +906,22 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 </table>
 <p class=smol><b><sup>1</sup></b> The Quantum Moon will never orbit around Ash Twin, or even around the Hourglass Twins’ barycenter; instead, the Quantum Moon orbits Ember Twin specifically.</p>
 <p class=smol><b><sup>2</sup></b> In-game, the Quantum Moon’s Sixth Location is actually set on an orbit around the sun itself with a radius of about 30km, and made (almost) invisible from outside.</p>
-<h2>Quantum Moon Orbits</h2>
-<p>In-game, whenever the possibilities are collapsed for the Quantum Moon, the following parameters are determined:</p><ul>
-<li>A center for the orbit is chosen among the following: Ember Twin<sup>1</sup>, Timber Hearth, Brittle Hollow, Giant’s Deep, Dark Bramble, or the Sun<sup>2</sup>. The orbit radius is a fixed number for each astral body.<ul><li><b>Of note:</b> If any of the six states has not been chosen over ten times in a row, then it will be forcibly chosen next (unless it’s the Hourglass Twins state and the time loop is nearing its end, see below).</li></ul></li>
-<li>The Quantum Moon is placed at a random position, provided it is at the correct distance from the chosen astral body. This means that two parameters are randomized: the angle between the solar system’s ecliptic plane and the Quantum Moon’s orbit plane (this angle can be any number between 0° and 360°), <i>and</i> the location of the Quantum Moon on this chosen orbit plane (any possible point on the defined circle).</li>
-<li>Finally, the direction in which the Quantum Moon orbits (clockwise or counterclockwise) is randomized as well.</li>
-</ul><p class=source>Observations confirmed by @ixrec through datamining</p>
-<h2>Quantum Moon Rotation</h2>
-<p>If the cloud layer is disabled in-game, it can be observed that the reason why you always land on the Quantum Moon’s south pole is because it will constantly reorient itself during your flight so that your ship will always face the south pole.</p>
-<h2>Hourglass Twins’ Early Demise</h2>
-<p>Because of the large orbit radius in the case of the Hourglass Twins’ version of the Quantum Moon, it is possible to die engulfed by the expanding sun <i>before</i> the supernova occurs. Starting from <b>15:00</b> in the loop (7&#8239;min before the supernova), the Quantum Moon will no longer be able to appear around the Twins unless you are already standing on it.</p>
-</details><t>#quantum moon #time loop event #in-game observations #general data</t></it>
+<p class=red>TBA: The Quantum Moon’s orbital velocity appears constant, but no value has been calculated so far.</p>
+</details><t>#quantum moon #in-game observations #general data</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈Eye-->
+<!--@SFOLD☑️📈Eye (DATAMINING MENTIONED)-->
 <it id=dataEye class=tl><details><summary style=font-size:30px;font-weight:600>General Data: <b>Eye of the universe</b></summary><h2>Main Properties</h2><table>
 <tr><th style=width:22%>Surface Radius</th><td>201&#8239;&plusmn;&#8239;10&#8239;m <span class=source><a href=https://docs.google.com/spreadsheets/d/1MbGYmH20m5NLCEsCe-v_kkn3oldxVY67vj4bF5UJMko/ target=_blank class=in>(Source)</a></span></td></tr>
 <tr><th>Gravitational Radius</th><td>300&#8239;m</td></tr>
 <tr><th>Mass</th><td>9&#8239;×&#8239;10<sup>6</sup></td></tr>
 <tr><th>Surface Gravity</th><td>30&#8239;m/s<sup>2</sup>&#8195;2.5&#8239;x</td></tr>
-<tr><th>Orbit Radius</th><td>353593&#8239;m <span class=source>(by Trifid & Name)</span><br>Between 500 and 1000&#8239;km <smol>(Nomai estimation)</smol></td></tr>
-<!--Trifid, 2024/07/18: according to the sun object in the eye scene, the distance is exactly 1283160 m. which gives a period of 5 days, if its an orbit-->
-<tr><th>Orbit Period</th><td>18&#8239;h 20&#8239;min 55&#8239;s<smol>(Hypothetically)</smol></td></tr>
-</table>
+<tr><th>Orbit Radius</th><td>353593&#8239;m <span class=source>(by Trifid & Name)</span><br>Between 500 and 1000&#8239;km <smol>(Nomai estimation)</smol>
+<blockquote style='padding:.5rem 1rem'>According to the sun object in the eye scene, the distance is exactly 1283160&#8239;m, which gives a period of 5 days if it’s an orbit. — Trifid (2024/07/18)</blockquote></td></tr>
+<tr><th>Orbit Period</th><td>18&#8239;h 20&#8239;min 55&#8239;s <smol>(Hypothetically)</smol></td></tr></table>
 <p>Trifid and Name calculated the Eye’s orbital radius via measuring the angular size of the sun with pixel measurements.</p>
 <p>Brittle Hollow’s Southern Observatory provides a projection of the solar system superimposed with the minimal and maximal radii at which the Nomai expected the Eye to orbit around the sun. According to this projection’s 3D model, the minimal and maximal radii are respectively 500km and 1000km (while comparing with the orbit radius of the Hourglass Twins).</p>
 <p>The Quantum Moon’s orbit around the Eye has a radius of about <b>6&#8239;km</b>.</p>
-</details><t>#time loop event #in-game observations #eye of the universe #general data</t></it>
+</details><t>#in-game observations #eye of the universe #general data</t></it>
 <!--@EFOLD-->
 <!--@SFOLD❌📈Warp Tower Alignments: Sun Station-->
 <it id=WWsun class=tl><details><summary>Warp Tower Alignments: Sun Station</summary>
@@ -931,7 +939,7 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <tr><td>10:28.6</td><td></td><td></td></tr>
 <tr><td>11:17.7</td><td></td><td></td></tr>
 </table><p>The sun station’s destruction prevents any warp windows after 11:30.</p><p>Due to the alignment being between the tower and the sun itself, the warp windows open once every <b>49.6&#8239;s</b>. The distance between Ash Twin and the sun also remains constant, therefore all windows remain open for <b style=color:rgb(var(--redl))>??&#8239;s</b>.</p>
-</details><t>#general data #sun station #sun station warp tower #time loop event</t></it>
+</details><t>#general data #in-game observations #sun station #sun station warp tower #time loop event</t></it>
 <!--@EFOLD-->
 <!--@SFOLD❌📈Warp Tower Alignments: Ember Twin & Ash Twin-->
 <it id=WWHT class=tl><details><summary>Warp Tower Alignments: Ember Twin & Ash Twin</summary>
@@ -947,7 +955,7 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 
 <!--Warp window every 145.6s-->
 
-</details><t>#general data #hourglass twins #ember twin warp tower #ash twin warp tower #time loop event</t></it>
+</details><t>#in-game observations #general data #hourglass twins #ember twin warp tower #ash twin warp tower #time loop event</t></it>
 <!--@EFOLD-->
 <!--@SFOLD❌📈Warp Tower Alignments: Timber Hearth-->
 <it id=WWTH class=tl><details><summary>Warp Tower Alignments: Timber Hearth</summary>
@@ -966,7 +974,7 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <tr><td>19:10.0</td><td></td><td></td></tr>
 <tr><td>20:08.8</td><td></td><td></td></tr>
 <tr><td>21:14.4</td><td></td><td></td></tr>
-</table></details><t>#timber hearth warp tower #general data #time loop event</t></it>
+</table></details><t>#in-game observations #timber hearth warp tower #general data #time loop event</t></it>
 <!--@EFOLD-->
 <!--@SFOLD❌📈Warp Tower Alignments: Brittle Hollow-->
 <it id=WWBH class=tl><details><summary>Warp Tower Alignments: Brittle Hollow</summary>
@@ -983,18 +991,59 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <tr><td>19.23.6</td><td></td><td></td></tr>
 <tr><td>20:41.6</td><td></td><td></td></tr>
 <tr><td>21:48.7</td><td></td><td></td></tr>
-</table></details><t>#brittle hollow warp tower #general data #time loop event</t></it>
+</table></details><t>#in-game observations #brittle hollow warp tower #general data #time loop event</t></it>
 <!--@EFOLD-->
 <!--@SFOLD❌📈Warp Tower Alignments: Giant’s Deep-->
 <it id=WWGD class=tl><details><summary>Warp Tower Alignments: Giant’s Deep</summary>
 <p>Red timings correspond to warp windows which cannot be used in-game due to Ash Twin’s sand level being too high to allow warping.</p>
 <table class=spmono><tr><th>Window opening</th><th>Stays open (s)</th><th>Notes</th></tr>
 
-</table></details><t>#giant’s deep warp tower #general data #time loop event</t></it>
+</table></details><t>#in-game observations #giant’s deep warp tower #general data #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD⚠️📈HEA VOCABULARY   MAY WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY!-->
+<!--@SFOLD☑️QM orbits (DATAMINING MENTIONED)-->
+<it id=QMorbits class=tl><details><summary>While the radius for each separate location of the Quantum Moon is constant, the moon’s orbital plane is randomized each time it is unobserved, along with the moon’s initial position and direction along this new path.</summary>
+<p class=smol><i>See the <a href="javascript:getcard('dataQM')">General Data lore card</a> for footnotes <sup>1</sup> and <sup>2</sup> in regards to the Quantum Moon’s orbiting Ember Twin or the Sun (sixth location).</i></p>
+<p>In-game, whenever the possibilities are collapsed for the Quantum Moon, the following parameters are determined:</p><ul>
+<li>A center for the orbit is chosen among the following: Ember Twin<sup>1</sup>, Timber Hearth, Brittle Hollow, Giant’s Deep, Dark Bramble, or the Sun<sup>2</sup>. The orbit radius is a fixed number for each astral body.<ul><li><b>Of note:</b> If any of the six states has not been chosen over ten times in a row, then it will be forcibly chosen next (unless <a href="javascript:getcard('QMEarlyDemise')">it’s the Hourglass Twins state and the time loop is nearing its end</a>).</li></ul></li>
+<li>The Quantum Moon is placed at a random position, provided it is at the correct distance from the chosen astral body. This means that two parameters are randomized:<ul>
+<li>The angle between the solar system’s ecliptic plane and the Quantum Moon’s orbit plane (this angle can be any number between 0° and 360°);</li>
+<li>The location of the Quantum Moon on this chosen orbit plane (any possible point on that circle).</li></ul></li>
+<li>Finally, the direction in which the Quantum Moon orbits (clockwise or counterclockwise) is randomized as well.</li>
+</ul><p class=source>Observations confirmed by @ixrec through datamining</p>
+</details><t>#quantum moon #in-game observations #datamined</t></it>
+<!--@EFOLD-->
+<!--@SFOLD☑️QM Early Demise (DATAMINING MENTIONED)-->
+<it id=QMEarlyDemise class=tl><details><summary>The Quantum Moon’s orbit around Ember Twin is wide enough that it may intersect with the expanding sun before the supernova occurs. Unless you are observing it, the Hourglass Twins’ state becomes inaccessible starting from <b>15:00</b> into the time loop.</summary><p>Because of the large orbit radius in the case of the Hourglass Twins’ version of the Quantum Moon, it is possible to die engulfed by the expanding sun <i>before</i> the supernova occurs. Starting from <b>15:00</b> in the loop (7&#8239;min before the supernova), the Quantum Moon will no longer be able to appear around the Twins unless you are already standing on it.</p></details><t>#quantum moon #time loop event #in-game observations #supernova #hourglass twins</t></it>
+<!--@EFOLD-->
+<!--@SFOLD⚠️QM’s fireflies (DATAMINING MENTIONED)-->
+<it id=QuantumFireflies class=tl><details><summary>Timber Hearth’s “fireflies” appear on the Quantum Moon’s Timber Hearth reflection. However, while those living on the planet tend to fly slowly and alone, the Quantum Moon’s versions fly in flickering swarms which change locations while unobserved.</summary>
+<p><i><b>Of note:</b> The glowing entities discussed in this lore card have no known official name. This web page refers to them as “fireflies” for convenience, but these creatures could theoretically be anything, perhaps not even bugs – or perhaps not even lifeforms at all.</i> <span class=red>TBA: Check whether the datamined file name for their 3D model may clarify this, albeit in a non-official manner?</span></p>
+<h2>Timber Hearth</h2><video class=stdln controls autoplay loop><source type=video/mp4 src=https://i.imgur.com/U2rK1K5.mp4></video>
+<h2>Quantum Moon</h2><video class=stdln controls autoplay loop><source type=video/mp4 src=https://i.imgur.com/ZNQ3LUa.mp4></video>
+<p class=source style=margin-top:.5em>Video footage and discovery made by @beefbuket <a href=https://imgur.com/a/yb8WD71 target=_blank class=orng>(Original Imgur Album)</a></p>
+<p>A Timber Hearth firefly will usually glow for about 15&#8239;s before dimming, while the Quantum Moon’s counterparts flicker in and out of view multiple times a second.</p>
+<p>The displacement of the entire swarm being connected to the player’s observation is a direct indication of quantum behavior. This makes it unclear whether the Quantum Moon’s fireflies are actually alive or not.</p>
+<hr><p>It may be too speculative to directly attribute the “glitchy” flickering of an individual firefly to a quantum phenomenon as well, though it is a possibility: it could be hypothesized that observation of one of these fireflies ceases whenever its light goes out, thus letting it change states and reappear elsewhere within the swarm once its light becomes visible again – <span class=infoa>despite technically remaining within the player’s field of vision all the while<span class=infob>Of note: This assertion contradicts the in-game fact that quantum objects will actually remain locked in place even if conscious observation is interrupted by an opaque obstruction (for example, the Quantum Moon will not change locations when it passes behind the astral body it orbits, so long as it is still <i>technically</i> within the player’s field of vision).<br>The question of whether this in-game behavior should be considered part of the in-universe inner workings of quantum physics, or an artifact of the videogame’s way of handling quantum objects, is so far up for debate.</span></span>.</p>
+</details><t>#quantum moon #wildlife (timber hearth) #in-game observations</t></it>
+<!--@EFOLD-->
+<!--@SFOLD☑️TH/THM/Sun eclipses-->
+<it id=THeclipses class=tl><details><summary>A solar eclipse on Timber Hearth occurs once every <b>176&#160;&plusmn;&#160;1.3&#8239;s</b>.</summary>
+<p>The Attlerock passes exactly between the sun and Timber Hearth every <b>176&#160;&plusmn;&#160;1.3&#8239;s</b>, causing a solar eclipse somewhere on Timber Hearth each time. There are eight eclipses during the time loop:</p>
+<table class=spmono>
+<tr><th>Time</th><th>Position of the sun relative to the village’s sky<br>(0° = midnight, 180° = noon)</th></tr>
+<tr><td>00:43</td><td>~40°</td></tr>
+<tr><td>03:41</td><td>~190°</td></tr>
+<tr><td>06:36</td><td>~345°</td></tr>
+<tr><td>09:29</td><td>~135°</td></tr>
+<tr><td>12:26</td><td>~290°</td></tr>
+<tr><td>15:22</td><td>~80°</td></tr>
+<tr><td>18:17</td><td>~230°</td></tr>
+<tr><td>21:13</td><td>~25°</td></tr>
+</table></details><t>#attlerock #in-game observations #general data #time loop event</t></it>
+<!--@EFOLD-->
+<!--@SFOLD❌📈HEA VOCABULARY   YOU WANT TO ADD IN A FEW OTHER WORDS OF VOCABULARY!-->
 <it id=HEAtimeunits><details><summary>Hearthians use ‘nights’ and ‘weeks’ as common units of time.</summary>
-<h2>Talking to Hornfels in the Observatory<br><smol style=font-size:.8em;font-family:revert>(First loop only, after interacting with the statue)</smol></h2>
+<h2>Talking to Hornfels in the Observatory<smol style=font-size:.8em;font-family:revert><br>(First loop only, after interacting with the statue)</smol></h2>
 <table><tr><th>Hornfels<span>Dialogue Branch: CuratorEyesOpen</span></th></tr><tr><td>…Even if I <i>have</i> been poring over it every night for weeks.</td></tr></table>
 <p>This does not indicate how long a night or week is.</p>
 <!--Hearthian vocabulary in general: units of time for this card, but also: antlers-->
@@ -1002,35 +1051,33 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <!--@EFOLD-->
 <!--@SFOLD☑️🟥Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds.-->
 <it id=DBcarnivorous class=ret><details><summary>❌ Dark Bramble used to be a carnivorous plant in early versions of Outer Wilds.</summary>
-<h2>Text Adventure Introduction Notes<span>File: SomeContextForTheThingYouJustDownloaded.txt</span></h2><blockquote>“I still think Dark Bramble being a carnivorous plant is a fun idea, even if the final version definitely works better overall.” — Alex Beachum</blockquote><p>This implies that Dark Bramble’s metabolism does not rely on carnivorous behavior in the final version of the game (regardless of whether it could have been shown or not in gameplay).</p>
-</details><t>#retconned #dark bramble</t></it>
+<h2>Text Adventure Introduction Notes<span>File: SomeContextForTheThingYouJustDownloaded.txt</span></h2><blockquote><p>“I still think Dark Bramble being a carnivorous plant is a fun idea, even if the final version definitely works better overall.” — Alex Beachum</p></blockquote><p>This implies that Dark Bramble’s metabolism does not rely on carnivorous behavior in the final version of the game (regardless of whether it could have been shown or not in gameplay).</p>
+</details><t>#retconned #dark bramble (plant)</t></it>
 <!--@EFOLD-->
 <!--@EFOLD-->
-<!--@SFOLD☑️Finished Lore Cards-->
-<!--@SFOLD☑️Warp tower alignment angles need to be within 5° of the astral body’s center.-->
-<it id=WarpTower5deg><details><summary>Warp windows activate when the tower aligns with the astral body’s center and can be triggered up to a misalignment of 5°.</summary>
+<!--@SFOLD☑️LORE: Finished Lore Cards-->
+<!--@SFOLD Warp tower alignments (multiple lore cards)-->
+<it id=WarpTower5deg><details><summary>Warp windows activate when the tower aligns with the astral body’s center and can be triggered up to a misalignment of 5° afterwards.</summary>
 <h2>Black Hole Forge Alignments</h2><table><tr><th><code>File: BH_Forge_AlignmentWindow</code></th></tr><tr><td>
 <div class=infoa><p class=nomai>POKE: We don’t need the alignment angle to be exact; it only needs to be within five degrees of the astral body’s center.</p><div class=infob><p>Reveals ship log fact <smol class=orng>BH_WARP_ALIGNMENT_MAP_X2</smol>:</p><p class=shiplog>Warp tower alignment angles are not exact. They only need to be within five degrees of the astral body’s center.</p></div></div>
 <div class=infoa><p class=nomai>POKE: Of note: This gives us a slightly longer warp window. I imagine this window will last roughly several seconds.</p><div class=infob><p>Reveals ship log fact <smol class=orng>BH_WARP_ALIGNMENT_MAP_X3</smol>:</p><p class=shiplog>This results in slightly longer warp windows that last roughly several seconds.</p></div></div>
 <div class=infoa><p class=nomai>POKE: As such, any Nomai stepping onto the warp platform during the active window will be immediately warped. We will need to be careful around the platform for the duration of the time it’s active to avoid accidental transportation.</p><div class=infob><p>Reveals ship log fact <smol class=orng>BH_WARP_ALIGNMENT_MAP_X4</smol>:</p><p class=shiplog>Anyone stepping onto the warp platform during the active window will be immediately warped.</p></div></div>
 </td></tr></table>
-<h2 class=tl>In-game Observations</h2>
+</details><t>#warp cores #warp towers #black hole forge</t></it>
+<it id=WarpWindowInconsistent class=tl><details><summary>Because of the <a href="javascript:getcard('WarpTower5deg')"style='text-shadow:0 0 1px black'>5° misalignment</a> rule, the duration of warp windows will be inconsistent for all astral bodies except the Sun and Hourglass Twins.</summary>
 <p>Just as stated by Poke, warp windows are designed to open when the planetary alignment occurs, with a 5° margin of error.</p>
 <p>It is only possible to <i>activate</i> the warp platform starting from the moment when <b>the warp platform aligns with the center of the astral body</b>, and up to the moment when <b>the angle reaches 5°</b>. This margin of error results in an <b>inconsistent warp window duration</b> for any astral body other than the sun or the Hourglass Twins (in which case the circular orbit gives periodicity in both the timing and duration of the warp windows), as the window duration depends on the distance between the warp platform and the astral body.</p>
-<h2 class=tl>Obstructing the Warp Platform</h2>
-<p>If the warp window is activated but there is an obstruction to prevent the object from actually warping (such as the sand level being too high), then the black hole will remain open for four seconds in total before vanishing, thus remaining open much longer than for the duration of a normal warp window.</p><p>This last observation has been observed multiple times with multiple warp windows in the sun, Brittle Hollow and Giant’s Deep towers, by manually adjusting the sand level so as to obstruct their warp platforms. In every warp window documented, the warp window behaves exactly the same way: <b>The&#160;black hole opens in 1&#8239;s, remains open for 2&#8239;s, then takes 1&#8239;s to close</b>.</p>
-</details><t>#warp cores #warp towers #in-game observations #black hole forge</t></it>
+</details><t>#warp towers #in-game observations</t></it>
+<it id=WarpTowerobstruct class=tl><details><summary>A warp platform can be partially obstructed while its warp window is open. In this case, the black hole will stay open for longer than it normally would, but no warping occurs.</summary><p>If the warp window is activated but there is an obstruction to prevent the object from actually warping (such as the sand level being too high), then the black hole will remain open for four seconds in total before vanishing, thus remaining open much longer than for the duration of a normal warp window.</p><p>This was observed with multiple warp windows in the Sun, Brittle Hollow and Giant’s Deep towers by manually adjusting the sand level using the <a href=https://outerwildsmods.com/mods/sandcontrol/ target=_blank class=orng>Sand Control</a> mod so as to obstruct their warp platforms. In every warp window documented, the warp window behaves exactly the same way: <b>The&#160;black hole opens in 1&#8239;s, remains open for 2&#8239;s, then takes 1&#8239;s to close</b>.</p>
+</details><t>#warp cores #warp towers #in-game observations</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Order in which each member of Outer Wilds Ventures joined-->
-<it id=OWVJoinOrder class=misc><details><summary>Order in which each member of Outer Wilds Ventures joined:</summary>
-<h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2>
-<p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p>
-<p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=437'target=_blank class=in>7:17</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote>
-<p><b>The Lore Explorer:</b> What order did the Outer Wilds Venturers join? I have guesses based off ship design but Im really Interested!</p>
-<p><b>Alex Beachum:</b> (via Kelsey our writer) Slate, Feldspar, Gossan, Esker, Hornfels → Chert → Riebeck → Gabbro</p>
-</blockquote></details><t>#alternate sources #the lore explorer videos #timeline #outer wilds ventures</t></it>
+<!--@SFOLD Order in which each member of Outer Wilds Ventures joined-->
+<it id=OWVJoinOrder class=misc><details><summary><b>Order in which each member of Outer Wilds Ventures joined:</b></summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=437'target=_blank class=in>7:17</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p>
+<blockquote><p><b>The Lore Explorer:</b> What order did the Outer Wilds Venturers join? I have guesses based off ship design but Im really Interested!</p><p><b>Alex Beachum:</b> (via Kelsey our writer) Slate, Feldspar, Gossan, Esker, Hornfels → Chert → Riebeck → Gabbro</p></blockquote>
+<ol><li>Slate, Feldspar, Gossan, Esker, Hornfels</li><li>Chert</li><li>Riebeck</li><li>Gabbro</li></ol>
+<p><b>Of note:</b> This is the order in which each member joined the space program; it does not confirm whether the order in which the travelers had their first launch is the same or not.</p></details><t>#alternate sources #the lore explorer videos #timeline #outer wilds ventures</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Anyone can pair with a Nomai statue at any moment of any loop after the Eye was found-->
+<!--@SFOLD Anyone can pair with a Nomai statue at any moment of any loop after the Eye was found-->
 <it id=StatuePairAfter1stLoop class=misc><details><summary>Provided it is not already paired with someone else, anyone can pair with a Nomai statue at any moment of any loop after the point when the Eye of the universe was found.</summary>
 <h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2>
 <p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p>
@@ -1040,7 +1087,7 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 </blockquote><p><b>Of note:</b> Alex Beachum mentions loop “9354” instead of “9,318,054” because this interview was led before Patch 1.0.7 — in which one of the narrative changes involved precisely increasing the loop number at which the Nomai probe found the Eye of the universe.<br>The Lore Explorer’s video came out on March 19, 2020; Patch 1.0.6 became available on March 23, and Patch 1.0.7 on June 29.</p>
 </details><t>#alternate sources #the lore explorer videos #nomai statue #ash twin project</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️🟥Protagonist already awake before loop-->
+<!--@SFOLD🟥Protagonist already awake before loop-->
 <it id=AlphaPlayerAwake class=ret><details><summary>❌ In the alphas, the protagonist was already awake before the start of the time loop.</summary>
 <h2>Rocket Scientist (Second Loop)<span>File: spaceprogram/rocketscientist/2ndLoop</span></h2><table><tr><th>Rocket Scientist</th></tr><tr><td>Whoa, hold it! How do you know the launch codes?</td></tr></table>
 <h3>Dialogue branch 1:</h3><table><tr><th>The Protagonist</th></tr><tr><td class=prtg>From the observatory, remember?</td></tr><tr><th>Rocket Scientist</th></tr><tr><td><p>Really? Oh, I didn’t see you leave… must have dozed off.</p></td></tr><tr><td><div class=infoa><p>Er, I mean I must have been busy calibrating the starboard thrusters! Yessiree, all systems check out.</p><p class=infob>The 2013 Alpha version used “Yessir” instead of “Yessiree.”</p></div></td></tr></table>
@@ -1049,13 +1096,13 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <p><b>Of note:</b> The 2013 Alpha version of the game did not use neutral pronouns for Hearthians.</p>
 </details><t>#retconned #protagonist #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Paired with statue on same loop as launch of probe 9,318,054-->
+<!--@SFOLD Paired with statue on loop 9,318,054 which found the Eye-->
 <it id=Loop9million><details><summary>The Protagonist and Gabbro are paired with their respective Nomai statues on the same loop as the launch of probe <b>9,318,054</b>, which finds the Eye of the universe.</summary><h2>Probe Tracking Module (Core of Giant’s Deep)</h2><table><tr><th><code>File: OPC_Sunken_AllLaunchesData</code></th></tr><tr><td>
 <p class=nomai>Retrieving previous launch data from <span class=lblue>Ash Twin</span>.</p>
-<div class=infoa><p class=nomai>Total number of probes launched: & lt;NbTimeloops&gt;</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X1</smol>:</p><p class=shiplog>The Orbital Probe Cannon has launched millions of probes.</p><p>(This fact would mention “thousands” of probes before Patch 1.0.7)</p></div></div>
+<div class=infoa><p class=nomai>Total number of probes launched: ＜NbTimeloops＞</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X1</smol>:</p><p class=shiplog>The Orbital Probe Cannon has launched millions of probes.</p><p>(This fact would mention “thousands” of probes before Patch 1.0.7)</p></div></div>
 <div class=infoa><p class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</p><div class=infob><p>Reveals ship log fact <smol class=orng>OPC_SUNKEN_MODULE_X2</smol>:</p><p class=shiplog>The 9,318,054th probe located a deep space anomaly matching all known criteria for the Eye of the universe.</p><p>(This fact would mention the “9,354th” probe before Patch 1.0.7)</p></div></div>
 </td></tr></table>
-<p>If the probe tracking module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>& lt;NbTimeloops&gt;</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
+<p>If the probe tracking module is reached on the same loop as the one during which the Protagonist gets paired with a statue, then <smol>＜NbTimeloops＞</smol> will display the number <orng>9,318,054</orng>, proving that the statue activated because this is the loop during which the probe found the Eye.</p><hr>
 <p>It is of note that the “current trajectory” shown by the in-game projection does not match the trajectory which presumably found the Eye of the universe: the Eye icon shown during the projection which displays all of the millions of launches of the probe will not be part of the projection for the current loop’s launch, and the orientation of the current loop’s trajectory is still random.</p>
 <p>Just like the fact that the first loop’s countdown to the supernova doesn’t start until the Protagonist gets paired with the museum’s statue, this gameplay feature is most likely not accurate to the in-universe lore.</p>
 <p><b>Of note:</b> Considering the way the game’s world is constructed, the Eye of the universe is not part of the same open world as the rest of the solar system: therefore, there is no direction in which the probe could be launched in-game that could lead to it, which is why its trajectory during the first loop of a new expedition is just as random as any other.</p>
@@ -1066,34 +1113,28 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <tr><th><code>Modified in Patch 1.0.7</code></th></tr>
 <tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe 9,318,054.</td></tr>
 <tr><th><code>Modified between Patches 1.0.8 and 1.1.10</code></th></tr>
-<tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe & lt;FirstLoop&gt;.</td></tr>
-</table><p>Up until Patch 1.0.7, less than ten thousands of probes had been launched instead of over nine million. Though the current version has “<smol>& lt;FirstLoop&gt;</smol>” in its code, the number seen in-game is still 9,318,054.</p>
+<tr><td class=nomai>Deep space anomaly matching all known criteria for the <span class=lblue>Eye of the universe</span> found by probe ＜FirstLoop＞.</td></tr>
+</table><p>Up until Patch 1.0.7, less than ten thousands of probes had been launched instead of over nine million. Though the current version has “<smol>＜FirstLoop＞</smol>” in its code, the number seen in-game is still 9,318,054.</p>
 </details><t>#ash twin project #probe tracking module #nomai statue #protagonist #gabbro #time loop event</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️TH day/night cycle-->
+<!--@SFOLD TH day/night cycle-->
 <it id=dataTHDayNight class=tl><details><summary>A full day/night cycle on Timber Hearth lasts <b>6&#8239;min&#160;56&#8239;s</b>. The&#160;day lasts ~&#8239;3&#8239;min&#160;24&#8239;s, the night ~&#8239;3&#8239;min&#160;31&#8239;s.</summary>
 <p>This result was timed from the length of two consecutive days in the same loop (there is no fourth sunrise before the supernova) on a Switch game without ever moving from the spawn location.</p><p>It is considered sunrise when the soundtrack “Timber Hearth” begins, and sunset once this track ends.</p>
-<table class=spmono><tr><th>Time</th><th>Event</th></tr>
-<tr><td>01:43</td><td>☀️ Sunrise</td></tr>
-<tr><td>05:07</td><td>🌑 Sunset</td></tr>
-<tr><td>08:39</td><td>☀️ Sunrise</td></tr>
-<tr><td>12:03</td><td>🌑 Sunset</td></tr>
-<tr><td>15:35</td><td>☀️ Sunrise</td></tr>
-<tr><td>18:59</td><td>🌑 Sunset</td></tr>
-<tr><td>22:27</td><td>Death by supernova</td></tr>
-<tr style=background:rgba(var(--midd),.5)><td>22:31</td><td><i>(Extrapolated: would have been sunrise)</i></td></tr>
-</table><p>Though close to dawn, it is still nighttime in the village when the supernova occurs. Even from the observatory, the explosion cannot be noticed until just a few moments before death.</p><p><b>Of note:</b> When the sun stops collapsing and starts exploding <smol>(22:10)</smol>, the Attlerock is high up in the village’s sky (at least from the spawn point). From mostly invisible due to the lack of sunlight, it momentarily glows blue, before fading back into obscurity right after.</p>
+<table class=spmono><tr><th>Time</th><th>Event</th></tr><tr><td>01:43</td><td>☀️ Sunrise</td></tr><tr><td>05:07</td><td>🌑 Sunset</td></tr><tr><td>08:39</td><td>☀️ Sunrise</td></tr><tr><td>12:03</td><td>🌑 Sunset</td></tr><tr><td>15:35</td><td>☀️ Sunrise</td></tr><tr><td>18:59</td><td>🌑 Sunset</td></tr><tr><td>22:27</td><td>Death by supernova</td></tr><tr style=background:rgba(var(--midd),.5)><td>22:31</td><td><i>(Extrapolated: would have been sunrise)</i></td></tr></table>
 </details><t>#time loop event #in-game observations #timber hearth #astronomy</t></it>
+<it id=SupernovaHiddenFromVillage class=tl><details><summary>Though close to dawn, it is still nighttime in the village when the supernova occurs. However, the Attlerock is overhead and can be illuminated by the glow of the supernova’s initial explosion.</summary><p>Even from the observatory, the supernova cannot be noticed until just a few moments before death.</p><p>When the sun stops collapsing and starts exploding <smol>(22:10)</smol>, the Attlerock is high up in the village’s sky (at least from the spawn point). From mostly invisible due to the lack of sunlight, it momentarily glows blue, before fading back into obscurity right after.</p></details><t>#timber hearth #attlerock #time loop event #in-game observations #astronomy</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Feldspar’s ship has malfunctioning retro rockets & lacks downward thrusters-->
-<it id=FeldsparShipThrusters><details><summary>While Feldspar’s ship already possessed retro rockets, those are malfunctioning. Their ship lacks downward thrusters.</summary>
-<p>The in-game ship model shows that it lacks downward thrusters, but still has 5 directional boosters <span class=source>(Observation by @vskii)</span>.</p>
+<!--@SFOLD Feldspar’s ship has malfunctioning retro rockets & lacks downward thrusters-->
+<it id=FeldsparShipRetroRockets><details><summary>While Feldspar’s ship already possessed retro rockets, those are malfunctioning. It was built at least in part out of flammable construction materials.</summary>
 <h2>Talking to Feldspar:</h2><table>
 <tr><th>The Protagonist</th></tr><tr><td class=prtg>I can’t believe you destroyed your ship.</td></tr>
 <tr><th>Feldspar<span>Dialogue Branch: Feldspar6c</span></th></tr><tr><td>Easy for you to say. Your ship probably has all kinds of fancy modifications and upgrades, like “working retro boosters” and “non-flammable construction materials.”</td></tr></table>
 </details><t>#feldspar’s ship</t></it>
+<it id=FeldsparShipThrusters class=tl><details><summary>Feldspar’s ship possesses 5 directional thrusters, lacking the downward orientation.</summary>
+<p>The in-game ship model shows that it lacks downward thrusters, but still has 5 directional boosters <span class=source>(Observation by @vskii)</span>.</p>
+</details><t>#feldspar’s ship</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Hearthians have teeth-->
+<!--@SFOLD Hearthians have teeth-->
 <it id=HEAMouthBiology class=misc><details><summary>Hearthians have human-like teeth and a red tongue.</summary>
 <p>This can be demonstrated in the following artworks:</p><p class=source style=text-align:center;margin-top:0><img src=https://payload.cargocollective.com/1/8/263533/13488403/ian-jacobson-ian-jacobson-achievements_1200.jpg><br><a href=https://www.ianjacobson.com/Outer-Wilds target=_blank class=blue>Achievement icons designed by Ian Jacobson</a><br><br><img src=../ast/ico/Steam_Emoticon_Big_Hearthian_Dead.png><img src=../ast/ico/Steam_Emoticon_Big_Hearthian_Shocked.png><img src=../ast/ico/Steam_Emoticon_Big_Hearthian_Sleep.png><img src=../ast/ico/Steam_Emoticon_Big_Hearthian_Smile.png><img src=../ast/ico/Steam_Emoticon_Big_Hearthian_Wink.png><br><a href=https://steamdb.info/app/753640/communityitems/#item-class-4 target=_blank class=blue>Steam Community Items: Emoticons</a></p>
 <h2>Talking to Self:</h2><table><tr><th>Self<span>Dialogue Branch: Wrong3C</span></th></tr><tr><td>Besides, an extra version of us is definitely better than if we’d created an extra anglerfish or something.</td></tr><tr><th>The Protagonist</th></tr><tr><td class=prtg>Agreed. We’re charming and have fewer teeth.</td></tr></table>
@@ -1101,21 +1142,21 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <p>Moreover, considering the sarcasm, this may not even be biologically accurate to begin with: <a href="javascript:getcard('Anglerfish25Teeth')">anglerfish only have 25 teeth</a>, while an adult human has 32, or 28 without the wisdom teeth. If Hearthians are indeed meant to have a dentition similar to humans, then the Protagonist may be thinking less in terms of actual number, and more in terms of size and sharpness.</p>
 </details><t>#hearthian biology #alternate sources #ian jacobson website</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️🟥The Twins’ sand transfer occurs every 100 years-->
+<!--@SFOLD🟥The Twins’ sand transfer occurs every 100 years-->
 <it id=HTSandCentury class=ret><details><summary>❌ The Hourglass Twins’ sand transfer occurs every 100 years.</summary>
 <h2>Ship Log: Hourglass Twins (2013 Alpha)</h2><table>
 <tr><th style="font-family:Space Mono;border-bottom:none">File: computerfile.txt</th></tr>
 <tr><td class=shiplog>Every 100 years, sand spontaneously flows from one planet to the other.</td></tr>
 <tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/HT_Description.txt</th></tr>
 <tr><td class=shiplog>Spontaneous sand transfer occurs once every 100 years. Geological mechanism unknown.</td></tr>
-</table><p>However, the final release of the game arguably disproves this:</p>
+</table><hr style=margin-top:1rem><p>However, the final release of the game arguably disproves this:</p>
 <a href="javascript:getcard('HTsandDSSPics')"class=dlc><h2 class=tl>The Radio Tower’s photos show an ongoing sand exchange</h2></a>
 <p class=dlc>Unless the mystery of the “anomaly” which the deep space satellite detected at an angle of 40° has been unsolved for a hundred years, the fact that the first pictures it took show the twins in the midst of a sand exchange demonstrates that the process happens a lot more frequently.</p>
 <a class=reg href="javascript:getcard('ChertSawSandlessAT')"><h2>Chert has seen sandless Ash Twin</h2></a>
 <p>Unless Chert is more than a hundred years old and some, this proves that the sand column forms more frequently than it did in the alphas.</p>
 </details><t>#hourglass twins sand column #retconned</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Chert knows what Ash Twin looks like once drained of its sand-->
+<!--@SFOLD Chert knows what Ash Twin looks like once drained of its sand-->
 <it id=ChertSawSandlessAT><details><summary>Chert has seen Ash Twin without its sand before.</summary>
 <h2>Talking to Chert:</h2><table><tr><th>The Protagonist</th></tr>
 <tr><td class=prtg>How dangerous is that big column of falling sand?</td></tr>
@@ -1126,7 +1167,7 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 </table><p>This proves that Chert knows what sandless Ash Twin looks like, and may even imply that they have visited it in the past (or at least sent their scout there to study it).</p>
 </details><t>#chert #ash twin #hourglass twins sand column</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Feldspar’s ship name: Trailblazer 1-->
+<!--@SFOLD Feldspar’s ship name: Trailblazer 1-->
 <it id=Trailblazer1 class=dub><details><summary>Feldspar’s ship is named Trailblazer 1.</summary>
 <h2>Ship Log: Dark Bramble (2013 & 2015 Alpha)</h2>
 <table><tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/DB_Description.txt</th></tr>
@@ -1134,14 +1175,14 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <p>The fact that this is the description for Dark Bramble shows that “Trailblazer&#160;1” refers to Feldspar’s ship.</p>
 </details><t>#unused/concept art #feldspar’s ship #alpha</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️🟥Dark Bramble is the source of the last known transmission from Feldspar’s ship-->
+<!--@SFOLD🟥Dark Bramble is the source of the last known transmission from Feldspar’s ship-->
 <it id=DBFeldsparLastTransmission class=ret><details><summary>❌ Dark Bramble is the source of the last known transmission from Feldspar’s ship.</summary>
 <h2>Ship Log: Dark Bramble (2013 & 2015 Alpha)</h2><table><tr><th style="font-family:Space Mono;border-bottom:none">File: planetdescriptions/DB_Description.txt</th></tr>
 <tr><td class=shiplog><ul><li>Source of last known transmission from Trailblazer&#160;1</li><li>Least explored of all planets (see above)</li></ul></td></tr>
 </table><a href="javascript:getcard('HornfelsThinksNobodyExploredDB')"><h2 class=reg>Hornfels doesn’t know Feldspar is there</h2></a>
 <p>Considering the fact that Hornfels (who is in charge of ground control and therefore should have been the one to receive the transmission) not only has no idea that Feldspar is in Dark Bramble, but also explicitly believes that nobody explored the planet at all, it seems reasonable to conclude that this “last known transmission” never occurred in the final release of the game.</p></details><t>#retconned #feldspar #feldspar’s ship #dark bramble #hornfels</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Hornfels thinks nobody explored DB before & doesn’t know Feldspar is there-->
+<!--@SFOLD Hornfels thinks nobody explored DB before & doesn’t know Feldspar is there-->
 <it id=HornfelsThinksNobodyExploredDB><details><summary>Hornfels believes that nobody ever explored Dark Bramble before, and is unaware that Feldspar is there.</summary>
 <h2>Talking to Hornfels:<span>File: Hornfels.txt</span></h2><table>
 <tr><th>Hornfels<span>Dialogue Branch: Curator4</span></th></tr>
@@ -1150,8 +1191,59 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 </table><p>Not only does Hornfels not know that Feldspar is in Dark Bramble, they also believe that nobody ever entered it.</p>
 </details><t>#hornfels #feldspar #dark bramble</t></it>
 <!--@EFOLD-->
+<!--@SFOLD Nomai unsure if time travel=new timeline-->
+<it id=NomaiConsciousnessDebate><details><summary>The Nomai were unsure whether the time loop would rewrite the past or create alternate timelines. It is unclear whether sending a person’s memories back in time would be the same as sending their consciousness back in time, or whether the recipient would be effectively a different person altogether.</summary>
+<h2>Statue Island, Giant’s Deep (Higher platform)</h2>
+<table><tr><th><code>File: GD_StatueIsland_ConsciousnessDebate</code></th></tr><tr><td>
+<p class=nomai>PHLOX: I’m curious: Is sending a being’s memories back in time the same as sending the being itself back in time?</p>
+<p class=nomai>PHLOX: As an example, if we were to send my memories back in time, is that the same as sending “me” back in time (not my physical body, but my essence)?</p>
+<p class=nomai>DAZ: I imagine they’re two different actions.</p>
+<p class=nomai>CASSAVA: Wouldn’t both actions be effectively the same?</p>
+<p class=nomai>DAZ: Suppose that time was being rewritten. I believe this is different than receiving memories from what is effectively the future.</p>
+<p class=nomai>CASSAVA: But isn’t the end result identical in either case?</p>
+</td></tr></table><p>These messages were all left linearly (the dialogue does not branch off into separate threads).</p>
+</details><t>#time travel #physics #phlox #daz #cassava</t></it>
 <!--@EFOLD-->
-<!--@SFOLD☑️Short Cards-->
+<!--@SFOLD Do we play as the same Hearthian every loop? (non-answer)-->
+<it id=TTDebateDatamined class=dub><details><summary>The time loop makes you “receive memories from a future version of you that’s never going to happen.” The debate is still open as to whether this “future version of you” actually died at the end of their loop, ever existed at all, or even was “you” to begin with.</summary><h2 class=dub>Hidden Comments about the Nomai debate on Statue Island<span>File: GD_StatueIsland_ConsciousnessDebate</span></h2><p>The <a href="javascript:getcard('NomaiConsciousnessDebate')">Nomai Consciousness Debate</a> on Giant’s Deep addresses this topic and leaves unclear conclusions. The file containing this dialogue however contains the following hidden comments:</p><blockquote style='font-family:Space Mono;font-size:.8em;opacity:.8'><p>WHAT’S HAPPENING: You’re receiving memories from a future version of you that’s never going to happen.<br>How do we classify those memories metaphysically?<br>Do you actually die, considering "future" you kind of never exists/happens?<br>Is a person just their memories?<br>Is the version of you that dies and has its memories copied and sent back in time really you?</p><p>PHLOX: I’m curious:</p><p>Because the memories are being sent back in time, and time gets rewritten, does the person who died really exist?</p><p style=margin-bottom:0>If you overwrite a timeline, do the events of that timeline still count?</p><p style=padding-left:2.2em>It’s both true that the events will ever happen, but it’s also true we have a record of them happening. (What are the ethical implications of that?)</p></blockquote></details><t>#datamined #physics #time travel #unused/concept art</t></it>
+<it id=SamePersonDebate class=misc><details><summary>It is up for debate whether the time loop rewrites the past completely, or creates a new parallel timeline each time. It is therefore also up for debate whether the player plays as the same protagonist every new loop.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p>
+<p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=411'target=_blank class=in>6:51</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote>
+<p><b>The Lore Explorer:</b> Are we the same Hearthian every time we wake up? (At least your take on it. As it may just be a philosophical thing, its fine if you want to reserve it)</p>
+<p><b>Alex Beachum:</b> Definitely up for debate. It partially depends on whether the act of time travel rewrites the past completely or creates a new parallel timeline (not gonna answer that here).</p></blockquote></details><t>#alternate sources #the lore explorer videos #physics #time travel</t></it>
+<!--@EFOLD-->
+<!--@SFOLD Nomai Timeline Summary-->
+<it id=NomaiTimeline class=misc><details><summary><b>Order of events in the Nomai timeline:</b></summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=480'target=_blank class=in>8:00</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p>
+<blockquote><p><b>The Lore Explorer:</b> Any info regarding the Nomai timeline would be amazing. Not dates. Just like "Escape pod 2 - Temporary city - sunless city - eye shrine - Quantum Moon Locator"</p><p><b>Alex Beachum:</b> Major timeline breaks down (loosely) as follows: Shipwrecked in the solar system → Settlements constructed (Sunless and Hanging cities) → Reinvention of spaceflight (gravity cannons) and reunion of Nomai survivors → Quest to land on Quantum Moon → Construction of Eye signal locators + Discovery of time travel → Construction of ATP → arrival of Interloper</p></blockquote><ol>
+<li>Shipwrecked in the solar system</li>
+<li>Settlements constructed (Sunless and Hanging cities)</li>
+<li>Reinvention of spaceflight (gravity cannons) and reunion of Nomai survivors</li>
+<li>Quest to land on the Quantum Moon</li>
+<li>Construction of the Eye signal locators + Discovery of time travel</li>
+<li>Construction of the Ash Twin Project</li>
+<li>Arrival of the Interloper</li>
+</ol></details><t>#alternate sources #the lore explorer videos #timeline #nomai</t></it>
+<!--@EFOLD-->
+<!--@SFOLD BH Nomai used gravity as power source-->
+<it id=BHNomaiEnergy class=misc><details><summary>The Nomai on Brittle Hollow used the planet’s gravity-distorting properties as a power source for the Hanging City.</summary>
+<h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p>
+<p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=86'target=_blank class=in>1:26</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote>
+<p><b>The Lore Explorer:</b> Ember and Ash Twin have solar panels. How is the Hanging City at Brittle Hollow powered?</p>
+<p><b>Alex Beachum:</b> Perhaps the answer lies not above but below...</p>
+</blockquote><p><b>Of note:</b> While Alex Beachum’s answer alludes to the black hole at the center of Brittle Hollow, it is possible that the Nomai could not directly access it right after the crash of Escape Pod 1. The black hole itself and its properties are a direct consequence of the <a href="javascript:getcard('GravCrystalsMadeBH')">raw gravity crystals contained in Brittle Hollow’s crust</a>, however: therefore, it is possible that this vague answer refers either solely to the black hole, or primarily at first to the energy contained within the gravity crystals, which were easier to access prior to the Nomai’s reinvention of spaceflight (and the black hole’s energy could then only be harnessed after that point).</p></details><t>#alternate sources #the lore explorer videos #brittle hollow #nomai technology #brittle hollow’s black hole #hanging city</t></it>
+<it id=HowNomaiCoresMade class=misc><details><summary>The Black Hole Forge creates new black/white hole core pairs by exposing the cores to the horizon of Brittle Hollow’s black hole.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p>
+<p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=102'target=_blank class=in>1:42</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote>
+<p><b>The Lore Explorer:</b> I imagine the Black Hole Forge as a special spoon that scoops out tiny black holes. How accurate is that? I wouldnt put it past the Nomai!</p>
+<p><b>Alex Beachum:</b> No spoons involved (black holes are just warped spacetime), but the forge does lower the cores to expose them to the horizon of the black hole.</p>
+</blockquote></details><t>#alternate sources #the lore explorer videos #nomai technology #warp cores #black/white hole physics #black hole forge</t></it>
+<it id=NomaiFindGravCrystal class=misc><details><summary>The Nomai’s first gravity crystals were crafted in the Old Settlement by refining the natural ore present on Brittle Hollow.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p>
+<p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=129'target=_blank class=in>2:09</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote>
+<p><b>The Lore Explorer:</b> Did the Nomai discover gravity crystals on Brittle Hollow? Or invent them with material from Brittle Hollow?</p>
+<p><b>Alex Beachum:</b> There is a spot in the Old Settlement where the Nomai crafted the first gravity crystals (there are a couple of broken gravity crystals on the ground). They are refined from the natural crystal which has latent gravitational properties (that black hole isn’t there randomly).</p>
+</blockquote></details><t>#alternate sources #the lore explorer videos #gravity crystal #nomai technology #brittle hollow old settlement</t></it>
+<!--@EFOLD-->
+<!--@EFOLD-->
+<!--@SFOLD☑️LORE: Finished Short Cards-->
+<it id=QMfollowsYou class=tl><details><summary>The Quantum Moon reorients itself so that you always face its south pole upon landing.</summary><p>If the cloud layer is disabled in-game, it can be observed that the reason why you always land on the Quantum Moon’s south pole is because it will constantly reorient itself during your flight so that your ship will always face the south pole.</p></details><t>#quantum moon #in-game observations</t></it>
 <it id=MoraineKid class=tl><details><summary>Moraine is a child.</summary><p>It can be observed via datamining that in the game’s text file related to their dialogue (<smol>Moraine.txt</smol>), Moraine’s dialogue branches all have a name starting with “<smol>SignalscopeKid</smol>.” The 2013 and 2015 alpha versions of the game also named the text file related to their dialogue “<smol>villagers/TelescopeKid.txt</smol>.”</p></details><t>#moraine</t></it>
 <it id=HEASuitHelmets class=dub><details><summary>Each spacesuit’s helmet is custom-made to fit its wearer. Their visors provide protection from direct sun exposure.</summary><h2>Museum (Both Alpha Versions)</h2><table><tr><th><smol>File: xmls/museumplaques/HelmetPlaque</smol></th></tr><tr><td>Helmets like these are our explorers’ windows on the Universe. Each helmet is custom-made to fit its wearer, with a stylish gold visor that provides protection from direct sun exposure.</td></tr></table></details><t>#outer wilds ventures #hearthian technology #unused/concept art</t></it>
 <it id=OPCUsesGravityCannonTech class=tl><details><summary>The Orbital Probe Cannon uses the same launching technology as the Gravity Cannons.</summary><p>This conclusion was reached by looking at the architecture of both types of contraption.</p><p>Additionally, flying through one of the Orbital Probe Cannon’s broken parts will launch you at higher speed much like an intact gravity cannon would (<a href=https://www.reddit.com/r/outerwilds/s/ysomw2Qjp7 target=_blank class=orng>Reddit: Video example</a>).</p></details><t>#orbital probe cannon #gravity cannon #in-game observations</t></it>
@@ -1161,6 +1253,12 @@ e = A/a - 1 = 0.82</pre><p class=source>(Observation & calculus by Name)</p>
 <it id=THsunriseWest class=tl><details><summary>On Timber Hearth, the sun rises on the West and sets on the East.</summary><p>This can be most easily observed from inside the Nomai ruins crater: the sun will rise in-between the arches, which are facing West.</p></details><t>#timber hearth #nomai ruins crater #in-game observations #sun #astronomy</t></it>
 <it id=QMoxygen class=tl><details><summary>The atmosphere is breathable on all 6 versions of the Quantum Moon’s surface.</summary><p>This was tested on Switch by walking around and navigating between all versions of the Quantum Moon without wearing the spacesuit.</p></details><t>#quantum moon #in-game observations</t></it>
 <it id=TTowersPanelsLoc class=tl><details><summary>Ash Twin’s warp towers are located on the equator; the solar panels are located on the poles.</summary><p>All towers are located on the equator of Ash Twin, which is necessary for the planetary alignments to occur.</p><p>The fact that the solar panels are located on the poles maximizes their exposure to the sunlight, as it means that they will never be hidden in the planet’s shadow thanks to Ash Twin’s lack of axial tilt.</p></details><t>#ash twin #warp towers #solar panels #in-game observations</t></it>
+<it id=NomaiLifeSpan class=misc><details><summary>The Nomai lifespan is “much longer” than that of a Hearthian.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=53'target=_blank class=in>0:53</a></code> into his video. Here is a transcript:</p><blockquote><p>“I asked Alex about how long is the natural Nomai lifespan? The response was: <b style=font-weight:600>Much longer than a Hearthian lifespan, although it’s hardly a fair contest considering Hearthians’ general disregard for their personal safety.</b>” — The Lore Explorer</p></blockquote></details><t>#nomai #hearthians #biology</t></it>
+<it id=DBorigin class=misc><details><summary>The origin of Dark Bramble is left deliberately vague. It may have originated from the Hearthian solar system, or it may have sprouted from a seed which traversed the interstellar void from elsewhere.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=241'target=_blank class=in>4:01</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote><p><b>The Lore Explorer:</b> Does Dark Bramble originate from our solar system?</p><p><b>Alex Beachum:</b> Maybe, or maybe a seed from a distant planet found its way across the void to the water planet it shattered.</p></blockquote></details><t>#alternate sources #the lore explorer videos #dark bramble (plant)</t></it>
+<it id=THseedOrigin class=misc><details><summary>The seed which crashed in Youngbark crater came from Dark Bramble.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=267'target=_blank class=in>4:27</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote><p><b>The Lore Explorer:</b> Does the seed on Timber Hearth originate from Dark Bramble?</p><p><b>Alex Beachum:</b> Yes.</p></blockquote></details><t>#alternate sources #the lore explorer videos #dark bramble #timber hearth #youngbark crater #dark bramble (plant)</t></it>
+<it id=DBConnectsWorlds class=misc><details><summary>Dark Bramble has grown into multiple worlds connected by the plant’s extradimensional root system. Known worlds include Timber Hearth, the shattered fifth planet of the Hearthian solar system, and Elsinore castle.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=275'target=_blank class=in>4:35</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote><p><b>The Lore Explorer:</b> Ive seen what look like Bramble "node entrances" behind ice Bramble vines. They were inside another broken vine. Does Bramble connect, to other giant Bramble plants like it, with entrances normally hidden within vines?</p><p><b>Alex Beachum:</b> Dark Bramble has grown into multiple worlds that are now all connected by a weird extradimensional root system. Known worlds include Timber Hearth, the unnamed ocean world (now frozen and shattered), and Elsinore castle.</p></blockquote></details><t>#alternate sources #the lore explorer videos #dark bramble (plant)</t></it>
+<it id=SunlessCitySafeFromSand class=misc><details><summary>The doors leading to the Sunless City used to keep the sand out.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=186'target=_blank class=in>3:06</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote><p><b>The Lore Explorer:</b> How did the Nomai keep sand out of the caves in Ember Twin?</p><p><b>Alex Beachum:</b> The giant doors to the Sunless City used to keep the sand out.</p></blockquote></details><t>#alternate sources #the lore explorer videos #sunless city #hourglass twins sand column</t></it>
+<it id=QMPilgrimagetoET class=misc><details><summary>Young Nomai would visit the Ember Twin cave in which quantum entanglement was discovered in order to learn about this quantum rule.</summary><h2>The Lore Explorer: Outer Wilds<br>Lore Interview With Alex Beachum!</h2><p class=source>Watch the full interview: <a class='abtn in'href=https://youtu.be/Q2CeYsLjBEA target=_blank><img src=https://www.youtube.com/s/desktop/e208051c/img/logos/favicon_32x32.png> Youtube</a></p><p>This information is shared by The Lore Explorer at <code><a href='https://youtu.be/Q2CeYsLjBEA?t=200'target=_blank class=in>3:20</a></code> into his video. He also shared the transcript in written form of both his initial question and the answer he originally received via email:</p><blockquote><p><b>The Lore Explorer:</b> The Nomai Coleus discovered quantum entanglement. Was it common practice for young Nomai to visit the sight where they discovered it to learn about entanglement?</p><p><b>Alex Beachum:</b> Yes. We chose not to make an explicit reference at the site to avoid confusion about the order of events regarding Coleus.</p></blockquote></details><t>#alternate sources #the lore explorer videos #nomai #rule of quantum entanglement #quantum caves</t></it>
 <!--@EFOLD-->
 
 <!--
@@ -1176,19 +1274,7 @@ n=@tag |            ❌             |             ✔️
 What to do about Scripted events inside the lore map vs calendar_timeloop? For lore map, try to find the datamined variable names to include as extra info!
 -->
 
-<!--@SFOLD❌QM’s fireflies-->
-<it id=QuantumFireflies class=tl><details><summary>Timber Hearth’s “fireflies” appear on the Quantum Moon’s Timber Hearth reflection. However, while those living on the planet tend to fly slowly and alone, the Quantum Moon’s versions fly in flickering swarms which change locations while unobserved.</summary>
-<p class=smol>Of note: The glowing entities discussed in this lore card have no known official name. This web page refers to them as “fireflies” for convenience, but these creatures could theoretically be anything, perhaps not even bugs – or perhaps not even lifeforms at all.</p>
-<h2>Timber Hearth</h2><video class=stdln controls autoplay loop><source type=video/mp4 src=https://i.imgur.com/U2rK1K5.mp4></video>
-<h2>Quantum Moon</h2><video class=stdln controls autoplay loop><source type=video/mp4 src=https://i.imgur.com/ZNQ3LUa.mp4></video>
-<p class=source style=margin-top:.5em>Video footage and discovery made by @beefbuket <a href=https://imgur.com/a/yb8WD71 target=_blank class=orng>(Original Imgur Album)</a></p>
-<p>A Timber Hearth firefly will usually glow for about 15&#8239;s before dimming, while the Quantum Moon’s counterparts flicker in and out of view multiple times a second.</p>
-<p>The displacement of the entire swarm being connected to the player’s observation is a direct indication of quantum behavior. This makes it unclear whether the Quantum Moon’s fireflies are actually alive or not.</p>
-<hr><p>It may be too speculative to directly attribute the “glitchy” flickering of an individual firefly to a quantum phenomenon as well, though it is a possibility: it could be hypothesized that observation of one of these fireflies ceases whenever its light goes out, thus letting it change states and reappear elsewhere within the swarm once its light becomes visible again – <span class=infoa>despite technically remaining within the player’s field of vision all the while<span class=infob>Of note: This assertion contradicts the in-game fact that quantum objects will actually remain locked in place even if conscious observation is interrupted by an opaque obstruction (for example, the Quantum Moon will not change locations when it passes behind the astral body it orbits, so long as it is still <i>technically</i> within the player’s field of vision).<br>The question of whether this in-game behavior should be considered part of the in-universe inner workings of quantum physics, or an artifact of the videogame’s way of handling quantum objects, is so far up for debate.</span></span>.</p>
-</details><t>#quantum moon #wildlife (timber hearth) #in-game observations</t></it>
-<!--@EFOLD-->
-
-<!--@SFOLD❌Zero-G cave suit properties-->
+<!--@SFOLD❌LORE: Zero-G cave suit properties-->
 <it id=ZeroGSuitFeatures class=tl><details><summary>The Zero-G cave suit is airtight and comes with its own green signalscope. Its HUD displays the same features as the regular spacesuit except for the planet minimap. It&#160;cannot access the deep space satellite’s map, and it does not come with its own scout.</summary>
 <p>The following observations were made on the Steam version of Outer Wilds (Patch 1.1.14) by using <a href=https://outerwildsmods.com/mods/cheatsmod/ target=_blank class=orng>Pacific Engine’s Cheats Mod</a> to put on the Zero-G cave suit outside its intended location.</p><ul>
 <li>This suit works in space (no instant death by suffocation).</li>
@@ -1203,33 +1289,35 @@ What to do about Scripted events inside the lore map vs calendar_timeloop? For l
 <span class=red>TBA: Upload screenshots on Imgur to showcase the changes.</span>
 </details><t>#zero-g cave #hearthian technology #hearthian devices</t></it>
 <!--@EFOLD-->
-<it id=HTsandDSSPics class=tl><details><summary>The deep space satellite’s first photos were taken while the Hourglass Twins’ sand exchange was ongoing.</summary><p>The first photographs taken by the deep space satellite and printed by Hornfels can be found inside Timber Hearth’s radio tower. The Twins’ sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p><!-- UPLOAD FILES ON IMGUR? --></details><t>#deep space satellite #hourglass twins sand column #radio tower</t></it>
+<it id=HTsandDSSPics class='tl dlc'><details><summary>The deep space satellite’s first photos were taken while the Hourglass Twins’ sand exchange was ongoing.</summary><p>The first photographs taken by the deep space satellite and printed by Hornfels can be found inside Timber Hearth’s radio tower. The Twins’ sand column is most visible for angles 350° and 248°.</p><p class=source>(For the dataminers, look for file <smol style=font-size:.8em>Decal_TH_IPClue01_d.png</smol>)</p><!-- UPLOAD FILES ON IMGUR? --></details><t>#deep space satellite #hourglass twins sand column #radio tower</t></it>
 
-<!-- Recheck version changes & translations + DeleteAfterAdding. IDs of lore cards which quote the game text files:
-HEAtimeunits
-DBcarnivorous
-WarpTower5deg
-AlphaPlayerAwake
-Loop9million
-FeldsparShipThrusters
-HEAMouthBiology
-HTSandCentury
-ChertSawSandlessAT
-Trailblazer1
-DBFeldsparLastTransmission
-HornfelsThinksNobodyExploredDB
-HEASuitHelmets
+<!-- Recheck version changes & translations + DeleteAfterAdding.
+IDs of lore cards which quote the game text files:
+IN-GAME DIALOGUE you can (probably?) delete (but check first):
+.   #DBcarnivorous
+.   #WarpTower5deg            				NOM	LOG
+.   #AlphaPlayerAwake            		HEA			ALPHA
+.   #Loop9million            				NOM	LOG
+.   #FeldsparShipRetroRockets          	HEA
+.   #HTSandCentury            					LOG	ALPHA
+.   #Trailblazer1            					LOG	ALPHA
+.   #DBFeldsparLastTransmission        			LOG	ALPHA
+.   #HornfelsThinksNobodyExploredDB		HEA
+.   #NomaiConsciousnessDebate          		NOM                        ("GD_StatueIsland_ConsciousnessDebate")
+.   #TTDebateDatamined
+.   #HEASuitHelmets            			HEA			ALPHA
+WILL be reused later: ———————————————————————————————————
+.   #HEAtimeunits            			HEA
+.   #HEAMouthBiology            		HEA
+.   #ChertSawSandlessAT            		HEA
 -->
 
-
-
-<!--@SFOLD✔️Link Cards-->
+<!--@SFOLD LORE: Ext. Links-->
 <a target=_blank href=https://www.reddit.com/r/outerwilds/comments/188mkxf/gravity_in_the_outer_wilds_universe/ class=cardext><it><details><summary>Study of the in-game gravity <span class=source>(by u/tw33dl3dee)</span></summary></details><t>#physics #in-game observations</t></it></a>
 <a target=_blank href=https://drive.google.com/drive/folders/1Y_8NoX1v6O-tMMlqOxG9SP-4LUj0aGH9 class='cardext dlc'><it><details><summary>Slide Reels Texture Dump <span class=source>(by Repcon)</span></summary></details><t>#slide reel</t></it></a>
 <a target=_blank href=https://docs.google.com/spreadsheets/d/1iBLKrftHZrF9t2RSK__QUZ4WGu-TPw4piGmwzatd9BQ class='cardext dlc'><it><details><summary>Ghostbird Tracker Doc <span class=source>(by Repcon)</span></summary></details><t>#stranger’s inhabitants</t></it></a>
 <!--@EFOLD-->
-<!--@SFOLD✔️Bottom & JS-->
-<i id=nofind>No results found. Your search must be too restrictive, try removing a tag or two and try again!</i>
+<!--@SFOLD-->
 <a target=_blank href=https://drive.google.com/drive/folders/13W_R_Bs6pUzca84KOZc2HsBcBEEUkYov class='cardext dlc'><it keep=keep><details><summary>Artist References <span class=source>(by Repcon)</span></summary></details><t></t></it></a>
 <a target=_blank href=calendar_timeloop.html class='cardext dlc'><it keep=keep><details><summary>All Time Loop Scripted Events</summary></details><t></t></it></a>
 <a target=_blank href=https://docs.google.com/spreadsheets/d/18N8-L_x8c0Fk8-7kymO0dtDwOE3Qy4SFenQMlGvGa20 class='cardext dlc'><it keep=keep><details><summary>Solar System Data <span class=source>(Spreadsheet by Trifid)</span></summary></details><t></t></it></a>
@@ -1240,20 +1328,20 @@ HEASuitHelmets
 <script type=module>import D3CanvasNetworkgraph from "https://lutiaskokopelli.github.io/stories/outerwilds/owhtml/src/js-nodegraph.js"
 window.addEventListener("click",function(){
     var acttags=[],actrels=[],actlist=[],red=curtinput.filter(d=>d.slice(-1)=='0'),grn=curtinput.filter(d=>d.slice(-1)=='1')
-    for(var tag=0;tag<red.length;tag++){acttags.push({id:red[tag].slice(0,-1),tooltip:red[tag].slice(0,-1),label:true,color:'indianred',border:'lightcoral'});actlist.push(red[tag].slice(0,-1))}
-    for(var tag=0;tag<grn.length;tag++){
-        if(!actlist.includes(grn[tag].slice(0,-1))){acttags.push({id:grn[tag].slice(0,-1),tooltip:grn[tag].slice(0,-1),label:true,color:'rgb(56,138,93)',border:'lightgreen'});actlist.push(grn[tag].slice(0,-1))}
+    for(var rtg of red){acttags.push({id:rtg.slice(0,-1),tooltip:rtg.slice(0,-1),label:true,color:'indianred',border:'lightcoral'});actlist.push(rtg.slice(0,-1))}
+    for(var gtg of grn){
+        if(!actlist.includes(gtg.slice(0,-1))){acttags.push({id:gtg.slice(0,-1),tooltip:gtg.slice(0,-1),label:true,color:'rgb(56,138,93)',border:'lightgreen'});actlist.push(gtg.slice(0,-1))}
         else{
-            Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(grn[tag].slice(0,-1))],"color",{value:'rgb(56,138,93)'})
-            Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(grn[tag].slice(0,-1))],"border",{value:'lightgreen'})
-        }var syn=[];const listn=document.querySelectorAll('#btn_'+grn[tag].replace(/^[^a-z]+|[^\w:.-]+/gi,"").slice(0,-1))
+            Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(gtg.slice(0,-1))],"color",{value:'rgb(56,138,93)'})
+            Object.defineProperty(acttags[acttags.map(function(e){return e.id}).indexOf(gtg.slice(0,-1))],"border",{value:'lightgreen'})
+        }var syn=[];const listn=document.querySelectorAll('#btn_'+gtg.replace(/^[^a-z]+|[^\w:.-]+/gi,"").slice(0,-1))
         if(useorng&&listn[0].hasAttribute('n')){syn=listn[0].getAttribute('n').replace('!','').split('#').filter((m)=>m)}
-        for(var m=0;m<syn.length;m++){if(!syn[m].startsWith('@')){
-            if(!actlist.includes(syn[m])){acttags.push({id:syn[m],tooltip:syn[m],label:true,color:'rgba(255,125,36,.3)',border:'rgba(255,125,36,.5)'});actlist.push(syn[m])}
-            actrels.push({source:grn[tag].slice(0,-1),target:syn[m],color:"rgb(255,125,36)",width:1})
+        for(m of syn){if(!m.startsWith('@')){
+            if(!actlist.includes(m)){acttags.push({id:m,tooltip:m,label:true,color:'rgba(255,125,36,.3)',border:'rgba(255,125,36,.5)'});actlist.push(m)}
+            actrels.push({source:gtg.slice(0,-1),target:m,color:"rgb(255,125,36)",width:1})
         }}
     }let networkgraph2=D3CanvasNetworkgraph(document.querySelector('canvas'),{nodes:acttags,links:actrels},{sticky:true,drag:true,zoom:true,node:{labelFontSize:7}})
-})</script><script src=../src/js.js></script><script>function partreload(){url=window.location.href.split('#')
-if(url[2]=='nodlc'||url[1]=='nodlc'){srch_dlc();document.title+=' (no DLC)';document.getElementById('disclaimer').innerHTML=''}
-else{document.getElementById('disclaimer').innerHTML='<b>Warning:</b> DLC spoilers can be toggled on and off at will, but the version of this page you are viewing is <b>opt-out</b> (DLC spoilers are visible by default).<br><b>You can access the opt-in version of this page <a href=loremap.html#nodlc style=--fore:var(--redl) onClick=javascript:partreload()>here</a>.</b> If you share this page with a friend who hasn’t played the DLC, please share the opt-in version instead of this one!'}}partreload()</script><script src=../src/js-loremap.js></script></div></body></html><script src=../src/js-debug.js></script><link rel=stylesheet href=../../local/cs-datafonts.css>
+})</script><script src=../src/js.js></script><script>
+function partreload(){url=window.location.href.split('#');if(url[2]=='nodlc'||url[1]=='nodlc'){SearchDLC();document.title+=' (no DLC)';document.getElementById('disclaimer').innerHTML=''}else{document.getElementById('disclaimer').innerHTML='<b>Warning:</b> DLC spoilers can be toggled on and off at will, but the version of this page you are viewing is <b>opt-out</b> (DLC spoilers are visible by default).<br><b>You can access the opt-in version of this page <a style=--fore:var(--redl) onClick=javascript:location.assign(window.location.href+"#nodlc");location.reload()>here</a>.</b> If you share this page with a friend who hasn’t played the DLC, please share the opt-in version instead of this one!'}}partreload()
+</script><script src=../src/js-loremap.js></script></div></body></html><script src=../src/js-debug.js></script><link rel=stylesheet href=../../local/cs-datafonts.css>
 <!--@EFOLD-->
