@@ -1,2 +1,0 @@
-chlist=[];links=document.links;for(l of links){if(l.href.replace(window.location.pathname,'').replace('https://','').replace('http://','').replace('file://','').replace('lutiaskokopelli.github.io','').startsWith('#')){chlist.push(l.href)}}
-curtchp=window.location.href.split('#')[1];if(curtchp){changechp(window.location.href)}
