@@ -6,7 +6,7 @@
 <meta property=og:title content="FKNO Lore Map"><meta property=og:description content="An interactive compilation of sorts for the main FKNO headcanons and whatnot. Mainly used as Lutias’ own notes whenever she wants to double check something.">
 <meta property=og:image content=https://raw.githubusercontent.com/LutiasKokopelli/stories/main/outerwilds/owhtml/ast/ico/OWV.png></head><body><div class=all><h1 style='margin:5rem 0 2rem 0;color:rgba(var(--white),.9);font-size:72px'>FKNO Lore Map</h1>
 <!--@EFOLD-->
-<!--@SFOLD Select Tags-->
+<!--@SFOLD TAGS-->
 <div id=findunivinp style=text-align:center><h2>Hide results related to unchecked topics:</h2><div>
 <p><label class=hasoutline style=--fore:var(--white) onclick=SelectAll(this)>Select All</label><label style=--fore:var(--white) onclick=SelectAll(this)>Select None</label></p><p>
 <label class=allau><input type=checkbox checked id=allau onclick=AddSelector(this)> <span>Common to all</span></label></p></div><p><label class=allau><input type=checkbox checked id=chref onclick=AddSelector(this)> Character References</span></label></p></div>
@@ -246,7 +246,10 @@
 </s1>
 <s1 nom>
     <button><m class=hasimg style=background-image:url(../ast/svg/ico_NOM.svg)></m><input type=button onclick=AddTagSelector(this.value) value='#nomai technology'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='warp tower'value='#nomai shuttle'></button>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#warp technology'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) n='nomai technology#warp tower'value='#warp tower'></button>
+    <button><m></m><input type=button onclick=AddTagSelector(this.value) value='#quantum stabilizer'></button>
 </s1>
 <button><m></m><input type=button onclick=AddTagSelector(this.value) value=#timeline></button>
 <!--@EFOLD-->
@@ -254,6 +257,7 @@
 <details class=vanau><summary>Vanilla FKNO</summary>
 <s1 hea><p><img src=../ast/svg/ico_HEA.svg> <span>Hearthian Technology</span></p></s1><s2 hea><p>
     <input type=button onclick=AddTagSelector(this.value) n='hearthian technology#pine tree'value='#emergency seed'>
+    <input type=button onclick=AddTagSelector(this.value) n='hearthian technology'value='#little scout'>
 </p></s2>
 <s1>
     <button><m></m><input type=button onclick=AddTagSelector(this.value) n=timeline value='#backstory (vanilla universe)'></button>
@@ -300,6 +304,7 @@
 </s1><s2><p>
     <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#the village'>
     <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#quantum grove'>
+    <input type=button onclick=AddTagSelector(this.value) n='timber hearth'value='#nomai ruins crater'>
 </p></s2>
 <s1>
     <input type=button onclick=AddTagSelector(this.value) class=hasimg value='#giant’s deep'style=background-image:url(../ast/ico/astr_GD.png)>
@@ -406,7 +411,7 @@
 <!--@EFOLD-->
 </div></details>
 <!--@EFOLD-->
-<!--@SFOLD Search Bar-->
+<!--@SFOLD BOTNAV-->
 <div id=searchbar style=padding:0><p style=margin:0 align=center>
     <button onclick="toggleTag(this,'tab_tags')"style=background:rgb(var(--goldl))><img src=../ast/svg/hashtag.svg></button>
     <button onclick="toggleTag(this,'tab_keys')"style=background:rgb(var(--indigol))><img src=../ast/svg/keyword-search.svg></button>
@@ -451,11 +456,8 @@
     <input type=button onclick=CopySearchState() value="Copy current save point">
     <input id=pastebin type=text placeholder="Paste save point">
     <input type=button onclick="LoadSearchState(document.getElementById('pastebin').value)"value="Submit new save point">
-</p><div id=copybin></div></div></div></div>
+</p><div id=copybin></div></div></div></div><div id=filterlist>
 <!--@EFOLD-->
-
-<div id=filterlist>
-
 <!--@SFOLD LORE: Not Canon Compliant-->
 <it id=Times10 class='vanau gabau'><details><summary>All durations and distances are <b>multiplied by 10</b> compared to their in-game values.</summary></details><t>#physics #astronomy</t></it>
 <it id=THAstro class='vanau gabau'><details><summary>Timber Hearth orbit durations: in <b>hearthian units</b>, the ‘astronomical day’ lasts <b>1&#160;sunrise</b> and the ‘astronomical year’ lasts <b>36min 6s</b>.</summary><div class=shiplog><ul><li>In <b class=blue>human units</b>, a sunrise on Timber Hearth occurs every <b class=redl>1h 9min 20s</b> (astronomical ‘day’), and a rotation of Timber Hearth around the sun (astronomical ‘year’) lasts <b class=redl>41min 43s</b>.</li><li>This is why Hearthians don’t associate the words ‘year’ or ‘day’ to these short periods, and use more artificial constructs instead.</li></ul></div></details><t>#timber hearth #physics #astronomy</t></it>
@@ -574,6 +576,22 @@
 <!--@EFOLD-->
 <!--@SFOLD LORE: Timelines-->
 <!--@SFOLD FKNO-->
+<!--@SFOLD History of Nomai warping tech-->
+<it id=NomaiWarpHistory class='vanau gabau'><details><summary><b>History of Nomai warping technology</b></summary><ol>
+<li>The <b>Vessel</b> uses an advanced warp core following Annona’s design, allowing warp travel with no limitations and across large distances.</li>
+<li>All warping technology was lost in the crash. Annona shared his designs but died before the Nomai could reinvent warping technology at all.</li>
+<li>The first shuttles were built, but did not yet possess warp cores for retrieval. As such, the Nomai had to build gravity cannons on every planet and painstakingly move the shuttles around for each launch.</li>
+<li>Due to Annona’s absence and the limited resources, the first non-advanced warp cores were rudimentary. The <b>White Hole Station and Brittle Hollow surface warp pair</b> were the first implementation of this first generation of recreated warp cores.<ul>
+<li>These warp cores get their energy from gravity wells created by large astral bodies, and so <b>warps can only occur during alignments</b> between the black hole core and a massive astral body close to the white hole core.</li>
+<li>The Nomai harnessed the energy released during a black hole &rarr; white hole warp in order to charge the white hole core and allow a single return trip ignoring the alignment rule.</li>
+</ul></li>
+<li>A second generation of warp cores which managed to get past the alignment restriction were developed, then implemented in the shuttles. These new warp cores were also used for experimentation in the High Energy Lab.<ul>
+<li>These warp cores are much harder to craft since they rely on quantum mechanics to bypass the alignment rule.</li>
+</ul></li>
+<li>For the Ash Twin Project, the Nomai decided to base the towers’ warps from the <b>White Hole Station</b> warp pads instead of the second generation ones because of how complex and resource-heavy the shuttles’ and HEL’s were. The Nomai were patient enough to not be bothered by the wait for warp windows, which happen often enough anyway.</li>
+<li>The Ash Twin Project’s single advanced warp core was reinvented, and is the most complex and power-hungry of all.</li>
+</ol></details><t>#nomai (vanilla universe) #nomai (gabbro’s universe)</t></it>
+<!--@EFOLD-->
 <it id=GMHinderedHearthianProgress class='vanau gabau'><details><summary>The repeated ghost matter incidents significantly hindered the Hearthian civilization’s progress and growth, forcing them to remain hunter-gatherers and regularly relocate their village, while facing many losses.</summary><p>Every ghost matter incident killed off significant parts of both the wildlife and the Hearthian population, and would make various areas uninhabitable (and everything within it inaccessible and unusable) for a few decades. This also contributed to forcing Hearthians to adopt a way of life which makes it relatively easy to relocate their entire village through disassembling and reassembling cabins.</p></details><t>#backstory (vanilla universe) #backstory (gabbro’s universe) #ghost matter #ghost matter incident #hearthians (vanilla universe) #hearthians (gabbro’s universe) #the village</t></it>
 <it id=GMgeyserClose2Village class='vanau gabau'><details><summary>The patch of ghost matter close to the village, along with the small geyser erupting nearby, emerged during the ghost matter incident which killed most Hearthians.</summary></details><t>#ghost matter #timber hearth geyser #the village #backstory (vanilla universe) #backstory (gabbro’s universe) #ghost matter incident</t></it>
 <it id=30yroGMincident class='vanau gabau'><details><summary>Back when the founders were still young teenagers, <a href="javascript:getcard('GMgeyserClose2Village')">a new geyser erupting in a corner of the village</a> let out large amounts of ghost matter, decimating a significant part of the village’s population.</summary><p>The geyser causing the newest patch of ghost matter to appear erupted very close to what was at the time the hatchlings’ cabin, their caretakers’, and multiple adults’.</p><p>The former cabins were already close to the river at the top of the crater, but not close enough to prevent almost all hatchlings from dying within minutes. The only hatchlings who survived were Porphy, Chert, and Gabbro (except in the timeline of Gabbro’s AU for the latter).</p></details><t>#ghost matter #timber hearth geyser #timber hearth #backstory (vanilla universe) #chert (vanilla universe) #esker (vanilla universe) #feldspar (vanilla universe) #gabbro (vanilla universe) #gneiss (vanilla universe) #gossan (vanilla universe) #hornfels (vanilla universe) #porphy (vanilla universe) #rutile (vanilla universe) #slate (vanilla universe) #spinel (vanilla universe) #tektite (vanilla universe) #backstory (gabbro’s universe) #chert (gabbro’s universe) #esker (gabbro’s universe) #feldspar (gabbro’s universe) #gneiss (gabbro’s universe) #gossan (gabbro’s universe) #hornfels (gabbro’s universe) #porphy (gabbro’s universe) #rutile (gabbro’s universe) #slate (gabbro’s universe) #spinel (gabbro’s universe) #tektite (gabbro’s universe)</t></it>
@@ -642,26 +660,18 @@
 <it id=OGHeaSpork class='vanau gabau'><details><summary>Hearthians don’t have forks or spoons, only multi-purpose sporks.</summary><p>Hearthians are unfamiliar with forks and spoons. In a way, sporks are the common ancestor to both utensils.</p><blockquote><p>Why would you bother with two utensils instead of one capable of both uses when you have one hand to hold the spork, and one hand to hold your bowl?</p></blockquote></details><t>#hearthians (vanilla universe) #hearthians (gabbro’s universe) #hearthian culture</t></it>
 <it id=OGHeaTable class='vanau gabau'><details><summary>Hearthians find the idea of eating while sitting at a table ludicrous and disrespectful. Firstly, tables are supposed to be kept clean for work-related business; secondly, the limited number of seats means automatically excluding Hearthians from what is supposed to be a village-wide communal activity.</summary><p>The communal life of modern day Hearthians encourages all to eat together during set meals; eating in one big circle around the campfire is one way to ensure that everyone is included and everything is shared.</p><p>On top of only providing a set and limited number of seats, tables are also made for <i>working</i>, not for eating. Tables are kept as clean as possible for books, notes and tools, for crafting or planning, or for playing; but their only use is for activities that specifically require them and don’t involve the entire village.</p><blockquote><p>Of course tables are made for work-related business, not food business. Food business is <i>village-wide</i> community business: why use a table to exclude some Hearthians from it?</p></blockquote></details><t>#hearthians (vanilla universe) #hearthians (gabbro’s universe) #hearthian culture</t></it>
 <it id=GMincidentAftermathRoutine class='vanau gabau'><details><summary>Hearthians have developed a morbid routine for the aftermath of each ghost matter incident.</summary><p>A few years to a few decades after each ghost matter incident, Hearthians would carefully retrieve building materials, objects and resources located within the dwindling patch of ghost matter.</p><p>Hearthians would finally be able to access and give the victims’ bodies a proper funeral (bodies which are usually are left as mere skeletons by this point).</p><p>Objects of use tend to be left in specific places away from the village and in open air, so that the lingering ghost matter can evaporate and make those items usable once more faster.</p></details><t>#ghost matter incident #hearthians (vanilla universe) #hearthians (gabbro’s universe)</t></it>
+<it id=SlateWarpTechFromShuttles class='vanau gabau'><details><summary>Slate reverse-engineered the Little Scouts’ warp retrieval system from a warp core found in a defunct Nomai shuttle in Timber Hearth’s Ruins crater. This Nomai shuttle and its paired gravity cannon have long since been entirely dismantled.</summary></details><t>#slate (vanilla universe) #slate (gabbro’s universe) #nomai shuttle #warp technology #nomai ruins crater</t></it>
+<it id=SlateNotKnowNonQuantumScouts class='vanau gabau'><details><summary>The warp retrieval system Slate implemented in the Little Scouts, just like the Nomai shuttles’, is intrinsically linked to a quantum stabilizing system which provides the power source and the ability to ignore the astral body alignment rule for warping.</summary></details><t>#slate (vanilla universe) #slate (gabbro’s universe) #little scout #quantum stabilizer #warp technology #nomai shuttle</t></it>
+<it id=SlateNotKnowWarpTowerCores class='vanau gabau'><details><summary>Slate is unaware that the Nomai warp towers’ warp cores are different from the shuttles’ and that they lack the quantum stabilizing system because of it.</summary></details><t>#slate (vanilla universe) #slate (gabbro’s universe) #quantum stabilizer #warp technology #warp tower</t></it>
 <!--@EFOLD-->
 <!--@SFOLD Hal-->
 <it id=MAUHeaClock class=halau><details><summary>Due to the new size of the solar system and the new rate at which sunrises occur, Hearthians use the human 24h clock and calendar. The word “hour” defines the unit of time directly following the “minute,” instead of “sunrise.”</summary></details><t>#hal’s universe #hearthian culture #calendar</t></it>
 <!--@EFOLD-->
 <!--@EFOLD-->
 
-<!-- REVIEW CONTENT, TAGS, & AU CLASSES! -->
+<!-- The new warp cores’ time dilation properties are related to BH’s black hole specifically, and either exacerbated or diminished by the quantum stabilizing tech used in the Nomai shuttles? -->
+<!-- Shuttles were built BEFORE the WHS — though a version of shuttles that did not have warping tech obvs. -->
 
-<!--@SFOLD❌History of Nomai warping technology-->
-<it wip id=NomaiWarpHistory class='vanau gabau'><details><summary>History of Nomai warping technology</summary>
-WHS was built first, then the shuttles with more advanced tech that no longer required astral body alignments, and *then* the Ash Twin towers were built but the Nomai thought they'd use the WHS tech instead of the shuttles tech? And Slate based their tech on the Nomai shuttles instead of the warp pads.
-1. The Vessel uses an advanced warp core as initially built by Annona, allowing warp travel with no limitations and across large distances.
-2. That technology was lost with the crash, leaving the Nomai stranded with the advanced warp core unusable and (presumably) impossible to repair or use to create a duplicate, or even to use as a model for other non-advanced warp cores. Annona eventually died before they could recreate anything, due to a lack of resources. *[Note: Please let me know if there is a canon knowledge of whether Annona died before or after the first functional non-advanced warp core was created]*
-3. Brittle Hollow gave access to a black hole, they created the black hole forge, this made them able to recreate warp technology from the ground up. Due to the lack of Annona / the tools the Nomai would usually use for this, recreating non-advanced warp cores already took a while, and those started rudimentary.
-4. The first warp cores were used in the White Hole station. Due to this technology's limitations, warps can only occur when an alignment between the black hole core and a massive astral body close to the white hole core happens; they did however manage to make it so that after a black hole &rarr; white hole warp occurs, the white hole core is charged and allows a return trip without alignment limitations thanks to the energy gained by the previous warp.
-5. The shuttles were built, and with those a second generation of warp cores which managed to get past the alignment restriction were developed. These warp cores are also used in the HEL (...? Guess we don't know what second-generation warp cores look like but the fact that the HEL's warp cores look identical to the first-generation ones bugs me a little bit because of the next point:).
-6. When the Ash Twin Project came and the idea for the towers arose, the Nomai decided to base the towers' warps from the *White Hole Station* warp pads instead of the second generation ones. Probably because or resource limitations, perhaps because of "that way we don't have to adjust the entire warp pad system for a different kind of warp cores" (assuming that even if first and second generation warp cores look the same at first glance, they may have something like different energy requirements or wiring needs/safety precautions and such) coupled with "it's not like warp windows don't occur often enough to make it *that* big of an inconvenience" laziness.
-7. The *advanced* warp core was finally remade and used only for the Ash Twin Project, most likely because of a lack of resources + lack of need. (save for the plan to rebuild(?)/return(?) to the Vessel, but that plan was for after the ATP anyway and there's evidently the option to use the same advanced warp core for the vessel later anyway)
-</details><t>#nomai (vanilla universe) #nomai (gabbro’s universe)</t></it>
-<!--@EFOLD-->
 <!--@SFOLD❌Area 22 is the reason why no Hearthian has yet been in space.-->
 <it wip id=NoAstronautsBcArea22 class=halau><details><summary>Area 22 is the reason why no Hearthian has yet been in space.</summary>
 <wip>Area 22 lobbying? They stopped people from going in space so as to avoid having unauthorized people find out about the TH signal blocker, or worse, getting the owlks’ attention.<br>So would Feldspar one day be stupidly (un)lucky and find the signal blocker? Or would Hal and Firn be told about the conspiracy from Area 22 themselves?</wip>
@@ -1048,13 +1058,3 @@ for(const[k,v]of Object.entries(aus)){
     }}
 }</script>
 <!--@EFOLD-->
-
-
-
-
-
-
-
-
-
-<script>for(it of allit){it.querySelector('details').open=true}</script>

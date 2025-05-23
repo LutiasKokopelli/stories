@@ -1,0 +1,87 @@
+<!--@SFOLD-->
+<!DOCTYPE HTML><head><title>FKNO Timeline (Backstory)</title><link rel=icon href=../ast-fkno/ico/chr_eye.png>
+<link rel=stylesheet href=../src/css.css><link rel=stylesheet href=../src/cs-loremap_main.css><link rel=stylesheet href=../src-fkno/cs-loremap.css>
+<script src=../src/js.js></script><script src=../src-fkno/js-fkno.js></script><script src=../src-fkno/json-tlback-fkno.js></script>
+</head><div class=all><h1 style=font-size:4em>Vanilla FKNO Backstory</h1><div id=tagselect>
+<div class=tagcategory><h2>Characters</h2></div><div class=tagcategory><h2>Other</h2><p>
+<input type=button onclick=AddTagSelector(this) value=#birthday>
+<input type=button onclick=AddTagSelector(this) value=#launch>
+<input type=button onclick=AddTagSelector(this) value='#outer wilds ventures'>
+</p></div></div><table id=calendar></table>
+<!--@EFOLD-->
+
+
+
+
+
+<style>
+.tagcategory{padding:17px;height:270px;overflow:auto;text-align:left;border:2px solid rgb(var(--redd));background:rgba(var(--redd),.1)}
+.tagcategory h2{font-size:1.7em;opacity:.9}
+.tagcategory>p>*,#calendar td>*,#calendar td>span>*,card *{vertical-align:middle}
+table{border-spacing:0;margin:1em auto;max-width:95%}
+th{padding:12px}tr:has(th){position:sticky;top:0;z-index:50;cursor:pointer}
+#calendar *{text-align:center}
+#calendar th{background:rgba(0,0,0,.8)}
+#calendar th:first-child{border-radius:17px 0 0 17px}#calendar th:last-child{border-radius:0 17px 17px 0}
+#calendar td:first-child{border-left:3px solid rgb(var(--white));width:120px}
+#calendar td:last-child{border-right:3px solid rgb(var(--white))}
+#calendar tr:hover{background:rgba(var(--blue),.42)}
+#calendar tr:nth-child(2) td{border-top:3px solid rgb(var(--white))}
+#calendar tr td:first-child{padding:.5em}
+#calendar tr:nth-child(2) td,#calendar tr:last-child td{background:rgba(var(--white),.9);padding:0}
+#calendar tr:not(:last-child,:first-child,:nth-last-child(2),:nth-child(2)) td{border-bottom:1px solid rgb(var(--white))}
+#calendar tr:nth-child(2) td:first-child{border-top-left-radius:17px}#calendar tr:nth-child(2) td:last-child{border-top-right-radius:17px}
+#calendar tr:nth-last-child(3) td{border-top:1px solid rgb(var(--white))}
+#calendar tr:last-child td{border-bottom:3px solid rgb(var(--white))}#calendar tr:last-child td:first-child{border-bottom-left-radius:17px}#calendar tr:last-child td:last-child{border-bottom-right-radius:17px}
+#calendar td:first-child{padding:0}
+#calendar td:nth-child(2){padding:.2em 0}
+#calendar td:nth-child(n+3){font-family:Space Mono;color:rgb(var(--white));font-size:.7em;text-shadow:var(--txtshw)}
+a{color:black;font-weight:600;filter:invert(61%)sepia(46%)saturate(3658%)hue-rotate(343deg)brightness(102%)contrast(101%)}
+a:hover{filter:invert(92%)sepia(80%)saturate(1818%)hue-rotate(359deg)brightness(103%)contrast(101%)}
+input{margin:3px 2px;cursor:pointer;padding:4px 7px;border-radius:1rem;border:2px solid rgb(var(--indigod));line-height:1.7rem}
+input:not(.active,.include,.exclude){background-color:rgba(var(--indigod),.8)!important;color:rgb(var(--white))}
+.include{background-color:rgba(var(--greend),.8)!important;color:#fff;border-color:rgb(var(--greend))}
+.exclude{background-color:rgba(var(--redd),.8)!important;color:#fff;border-color:rgb(var(--redd))}
+#tagselect{width:90%;margin:auto;display:grid;border:5px solid rgb(var(--redd))}
+h1{color:rgba(var(--white),.9)}
+@media only screen and (orientation:landscape){#tagselect{grid-template-columns:1fr 1fr}p{font-size:22px}}
+@media only screen and (orientation:portrait){#tagselect{grid-template-columns:1fr}}
+card{display:inline-block;border:2px solid rgb(var(--indigod));background:rgba(var(--indigod),.5);border-radius:22px;margin:2px;padding:5px}
+card img{display:block;height:64px;margin:auto}img{filter:drop-shadow(0 0 1px rgb(var(--white)))brightness(150%)}
+tr[keep^=keep]{position:relative}
+tr[keep^=keep]:after{background:url(../ast/svg/unpinned.svg)center no-repeat;width:2.2em;background-size:contain;position:absolute;top:calc(50% - 1em);left:-2.2em;line-height:2em;padding-bottom:.2em;filter:invert(47%)sepia(44%)saturate(3001%)hue-rotate(328deg)brightness(98%)contrast(111%);font-weight:800}
+tr[keep=keep1]:after{content:'1'}
+tr[keep=keep2]:after{content:'2'}
+
+canvas.clock{width:64px;height:64px;display:inline-block;filter:drop-shadow(0 0 1px #fff);margin:.2rem}
+td>div:has(canvas){position:relative;display:inline-block;background:rgba(var(--indigod),.7);padding:.5rem;padding-bottom:0;border-radius:1rem}
+td>div:has(canvas)>span{position:absolute;font-size:14px;top:calc(50% - 7px);left:0;right:0;text-align:center}
+td>div:has(canvas)>p{font-size:12px}
+</style>
+
+
+
+
+
+<div id=measures style='position:fixed;bottom:1em;padding-left:2em;font-family:Space Mono;background:rgba(0,0,0,.8);left:0;right:0;font-size:.8em'></div></div>
+<script>const table=document.getElementById('calendar'),charlist=Object.keys(adta),agecol='' //img
+dl=[];filltable("VanHEA")
+
+
+
+
+curtinput=[]
+function AddTagSelector(tag){
+    tag=tag.value.split('#')[1]
+    if(curtinput.includes(tag+"0")){curtinput.splice(curtinput.indexOf(tag+"0"),1);document.getElementById("btn_"+tag.replace(/^[^a-z]+|[^\w:.-]+/gi, "")).classList.remove("exclude")}
+    else if(curtinput.includes(tag+"1")){curtinput.splice(curtinput.indexOf(tag+"1"),1);curtinput.push(tag+"0");document.getElementById("btn_"+tag.replace(/^[^a-z]+|[^\w:.-]+/gi, "")).classList.remove("include");document.getElementById("btn_"+tag.replace(/^[^a-z]+|[^\w:.-]+/gi, "")).classList.add("exclude")}
+    else{curtinput.push(tag+"1");document.getElementById("btn_"+tag.replace(/^[^a-z]+|[^\w:.-]+/gi, "")).classList.add("include")}
+    count1=0;for(ci of curtinput){if(ci.slice(-1)==1){count1+=1}}
+    for(const[k,v]of Object.entries(cdta)){
+        ctr=document.getElementById(k.replace(/^[^a-z]+|[^\w:.-]+/gi, "")+'-@-'+OGdate2secs(v["Date"]).toString())
+        if(curtinput.length==0){ctr.style.display='';continue}ctr.style.display='';flag=0
+        for(ci of curtinput){if(v["Tags"].includes(ci.slice(0,-1))){if(ci.slice(-1)==1){flag+=1}else{flag=-1;break}}else{if(count1==0){flag=1}}}
+        if(v["Tags"].includes("k")||flag>=count1){ctr.style.display=''}else{ctr.style.display='none'}
+    }
+}
+</script><link rel=stylesheet href=../../local/cs-datafonts.css>

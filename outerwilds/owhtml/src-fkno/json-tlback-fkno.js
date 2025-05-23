@@ -34,7 +34,7 @@ cdta={/*
 // Esker launches to the Attlerock
 "Feldspar’s 2nd trip to the Hourglass Twins":{"Date":"1979/04 5d02s 32:52","Tags":"#feldspar #outer wilds ventures #launch #ember twin"},
 
-// Marl falling off a tree incident
+// Marl falling off a tree incident, Esker nursing them back to health
 "Gossan’s Eye Incident":{"Date":"1988/09 8d07s 31:52","Tags":"#gossan #firn #slate","LoreID":"OGGossanEyeIncident"},
 
 "Chert’s First Launch":{"Date":"1991/08 02d02s 00:00","Tags":"#chert #outer wilds ventures #launch"},

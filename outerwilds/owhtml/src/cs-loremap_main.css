@@ -1,6 +1,9 @@
 :root{overscroll-behavior:none}
 
-a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before,a[target=_blank].cardext summary:last-child:before,.prtg:before{content:'';margin-right:.2em;width:1em;height:.7em;display:inline-block;background:url(../ast/svg/hud_dlg.svg)center no-repeat}
+a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before,a[target=_blank].cardext summary:last-child:before,.prtg:before{content:'';width:1em;height:.7em;display:inline-block;background:url(../ast/svg/hud_dlg.svg)center no-repeat}
+a[href*=getcard]:not(:has(h2)):before,a[href*=getcard] h2:before{background:url(../ast/svg/hud_nopin.svg)center no-repeat;filter:invert(80%)sepia(7%)saturate(2605%)hue-rotate(90deg)brightness(108%)contrast(103%);opacity:.8}
+a[href*=getcard]:hover:not(:has(h2)):before,a[href*=getcard]:hover h2:before{background-image:url(../ast/svg/hud_pin.svg)}
+a[target=_blank].cardext summary:last-child:before,.prtg:before{background:url(../ast/svg/hud_dlg.svg)center no-repeat;margin-right:.2em}
 a[target=_blank].cardext summary:last-child:after{content:'';background:url(../ast/svg/external-link.svg)center no-repeat;background-size:cover;display:inline-block;height:1em;width:1em;margin-bottom:-.2em;margin-left:.3em}
 a[href*=getcard] h2:before{filter:drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)drop-shadow(0 0 .025em black)}
 @media only screen and (orientation:landscape){[id=tuto]{max-width:90%}}
@@ -171,6 +174,11 @@ t>input,t>highlt input{border:none;border-radius:0;background-color:unset;paddin
 
 tr>*{vertical-align:middle}
 td:has(p){font-size:1em}
+td.ellipsis,td.dialconditions{background:rgba(var(--midd),.5);color:rgb(var(--fore));font-size:.8rem}
+td.ellipsis{text-align:center;font-style:italic;letter-spacing:.2rem}
+td.dialconditions{font-family:Space Mono,Consolas,Courier;font-weight:600}
+td.dialconditions .infoa{padding-left:.5rem}
+td.dialconditions .infob{font-size:1.2rem}
 th{position:relative;text-align:left;padding:2px 5px;background:rgb(var(--midd));border:2px solid rgb(var(--midd));color:rgb(var(--white))}
 
 a{color:rgb(var(--fore))}
@@ -181,6 +189,7 @@ summary span{font-size:.7em}
 details tr>* span:not([class]){position:absolute;text-align:right;top:0;right:5px;font-weight:800;line-height:calc(5px + 2.5em)}
 .source{font-style:italic;font-size:.8em;text-align:right;color:rgb(var(--white));margin-top:-1em}
 h2+.source,p+.source{margin-top:-.5em}
+table+.source{margin-top:.5em}
 summary .source{color:initial;opacity:.5}
 summary{width:calc(100% + 20px);margin:-.7rem 0 -20px -10px;padding:10px;padding-left:27px;border-radius:.7rem .7rem 0 0;border-bottom:3px solid rgb(var(--midd));background:rgb(var(--fore));color:rgb(var(--black));text-indent:-17px;cursor:pointer}
 it details[open] summary:not(:last-child){margin-bottom:.7rem}
@@ -189,7 +198,7 @@ it details:not([open]):not(:has(summary:last-child)){margin-bottom:calc(1rem + 1
 details table{border-collapse:collapse;font-size:inherit}
 details table td{padding:7px;border:2px solid rgb(var(--midd))}
 details table:not(.spmono,.freet) td{width:50%}
-it details summary~*:not(.spmono,.shiplog,h2,h3,a,pre,code,i,b){font-size:1.17rem}
+it details summary~*:not(.spmono,.shiplog,h2,h3,a,pre,code,i,b,.source){font-size:1.17rem}
 table.spmono{font-family:Space Mono,Consolas,Courier;font-size:.7em}
 table.spmono tr>*:first-child{width:20%;text-align:center}
 table.spmono tr>*:nth-child(2):not(:last-child){text-align:center}
@@ -294,7 +303,7 @@ it[keep~=keepget]>n>[keep=keepget]{background-image:url(../ast/svg/hud_pin.svg)}
 img[onclick='PinCard(this)']:hover,img[onclick='CopyLinkToClipboard(this)']:hover{filter:drop-shadow(0 0 1px currentcolor)drop-shadow(0 0 1px currentcolor)drop-shadow(0 0 1px currentcolor)}
 summary~img{vertical-align:middle}
 
-it[wip]{display:block}it[wip]:before{content:'';background:url(../ast/svg/hud_m2e.svg);background-size:contain;display:block;width:1em;height:1em;position:absolute;left:-1.5em;top:0}
+it[wip]{display:block}it[wip]:before{content:'';background:url(../ast/svg/hud_m2e.svg);background-size:contain;display:block;width:1em;height:1em;position:absolute;left:-5.5rem;top:.2rem}
 
 @media only screen and (min-width:1200px){it>n{width:3em}#searchbar button{font-size:1vw}#findtaglist input{font-size:1vw}}
 @media only screen and (max-width:1200px){#filterlist{margin-left:50px}it>n{width:3em;text-align:center;font-size:.7em}*{--h2pad:0}#searchbar button{font-size:2vw}#findtaglist input{font-size:2vw}}

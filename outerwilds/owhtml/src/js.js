@@ -149,6 +149,8 @@ function ResetState(){
     window.history.replaceState(null,"",purl)
     for(t=0;t<tagselect.length;t++){tagselect[t].classList.remove("include");tagselect[t].classList.remove("exclude")}
     for(i=0;i<allit.length;i++){
+        allit[i].innerHTML=allit[i].innerHTML.replaceAll("<highlt>","").replaceAll("</highlt>","")
+        alinp=allit[i].querySelectorAll("t input");for(inp=0;inp<alinp.length;inp++){alinp[inp].style.color=""}
         allit[i].setAttribute("hide","")
         if(allit[i].hasAttribute("keep")){
             if(allit[i].getAttribute("keep")!="keep"){
