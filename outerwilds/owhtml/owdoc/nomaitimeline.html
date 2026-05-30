@@ -58,6 +58,20 @@ table{position:relative}
 <!--#🙧 🟥 HTML-->
 <body><div class=chp>
 
+    <wip style=max-width:1200px;margin:auto;font-size:22px;margin-bottom:5em><h2>WIP Notes</h2>
+        <p>Hi! If you’re reading this, then this web page is still under construction. Most importantly, this means that the information on this page is NOT accurate — because not all dialogue files have been considered yet in the construction of this timeline.</p>
+
+        <p class=vs>The chronological order of the Nomai dialogue files listed here is calculated automatically by taking a list of <code style="background:rgba(0,0,0,.7);padding:0 .2em;border-radius:.3em">“Event A must happen before Event B”</code> rules. These rules are written by a human hand.</p>
+        <p>The main advantage to this approach is that it allows us to write those rules under a fully zoomed-in perspective, without having to worry about the big picture: simply look at two separate events in the Nomai timeline and write “Event A happens before Event B for these exact reasons.” This web page’s Javascript code will then take all the rules together and try to create a timeline that respects all those given rules.</p>
+
+        <p>The following links contain additional information and/or give more insight about this project and/or the Nomai in general:</p>
+        <ul style="margin:1em 0 0 1em">
+            <li><a href=https://github.com/LutiasKokopelli/stories/tree/main/outerwilds/owhtml/owdoc/nomaitimeline.html>HTML page source code:</a> The HTML/CSS/JS code that lets you see this page as it is!</li>
+            <li><a href=https://github.com/LutiasKokopelli/stories/tree/main/outerwilds/owhtml/src/json-nomaitimeline.js>Chronology Rules & Text Files Data:</a> The “rules” which define the chronological order calculated on this page (WIP), and the entirety of the Nomai dialogue as it appears here.</li>
+            <li><a href=https://github.com/LutiasKokopelli/stories/tree/main/outerwilds/owhtml/src/json-nomailist.js>Nomai Data:</a> A separate file which has no impact on this web page, but summarizes information for each Nomai individually.</li>
+        </ul>
+    </wip>
+
 <h1>Chronological order by Location</h1>
 <div id=timelineloc></div>
 <h1 style=margin:auto>Unsorted events</h1><div id=unruled-events></div>
@@ -235,6 +249,7 @@ function renderEventBlock(d){
         el.dataset.characters=`${d.Present} ${d.Mention}`
         const summary=document.createElement("summary")
         summary.innerHTML=`<img src="../../owhtml/ast/ico/astr_${d.Name.split('_')[0]}.png">&thinsp;`+d.Name
+        summary.title=d.Summary//+"\n\nHappens before:\n"+"\n\nHappens before:\n" // Add here the list of events connected to each given event, and why the rules exist
         el.appendChild(summary)
         el.appendChild(renderDialogueContent(d))
     }else{
