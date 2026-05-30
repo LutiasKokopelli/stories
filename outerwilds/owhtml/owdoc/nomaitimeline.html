@@ -64,6 +64,13 @@ table{position:relative}
         <p class=vs>The chronological order of the Nomai dialogue files listed here is calculated automatically by taking a list of <code style="background:rgba(0,0,0,.7);padding:0 .2em;border-radius:.3em">“Event A must happen before Event B”</code> rules. These rules are written by a human hand.</p>
         <p>The main advantage to this approach is that it allows us to write those rules under a fully zoomed-in perspective, without having to worry about the big picture: simply look at two separate events in the Nomai timeline and write “Event A happens before Event B for these exact reasons.” This web page’s Javascript code will then take all the rules together and try to create a timeline that respects all those given rules.</p>
 
+        <p>All rules are written in this format:</p>
+        <pre style="background:rgba(0,0,0,.7);padding:.5em;border-radius:.3em;max-width:350px;margin:auto">{
+    before: "File_Name_A",
+    after: "File_Name_B",
+    why: "Reason"
+},</pre>
+
         <p>The following links contain additional information and/or give more insight about this project and/or the Nomai in general:</p>
         <ul style="margin:1em 0 0 1em">
             <li><a href=https://github.com/LutiasKokopelli/stories/tree/main/outerwilds/owhtml/owdoc/nomaitimeline.html>HTML page source code:</a> The HTML/CSS/JS code that lets you see this page as it is!</li>
