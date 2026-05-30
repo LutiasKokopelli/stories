@@ -1,0 +1,368 @@
+<!--🙧 🟨 Head-->
+<!DOCTYPE html><head><title>Nomai Timeline</title><link rel=stylesheet href=../src/css.css><link rel=stylesheet href=../../local/testdebug/cs-datafonts.css><script src=../src/json-nomaitimeline.js></script><style>
+body,footer{font-size:12px}
+.chp{border-radius:0;margin:0;width:100%;max-width:unset;font-family:Space Mono;padding-bottom:220px}
+footer{z-index:99;position:fixed;background:#000;bottom:0;right:0;left:0;padding:1em}
+summary{border-radius:.3em;background:var(--back);padding:.2em .5em;white-space:pre;overflow-y:hidden;scrollbar-color:transparent transparent}
+summary img{filter:drop-shadow(0 0 .05em #000)drop-shadow(0 0 .05em #000)drop-shadow(0 0 .05em #000);height:1em;margin-bottom:-.2em}
+details[open]{border:2px solid var(--back);border-radius:.5em;margin-bottom:.3em}
+details[open] summary{border-bottom-left-radius:0;border-bottom-right-radius:0}
+details p{margin:.5em}details>div>*:first-child{margin-top:.5em}details>div>*:last-child{margin-bottom:.5em}
+.timeline-row{display:flex;gap:1em;margin-bottom:1em}
+.dialogue{display:inline-block;text-align:left}
+.dialogue ul{list-style:none}
+
+button,.char-btn{background:#999;border-radius:.5em;cursor:pointer;font-family:Space Mono;line-height:1.1em;border:.2em solid #000;padding:.3em .5em;color:#000;text-align:center;vertical-align:middle;margin:.1em}
+button:hover,.char-btn:hover{font-weight:800;transform:scale(1.5);filter:drop-shadow(0 0 1px #ccc)drop-shadow(0 0 1px #ccc)drop-shadow(0 0 1px #ccc)}
+button:hover{background:#ccc}
+.btnfocus,.btnon,.btnoff{display:inline-block;width:.8em;height:.8em;border-radius:.5em;border:.1em solid #000;margin:0 .2em}
+.btnfocus:hover,.btnon:hover,.btnoff:hover{filter:brightness(122%)}
+.btnfocus{background:rgb(var(--greend))}
+.btnon{background:rgb(var(--goldd))}
+.btnoff{background:rgb(var(--redd))}
+
+.char-btn.inactive{background:#444;font-weight:100}
+
+*{--fore:darkcyan;--back:royalblue}
+.DB,.DB *{--fore:#AFEEEF;--back:#486991}
+.CT,.CT *{--fore:#FF8511;--back:#D84D20}
+.BH,.BH *{--fore:#B79CBA;--back:#4A3E53}
+/* I’ll add other astral body-coded colors later */
+
+.unruled{margin:.2em;opacity:.7}.unruled summary{background:darkred}
+
+.title-row{background:darkblue}
+.title-cell{font-weight:bold;text-align:center;padding:.75em}
+
+#timelineloc{display:flex;flex-direction:column;width:1700px;margin:auto}
+.timeline-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.header-cell{font-weight:bold;background:darkblue;text-align:center}
+.time-cell{font-weight:bold;background:darkblue;text-align:center}
+
+h1{font-size:3em}h2{font-size:2em;color:rgb(var(--white))}
+ul{text-align:left;margin-left:-1em}
+h2 a{border-radius:.5em;background:rgb(var(--orng));color:#000;padding:0 .3em}
+
+table td:not(:last-child){border-right:1px solid darkgrey}
+table tr:first-child{position:sticky;top:0;z-index:9}
+table{position:relative}
+
+#timelinenomai{table-layout:fixed;width:max-content;border-collapse:collapse}
+#timelinenomai td{width:50px;height:50px}
+#timelinenomai th:first-child{width:300px}
+
+#timelinenomai tr:not(:first-child):hover{background:rgba(var(--purplel),.2)}
+#timelinenomai tr:not(:first-child):hover th{background: rgb(var(--purpled))}
+</style></head>
+<!--🙤-->
+<!--#🙧 🟥 HTML-->
+<body><div class=chp>
+
+<h1>Chronological order by Location</h1>
+<div id=timelineloc></div>
+<h1 style=margin:auto>Unsorted events</h1><div id=unruled-events></div>
+
+<hr>
+
+<h1>Chronological order by Nomai</h1>
+<table id=timelinenomai></table>
+
+</div></body>
+<footer>
+    <h2>
+        Open/Close all dialogue:
+        <a onclick="(function(){for(d of timelineloc.getElementsByTagName('details')){d.open=!d.open}})()">Table by Location & Unsorted</a>
+        <a onclick="(function(){for(d of timelinenomai.getElementsByTagName('details')){d.open=!d.open}})()">Table by Nomai</a>
+    </h2>
+    <div id=charlist align=left></div>
+</footer>
+<!--#🙤-->
+<!--🙧 🟩 JS CONST: Location_Map-->
+<script>
+const LOCATION_MAP={
+    "CT":{label:"Hourglass Twins & Sun Station",sub:["SS","CT","TT"]},
+    "TH":{label:"Timber Hearth",sub:["TH","THM"]},
+    "BH":{label:"Brittle Hollow & Quantum Moon",sub:["BH","QM","BHM","WH"]},
+    "GD":{label:"Giant’s Deep & Orbital Probe Cannon",sub:["GD","OPC"]},
+    "DB":{label:"Dark Bramble & Interloper",sub:["DB","C"]},
+    "OT":{label:"Other",sub:["Shared"]}
+}
+</script>
+<!--🙤-->
+<!--🙧 🟩 JS functions: Nomai Toggle Buttons-->
+<script>
+function renderCharacter(charString){
+    if(!charString)return""
+    return charString.split("#").map(s=>s.trim()).filter(Boolean).map(char=>`<button class="char-btn ${char}">${char}<br><span class=btnfocus onclick="toggleCharFocus('${char}')"></span><span class=btnon onclick="toggleCharOn('${char}')"></span><span class=btnoff onclick="toggleCharOff('${char}')"></span></button>`).join("")
+}
+function toggleChar(){
+    for([char,stat]of Object.entries(activeCharacters)){
+        document.querySelectorAll('button[class~="'+char+'"]').forEach(e=>e.style.opacity=stat?1:.5)
+        document.querySelectorAll('th[class~="'+char+'"],td[class~="'+char+'"]').forEach(e=>e.style.display=stat?"":"none")
+    }
+    for(row of timelinenomai.querySelectorAll("tr:not(:first-child)")){
+        keep=0
+        for([char,stat]of Object.entries(activeCharacters)){if(stat){if(row.querySelector('td[class~="'+char+'"]:has(img)')){keep=1}}}
+        if(keep){row.style.display=""}else{row.style.display="none"}
+    }
+}
+function toggleCharFocus(char){
+    if(char==='ALL'){for(c of Object.keys(activeCharacters)){activeCharacters[c]=1}}
+    else{for(c of Object.keys(activeCharacters)){activeCharacters[c]=0};activeCharacters[char]=1}
+    toggleChar()
+}
+function toggleCharOn(char){
+    if(char==='ALL'){for(c of Object.keys(activeCharacters)){activeCharacters[c]=1}}
+    else{activeCharacters[char]=1}
+    toggleChar()
+}
+function toggleCharOff(char){
+    if(char==='ALL'){for(c of Object.keys(activeCharacters)){activeCharacters[c]=0}}
+    else{activeCharacters[char]=0}
+    toggleChar()
+}
+</script>
+<!--🙤-->
+<!--🙧 🟩 JS functions: Build per location-->
+<script>
+/* ===============================
+// BASIC HELPERS
+// =============================== */
+function getMainLocation(d){
+    if(!d||!d.Name)return"OT"
+    const prefix=d.Name.split("_")[0]
+    if(LOCATION_MAP[prefix])return prefix
+    for(const main in LOCATION_MAP){if(LOCATION_MAP[main].sub.includes(prefix)){return main}}
+    return"OT"
+}
+function isTitleRow(d){return d.Type!=="File"&&!d.Location}
+
+/* ===============================
+// RULE HANDLING
+// =============================== */
+function collectRuledNames(rules){
+    const set=new Set()
+    rules.forEach(r=>{if(r.before){set.add(r.before)}if(r.after){set.add(r.after)}})
+    return set
+}
+function splitByRules(nomaidialogue,rules){
+    const ruledNames=collectRuledNames(rules),ruled=[],unruled=[]
+    nomaidialogue.forEach(d=>{if(ruledNames.has(d.Name)){ruled.push(d)}else{unruled.push(d)}})
+    return{ruled,unruled}
+}
+
+/* ===============================
+// TOPOLOGICAL SORT
+// =============================== */
+function buildGraph(nodes,rules){
+    const graph=new Map(),inDegree=new Map()
+    nodes.forEach(d=>{graph.set(d.Name,[]);inDegree.set(d.Name,0)})
+    rules.forEach(({before,after})=>{
+        if(!graph.has(before)||!graph.has(after))return
+        graph.get(before).push(after)
+        inDegree.set(after,inDegree.get(after)+1)
+    })
+    return{graph,inDegree}
+}
+function topologicalLayers(nodes,rules){
+    const{graph,inDegree}=buildGraph(nodes,rules),layers=[]
+    let available=[...inDegree.keys()].filter(k=>inDegree.get(k)===0)
+    while(available.length>0){
+        const layer=[...available]
+        layers.push(layer)
+        const next=[]
+        layer.forEach(node=>{graph.get(node).forEach(n=>{
+            inDegree.set(n,inDegree.get(n)-1)
+            if(inDegree.get(n)===0){next.push(n)}
+        })});available=next
+    }
+    if(layers.flat().length!==nodes.length){throw new Error("Contradictory or circular rules detected")}
+    return layers
+}
+
+/* ===============================
+// LOCATION AND TABLE PREP
+// =============================== */
+function buildLayerTable(layers,dialogueMap,locations){
+    const table=[]
+    layers.forEach(layer=>{
+        layer.forEach(name=>{
+            const d=dialogueMap.get(name)
+            if(!d)return
+            if(isTitleRow(d)){table.push({type:"title",event:d})}
+        })
+        const row={}
+        locations.forEach(loc=>row[loc]=[])
+        layer.forEach(name=>{
+            const d=dialogueMap.get(name)
+            if(!d||isTitleRow(d))return
+            const loc=resolveLocation(d)
+            if(!loc)return
+            row[loc].push(d)
+        })
+        const hasContent=Object.values(row).some(arr=>arr.length>0)
+        if(hasContent){table.push({type:"normal",row})}
+    })
+    return table
+}
+function resolveLocation(d){
+    if(isTitleRow(d))return null
+    if(d.Location){return LOCATION_MAP[d.Location]?d.Location:"OT"}
+    if(!d||!d.Name)return"OT"
+    const prefix=d.Name.split("_")[0]
+    if(LOCATION_MAP[prefix])return prefix
+    for(const main in LOCATION_MAP){if(LOCATION_MAP[main].sub.includes(prefix)){return main}}
+    return"OT"
+}
+
+/* ===============================
+// RENDERING
+// =============================== */
+function renderDialogueContent(d){
+    const container=document.createElement("div")
+    ctnt=""
+    if(d.Present){ctnt+=`<p><strong>Present:</strong>${renderCharacter(d.Present)}</p>`}
+    if(d.Mention){ctnt+=`<p><strong>Mentioned:</strong>${renderCharacter(d.Mention)}</p>`}
+    if(d.Dialogue){ctnt+=`<ul>${d.Dialogue.map(line=>`<li>${line}</li>`).join("")}</ul>`}
+    container.innerHTML=ctnt
+    return container
+}
+function renderEventBlock(d){
+    let el
+    if(d.Type==="File"){
+        el=document.createElement("details")
+        el.className=`dialogue ${d.Name.split('_')[0]}`
+        el.dataset.characters=`${d.Present} ${d.Mention}`
+        const summary=document.createElement("summary")
+        summary.innerHTML=`<img src="../../owhtml/ast/ico/astr_${d.Name.split('_')[0]}.png">&thinsp;`+d.Name
+        el.appendChild(summary)
+        el.appendChild(renderDialogueContent(d))
+    }else{
+        el=document.createElement(d.Type||"div")
+        el.textContent=d.Name
+        el.className=`${d.Location}`
+        el.style.border="2px solid var(--back)"
+        el.style.borderRadius=".5em"
+        el.style.padding=".3em .5em"
+    }
+    return el
+}
+function renderTimelineTable(layerTable,locations){
+    const container=document.getElementById("timelineloc"),header=document.createElement("div")
+    header.className="timeline-row header"
+    locations.forEach(loc=>{
+        const cell=document.createElement("div")
+        cell.className="timeline-cell header-cell"
+        cell.textContent=LOCATION_MAP[loc].label
+        header.appendChild(cell)
+    })
+    container.appendChild(header)
+    layerTable.forEach((entry,i)=>{
+        if(entry.type==="title"){
+            const row=document.createElement("div")
+            row.className="timeline-row title-row"
+            const cell=document.createElement(entry.event.Type)
+            cell.className="timeline-cell title-cell"
+            cell.style.gridColumn=`1/span ${locations.length+1}`
+            cell.textContent=entry.event.Name
+            row.appendChild(cell)
+            container.appendChild(row)
+            return
+        }
+        const rowEl=document.createElement("div")
+        rowEl.className="timeline-row"
+        locations.forEach(loc=>{
+            const cell=document.createElement("div")
+            cell.className="timeline-cell"
+            entry.row[loc].forEach(d=>{cell.appendChild(renderEventBlock(d))})
+            rowEl.appendChild(cell)
+        })
+        container.appendChild(rowEl)
+    })
+}
+function renderUnruled(unruled){
+    const container=document.getElementById("unruled-events")
+    unruled.forEach(d=>{
+        const el=renderEventBlock(d)
+        el.classList.add("unruled")
+        container.appendChild(el)
+    })
+}
+</script>
+<!--🙤-->
+<!--🙧 🟩 JS Exec-->
+<script>
+const dialogueMap=new Map(nomaidialogue.map(d=>[d.Name,d])),
+{ruled,unruled}=splitByRules(nomaidialogue,rules),
+layers=topologicalLayers(ruled,rules),
+layerTable=buildLayerTable(layers,dialogueMap,Object.keys(LOCATION_MAP)),
+chars=new Set()
+nomaidialogue.forEach(d=>{`${d.Present}${d.Mention}`.split("#").map(s=>s.trim()).filter(Boolean).forEach(c=>chars.add(c))})
+nomailist=[...chars].sort()
+
+let activeCharacters=nomailist.reduce((o,c)=>({...o,[c]:1}),{})
+charrender=renderCharacter("ALL").replace("<button","<div style=display:inline-block;background:rgb(var(--goldl))").replace("</button>","</div>")
+nomailist.forEach(char=>{charrender+=renderCharacter(char)})
+document.getElementById("charlist").innerHTML=`<h2 style=display:inline>Toggle characters:</h2> `+charrender
+
+/* ===============================
+// BOOTSTRAP
+// =============================== */
+renderTimelineTable(layerTable,Object.keys(LOCATION_MAP))
+renderUnruled(unruled)
+</script>
+<!--🙤-->
+<!--#🙧 🟥 Per Nomai-->
+<script>
+const nomtl=document.getElementById("timelinenomai"),style=document.createElement("style");document.head.appendChild(style)
+for(let c=2;c<=nomailist.length+1;c++){
+    style.sheet.insertRule(`#timelinenomai:has(td:nth-child(${c}):hover) td:nth-child(${c}){background: rgba(var(--purplel),.2)}`)
+    style.sheet.insertRule(`#timelinenomai:has(td:nth-child(${c}):hover) th:nth-child(${c}){background: rgb(var(--purpled))}`)
+}
+// NOMAI LIST HEADER
+header=document.createElement("tr")
+hder=`<th style=pointer-events:none></th>`
+nomailist.forEach(nom=>{hder+=`<th class="header-cell ${nom}">${nom}</th>`})
+header.innerHTML=hder
+nomtl.appendChild(header)
+
+
+
+// Only one file possible per row: cells tell whether the character is or not present/mentioned in that file, and what they do in it.
+// The files order depends on the order indicated by the above script and alphabetical order if there is a tie and unruled at the end
+// sort files by layer and alphabetical
+
+function file_to_nomai(d){
+    r=document.createElement("tr")
+    re=renderEventBlock(d)
+    rctn=`<th class=header-cell><details class="dialogue ${d.Name.split('_')[0]}">${renderEventBlock(d).innerHTML}</details></th>`
+    for(nom of nomailist){
+        if(d.Present.includes(nom)){
+            rctn+=`<td class=${nom} style=background:rgb(var(--greyd))><img src="../../owhtml/ast/ico/astr_${d.Name.split('_')[0]}.png"></td>`
+        }
+        else if(d.Mention.includes(nom)){
+            rctn+=`<td class=${nom} style=background:rgb(var(--greyd));font-style:italic;opacity:.5><img src="../../owhtml/ast/ico/astr_${d.Name.split('_')[0]}.png"></td>`
+        }
+        else{rctn+=`<td class=${nom}></td>`}
+    }
+    r.innerHTML=rctn
+    return r
+}
+
+
+// Fix the order!
+// So far it is by location+layer instead of just by layer
+// And the unruled are just in the order given in json-nomaitimeline, rather than alphabetical. Which isn’t bad, just make sure to recheck later
+
+
+for(d of ruled){if(d.Type==="File"){
+    r=file_to_nomai(d)
+    nomtl.appendChild(r)
+}}
+for(d of unruled){if(d.Type==="File"){
+    r=file_to_nomai(d)
+    r.querySelector("TH").style.background="rgb(var(--redd))"
+    nomtl.appendChild(r)
+}}
+</script>
+<!--#🙤-->
